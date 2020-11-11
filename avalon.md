@@ -1,0 +1,1 @@
+- ## [Strategies](/wiki/avalon/strategies)

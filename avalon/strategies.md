@@ -1,0 +1,2 @@
+- ## [Perceval](/wiki/avalon/strategies/perceval)
+- ## [Morgane](/wiki/avalon/strategies/morgane)

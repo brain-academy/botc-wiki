@@ -1,4 +1,4 @@
-![perceval](../public/perceval_pic.jpg "Perceval")
+![perceval](../../public/avalon/img/perceval.jpg "Perceval")
 
 # AVALON
 ## STRATÉGIE
