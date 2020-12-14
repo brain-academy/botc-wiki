@@ -1,4 +1,4 @@
-<img src="https://github.com/bra1n/townsquare/blob/main/src/assets/icons/washerwoman.png?raw=true" height="150"> 
+<img src="https://github.com/brain-academy/wiki/blob/master/blood-on-the-clocktower/img/washerwoman.png?raw=true" height="150"> 
 
 # Gouvernante  
  
@@ -16,7 +16,7 @@ Evin est le Cuistot et Amy le Gardien. La Gouvernante a l’information que, soi
 Julian est l’Imp et Alex est la Pucelle. La Gouvernante a l’information que soit Julian ou Alex est la Pucelle.
 ```
 ```sh
-> Marianna est le Traître et Sarah est la Croqueuse d'hommes,
+Marianna est le Traître et Sarah est la Croqueuse d'hommes,
 la Gouvernante a l'information que l’un d’entre eux est le Gardien 
 Ceci est possible du fait que le Traître - tout comme l’Ermite - peut être reconnu soit comme “bon” soit comme “maléfique”. 
 Dans le cas présent il est reconnu sur cette phase de reconnaissance comme “bon” en tant que Gardien.
