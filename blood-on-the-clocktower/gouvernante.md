@@ -7,20 +7,13 @@
 
 *La première nuit, le Conteur vous désigne 2 joueurs. Il vous donne ensuite le rôle de villageois de l’un des deux.*
 
+> Evin est le Cuistot et Amy le Gardien. La Gouvernante a l’information que, soit Evin ou soit Amy est le cuistot.
 
-```sh
-Evin est le Cuistot et Amy le Gardien. La Gouvernante a l’information que, soit Evin ou soit Amy est le cuistot.
-```
-   
-```sh
-Julian est l’Imp et Alex est la Pucelle. La Gouvernante a l’information que soit Julian ou Alex est la Pucelle.
-```
-```sh
-Marianna est le Traître et Sarah est la Croqueuse d'hommes,
-la Gouvernante a l'information que l’un d’entre eux est le Gardien 
-Ceci est possible du fait que le Traître - tout comme l’Ermite - peut être reconnu soit comme “bon” soit comme “maléfique”. 
-Dans le cas présent il est reconnu sur cette phase de reconnaissance comme “bon” en tant que Gardien.
-```
+> Julian est l’Imp et Alex est la Pucelle. La Gouvernante a l’information que soit Julian ou Alex est la Pucelle.
+
+> Marianna est le Traître et Sarah est la Croqueuse d'hommes, la Gouvernante a l'information que l’un d’entre eux est le Gardien.
+> Ceci est possible du fait que le Traître - tout comme l’Ermite - peut être reconnu soit comme “bon” soit comme “maléfique”. 
+> Dans le cas présent il est reconnu sur cette phase de reconnaissance comme “bon” en tant que Gardien.
 
 
 ### Mécaniques
