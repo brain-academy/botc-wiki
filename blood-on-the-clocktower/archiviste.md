@@ -1,3 +1,5 @@
+<img src="https://github.com/brain-academy/wiki/blob/master/blood-on-the-clocktower/img/librarian.png?raw=true" height="150"> 
+
 # Archiviste (Librarian)
  
 #### Alignement : gentil 
