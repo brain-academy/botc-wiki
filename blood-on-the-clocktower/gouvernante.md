@@ -1,13 +1,14 @@
 <img src="https://github.com/brain-academy/wiki/blob/master/blood-on-the-clocktower/img/washerwoman.png?raw=true" height="150"> 
 
-# Gouvernante  
+# Gouvernante (Washerwoman)
  
 ##### Alignement : Gentil
 ##### Rôle de première nuit
 
+La première nuit, le Conteur vous désigne 2 joueurs. Il vous donne ensuite le rôle de villageois de l’un des deux.
+
 ### Exemples
 
-La première nuit, le Conteur vous désigne 2 joueurs. Il vous donne ensuite le rôle de villageois de l’un des deux.
 
 > Rémi (Cuistot) et Sandy (Pucelle) sont montrés par le Conteur à la Gouvernante qui aura l’information qu’un des deux joueurs est le Cuistot.
 
