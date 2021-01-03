@@ -45,7 +45,7 @@ Gardez en tête plusieurs éléments :
 
 - Annoncer que vous avez reçu un “1” aura tendance à pousser vos deux voisins à s’incriminer mutuellement. Ce qui pourrait pousser le village à exécuter les 2 Villageois afin de s’assurer d’avoir éliminé un maléfique ! Vous pouvez aussi vous ranger du côté de l’un d’entre eux en leur faisant croire que vous le croyez bon et que c’est l’autre qui est maléfique. 
 
-- Annoncer que vous avez obtenu un “2” est un bluff plus difficile mais qui peut s’avérer payant ! Vos deux voisins sauront que vous êtes en train de mentir et que vous êtes probablement maléfique. Par contre si le village vous croit, vous pourrez faire perdre du temps au village et même peut être réussir à faire exécuter 1 ou 2 joueurs gentils
+- Annoncer que vous avez obtenu un “2” est un bluff plus difficile mais qui peut s’avérer payant ! Vos deux voisins sauront que vous êtes en train de mentir et que vous êtes probablement maléfique. Par contre si le village vous croit, vous pourrez faire perdre du temps au village et même peut-être réussir à faire exécuter 1 ou 2 joueurs gentils
 
 - Quand vos voisins meurent, vous pouvez changer le chiffre annoncé. Cela peut vous permettre d’enfoncer le clou sur un joueur récemment exécuté ou de porter la suspicion sur vos nouveaux voisins. Si vous tentez un bluff risqué, comme avoir une deuxième fois un “2” après avoir fait exécuter l’un de vos voisins, vous risquez fort de perdre en crédibilité et donc d'apparaître comme maléfiques aux yeux du village.
 
