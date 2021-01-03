@@ -14,7 +14,7 @@ La première nuit, le Conteur vous désigne 2 joueurs. Il vous donne ensuite le 
 
 > Julian (Imp) et Alex (Soldat) sont montrés par le Conteur à la Gouvernante  qui aura l’information qu’un des deux joueurs est le Soldat.
 
-> Alex (Traître) et David (Croqueuse d'hommes), le Conteur peut dire à la Gouvernante que l’un des deux joueurs est le Gardien. Ceci est possible du fait que le Traître - tout comme l’Ermite - peut être reconnu soit comme “bon” soit comme “maléfique”. Ici, le Traître est reconnu sur cette phase de reconnaissance comme “bon” en tant que Gardien.
+> Alex (Traître) et David (Croqueuse d'hommes), le Conteur peut dire à la Gouvernante que l’un des deux joueurs est le Gardien. Ceci est possible du fait que le Traître - tout comme l’Ermite - peut être reconnu soit comme “bon” soit comme “maléfique”. Ici, le Traître est reconnu comme “bon” en tant que Gardien.
 
 
 ### Mécaniques et conseils
@@ -58,4 +58,4 @@ Gardez en tête plusieurs éléments :
 
 - Si vous êtes Traître ou qu’un de vos acolytes est Traître, les informations que vous aurez obtenues vous aideront grandement à bluffer la Gouvernante et soutenir votre histoire !
 
-- Restez cohérent dans votre discours, vous n’êtes supposés recevoir des informations uniquement durant la première nuit !
+- Restez cohérent dans votre discours, vous êtes supposés recevoir des informations uniquement durant la première nuit !
