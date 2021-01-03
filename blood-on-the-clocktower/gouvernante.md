@@ -26,12 +26,14 @@ Pour identifier qui est le Villageois parmi les deux joueurs indiqués par le Co
 - Attendre jusqu'au dernier jour (ou très tard dans la partie) pour partager vos informations avec le groupe peut aussi être une autre stratégie. C’est risqué mais si le Villageois en question reste en vie jusqu’au dernier jour, vous connaîtrez ainsi un joueur qui n’est pas le Démon ! Cela sera plus facile d’identifier ce dernier en réduisant le nombre de suspects.
 
 - Parlez au Villageois que vous avez identifié et, secrètement, dévoilez lui votre rôle. De cette manière, vous pourrez former une alliance et vous défendre mutuellement si vous étiez nominés pour l'exécution. Et ce, sans avoir forcément à dévoiler votre identité à tout le village, vous protégerez ainsi vos identités respectives ce qui aura pour effet de protéger différents rôles, par exemple :
->La Voyante qui veut éviter de révéler son identité à l’équipe maléfique pour continuer à avoir des informations les prochaines nuits
->Le Gardien ou le Soldat qui veulent être attaqués pendant la nuit par le Démon 
+> La Voyante qui veut éviter de révéler son identité à l’équipe maléfique pour continuer à avoir des informations les prochaines nuits
+
+> Le Gardien ou le Soldat qui veulent être attaqués pendant la nuit par le Démon 
 
 - Après avoir parlé et identifié formellement le Villageois qui vous a été désigné, vous pouvez décider ensemble de bluffer un autre rôle devant le village. Cette stratégie est très intéressante si :
->Vous voulez protéger un rôle important de l’Empoisonneur 
->Vous voulez orienter l’équipe maléfique à attaquer un rôle qui a déjà utilisé ses pouvoirs comme le Cuistot
+> Vous voulez protéger un rôle important de l’Empoisonneur 
+
+> Vous voulez orienter l’équipe maléfique à attaquer un rôle qui a déjà utilisé ses pouvoirs comme le Cuistot
 
  - Parfois, le Conteur vous indiquera des joueurs maléfiques comme étant des potentiels Villageois. Si vous pensez que ça pourrait être le cas, ne dévoilez pas directement quel rôle de Villageois vous a été donné par le Conteur. Au contraire, annoncez un autre rôle afin de forcer les joueurs maléfiques à admettre qu’ils sont le rôle que vous annoncez. Cette mécanique fonctionne aussi avec les joueurs “gentils”, vous pourriez ainsi vérifier leur identité avant de révéler la vôtre, vous serez alors plus confiant sur leur alignement (leur camp), toutefois avec cette stratégie, ils pourraient avoir des doutes sur le vôtre !
 
@@ -41,7 +43,7 @@ Pour identifier qui est le Villageois parmi les deux joueurs indiqués par le Co
 
 - Vous pouvez vous dévoiler Gouvernante et désigner un joueur qui vous semble suspect en annonçant le rôle que le Conteur vous a révélé. Un joueur maléfique pourrait sauter sur l’occasion pour s’innocenter en confirmant vos propos. Vous saurez alors qu’il ment, si ce n’est pire !
 
-- Méfiez-vous du Traître ! Le Conteur pourrait le faire passer pour un Villageois (ou pas, c’est à la discrétion du Conteur). Si bien que, par exemple, le joueur que vous pensiez Enquêteur ne l’est en réalité pas du tout ...
+- Méfiez-vous du Traître ! Le Conteur pourrait le faire passer pour un Villageois (ou pas, c’est à la discrétion du Conteur). Si bien que, par exemple, le joueur que vous pensiez Enquêteur ne l’est en réalité pas du tout...
 
 
 ### Bluffer la Gouvernante en tant que maléfique
