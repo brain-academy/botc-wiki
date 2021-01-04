@@ -1,6 +1,6 @@
 <img src="https://github.com/brain-academy/wiki/blob/master/blood-on-the-clocktower/img/washerwoman.png?raw=true" height="150"> 
 
-# Gouvernante (Washerwoman)
+# Gouvernante (Laundry Hand / Washerwoman)
  
 ##### Alignement : Gentil
 ##### Rôle de première nuit
