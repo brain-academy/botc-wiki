@@ -8,8 +8,11 @@ Chaque nuit, vous apprenez le rôle du joueur qui vient d’être exécuté.
 
 ### Exemple 
 > Le Maire est exécuté aujourd’hui. La nuit suivante, le Croque-Mort apprend qu’il s’agissait du Maire.
+
 > Le Soûlard, qui pense être la pucelle, est exécuté. La nuit suivante, le Croque-Mort apprend qu’on a exécuté le Soûlard. Le Croque-Mort apprend le “vrai” rôle du joueur exécuté et non le rôle que ce dernier pense être.
+
 > Le Traître est exécuté. Deux voyageurs sont exilés. La nuit suivante, on dévoile le rôle du Majordome au Croque-Mort. Le Traître est en l'occurrence identifié comme étant le Majordome. Les exils de Voyageurs ne sont pas des exécutions et de ce fait, le Croque-Mort n’a pas d’information sur eux.
+
 > Personne n’est exécuté : le Croque-Mort n’est pas réveillé cette nuit.
  
 ### Mécaniques et conseils
