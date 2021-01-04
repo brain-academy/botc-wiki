@@ -28,7 +28,7 @@ Le Conteur choisit un des joueurs “gentil” comme étant un faux-positif et v
  
 ### Bluffer le rôle de Voyante
 
--Prenez en compte que vous êtes censés vous réveiller chaque nuit où vous êtes en vie, y compris la première. Quand vous vous dévoilerez au village en tant que Voyante, ils attendront des explications détaillées sur chaque nuit. Préparez à l’avance votre histoire et soyez cohérent avec ce que vous auriez dit à certains joueurs en privé.
+- Prenez en compte que vous êtes censés vous réveiller chaque nuit où vous êtes en vie, y compris la première. Quand vous vous dévoilerez au village en tant que Voyante, ils attendront des explications détaillées sur chaque nuit. Préparez à l’avance votre histoire et soyez cohérent avec ce que vous auriez dit à certains joueurs en privé.
 - La Voyante peut vraiment semer le doute dans le Village. L’Ermite peut être vu comme étant le Démon et le Démon peut changer de personne (suicide ou Croqueuse d’homme). Le faux positif peut aussi donner une mauvaise information rendant suspect un joueur “gentil”. Trouvez toujours le moyen de donner une explication plausible si vos informations n’apparaissent pas comme logiques aux yeux des autres Villageois et soyez convaincants !
 - Cela dit, si vos informations font sens, cela donnera encore plus de poids à votre bluff. Si vous innocentez certains joueurs à de multiples reprises, le Village aura tendance à les garder en vie. A l’inverse, il va plutôt exécuter les personnes désignées comme étant potentiellement le Démon. En revanche, si cela ne s’avère pas payant, le Village aura tendance à vous suspecter à votre tour.
 - Vous pouvez mentir et dire “Parmi ces deux joueurs il n’y a pas de Démon” pour innocenter un acolyte maléfique.
