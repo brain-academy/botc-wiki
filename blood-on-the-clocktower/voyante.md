@@ -2,8 +2,10 @@
 
 # Voyante (Fortune Teller)
 
-### Alignement : gentil
-### Rôle de détection
+#### Alignement : gentil
+#### Rôle de détection
+
+
 Chaque nuit, choisissez 2 joueurs et vous apprenez si l’un d’eux est un Démon (et uniquement Démon, vous ne détectez pas les Sbires).
 Le Conteur choisit un des joueurs “gentil” comme étant un faux-positif et vous pouvez voir l’Ermite comme étant le Démon. Le faux positif est déterminé à l’avance par le Conteur et ne changera pas durant toute la partie.
  
