@@ -1,10 +1,11 @@
 <img src="https://github.com/brain-academy/wiki/blob/master/blood-on-the-clocktower/img/ravenkeeper.png?raw=true" height="150"> 
 
 # Gardien (Ravenkeeper)
-Si vous mourez pendant la nuit, vous choisissez un joueur et apprenez son rôle
 
 #### Alignement : Gentil
 #### Rôle de détection
+
+Si vous mourez pendant la nuit, vous choisissez un joueur et apprenez son rôle
 
 ### Exemple
 > Le Gardien est tué par le Imp, il est réveillé et doit choisir un joueur. Il choisit Ismaël. Ismaël est l’Empathique, le Gardien obtient donc cette information.
