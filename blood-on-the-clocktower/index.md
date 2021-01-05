@@ -4,7 +4,6 @@
 
 [Gouvernante](https://brain-academy.github.io/wiki/blood-on-the-clocktower/gouvernante)
 
-
 [Archiviste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/archiviste)
 
 [Enqueteur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/enqueteur)
@@ -29,6 +28,8 @@
 
 [Maire](https://brain-academy.github.io/wiki/blood-on-the-clocktower/maire)
 
+## Etrangers
+
 [Majordome](https://brain-academy.github.io/wiki/blood-on-the-clocktower/majordome)
 
 [Soulard](https://brain-academy.github.io/wiki/blood-on-the-clocktower/soulard)
@@ -36,3 +37,17 @@
 [Ermite](https://brain-academy.github.io/wiki/blood-on-the-clocktower/ermite)
 
 [Vertueux](https://brain-academy.github.io/wiki/blood-on-the-clocktower/vertueux)
+
+## Sbires
+
+[Empoisonneur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/empoisonneur)
+
+[Traitre](https://brain-academy.github.io/wiki/blood-on-the-clocktower/traitre)
+
+[Croqueuse d'homme](https://brain-academy.github.io/wiki/blood-on-the-clocktower/croqueusedhomme)
+
+[Baron](https://brain-academy.github.io/wiki/blood-on-the-clocktower/baron)
+
+## Démon
+
+[Imp](https://brain-academy.github.io/wiki/blood-on-the-clocktower/imp)
