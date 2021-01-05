@@ -20,3 +20,15 @@
 [Moine](https://brain-academy.github.io/wiki/blood-on-the-clocktower/moine)
 
 [Gardien](https://brain-academy.github.io/wiki/blood-on-the-clocktower/gardien)
+
+[Pucelle](https://brain-academy.github.io/wiki/blood-on-the-clocktower/pucelle)
+
+[Mercenaire](https://brain-academy.github.io/wiki/blood-on-the-clocktower/mercenaire)
+
+[Soldat](https://brain-academy.github.io/wiki/blood-on-the-clocktower/soldat)
+
+[Maire](https://brain-academy.github.io/wiki/blood-on-the-clocktower/maire)
+
+[Majordome](https://brain-academy.github.io/wiki/blood-on-the-clocktower/majordome)
+
+[Soulard](https://brain-academy.github.io/wiki/blood-on-the-clocktower/soulard)
