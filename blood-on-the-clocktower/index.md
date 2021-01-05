@@ -42,7 +42,7 @@
 
 [Empoisonneur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/empoisonneur)
 
-[Traitre](https://brain-academy.github.io/wiki/blood-on-the-clocktower/traitre)
+[Traitre](https://brain-academy.github.io/wiki/blood-on-the-clocktower/traitre) 
 
 [Croqueuse d'homme](https://brain-academy.github.io/wiki/blood-on-the-clocktower/croqueusedhomme)
 
