@@ -32,3 +32,7 @@
 [Majordome](https://brain-academy.github.io/wiki/blood-on-the-clocktower/majordome)
 
 [Soulard](https://brain-academy.github.io/wiki/blood-on-the-clocktower/soulard)
+
+[Ermite](https://brain-academy.github.io/wiki/blood-on-the-clocktower/ermite)
+
+[Vertueux](https://brain-academy.github.io/wiki/blood-on-the-clocktower/vertueux)
