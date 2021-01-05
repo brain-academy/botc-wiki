@@ -6,6 +6,7 @@
  
 Vous avez deux capacités : 
 S’il reste 3 joueurs vivant (dont vous) et qu’aucune exécution n’a lieu, victoire du Village ! 
+
 Si vous deviez mourir pendant la nuit, le Conteur peut décider de faire mourir un autre joueur à votre place.
 
 
