@@ -7,6 +7,7 @@ La première fois que vous êtes mis en nomination, si l’accusateur est un Vil
 
 ### Exemple 
 > La Gouvernante nomine la Pucelle. La Gouvernante est immédiatement exécutée et c’est la fin de la journée.
+
 > Le Soûlard, qui pense alors être le Chef, nomine la Pucelle. Le Soûlard reste en vie et la Pucelle perd son pouvoir. Les joueurs doivent maintenant voter si oui ou non ils veulent exécuter la Pucelle (mécanique : Le joueur est un Etranger et non un Villageois)
 
 
@@ -15,6 +16,7 @@ La première fois que vous êtes mis en nomination, si l’accusateur est un Vil
 
 - Les rôles de premières nuits qui, par définition, ne seront réveillés que la première nuit, sont des rôles qui ont tout intérêt à vous nominer pour deux raisons : 
 > Ne pas sacrifier un rôle qui pourrait avoir d’autres informations par la suite
+
 > Valider les information de ce rôle en mourant sur la Pucelle
 
 - Les rôles comme le Croque-Mort, la Voyante ou l’Empathique sont aussi des bonnes cibles s’ils ont reçu des informations intéressantes et qu’ils veulent prouver au village qu’ils sont Gentils.
@@ -31,7 +33,9 @@ La première fois que vous êtes mis en nomination, si l’accusateur est un Vil
 
 - Si votre capacité ne se déclenche pas, cela peut signifier plusieurs choses :
 > La personne qui vous a nominé est Maléfique ! Les joueurs Maléfiques peuvent avoir intérêt à vous nominer pour gaspiller votre capacité et laisser planer le doute sur votre rôle mais aussi le sien.
+
 > La personne qui vous a nominée est un Etranger notamment le soulard.
+
 > Vous êtes vous même Soûlard : votre capacité n’a jamais existé. Vous avez été empoisonné : votre capacité ne fonctionne plus jusqu’au crépuscule.
 
 - Faites attention au Traître ! C’est le seul joueur Maléfique qui peut déclencher votre capacité puisqu’il peut être vu comme étant Villageois.
@@ -41,8 +45,11 @@ La première fois que vous êtes mis en nomination, si l’accusateur est un Vil
 - Un joueur gentil ne sera jamais exécuté en vous nominant. Ce qui veut dire que lorsque vous serez nominé, l’un de vous ou les deux sera suspecté d’être Maléfique ou Soûlard. Si vous arrivez à vous faire nominer par un joueur suspecté d’être Maléfique, cela jettera encore plus le doute sur lui et par la même occasion vous innocenterait un peu plus.
 
 - Si une Pucelle est nominée mais qu’un des deux joueurs est le Soûlard, la capacité de la pucelle ne se déclenche pas puisque :
+
 > Soit la Pucelle est en réalité le Soûlard (et donc non la Pucelle)
+
 > Soit l’accusateur est un Etranger (et donc non un Villageois). 
+
 Quand personne ne meurt en vous accusant, vous pourrez arguer que l’un de vous est Soûlard. En plus, vous pourrez remettre en cause les informations que le Village a obtenu.
 
 - Si vous êtes un Sbire, vous pouvez vous faire nominer par votre Démon pour paraître suspect. Plus vous paraissez louche, plus vous éloignez les doutes de votre Démon, il pourrait même être considéré comme la victime de votre “bluff”.
