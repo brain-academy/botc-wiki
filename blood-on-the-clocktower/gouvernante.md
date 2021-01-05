@@ -3,7 +3,7 @@
 # Gouvernante (Laundry Hand / Washerwoman)
  
 ##### Alignement : Gentil
-##### Rôle de première nuit
+##### Rôle de première nuit - Ne sera réveillée que la première nuit
 
 La première nuit, le Conteur vous désigne 2 joueurs. Il vous donne ensuite le rôle de villageois de l’un des deux.
 
@@ -12,9 +12,9 @@ La première nuit, le Conteur vous désigne 2 joueurs. Il vous donne ensuite le 
 
 > Rémi (Cuistot) et Sandy (Pucelle) sont montrés par le Conteur à la Gouvernante qui aura l’information qu’un des deux joueurs est le Cuistot.
 
-> Julian (Imp) et Alex (Soldat) sont montrés par le Conteur à la Gouvernante  qui aura l’information qu’un des deux joueurs est le Soldat.
+> Yann (Imp) et John (Soldat) sont montrés par le Conteur à la Gouvernante  qui aura l’information qu’un des deux joueurs est le Soldat.
 
-> Alex (Traître) et David (Croqueuse d'hommes), le Conteur peut dire à la Gouvernante que l’un des deux joueurs est le Gardien. Ceci est possible du fait que le Traître - tout comme l’Ermite - peut être reconnu soit comme “bon” soit comme “maléfique”. Ici, le Traître est reconnu comme “bon” en tant que Gardien.
+> Alex (Traître) et David (Croqueuse d'hommes), le Conteur peut dire à la Gouvernante que l’un des deux joueurs est le Gardien. Ceci est possible du fait que le Traître - tout comme l’Ermite - peut être reconnu soit comme “bon”, soit comme “maléfique”. Ici, le Traître est reconnu comme “bon” en tant que Gardien.
 
 
 ### Mécaniques et conseils
