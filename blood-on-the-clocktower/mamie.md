@@ -7,6 +7,7 @@
 #### Rôle de première nuit
 
 La première nuit, le Conteur vous désigne un villageois, appelé petit-fils, et vous révèle son rôle.
+<br/>
 Si, au cours de la partie, ce joueur meurt par le démon, alors vous mourrez également.
 
 
