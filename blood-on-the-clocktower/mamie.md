@@ -15,7 +15,7 @@ Si, au cours de la partie, ce joueur meurt par le démon, alors vous mourrez ég
 
 - Durant la première nuit, la Mamie se réveille et apprend que Rémi, son petit-fils, est le Professeur. Trois nuits plus tard, Rémi est tué par le Démon, donc la Mamie meurt également.
 
-- La Mamie sait que Pras, son petit-fils, est le Parieur. Pras effectue un pari, se trompe et meurt à cause de ça. Comme le petits-fils n’est pas mort à cause du Démon, la Mamie reste en vie.
+- La Mamie sait que Pras, son petit-fils, est le Parieur. Pras effectue un pari, se trompe et décède à cause de ça. Comme le petits-fils n’est pas mort à cause du Démon, la Mamie reste en vie.
 
 - La Mamie sait que Yann, son petit-fils, est le Bricoleur. Yann est tué par le Démon, mais la Mamie est ivre à cause du Marin, donc la Mamie reste en vie.
 
