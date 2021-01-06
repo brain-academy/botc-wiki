@@ -22,7 +22,7 @@ Si, au cours de la partie, ce joueur meurt par le démon, alors vous mourrez ég
 
 ### Mécaniques et conseils
 
-- Protégez votre bien-aimé petit-fils. Cette personne est définitivement un Villageois d’alignement bon, et cette certitude est rare et précieuse dans le module de Bad Moon Rising. Enfin, s’il meurt, alors vous mourrez également ; raison de plus pour le protéger.
+- Protégez votre bien-aimé petit-fils. Cette personne est définitivement un Villageois d’alignement bon, et ce genre de certitudes est rare et précieuse dans le module de Bad Moon Rising. Enfin, s’il meurt, alors vous mourrez également ; raison de plus pour le protéger.
 
 - Discutez avec votre petit-fils, amadouez-le des cookies et gagnez sa confiance. Contrairement à d’autres rôles de première nuit comme la Gouvernante, votre information est absolue car vous avez appris le rôle exact d’un Villageois - il n’y a aucun intérêt à pousser votre petit-fils à dévoiler son rôle en premier, à moins que vous doutiez de votre sobriété. Quand vous en avez l’opportunité, dévoilez-vous à votre petit-fils en lui confirmant son rôle afin de construire une solide relation de confiance entre vous deux.
 
