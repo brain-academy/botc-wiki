@@ -1,4 +1,4 @@
-<img src="https://github.com/brain-academy/wiki/blob/master/blood-on-the-clocktower/img/mamie.png?raw=true" height="150"> 
+<img src="https://github.com/brain-academy/wiki/blob/master/blood-on-the-clocktower/img/grandmother.png?raw=true" height="150"> 
 
 # Mamie (Grandmother)
 
