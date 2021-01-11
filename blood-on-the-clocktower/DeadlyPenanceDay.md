@@ -12,7 +12,7 @@
 
 [Predicateur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/predicateur) `En cours`
 
-[Chef de secte](https://brain-academy.github.io/wiki/blood-on-the-clocktower/chef de secte) `En cours`
+[Chef de secte](https://brain-academy.github.io/wiki/blood-on-the-clocktower/chefdesecte) `En cours`
 
 [Crieur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/crieur) `En cours`
 
