@@ -8,7 +8,8 @@
 
 [Bonne](https://brain-academy.github.io/wiki/blood-on-the-clocktower/bonne)
 
-[Exorciste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/exorciste) `- En cours`
+''' dif
+-[Exorciste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/exorciste)'''
 
 -[Aubergiste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/aubergiste) -En cours
 
