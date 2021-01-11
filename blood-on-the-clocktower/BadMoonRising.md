@@ -8,7 +8,7 @@
 
 [Bonne](https://brain-academy.github.io/wiki/blood-on-the-clocktower/bonne)
 
-[Exorciste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/exorciste) color:red En cours
+[Exorciste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/exorciste) <span style='color:red'>En Cours</span>
 
 [Aubergiste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/aubergiste) En cours
 
