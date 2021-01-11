@@ -10,7 +10,7 @@
 
 [Exorciste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/exorciste) `- En cours`
 
-[Aubergiste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/aubergiste) -En cours
+-[Aubergiste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/aubergiste) -En cours
 
 [Parieur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/parieur) `En cours`
 
