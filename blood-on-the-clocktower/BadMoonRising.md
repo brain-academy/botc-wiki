@@ -8,53 +8,52 @@
 
 [Bonne](https://brain-academy.github.io/wiki/blood-on-the-clocktower/bonne)
 
-''' dif
--[Exorciste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/exorciste)'''
+[Exorciste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/exorciste) `En cours`
 
--[Aubergiste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/aubergiste) -En cours
+[Aubergiste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/aubergiste) `En cours`
 
 [Parieur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/parieur) `En cours`
 
-[Commère](https://brain-academy.github.io/wiki/blood-on-the-clocktower/commere) En cours
+[Commère](https://brain-academy.github.io/wiki/blood-on-the-clocktower/commere) `En cours`
 
-[Courtisane](https://brain-academy.github.io/wiki/blood-on-the-clocktower/courtisane) En cours
+[Courtisane](https://brain-academy.github.io/wiki/blood-on-the-clocktower/courtisane) `En cours`
 
-[Professeur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/professeur) En cours
+[Professeur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/professeur) `En cours`
 
-[Ménestrel](https://brain-academy.github.io/wiki/blood-on-the-clocktower/menestrel) En cours
+[Ménestrel](https://brain-academy.github.io/wiki/blood-on-the-clocktower/menestrel) `En cours`
 
-[Herboriste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/herboriste) En cours
+[Herboriste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/herboriste) `En cours`
 
-[Pacifiste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/pacifiste) En cours
+[Pacifiste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/pacifiste) `En cours`
 
-[Fou](https://brain-academy.github.io/wiki/blood-on-the-clocktower/fou) En cours
+[Fou](https://brain-academy.github.io/wiki/blood-on-the-clocktower/fou) `En cours`
 
 ## Etrangers
 
-[Bridoleur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/bricoleur) En cours
+[Bridoleur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/bricoleur) `En cours`
 
-[Gitane](https://brain-academy.github.io/wiki/blood-on-the-clocktower/gitane) En cours
+[Gitane](https://brain-academy.github.io/wiki/blood-on-the-clocktower/gitane) `En cours`
 
-[Brute](https://brain-academy.github.io/wiki/blood-on-the-clocktower/brute) En cours
+[Brute](https://brain-academy.github.io/wiki/blood-on-the-clocktower/brute) `En cours`
 
-[Lunatique](https://brain-academy.github.io/wiki/blood-on-the-clocktower/lunatique)
+[Lunatique](https://brain-academy.github.io/wiki/blood-on-the-clocktower/lunatique) `En cours`
 
 ## Sbires
 
-[Mafieux](https://brain-academy.github.io/wiki/blood-on-the-clocktower/mafieux) En cours
+[Mafieux](https://brain-academy.github.io/wiki/blood-on-the-clocktower/mafieux) `En cours`
 
-[Avocat du Diable](https://brain-academy.github.io/wiki/blood-on-the-clocktower/avocatdudiable)
+[Avocat du Diable](https://brain-academy.github.io/wiki/blood-on-the-clocktower/avocatdudiable) `En cours`
 
-[Assassin](https://brain-academy.github.io/wiki/blood-on-the-clocktower/assassin) En cours
+[Assassin](https://brain-academy.github.io/wiki/blood-on-the-clocktower/assassin) `En cours`
 
-[Conspirateur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/conspirateur)  En cours
+[Conspirateur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/conspirateur) `En cours`
 
 ## Démon
 
-[Pooka](https://brain-academy.github.io/wiki/blood-on-the-clocktower/pooka) En cours
+[Pooka](https://brain-academy.github.io/wiki/blood-on-the-clocktower/pooka) `En cours`
 
-[Po](https://brain-academy.github.io/wiki/blood-on-the-clocktower/po) En cours
+[Po](https://brain-academy.github.io/wiki/blood-on-the-clocktower/po) `En cours`
 
-[Shabaloth](https://brain-academy.github.io/wiki/blood-on-the-clocktower/shabaloth) En cours
+[Shabaloth](https://brain-academy.github.io/wiki/blood-on-the-clocktower/shabaloth) `En cours`
 
-[Zombuul](https://brain-academy.github.io/wiki/blood-on-the-clocktower/zombuul) En cours
+[Zombuul](https://brain-academy.github.io/wiki/blood-on-the-clocktower/zombuul) `En cours`
