@@ -12,7 +12,7 @@
 
 [Aubergiste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/aubergiste) `En cours`
 
-[Parieur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/parieur) `En cours`
+[Parieur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/parieur)
 
 [Commère](https://brain-academy.github.io/wiki/blood-on-the-clocktower/commere) `En cours`
 
@@ -44,7 +44,7 @@
 
 [Avocat du Diable](https://brain-academy.github.io/wiki/blood-on-the-clocktower/avocatdudiable) `En cours`
 
-[Assassin](https://brain-academy.github.io/wiki/blood-on-the-clocktower/assassin) `En cours`
+[Assassin](https://brain-academy.github.io/wiki/blood-on-the-clocktower/assassin)
 
 [Conspirateur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/conspirateur) `En cours`
 
