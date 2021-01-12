@@ -2,9 +2,11 @@
 
 # Fou (Fool)
 
-#### Alignement : Gentil
-#### Ne se réveille pas
-#### Capacité passive
+**Alignement : Gentil**
+\
+**Ne se réveille pas**
+\
+**Capacité passive**
 
 *La première fois que vous mourrez, vous restez en vie.*
 
