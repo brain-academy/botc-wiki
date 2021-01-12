@@ -6,7 +6,7 @@
 #### Ne se réveille pas
 #### Capacité passive
 
-*La première fois que vous mourrez, vous restez en vie. *
+*La première fois que vous mourrez, vous restez en vie.*
 
 ### Exemples
 > Le premier jour, le Fou est exécuté mais reste en vie. Le quatrième jour, le fou est à nouveau exécuté. Cette fois-ci, il meurt. 
