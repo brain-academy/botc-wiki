@@ -14,7 +14,7 @@
 
 * L’Exorciste choisit le Pukka. La nuit suivante, le Pukka ne se réveille pas pour attaquer, cependant, un joueur décède tout de même suite à l’attaque du Pukka de la nuit précédente.
 
-* L'Exorciste choisit le Po. La nuit suivante, Le Po ne se réveille pas pour agir. La nuit d’après, l’Exorciste choisit l’Assassin. L’Assassin peut encore attaquer cette nuit, mais le Po doit choisir entre dévorer 0 ou 1 joueur. Il ne peut pas en tuer 3 car il n’a pas agi la nuit précédente.*
+* L'Exorciste choisit le Po. La nuit suivante, Le Po ne se réveille pas pour agir. La nuit d’après, l’Exorciste choisit l’Assassin. L’Assassin peut encore attaquer cette nuit, mais le Po doit choisir entre dévorer 0 ou 1 joueur. Il ne peut pas en tuer 3 en une seule fois car il n’a pas agi la nuit précédente.
 
 ### Mécaniques et conseils
 - S'il n'y a aucun mort de nuit alors que vous avez choisi un joueur, il y a de fortes chances que vous ayez trouvé le Démon. Vous pouvez soit partager publiquement votre information en vous dévoilant Exorciste et en révélant le joueur que vous avez ciblé la nuit précédente, soit attendre encore deux nuits pour cibler à nouveau le même joueur et confirmer qu'il n'y a pas de mort. 
