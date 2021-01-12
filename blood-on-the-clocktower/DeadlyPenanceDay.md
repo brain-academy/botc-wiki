@@ -18,13 +18,13 @@
 
 [Parieur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/parieur)
 
-[Exorciste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/exorciste) `En cours`
+[Exorciste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/exorciste)
 
 [Faussaire](https://brain-academy.github.io/wiki/blood-on-the-clocktower/faussaire) `En cours`
 
 [Soldat](https://brain-academy.github.io/wiki/blood-on-the-clocktower/soldat)
 
-[Fou](https://brain-academy.github.io/wiki/blood-on-the-clocktower/fou) `En cours`
+[Fou](https://brain-academy.github.io/wiki/blood-on-the-clocktower/fou)
 
 [Maire](https://brain-academy.github.io/wiki/blood-on-the-clocktower/maire)
 
