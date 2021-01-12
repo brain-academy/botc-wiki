@@ -1,4 +1,4 @@
-<img src="https://github.com/brain-academy/wiki/blob/master/blood-on-the-clocktower/img/bountyhunter.png?raw=true" height="150"> 
+<img src="https://github.com/brain-academy/wiki/blob/master/blood-on-the-clocktower/img/exorcist.png?raw=true" height="150"> 
 
 # Exorciste (Exorcist)
 
