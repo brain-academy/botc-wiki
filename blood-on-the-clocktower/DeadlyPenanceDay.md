@@ -16,7 +16,7 @@
 
 [Crieur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/crieur) `En cours`
 
-[Parieur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/parieur) `En cours`
+[Parieur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/parieur)
 
 [Exorciste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/exorciste) `En cours`
 
@@ -40,7 +40,7 @@
 
 ## Sbires
 
-[Assassin](https://brain-academy.github.io/wiki/blood-on-the-clocktower/assassin) `En cours`
+[Assassin](https://brain-academy.github.io/wiki/blood-on-the-clocktower/assassin)
 
 [Baron](https://brain-academy.github.io/wiki/blood-on-the-clocktower/baron)
 
