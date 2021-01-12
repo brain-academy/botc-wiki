@@ -10,7 +10,7 @@
 
 [Marin](https://brain-academy.github.io/wiki/blood-on-the-clocktower/marin)
 
-[Predicateur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/predicateur) `En cours`
+[Predicateur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/predicateur)
 
 [Chef de secte](https://brain-academy.github.io/wiki/blood-on-the-clocktower/chefdesecte) `En cours`
 
