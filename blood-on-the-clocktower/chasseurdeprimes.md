@@ -1,6 +1,6 @@
 <img src="https://github.com/brain-academy/wiki/blob/master/blood-on-the-clocktower/img/bountyhunter.png?raw=true" height="150"> 
 
-# Chasseur de Prime
+# Chasseur de Prime (Bounty Hunter)
 
 #### Alignement : Gentil
 #### Rôle de détection
