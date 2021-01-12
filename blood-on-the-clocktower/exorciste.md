@@ -2,7 +2,7 @@
 
 # Exorciste (Exorcist)
 
-#### Alignement : Gentil
+**Alignement : Gentil**
 
 *Chaque nuit (sauf la première), choisissez un joueur (différent de la nuit précédente) :*
 \
