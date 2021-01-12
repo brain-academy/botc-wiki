@@ -6,6 +6,7 @@
 #### Rôle de détection
 
 1/ La première nuit, le Conteur vous désigne un joueur maléfique (votre cible). Si ce joueur meurt, la nuit qui suit, le conteur vous désigne un nouveau joueur maléfique (votre nouvelle cible).
+
 2/ Un villageois est maléfique
 
 ### Exemples
