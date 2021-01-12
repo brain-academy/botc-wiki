@@ -13,7 +13,7 @@
 ### Exemples
 * Le premier jour, le Fou est exécuté mais reste en vie. Le quatrième jour, le fou est à nouveau exécuté. Cette fois-ci, il meurt. 
 
-* Le Démon attaque le fou, qui reste en vie. Personne ne meurt de nuit. Le jour d'après, le Fou est ciblé par le Juge et meurt. 
+* Le Démon attaque le Fou, qui reste en vie. Personne ne meurt de nuit. Le jour d'après, le Fou est ciblé par le Juge et meurt. 
 
 * Le Démon attaque le Fou qui est protégé par l'Herboriste. Le Fou reste en vie et conserve sa capacité. Par la suite, l'Herboriste meurt et le Démon attaque le fou, désormais protégé par l'aubergiste. Le Fou reste en vie et conserve sa capacité. Plus tard, après la mort de l'Aubergiste, le Démon attaque le Fou. Le Fou reste en vie mais il perd sa capacité car plus rien ne le protège. Lors de la prochaine attaque du démon, il mourra.
 
