@@ -5,6 +5,7 @@
 #### Alignement : Gentil
 
 *Chaque nuit (sauf la première), choisissez un joueur (différent de la nuit précédente) :
+
 Si le Démon a été choisi, alors il ne se réveille pas cette nuit et il apprend qui vous êtes.*
 
 
