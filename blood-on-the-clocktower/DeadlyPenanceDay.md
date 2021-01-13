@@ -6,11 +6,11 @@
 
 [Enqueteur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/enqueteur)
 
-[Chasseur de primes](https://brain-academy.github.io/wiki/blood-on-the-clocktower/chasseurdeprimes)
+[Chasseur de primes](https://brain-academy.github.io/wiki/blood-on-the-clocktower/chasseurdeprimes)`En cours`
 
-[Marin](https://brain-academy.github.io/wiki/blood-on-the-clocktower/marin)
+[Marin](https://brain-academy.github.io/wiki/blood-on-the-clocktower/marin)`En cours`
 
-[Predicateur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/predicateur)
+[Predicateur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/predicateur)`En cours`
 
 [Chef de secte](https://brain-academy.github.io/wiki/blood-on-the-clocktower/chefdesecte) `En cours`
 
@@ -18,7 +18,7 @@
 
 [Parieur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/parieur)
 
-[Exorciste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/exorciste)
+[Exorciste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/exorciste)`En cours`
 
 [Faussaire](https://brain-academy.github.io/wiki/blood-on-the-clocktower/faussaire) `En cours`
 
@@ -44,7 +44,7 @@
 
 [Baron](https://brain-academy.github.io/wiki/blood-on-the-clocktower/baron)
 
-[Sorcière](https://brain-academy.github.io/wiki/blood-on-the-clocktower/sorciere) `En cours`
+[Sorcière](https://brain-academy.github.io/wiki/blood-on-the-clocktower/sorciere)
 
 [Traitre](https://brain-academy.github.io/wiki/blood-on-the-clocktower/traitre) 
 
