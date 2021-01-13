@@ -7,10 +7,10 @@ Chaque nuit, choisissez deux joueurs (en dehors de vous-même)
 Vous apprenez combien se sont réveillés cette nuit à cause de leur capacité.
 
 ### Exemples :
-> La Bonne choisit l’Exorciste et l’Aubergiste et obtient “2”.
-> La nuit suivante, l'Exorciste vise le Shabaloth. Puis, la Bonne choisit le Shabaloth et le Fou. Comme le Shabaloth ne se réveille pas à cause de l’Exorciste, la Bonne obtient “0”.
-> Lors de la seconde nuit, la Bonne choisit la Mamie et la Brute et obtient “2”. Aucun des deux ne s’est réveillé cette nuit, mais comme la Bonne a visé la Brute, elle est ivre.
-> Lors de la première nuit, la Bonne choisit l’Assassin et la Gitane et obtient “0”. La nuit suivante, la Bonne cible les deux mêmes joueurs. L’Assassin s’est réveillé mais n’a pas utilisé sa capacité. La Gitane a utilisé sa capacité, mais ne s’est pas réveillé pour l’utiliser. La bonne obtient “1”.
+- La Bonne choisit l’Exorciste et l’Aubergiste et obtient “2”.
+- La nuit suivante, l'Exorciste vise le Shabaloth. Puis, la Bonne choisit le Shabaloth et le Fou. Comme le Shabaloth ne se réveille pas à cause de l’Exorciste, la Bonne obtient “0”.
+- Lors de la seconde nuit, la Bonne choisit la Mamie et la Brute et obtient “2”. Aucun des deux ne s’est réveillé cette nuit, mais comme la Bonne a visé la Brute, elle est ivre.
+- Lors de la première nuit, la Bonne choisit l’Assassin et la Gitane et obtient “0”. La nuit suivante, la Bonne cible les deux mêmes joueurs. L’Assassin s’est réveillé mais n’a pas utilisé sa capacité. La Gitane a utilisé sa capacité, mais ne s’est pas réveillé pour l’utiliser. La bonne obtient “1”.
 
 ### Mécaniques et conseils
 - Votre capacité n’est pas une détection directe de joueurs Maléfiques - elle détecte seulement les joueurs mentant à propos de leur capacité. Ceci peut concerner des rôles Bons comme Maléfiques, puisque de nombreux rôles de Villageois ont intérêt à rester cachés, du moins au début. Si vous constatez une incohérence à propos d’un joueur, enquêtez un minimum sur lui avant d’en tirer des conclusions hâtives. Face aux questions, les joueurs Bons sont généralement plus enclins à révéler leur vrai rôle que les joueurs Maléfiques, qui hésiteront entre surenchérir leur premier bluff ou opter pour un second bluff.
