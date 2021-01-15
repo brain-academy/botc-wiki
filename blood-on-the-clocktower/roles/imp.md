@@ -2,9 +2,13 @@
 
 # Imp
 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing)
+#### Démon
 #### Alignement Maléfique
-#### Se réveille toutes les nuits
+#### Rôle maléfique actif
+#### Réveillé toutes les nuits
 
+### Description
 Chaque nuit, sauf la première (appelée Nuit 0), choisissez un joueur, il meurt.
 Si vous vous choisissez (suicide), vous mourez et un Sbire devient l’Imp. C’est ce qu’on appelle le phénomène du “Starpass”.
  
@@ -13,7 +17,7 @@ Si vous vous choisissez (suicide), vous mourez et un Sbire devient l’Imp. C’
 
 > Pendant la nuit, le Imp se réveille et choisit un joueur qui meurt. La nuit suivante, le Imp se choisit lui-même. Le Imp meurt (starpass) et l’Empoisonneur devient le Imp.
 
-### Mécaniques
+### Mécaniques et conseils
 - Beaucoup de stratégies existent pour les Maléfiques, particulièrement pour le Imp, elles sont détaillées dans la section “Stratégies Générales”. D’une manière générale, vous avez envie d’être vu innocent par les autres quand vous êtes Imp, de diffuser de la fausse information, d’être confirmé par vos Sbires en tant que Gentil et de sacrifier ces derniers lorsque cela est nécessaire. 
 
 - Restez en vie pendant les phases de jour à tout prix ! Même dans les parties avec trois Sbires, partez du principe que la Croqueuse d’homme peut manquer à l’appel.  Tant vous n’avez pas confirmé sa présence, faites comme si elle n’était pas dans la composition du Village.

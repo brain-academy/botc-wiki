@@ -1,10 +1,15 @@
 <img src="https://github.com/brain-academy/wiki/blob/master/public/img/blood-on-the-clocktower/roles/washerwoman.png?raw=true" height="150"> 
 
 # Gouvernante (Laundry Hand / Washerwoman)
- 
-##### Alignement : Gentil
-##### Rôle de première nuit - Ne sera réveillée que la première nuit
 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing)
+#### Villageois
+#### Alignement : Gentil
+#### Rôle de première nuit
+#### Réveillé seulement la première nuit
+
+
+### Description
 La première nuit, le Conteur vous désigne 2 joueurs. Il vous donne ensuite le rôle de villageois de l’un des deux.
 
 ### Exemples
@@ -46,9 +51,7 @@ Pour identifier qui est le Villageois parmi les deux joueurs indiqués par le Co
 - Méfiez-vous du Traître ! Le Conteur pourrait le faire passer pour un Villageois (ou pas, c’est à la discrétion du Conteur). Si bien que, par exemple, le joueur que vous pensiez Enquêteur ne l’est en réalité pas du tout...
 
 
-### Bluffer la Gouvernante en tant que maléfique
-
-Gardez en tête plusieurs éléments :
+### Bluffer la Gouvernante
 - Dévoilez vous en tant que Gouvernante et indiquez au moins un autre joueur maléfique. Puis dévoilez un rôle de Villageois, de préférence un rôle que pensez / savez ne pas être en jeu. Si le joueur maléfique est malin, il va réaliser que vous cherchez à le dédouaner en le faisant passer pour un Villageois au yeux du village.
 > vous désignez le Démon et un autre joueur et annoncez que l’un d’entre eux est Enquêteur. Le Démon se révèle alors comme étant Enquêteur et vous apparaissez aux yeux du village comme étant tous les deux dans le camp des gentils. 
 

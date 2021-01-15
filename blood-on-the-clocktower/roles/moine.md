@@ -2,8 +2,13 @@
 
 # Moine (Monk)
 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing)
+#### Villageois
 #### Alignement : gentil
 #### Rôle de protection
+#### Réveillé toutes les nuits (sauf la première)
+
+### Description
 Chaque nuit, choisissez un autre joueur. Il est à l’abri du Démon cette nuit.
 
 ### Exemple

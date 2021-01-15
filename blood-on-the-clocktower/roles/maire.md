@@ -2,8 +2,13 @@
 
 # Maire (Mayor)
 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing) - [Deadly Penance Day](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/deadly-penance-day)
+#### Villageois
 #### Alignement : gentil
- 
+#### Rôle de protection
+#### Jamais réveillé
+
+### Description
 Vous avez deux capacités : 
 S’il reste 3 joueurs vivant (dont vous) et qu’aucune exécution n’a lieu, victoire du Village ! 
 

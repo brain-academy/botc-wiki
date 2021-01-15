@@ -2,8 +2,13 @@
 
 # Croque Mort (Undertaker)
 
-#### Alignement : gentil
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing)
+#### Villageois
+#### Alignement : Gentil
 #### Rôle de détection
+#### Réveillé chaque nuit s'il y a eut une execution
+
+### Description
 Chaque nuit, vous apprenez le rôle du joueur qui vient d’être exécuté.
 
 ### Exemple 

@@ -2,10 +2,13 @@
 
 # Sorcière (Witch)
 
-#### Modules : Deadly Penance Day - Sects & Violets
+#### Modules : [Sects & Violets](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/sects-and-violets) - [Deadly Penance Day](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/deadly-penance-day)
+#### Sbire
 #### Alignement : Maléfique
-#### Se réveille chaque nuit
+#### Rôle maléfique actif
+#### Réveillé toutes les nuits
 
+### Description
 Chaque nuit, lancez votre malédiction sur un joueur. Si celui-ci nomine la jour d’après, il meurt immédiatement. 
 S’il reste 3 joueurs en jeu, votre capacité ne fonctionne plus.
 
@@ -41,10 +44,6 @@ Une autre option intéressante est de prendre le Sage (Sects & Violets), dont la
 
 - Cachez votre identité de Sorcière pour crédibiliser les bluffs de vos acolytes Maléfiques. Lorsqu’une Sorcière est en jeu, cela devient trop évident de le deviner si un joueur meurt de suite s’il a nominé. Dans Sects & Violets, si votre Démon et un autre Sbire bluffent respectivement n’importe quel rôle de Gentil et le Bon Jumeau, le fait de révéler que vous êtes en jeu évente complètement leur bluff et dévoile leurs mensonges.
 N’oubliez pas que vous pouvez maudire un joueur mort, cela cachera votre capacité au Village.
-
-
-
-
 
 
 

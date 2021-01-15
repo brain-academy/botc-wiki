@@ -2,9 +2,14 @@
 
 # Baron (Baron)
 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing) - [Deadly Penance Day](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/deadly-penance-day)
+#### Sbire
 #### Alignement : Maléfique
+#### Rôle maléfique passif
 #### Ne se réveille jamais la nuit
 
+
+### Description
 Par sa seule présence dans la composition d’un Village, le Baron change le nombre d'Étrangers présents en jeu.
 
 Il y a 2 Étrangers en plus en jeu et 2 Villageois en moins
@@ -16,7 +21,7 @@ Il y a 2 Étrangers en plus en jeu et 2 Villageois en moins
 > La partie est composée de 15 joueurs, dont 9 Villageois, 2 Étrangers, 3 Sbires et 1 Démon. Comme le Baron est en jeu, le Conteur doit ajouter un Soulard et un Ermite. Il décide de retirer le jeton du Moine et d’ajouter un jeton d’Ermite. Il ajoute ensuite au Soûlard le jeton de rappel “est le Soûlard” car dans cette partie, un joueur n’est pas un Villageois, il est un Étranger : le Soûlard. Tous les jetons de personnage sont ensuite placés dans le sac pour être tirés par les joueurs.
 
 
-### Mécaniques
+### Mécaniques et conseils
 - Votre capacité est effective avant même que le jeu ne commence. Cela veut dire que vous n’avez absolument rien d’autre à faire que d’aider votre Démon à gagner ! Amusez-vous bien ! Clamez haut et fort être un rôle de Villageois déjà en jeu afin de les rendre maléfiques aux yeux du Village ! Mentez ! Faites passer les Gentils pour Maléfiques et les Mauvais pour Gentils en révélant des informations compromettantes, en créant des contre-bluff ou en faisant preuve d’espièglerie créative. Vous êtes encouragés à faire ce que vous voulez puisque vous n’avez rien à perdre !
 
 - Etant donné que vous incorporez des Étrangers dans la partie et que ces joueurs révèleront quasi-systématiquement être des Étrangers, prétendre être un Étranger vous-même sèmera le chaos. Si un Soûlard est en jeu, seuls un vrai Étranger et vous-même auront affirmé être des Étrangers - dans cette situation, les Gentils sauront qu’un Baron est en jeu mais penseront que vous êtes effectivement un Étranger puisqu’il semble y avoir 2 Étrangers de plus que prévu. Si, cependant, il n’y a pas de Soûlard en jeu, alors il semblera y avoir un Étranger de trop et les gentils voudront probablement exécuter les 3 Etrangers puisqu’ils savent qu’au moins un est Maléfique. Et être responsable de l’exécution de trois joueurs (vous compris) est une bonne façon de commencer une partie et de donner l’avantage à votre équipe. 

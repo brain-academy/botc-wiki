@@ -2,8 +2,13 @@
 
 # Soldat (Soldier)
 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing)
+#### Villageois
 #### Alignement : gentil
 #### Rôle de protection
+#### Jamais reveillé
+
+### Description
 
 Vous êtes à l’abri du Démon, il ne peut vous manger la nuit.
  

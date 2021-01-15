@@ -2,8 +2,9 @@
 
 # Archiviste (Librarian)
 
-#### Modules : 
-#### Alignement : gentil 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing)
+#### Villageois
+#### Alignement : Gentil 
 #### Rôle de première nuit
 #### Réveillé seulement la première nuit
 
@@ -12,8 +13,11 @@ La première nuit, le Conteur vous désigne 2 joueurs et  vous donne ensuite le 
  
 ### Exemples  
 > John (Vertueux) et Matthieu (Baron) sont montrés par le Conteur à l’Archiviste qui aura l’information qu’un des deux joueurs est le Vertueux
+
 > S’il n’y a pas d’Etranger dans la partie,  l’archiviste aura l’information “0” par le Conteur
+
 > Rémi (Cuistot) et Sandy (Pucelle) sont montrés par le Conteur à la Gouvernante qui aura l’information qu’un des deux joueurs est le Cuistot. 
+
 > Tia (qui est Soûlard) pense qu’elle est le Moine et Lucy est le Croque Mort. L’Archiviste apprend qu’entre Tia et Lucy se trouve le Soûlard (point mécanique : L’Archiviste apprend le vrai rôle du joueur, en l’occurence que Tia est le Soûlard)
 
 
@@ -36,7 +40,7 @@ La première nuit, le Conteur vous désigne 2 joueurs et  vous donne ensuite le 
 
 - Donner vos informations gratuitement incitera les autres joueurs à avoir confiance en vous mais peut-être n’aurez vous pas confiance en les autres : il est toujours possible que ce soit un joueur maléfique qui rebondisse sur votre information et se mette à bluffer le rôle que vous lui avez communiqué. Par contre, si vous demandez à certains joueurs de vous révéler leur rôle et que cela coïncide avec les informations obtenues du Conteur, vous pourrez leur accorder votre confiance mais eux pourraient être amenés à moins vous faire confiance. Essayez de trouver le juste milieu en donnant des informations partielles des deux côtés. Par exemple, échanger une liste de quelques rôles potentiels et demandez-lui de vous dévoiler quel rôle il pense que vous êtes.
  
-### Bluffer le rôle d’Archiviste en tant que Maléfique
+### Bluffer le rôle d’Archiviste
 
 - Vous pouvez utiliser vos informations pour soutenir un acolyte maléfique en le faisant passer pour un innocent aux yeux du village, vous apportez de la crédibilité au rôle qu’il s’est approprié (particulièrement s’il a choisi Vertueux ou Ermite), cela  vous permettra aussi d’échanger des informations avec lui et de soutenir vos théories respectives parce que vous êtes tous deux identifiés comme gentils.
 

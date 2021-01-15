@@ -2,8 +2,13 @@
 
 # Cuistot (Chef)
 
-#### Alignement Gentil
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing) - [Deadly Penance Day](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/deadly-penance-day)
+#### Villageois
+#### Alignement : Gentil
 #### Rôle de première nuit
+#### Réveillé seulement la première nuit
+
+### Description
 
 La première nuit, le Conteur vous indique combien il y a de joueurs maléfiques assis côte à côte dans la partie
  
@@ -33,9 +38,7 @@ La première nuit, le Conteur vous indique combien il y a de joueurs maléfiques
 
 
 
-#### Bluffer le Cuistot en tant que maléfique
-
-Gardez en tête plusieurs éléments :
+#### Bluffer le Cuistot
 
 - Annoncer qu’il y a soit “0” ou “1” paire de joueurs maléfiques assis l’un à côté de l’autre est assez commun. Des annonces plus élevées (2-3 ou +) étant statistiquement plus rares, vous pourriez vite devenir suspect. Faites aussi attention à ce que le nombre de paires annoncées soit cohérent avec le nombre de joueurs maléfiques dans la partie.
 

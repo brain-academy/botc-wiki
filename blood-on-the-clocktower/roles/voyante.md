@@ -2,20 +2,27 @@
 
 # Voyante (Fortune Teller)
 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing)
+#### Villageois
 #### Alignement : gentil
 #### Rôle de détection
+#### Réveillé toutes les nuits
 
-
+### Description
 Chaque nuit, choisissez 2 joueurs et vous apprenez si l’un d’eux est un Démon (et uniquement Démon, vous ne détectez pas les Sbires).
 Le Conteur choisit un des joueurs “gentil” comme étant un faux-positif et vous pouvez voir l’Ermite comme étant le Démon. Le faux positif est déterminé à l’avance par le Conteur et ne changera pas durant toute la partie.
  
 ### Exemple
 > La Voyante choisit le Moine et le Croque-Mort, elle obtient un “non” du Conteur
+
 > La Voyante choisit l’Imp et l’Empathique, elle obtient un “oui”
+
 > La Voyante choisit l’Imp en vie et l’ancien Imp à présent mort, elle obtient un“oui”
 
 > La Voyante choisit l’ancien Imp à présent mort et le Cuistot, elle obtient un “oui” car le Imp s’est réincarné ailleurs mais son rôle de Imp persiste 
+
 > La Voyante se choisit elle-même et le Vertueux. Le Vertueux est le faux positif, elle obtient un “oui”
+
 > La Voyante choisit l’Ermite et le Gardien, elle peut obtenir un “oui”
 
 

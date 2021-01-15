@@ -1,8 +1,14 @@
 <img src="https://github.com/brain-academy/wiki/blob/master/public/img/blood-on-the-clocktower/roles/poisoner.png?raw=true" height="150"> 
 
 # Empoisonneur (Poisoner)
+
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing)
+#### Sbire
 #### Alignement : Maléfique
+#### Rôle maléfique actif
 #### Réveillé toutes les nuits
+
+### Description
 Vous êtes un Maléfique. Chaque nuit, choisissez n’importe quel joueur : sa capacité ne fonctionne pas cette nuit ainsi que le jour suivant.
 
 ### Exemple

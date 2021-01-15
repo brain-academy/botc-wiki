@@ -2,9 +2,14 @@
 
 # Vertueux (Saint)
 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing) - [Deadly Penance Day](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/deadly-penance-day)
+#### Etranger
 #### Alignement : Gentil
+#### Rôle inclassable
+#### Jamais réveillé
 
-Vous êtes un Etranger. Si vous mourez de jour par exécution, vous perdez et le Village également.
+### Description
+Si vous mourez de jour par exécution, vous perdez et le Village également.
 
 
 ### Exemple

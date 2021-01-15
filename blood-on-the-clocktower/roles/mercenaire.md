@@ -2,8 +2,13 @@
 
 # Mercenaire (Slayer)
 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing)
+#### Villageois
 #### Alignement : Gentil
+#### Rôle offensif
+#### Jamais réveillé
 
+### Description
 Une fois par partie, à n’importe quel moment de la journée, choisissez publiquement un joueur. Si c’est un Démon, il meurt.
 
 

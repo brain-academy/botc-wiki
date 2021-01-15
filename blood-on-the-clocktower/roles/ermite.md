@@ -2,8 +2,14 @@
 
 # Ermite (Recluse)
 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing)
+#### Etranger
 #### Alignement : Gentil
+#### Rôle inclassable
+#### Jamais réveillé
 
+
+### Description
 Vous êtes un Etranger et le Conteur vous fait généralement reconnaître en tant que Maléfique (Sbire ou Démon) à tous les rôles qui vous verront, même si vous êtes mort.
 
 
@@ -33,7 +39,7 @@ Vous êtes un Etranger et le Conteur vous fait généralement reconnaître en ta
 - Si les joueurs ont de forts soupçons sur vous et veulent vraiment vous exécuter, dans ce cas-là il faut accepter de se sacrifier avant le dernier jour. Vous pouvez même voter pour votre exécution. Si le Village pense que vous êtes Maléfique, mourir avant le dernier jour permettra aux Gentils de vous enlever de la liste potentielle de Démon . Il vaut mieux se sacrifier que de rester suspect et de se faire exécuter le dernier jour, ce qui ferait perdre votre camp.
 
 
-### Bluffer l’Ermite
+### Bluffer l’Ermite 
 - “Je ne suis pas Maléfique, c’est juste que je suis vu comme Maléfique”. Puisque l’Ermite est vu comme Maléfique, c'est une excuse toute trouvée. Cela peut vous éviter d’être sous les projecteurs de rôles comme l'Empathique, la Voyante et même l'Enquêteur.
 
 - Montrez vous aussi proactif que possible. Dites rapidement que vous êtes l’Ermite et aider à trouver les autres Etrangers. Si le Village vous croit gentil, il aura intérêt à vous garder en vie même si vous empêchez leur capacité de fonctionner correctement dans certains cas.

@@ -2,7 +2,13 @@
 
 # Soûlard (Drunk)
 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing) - [Deadly Penance Day](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/deadly-penance-day)
+#### Etranger
 #### Alignement : gentil
+#### Rôle inclassable
+#### Réveillé de la même manière que le rôle qu'il pense être
+
+### Description
 
 Vous pensez que vous avez un rôle de Villageois mais votre capacité ne fonctionne pas car vous ne savez pas que vous êtes le Soûlard et par définition ivre.
 
@@ -55,5 +61,4 @@ L’ivresse : un joueur qui est en état d’ivresse l’ignore. L’ivresse fai
 - Si vous voulez qu’un de vos acolytes vienne confirmer votre bluff de Soûlard, dites-lui de se dévoiler en tant qu’Archiviste. Le Gardien ou le Croque-Mort peuvent aussi vous confirmer en tant que Soûlard mais cela implique que l’un d’entre vous ait à mourir pour que cela fonctionne.
 
 - Si vous avez planifié de bluffer le Soûlard plus tard dans la partie, donnez les informations inverses que vous aimeriez que les Gentils pensent.
-
-Exemple : vous prétendez être l’Empathique et plus tard dans la partie, vous voulez faire exécuter vos voisins qui sont Gentils. Annoncez avoir reçu “0” du Conteur puis persuadez le Village que vous êtes en réalité le Soûlard. Ainsi le “0” obtenu précédemment passe pour faux et au moins un de vos voisins passera pour Maléfique. Avec un peu de chance, vous pourrez peut-être même réussir à faire exécuter les deux !
+> Vous prétendez être l’Empathique et plus tard dans la partie, vous voulez faire exécuter vos voisins qui sont Gentils. Annoncez avoir reçu “0” du Conteur puis persuadez le Village que vous êtes en réalité le Soûlard. Ainsi le “0” obtenu précédemment passe pour faux et au moins un de vos voisins passera pour Maléfique. Avec un peu de chance, vous pourrez peut-être même réussir à faire exécuter les deux !

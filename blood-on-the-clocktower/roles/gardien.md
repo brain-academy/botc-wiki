@@ -2,8 +2,13 @@
 
 # Gardien (Ravenkeeper)
 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing)
+#### Villageois
 #### Alignement : Gentil
 #### Rôle de détection
+#### Réveillé la nuit où il meurt
+
+### Description
 
 Si vous mourez pendant la nuit, vous choisissez un joueur et apprenez son rôle
 

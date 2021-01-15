@@ -1,8 +1,14 @@
 <img src="https://github.com/brain-academy/wiki/blob/master/public/img/blood-on-the-clocktower/roles/virgin.png?raw=true" height="150"> 
 
-# Pucelle (Virgon)
+# Pucelle (Virgin)
 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing)
+#### Villageois
 #### Alignement : gentil
+#### Rôle inclassable
+#### Jamais réveillé
+
+### Description
 La première fois que vous êtes mis en nomination, si l’accusateur est un Villageois, il est immédiatement exécuté.
 
 ### Exemple 

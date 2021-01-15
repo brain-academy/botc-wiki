@@ -2,9 +2,13 @@
 
 # Assassin (Assassin) 
 
+#### Modules : [Bad Moon Rising](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/bad-moon-rising) - [Deadly Penance Day](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/deadly-penance-day)
+#### Sbire
 #### Alignement : Maléfique
+#### Rôle maléfique actif
 #### Se réveille toutes les nuits jusqu’à l’utilisation de sa capacité
 
+### Description
 Peut utiliser sa capacité une seule fois dans la partie
 
 Une fois par partie, choisissez un joueur : il mourra, même si pour une raison ou une autre il ne devrait pas. 
@@ -15,13 +19,13 @@ Le pouvoir de l’Assassin surpasse toutes les mécaniques de protection.
 ### Exemple 
 
 
-- Les trois premières nuits, l’Assassin est réveillé mais décide de ne pas utiliser ses capacités. La quatrième nuit, il choisit de tuer le Fou. Malgré la capacité du Fou à pouvoir survivre à sa première mort, il meurt et reste bien mort.
+> Les trois premières nuits, l’Assassin est réveillé mais décide de ne pas utiliser ses capacités. La quatrième nuit, il choisit de tuer le Fou. Malgré la capacité du Fou à pouvoir survivre à sa première mort, il meurt et reste bien mort.
 
-- Les deux voisins de l’Herboriste sont Gentils. L’Assassin cible un des deux voisins qui mourra malgré la capacité de protection de l’Herboriste.
+> Les deux voisins de l’Herboriste sont Gentils. L’Assassin cible un des deux voisins qui mourra malgré la capacité de protection de l’Herboriste.
 
-- Le Ménestrel est en jeu. Le Conspirateur meurt par exécution. Cette nuit, l’Assassin choisit de tuer la Gitane mais elle reste en vie grâce à la capacité du Ménestrel qui a rendu ivre tous les joueurs jusqu’au prochain crépuscule.  
+> Le Ménestrel est en jeu. Le Conspirateur meurt par exécution. Cette nuit, l’Assassin choisit de tuer la Gitane mais elle reste en vie grâce à la capacité du Ménestrel qui a rendu ivre tous les joueurs jusqu’au prochain crépuscule.  
 
-- L’Assassin, empoisonné par la Courtisane, cible la Brute. L’Assassin n’a alors pas sa capacité active ; la Brute reste en vie mais change d’alignement en devenant Maléfique. L’Assassin perd alors sa capacité définitivement.
+> L’Assassin, empoisonné par la Courtisane, cible la Brute. L’Assassin n’a alors pas sa capacité active ; la Brute reste en vie mais change d’alignement en devenant Maléfique. L’Assassin perd alors sa capacité définitivement.
 
 
 ### Mécanismes et conseils

@@ -2,10 +2,13 @@
 
 # Traître
 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing) - [Deadly Penance Day](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/deadly-penance-day)
+#### Sbire
 #### Alignement : Maléfique
+#### Rôle maléfique passif
 #### Réveillé toutes les nuits
 
-
+### Description
 Vous avez deux capacités. 
 
 Chaque nuit, vous êtes réveillé en dernier et vous avez accès au Grimoire : vous voyez tous les joueurs et leurs rôles ainsi que toutes les actions qui se déroulées dans la nuit.  

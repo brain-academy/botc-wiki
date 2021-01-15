@@ -2,8 +2,11 @@
 
 # Parieur (Gambler)
 
+#### Modules : [Bad Moon Rising](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/bad-moon-rising) - [Deadly Penance Day](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/deadly-penance-day)
+#### Villageois
 #### Alignement : Gentil
-#### Se réveille toutes les nuits, sauf la première
+#### Rôle d'information
+#### Réveillé toutes les nuits (sauf la première)
 
 Chaque nuit, sauf la première, vous indiquez au Conteur un joueur et pariez sur son rôle.
 Si votre pari est juste, vous vivez. S’il est faux, vous mourrez.

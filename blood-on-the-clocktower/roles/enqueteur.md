@@ -2,9 +2,14 @@
 
 # Enquêteur (Investigator)
 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing) - [Deadly Penance Day](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/deadly-penance-day)
+#### Villageois
 #### Alignement Gentil
 #### Rôle de première nuit
+#### Réveillé seulement la première nuit
 
+
+### Description
 La première nuit, le Conteur vous désigne 2 joueurs. Il vous donne ensuite le rôle de sbire de l’un de deux.
 
 ### Exemples
@@ -34,9 +39,7 @@ La première nuit, le Conteur vous désigne 2 joueurs. Il vous donne ensuite le 
 - D’une manière générale, si un des joueurs indiqués par le Conteur est un Sbire, cela ne veut pas dire que le second est nécessairement gentil !
 
 
-### Bluffer l'Enquêteur en tant que Maléfique
-
-Gardez en tête plusieurs éléments :
+### Bluffer l'Enquêteur
 
 - Choisissez deux joueurs gentils et dites que l’un d’entre eux est un Sbire. En choisissant l’Empoisonneur ou la Croqueuse d’homme, vous devriez motiver suffisamment le village exécuter le Sbire “repéré”. Le Village peut ne pas vouloir exécuter immédiatement un Baron ou un Traître.
 

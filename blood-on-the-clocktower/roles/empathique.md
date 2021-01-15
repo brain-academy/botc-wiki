@@ -2,9 +2,13 @@
 
 # Empathique (Empath)
 
-#### Alignement Gentil
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing)
+#### Villageois
+#### Alignement : Gentil
 #### Rôle de détection
+#### Réveillé toutes les nuits
 
+### Description
 Chaque nuit, vous apprenez combien de vos voisins survivants sont maléfiques
  
 ### Exemple
@@ -39,7 +43,7 @@ Chaque nuit, vous apprenez combien de vos voisins survivants sont maléfiques
 
 - Faites attention au Traître ! Il peut être vu comme gentil et du coup biaiser l’information que vous avez reçue. De même, l’Ermite peut être vu maléfique, vous penserez alors être assis d’un maléfique, à vous de chercher les alignements.
  
-### Bluffer l’Empathique en tant que maléfique
+### Bluffer l’Empathique
 Gardez en tête plusieurs éléments :
 - Annoncer que vous avez reçu un “0” incitera vos voisins à vous faire confiance et à vous croire. Vous pourrez alors commencer à bâtir une relation de confiance avec eux et les induire en erreur. Cette stratégie peut aussi permettre de dédouaner un acolyte maléfique qui serait votre voisin, ce qui vous donne aussi une bonne raison de parler avec lui en privé.
 

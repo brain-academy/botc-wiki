@@ -2,9 +2,11 @@
 
 # Marin (Sailor)
 
+#### Modules : [Bad Moon Rising](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/bad-moon-rising) - [Deadly Penance Day](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/deadly-penance-day)
+#### Villageois
 #### Alignement Gentil
 #### Rôle de protection
-#### Se réveille toutes les nuits
+#### Réveillé toutes les nuits
 
 ### Description
 

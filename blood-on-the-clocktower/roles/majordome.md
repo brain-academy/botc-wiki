@@ -2,9 +2,15 @@
 
 # Majordome (Butler)
 
+#### Modules : [Trouble Brewing](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/trouble-brewing)
+#### Etranger
 #### Alignement : gentil
+#### Rôle inclassable
+#### Réveillé toutes les nuits
 
-Dans Blood On The Clock Tower, “voter” signifie voter oui contre un joueur pour l’exécuter.
+### Description
+
+Rappel : dans Blood On The Clock Tower, “voter” signifie voter oui contre un joueur pour l’exécuter.
 
 Chaque nuit, choisissez un autre joueur qui devient votre maître. La prochaine journée, vous ne pourrez voter que lorsque votre maître votera. 
 > S’il vote non, vous êtes obligé de voter non.
