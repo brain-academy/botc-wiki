@@ -6,21 +6,21 @@
 
 [Enqueteur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/enqueteur)
 
-[Chasseur de primes](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/chasseurdeprimes)`En cours`
+[Chasseur de prime](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/chasseurdeprime)
 
-[Marin](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/marin)`En cours`
+[Marin](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/marin)
 
-[Predicateur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/predicateur)`En cours`
+[Predicateur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/predicateur)
 
-[Chef de secte](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/chefdesecte) `En cours`
+[Chef de secte](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/chefdesecte)
 
-[Crieur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/crieur) `En cours`
+[Crieur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/crieur)
 
 [Parieur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/parieur)
 
-[Exorciste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/exorciste)`En cours`
+[Exorciste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/exorciste)
 
-[Faussaire](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/faussaire) `En cours`
+[Faussaire](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/faussaire)
 
 [Soldat](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/soldat)
 
@@ -30,9 +30,9 @@
 
 ## Etrangers
 
-[Barbier](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/barbier) `En cours`
+[Barbier](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/barbier)
 
-[Politicien](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/politicien) `En cours`
+[Politicien](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/politicien)
 
 [Soulard](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/soulard)
 
