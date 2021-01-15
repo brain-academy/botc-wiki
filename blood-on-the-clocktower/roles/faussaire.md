@@ -1,4 +1,4 @@
-<img src="https://github.com/brain-academy/wiki/blob/master/public/img/blood-on-the-clocktower/roles/Philosopher.png?raw=true" height="150"> 
+<img src="https://github.com/brain-academy/wiki/blob/master/public/img/blood-on-the-clocktower/roles/philosopher.png?raw=true" height="150"> 
 
 # Faussaire (Philosopher)
 
