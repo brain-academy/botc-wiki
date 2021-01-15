@@ -1,9 +1,13 @@
 <img src="https://github.com/brain-academy/wiki/blob/master/public/img/blood-on-the-clocktower/roles/librarian.png?raw=true" height="150"> 
 
 # Archiviste (Librarian)
- 
+
+#### Modules : 
 #### Alignement : gentil 
 #### Rôle de première nuit
+#### Réveillé seulement la première nuit
+
+### Description :
 La première nuit, le Conteur vous désigne 2 joueurs et  vous donne ensuite le rôle d’Etranger de l’un des deux.
  
 ### Exemples  
