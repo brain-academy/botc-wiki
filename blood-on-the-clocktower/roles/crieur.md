@@ -56,4 +56,5 @@ Capitalisez sur un “Oui” plutôt, cela signifie que vous avez définitivemen
 - Un Jumeau Maléfique est en jeu ? Dites que le Jumeau Gentil a été détecté par votre capacité ! Alors que le Village va quand même se méfier pour exécuter ce dernier, ceci peut-être la première pierre d’une infâme campagne de diffamation qui peut vous mener à une victoire inattendue.
 
 - Une fois que tous les”Sbires sont morts, n’accusez pas les Gentils d’être des Sbires. Dans le module “Sects & Violets”, les résultats des actions des Sbires sont publiques, comme la Vieille Chouette qui changent le rôle d’un joueur ou la Sorcière qui tue les joueurs qui nominent. 
-Si les Gentils pensent réellement que tous les Sbires sont morts du fait que plus aucun de leurs effets n’impactent le Village depuis un certain temps, tout Crieur qui annoncerait qu’un Sbire serait encore en vie paraîtrait très suspect aux yeux des Gentils.      
+
+- Si les Gentils pensent réellement que tous les Sbires sont morts du fait que plus aucun de leurs effets n’impactent le Village depuis un certain temps, tout Crieur qui annoncerait qu’un Sbire serait encore en vie paraîtrait très suspect aux yeux des Gentils.      
