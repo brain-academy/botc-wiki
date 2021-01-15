@@ -5,8 +5,8 @@
 #### Modules : [Sects & Violets](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/sects-and-violets) - [Deadly Penance Day](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/deadly-penance-day)
 #### Villageois
 #### Alignement : Gentil 
-#### Rôle d"information
-#### Réveillé toutes les nuits sauf la première
+#### Rôle d'information
+#### Réveillé toutes les nuits (sauf la première)
 
 ### Description :
 Chaque nuit, sauf la première, vous indiquez au Conteur un joueur et pariez sur son rôle.
