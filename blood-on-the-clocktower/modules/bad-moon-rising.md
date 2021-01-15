@@ -2,13 +2,13 @@
 
 ## Villageois
 
-[Mamie](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/mamie)
+[Mamie](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/mamie) `En cours`
 
 [Marin](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/marin)
 
-[Bonne](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/bonne)
+[Bonne](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/bonne) `En cours`
 
-[Exorciste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/exorciste) `En cours`
+[Exorciste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/exorciste)
 
 [Aubergiste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/aubergiste) `En cours`
 
@@ -26,7 +26,7 @@
 
 [Pacifiste](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/pacifiste) `En cours`
 
-[Fou](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/fou) `En cours`
+[Fou](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/fou)
 
 ## Etrangers
 
