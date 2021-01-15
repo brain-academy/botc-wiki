@@ -4,13 +4,13 @@
 
 [Cuistot](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/cuistot)
 
-[Enqueteur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/enqueteur)
+[Enquêteur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/enqueteur)
 
 [Chasseur de Prime](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/chasseurdeprime)
 
 [Marin](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/marin)
 
-[Predicateur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/predicateur)
+[Prédicateur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/predicateur)
 
 [Chef de Secte](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/chefdesecte)
 
