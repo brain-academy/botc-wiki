@@ -3,6 +3,7 @@
 #### Modules :[Deadly Penance Day](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/deadly-penance-day)
 #### Villageois
 #### Alignement : Gentil
+#### Rôle offensif
 #### Réveillé toutes les nuits
 
 ### Description
