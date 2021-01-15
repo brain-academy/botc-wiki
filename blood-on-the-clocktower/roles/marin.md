@@ -17,7 +17,9 @@ Si le joueur que vous avez choisi est un Etranger ou un Maléfique : vous vous �
 
 ### Exemple
 > Le Marin choisit l’Exorciste, et le Conteur décide que l’Exorciste est ivre. Durant la nuit, le Marin se fait attaquer par le Shabaloth. Le Marin reste en vie. Le jour suivant, le Marin se fait exécuter par le Village mais reste en vie.
+
 > Durant le jour, la Commère fait une révélation publique qu’elle pense être fausse, alors qu’elle était en réalité vraie. La nuit, la capacité de la Commère s’active donc et tue un joueur. Le Marin s’étant rendu ivre durant cette nuit, le Conteur décide que le Marin meurt.
+
 > Le Marin choisit le Conspirateur mais le Conteur décide que le Marin est ivre. Le jour suivant, le Marin demande à être exécuté afin de “prouver qu’il est bien le Marin”, mais meurt car il est ivre.
 
 ### Mécaniques et conseils
