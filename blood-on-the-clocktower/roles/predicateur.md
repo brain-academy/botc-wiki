@@ -1,3 +1,5 @@
+<img src="https://github.com/brain-academy/wiki/blob/master/public/img/blood-on-the-clocktower/roles/preacher.png?raw=true" height="150"> 
+
 # Predicateur (Preacher)
 
 #### Modules :[Deadly Penance Day](https://brain-academy.github.io/wiki/blood-on-the-clocktower/modules/deadly-penance-day)
