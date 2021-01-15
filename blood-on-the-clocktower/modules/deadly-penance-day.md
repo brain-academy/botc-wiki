@@ -6,13 +6,13 @@
 
 [Enqueteur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/enqueteur)
 
-[Chasseur de prime](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/chasseurdeprime)
+[Chasseur de Prime](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/chasseurdeprime)
 
 [Marin](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/marin)
 
 [Predicateur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/predicateur)
 
-[Chef de secte](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/chefdesecte)
+[Chef de Secte](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/chefdesecte)
 
 [Crieur](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/crieur)
 
@@ -30,11 +30,11 @@
 
 ## Etrangers
 
-[Barbier](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/barbier) `En cours`
+[Barbier](https://bloodontheclocktower.com/wiki/Barber) `En cours`
 
 [Politicien](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/politicien)
 
-[Soulard](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/soulard)
+[Soûlard](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/soulard)
 
 [Vertueux](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/vertueux)
 
@@ -46,7 +46,7 @@
 
 [Sorcière](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/sorciere)
 
-[Traitre](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/traitre) 
+[Traître](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/traitre) 
 
 ## Démon
 
