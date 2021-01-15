@@ -34,4 +34,4 @@ Votre capacité est double :
 - Dans le cas où la cible du Chasseur de Prime devienne Gentil, cette personne ne peut plus être la cible du chasseur de prime. Le Conteur réveillera le Chasseur de Prime pour lui indiquer une nouvelle cible Maléfique.
 > Kaina (Chef de Secte) était maléfique parce que assise à côté de deux joueurs maléfiques. La cible précédente du Chasseur de Prime meurt, et le conteur indique Kaina comme nouvelle cible. Pendant la journée, un voisin de Kaina est exécuté et le nouveau voisin de Kaina est Gentil.
 
->Le Conteur choisit alors pendant la nuit de faire changer l’alignement de Kaina (Chef de Secte qui est assise à côté d’un joueur gentil). Kaina est devenue gentille et ne peut donc plus être la cible du Chasseur de Prime. Le Conteur réveille pendant la nuit le Chasseur de Prime pour lui indiquer une nouvelle cible.
+> Le Conteur choisit alors pendant la nuit de faire changer l’alignement de Kaina (Chef de Secte qui est assise à côté d’un joueur gentil). Kaina est devenue gentille et ne peut donc plus être la cible du Chasseur de Prime. Le Conteur réveille pendant la nuit le Chasseur de Prime pour lui indiquer une nouvelle cible.
