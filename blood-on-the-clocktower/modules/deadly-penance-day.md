@@ -30,7 +30,7 @@
 
 ## Etrangers
 
-[Barbier](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/barbier)
+[Barbier](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/barbier) `En cours`
 
 [Politicien](https://brain-academy.github.io/wiki/blood-on-the-clocktower/roles/politicien)
 
