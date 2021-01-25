@@ -1,0 +1,68 @@
+const base_url = '/docs/roles'
+
+export default class Role {
+
+    private constructor(readonly name: string, private readonly _filename: string = name.toLowerCase()) { }
+
+    get path(): string {
+        return `${base_url}/${this._filename}`
+    }
+
+    static readonly ARCHIVISTE = new Role('Archiviste')
+    static readonly ASSASSIN = new Role('Assassin')
+    static readonly AUBERGISTE = new Role('Aubergiste')
+    static readonly AVOCAT_DU_DIABLE = new Role('Avocat du Diable', 'avocat-du-diable')
+    static readonly BARBIER = new Role('Barbier')
+    static readonly BARON = new Role('Baron')
+    static readonly BONNE = new Role('Bonne')
+    static readonly BRICOLEUR = new Role('Bricoleur')
+    static readonly BRUTE = new Role('Brute')
+    static readonly CHASSEUR_DE_PRIMES = new Role('Chasseur de primes', 'chasseur-de-primes')
+    static readonly CHEF_DE_SECTE = new Role('Chef de Secte', 'chef-de-secte')
+    static readonly COMMERE = new Role('Commère', 'commere')
+    static readonly CONSPIRATEUR = new Role('Conspirateur')
+    static readonly COURTISANE = new Role('Courtisane')
+    static readonly CRIEUR = new Role('Crieur')
+    static readonly CROQUE_MORT = new Role('Croque-mort', 'croque-mort')
+    static readonly CROQUEUSE_D_HOMMES = new Role('Croqueuse d\'hommes', 'croqueuse-d-homme')
+    static readonly CUISTOT = new Role('Cuistot')
+    static readonly EMPATHIQUE = new Role('Empathique')
+    static readonly EMPOISONNEUR = new Role('Empoisonneur')
+    static readonly ENQUETEUR = new Role('Enquêteur', 'enqueteur')
+    static readonly ERMITE = new Role('Ermite')
+    static readonly EXORCISTE = new Role('Exorciste')
+    static readonly FAUSSAIRE = new Role('Faussaire')
+    static readonly FOU = new Role('Fou')
+    static readonly GARDIEN = new Role('Gardien')
+    static readonly GITANE = new Role('Gitane')
+    static readonly GOUVERNANTE = new Role('Gouvernante')
+    static readonly HERBORISTE = new Role('Herboriste')
+    static readonly IMP = new Role('Imp')
+    static readonly LUNATIQUE = new Role('Lunatique')
+    static readonly MAFIEUX = new Role('Mafieux')
+    static readonly MAIRE = new Role('Maire')
+    static readonly MAJORDOME = new Role('Majordome')
+    static readonly MAMIE = new Role('Mamie')
+    static readonly MARIN = new Role('Marin')
+    static readonly MENESTREL = new Role('Ménestrel', 'menestrel')
+    static readonly MERCENAIRE = new Role('Mercenaire')
+    static readonly MOINE = new Role('Moine')
+    static readonly PACIFISTE = new Role('Pacifiste')
+    static readonly PARIEUR = new Role('Parieur')
+    static readonly PO = new Role('Pô', 'po')
+    static readonly POLITICIEN = new Role('Politicien')
+    static readonly POOKA = new Role('Pooka')
+    static readonly PREDICATEUR = new Role('Predicateur')
+    static readonly PROFESSEUR = new Role('Professeur')
+    static readonly PTIT_MONSTRE = new Role('P\'tit Monstre', 'ptit-monstre')
+    static readonly PUCELLE = new Role('Pucelle')
+    static readonly SHABALOTH = new Role('Shabaloth')
+    static readonly SOLDAT = new Role('Soldat')
+    static readonly SORCIERE = new Role('Sorcière', 'sorciere')
+    static readonly SOULARD = new Role('Soûlard', 'soulard')
+    static readonly TRAITRE = new Role('Traître', 'traitre')
+    static readonly VERTUEUX = new Role('Vertueux')
+    static readonly VOYANTE = new Role('Voyante')
+    static readonly ZOMBUUL = new Role('Zombuul')
+
+}

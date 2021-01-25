@@ -1,6 +1,8 @@
 ---
-title: Chef de secte (Cult Leader)
+title: Chef de Secte (Cult Leader)
 ---
+
+import * as Role from '/src/components/role/role-component'
 
 <img src='/img/blood-on-the-clocktower/roles/chef-de-secte.png' height='150' />
 
@@ -20,13 +22,13 @@ Chaque nuit, le Conteur vous indique  votre alignement qui sera calqué sur l’
 
 - Chaque nuit, le Conteur vous réveille pour vous donner votre alignement (Gentil / Maléfique). Votre alignement correspond à celui de l’un de vos voisins, votre alignement pourrait donc potentiellement changer chaque nuit !
 
-> Kaina (Chef de secte) est assise entre Rémi (Traître) et Alex (Enquêteur). En admettant que les voisins de Kaina restent vivants et donc qu’ils ne changent pas, le Conteur réveillera chaque nuit Kaina pour lui donner son alignement :
+> Kaina (<Role.CHEFDESECTE />) est assise entre Rémi (<Role.TRAITRE />) et Alex (<Role.ENQUETEUR />). En admettant que les voisins de Kaina restent vivants et donc qu’ils ne changent pas, le Conteur réveillera chaque nuit Kaina pour lui donner son alignement :
 
-> Nuit 0 : Gentille (le Conteur a sélectionné Alex qui est Enquêteur)
+> Nuit 0 : Gentille (le Conteur a sélectionné Alex qui est <Role.ENQUETEUR />)
 
-> Nuit 1 : Maléfique (le Conteur a sélectionné Rémi qui est Traître)
+> Nuit 1 : Maléfique (le Conteur a sélectionné Rémi qui est <Role.TRAITRE />)
 
-> Nuit 2 : Gentille (le Conteur a sélectionné Rémi qui est Traître, mais vu comme étant Gentil)
+> Nuit 2 : Gentille (le Conteur a sélectionné Rémi qui est <Role.TRAITRE />, mais vu comme étant Gentil)
 
 
 - Lorsque vous changez d’alignement, vous devez jouer vraiment pour l’équipe dont vous faites partie. Si vous êtes Gentil, jouez Gentil, si vous êtes Maléfique, Maléfique ! A noter que si vous êtes Maléfique, vous n’aurez aucune information sur qui est votre Démon et vos acolytes Sbires.
