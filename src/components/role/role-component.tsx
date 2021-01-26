@@ -1,5 +1,5 @@
 import React from 'react'
-import Role from './roles'
+import Role from './role'
 
 const RoleComponent = ({role}: {role: Role}) => (<a href={role.path}>{role.name}</a>)
 
