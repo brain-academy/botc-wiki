@@ -146,9 +146,9 @@
         "signature": "55d7868222288a4054166fecbfbaeee46dd3b1b58e4a118e40e9c8c13a9fbe84",
         "affectsGlobalScope": false
       },
-      "./src/components/module/module.tsx": {
-        "version": "f57431a5ab98911436a62e6cff5ceca5a983ff6151069008ea46afba9f8a1077",
-        "signature": "23dc0e7e0784870cba818ee9e9751b44a0afd31347158ccd2037ed208091d302",
+      "./src/components/doc-component.ts": {
+        "version": "741cc9086ab1417f82c41d362c2ea2b4c8218dcd2a293eef41a0d5d8c5f20005",
+        "signature": "0e162687542c3791f0cadfb02101bc767ca43ebd43c727e1c31772ef922caf5c",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/react/global.d.ts": {
@@ -171,9 +171,19 @@
         "signature": "5eec5df7493ec6ad30cd641228d5ec7a5cc46d86e04a7f5d4f3cc239c6fa05bc",
         "affectsGlobalScope": true
       },
+      "./src/components/module/module.tsx": {
+        "version": "6398ee8f372471802a2b179c8cfd3432a7312d5ccb06ec555095f555940c083d",
+        "signature": "6030c246f42c627a0c87233c1b843774d0ded01896e310de1f7dde87fb2ff981",
+        "affectsGlobalScope": false
+      },
+      "./src/components/module/module-component.tsx": {
+        "version": "47487ff3f632aa353ebe13bee5a750b80d08b0fbb63ce2abe5baec4d391ea96b",
+        "signature": "67553627ad0e4fcfb893627aab6853280f0dc16ca00d95bcad328533ba093c7b",
+        "affectsGlobalScope": false
+      },
       "./src/components/role/role.tsx": {
-        "version": "d9b14d9645abcc53a0cb7f38794320842a13ae268cd733bd7013cb5f16bc757c",
-        "signature": "043c35452d7de5823b1151fa0fd179e7d2fd1ed58fe7ef1349eb5e97d0ca9ca7",
+        "version": "4132704079e04c9ac59c9b4f63ad77059ca6da8fabc4294998a946ec18bce340",
+        "signature": "6124fdc405ecc2c10046e50ddb1d9930c051d40d2dfcb83d77f50af8ca0d8c22",
         "affectsGlobalScope": false
       },
       "./src/components/role/role-component.tsx": {
@@ -725,8 +735,17 @@
         "./node_modules/@types/react/global.d.ts",
         "./node_modules/csstype/index.d.ts"
       ],
-      "./src/components/module/module.tsx": [
+      "./src/components/doc-component.ts": [
         "./node_modules/tslib/tslib.d.ts"
+      ],
+      "./src/components/module/module-component.tsx": [
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/tslib/tslib.d.ts",
+        "./src/components/module/module.tsx"
+      ],
+      "./src/components/module/module.tsx": [
+        "./node_modules/tslib/tslib.d.ts",
+        "./src/components/doc-component.ts"
       ],
       "./src/components/role/role-component.tsx": [
         "./node_modules/@types/react/index.d.ts",
@@ -734,7 +753,8 @@
         "./src/components/role/role.tsx"
       ],
       "./src/components/role/role.tsx": [
-        "./node_modules/tslib/tslib.d.ts"
+        "./node_modules/tslib/tslib.d.ts",
+        "./src/components/doc-component.ts"
       ],
       "./src/pages/index.js": [
         "./node_modules/@docusaurus/module-type-aliases/src/index.d.ts",
@@ -960,6 +980,12 @@
         "./node_modules/@types/prop-types/index.d.ts",
         "./node_modules/@types/react/global.d.ts",
         "./node_modules/csstype/index.d.ts"
+      ],
+      "./src/components/module/module.tsx": [
+        "./src/components/doc-component.ts"
+      ],
+      "./src/components/role/role.tsx": [
+        "./src/components/doc-component.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -1055,6 +1081,8 @@
       "./node_modules/clsx/clsx.d.ts",
       "./node_modules/csstype/index.d.ts",
       "./node_modules/tslib/tslib.d.ts",
+      "./src/components/doc-component.ts",
+      "./src/components/module/module-component.tsx",
       "./src/components/module/module.tsx",
       "./src/components/role/role-component.tsx",
       "./src/components/role/role.tsx",
@@ -1331,6 +1359,14 @@
       ],
       [
         "./node_modules/tslib/tslib.d.ts",
+        1
+      ],
+      [
+        "./src/components/doc-component.ts",
+        1
+      ],
+      [
+        "./src/components/module/module-component.tsx",
         1
       ],
       [

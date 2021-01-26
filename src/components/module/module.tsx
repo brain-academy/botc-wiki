@@ -1,12 +1,8 @@
-const base_url = '/docs/modules'
+import DocComponent from '../doc-component'
 
-export default class Module {
+export default class Module extends DocComponent {
 
-    private constructor(readonly name: string, private readonly _filename: string = name.toLowerCase()) { }
-
-    get path(): string {
-        return `${base_url}/${this._filename}`
-    }
+    protected _base_url = '/docs/modules'
 
     static readonly TROUBLE_BREWING = new Module('Trouble Brewing', 'trouble-brewing')
     static readonly BAD_MOON_RISING = new Module('Bad Moon Rising', 'bad-moon-rising')

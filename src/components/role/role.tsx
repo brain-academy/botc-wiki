@@ -1,12 +1,8 @@
-const base_url = '/docs/roles'
+import DocComponent from '../doc-component'
 
-export default class Role {
+export default class Role extends DocComponent {
 
-    private constructor(readonly name: string, private readonly _filename: string = name.toLowerCase()) { }
-
-    get path(): string {
-        return `${base_url}/${this._filename}`
-    }
+    protected _base_url = '/docs/roles'
 
     static readonly ARCHIVISTE = new Role('Archiviste')
     static readonly ASSASSIN = new Role('Assassin')
