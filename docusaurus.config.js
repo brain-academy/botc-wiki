@@ -7,7 +7,7 @@ module.exports = {
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/TBA.jpg',
+    favicon: 'img/brain-academy-logo.jpg',
     organizationName: 'brain-academy', // Usually your GitHub org/user name.
     projectName: 'wiki', // Usually your repo name.
     themeConfig: {
@@ -16,7 +16,7 @@ module.exports = {
             title: 'Brain Academy',
             logo: {
                 alt: 'Brain Academy logo',
-                src: 'img/TBA.jpg',
+                src: 'img/brain-academy-logo.jpg',
             },
             items: [
                 {
