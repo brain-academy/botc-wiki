@@ -1,5 +1,7 @@
 import DocComponent from '../doc-component'
 
+
+
 export default class Role extends DocComponent {
 
     protected _base_url = '/docs/roles'
