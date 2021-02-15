@@ -15,22 +15,31 @@ import * as Role from '/src/components/role/role-component'
 ### Description
 
 Chaque nuit, choisissez un joueur (différent de la nuit précédente).
+
 Si ce joueur est exécuté aujourd’hui, il ne meurt pas.
 
 ### Exemples
 
 > Durant la nuit, l’<Role.AVOCATDUDIABLE /> se choisit lui-même. Le jour suivant, l’<Role.AVOCATDUDIABLE /> est exécuté mais reste en vie.
+
 > L’<Role.AVOCATDUDIABLE /> protège le <Role.ZOMBUUL />. Le <Role.ZOMBUUL /> est exécuté mais reste en vie, son jeton de vie n’est pas retourné et il apparaît toujours vivant. Le jour suivant, le <Role.ZOMBUUL /> est à nouveau exécuté et apparaît comme mort.
+
 > L’<Role.AVOCATDUDIABLE /> protège la <Role.MAMIE />. La <Role.MAMIE /> est exécutée mais reste en vie. Plus tard, l’<Role.AVOCATDUDIABLE /> protège le <Role.BRICOLEUR />. Le <Role.BRICOLEUR /> est exécuté, mais il meurt tout de même à cause de sa capacité de <Role.BRICOLEUR />. Enfin, l’<Role.AVOCATDUDIABLE /> protège la <Role.GITANE />. Le Magistrat (Voyageur) force son exécution. La <Role.GITANE /> est exécutée mais reste en vie.
 
 ### Mécaniques et conseils
 
 **Vous avez le pouvoir de stopper le Village pendant un tour.** Si vous visez juste, l’exécution du Village n’aura aucun effet et le joueur exécuté ne mourra pas. Un joueur perspicace pourra utiliser cette capacité pour freiner le Village dans sa chasse aux Maléfiques.
+
 **Protégez le Démon - si vous pensez qu’il est sur le point d’être exécuté.** Comme vous devez changer de cible chaque nuit, il est important de protéger le Démon au bon moment. Une journée sans protection peut suffire au Village pour l’exécuter et mettre fin à la partie. Portez attention aux bruits de couloir, à l’orientation de l’enquête et aux rebondissements des derniers jours.
+
 **Si vous survivez jusqu’au dernier jour, protégez le Démon.** Le cas échéant, vous avez presque gagné. Pour autant, ne dévoilez pas votre victoire tout de suite car un Ménestrel ou un <Role.AUBERGISTE /> peut éventuellement vous avoir enivré la nuit précédente ; le Démon ne serait pas protégé et pourrait alors mourir d’exécution. N’ayez pas honte de savourer votre victoire et jouez votre jeu de Maléfique jusqu’au bout.
+
 **Protégez un autre Sbire ou vous-même.** Même si le Démon reste la priorité numéro un, plus il y a de Maléfiques en vie, mieux c’est ! Non seulement ils conservent leur vote, mais leur capacité de Sbire est redoutable, que ce soit le <Role.MAFIEUX />, l’<Role.ASSASSIN /> ou le <Role.CONSPIRATEUR />. Comme pour la protection du Démon, soyez attentif aux tendances du Village et essayez d’anticiper qui sera exécuté le prochain jour. Si vous visez juste, vous gagnez un tour.
+
 **Protégez des joueurs Gentils et jetez la suspicion sur eux.** Ceci est particulièrement efficace si le Village pense que vous êtes en jeu. Même si d’autres effets de protection peuvent protéger un joueur Gentil de l’exécution, un sauvetage bien placé peut amener le groupe à accuser une victime innocente. Si la paranoïa du Village ne suffit pas, n’hésitez pas à construire une histoire pour accentuer la suspicion portée sur ce joueur étrangement protégé.
+
 **Imitez la capacité d’un Villageois.** Grâce à votre pouvoir, vous pouvez vous faire passer pour un rôle de Gentil, comme le <Role.MARIN />, l’<Role.HERBORISTE />, le <Role.PACIFISTE /> ou le <Role.FOU />. Parmi eux, le <Role.PACIFISTE /> est le plus simple à bluffer car son activation est aléatoire, et le Village ne peut pas “tester” votre capacité en exécutant deux fois d’affilée le même joueur. Si vous vous y prenez bien, votre bluff apparaîtra tout à fait vraisemblable.
+
 
 ### Jouez contre l'<Role.AVOCATDUDIABLE />
 **Quand un joueur exécuté survit, menez l’enquête.** Les quatre autres Villageois pouvant protéger de l’exécution sont le <Role.MARIN />, l’<Role.HERBORISTE />, le <Role.PACIFISTE /> et le <Role.FOU />. Si vous pensez que le joueur était Gentil, passez à autre chose. Si vous le pensez Maléfique, exécutez-le à nouveau le jour suivant car l’<Role.AVOCATDUDIABLE /> ne peut pas protéger deux fois la même personne. Enfin, portez attention aux personnes ayant orienté l’exécution vers le joueur protégé. Elles étaient possiblement au courant et la seule explication possible est qu’elles sont Maléfiques.
