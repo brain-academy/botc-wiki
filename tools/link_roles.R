@@ -35,7 +35,7 @@ list_roles <- list_files %>%
   stringr::str_replace("^Sorciere$", "Sorcière") %>%
   stringr::str_replace("^Soûlard$", "Soûlard") %>%
   stringr::str_replace("^Sorciere$", "Sorcière") %>%
-  stringr::str_replace("^Traitre$", "Traître") %>%
+  stringr::str_replace("^Traitre$", "Traître")
 
 # Add a suffix to avoid matching "Po" in whole word as "Pour" or "Pouvoir".
 tags_input <- list_roles %>% paste0("\\b", ., "\\b")
