@@ -27,7 +27,15 @@ list_roles <- list_files %>%
   # Fix "Croqueuse d'hommes".
   stringr::str_replace("^Croqueuse D Homme$", "Croqueuse d'hommes") %>%
   # Fix "Pukka".
-  stringr::str_replace("^Pooka$", "Pukka")
+  stringr::str_replace("^Pooka$", "Pukka") %>%
+  # Fix names with French accents.
+  stringr::str_replace("^Commere$", "Commère") %>%
+  stringr::str_replace("^Enqueteur$", "Enquêteur") %>%
+  stringr::str_replace("^Menestrel$", "Ménestrel") %>%
+  stringr::str_replace("^Sorciere$", "Sorcière") %>%
+  stringr::str_replace("^Soûlard$", "Soûlard") %>%
+  stringr::str_replace("^Sorciere$", "Sorcière") %>%
+  stringr::str_replace("^Traitre$", "Traître") %>%
 
 # Add a suffix to avoid matching "Po" in whole word as "Pour" or "Pouvoir".
 tags_input <- list_roles %>% paste0("\\b", ., "\\b")
