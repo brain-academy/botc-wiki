@@ -1,0 +1,56 @@
+---
+title: Moine (Monk)
+---
+
+import * as Module from '/src/components/module/module-component'
+import * as Role from '/src/components/role/role-component'
+
+<img src='/img/blood-on-the-clocktower/roles/moine.png' height='150' />
+
+#### Modules : <Module.TROUBLEBREWING />
+#### Villageois
+#### Alignement : gentil
+#### Rôle de protection
+#### Réveillé toutes les nuits (sauf la première)
+
+### Description
+Chaque nuit, choisissez un autre joueur. Il est à l’abri du Démon cette nuit.
+
+### Exemple
+>Le <Role.MOINE /> protège la <Role.VOYANTE /> et le <Role.IMP /> attaque la <Role.VOYANTE /> : il n’y a pas de mort cette nuit.
+
+> Le <Role.MOINE /> protège le <Role.MAIRE /> et le <Role.IMP /> attaque le <Role.MAIRE /> : Le pouvoir du <Role.MAIRE /> (“Si vous deviez mourir pendant la nuit, un autre joueur pourrait mourir à votre place”) ne se déclenche pas parce qu’il est protégé du <Role.IMP /> cette nuit par le <Role.MOINE />. Personne ne meurt.
+
+> Le <Role.MOINE /> protège le <Role.IMP />. Le <Role.IMP /> choisit de se suicider cette nuit mais rien ne se passe. Le <Role.IMP /> reste en vie et le rôle de <Role.IMP /> reste sur le même joueur.
+
+
+### Mécaniques et conseils
+- Votre but est de garder en vie les rôles importants du Village et faire échouer les attaques du Démon. Essayez de prédire quelle pourrait être la cible du Démon chaque nuit en vous basant sur les informations qui circulent et sur le comportement des joueurs.
+
+- N’essayez pas de prédire ce que le Démon va faire. Essayez plutôt de trouver en discutant avec les autres Villageois quels sont les rôles à protéger à tout prix ! Souvent des rôles de détection comme la <Role.VOYANTE />, l’<Role.EMPATHIQUE /> ou le <Role.CROQUEMORT />.
+
+- Si vous identifiez un <Role.MERCENAIRE /> ou une <Role.PUCELLE />, vous pouvez les convaincre de ne pas utiliser leur pouvoir tout de suite puisque vous pouvez les protéger. Vous leur laisserez alors l’opportunité d’utiliser leur pouvoir plus tard dans la partie lorsque le Village aura collecté plus d’informations.
+
+- Vous êtes le seul joueur que vous ne pouvez pas protéger. Si vous contrecarrez les plans du Démon, il risque de chercher activement le <Role.MOINE />. Pour passer entre les mailles du filet vous pouvez prétendre être un rôle moins important ou un rôle que le Démon ne veut pas attaquer de nuit comme le <Role.SOLDAT /> ou le <Role.GARDIEN />.
+
+- Si vous arrivez à protéger quelqu’un efficacement, il est alors raisonnable de partir du principe qu’il est gentil étant donné que le Démon voulait les tuer. La seule exception est le <Role.IMP /> qui pourrait être amené à vouloir se suicider pour passer le rôle de Démon à l’un de ses Sbires.
+
+- Se dévoiler publiquement comme étant le moine peut vous permettre de vous coordonner avec le reste des Gentils pour protéger un rôle important cette nuit. Vous mourrez probablement en protégeant d’autres rôles mais vous aurez fait perdre un tour au Démon. Faites néanmoins attention à un possible empoisonneur qui pourrait vous décrédibiliser en permettant au Démon de tuer la personne que vous étiez censé protéger !
+
+- Mettez le Démon sur une fausse route en annonçant publiquement ou en privé que vous allez protéger telle personne et protégez en réalité quelqu’un d’autre. Si le Démon pense que vous protégez la <Role.VOYANTE />, il ne va pas l’attaquer ce qui vous laisse le champ libre pour protéger une autre personne !
+
+- Si vous avez réussi à protéger quelqu’un pendant la nuit, demandez-lui de bluffer le <Role.SOLDAT />. Le Démon n’ira pas se casser les dents sur un potentiel <Role.SOLDAT />, vous resterez alors indétectable et pourrez tenter de sauver quelqu’un d’autre la nuit suivante !
+
+- Un joueur peut faire appel publiquement au <Role.MOINE />, peut-être faudra-t-il prendre en compte cette demande. Mais cela peut aussi inciter le Démon à ne pas attaquer ce joueur qui a fait appel à vous et auquel cas vous pouvez prendre le risque d’aller protéger un autre joueur, c’est un pari qui peut être gagnant.
+ 
+### Bluffer le Moine
+
+- Le <Role.MOINE /> se réveille seulement les nuits où le Démon est susceptible de tuer, il ne se réveille donc pas la première nuit.
+
+- La personne que vous prétendez protéger doit découler d’un choix logique que vous devrez défendre. Si la <Role.VOYANTE /> s’est dévoilée publiquement et qu’elle meurt alors que vous êtes encore en vie, vous risquez d’avoir des problèmes ! Sauf si vous arrivez à convaincre qu’en réalité elle n’était pas la <Role.VOYANTE /> et qu’elle cherchait à se faire passer pour la <Role.VOYANTE />. Quoi qu’il en soit préparez bien votre argumentaixre avant de vous lancer ! Vous pouvez aussi prétendre que vous avez été empoisonné pour aiguiller le Village sur la présence d’un <Role.EMPOISONNEUR /> - et c’est encore mieux si ce dernier n’est pas en jeu, vous allez pouvoir en jouer dans vos argumentaires !
+
+- Le Démon peut choisir d’attaquer un joueur déjà mort. Si vous vous êtes dévoilés en tant que <Role.MOINE />, avoir le Démon qui attaque un mort permettra de renforcer votre bluff. Cela insinue aussi que la personne que vous prétendez avoir défendu cette nuit va apparaître comme plutôt innocente vu que le Démon attaque à priori des joueurs Gentils.
+
+- En règle générale, le <Role.MOINE /> ne se dévoile pas publiquement. Vous pouvez utiliser ce stratagème pour parler à de nombreux joueurs en privé, soit en semant la discorde parmi des joueurs Gentils, soit en vous coordonnant en secret avec d’autres joueurs Maléfiques. Si quelqu’un vous demande pourquoi vous agissiez de manière si “secrète”, les joueurs vous pensant être le <Role.MOINE /> viendront à votre rescousse.
+
+- Si vous êtes toujours en vie lors du dernier jour et qu’un joueur est mort chaque nuit, les Gentils auront tendance à croire qu’ils ont un moine particulièrement inefficace si bien qu’il pourrait être maléfique ! C’est la situation idéale si vous êtes un Sbire vu que les Gentils auront de forts soupçons sur vous, ils seront enclins à vous exécuter très facilement. 
