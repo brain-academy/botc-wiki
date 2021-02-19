@@ -135,7 +135,7 @@ Rôle Actif - Se réveille toutes les nuits pour utiliser sa capacité
 Description
 Chaque nuit, sauf la première, vous indiquez au Conteur un joueur et pariez sur son rôle.
 Si votre pari est juste, vous vivez. S’il est faux, vous mourez.
-Exemple
+Exemples
 Le Parieur indique de la main le Marin et montre sur la fiche des rôles le Marin. Le pari est juste, le Parieur reste en vie, mais il peut être tué la même nuit par le Démon.
 L’Exorciste proclame au Village qu’il a le rôle de Mamie. La nuit suivante, le Parieur montre ce joueur et indique au Conteur l’icône de Mamie. Le Parieur s’est trompé et il meurt immédiatement.
 Mécaniques et Conseils
@@ -434,10 +434,10 @@ Si un Étranger meurt durant la journée, vous choisissez un joueur la nuit suiv
 Exemples
 Lors du troisième jour, le Lunatique meurt par exécution. La nuit suivante, le Démon tue le Ménestrel et le Mafieux tue le Pacifiste.
 L'Inventeur est exécuté mais reste en vie, car il est protégé par l’Avocat du Diable. La nuit suivante, le Mafieux ne se réveille pas pour agir. Le jour suivant, l'Inventeur meurt à cause de sa capacité. La nuit suivante, le Mafieux tue la Commère.
-Le Mafieux apprend que qu’il n’y a qu’un Étranger en jeu, le Lunatique, sur les deux annoncés. Le Mafieux décide de bluffer la Gitane pour combler ce manque.
+Le Mafieux apprend qu’il n’y a qu’un Étranger en jeu sur les deux annoncés (le Lunatique). Le Mafieux décide de bluffer la Gitane pour combler ce manque.
 La Gitane est exécutée par le Village et désigne l’Assassin. Comme l’Assassin est Maléfique, la malédiction de la Gitane ne le tue pas, mais le Mafieux utilise tout de même sa capacité la nuit suivante pour tuer l’Assassin afin de l’innocenter.
-Mécanique et Conseils
-Votre principal levier est d’influencer l’exécution du Village. Votre capacité ne s’active que si un Étranger meurt de jour et cela n’arrive quasiment que suite à une exécution (sauf Inventeur et Sorcière). Vous êtes un peu le Traître de Trouble Browing. Vous commencez avec une information secrète sur les Étrangers et, si vous arrivez à manipuler le Village à vos fins et à provoquer l’exécution d’un ou plusieurs Étrangers, vous êtes récompensé par des morts supplémentaires de votre choix.
+Mécaniques et Conseils
+Votre principal levier est d’influencer l’exécution du Village. Votre capacité ne s’active que si un Étranger meurt de jour et cela n’arrive quasiment que suite à une exécution (sauf Inventeur et Sorcière). Vous commencez avec une information secrète sur les Étrangers et, si vous arrivez à manipuler le Village à vos fins et à provoquer l’exécution d’un ou plusieurs Étrangers, vous êtes récompensé par des morts supplémentaires de votre choix.
 Vous savez combien et quels Étrangers sont en jeu, profitez-en. C’est un grand avantage pour tirer les ficelles en coulisse et orienter l’enquête où bon vous semble. Par exemple, si vous savez qu’un Lunatique est en jeu, son comportement risque d’être suspect les premiers jours et vous pouvez attirer la suspicion sur lui. Autre exemple, si une Brute est en jeu, vous pouvez chercher son identité et la convaincre de rejoindre le camp des Maléfiques pour lui éviter une exécution sur la place du Village. Tirez au maximum profit de cet avantage.
 Forcez l'exécution des Étrangers par tous les moyens. Non seulement vous tuer un innocent et activez votre pouvoir pour tuer un joueur de votre choix, mais vous pouvez également déclencher une capacité handicapante pour le Village comme celle de la Gitane. En vous coordonnant avec votre équipe de Maléfiques, vous pouvez lâcher une contre-attaque dévastatrice sur le Village à l’insu de tous.
 S’il y a trop d’Étrangers, jouez agressif et jetez la suspicion sur eux. Si plus de joueurs que prévu s’annoncent Étrangers, le Village doutera naturellement de leur sincérité. Argumentez que, soit l’un d’entre eux est un Maléfique en train de bluffer, soit le Mafieux est en jeu. Veillez à laisser planer le doute sur le rôle de Sbire en jeu et, si l’un des Étrangers venait à mourir d’exécution, vous pourriez obtenir une mort supplémentaire de votre choix.
@@ -492,7 +492,7 @@ Les trois premières nuits, l’Assassin est réveillé mais décide de ne pas u
 Les deux voisins de l’Herboriste sont Gentils. L’Assassin cible un des deux voisins qui mourra malgré la capacité de protection de l’Herboriste.
 Le Ménestrel est en jeu. Le Conspirateur meurt par exécution. Cette nuit, l’Assassin choisit de tuer la Gitane mais elle reste en vie grâce à la capacité du Ménestrel qui a rendu ivre tous les joueurs jusqu’au prochain crépuscule.
 L’Assassin, empoisonné par la Courtisane, cible la Brute. L’Assassin n’a alors pas sa capacité active, la Brute reste en vie mais change d’alignement en devenant Maléfique. L’Assassin perd alors sa capacité définitivement.
-Mécanismes et Conseils
+Mécaniques et Conseils
 Peu de Sbires ont autant de pouvoirs que vous. Le contrôle absolu de vie et de mort. Aucune capacité de protection ne surpasse votre capacité de tuer (à moins que vous soyez ivre mais dans ce cas, ne tuez pas). Délectez-vous de la terreur que vous installez dans le cœur des joueurs Gentils et frappez-les au pire moment possible pour eux !
 Tuez les joueurs que votre Démon ne pourrait pas. L’Exorciste a bloqué votre Démon ? Plus maintenant. Le Pacifiste est sous la protection d’un Aubergiste ? Un jeu d’enfant pour vous. Un Marin malin vous pose problème ? Assurez-vous qu’il rende son dernier souffle cette nuit. Rien n’arrêtera votre lame, allez donc fouiner pour savoir quels joueurs se pensent intouchables et massacrez-les !
 Votre rôle consiste aussi à cacher le type de Démon en jeu en jetant de la confusion par rapport au nombre de morts de nuit. Si le Village pense qu’un Zombuul est en jeu, tuez la nuit où le Zombuul ne pourrait pas, cela brouillera les pistes (particulièrement du fait que votre assassinat imite parfaitement le schéma du venimeux Pukka). Votre capacité peut aussi servir à couvrir la charge du Po, les Gentils ne verront pas venir les trois morts la nuit suivante et cela sera dévastateur.

@@ -89,37 +89,43 @@ markDown_perRole <- plyr::llply(
       paste0("Nom original : ", .)
     gDoc_role <- c(title, original_name, gDoc_role[2:length(gDoc_role)])
     # Put the first line as title.
-    gDoc_role[[1]] <- paste0("#", gDoc_role[[1]])
+    gDoc_role[[1]] <- paste0("# ", gDoc_role[[1]])
     # Put the second, third and fourth line as title 2.
-    gDoc_role[[2]] <- paste0("##", gDoc_role[[2]])
-    gDoc_role[[3]] <- paste0("##", gDoc_role[[3]])
-    gDoc_role[[4]] <- paste0("##", gDoc_role[[4]])
+    gDoc_role[[2]] <- paste0("## ", gDoc_role[[2]])
+    gDoc_role[[3]] <- paste0("## ", gDoc_role[[3]])
+    gDoc_role[[4]] <- paste0("## ", gDoc_role[[4]])
     # Put title 3.
     gDoc_role[stringr::str_detect(gDoc_role, "^Description$")] <-
       paste0(
-        "###",
+        "### ",
         gDoc_role[stringr::str_detect(gDoc_role, "^Description$")]
       )
     gDoc_role[stringr::str_detect(gDoc_role, "^Exemples$")] <-
       paste0(
-        "###",
+        "### ",
         gDoc_role[stringr::str_detect(gDoc_role, "^Exemples$")]
       )
     gDoc_role[stringr::str_detect(gDoc_role, "^Mécaniques et Conseils$")] <-
       paste0(
-        "###",
+        "### ",
         gDoc_role[stringr::str_detect(gDoc_role, "^Mécaniques et Conseils$")]
       )
     gDoc_role[stringr::str_detect(gDoc_role, "^Bluffer le rôle")] <-
       paste0(
-        "###",
+        "### ",
         gDoc_role[stringr::str_detect(gDoc_role, "^Bluffer le rôle")]
       )
     gDoc_role[stringr::str_detect(gDoc_role, "^Jouer contre")] <-
       paste0(
-        "###",
+        "### ",
         gDoc_role[stringr::str_detect(gDoc_role, "^Jouer contre")]
       )
+
+    # Add bold beginning for each line.
+    # TODO
+
+    # Add empty lines.
+    gDoc_role <- c(rbind(gDoc_role, rep("", length(gDoc_role))))
 
     # Export text of the role.
     return(gDoc_role)
@@ -129,8 +135,31 @@ markDown_perRole <- plyr::llply(
 # Export one Mark Down file for each role.
 names(markDown_perRole) %>% plyr::l_ply(
   function(role) {
-      writeLines(markDown_perRole[[role]],
-                 con = paste0("new_roles/", role, ".mdx"),
-                 useBytes = TRUE)
+    writeLines(markDown_perRole[[role]],
+               con = paste0("new_roles/",
+                            role %>%
+                              tolower() %>%
+                              stringr::str_replace(" ", "_"),
+                            ".mdx"),
+               useBytes = TRUE)
   }
 )
+
+# Check number of titles, titles 2 and titles 3.
+markDown_check <- markDown_perRole %>%
+  plyr::ldply(function(markDown_role) {
+    c(
+      markDown_role %>%
+        stringr::str_detect("^#[^#]") %>%
+        sum(),
+      markDown_role %>%
+        stringr::str_detect("^##[^#]") %>%
+        sum(),
+      markDown_role %>%
+        stringr::str_detect("^###[^#]") %>%
+        sum()
+    )
+  }) %>% magrittr::set_colnames(c("Role", "#", "##", "###"))
+
+markDown_check[, -1] %>%
+  unique()
