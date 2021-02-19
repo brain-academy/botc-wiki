@@ -9,7 +9,7 @@ library(magrittr)
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 # Load gDoc input as txt.
-gDoc <- readLines(con = "gDoc.txt",
+gDoc <- readLines(con = "gDoc/BMR.txt",
                   encoding = "UTF-8")
 
 # Remove empty lines.
@@ -79,55 +79,89 @@ names(gDoc_perRole) <- list_roles_BMR
 markDown_perRole <- plyr::llply(
   gDoc_perRole,
   function(gDoc_role) {
-    # Catch and move the original name.
+    # DEBUG #
+    # gDoc_role <- gDoc_perRole[[1]]
+    ## Catch and move the original name.
     title <- gDoc_role[[1]] %>%
-      stringr::str_replace("\\(.+\\)$", "")
+      stringr::str_replace(" \\(.+\\)$", "")
+    module <- "Module : Bad Moon Rising"
     original_name <- gDoc_role[[1]] %>%
       stringr::str_extract("\\(.+\\)$") %>%
       stringr::str_replace("\\(", "") %>%
       stringr::str_replace("\\)", "") %>%
       paste0("Nom original : ", .)
-    gDoc_role <- c(title, original_name, gDoc_role[2:length(gDoc_role)])
-    # Put the first line as title.
+    gDoc_role <- c(title, module, original_name, gDoc_role[2:length(gDoc_role)])
+    ## Put the first line as title.
     gDoc_role[[1]] <- paste0("# ", gDoc_role[[1]])
-    # Put the second, third and fourth line as title 2.
+    ## Put the second, third and fourth line as title 2.
     gDoc_role[[2]] <- paste0("## ", gDoc_role[[2]])
     gDoc_role[[3]] <- paste0("## ", gDoc_role[[3]])
     gDoc_role[[4]] <- paste0("## ", gDoc_role[[4]])
-    # Put title 3.
-    gDoc_role[stringr::str_detect(gDoc_role, "^Description$")] <-
-      paste0(
-        "### ",
-        gDoc_role[stringr::str_detect(gDoc_role, "^Description$")]
-      )
-    gDoc_role[stringr::str_detect(gDoc_role, "^Exemples$")] <-
-      paste0(
-        "### ",
-        gDoc_role[stringr::str_detect(gDoc_role, "^Exemples$")]
-      )
-    gDoc_role[stringr::str_detect(gDoc_role, "^Mécaniques et Conseils$")] <-
-      paste0(
-        "### ",
-        gDoc_role[stringr::str_detect(gDoc_role, "^Mécaniques et Conseils$")]
-      )
-    gDoc_role[stringr::str_detect(gDoc_role, "^Bluffer le rôle")] <-
-      paste0(
-        "### ",
-        gDoc_role[stringr::str_detect(gDoc_role, "^Bluffer le rôle")]
-      )
-    gDoc_role[stringr::str_detect(gDoc_role, "^Jouer contre")] <-
-      paste0(
-        "### ",
-        gDoc_role[stringr::str_detect(gDoc_role, "^Jouer contre")]
-      )
+    gDoc_role[[5]] <- paste0("## ", gDoc_role[[5]])
+    ## Put title 3.
+    ## Tag each line of the gDoc role.
+    # Initialize each line to title.
+    tag_parts <- rep("titre", length(gDoc_role))
+    # Tag description lines.
+    n_description <- gDoc_role %>%
+      stringr::str_detect("^Description$") %>%
+      which()
+    tag_parts[n_description:length(tag_parts)] <- "description"
+    gDoc_role[n_description] <- paste0("### ", gDoc_role[n_description])
+    # Tag exemple lines.
+    n_exemple <- gDoc_role %>%
+      stringr::str_detect("^Exemples$") %>%
+      which()
+    tag_parts[n_exemple:length(tag_parts)] <- "exemple"
+    gDoc_role[n_exemple] <- paste0("### ", gDoc_role[n_exemple])
+    # Tag advice lines.
+    n_conseil <- gDoc_role %>%
+      stringr::str_detect("^Mécaniques et Conseils$") %>%
+      which()
+    tag_parts[n_conseil:length(tag_parts)] <- "conseil"
+    gDoc_role[n_conseil] <- paste0("### ", gDoc_role[n_conseil])
+    # Tag bluff lines.
+    n_bluff <- gDoc_role %>%
+      stringr::str_detect("^Bluffer le rôle") %>%
+      which()
+    if (!identical(n_bluff, integer())) {
+      tag_parts[n_bluff:length(tag_parts)] <- "bluff"
+      gDoc_role[n_bluff] <- paste0("### ", gDoc_role[n_bluff])
+    }
+    # Tag counter lines.
+    n_contre <- gDoc_role %>%
+      stringr::str_detect("^Jouer contre") %>%
+      which()
+    if (!identical(n_contre, integer())) {
+      tag_parts[n_contre:length(tag_parts)] <- "contre"
+      gDoc_role[n_contre] <- paste0("### ", gDoc_role[n_contre])
+    }
+    # Check that there is bluff or counter title 3.
+    if (identical(n_bluff, logical()) & identical(n_contre, logical()))
+      stop("Neither bluff nor counter title has been found.")
 
-    # Add bold beginning for each line.
-    # TODO
+    ## Add bullet list to exemple part.
+    bullet_lines <- which(tag_parts == "exemple") %>%
+      .[2:length(.)]
+    gDoc_role[bullet_lines] <-
+      gDoc_role[bullet_lines] %>% paste0("- ", .)
 
-    # Add empty lines.
+    ## Add bold beginning for each line.
+    bold_lines <- c("conseil", "bluff", "contre") %>%
+      plyr::llply(function(bold_part) {
+        # DEBUG #
+        # bold_part <- "conseil"
+        which(tag_parts == bold_part) %>%
+          .[2:length(.)]
+      }) %>% unlist() %>% .[!is.na(.)]
+    gDoc_role[bold_lines] <- gDoc_role[bold_lines] %>%
+      paste0("**", .) %>%
+      stringr::str_replace("((\\.|!))", "\\1**")
+
+    ## Add empty lines.
     gDoc_role <- c(rbind(gDoc_role, rep("", length(gDoc_role))))
 
-    # Export text of the role.
+    ## Export text of the role.
     return(gDoc_role)
   }
 )
@@ -136,11 +170,13 @@ markDown_perRole <- plyr::llply(
 names(markDown_perRole) %>% plyr::l_ply(
   function(role) {
     writeLines(markDown_perRole[[role]],
-               con = paste0("new_roles/",
-                            role %>%
-                              tolower() %>%
-                              stringr::str_replace(" ", "_"),
-                            ".mdx"),
+               con = paste0(
+                 "mdx/",
+                 role %>%
+                   tolower() %>%
+                   stringi::stri_trans_general(id = "Latin-ASCII") %>%
+                   stringr::str_replace_all(" ", "_"),
+                 ".mdx"),
                useBytes = TRUE)
   }
 )

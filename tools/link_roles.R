@@ -10,22 +10,22 @@ library(magrittr)
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 
-# List the list of the role files.
-list_files <- list.files("../docs/roles/")
+# Load Tags File.
+list_tags <- readLines(con = "../src/components/role/role-component.tsx",
+                       encoding = "UTF-8")
 
 # Get the list of the roles.
-list_roles <- list_files %>%
-  # Remove the extension.
-  tools::file_path_sans_ext() %>%
-  # Replace hyphens with spaces.
-  stringr::str_replace_all("-", " ") %>%
+list_roles <- list_tags %>%
+  # Extract the list of roles from the file.
+  .[stringr::str_detect(., "export const ")] %>%
+  stringr::str_replace("^export const ", "") %>%
+  stringr::str_extract("[A-Z_]+") %>%
   # Capitalize the first letter.
   stringr::str_to_title() %>%
-  # Remove the uppercase of link words as "De" or "Du".
-  stringr::str_replace(" De ", " de ") %>%
-  stringr::str_replace(" Du ", " du ") %>%
+  # Replace underscore by space.
+  stringr::str_replace_all("_", " ") %>%
   # Fix "Croqueuse d'hommes".
-  stringr::str_replace("^Croqueuse D Homme$", "Croqueuse d'hommes") %>%
+  stringr::str_replace("^Croqueuse D Hommes$", "Croqueuse d'hommes") %>%
   # Fix "Pukka".
   stringr::str_replace("^Pooka$", "Pukka") %>%
   # Fix names with French accents.
@@ -39,40 +39,66 @@ list_roles <- list_files %>%
 
 # Add a suffix to avoid matching "Po" in whole word as "Pour" or "Pouvoir".
 tags_input <- list_roles %>% paste0("\\b", ., "\\b")
-
-
-# Load Tags File.
-list_tags <- readLines(con = "../src/components/role/role-component.tsx",
-                       encoding = "UTF-8")
 # Extract Tags.
 tags_output <- list_tags %>%
   .[stringr::str_detect(., "export const ")] %>%
   stringr::str_replace("^export const ", "") %>%
   stringr::str_extract("[A-Z_]+") %>%
-# Convert into links.
+  # Convert into links.
   paste0("<Role.", ., " />")
 
+# List input files.
+input_files <- list.files("mdx/", full.names = TRUE)
 
 # Apply on each role file.
 plyr::l_ply(
-  list_files,
-  function(role_file) {
-    # Get the path of the input file.
-    input_file <- paste0("../docs/roles_prep/", role_file)
+  input_files,
+  function(input_file) {
+    # DEBUG #
+    # input_file <- input_files[[1]]
     # Open the role file.
     role_text <- readLines(con = input_file,
                            encoding = "UTF-8")
-    # Filter the lines to convert.
-    #   1) Remove the title.
-    lines_to_convert <- !stringr::str_detect(role_text, "title")
+    # Handle the title.
+    title <- role_text[[1]]
+    role_text <- role_text[2:length(role_text)]
+
     # For each role, replace the plain text by its tag.
-    role_text[lines_to_convert] <- purrr::reduce2(
+    role_text <- purrr::reduce2(
       .x = tags_input,
       .y = tags_output,
       .f = stringr::str_replace_all,
-      .init = role_text[lines_to_convert])
+      .init = role_text)
+    # Replace the module.
+    role_text <- stringr::str_replace_all(
+      string = role_text,
+      pattern = "Bad Moon Rising",
+      replacement = "<Module.BAD_MOON_RISING />")
+
+    # Add header.
+    header <- c(
+      "---",
+      paste0("title: ",
+             title %>%
+               stringr::str_replace("^# ", "")),
+      "---",
+      "",
+      "import * as Module from '/src/components/module/module-component'",
+      "import * as Role from '/src/components/role/role-component'",
+      "",
+      paste0(
+        "<img src='/img/blood-on-the-clocktower/roles/",
+        input_file %>%
+          basename() %>%
+          tools::file_path_sans_ext(),
+        ".png' height='150' />"
+      ),
+      ""
+    )
+    role_text <- c(header, role_text)
+
     # Get the path of the output file.
-    output_file <- paste0("../docs/roles/", role_file)
+    output_file <- paste0("ready/", basename(input_file))
     # Export the new role file with roles converted into tags.
     writeLines(role_text,
                con = output_file,
