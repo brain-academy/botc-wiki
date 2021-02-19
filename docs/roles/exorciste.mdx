@@ -7,49 +7,62 @@ import * as Role from '/src/components/role/role-component'
 
 <img src='/img/blood-on-the-clocktower/roles/exorciste.png' height='150' />
 
-#### Modules : <Module.BADMOONRISING /> - <Module.DEADLYPENANCEDAY />
-#### Nom Original : Exorcist
-#### Villageois - Alignement Gentil
-#### Rôle d'Information réveillé toutes les nuits (sauf la première)
+
+## Module : <Module.BAD_MOON_RISING />
+
+## Nom original : Exorcist
+
+## Villageois - Alignement Gentil
+
+## Rôle Actif - Se réveille toutes les nuits pour utiliser sa capacité
 
 ### Description
-Chaque nuit (sauf la première), choisissez un joueur (différent de la nuit précédente) : Si le Démon a été choisi, alors il ne se réveille pas cette nuit et il apprend qui vous êtes.
 
+Chaque nuit (sauf la première), choisissez un joueur (différent de la nuit précédente) :
 
-### Exemples :
-> L’<Role.EXORCISTE /> choisit le <Role.SHABALOTH />. Le <Role.SHABALOTH /> ne se réveille pas et ne tue pas cette nuit.
+Si le Démon a été choisi, alors il ne se réveille pas cette nuit et il apprend qui vous êtes.
 
-> L’<Role.EXORCISTE /> choisit le <Role.POOKA />. La nuit suivante, le <Role.POOKA /> ne se réveille pas pour attaquer, cependant, un joueur décède tout de même suite à l’attaque du <Role.POOKA /> de la nuit précédente.
+### Exemples
 
-> L'<Role.EXORCISTE /> choisit le <Role.PO />. La nuit suivante, Le <Role.PO /> ne se réveille pas pour agir. La nuit d’après, l’<Role.EXORCISTE /> choisit l’<Role.ASSASSIN />. L’<Role.ASSASSIN /> peut encore attaquer cette nuit, mais le <Role.PO /> doit choisir entre dévorer 0 ou 1 joueur. Il ne peut pas en tuer 3 cette fois-ci car il n’a pas agi la nuit précédente.
+- L’<Role.EXORCISTE /> choisit le <Role.SHABALOTH />. Le <Role.SHABALOTH /> ne se réveille pas cette nuit, ne tue pas mais apprend l’identité de l’<Role.EXORCISTE />.
 
-### Mécaniques et conseils
-- Si vous avez ciblé un joueur et qu'il n'y a aucun mort de nuit, il y a de fortes chances que vous ayez trouvé le Démon. La solution la plus simple est de partager publiquement votre information, en vous dévoilant <Role.EXORCISTE /> et en mentionnant qui vous avez ciblé la nuit précédente. Stratégie plus avancée, vous pouvez enquêter et vérifier si la personne que vous avez ciblé est effectivement le Démon. Il est même possible d'attendre deux nuits de plus pour cibler le même joueur et vérifier si quelqu'un meurt de nuit. Cependant, ne prenez pas trop votre temps car, rappelez-vous, si vous avez réussi à exorciser le Démon, celui-ci apprend qui vous êtes.
+- L’<Role.EXORCISTE /> choisit le <Role.PUKKA />. La nuit suivante, le <Role.PUKKA /> ne se réveille pas pour attaquer et apprend qui est l’<Role.EXORCISTE />, cependant, un joueur décède tout de même suite à l’attaque du <Role.PUKKA /> de la nuit précédente.
 
-- Une fois le Démon trouvé, il apprendra qui vous êtes. À partir de là, observez celles et ceux qui essaient de diriger la suspicion du village sur vous. En effet, si le Démon vous dévore la nuit juste après avoir été exorcisé, votre mort en tant qu'<Role.EXORCISTE /> indique que vous aviez effectivement trouvé le Démon. Pour rester discret, les Maléfiques essaieront à tout prix de vous faire exécuter de jour.
+- L'<Role.EXORCISTE /> choisit le <Role.PO />. La nuit suivante, Le <Role.PO /> ne se réveille pas pour agir et apprend qui est l’<Role.EXORCISTE />. La nuit d’après, l’<Role.EXORCISTE /> choisit l’<Role.ASSASSIN />. L’<Role.ASSASSIN /> peut encore attaquer cette nuit, mais le <Role.PO /> doit choisir entre dévorer 0 ou 1 joueur. Il ne peut pas en tuer 3 cette fois-ci car il n’a pas agi la nuit précédente.
 
-- Si personne ne meurt de nuit, l'explication peut tout à fait être autre chose que votre capacité d'<Role.EXORCISTE />. Le plus probable reste les capacités de protection comme le <Role.MARIN />, l'<Role.AUBERGISTE />, l'<Role.HERBORISTE />, le <Role.PACIFISTE /> ou encore le <Role.FOU />. Avant de tirer des conclusions fiables, il est nécessaire d'enquêter et de recouper les informations.
+### Mécaniques et Conseils
 
-- Si un joueur meurt la nuit, choisissez un joueur différent pour les nuits suivantes. En effet, cette personne n'est sans doute pas le démon et vous n'avez pas besoin de la cibler à nouveau. 
+**S’il n’y a eu aucun mort de nuit, enquêtez sur la personne que vous avez visée.** Il y a de fortes chances qu'il s’agisse du Démon. La solution la plus simple est de partager publiquement votre information, en vous dévoilant <Role.EXORCISTE /> et en mentionnant qui vous avez ciblé la nuit précédente. Stratégie plus avancée, vous pouvez enquêter de votre côté et vérifier si la personne que vous avez ciblée est effectivement le Démon. Il est même possible d'attendre deux nuits de plus pour cibler le même joueur et vérifier si quelqu'un meurt de nuit. Cependant, ne prenez pas trop votre temps car, rappelez-vous, si vous avez réussi à exorciser le Démon, celui-ci apprend qui vous êtes.
 
-- Au fur et à mesure de la partie, discutez avec le groupe et enquêtez pour savoir quels rôles sont en jeu et ce qu'il ont fait. Même si avez retiré au Démon sa capacité de tuer, de nombreuses mécaniques peuvent encore engendrer une mort de nuit. (<Role.PARIEUR />, <Role.COMMERE />, <Role.BRICOLEUR />.) Inversement, il peut y avoir une nuit sans mort même si vous avez réussi à exorciser le Démon. Un <Role.PO /> peut choisir de ne pas tuer. Un rôle de protection peut fonctionner (<Role.MARIN />, <Role.AUBERGISTE />, <Role.HERBORISTE />, <Role.PACIFISTE />, <Role.FOU />). N'oubliez pas que le <Role.POOKA /> peut aussi perturber votre enquête, puisqu'il tue à retardement. 
+**Si une personne meurt la nuit, changez de cible.** En effet, le joueur exorcisé n'est probablement pas le Démon et vous n'avez pas besoin de le cibler à nouveau.
 
-- En tant qu'<Role.EXORCISTE />, votre utilité devient de plus en plus importante au fur et à mesure de la partie. Non seulement vous progressez dans votre enquête pour déterminer quelles personnes seraient potentiellement le Démon, il y a également de moins en moins de joueurs vivants dans la partie. Comme pour un rôle de détection, il est presque toujours essentiel de cacher son identité d'<Role.EXORCISTE /> les premiers jours afin de gagner du temps et d'accumuler de solides informations. Si vous vous révélez trop tôt sans avoir trouvé le Démon, vous pouvez être sûr d'être sa cible n°1 pour la prochaine nuit. Restez discret, ou alors bluffer un rôle que le Démon ne cherche pas à tuer, comme le <Role.MARIN />, le <Role.FOU /> ou la <Role.BRUTE />. 
+**Une fois le Démon trouvé, il apprendra qui vous êtes.** À partir de là, observez celles et ceux qui essaient de diriger la suspicion du Village sur vous. Pour rester discret, les Maléfiques essaieront à tout prix de vous faire exécuter de jour. En effet, si le Démon vous dévore la nuit juste après avoir été exorcisé, votre mort en tant qu'<Role.EXORCISTE /> indiquera que vous aviez effectivement trouvé le Démon.
 
-- Si vous pensez qu'un <Role.ZOMBUUL /> est en jeu, n'hésitez pas à choisir des joueurs morts. S'il n'y a aucune mort de jour, que vous avez exorcisé un joueur mort et qu'il n'y a aucun mort de nuit, vous avez sans doute trouvé un <Role.ZOMBUUL />.
+**Soyez conscient que vous n’êtes pas le seul à pouvoir bloquer le Démon.** Si personne ne meurt de nuit, l'explication peut tout à fait être autre chose que votre capacité d'<Role.EXORCISTE />. Les capacités de protection sont tout aussi plausibles (<Role.MARIN />, <Role.AUBERGISTE />, <Role.HERBORISTE />, <Role.PACIFISTE />, <Role.FOU />). Côté Maléfique, un <Role.PO /> peut choisir de charger ses attaques ou le Démon peut tout simplement viser des morts. Avant de tirer des conclusions fiables, il est nécessaire d'enquêter et de recouper les informations.
 
-- Chaque jour, si vous êtes publiquement déclaré <Role.EXORCISTE />, vous pouvez dédouaner certains joueurs en fonction de vos précédents choix. De plus, si deux joueurs paraissent suspicieux, le Village peut choisir d'en exécuter un tandis que vous vous engagez à exorciser l'autre. 
+**Gardez à l’esprit qu’une mort de nuit n’est pas forcément dûe au Démon.** Au fur et à mesure de la partie, discutez avec le Village et enquêtez pour savoir quels rôles sont en jeu et ce qu'il ont fait. Même si vous avez réussi à exorciser le Démon, de nombreuses mécaniques de Gentils peuvent encore engendrer une mort de nuit (<Role.PARIEUR />, <Role.COMMERE />, <Role.INVENTEUR />). Enfin, l'<Role.ASSASSIN /> peut tuer indépendamment du Démon et le <Role.PUKKA /> peut aussi gravement perturber votre enquête, puisqu'il tue à retardement.
 
+**Votre capacité est de plus en plus puissante au fur et à mesure de la partie.** D’une part, vous progressez dans votre enquête pour déterminer quelles personnes sont potentiellement le Démon. D’autre part, il y a également de moins en moins de joueurs vivants dans la partie. N’hésitez pas à cacher votre identité d'<Role.EXORCISTE /> afin de gagner du temps et d'accumuler de solides informations. Si vous vous révélez trop tôt sans avoir trouvé le Démon, vous pouvez être sûr d'être sa cible n°1 pour la prochaine nuit. Restez discret, ou alors bluffer un rôle que le Démon ne cherche pas à tuer, comme le <Role.MARIN />, le <Role.FOU /> ou la <Role.BRUTE />.
+
+**Vous êtes un des seuls rôles à pouvoir détecter un <Role.ZOMBUUL />.** Si vous pensez que ce Démon est en jeu, n'hésitez pas à choisir des joueurs morts. S'il n'y a aucune mort de jour, que vous avez exorcisé un joueur mort et qu'il n'y a aucune mort de nuit, vous avez sans doute trouvé un <Role.ZOMBUUL />.
+
+**Partagez votre information.** Si vous vous êtes publiquement déclaré <Role.EXORCISTE />, vous pouvez dédouaner certains joueurs en fonction de vos précédents choix. De plus, si deux joueurs paraissent suspicieux, le Village peut choisir d'en exécuter un tandis que vous vous engagez à exorciser l'autre.
 
 ### Bluffer le rôle d'<Role.EXORCISTE />
-- Ne dévoilez pas immédiatement votre rôle ! Un vrai <Role.EXORCISTE /> aurait toutes les raisons de vouloir se cacher des Maléfiques - il est une cible prioritaire pour un Sbire comme l'<Role.ASSASSIN />. Vous attirerez la suspicion si vous vous révélez trop tôt tout en espérant survivre plusieurs tours dans le Village. 
-- Engagez des discussions privées en utilisant votre rôle comme prétexte. L'<Role.EXORCISTE /> est très similaire au <Role.MERCENAIRE /> dans le sens où ils ont tous deux très peu d'informations par eux-mêmes et qu'ils sont obligés de s'appuyer sur les informations du Village pour utiliser leur capacité. Les joueurs Bons à qui vous vous révélez <Role.EXORCISTE /> sont plus enclins à vous aider et à vous faire confiance, vous permettant de récupérer plus facilement de l'information. Vous dévoiler judicieusement en privé tôt dans la partie peut vous permettre de gagner la confiance de quelques joueurs, voire même de gagner leur soutien durant les phases de nomination. Enfin, en tant que Maléfique, le bluff d'<Role.EXORCISTE /> vous fournit un excellent prétexte pour discuter avec votre équipe. 
 
-- Si aucune mort n'est arrivé cette nuit, vous pouvez (et même devez !) affirmer que vous avez ciblé un joueur Bon cette nuit. Ceci vous permettra d'attirer la suspicion sur des rôles très gênants pour les Maléfiques, comme l'<Role.HERBORISTE /> ou le <Role.PACIFISTE />, voire même d'obtenir leur exécution par le Village. 
-- Choisissez délibérément de ne pas tuer (ou demander à votre démon de ne pas le faire) pour confirmer que vous avez bien "exorcisé" le Démon. Sans mort de nuit, accuser un joueur de Démon exorcisé est très convaincant, vous asseyant dans votre bluff et laissant le Village désorienté travailler pour vous. Ceci est d'autant plus efficace combiné avec un <Role.PO />. En effet, ce Démon peut choisir de ne pas manger puis dévorer par surprise 3 joueurs la nuit suivante, alors que le Village se pensait à l'abri du Démon.
+**Ne dévoilez pas immédiatement votre rôle.** Un vrai <Role.EXORCISTE /> aurait toutes les raisons de vouloir se cacher des Maléfiques - il est une cible prioritaire pour le Démon. Vous attirerez irrémédiablement la suspicion si vous vous révélez trop tôt.
 
-- En tant que Sbire, quand il y a eu au moins un mort de nuit, vous pouvez affirmer avoir exorcisé votre Démon afin de le dédouaner. En effet, si celui-ci avait été exorcisé, il n'aurait pas pu se réveiller pour tuer la nuit.
+**Utilisez votre rôle pour gagner la confiance des Gentils.** L'<Role.EXORCISTE /> est très similaire au <Role.MERCENAIRE /> dans le sens où ils ont tous deux très peu d'informations par eux-mêmes et qu'ils sont obligés de s'appuyer sur les informations du Village pour utiliser leur capacité. Les joueurs Gentils à qui vous vous révélez <Role.EXORCISTE /> sont plus enclins à vous aider et à vous faire confiance, vous permettant de récupérer plus facilement de l'information. Vous dévoiler judicieusement en privé tôt dans la partie peut vous permettre de gagner la confiance de quelques joueurs, voire même de gagner leur soutien durant les phases de nomination.
 
-- Surveillez quels rôles pouvant provoquer des morts de nuit sont encore en jeu. Vous pouvez tuer ou ne pas tuer, puis affirmer avoir réussi à exorciser le Démon. Par exemple, si la <Role.COMMERE /> est en jeu, vous pouvez affirmer que sa déclaration de <Role.COMMERE /> était juste, provoquant une mort à la place du Démon. Vous pouvez également évoquer l'existence d'un <Role.ASSASSIN /> ou d'un <Role.MAFIEUX /> en fonction de qui meurt et quand. 
+**Utilisez votre rôle pour discuter avec vos acolytes Maléfiques.** En tant que Maléfique, le bluff d'<Role.EXORCISTE /> vous fournit un excellent prétexte pour discuter avec votre équipe.
 
-- En dernier recours, vous pouvez vous déclarer <Role.EXORCISTE /> pour faire gagner un tour à votre Démon. Si votre Démon est dangereusement proche de l'exécution, vous pouvez bluffer l'<Role.EXORCISTE /> et proposer de l'exorciser cette nuit en exécutant un autre joueur à la place. Méfiez-vous cependant car ce bluff ne tiendra pas longtemps si le Démon "exorcisé" agit à nouveau la nuit suivante. Cependant, ceci peut brouiller les pistes si le Village ne sait pas qui est le Démon parmi deux Maléfiques restants.
+**Après une nuit sans mort, affirmez avoir ciblé un joueur Gentil.** Ceci jette la suspicion sur lui, comme si ce joueur était le Démon que vous aviez exorcisé. De cette manière, vous pouvez décrédibiliser des rôles très gênants pour les Maléfiques, comme l'<Role.HERBORISTE /> ou le <Role.PACIFISTE />, voire même d'obtenir leur exécution par le Village.
+
+**Le Démon peut délibérément ne pas tuer pour confirmer le bluff d’<Role.EXORCISTE />.** Sans mort de nuit, accuser un joueur de Démon exorcisé est très convaincant, vous asseyant dans votre bluff et laissant le Village désorienté travailler pour vous. Ceci est d'autant plus efficace combiné avec un <Role.PO />. En effet, ce Démon peut choisir de ne pas manger puis dévorer par surprise 3 joueurs la nuit suivante, alors que le Village se pensait à l'abri du Démon.
+
+**Si une personne meurt de nuit, vous pouvez innocenter votre Démon.** En effet, si celui-ci avait été exorcisé, il n'aurait pas pu se réveiller pour tuer la nuit.
+
+**Surveillez quels rôles peuvent provoquer des morts de nuit, en plus du Démon.** Suite à une ou des morts de nuit, vous pouvez affirmer que ce n’est pas le Démon qui a tué mais un autre rôle car vous avez réussi votre exorcisme. Par exemple, si la <Role.COMMERE /> est en jeu, vous pouvez affirmer que sa déclaration de <Role.COMMERE /> était juste, provoquant une mort à la place du Démon. Vous pouvez également évoquer l'existence d'un <Role.ASSASSIN /> ou d'un <Role.PARRAIN /> en fonction de qui meurt et quand. Brouiller les pistes concernant les morts de nuit perturbera l’enquête du Village pour comprendre quel Démon est en jeu.
+
+**En dernier recours, vous pouvez faire gagner un tour au Démon en vous déclarant <Role.EXORCISTE />.** Si votre Démon est dangereusement proche de l'exécution, vous pouvez bluffer l'<Role.EXORCISTE /> et proposer de l'exorciser cette nuit en exécutant un autre joueur à la place. Méfiez-vous cependant car ce bluff ne tiendra pas longtemps si le Démon "exorcisé" agit à nouveau la nuit suivante. Cependant, ceci peut embrouiller efficacement le Village s’il ne sait pas qui est le Démon parmi deux Maléfiques restants.
+

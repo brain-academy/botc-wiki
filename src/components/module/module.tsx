@@ -38,11 +38,11 @@ export default class Module extends DocComponent {
         ])
     static readonly BAD_MOON_RISING = new Module(
         'Bad Moon Rising',
-        'bad-moon-rising',
+        'bad_moon_rising',
         [
             Role.MAMIE,
             Role.MARIN,
-            Role.BONNE,
+            Role.FEMME_DE_CHAMBRE,
             Role.EXORCISTE,
             Role.AUBERGISTE,
             Role.PARIEUR,
@@ -53,15 +53,15 @@ export default class Module extends DocComponent {
             Role.HERBORISTE,
             Role.PACIFISTE,
             Role.FOU,
-            Role.BRICOLEUR,
+            Role.INVENTEUR,
             Role.GITANE,
             Role.BRUTE,
             Role.LUNATIQUE,
-            Role.MAFIEUX,
+            Role.PARRAIN,
             Role.AVOCAT_DU_DIABLE,
             Role.ASSASSIN,
             Role.CONSPIRATEUR,
-            Role.POOKA,
+            Role.PUKKA,
             Role.PO,
             Role.SHABALOTH,
             Role.ZOMBUUL
