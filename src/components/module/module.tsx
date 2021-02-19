@@ -13,7 +13,6 @@ export default class Module extends DocComponent {
         'Trouble Brewing',
         'trouble-brewing',
         [
-            Role.GOUVERNANTE,
             Role.ARCHIVISTE,
             Role.ENQUETEUR,
             Role.CUISTOT,
@@ -25,6 +24,7 @@ export default class Module extends DocComponent {
             Role.PUCELLE,
             Role.MERCENAIRE,
             Role.SOLDAT,
+            Role.LAVANDIERE,
             Role.MAIRE,
             Role.MAJORDOME,
             Role.SOULARD,
@@ -32,7 +32,7 @@ export default class Module extends DocComponent {
             Role.VERTUEUX,
             Role.EMPOISONNEUR,
             Role.TRAITRE,
-            Role.CROQUEUSE_D_HOMMES,
+            Role.CROQUEUSEDHOMMES,
             Role.BARON,
             Role.IMP
         ])
@@ -42,7 +42,7 @@ export default class Module extends DocComponent {
         [
             Role.MAMIE,
             Role.MARIN,
-            Role.FEMME_DE_CHAMBRE,
+            Role.FEMMEDECHAMBRE,
             Role.EXORCISTE,
             Role.AUBERGISTE,
             Role.PARIEUR,
@@ -58,7 +58,7 @@ export default class Module extends DocComponent {
             Role.BRUTE,
             Role.LUNATIQUE,
             Role.PARRAIN,
-            Role.AVOCAT_DU_DIABLE,
+            Role.AVOCATDUDIABLE,
             Role.ASSASSIN,
             Role.CONSPIRATEUR,
             Role.PUKKA,
@@ -77,10 +77,10 @@ export default class Module extends DocComponent {
         [
             Role.CUISTOT,
             Role.ENQUETEUR,
-            Role.CHASSEUR_DE_PRIMES,
+            Role.CHASSEURDEPRIMES,
             Role.MARIN,
             Role.PREDICATEUR,
-            Role.CHEF_DE_SECTE,
+            Role.CHEFDESECTE,
             Role.CRIEUR,
             Role.PARIEUR,
             Role.EXORCISTE,
@@ -96,7 +96,7 @@ export default class Module extends DocComponent {
             Role.BARON,
             Role.SORCIERE,
             Role.TRAITRE,
-            Role.PTIT_MONSTRE
+            Role.PTITMONSTRE
         ])
 
 }

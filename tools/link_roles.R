@@ -73,7 +73,7 @@ plyr::l_ply(
     role_text <- stringr::str_replace_all(
       string = role_text,
       pattern = "Bad Moon Rising",
-      replacement = "<Module.BAD_MOON_RISING />")
+      replacement = "<Module.BADMOONRISING />")
 
     # Add header.
     header <- c(
