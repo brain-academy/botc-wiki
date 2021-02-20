@@ -26,7 +26,7 @@ export default class Role extends DocComponent {
     static readonly ERMITE = new Role('Ermite')
     static readonly EXORCISTE = new Role('Exorciste')
     static readonly FAUSSAIRE = new Role('Faussaire')
-    static readonly FEMME_DE_CHAMBRE = new Role('Femme de Chambre', 'femme_de_chambre')
+    static readonly FEMME_DE_CHAMBRE = new Role('Femme de Chambre', 'femme-de-chambre')
     static readonly FOU = new Role('Fou')
     static readonly GARDIEN = new Role('Gardien')
     static readonly GITANE = new Role('Gitane')
