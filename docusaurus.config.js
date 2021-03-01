@@ -22,6 +22,7 @@ module.exports = {
                 alt: 'Brain Academy logo',
                 src: 'img/brain-academy-logo.jpg',
             },
+            hideOnScroll: true,
             items: [
                 {
                     to: 'docs/',
