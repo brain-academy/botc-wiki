@@ -84,15 +84,9 @@ module.exports = {
             {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    // Please change this to your repo.
-                    editUrl:
-                        'https://github.com/brain-academy/wiki/tree/master/',
                 },
                 blog: {
                     showReadingTime: true,
-                    // Please change this to your repo.
-                    editUrl:
-                        'https://github.com/brain-academy/wiki/tree/master/',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
