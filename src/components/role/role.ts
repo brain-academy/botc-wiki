@@ -30,7 +30,7 @@ export default class Role extends DocComponent {
     static readonly FOU = new Role('Fou')
     static readonly GARDIEN = new Role('Gardien')
     static readonly GITANE = new Role('Gitane')
-    static readonly LAVANDIERE = new Role('Lavandière')
+    static readonly LAVANDIERE = new Role('Lavandière', 'lavandiere')
     static readonly HERBORISTE = new Role('Herboriste')
     static readonly IMP = new Role('Imp')
     static readonly INVENTEUR = new Role('Inventeur')
