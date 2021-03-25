@@ -58,12 +58,7 @@ module.exports = {
                         {
                             label: 'Discord',
                             href: 'https://discord.gg/5mrm3fjd',
-                        }
-                    ],
-                },
-                {
-                    title: 'More',
-                    items: [
+                        },
                         {
                             label: 'Blog',
                             to: 'blog',
@@ -71,6 +66,15 @@ module.exports = {
                         {
                             label: 'GitHub',
                             href: 'https://github.com/brain-academy/wiki',
+                        },
+                    ],
+                },
+                {
+                    title: 'More',
+                    items: [
+                        {
+                            label: 'Crédits & Remerciements',
+                            to: 'docs/credits',
                         },
                     ],
                 },
