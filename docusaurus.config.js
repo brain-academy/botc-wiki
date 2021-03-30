@@ -42,17 +42,6 @@ module.exports = {
             style: 'dark',
             links: [
                 {
-                    title: 'Docs',
-                    items:
-                        fs.readdirSync('docs/modules/').map(module_file => {
-                            const module_name = `${module_file.split('.')[ 0 ]}`
-                            return {
-                                label: module_name,
-                                to: `docs/modules/${module_name}`
-                            }
-                        })
-                },
-                {
                     title: 'Community',
                     items: [
                         {
