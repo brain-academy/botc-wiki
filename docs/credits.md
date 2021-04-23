@@ -5,10 +5,11 @@ title: Crédits & Remerciements
 La Brain Academy (TBA) tient à remercier chaleureusement toute la communauté Blood On The Clock Tower, toutes les personnes qui nous ont accueilli, qui nous ont initié et jouent avec nous.
 
 Ceci concerne particulièrement :
+
+- Fred, de la Communauté Francophone Blood On The Clock Tower 
 - Lilajax alias Steph, de l’Antre des Louveteaux
-- Fred, de la Communauté Francophone Blood On The Clock Tower
-- Tous les joueurs de l’Antre des Louveteaux et de la Communauté Francophone Blood On The Clock Tower
-- Et enfin, tous les joueurs IRL et en ligne de la Brain Academy, qui se retournent le cerveau chaque semaine dans des enquêtes épiques et palpitantes
+- Tous les joueurs de la Communauté Francophone Blood On The Clock Tower et les joueurs de l’Antre des Louveteaux
+- Et enfin, tous les joueurs IRL et en ligne de la Brain Academy Lyon, qui se retournent le cerveau chaque semaine dans des enquêtes épiques et palpitantes
 
 En Version Originale, les auteurs de Blood on The Clock Tower que nous remercions également :
 - Game Design: Steven Medway
