@@ -1,7 +1,21 @@
 import React from 'react'
 import Role from './role'
+import Type from './type'
 
-const RoleComponent = ({role}: {role: Role}) => (<a href={role.path}>{role.name}</a>)
+const RoleComponent = ({role}: {role: Role}) => (<a href={role.path} style={{color: roleTypeToColor(role.type)}}>{role.name}</a>)
+
+const roleTypeToColor = (type: Type) => {
+    switch (type) {
+        case Type.VILLAGEOIS:
+            return 'rgb(8,193,255)'
+        case Type.ETRANGER:
+            return 'rgb(23,104,255)'
+        case Type.SBIRE:
+            return 'rgb(248,2,5)'
+        case Type.DEMON:
+            return 'rgb(197,0,0)'
+    }
+}
 
 export const ARCHIVISTE = () => <RoleComponent role={Role.ARCHIVISTE} />
 export const ASSASSIN = () => <RoleComponent role={Role.ASSASSIN} />
