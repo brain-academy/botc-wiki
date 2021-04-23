@@ -32,6 +32,11 @@ module.exports = {
                 },
                 { to: 'blog', label: 'Blog', position: 'left' },
                 {
+                    href: 'https://www.helloasso.com/associations/the-brain-academy/formulaires/1/widget',
+                    label: 'Faire un don',
+                    position: 'right'
+                },
+                {
                     href: 'https://github.com/brain-academy/wiki',
                     label: 'GitHub',
                     position: 'right',
