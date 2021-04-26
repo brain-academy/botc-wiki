@@ -70,6 +70,10 @@ module.exports = {
                             label: 'Crédits & Remerciements',
                             to: 'docs/credits',
                         },
+                        {
+                            label: 'Nous contacter',
+                            href: 'mailto:staff@brain-academy.fr',
+                        },
                     ],
                 },
             ],
