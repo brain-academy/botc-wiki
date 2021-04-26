@@ -16,32 +16,32 @@ import * as Role from '/src/components/role/role-component'
 
 ### Description
 Chaque nuit, choisissez 2 joueurs et vous apprenez si l’un d’eux est un Démon (et uniquement Démon, vous ne détectez pas les Sbires).
-Le Conteur choisit un des joueurs “gentil” comme étant un faux-positif et vous pouvez voir le <Role.ERMITE /> comme étant le Démon. Le faux positif est déterminé à l’avance par le Conteur et ne changera pas durant toute la partie.
+Le Conteur choisit un des joueurs “Gentil” comme étant un faux-positif et vous pouvez voir le <Role.ERMITE /> comme étant le Démon. Le faux positif est déterminé à l’avance par le Conteur et ne changera pas durant toute la partie.
  
 ### Exemple
-> La <Role.VOYANTE /> choisit le <Role.MOINE /> et le <Role.CROQUEMORT />, elle obtient un “non” du Conteur
+> La <Role.VOYANTE /> choisit le <Role.MOINE /> et le <Role.CROQUEMORT />, elle obtient un “NON” du Conteur
 
-> La <Role.VOYANTE /> choisit l’<Role.IMP /> et l’<Role.EMPATHIQUE />, elle obtient un “oui”
+> La <Role.VOYANTE /> choisit l’<Role.IMP /> et l’<Role.EMPATHIQUE />, elle obtient un “OUI”
 
-> La <Role.VOYANTE /> choisit l’<Role.IMP /> en vie et l’ancien <Role.IMP /> à présent mort, elle obtient un“oui”
+> La <Role.VOYANTE /> choisit l’<Role.IMP /> en vie et l’ancien <Role.IMP /> à présent mort, elle obtient un “OUI”
 
-> La <Role.VOYANTE /> choisit l’ancien <Role.IMP /> à présent mort et le <Role.CUISTOT />, elle obtient un “oui” car le <Role.IMP /> s’est réincarné ailleurs mais son rôle de <Role.IMP /> persiste 
+> La <Role.VOYANTE /> choisit l’ancien <Role.IMP /> à présent mort et le <Role.CUISTOT />, elle obtient un “OUI” car le <Role.IMP /> s’est réincarné ailleurs mais son rôle de <Role.IMP /> persiste 
 
-> La <Role.VOYANTE /> se choisit elle-même et le <Role.VERTUEUX />. Le <Role.VERTUEUX /> est le faux positif, elle obtient un “oui”
+> La <Role.VOYANTE /> se choisit elle-même et le <Role.VERTUEUX />. Le <Role.VERTUEUX /> est le faux positif, elle obtient un “OUI”
 
-> La <Role.VOYANTE /> choisit le <Role.ERMITE /> et le <Role.GARDIEN />, elle peut obtenir un “oui”
+> La <Role.VOYANTE /> choisit le <Role.ERMITE /> et le <Role.GARDIEN />, elle peut obtenir un “OUI”
 
 
 ### Mécaniques et conseils
-- Obtenir un “non” est plus utile qu’un “oui” car cela réduit la liste des suspects et signifie qu’aucun des deux joueurs n’est le Démon.
+- Obtenir un “NON” est plus utile qu’un “OUI” car cela réduit la liste des suspects et signifie qu’aucun des deux joueurs n’est, à cet instant, le Démon.
 
-- Vous pouvez recouper les joueurs que vous avez dédouané pour comprendre à qui correspond le “oui” obtenu : choisissez un des joueurs sur lequel vous avez obtenu un “oui” ainsi qu’un joueur sur lequel vous avez obtenu un “non”. Si vous obtenez à présent un “oui”, vous pouvez normalement en déduire que vous avez identifié un potentiel Démon. Si c’est un “non”, il s’agit probablement de l’autre personne sur laquelle vous aviez obtenu un “oui”.
+- Vous pouvez recouper les joueurs que vous avez dédouané pour comprendre à qui correspond le “OUI” obtenu : choisissez un des joueurs sur lequel vous avez obtenu un “OUI” ainsi qu’un joueur sur lequel vous avez obtenu un “NON”. Si vous obtenez à présent un “OUI”, vous pouvez normalement en déduire que vous avez identifié un potentiel Démon. Si c’est un “NON”, il s’agit probablement de l’autre personne sur laquelle vous aviez obtenu un “OUI”.
 
 - Vous avez peu de nuits pour rassembler un maximum d’informations, commencez par faire des paires sans avoir de doublons puis recoupez ensuite vos informations pour resserrer les mailles du filet sur les joueurs les plus suspects.
 
-- Votre faux-positif est déterminé au début de la partie et ne change pas, c’est le seul joueur qui produira pour vous de la fausse information (sauf si le <Role.ERMITE /> est en jeu). Gardez en tête que votre faux positif peut être n’importe qui, vous inclut : obtenir un “oui” n’est donc ne signifie pas à 100% que vous avez identifié le Démon.
+- Votre faux-positif est déterminé au début de la partie et ne change pas, c’est le seul joueur qui produira pour vous de la fausse information (sauf si le <Role.ERMITE /> est en jeu). Gardez en tête que votre faux positif peut être n’importe qui, vous inclut : obtenir un “OUI” n’est donc ne signifie pas à 100% que vous avez identifié le Démon.
 
-- Vous pouvez vous choisir comme étant un des deux joueurs testés avec votre pouvoir. Comme vous savez que nous n’êtes pas le Démon, cela vous permet d’avoir une information plus précise sur un joueur en particulier. Toutefois gardez en tête que vous pouvez être vous-même votre faux positif !
+- Vous pouvez vous choisir comme étant un des deux joueurs testés avec votre pouvoir. Comme vous savez que nous n’êtes pas le Démon, cela vous permet d’avoir une information plus précise sur un joueur en particulier. Toutefois, gardez en tête que vous pouvez être vous-même votre faux positif !
 
 - Faites attention au <Role.ERMITE />, il peut être identifié comme étant le Démon par votre pouvoir (Ce n’est pas la même mécanique que le faux positif, les deux peuvent coexister dans une même partie).
 
@@ -49,18 +49,18 @@ Le Conteur choisit un des joueurs “gentil” comme étant un faux-positif et v
  
 ### Bluffer le rôle de Voyante
 
-- Prenez en compte que vous êtes censés vous réveiller chaque nuit où vous êtes en vie, y compris la première. Quand vous vous dévoilerez au village en tant que <Role.VOYANTE />, ils attendront des explications détaillées sur chaque nuit. Préparez à l’avance votre histoire et soyez cohérent avec ce que vous auriez dit à certains joueurs en privé.
+- Prenez en compte que vous êtes censés vous réveiller chaque nuit où vous êtes en vie, y compris la première. Quand vous vous dévoilerez au Village en tant que <Role.VOYANTE />, ils attendront des explications détaillées sur chaque nuit. Préparez à l’avance votre histoire et soyez cohérent avec ce que vous auriez dit à certains joueurs en privé.
 
-- La <Role.VOYANTE /> peut vraiment semer le doute dans le Village. Le <Role.ERMITE /> peut être vu comme étant le Démon et le Démon peut changer de personne (suicide ou <Role.CROQUEUSEDHOMMES />’homme). Le faux positif peut aussi donner une mauvaise information rendant suspect un joueur “gentil”. Trouvez toujours le moyen de donner une explication plausible si vos informations n’apparaissent pas comme logiques aux yeux des autres Villageois et soyez convaincants !
+- La <Role.VOYANTE /> peut vraiment semer le doute dans le Village. Le <Role.ERMITE /> peut être vu comme étant le Démon et le Démon peut changer de personne (suicide ou <Role.CROQUEUSEDHOMMES />’homme). Le faux positif peut aussi donner une mauvaise information rendant suspect un joueur “Gentil”. Trouvez toujours le moyen de donner une explication plausible si vos informations n’apparaissent pas comme logiques aux yeux des autres Villageois et soyez convaincants !
 
 - Cela dit, si vos informations font sens, cela donnera encore plus de poids à votre bluff. Si vous innocentez certains joueurs à de multiples reprises, le Village aura tendance à les garder en vie. A l’inverse, il va plutôt exécuter les personnes désignées comme étant potentiellement le Démon. En revanche, si cela ne s’avère pas payant, le Village aura tendance à vous suspecter à votre tour.
 
-- Vous pouvez mentir et dire “Parmi ces deux joueurs il n’y a pas de Démon” pour innocenter un acolyte maléfique.
+- Vous pouvez mentir et dire “Parmi ces deux joueurs il n’y a pas de Démon” pour innocenter un Acolyte Maléfique.
 
-- Si un joueur gentil met en difficulté votre équipe, vous pouvez jeter des suspicions sur lui en annonçant qu’il a été identifié comme étant le Démon cette nuit. Vous pourrez ainsi le discréditer et même peut-être réussir à le faire exécuter. Vous pouvez vous justifier en disant qu’il était sans doute votre faux-positif. Cette stratégie peut s’avérer payante si vous avez besoin qu’un joueur soit exécuté mais que vous ne pouvez ou voulez pas le faire de nuit (<Role.SOLDAT /> ou <Role.GARDIEN /> par exemple). Vous pouvez aussi essayer de terminer la partie en essayant d’accabler un <Role.VERTUEUX /> ou un <Role.MAIRE /> !
+- Si un joueur Gentil met en difficulté votre équipe, vous pouvez jeter des suspicions sur lui en annonçant qu’il a été identifié comme étant le Démon cette nuit. Vous pourrez ainsi le discréditer et même peut-être réussir à le faire exécuter. Vous pouvez vous justifier en disant qu’il était sans doute votre faux-positif. Cette stratégie peut s’avérer payante si vous avez besoin qu’un joueur soit exécuté mais que vous ne pouvez ou voulez pas le faire de nuit (<Role.SOLDAT /> ou <Role.GARDIEN /> par exemple). Vous pouvez aussi essayer de terminer la partie en essayant d’accabler un <Role.VERTUEUX /> ou un <Role.MAIRE /> !
 
-- Gardez en tête que la <Role.VOYANTE /> peut choisir des joueurs morts ou même se choisir elle-même. Annoncer qu’un joueur mort est en réalité le Démon permet de rendre suspectes les informations qu’il a donné mais cela permet aussi d’affirmer qu’il n’y a plus qu’un seul joueur maléfique (dans les configurations avec 1 Démon et 1 Sbire). Cette stratégie peut s’avérer payante de part la confusion qu’elle sème dans le village. Pour que cela fonctionne, le moyen idéal serait de viser un <Role.GARDIEN /> qui est mort de nuit et le faire passer pour un Démon qui s’est suicidé.
+- Gardez en tête que la <Role.VOYANTE /> peut choisir des joueurs morts ou même se choisir elle-même. Annoncer qu’un joueur mort est en réalité le Démon permet de rendre suspectes les informations qu’il a donné mais cela permet aussi d’affirmer qu’il n’y a plus qu’un seul joueur Maléfique (dans les configurations avec 1 Démon et 1 Sbire). Cette stratégie peut s’avérer payante de part la confusion qu’elle sème dans le Village. Pour que cela fonctionne, le moyen idéal serait de viser un <Role.GARDIEN /> qui est mort de nuit et le faire passer pour un Démon qui s’est suicidé.
 
-- Si vous êtes le <Role.IMP />, vous pouvez vous dévoiler publiquement comme étant la voyante puis vous suicider la nuit pour ajouter de la crédibilité à vos informations.
+- Si vous êtes le <Role.IMP />, vous pouvez vous dévoiler publiquement comme étant la <Role.VOYANTE /> puis vous suicider la nuit pour ajouter de la crédibilité à vos informations.
 
 - Si vous êtes la <Role.CROQUEUSEDHOMMES />’homme, vous pouvez accuser votre vrai Démon et faire tout pour qu’il soit exécuté. Cela permet à un éventuel <Role.CROQUEMORT /> de confirmer que vous avez exécuté le Démon et donc que vous êtes bel et bien la <Role.VOYANTE /> !
