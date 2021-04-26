@@ -1,10 +1,13 @@
 let fs = require('fs')
 
+const MODULES = ['trouble-brewing', 'bad-moon-rising', 'sects-and-violets', 'deadly-penance-day']
+const FICHES = ['trouble-brewing', 'bad-moon-rising', 'sects-and-violets', 'deadly-penance-day', 'a-day-to-remember', 'laissez-un-faire', 'largely-un-faire']
+
 module.exports = {
     someSidebar: {
         Accueil: [ 'index' ],
-        Modules: fs.readdirSync('docs/modules/').map(module_file => `modules/${module_file.split('.')[ 0 ]}`),
-        Fiches: fs.readdirSync('docs/fiches/').map(cheatsheet_file => `fiches/${cheatsheet_file.split('.')[ 0 ]}`),
-        Roles: fs.readdirSync('docs/roles/').map(role_file => `roles/${role_file.split('.')[ 0 ]}`)
+        Modules: MODULES.map(module => `modules/${module}`),
+        Roles: fs.readdirSync('docs/roles/').map(role_file => `roles/${role_file.split('.')[ 0 ]}`),
+        Fiches: FICHES.map(fiche => `fiches/${fiche}`),
     },
 };
