@@ -12,6 +12,6 @@ slug: /
 [Bad Moon Rising](modules/bad-moon-rising)
 
 
-# Modules custom
+# Compositions (Custom)
 
 [Deadly Penance Day](modules/deadly-penance-day)
