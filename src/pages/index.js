@@ -13,6 +13,8 @@ const features = [
         module: 'bad-moon-rising',
         description: (
             <>
+                Une razzia de morts, un concert de décès !
+                Une place prépondérante pour l'ivresse et la protection, Bad Moon Rising sera votre 2ème expérience de jeu sur BotC, pour les joueurs intermédiaires.
             </>
         ),
     },
@@ -22,6 +24,8 @@ const features = [
         module: 'trouble-brewing',
         description: (
             <>
+                De l'art de l'ivresse à celui d'empoisonnement...
+                Trouble Brewing sera votre première expérience dans le monde fantastique de Blood On The Clock Tower ! C'est par ce module qu'on commence.
             </>
         ),
     },
@@ -31,6 +35,8 @@ const features = [
         module: 'sects-and-violets',
         description: (
             <>
+                La Folie arrive et l'Empoisonnement est plus présent que jamais !
+                Sects & Violets sera votre 3ème expérience sur BotC, à réserver aux joueurs confirmés.
             </>
         ),
     },
