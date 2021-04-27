@@ -32,17 +32,17 @@ export default class Module extends DocComponent {
             Role.VERTUEUX,
             Role.EMPOISONNEUR,
             Role.TRAITRE,
-            Role.CROQUEUSEDHOMMES,
+            Role.CROQUEUSE_D_HOMMES,
             Role.BARON,
             Role.IMP
         ])
     static readonly BAD_MOON_RISING = new Module(
         'Bad Moon Rising',
-        'bad_moon_rising',
+        'bad-moon-rising',
         [
             Role.MAMIE,
             Role.MARIN,
-            Role.FEMMEDECHAMBRE,
+            Role.FEMME_DE_CHAMBRE,
             Role.EXORCISTE,
             Role.AUBERGISTE,
             Role.PARIEUR,
@@ -58,7 +58,7 @@ export default class Module extends DocComponent {
             Role.BRUTE,
             Role.LUNATIQUE,
             Role.PARRAIN,
-            Role.AVOCATDUDIABLE,
+            Role.AVOCAT_DU_DIABLE,
             Role.ASSASSIN,
             Role.CONSPIRATEUR,
             Role.PUKKA,
@@ -77,10 +77,10 @@ export default class Module extends DocComponent {
         [
             Role.CUISTOT,
             Role.ENQUETEUR,
-            Role.CHASSEURDEPRIMES,
+            Role.CHASSEUR_DE_PRIMES,
             Role.MARIN,
             Role.PREDICATEUR,
-            Role.CHEFDESECTE,
+            Role.CHEF_DE_SECTE,
             Role.CRIEUR,
             Role.PARIEUR,
             Role.EXORCISTE,
@@ -96,7 +96,7 @@ export default class Module extends DocComponent {
             Role.BARON,
             Role.SORCIERE,
             Role.TRAITRE,
-            Role.PTITMONSTRE
+            Role.PTIT_MONSTRE
         ])
 
 }
