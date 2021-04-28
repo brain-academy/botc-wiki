@@ -1,7 +1,7 @@
-import DocComponent from '../doc-component'
+import MarkdownDocument from '../markdown-document'
 import Type from './type'
 
-export default class Role extends DocComponent {
+export default class Role extends MarkdownDocument {
 
     constructor(readonly type: Type, readonly name: string, protected readonly _filename: string = name.toLowerCase()) {
         super(name, _filename)

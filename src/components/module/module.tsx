@@ -1,7 +1,7 @@
-import DocComponent from '../doc-component'
+import MarkdownDocument from '../markdown-document'
 import Role from '../role/role'
 
-export default class Module extends DocComponent {
+export default class Module extends MarkdownDocument {
 
     protected _base_url = '/docs/modules'
 

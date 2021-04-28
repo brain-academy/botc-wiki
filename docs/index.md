@@ -1,6 +1,5 @@
 ---
 id: index
-title: Index
 hide_title: true
 slug: /
 ---

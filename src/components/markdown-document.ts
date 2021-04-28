@@ -1,4 +1,4 @@
-export default abstract class DocComponent {
+export default abstract class MarkdownDocument {
 
     protected abstract readonly _base_url: string
 

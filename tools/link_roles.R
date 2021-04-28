@@ -11,7 +11,7 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 
 # Load Tags File.
-list_tags <- readLines(con = "../src/components/role/role-component.tsx",
+list_tags <- readLines(con = "../src/components/role/role.component.tsx",
                        encoding = "UTF-8")
 
 # Get the list of the roles.
@@ -83,8 +83,8 @@ plyr::l_ply(
                stringr::str_replace("^# ", "")),
       "---",
       "",
-      "import * as Module from '/src/components/module/module-component'",
-      "import * as Role from '/src/components/role/role-component'",
+      "import * as Module from '/src/components/module/module.component'",
+      "import * as Role from '/src/components/role/role.component'",
       "",
       paste0(
         "<img src='/img/blood-on-the-clocktower/roles/",
