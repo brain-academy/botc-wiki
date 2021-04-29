@@ -8,10 +8,6 @@ export abstract class Role extends MarkdownDocument {
 }
 
 export class Villageois extends Role {
-
-    constructor(readonly name: string, protected readonly _filename: string = name.toLowerCase()) {
-        super(name, _filename)
-    }
     static readonly ARCHIVISTE = new Villageois('Archiviste')
     static readonly ARTISTE = new Villageois('Artiste')
     static readonly AUBERGISTE = new Villageois('Aubergiste')
@@ -57,14 +53,10 @@ export class Villageois extends Role {
 }
 
 export class Etranger extends Role {
-
-    constructor(readonly name: string, protected readonly _filename: string = name.toLowerCase()) {
-        super(name, _filename)
-    }
     static readonly BARBIER = new Etranger('Barbier')
     static readonly BETE_DE_FOIRE = new Etranger('Bete de foire', 'bete-de-foire')
     static readonly BRUTE = new Etranger('Brute')
-    static readonly DULCINEE = new Etranger('Dulcinée')
+    static readonly DULCINEE = new Etranger('Dulcinée', 'dulcinee')
     static readonly GITANE = new Etranger('Gitane')
     static readonly INVENTEUR = new Etranger('Inventeur')
     static readonly LUNATIQUE = new Etranger('Lunatique')
@@ -78,10 +70,6 @@ export class Etranger extends Role {
 }
 
 export class Sbire extends Role {
-
-    constructor(readonly name: string, protected readonly _filename: string = name.toLowerCase()) {
-        super(name, _filename)
-    }
     static readonly ASSASSIN = new Sbire('Assassin')
     static readonly AVOCAT_DU_DIABLE = new Sbire('Avocat du Diable', 'avocat-du-diable')
     static readonly BARON = new Sbire('Baron')
@@ -97,10 +85,6 @@ export class Sbire extends Role {
 }
 
 export class Demon extends Role {
-    
-    constructor(readonly name: string, protected readonly _filename: string = name.toLowerCase()) {
-        super(name, _filename)
-    }
     static readonly FANG_GU = new Demon('Fang Gu', 'fang-gu')
     static readonly IMP = new Demon('Imp')
     static readonly PO = new Demon('Po', 'po')

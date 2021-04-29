@@ -10,6 +10,8 @@ slug: /
 
 [Bad Moon Rising](modules/bad-moon-rising)
 
+[Sects & Violets](modules/sects-and-violets)
+
 
 # Compositions (Custom)
 
