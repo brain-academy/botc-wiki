@@ -36,7 +36,7 @@ export const CUISTOT = () => <RoleComponent role={Role.CUISTOT} />
 export const EMPATHIQUE = () => <RoleComponent role={Role.EMPATHIQUE} />
 export const EMPOISONNEUR = () => <RoleComponent role={Role.EMPOISONNEUR} />
 export const ENQUETEUR = () => <RoleComponent role={Role.ENQUETEUR} />
-export const ERMITE = () => <RoleComponent role={Role.ERMITE} />
+export const ESPION = () => <RoleComponent role={Role.ESPION} />
 export const EXORCISTE = () => <RoleComponent role={Role.EXORCISTE} />
 export const FAUSSAIRE = () => <RoleComponent role={Role.FAUSSAIRE} />
 export const FEMMEDECHAMBRE = () => <RoleComponent role={Role.FEMME_DE_CHAMBRE} />
@@ -65,11 +65,11 @@ export const PREDICATEUR = () => <RoleComponent role={Role.PREDICATEUR} />
 export const PROFESSEUR = () => <RoleComponent role={Role.PROFESSEUR} />
 export const PTITMONSTRE = () => <RoleComponent role={Role.PTIT_MONSTRE} />
 export const PUCELLE = () => <RoleComponent role={Role.PUCELLE} />
+export const RECLUS = () => <RoleComponent role={Role.RECLUS} />
 export const SHABALOTH = () => <RoleComponent role={Role.SHABALOTH} />
 export const SOLDAT = () => <RoleComponent role={Role.SOLDAT} />
 export const SORCIERE = () => <RoleComponent role={Role.SORCIERE} />
 export const SOULARD = () => <RoleComponent role={Role.SOULARD} />
-export const TRAITRE = () => <RoleComponent role={Role.TRAITRE} />
 export const VERTUEUX = () => <RoleComponent role={Role.VERTUEUX} />
 export const VOYANTE = () => <RoleComponent role={Role.VOYANTE} />
 export const ZOMBUUL = () => <RoleComponent role={Role.ZOMBUUL} />

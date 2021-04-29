@@ -28,10 +28,10 @@ export default class Module extends MarkdownDocument {
             Role.MAIRE,
             Role.MAJORDOME,
             Role.SOULARD,
-            Role.ERMITE,
+            Role.RECLUS,
             Role.VERTUEUX,
             Role.EMPOISONNEUR,
-            Role.TRAITRE,
+            Role.ESPION,
             Role.CROQUEUSE_D_HOMMES,
             Role.BARON,
             Role.IMP
@@ -95,7 +95,7 @@ export default class Module extends MarkdownDocument {
             Role.ASSASSIN,
             Role.BARON,
             Role.SORCIERE,
-            Role.TRAITRE,
+            Role.ESPION,
             Role.PTIT_MONSTRE
         ])
 
