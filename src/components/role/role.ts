@@ -1,68 +1,114 @@
 import MarkdownDocument from '../markdown-document'
-import Type from './type'
 
-export default class Role extends MarkdownDocument {
-
-    constructor(readonly type: Type, readonly name: string, protected readonly _filename: string = name.toLowerCase()) {
+export abstract class Role extends MarkdownDocument {
+    constructor(readonly name: string, protected readonly _filename: string = name.toLowerCase()) {
         super(name, _filename)
     }
-
     protected _base_url = '/docs/roles'
+}
 
-    static readonly ARCHIVISTE = new Role(Type.VILLAGEOIS, 'Archiviste')
-    static readonly ASSASSIN = new Role(Type.SBIRE, 'Assassin')
-    static readonly AUBERGISTE = new Role(Type.VILLAGEOIS, 'Aubergiste')
-    static readonly AVOCAT_DU_DIABLE = new Role(Type.SBIRE, 'Avocat du Diable', 'avocat-du-diable')
-    static readonly BARBIER = new Role(Type.ETRANGER, 'Barbier')
-    static readonly BARON = new Role(Type.SBIRE, 'Baron')
-    static readonly BRUTE = new Role(Type.ETRANGER, 'Brute')
-    static readonly CHASSEUR_DE_PRIMES = new Role(Type.VILLAGEOIS, 'Chasseur de primes', 'chasseur-de-primes')
-    static readonly CHEF_DE_SECTE = new Role(Type.VILLAGEOIS, 'Chef de Secte', 'chef-de-secte')
-    static readonly COMMERE = new Role(Type.VILLAGEOIS, 'Commère', 'commere')
-    static readonly CONSPIRATEUR = new Role(Type.SBIRE, 'Conspirateur')
-    static readonly COURTISANE = new Role(Type.VILLAGEOIS, 'Courtisane')
-    static readonly CRIEUR = new Role(Type.VILLAGEOIS, 'Crieur')
-    static readonly CROQUE_MORT = new Role(Type.VILLAGEOIS, 'Croque-Mort', 'croque-mort')
-    static readonly CROQUEUSE_D_HOMMES = new Role(Type.SBIRE, 'Croqueuse d\'hommes', 'croqueuse-d-hommes')
-    static readonly CUISTOT = new Role(Type.VILLAGEOIS, 'Cuistot')
-    static readonly EMPATHIQUE = new Role(Type.VILLAGEOIS, 'Empathique')
-    static readonly EMPOISONNEUR = new Role(Type.SBIRE, 'Empoisonneur')
-    static readonly ENQUETEUR = new Role(Type.VILLAGEOIS, 'Enquêteur', 'enqueteur')
-    static readonly ESPION = new Role(Type.SBIRE, 'Espion', 'espion')
-    static readonly EXORCISTE = new Role(Type.VILLAGEOIS, 'Exorciste')
-    static readonly FAUSSAIRE = new Role(Type.VILLAGEOIS, 'Faussaire')
-    static readonly FEMME_DE_CHAMBRE = new Role(Type.VILLAGEOIS, 'Femme de Chambre', 'femme-de-chambre')
-    static readonly FOU = new Role(Type.VILLAGEOIS, 'Fou')
-    static readonly GARDIEN = new Role(Type.VILLAGEOIS, 'Gardien')
-    static readonly GITANE = new Role(Type.ETRANGER, 'Gitane')
-    static readonly LAVANDIERE = new Role(Type.VILLAGEOIS, 'Lavandière', 'lavandiere')
-    static readonly HERBORISTE = new Role(Type.VILLAGEOIS, 'Herboriste')
-    static readonly IMP = new Role(Type.DEMON, 'Imp')
-    static readonly INVENTEUR = new Role(Type.ETRANGER, 'Inventeur')
-    static readonly LUNATIQUE = new Role(Type.ETRANGER, 'Lunatique')
-    static readonly MAIRE = new Role(Type.VILLAGEOIS, 'Maire')
-    static readonly MAJORDOME = new Role(Type.ETRANGER, 'Majordome')
-    static readonly MAMIE = new Role(Type.VILLAGEOIS, 'Mamie')
-    static readonly MARIN = new Role(Type.VILLAGEOIS, 'Marin')
-    static readonly MENESTREL = new Role(Type.VILLAGEOIS, 'Ménestrel', 'menestrel')
-    static readonly MERCENAIRE = new Role(Type.VILLAGEOIS, 'Mercenaire')
-    static readonly MOINE = new Role(Type.VILLAGEOIS, 'Moine')
-    static readonly PACIFISTE = new Role(Type.VILLAGEOIS, 'Pacifiste')
-    static readonly PARIEUR = new Role(Type.VILLAGEOIS, 'Parieur')
-    static readonly PARRAIN = new Role(Type.SBIRE, 'Parrain')
-    static readonly PO = new Role(Type.DEMON, 'Po', 'po')
-    static readonly POLITICIEN = new Role(Type.ETRANGER, 'Politicien')
-    static readonly PUKKA = new Role(Type.DEMON, 'Pukka')
-    static readonly PREDICATEUR = new Role(Type.VILLAGEOIS, 'Predicateur')
-    static readonly PROFESSEUR = new Role(Type.VILLAGEOIS, 'Professeur')
-    static readonly PTIT_MONSTRE = new Role(Type.DEMON, 'P\'tit Monstre', 'ptit-monstre')
-    static readonly PUCELLE = new Role(Type.VILLAGEOIS, 'Pucelle')
-    static readonly RECLUS = new Role(Type.ETRANGER, 'Reclus')
-    static readonly SHABALOTH = new Role(Type.DEMON, 'Shabaloth')
-    static readonly SOLDAT = new Role(Type.VILLAGEOIS, 'Soldat')
-    static readonly SORCIERE = new Role(Type.SBIRE, 'Sorcière', 'sorciere')
-    static readonly SOULARD = new Role(Type.ETRANGER, 'Soûlard', 'soulard')
-    static readonly VERTUEUX = new Role(Type.ETRANGER, 'Vertueux')
-    static readonly VOYANTE = new Role(Type.VILLAGEOIS, 'Voyante')
-    static readonly ZOMBUUL = new Role(Type.DEMON, 'Zombuul')
+export class Villageois extends Role {
+
+    constructor(readonly name: string, protected readonly _filename: string = name.toLowerCase()) {
+        super(name, _filename)
+    }
+    static readonly ARCHIVISTE = new Villageois('Archiviste')
+    static readonly ARTISTE = new Villageois('Artiste')
+    static readonly AUBERGISTE = new Villageois('Aubergiste')
+    static readonly CHARMEUR_DE_SERPENT = new Villageois('Chasseur de serpent', 'charmeur-de-serpent')
+    static readonly CHASSEUR_DE_PRIMES = new Villageois('Chasseur de primes', 'chasseur-de-primes')
+    static readonly CHEF_DE_SECTE = new Villageois('Chef de Secte', 'chef-de-secte')
+    static readonly COMMERE = new Villageois('Commère', 'commere')
+    static readonly COURTISANE = new Villageois('Courtisane')
+    static readonly COUTURIERE = new Villageois('Couturiere')
+    static readonly CRIEUR = new Villageois('Crieur')
+    static readonly CROQUE_MORT = new Villageois('Croque-Mort', 'croque-mort')
+    static readonly CUISTOT = new Villageois('Cuistot')
+    static readonly EMPATHIQUE = new Villageois('Empathique')
+    static readonly ENQUETEUR = new Villageois('Enquêteur', 'enqueteur')
+    static readonly EXORCISTE = new Villageois('Exorciste')
+    static readonly FAUSSAIRE = new Villageois('Faussaire')
+    static readonly FEMME_DE_CHAMBRE = new Villageois('Femme de Chambre', 'femme-de-chambre')
+    static readonly FLEURISTE = new Villageois('Fleuriste')
+    static readonly FOU = new Villageois('Fou')
+    static readonly GARDIEN = new Villageois('Gardien')
+    static readonly HORLOGER = new Villageois('Horloger')
+    static readonly JONGLEUR = new Villageois('Jongleur')
+    static readonly LAVANDIERE = new Villageois('Lavandière', 'lavandiere')
+    static readonly HERBORISTE = new Villageois('Herboriste')
+    static readonly MAIRE = new Villageois('Maire')
+    static readonly MAMIE = new Villageois('Mamie')
+    static readonly MARIN = new Villageois('Marin')
+    static readonly MATHEMATICIEN = new Villageois('Mathematicien')
+    static readonly MENESTREL = new Villageois('Ménestrel', 'menestrel')
+    static readonly MERCENAIRE = new Villageois('Mercenaire')
+    static readonly MOINE = new Villageois('Moine')
+    static readonly ORACLE = new Villageois('Oracle')
+    static readonly PACIFISTE = new Villageois('Pacifiste')
+    static readonly PARIEUR = new Villageois('Parieur')
+    static readonly PREDICATEUR = new Villageois('Predicateur')
+    static readonly PROFESSEUR = new Villageois('Professeur')
+    static readonly PUCELLE = new Villageois('Pucelle')
+    static readonly REVEUR = new Villageois('Reveur')
+    static readonly SAGE = new Villageois('Sage')
+    static readonly SAVANT = new Villageois('Savant')
+    static readonly SOLDAT = new Villageois('Soldat')
+    static readonly VOYANTE = new Villageois('Voyante')
+}
+
+export class Etranger extends Role {
+
+    constructor(readonly name: string, protected readonly _filename: string = name.toLowerCase()) {
+        super(name, _filename)
+    }
+    static readonly BARBIER = new Etranger('Barbier')
+    static readonly BETE_DE_FOIRE = new Etranger('Bete de foire', 'bete-de-foire')
+    static readonly BRUTE = new Etranger('Brute')
+    static readonly DULCINEE = new Etranger('Dulcinée')
+    static readonly GITANE = new Etranger('Gitane')
+    static readonly INVENTEUR = new Etranger('Inventeur')
+    static readonly LUNATIQUE = new Etranger('Lunatique')
+    static readonly MAJORDOME = new Etranger('Majordome')
+    static readonly MALADROIT = new Etranger('Maladroit')
+    static readonly POLITICIEN = new Etranger('Politicien')
+    static readonly RECLUS = new Etranger('Reclus')
+    static readonly SOULARD = new Etranger('Soûlard', 'soulard')
+    static readonly VERTUEUX = new Etranger('Vertueux')
+
+}
+
+export class Sbire extends Role {
+
+    constructor(readonly name: string, protected readonly _filename: string = name.toLowerCase()) {
+        super(name, _filename)
+    }
+    static readonly ASSASSIN = new Sbire('Assassin')
+    static readonly AVOCAT_DU_DIABLE = new Sbire('Avocat du Diable', 'avocat-du-diable')
+    static readonly BARON = new Sbire('Baron')
+    static readonly CONSPIRATEUR = new Sbire('Conspirateur')
+    static readonly CROQUEUSE_D_HOMMES = new Sbire('Croqueuse d\'hommes', 'croqueuse-d-hommes')
+    static readonly EMPOISONNEUR = new Sbire('Empoisonneur')
+    static readonly ESPION = new Sbire('Espion', 'espion')
+    static readonly JUMEAU_MALEFIQUE = new Sbire('Jumeau Maléfique', 'jumeau-malefique')
+    static readonly MANIPULATEUR = new Sbire('Manipulateur')
+    static readonly PARRAIN = new Sbire('Parrain')
+    static readonly SORCIERE = new Sbire('Sorcière', 'sorciere')
+    static readonly VIEILLE_CHOUETTE = new Sbire('Vieille Chouette', 'vieille-chouette')
+}
+
+export class Demon extends Role {
+    
+    constructor(readonly name: string, protected readonly _filename: string = name.toLowerCase()) {
+        super(name, _filename)
+    }
+    static readonly FANG_GU = new Demon('Fang Gu', 'fang-gu')
+    static readonly IMP = new Demon('Imp')
+    static readonly PO = new Demon('Po', 'po')
+    static readonly PUKKA = new Demon('Pukka')
+    static readonly NO_DASHII = new Demon('No Dashii', 'no-dashii')
+    static readonly SHABALOTH = new Demon('Shabaloth')
+    static readonly PTIT_MONSTRE = new Demon('P\'tit Monstre', 'ptit-monstre')
+    static readonly VIGORMORTIS = new Demon('Vigormortis')
+    static readonly VORTOX = new Demon('Vortox')
+    static readonly ZOMBUUL = new Demon('Zombuul')
 }

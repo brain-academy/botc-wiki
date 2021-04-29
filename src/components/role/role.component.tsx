@@ -1,75 +1,96 @@
 import React from 'react'
-import Role from './role'
-import Type from './type'
+import {Demon, Etranger, Role, Sbire, Villageois} from './role'
 
-const RoleComponent = ({role}: {role: Role}) => (<a href={role.path} style={{color: roleTypeToColor(role.type)}}>{role.name}</a>)
+const RoleComponent = ({role}: {role: Role}) => (<a href={role.path} style={{color: roleTypeToColor(role)}}>{role.name}</a>)
 
-const roleTypeToColor = (type: Type) => {
-    switch (type) {
-        case Type.VILLAGEOIS:
-            return 'rgb(8,193,255)'
-        case Type.ETRANGER:
-            return 'rgb(23,104,255)'
-        case Type.SBIRE:
-            return 'rgb(248,2,5)'
-        case Type.DEMON:
-            return 'rgb(197,0,0)'
-    }
+const roleTypeToColor = (role: Role) => {
+    if (role instanceof (Villageois))
+        return 'rgb(8,193,255)'
+    else if (role instanceof (Etranger))
+        return 'rgb(23,104,255)'
+    else if (role instanceof (Sbire))
+        return 'rgb(248,2,5)'
+    else if (role instanceof (Demon))
+        return 'rgb(197,0,0)'
 }
 
-export const ARCHIVISTE = () => <RoleComponent role={Role.ARCHIVISTE} />
-export const ASSASSIN = () => <RoleComponent role={Role.ASSASSIN} />
-export const AUBERGISTE = () => <RoleComponent role={Role.AUBERGISTE} />
-export const AVOCATDUDIABLE = () => <RoleComponent role={Role.AVOCAT_DU_DIABLE} />
-export const BARBIER = () => <RoleComponent role={Role.BARBIER} />
-export const BARON = () => <RoleComponent role={Role.BARON} />
-export const BRUTE = () => <RoleComponent role={Role.BRUTE} />
-export const CHASSEURDEPRIMES = () => <RoleComponent role={Role.CHASSEUR_DE_PRIMES} />
-export const CHEFDESECTE = () => <RoleComponent role={Role.CHEF_DE_SECTE} />
-export const COMMERE = () => <RoleComponent role={Role.COMMERE} />
-export const CONSPIRATEUR = () => <RoleComponent role={Role.CONSPIRATEUR} />
-export const COURTISANE = () => <RoleComponent role={Role.COURTISANE} />
-export const CRIEUR = () => <RoleComponent role={Role.CRIEUR} />
-export const CROQUEMORT = () => <RoleComponent role={Role.CROQUE_MORT} />
-export const CROQUEUSEDHOMMES = () => <RoleComponent role={Role.CROQUEUSE_D_HOMMES} />
-export const CUISTOT = () => <RoleComponent role={Role.CUISTOT} />
-export const EMPATHIQUE = () => <RoleComponent role={Role.EMPATHIQUE} />
-export const EMPOISONNEUR = () => <RoleComponent role={Role.EMPOISONNEUR} />
-export const ENQUETEUR = () => <RoleComponent role={Role.ENQUETEUR} />
-export const ESPION = () => <RoleComponent role={Role.ESPION} />
-export const EXORCISTE = () => <RoleComponent role={Role.EXORCISTE} />
-export const FAUSSAIRE = () => <RoleComponent role={Role.FAUSSAIRE} />
-export const FEMMEDECHAMBRE = () => <RoleComponent role={Role.FEMME_DE_CHAMBRE} />
-export const FOU = () => <RoleComponent role={Role.FOU} />
-export const GARDIEN = () => <RoleComponent role={Role.GARDIEN} />
-export const GITANE = () => <RoleComponent role={Role.GITANE} />
-export const HERBORISTE = () => <RoleComponent role={Role.HERBORISTE} />
-export const IMP = () => <RoleComponent role={Role.IMP} />
-export const INVENTEUR = () => <RoleComponent role={Role.INVENTEUR} />
-export const LAVANDIERE = () => <RoleComponent role={Role.LAVANDIERE} />
-export const LUNATIQUE = () => <RoleComponent role={Role.LUNATIQUE} />
-export const MAIRE = () => <RoleComponent role={Role.MAIRE} />
-export const MAJORDOME = () => <RoleComponent role={Role.MAJORDOME} />
-export const MAMIE = () => <RoleComponent role={Role.MAMIE} />
-export const MARIN = () => <RoleComponent role={Role.MARIN} />
-export const MENESTREL = () => <RoleComponent role={Role.MENESTREL} />
-export const MERCENAIRE = () => <RoleComponent role={Role.MERCENAIRE} />
-export const MOINE = () => <RoleComponent role={Role.MOINE} />
-export const PACIFISTE = () => <RoleComponent role={Role.PACIFISTE} />
-export const PARIEUR = () => <RoleComponent role={Role.PARIEUR} />
-export const PARRAIN = () => <RoleComponent role={Role.PARRAIN} />
-export const PO = () => <RoleComponent role={Role.PO} />
-export const POLITICIEN = () => <RoleComponent role={Role.POLITICIEN} />
-export const PUKKA = () => <RoleComponent role={Role.PUKKA} />
-export const PREDICATEUR = () => <RoleComponent role={Role.PREDICATEUR} />
-export const PROFESSEUR = () => <RoleComponent role={Role.PROFESSEUR} />
-export const PTITMONSTRE = () => <RoleComponent role={Role.PTIT_MONSTRE} />
-export const PUCELLE = () => <RoleComponent role={Role.PUCELLE} />
-export const RECLUS = () => <RoleComponent role={Role.RECLUS} />
-export const SHABALOTH = () => <RoleComponent role={Role.SHABALOTH} />
-export const SOLDAT = () => <RoleComponent role={Role.SOLDAT} />
-export const SORCIERE = () => <RoleComponent role={Role.SORCIERE} />
-export const SOULARD = () => <RoleComponent role={Role.SOULARD} />
-export const VERTUEUX = () => <RoleComponent role={Role.VERTUEUX} />
-export const VOYANTE = () => <RoleComponent role={Role.VOYANTE} />
-export const ZOMBUUL = () => <RoleComponent role={Role.ZOMBUUL} />
+export const ARCHIVISTE = () => <RoleComponent role={Villageois.ARCHIVISTE} />
+export const ARTISTE = () => <RoleComponent role={Villageois.ARTISTE} />
+export const AUBERGISTE = () => <RoleComponent role={Villageois.AUBERGISTE} />
+export const CHASSEURDEPRIMES = () => <RoleComponent role={Villageois.CHASSEUR_DE_PRIMES} />
+export const CHARMEURDESERPENT = () => <RoleComponent role={Villageois.CHARMEUR_DE_SERPENT} />
+export const CHEFDESECTE = () => <RoleComponent role={Villageois.CHEF_DE_SECTE} />
+export const COMMERE = () => <RoleComponent role={Villageois.COMMERE} />
+export const COURTISANE = () => <RoleComponent role={Villageois.COURTISANE} />
+export const COUTURIERE = () => <RoleComponent role={Villageois.COUTURIERE} />
+export const CRIEUR = () => <RoleComponent role={Villageois.CRIEUR} />
+export const CROQUEMORT = () => <RoleComponent role={Villageois.CROQUE_MORT} />
+export const CUISTOT = () => <RoleComponent role={Villageois.CUISTOT} />
+export const EMPATHIQUE = () => <RoleComponent role={Villageois.EMPATHIQUE} />
+export const ENQUETEUR = () => <RoleComponent role={Villageois.ENQUETEUR} />
+export const EXORCISTE = () => <RoleComponent role={Villageois.EXORCISTE} />
+export const FAUSSAIRE = () => <RoleComponent role={Villageois.FAUSSAIRE} />
+export const FEMMEDECHAMBRE = () => <RoleComponent role={Villageois.FEMME_DE_CHAMBRE} />
+export const FLEURISTE = () => <RoleComponent role={Villageois.FLEURISTE} />
+export const FOU = () => <RoleComponent role={Villageois.FOU} />
+export const GARDIEN = () => <RoleComponent role={Villageois.GARDIEN} />
+export const HORLOGER = () => <RoleComponent role={Villageois.HORLOGER} />
+export const HERBORISTE = () => <RoleComponent role={Villageois.HERBORISTE} />
+export const JONGLEUR = () => <RoleComponent role={Villageois.JONGLEUR} />
+export const LAVANDIERE = () => <RoleComponent role={Villageois.LAVANDIERE} />
+export const MAIRE = () => <RoleComponent role={Villageois.MAIRE} />
+export const MAMIE = () => <RoleComponent role={Villageois.MAMIE} />
+export const MARIN = () => <RoleComponent role={Villageois.MARIN} />
+export const MATHEMATICIEN = () => <RoleComponent role={Villageois.MATHEMATICIEN} />
+export const MENESTREL = () => <RoleComponent role={Villageois.MENESTREL} />
+export const MERCENAIRE = () => <RoleComponent role={Villageois.MERCENAIRE} />
+export const MOINE = () => <RoleComponent role={Villageois.MOINE} />
+export const ORACLE = () => <RoleComponent role={Villageois.ORACLE} />
+export const PACIFISTE = () => <RoleComponent role={Villageois.PACIFISTE} />
+export const PARIEUR = () => <RoleComponent role={Villageois.PARIEUR} />
+export const PREDICATEUR = () => <RoleComponent role={Villageois.PREDICATEUR} />
+export const PROFESSEUR = () => <RoleComponent role={Villageois.PROFESSEUR} />
+export const PUCELLE = () => <RoleComponent role={Villageois.PUCELLE} />
+export const REVEUR = () => <RoleComponent role={Villageois.REVEUR} />
+export const SAGE = () => <RoleComponent role={Villageois.SAGE} />
+export const SAVANT = () => <RoleComponent role={Villageois.SAVANT} />
+export const SOLDAT = () => <RoleComponent role={Villageois.SOLDAT} />
+export const VOYANTE = () => <RoleComponent role={Villageois.VOYANTE} />
+
+export const BARBIER = () => <RoleComponent role={Etranger.BARBIER} />
+export const BETEDEFOIRE = () => <RoleComponent role={Etranger.BETE_DE_FOIRE} />
+export const BRUTE = () => <RoleComponent role={Etranger.BRUTE} />
+export const DULCINEE = () => <RoleComponent role={Etranger.DULCINEE} />
+export const GITANE = () => <RoleComponent role={Etranger.GITANE} />
+export const INVENTEUR = () => <RoleComponent role={Etranger.INVENTEUR} />
+export const LUNATIQUE = () => <RoleComponent role={Etranger.LUNATIQUE} />
+export const MAJORDOME = () => <RoleComponent role={Etranger.MAJORDOME} />
+export const MALADROIT = () => <RoleComponent role={Etranger.MALADROIT} />
+export const POLITICIEN = () => <RoleComponent role={Etranger.POLITICIEN} />
+export const RECLUS = () => <RoleComponent role={Etranger.RECLUS} />
+export const SOULARD = () => <RoleComponent role={Etranger.SOULARD} />
+export const VERTUEUX = () => <RoleComponent role={Etranger.VERTUEUX} />
+
+export const ASSASSIN = () => <RoleComponent role={Sbire.ASSASSIN} />
+export const AVOCATDUDIABLE = () => <RoleComponent role={Sbire.AVOCAT_DU_DIABLE} />
+export const BARON = () => <RoleComponent role={Sbire.BARON} />
+export const CONSPIRATEUR = () => <RoleComponent role={Sbire.CONSPIRATEUR} />
+export const CROQUEUSEDHOMMES = () => <RoleComponent role={Sbire.CROQUEUSE_D_HOMMES} />
+export const EMPOISONNEUR = () => <RoleComponent role={Sbire.EMPOISONNEUR} />
+export const ESPION = () => <RoleComponent role={Sbire.ESPION} />
+export const JUMEAUMALEFIQUE = () => <RoleComponent role={Sbire.JUMEAU_MALEFIQUE} />
+export const MANIPULATEUR = () => <RoleComponent role={Sbire.MANIPULATEUR} />
+export const PARRAIN = () => <RoleComponent role={Sbire.PARRAIN} />
+export const SORCIERE = () => <RoleComponent role={Sbire.SORCIERE} />
+export const VIEILLECHOUETTE = () => <RoleComponent role={Sbire.VIEILLE_CHOUETTE} />
+
+export const IMP = () => <RoleComponent role={Demon.IMP} />
+export const FANGGU = () => <RoleComponent role={Demon.FANG_GU} />
+export const NODASHII = () => <RoleComponent role={Demon.NO_DASHII} />
+export const PO = () => <RoleComponent role={Demon.PO} />
+export const PUKKA = () => <RoleComponent role={Demon.PUKKA} />
+export const PTITMONSTRE = () => <RoleComponent role={Demon.PTIT_MONSTRE} />
+export const SHABALOTH = () => <RoleComponent role={Demon.SHABALOTH} />
+export const VIGORMORTIS = () => <RoleComponent role={Demon.VIGORMORTIS} />
+export const VORTOX = () => <RoleComponent role={Demon.VORTOX} />
+export const ZOMBUUL = () => <RoleComponent role={Demon.ZOMBUUL} />
