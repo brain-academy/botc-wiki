@@ -1,7 +1,18 @@
-import React from 'react'
-import {Demon, Etranger, Role, Sbire, Villageois} from './role'
+import React from 'react';
+import {Demon, Etranger, Role, Sbire, Villageois} from './role';
 
-const RoleComponent = ({role}: {role: Role}) => (<a href={role.path} style={{color: roleTypeToColor(role)}}>{role.name}</a>)
+const RoleComponent = ({role, tile}: {role: Role, tile?: boolean}) => (
+    !!tile ?
+        <a href={role.path}>
+            <div style={{border: `5px double ${roleTypeToColor(role)}`, width: '160px', height: '160px', textAlign: 'center'}}>
+                <img src={`/img/blood-on-the-clocktower/roles/${role.filename}.png`} height='150' />
+                <span style={{position: 'relative', top: '-30%', fontWeight: 'bold', color: roleTypeToColor(role)}}>{role.name}</span>
+            </div>
+        </a>
+        :
+        <a href={role.path} style={{color: roleTypeToColor(role), fontWeight: 'bold'}}>{role.name}</a>
+)
+
 
 const roleTypeToColor = (role: Role) => {
     if (role instanceof (Villageois))
@@ -14,83 +25,83 @@ const roleTypeToColor = (role: Role) => {
         return 'rgb(197,0,0)'
 }
 
-export const ARCHIVISTE = () => <RoleComponent role={Villageois.ARCHIVISTE} />
-export const ARTISTE = () => <RoleComponent role={Villageois.ARTISTE} />
-export const AUBERGISTE = () => <RoleComponent role={Villageois.AUBERGISTE} />
-export const CHASSEURDEPRIMES = () => <RoleComponent role={Villageois.CHASSEUR_DE_PRIMES} />
-export const CHARMEURDESERPENT = () => <RoleComponent role={Villageois.CHARMEUR_DE_SERPENT} />
-export const CHEFDESECTE = () => <RoleComponent role={Villageois.CHEF_DE_SECTE} />
-export const COMMERE = () => <RoleComponent role={Villageois.COMMERE} />
-export const COURTISANE = () => <RoleComponent role={Villageois.COURTISANE} />
-export const COUTURIERE = () => <RoleComponent role={Villageois.COUTURIERE} />
-export const CRIEUR = () => <RoleComponent role={Villageois.CRIEUR} />
-export const CROQUEMORT = () => <RoleComponent role={Villageois.CROQUE_MORT} />
-export const CUISTOT = () => <RoleComponent role={Villageois.CUISTOT} />
-export const EMPATHIQUE = () => <RoleComponent role={Villageois.EMPATHIQUE} />
-export const ENQUETEUR = () => <RoleComponent role={Villageois.ENQUETEUR} />
-export const EXORCISTE = () => <RoleComponent role={Villageois.EXORCISTE} />
-export const FAUSSAIRE = () => <RoleComponent role={Villageois.FAUSSAIRE} />
-export const FEMMEDECHAMBRE = () => <RoleComponent role={Villageois.FEMME_DE_CHAMBRE} />
-export const FLEURISTE = () => <RoleComponent role={Villageois.FLEURISTE} />
-export const FOU = () => <RoleComponent role={Villageois.FOU} />
-export const GARDIEN = () => <RoleComponent role={Villageois.GARDIEN} />
-export const HORLOGER = () => <RoleComponent role={Villageois.HORLOGER} />
-export const HERBORISTE = () => <RoleComponent role={Villageois.HERBORISTE} />
-export const JONGLEUR = () => <RoleComponent role={Villageois.JONGLEUR} />
-export const LAVANDIERE = () => <RoleComponent role={Villageois.LAVANDIERE} />
-export const MAIRE = () => <RoleComponent role={Villageois.MAIRE} />
-export const MAMIE = () => <RoleComponent role={Villageois.MAMIE} />
-export const MARIN = () => <RoleComponent role={Villageois.MARIN} />
-export const MATHEMATICIEN = () => <RoleComponent role={Villageois.MATHEMATICIEN} />
-export const MENESTREL = () => <RoleComponent role={Villageois.MENESTREL} />
-export const MERCENAIRE = () => <RoleComponent role={Villageois.MERCENAIRE} />
-export const MOINE = () => <RoleComponent role={Villageois.MOINE} />
-export const ORACLE = () => <RoleComponent role={Villageois.ORACLE} />
-export const PACIFISTE = () => <RoleComponent role={Villageois.PACIFISTE} />
-export const PARIEUR = () => <RoleComponent role={Villageois.PARIEUR} />
-export const PREDICATEUR = () => <RoleComponent role={Villageois.PREDICATEUR} />
-export const PROFESSEUR = () => <RoleComponent role={Villageois.PROFESSEUR} />
-export const PUCELLE = () => <RoleComponent role={Villageois.PUCELLE} />
-export const REVEUR = () => <RoleComponent role={Villageois.REVEUR} />
-export const SAGE = () => <RoleComponent role={Villageois.SAGE} />
-export const SAVANT = () => <RoleComponent role={Villageois.SAVANT} />
-export const SOLDAT = () => <RoleComponent role={Villageois.SOLDAT} />
-export const VOYANTE = () => <RoleComponent role={Villageois.VOYANTE} />
+export const ARCHIVISTE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.ARCHIVISTE} tile={tile} />
+export const ARTISTE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.ARTISTE} tile={tile} />
+export const AUBERGISTE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.AUBERGISTE} tile={tile} />
+export const CHASSEURDEPRIMES = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.CHASSEUR_DE_PRIMES} tile={tile} />
+export const CHARMEURDESERPENT = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.CHARMEUR_DE_SERPENT} tile={tile} />
+export const CHEFDESECTE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.CHEF_DE_SECTE} tile={tile} />
+export const COMMERE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.COMMERE} tile={tile} />
+export const COURTISANE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.COURTISANE} tile={tile} />
+export const COUTURIERE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.COUTURIERE} tile={tile} />
+export const CRIEUR = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.CRIEUR} tile={tile} />
+export const CROQUEMORT = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.CROQUE_MORT} tile={tile} />
+export const CUISTOT = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.CUISTOT} tile={tile} />
+export const EMPATHIQUE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.EMPATHIQUE} tile={tile} />
+export const ENQUETEUR = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.ENQUETEUR} tile={tile} />
+export const EXORCISTE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.EXORCISTE} tile={tile} />
+export const FAUSSAIRE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.FAUSSAIRE} tile={tile} />
+export const FEMMEDECHAMBRE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.FEMME_DE_CHAMBRE} tile={tile} />
+export const FLEURISTE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.FLEURISTE} tile={tile} />
+export const FOU = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.FOU} tile={tile} />
+export const GARDIEN = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.GARDIEN} tile={tile} />
+export const HORLOGER = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.HORLOGER} tile={tile} />
+export const HERBORISTE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.HERBORISTE} tile={tile} />
+export const JONGLEUR = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.JONGLEUR} tile={tile} />
+export const LAVANDIERE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.LAVANDIERE} tile={tile} />
+export const MAIRE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.MAIRE} tile={tile} />
+export const MAMIE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.MAMIE} tile={tile} />
+export const MARIN = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.MARIN} tile={tile} />
+export const MATHEMATICIEN = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.MATHEMATICIEN} tile={tile} />
+export const MENESTREL = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.MENESTREL} tile={tile} />
+export const MERCENAIRE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.MERCENAIRE} tile={tile} />
+export const MOINE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.MOINE} tile={tile} />
+export const ORACLE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.ORACLE} tile={tile} />
+export const PACIFISTE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.PACIFISTE} tile={tile} />
+export const PARIEUR = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.PARIEUR} tile={tile} />
+export const PREDICATEUR = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.PREDICATEUR} tile={tile} />
+export const PROFESSEUR = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.PROFESSEUR} tile={tile} />
+export const PUCELLE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.PUCELLE} tile={tile} />
+export const REVEUR = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.REVEUR} tile={tile} />
+export const SAGE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.SAGE} tile={tile} />
+export const SAVANT = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.SAVANT} tile={tile} />
+export const SOLDAT = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.SOLDAT} tile={tile} />
+export const VOYANTE = ({tile}: {tile?: boolean}) => <RoleComponent role={Villageois.VOYANTE} tile={tile} />
 
-export const BARBIER = () => <RoleComponent role={Etranger.BARBIER} />
-export const BETEDEFOIRE = () => <RoleComponent role={Etranger.BETE_DE_FOIRE} />
-export const BRUTE = () => <RoleComponent role={Etranger.BRUTE} />
-export const DULCINEE = () => <RoleComponent role={Etranger.DULCINEE} />
-export const GITANE = () => <RoleComponent role={Etranger.GITANE} />
-export const INVENTEUR = () => <RoleComponent role={Etranger.INVENTEUR} />
-export const LUNATIQUE = () => <RoleComponent role={Etranger.LUNATIQUE} />
-export const MAJORDOME = () => <RoleComponent role={Etranger.MAJORDOME} />
-export const MALADROIT = () => <RoleComponent role={Etranger.MALADROIT} />
-export const POLITICIEN = () => <RoleComponent role={Etranger.POLITICIEN} />
-export const RECLUS = () => <RoleComponent role={Etranger.RECLUS} />
-export const SOULARD = () => <RoleComponent role={Etranger.SOULARD} />
-export const VERTUEUX = () => <RoleComponent role={Etranger.VERTUEUX} />
+export const BARBIER = ({tile}: {tile?: boolean}) => <RoleComponent role={Etranger.BARBIER} tile={tile} />
+export const BETEDEFOIRE = ({tile}: {tile?: boolean}) => <RoleComponent role={Etranger.BETE_DE_FOIRE} tile={tile} />
+export const BRUTE = ({tile}: {tile?: boolean}) => <RoleComponent role={Etranger.BRUTE} tile={tile} />
+export const DULCINEE = ({tile}: {tile?: boolean}) => <RoleComponent role={Etranger.DULCINEE} tile={tile} />
+export const GITANE = ({tile}: {tile?: boolean}) => <RoleComponent role={Etranger.GITANE} tile={tile} />
+export const INVENTEUR = ({tile}: {tile?: boolean}) => <RoleComponent role={Etranger.INVENTEUR} tile={tile} />
+export const LUNATIQUE = ({tile}: {tile?: boolean}) => <RoleComponent role={Etranger.LUNATIQUE} tile={tile} />
+export const MAJORDOME = ({tile}: {tile?: boolean}) => <RoleComponent role={Etranger.MAJORDOME} tile={tile} />
+export const MALADROIT = ({tile}: {tile?: boolean}) => <RoleComponent role={Etranger.MALADROIT} tile={tile} />
+export const POLITICIEN = ({tile}: {tile?: boolean}) => <RoleComponent role={Etranger.POLITICIEN} tile={tile} />
+export const RECLUS = ({tile}: {tile?: boolean}) => <RoleComponent role={Etranger.RECLUS} tile={tile} />
+export const SOULARD = ({tile}: {tile?: boolean}) => <RoleComponent role={Etranger.SOULARD} tile={tile} />
+export const VERTUEUX = ({tile}: {tile?: boolean}) => <RoleComponent role={Etranger.VERTUEUX} tile={tile} />
 
-export const ASSASSIN = () => <RoleComponent role={Sbire.ASSASSIN} />
-export const AVOCATDUDIABLE = () => <RoleComponent role={Sbire.AVOCAT_DU_DIABLE} />
-export const BARON = () => <RoleComponent role={Sbire.BARON} />
-export const CONSPIRATEUR = () => <RoleComponent role={Sbire.CONSPIRATEUR} />
-export const CROQUEUSEDHOMMES = () => <RoleComponent role={Sbire.CROQUEUSE_D_HOMMES} />
-export const EMPOISONNEUR = () => <RoleComponent role={Sbire.EMPOISONNEUR} />
-export const ESPION = () => <RoleComponent role={Sbire.ESPION} />
-export const JUMEAUMALEFIQUE = () => <RoleComponent role={Sbire.JUMEAU_MALEFIQUE} />
-export const MANIPULATEUR = () => <RoleComponent role={Sbire.MANIPULATEUR} />
-export const PARRAIN = () => <RoleComponent role={Sbire.PARRAIN} />
-export const SORCIERE = () => <RoleComponent role={Sbire.SORCIERE} />
-export const VIEILLECHOUETTE = () => <RoleComponent role={Sbire.VIEILLE_CHOUETTE} />
+export const ASSASSIN = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.ASSASSIN} tile={tile} />
+export const AVOCATDUDIABLE = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.AVOCAT_DU_DIABLE} tile={tile} />
+export const BARON = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.BARON} tile={tile} />
+export const CONSPIRATEUR = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.CONSPIRATEUR} tile={tile} />
+export const CROQUEUSEDHOMMES = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.CROQUEUSE_D_HOMMES} tile={tile} />
+export const EMPOISONNEUR = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.EMPOISONNEUR} tile={tile} />
+export const ESPION = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.ESPION} tile={tile} />
+export const JUMEAUMALEFIQUE = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.JUMEAU_MALEFIQUE} tile={tile} />
+export const MANIPULATEUR = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.MANIPULATEUR} tile={tile} />
+export const PARRAIN = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.PARRAIN} tile={tile} />
+export const SORCIERE = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.SORCIERE} tile={tile} />
+export const VIEILLECHOUETTE = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.VIEILLE_CHOUETTE} tile={tile} />
 
-export const IMP = () => <RoleComponent role={Demon.IMP} />
-export const FANGGU = () => <RoleComponent role={Demon.FANG_GU} />
-export const NODASHII = () => <RoleComponent role={Demon.NO_DASHII} />
-export const PO = () => <RoleComponent role={Demon.PO} />
-export const PUKKA = () => <RoleComponent role={Demon.PUKKA} />
-export const PTITMONSTRE = () => <RoleComponent role={Demon.PTIT_MONSTRE} />
-export const SHABALOTH = () => <RoleComponent role={Demon.SHABALOTH} />
-export const VIGORMORTIS = () => <RoleComponent role={Demon.VIGORMORTIS} />
-export const VORTOX = () => <RoleComponent role={Demon.VORTOX} />
-export const ZOMBUUL = () => <RoleComponent role={Demon.ZOMBUUL} />
+export const IMP = ({tile}: {tile?: boolean}) => <RoleComponent role={Demon.IMP} tile={tile} />
+export const FANGGU = ({tile}: {tile?: boolean}) => <RoleComponent role={Demon.FANG_GU} tile={tile} />
+export const NODASHII = ({tile}: {tile?: boolean}) => <RoleComponent role={Demon.NO_DASHII} tile={tile} />
+export const PO = ({tile}: {tile?: boolean}) => <RoleComponent role={Demon.PO} tile={tile} />
+export const PUKKA = ({tile}: {tile?: boolean}) => <RoleComponent role={Demon.PUKKA} tile={tile} />
+export const PTITMONSTRE = ({tile}: {tile?: boolean}) => <RoleComponent role={Demon.PTIT_MONSTRE} tile={tile} />
+export const SHABALOTH = ({tile}: {tile?: boolean}) => <RoleComponent role={Demon.SHABALOTH} tile={tile} />
+export const VIGORMORTIS = ({tile}: {tile?: boolean}) => <RoleComponent role={Demon.VIGORMORTIS} tile={tile} />
+export const VORTOX = ({tile}: {tile?: boolean}) => <RoleComponent role={Demon.VORTOX} tile={tile} />
+export const ZOMBUUL = ({tile}: {tile?: boolean}) => <RoleComponent role={Demon.ZOMBUUL} tile={tile} />

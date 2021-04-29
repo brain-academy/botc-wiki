@@ -1,8 +1,8 @@
 import MarkdownDocument from '../markdown-document'
 
-export abstract class Role extends MarkdownDocument {
-    constructor(readonly name: string, protected readonly _filename: string = name.toLowerCase()) {
-        super(name, _filename)
+export class Role extends MarkdownDocument {
+    constructor(readonly name: string, public readonly filename: string = name.toLowerCase()) {
+        super(name, filename)
     }
     protected _base_url = '/docs/roles'
 }
