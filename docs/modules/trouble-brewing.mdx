@@ -1,47 +1,8 @@
 ---
 title: Trouble Brewing
+hide_table_of_contents: true
 ---
 
-import * as Role from '/src/components/role/role.component'
+import * as Module from '/src/components/module/module.component'
 
-## Villageois
-
-<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
-    <Role.LAVANDIERE tile />
-    <Role.ARCHIVISTE tile />
-    <Role.ENQUETEUR tile />
-    <Role.CUISTOT tile />
-    <Role.EMPATHIQUE tile />
-    <Role.VOYANTE tile />
-    <Role.CROQUEMORT tile />
-    <Role.MOINE tile />
-    <Role.GARDIEN tile />
-    <Role.PUCELLE tile />
-    <Role.MERCENAIRE tile />
-    <Role.SOLDAT tile />
-    <Role.MAIRE tile />
-</div>
-
-## Etrangers
-
-<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
-    <Role.MAJORDOME tile />
-    <Role.SOULARD tile />
-    <Role.RECLUS tile />
-    <Role.VERTUEUX tile />
-</div>
-
-## Sbires
-
-<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
-    <Role.BARON tile />
-    <Role.CROQUEUSEDHOMMES tile />
-    <Role.EMPOISONNEUR tile />
-    <Role.ESPION tile />
-</div>
-
-## Démon
-
-<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
-    <Role.IMP tile />
-</div>
+<Module.TROUBLEBREWING page />

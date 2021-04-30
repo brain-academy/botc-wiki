@@ -1,7 +1,7 @@
 import React from 'react';
 import {Demon, Etranger, Role, Sbire, Villageois} from './role';
 
-const RoleComponent = ({role, tile}: {role: Role, tile?: boolean}) => (
+export const RoleComponent = ({role, tile}: {role: Role, tile?: boolean}) => (
     !!tile ?
         <a href={role.path}>
             <div style={{border: `5px double ${roleTypeToColor(role)}`, width: '160px', height: '160px', textAlign: 'center'}}>
