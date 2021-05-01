@@ -13,7 +13,6 @@ export const RoleComponent = ({role, tile}: {role: Role, tile?: boolean}) => (
         <a href={role.path} style={{color: roleTypeToColor(role), fontWeight: 'bold'}}>{role.name}</a>
 )
 
-
 const roleTypeToColor = (role: Role) => {
     if (role instanceof (Villageois))
         return 'rgb(8,193,255)'
