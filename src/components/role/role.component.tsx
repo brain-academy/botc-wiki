@@ -5,7 +5,7 @@ export const RoleComponent = ({role, tile}: {role: Role, tile?: boolean}) => (
     !!tile ?
         <a href={role.path}>
             <div style={{border: `5px double ${roleTypeToColor(role)}`, width: '160px', height: '160px', textAlign: 'center'}}>
-                <img src={`/img/blood-on-the-clocktower/roles/${role.filename}.png`} height='150' />
+                <img src={`/img/blood-on-the-clocktower/roles/icons/${role.filename}.png`} height='150' />
                 <span style={{position: 'relative', top: '-30%', fontWeight: 'bold', color: roleTypeToColor(role)}}>{role.name}</span>
             </div>
         </a>
