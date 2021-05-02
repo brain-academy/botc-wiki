@@ -6,10 +6,14 @@ import Module from './module'
 
 const types = ['Villageois', 'Etrangers', 'Sbires', 'Démons']
 
-const ModuleComponent = ({module: {roles, name, path, imageUrl, description}, page, tile}: {module: Module, page?: boolean, tile?: boolean}) => {
+const ModuleComponent = ({module: {roles, name, path, imageUrl, description, fabled, theme}, page, tile}: {module: Module, page?: boolean, tile?: boolean}) => {
     const imgUrl = useBaseUrl(imageUrl);
     if (!!page)
         return <div>
+            {imgUrl && <div style={{width: '100%', textAlign: 'center'}}><img style={{width: '300px', height: '300px'}} src={imgUrl} alt={name} /></div>}
+            {fabled && <p style={{whiteSpace: 'pre-line', textAlign: 'justify', textJustify: 'inter-word', fontStyle: 'italic', fontSize: 'large', color: theme?.color}}>
+                <label>"</label>{fabled}<label>"</label>
+            </p>}
             {
                 [Villageois, Etranger, Sbire, Demon]
                     .map((type, i) => (
