@@ -33,6 +33,7 @@ export default class Module extends MarkdownDocument {
             _filename: 'trouble-brewing',
             imageUrl: 'img/blood-on-the-clocktower/BOTC-TB.png',
             roles: [
+                Villageois.LAVANDIERE,
                 Villageois.ARCHIVISTE,
                 Villageois.ENQUETEUR,
                 Villageois.CUISTOT,
@@ -44,7 +45,6 @@ export default class Module extends MarkdownDocument {
                 Villageois.PUCELLE,
                 Villageois.MERCENAIRE,
                 Villageois.SOLDAT,
-                Villageois.LAVANDIERE,
                 Villageois.MAIRE,
                 Etranger.MAJORDOME,
                 Etranger.SOULARD,
@@ -146,7 +146,7 @@ export default class Module extends MarkdownDocument {
         fabled: `Un printemps vibrant laisse place à un été chaleureux et accueillant. Des multitudes de fleurs s’épanouissent à perte de vue, tendrement entretenues dans les jardins publics et dans les balconnières surplombant la somptueuse promenade. Les oiseaux chantent, les artistes peignent et les penseurs songent aux plus grands mystères de la vie à l’intérieur d’une taverne animée, tandis qu’un cirque dresse son chapiteau dépenaillé à la lisière de la ville. Tandis que les habitants s’abandonnent à la frivolité et à l’espièglerie, se régalant de spectacles raffinés et de vins plus raffinés encore, d’obscures forces clandestines se rassemblent. Sorcières et cultistes se cachent dans les ruines majestueuses en marge de la société, planifiant des réunions secrètes dans les caves souterraines et complotant de manière malveillante à la chute de Ravenswood Bluff et de ses habitants insouciants.`
     })
     static readonly DEADLY_PENANCE_DAY = new Module({
-        name: 'Deadly Penance Day',
+        name: 'Deadly Penance Day - TBA Custom',
         _filename: 'deadly-penance-day',
         roles: [
             Villageois.CUISTOT,
@@ -166,6 +166,7 @@ export default class Module extends MarkdownDocument {
             Etranger.POLITICIEN,
             Etranger.SOULARD,
             Etranger.VERTUEUX,
+            Sbire.PARRAIN,
             Sbire.ASSASSIN,
             Sbire.BARON,
             Sbire.SORCIERE,
