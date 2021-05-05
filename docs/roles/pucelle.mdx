@@ -2,12 +2,13 @@
 title: Pucelle
 ---
 
-import * as Module from '/src/components/module/module.component'
-import * as Role from '/src/components/role/role.component'
+import Module from '/src/components/module/module.component'
+import Role from '/src/components/role/role.component'
 
 <img src='/img/blood-on-the-clocktower/roles/pucelle.png' height='150' />
 
-#### Modules : <Module.TROUBLEBREWING />
+<Role PUCELLE header />
+
 #### Nom Original : Virgin
 #### Villageois
 #### Alignement : Gentil
@@ -18,56 +19,56 @@ import * as Role from '/src/components/role/role.component'
 La première fois que vous êtes mis en nomination, si l’accusateur est un Villageois, il est immédiatement exécuté.
 
 ### Exemple 
-> La <Role.LAVANDIERE /> nomine la <Role.PUCELLE />. La <Role.LAVANDIERE /> est immédiatement exécutée et c’est la fin de la journée.
+> La <Role LAVANDIERE /> nomine la <Role PUCELLE />. La <Role LAVANDIERE /> est immédiatement exécutée et c’est la fin de la journée.
 
-> Le <Role.SOULARD />, qui pense alors être le <Role.CUISTOT />, nomine la <Role.PUCELLE />. Le <Role.SOULARD /> reste en vie et la <Role.PUCELLE /> perd son pouvoir. Les joueurs doivent maintenant voter si oui ou non ils veulent exécuter la <Role.PUCELLE /> (mécanique : Le joueur est un Etranger et non un Villageois).
+> Le <Role SOULARD />, qui pense alors être le <Role CUISTOT />, nomine la <Role PUCELLE />. Le <Role SOULARD /> reste en vie et la <Role PUCELLE /> perd son pouvoir. Les joueurs doivent maintenant voter si oui ou non ils veulent exécuter la <Role PUCELLE /> (mécanique : Le joueur est un Etranger et non un Villageois).
 
 
 ### Mécaniques et conseils
-- Vous êtes un des rares rôles dans le jeu qui peut être innocenté à 100% de par la mécanique de votre capacité. Si un joueur est exécuté en vous nominant, c’est une preuve incontestable que vous êtes la <Role.PUCELLE />.
+- Vous êtes un des rares rôles dans le jeu qui peut être innocenté à 100% de par la mécanique de votre capacité. Si un joueur est exécuté en vous nominant, c’est une preuve incontestable que vous êtes la <Role PUCELLE />.
 
 - Les rôles de premières nuits qui, par définition, ne seront réveillés que la première nuit, sont des rôles qui ont tout intérêt à vous nominer pour deux raisons : 
 > Ne pas sacrifier un rôle qui pourrait avoir d’autres informations par la suite.
 
-> Valider les information de ce rôle en mourant sur la <Role.PUCELLE />.
+> Valider les information de ce rôle en mourant sur la <Role PUCELLE />.
 
-- Les rôles comme le <Role.CROQUEMORT />, la <Role.VOYANTE /> ou l’<Role.EMPATHIQUE /> sont aussi des bonnes cibles s’ils ont reçu des informations intéressantes et qu’ils veulent prouver au Village qu’ils sont Gentils.
+- Les rôles comme le <Role CROQUE_MORT />, la <Role VOYANTE /> ou l’<Role EMPATHIQUE /> sont aussi des bonnes cibles s’ils ont reçu des informations intéressantes et qu’ils veulent prouver au Village qu’ils sont Gentils.
 
-- Vous n’êtes pas convaincus par les différentes personnes qui pourraient vous nominer ? Nominez vous vous-même, vous devriez être exécuté ce qui prouvera à tout le monde que vous êtes la <Role.PUCELLE />.
+- Vous n’êtes pas convaincus par les différentes personnes qui pourraient vous nominer ? Nominez vous vous-même, vous devriez être exécuté ce qui prouvera à tout le monde que vous êtes la <Role PUCELLE />.
 
-- Une fois que votre capacité est déclenchée, la personne vous ayant nominé est immédiatement exécutée (même si un autre joueur a été nominé et a recueilli assez de votes pour être exécutable). Par cette action, vous pouvez bloquer une exécution et prouver par la même occasion que vous êtes la <Role.PUCELLE />.
+- Une fois que votre capacité est déclenchée, la personne vous ayant nominé est immédiatement exécutée (même si un autre joueur a été nominé et a recueilli assez de votes pour être exécutable). Par cette action, vous pouvez bloquer une exécution et prouver par la même occasion que vous êtes la <Role PUCELLE />.
 
-- Si vous vous êtes dévoilé en tant que <Role.PUCELLE /> mais que vous n’avez pas encore utilisé votre capacité, vous serez alors une cible de choix pour le Démon et l’<Role.EMPOISONNEUR />. En utilisant votre capacité tôt dans la partie minimise les risques et fait de vous une personne de confiance pour le Village qui peut coordonner l’enquête et faire circuler l’information.
+- Si vous vous êtes dévoilé en tant que <Role PUCELLE /> mais que vous n’avez pas encore utilisé votre capacité, vous serez alors une cible de choix pour le Démon et l’<Role EMPOISONNEUR />. En utilisant votre capacité tôt dans la partie minimise les risques et fait de vous une personne de confiance pour le Village qui peut coordonner l’enquête et faire circuler l’information.
 
-- Vous pouvez choisir de temporiser quelques jours avant d’annoncer que vous êtes la <Role.PUCELLE />, cela vous laisse l’opportunité de “choisir” la personne qui vous nominera. Vous pourrez ainsi dédouaner un Gentil ou mettre au grand jour le bluff d’un joueur Maléfique !
+- Vous pouvez choisir de temporiser quelques jours avant d’annoncer que vous êtes la <Role PUCELLE />, cela vous laisse l’opportunité de “choisir” la personne qui vous nominera. Vous pourrez ainsi dédouaner un Gentil ou mettre au grand jour le bluff d’un joueur Maléfique !
 
-- Si vous trouvez le <Role.MOINE />, demandez-lui de vous protéger chaque nuit pour conserver votre capacité et l’utiliser plus tard.
+- Si vous trouvez le <Role MOINE />, demandez-lui de vous protéger chaque nuit pour conserver votre capacité et l’utiliser plus tard.
 
 - Si votre capacité ne se déclenche pas, cela peut signifier plusieurs choses :
 > La personne qui vous a nominé est Maléfique ! Les joueurs Maléfiques peuvent avoir intérêt à vous nominer pour gaspiller votre capacité et laisser planer le doute sur votre rôle mais aussi le sien.
 
-> La personne qui vous a nominée est un Etranger notamment le <Role.SOULARD />
+> La personne qui vous a nominée est un Etranger notamment le <Role SOULARD />
 
-> Vous êtes vous même <Role.SOULARD /> : votre capacité n’a jamais existé. Vous avez été empoisonné : votre capacité ne fonctionne plus jusqu’au crépuscule.
+> Vous êtes vous même <Role SOULARD /> : votre capacité n’a jamais existé. Vous avez été empoisonné : votre capacité ne fonctionne plus jusqu’au crépuscule.
 
-- Faites attention à l'<Role.ESPION /> ! C’est le seul joueur Maléfique qui peut déclencher votre capacité puisqu’il peut être vu comme étant Villageois.
+- Faites attention à l'<Role ESPION /> ! C’est le seul joueur Maléfique qui peut déclencher votre capacité puisqu’il peut être vu comme étant Villageois.
 
 
 ### Bluffer la Pucelle
-- Un joueur Gentil ne sera jamais exécuté en vous nominant. Ce qui veut dire que lorsque vous serez nominé, l’un de vous ou les deux sera suspecté d’être Maléfique ou <Role.SOULARD />. Si vous arrivez à vous faire nominer par un joueur suspecté d’être Maléfique, cela jettera encore plus le doute sur lui et par la même occasion vous innocenterait un peu plus.
+- Un joueur Gentil ne sera jamais exécuté en vous nominant. Ce qui veut dire que lorsque vous serez nominé, l’un de vous ou les deux sera suspecté d’être Maléfique ou <Role SOULARD />. Si vous arrivez à vous faire nominer par un joueur suspecté d’être Maléfique, cela jettera encore plus le doute sur lui et par la même occasion vous innocenterait un peu plus.
 
-- Si une <Role.PUCELLE /> est nominée mais qu’un des deux joueurs est le <Role.SOULARD />, la capacité de la <Role.PUCELLE /> ne se déclenche pas puisque :
+- Si une <Role PUCELLE /> est nominée mais qu’un des deux joueurs est le <Role SOULARD />, la capacité de la <Role PUCELLE /> ne se déclenche pas puisque :
 
-> Soit la <Role.PUCELLE /> est en réalité le <Role.SOULARD /> (et donc non la <Role.PUCELLE />)
+> Soit la <Role PUCELLE /> est en réalité le <Role SOULARD /> (et donc non la <Role PUCELLE />)
 
 > Soit l’accusateur est un Etranger (et donc non un Villageois). 
 
-Quand personne ne meurt en vous accusant, vous pourrez arguer que l’un de vous est <Role.SOULARD />. En plus, vous pourrez remettre en cause les informations que le Village a obtenu.
+Quand personne ne meurt en vous accusant, vous pourrez arguer que l’un de vous est <Role SOULARD />. En plus, vous pourrez remettre en cause les informations que le Village a obtenu.
 
 - Si vous êtes un Sbire, vous pouvez vous faire nominer par votre Démon pour paraître suspect. Plus vous paraissez louche, plus vous éloignez les doutes de votre Démon, il pourrait même être considéré comme la victime de votre “bluff”.
 
-- Faites attention si une vraie <Role.PUCELLE /> est en jeu : si vous vous êtes dévoilés en tant que <Role.PUCELLE /> et que la vraie <Role.PUCELLE /> prouve son rôle en exécutant un Villageois à travers sa capacité, votre bluff sera éventé. Il est impératif qu’un autre Maléfique accuse la vraie pucelle pour que sa capacité soit gaspillée et ne mette ainsi au grand jour votre réelle identité.
+- Faites attention si une vraie <Role PUCELLE /> est en jeu : si vous vous êtes dévoilés en tant que <Role PUCELLE /> et que la vraie <Role PUCELLE /> prouve son rôle en exécutant un Villageois à travers sa capacité, votre bluff sera éventé. Il est impératif qu’un autre Maléfique accuse la vraie pucelle pour que sa capacité soit gaspillée et ne mette ainsi au grand jour votre réelle identité.
 
-- Bluffer la <Role.PUCELLE />, être nominé et être encore vivant derrière peut vous permettre d'enchaîner un second bluff. Prétendez que vous n’étiez pas la <Role.PUCELLE /> mais en réalité le <Role.CROQUEMORT /> ou le <Role.MOINE /> par exemple. Cela sera complètement plausible étant donné que le Démon ne sera pas enclin à tuer une <Role.PUCELLE /> qui est suspecte et qu’il voudrait plutôt tuer un <Role.CROQUEMORT /> ou un <Role.MOINE />.
+- Bluffer la <Role PUCELLE />, être nominé et être encore vivant derrière peut vous permettre d'enchaîner un second bluff. Prétendez que vous n’étiez pas la <Role PUCELLE /> mais en réalité le <Role CROQUE_MORT /> ou le <Role MOINE /> par exemple. Cela sera complètement plausible étant donné que le Démon ne sera pas enclin à tuer une <Role PUCELLE /> qui est suspecte et qu’il voudrait plutôt tuer un <Role CROQUE_MORT /> ou un <Role MOINE />.
 
-- Si vous pensez que le Village vous voit vraiment en tant que <Role.PUCELLE />, insistez pour que le Villageois le plus dangereux (<Role.EMPATHIQUE /> par exemple) vous nomine ! S’il le fait et qu’il ne meurt pas, il aura l’air suspect plus que jamais, il sera ainsi discrédité et vous pourrez peut-être même réussir à le faire exécuter par le Village !
+- Si vous pensez que le Village vous voit vraiment en tant que <Role PUCELLE />, insistez pour que le Villageois le plus dangereux (<Role EMPATHIQUE /> par exemple) vous nomine ! S’il le fait et qu’il ne meurt pas, il aura l’air suspect plus que jamais, il sera ainsi discrédité et vous pourrez peut-être même réussir à le faire exécuter par le Village !

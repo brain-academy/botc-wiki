@@ -2,12 +2,13 @@
 title: Inventeur
 ---
 
-import * as Module from '/src/components/module/module.component'
-import * as Role from '/src/components/role/role.component'
+import Module from '/src/components/module/module.component'
+import Role from '/src/components/role/role.component'
 
 <img src='/img/blood-on-the-clocktower/roles/inventeur.png' height='150' />
 
-#### Module : <Module.BADMOONRISING />
+<Role INVENTEUR header />
+
 #### Nom original : Tinker
 #### Étranger - Alignement Gentil
 #### Rôle Passif - Ne se réveille pas la nuit
@@ -18,21 +19,21 @@ Vous pouvez mourir à tout moment.
 
 ### Exemples
 
-- C’est le troisième jour. Au cours de la journée, soudainement, l'<Role.INVENTEUR /> meurt.
+- C’est le troisième jour. Au cours de la journée, soudainement, l'<Role INVENTEUR /> meurt.
 
-- Durant la nuit, l'<Role.INVENTEUR /> meurt, même si le Démon a attaqué un joueur différent.
+- Durant la nuit, l'<Role INVENTEUR /> meurt, même si le Démon a attaqué un joueur différent.
 
-- L’<Role.HERBORISTE /> est assis à côté de l’<Role.INVENTEUR /> et du <Role.PARIEUR />, protégeant l'<Role.INVENTEUR /> de la mort. L'<Role.INVENTEUR /> ne peut pas mourir à cause de sa capacité.
+- L’<Role HERBORISTE /> est assis à côté de l’<Role INVENTEUR /> et du <Role PARIEUR />, protégeant l'<Role INVENTEUR /> de la mort. L'<Role INVENTEUR /> ne peut pas mourir à cause de sa capacité.
 
-- L'<Role.INVENTEUR /> est protégé par l’<Role.AUBERGISTE />, puis attaqué par le Démon. L'<Role.INVENTEUR /> ne meurt pas. Plus tard dans la nuit, l’<Role.AUBERGISTE /> est tué par l’<Role.ASSASSIN /> et le Conteur choisit de tuer l'<Role.INVENTEUR />.
+- L'<Role INVENTEUR /> est protégé par l’<Role AUBERGISTE />, puis attaqué par le Démon. L'<Role INVENTEUR /> ne meurt pas. Plus tard dans la nuit, l’<Role AUBERGISTE /> est tué par l’<Role ASSASSIN /> et le Conteur choisit de tuer l'<Role INVENTEUR />.
 
 ### Mécaniques et Conseils
 
 **Vous êtes à la merci du Conteur.** Soyez conscient que le Conteur peut vous tuer à n’importe quel moment. Malgré tout, ceci ne doit pas vous apeurer plus que de raison - essayez de ne pas mourir de manière trop handicapante pour le Village.
 
-**Révélez votre rôle d'<Role.INVENTEUR /> après votre mort.** En particulier, si vous mourez de nuit, cela peut aider les Maléfiques et embrouiller le Village pour comprendre l’origine des morts de nuit. Par exemple, si un Démon est bloqué par l’<Role.EXORCISTE /> mais que l'<Role.INVENTEUR /> meurt lors de la même nuit, l’<Role.EXORCISTE /> peut penser à tort avoir trouvé le Démon. Le cas échéant, vous pouvez l’empêcher de se méprendre en lui dévoilant votre rôle d'<Role.INVENTEUR />. Autre exemple, si plusieurs joueurs décèdent lors de la même nuit, cela implique un Démon multi-cible comme le <Role.SHABALOTH /> ou le <Role.PO />, alors qu’en réalité cela peut simplement être un Démon monocible comme le <Role.PUKKA /> ou le <Role.ZOMBUUL /> avec l'<Role.INVENTEUR /> qui est mort par lui-même en supplément.
+**Révélez votre rôle d'<Role INVENTEUR /> après votre mort.** En particulier, si vous mourez de nuit, cela peut aider les Maléfiques et embrouiller le Village pour comprendre l’origine des morts de nuit. Par exemple, si un Démon est bloqué par l’<Role EXORCISTE /> mais que l'<Role INVENTEUR /> meurt lors de la même nuit, l’<Role EXORCISTE /> peut penser à tort avoir trouvé le Démon. Le cas échéant, vous pouvez l’empêcher de se méprendre en lui dévoilant votre rôle d'<Role INVENTEUR />. Autre exemple, si plusieurs joueurs décèdent lors de la même nuit, cela implique un Démon multi-cible comme le <Role SHABALOTH /> ou le <Role PO />, alors qu’en réalité cela peut simplement être un Démon monocible comme le <Role PUKKA /> ou le <Role ZOMBUUL /> avec l'<Role INVENTEUR /> qui est mort par lui-même en supplément.
 
-**Si vous mourez de jour, cela vous désigne en tant qu'<Role.INVENTEUR /> à 100%.** Comme aucun autre rôle ne peut provoquer de mort de jour, le Village sait indubitablement que vous êtes innocent. Le cas échéant, profitez de votre avantage pour devenir le point de référence du Village et centraliser l’enquête.
+**Si vous mourez de jour, cela vous désigne en tant qu'<Role INVENTEUR /> à 100%.** Comme aucun autre rôle ne peut provoquer de mort de jour, le Village sait indubitablement que vous êtes innocent. Le cas échéant, profitez de votre avantage pour devenir le point de référence du Village et centraliser l’enquête.
 
 **Le Conteur aura toujours une raison de vous tuer ou de vous laisser en vie.** Vous êtes une variable d’ajustement afin d’équilibrer la partie entre les Gentils et les Maléfiques. Même si votre mort paraît hasardeuse, elle sert la plupart du temps un sens cosmique caché. C’est la même chose si le Conteur choisit de ne pas vous tuer et que vous êtes encore en vie dans les trois derniers joueurs. Demandez-vous pourquoi le Conteur n’a pas pris le risque de vous tuer. Êtes-vous vraiment entouré de joueurs Gentils ? Ou bien le Conteur joue-t-il avec vos nerfs ?
 
@@ -40,11 +41,11 @@ Vous pouvez mourir à tout moment.
 
 ### Bluffer le rôle d'Inventeur
 
-**Trouvez une excuse si vous ne mourez pas.** Bluffer l'<Role.INVENTEUR /> est facile… jusqu’à ce que le groupe commence à se demander pourquoi vous êtes encore en vie. N’hésitez pas à mourir pour appuyer votre bluff. Si vous êtes Sbire, <Role.ZOMBUUL /> ou Démon avec un <Role.CONSPIRATEUR /> en vie, vous pouvez provoquer votre mort de nuit afin de crédibiliser votre bluff.
+**Trouvez une excuse si vous ne mourez pas.** Bluffer l'<Role INVENTEUR /> est facile… jusqu’à ce que le groupe commence à se demander pourquoi vous êtes encore en vie. N’hésitez pas à mourir pour appuyer votre bluff. Si vous êtes Sbire, <Role ZOMBUUL /> ou Démon avec un <Role CONSPIRATEUR /> en vie, vous pouvez provoquer votre mort de nuit afin de crédibiliser votre bluff.
 
-**Si vous mourez de nuit, essayez au maximum d’embrouiller le groupe.** Annoncer que vous êtes mort à cause de votre “prétendue” capacité d'<Role.INVENTEUR /> bloquera le Village dans son enquête pour retrouver les explications des morts de nuit. Par exemple, vous pourriez faire croire qu’un autre Démon est en jeu ou que vous êtes mort à cause de la <Role.COMMERE />.
+**Si vous mourez de nuit, essayez au maximum d’embrouiller le groupe.** Annoncer que vous êtes mort à cause de votre “prétendue” capacité d'<Role INVENTEUR /> bloquera le Village dans son enquête pour retrouver les explications des morts de nuit. Par exemple, vous pourriez faire croire qu’un autre Démon est en jeu ou que vous êtes mort à cause de la <Role COMMERE />.
 
-**Profitez de votre bluff en fin de partie.** Le Conteur ne tuera jamais l'<Role.INVENTEUR /> s’il reste dans les 3 derniers joueurs vivants. Profitez de cet avantage pour convaincre le groupe de vous laisser en vie en fin de partie.
+**Profitez de votre bluff en fin de partie.** Le Conteur ne tuera jamais l'<Role INVENTEUR /> s’il reste dans les 3 derniers joueurs vivants. Profitez de cet avantage pour convaincre le groupe de vous laisser en vie en fin de partie.
 
-**Si un vrai <Role.INVENTEUR /> se révèle, changez de bluff.** Si par hasard le Conteur tue le vrai <Role.INVENTEUR /> de jour, il sera innocenté à 100% et vous aurez du mal à maintenir votre bluff. Préparez toujours un plan de secours.
+**Si un vrai <Role INVENTEUR /> se révèle, changez de bluff.** Si par hasard le Conteur tue le vrai <Role INVENTEUR /> de jour, il sera innocenté à 100% et vous aurez du mal à maintenir votre bluff. Préparez toujours un plan de secours.
 

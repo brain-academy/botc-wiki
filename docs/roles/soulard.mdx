@@ -2,12 +2,13 @@
 title: Soûlard
 ---
 
-import * as Module from '/src/components/module/module.component'
-import * as Role from '/src/components/role/role.component'
+import Module from '/src/components/module/module.component'
+import Role from '/src/components/role/role.component'
 
 <img src='/img/blood-on-the-clocktower/roles/soulard.png' height='150' />
 
-#### Modules : <Module.TROUBLEBREWING /> - <Module.DEADLYPENANCEDAY />
+<Role SOULARD header />
+
 #### Nom Original : Drunk
 #### Etranger
 #### Alignement : Gentil
@@ -22,49 +23,49 @@ L’ivresse : un joueur qui est en état d’ivresse l’ignore. L’ivresse fai
 
 
 ### Exemple
-> Le <Role.SOULARD /> pense être le <Role.SOLDAT />, il est attaqué par l’<Role.IMP /> : il meurt.
+> Le <Role SOULARD /> pense être le <Role SOLDAT />, il est attaqué par l’<Role IMP /> : il meurt.
 
-> Le <Role.SOULARD /> pense être l’<Role.EMPATHIQUE />. Le Conteur le réveille et lui donne “0” même s’il y a un joueur Maléfique à côté de lui. La nuit suivante, le Conteur peut lui donner “1” alors que ses voisins n’ont pas changé.
+> Le <Role SOULARD /> pense être l’<Role EMPATHIQUE />. Le Conteur le réveille et lui donne “0” même s’il y a un joueur Maléfique à côté de lui. La nuit suivante, le Conteur peut lui donner “1” alors que ses voisins n’ont pas changé.
 
-> Le <Role.SOULARD /> pense être le <Role.GARDIEN /> et est tué de nuit. Il choisit un joueur, le Conteur lui dit qu’il a vu le <Role.VERTUEUX /> alors qu’en réalité le joueur est l’<Role.EMPOISONNEUR />.
+> Le <Role SOULARD /> pense être le <Role GARDIEN /> et est tué de nuit. Il choisit un joueur, le Conteur lui dit qu’il a vu le <Role VERTUEUX /> alors qu’en réalité le joueur est l’<Role EMPOISONNEUR />.
 
-> La <Role.VOYANTE /> est exécutée. La nuit suivante, le <Role.SOULARD /> qui pense être le <Role.CROQUEMORT /> apprend du Conteur que le <Role.SOULARD /> a été exécuté.
+> La <Role VOYANTE /> est exécutée. La nuit suivante, le <Role SOULARD /> qui pense être le <Role CROQUE_MORT /> apprend du Conteur que le <Role SOULARD /> a été exécuté.
 
-> Le <Role.SOULARD /> pense être l’<Role.ARCHIVISTE />. Il voit entre Lucy (<Role.MOINE />) et Marylou (<Role.BARON />) un <Role.SOULARD />.
+> Le <Role SOULARD /> pense être l’<Role ARCHIVISTE />. Il voit entre Lucy (<Role MOINE />) et Marylou (<Role BARON />) un <Role SOULARD />.
 
 ### Mécaniques
-- Le <Role.SOULARD /> ne saura jamais avec certitude qu’il est le <Role.SOULARD />. Il commence la partie comme un Villageois normal avec un rôle et les interactions prévues par son rôle. En revanche, ses capacités ne fonctionneront pas puisqu’elles n’existent pas. Vous ne pouvez découvrir que vous êtes <Role.SOULARD /> seulement en avançant dans la partie et que vous verrez que vos informations sont en contradiction avec le reste du Village ou lorsque vos supposées capacités ne fonctionneront pas (mourir de nuit avec le <Role.SOLDAT /> par exemple).
+- Le <Role SOULARD /> ne saura jamais avec certitude qu’il est le <Role SOULARD />. Il commence la partie comme un Villageois normal avec un rôle et les interactions prévues par son rôle. En revanche, ses capacités ne fonctionneront pas puisqu’elles n’existent pas. Vous ne pouvez découvrir que vous êtes <Role SOULARD /> seulement en avançant dans la partie et que vous verrez que vos informations sont en contradiction avec le reste du Village ou lorsque vos supposées capacités ne fonctionneront pas (mourir de nuit avec le <Role SOLDAT /> par exemple).
 
-- Il est important d’établir rapidement dans la partie s’il y a un <Role.SOULARD /> en jeu. Cela permettra aux Villageois de prendre du recul avec leurs informations. Pour savoir s’il y a un <Role.SOULARD /> dans la partie, le moyen le plus efficace est de dénombrer le nombre d’Etranger et de le comparer à la composition de la partie. S’il vous en manque un, il y a de grande chance qu’il y ait un <Role.SOULARD />. Si vous en avez un de trop, il se peut qu’il y ait un <Role.BARON /> en jeu ainsi qu’un <Role.SOULARD />.
+- Il est important d’établir rapidement dans la partie s’il y a un <Role SOULARD /> en jeu. Cela permettra aux Villageois de prendre du recul avec leurs informations. Pour savoir s’il y a un <Role SOULARD /> dans la partie, le moyen le plus efficace est de dénombrer le nombre d’Etranger et de le comparer à la composition de la partie. S’il vous en manque un, il y a de grande chance qu’il y ait un <Role SOULARD />. Si vous en avez un de trop, il se peut qu’il y ait un <Role BARON /> en jeu ainsi qu’un <Role SOULARD />.
 
-- Si vous pensez qu’un <Role.SOULARD /> est en jeu, il faut déterminer rapidement de quel joueur il s’agit. Comme il n’y a qu’un seul <Role.SOULARD /> en jeu, connaître son identité permettra d’établir la véracité des informations selon qu’elles proviennent des Villageois ou du <Role.SOULARD />.
+- Si vous pensez qu’un <Role SOULARD /> est en jeu, il faut déterminer rapidement de quel joueur il s’agit. Comme il n’y a qu’un seul <Role SOULARD /> en jeu, connaître son identité permettra d’établir la véracité des informations selon qu’elles proviennent des Villageois ou du <Role SOULARD />.
 
-- Les personnages comme le <Role.CROQUEMORT /> ou le <Role.GARDIEN /> peuvent identifier le <Role.SOULARD />. Vous n’êtes pas un Villageois, vous êtes un Etranger, vous pensez seulement avoir un rôle de Villageois. Cette différence se vérifie aussi si vous nominez la <Role.PUCELLE /> ou un rôle similaire. Vous ne déclenchez pas la capacité de la <Role.PUCELLE /> car vous êtes un Etranger et non un Villageois.
+- Les personnages comme le <Role CROQUE_MORT /> ou le <Role GARDIEN /> peuvent identifier le <Role SOULARD />. Vous n’êtes pas un Villageois, vous êtes un Etranger, vous pensez seulement avoir un rôle de Villageois. Cette différence se vérifie aussi si vous nominez la <Role PUCELLE /> ou un rôle similaire. Vous ne déclenchez pas la capacité de la <Role PUCELLE /> car vous êtes un Etranger et non un Villageois.
 
-- Si vous avez découvert que vous êtes le <Role.SOULARD />, essayez d’inverser les informations que vous avez reçues. Par exemple, si vous pensiez que vous étiez l’<Role.EMPATHIQUE /> et que vous avez reçu un ‘0’ du conteur, vous devriez vous méfier d’au moins un de vos voisins : il est très probable que l’un d’eux soit maléfique. Autre exemple : si vous pensiez être <Role.ENQUETEUR />, vous pouvez déduire qu’aucun des deux joueurs désignés n’est en réalité un Sbire.
+- Si vous avez découvert que vous êtes le <Role SOULARD />, essayez d’inverser les informations que vous avez reçues. Par exemple, si vous pensiez que vous étiez l’<Role EMPATHIQUE /> et que vous avez reçu un ‘0’ du conteur, vous devriez vous méfier d’au moins un de vos voisins : il est très probable que l’un d’eux soit maléfique. Autre exemple : si vous pensiez être <Role ENQUETEUR />, vous pouvez déduire qu’aucun des deux joueurs désignés n’est en réalité un Sbire.
 
-- Gardez en tête que le <Role.SOULARD /> reçoit des informations qui ne sont pas fiables mais ce n’est pas systématiquement le cas. La plupart du temps, vous aurez de la fausse information mais parfois le Conteur peut vous donner une bonne information. Cela peut arriver si en vous donnant une fausse information, vous comprendriez que vous êtes en réalité le <Role.SOULARD /> (Le <Role.GARDIEN /> <Role.SOULARD /> se choisit lui-même, le Conteur lui donnera alors l’information qu’il est <Role.GARDIEN /> et non <Role.SOULARD />).
+- Gardez en tête que le <Role SOULARD /> reçoit des informations qui ne sont pas fiables mais ce n’est pas systématiquement le cas. La plupart du temps, vous aurez de la fausse information mais parfois le Conteur peut vous donner une bonne information. Cela peut arriver si en vous donnant une fausse information, vous comprendriez que vous êtes en réalité le <Role SOULARD /> (Le <Role GARDIEN /> <Role SOULARD /> se choisit lui-même, le Conteur lui donnera alors l’information qu’il est <Role GARDIEN /> et non <Role SOULARD />).
 
-- Ayez à l'esprit que les personnages comme le <Role.MERCENAIRE />, le <Role.MOINE /> et le <Role.MAIRE /> ne peuvent en aucun cas influencer la partie car ils sont en réalité le <Role.SOULARD />.
+- Ayez à l'esprit que les personnages comme le <Role MERCENAIRE />, le <Role MOINE /> et le <Role MAIRE /> ne peuvent en aucun cas influencer la partie car ils sont en réalité le <Role SOULARD />.
 
-- Un <Role.MERCENAIRE /> <Role.SOULARD /> qui tire sur un joueur Gentil ne le tuera pas car le <Role.SOULARD /> n’a aucune capacité à tuer un rôle ou à en faire tuer un.
+- Un <Role MERCENAIRE /> <Role SOULARD /> qui tire sur un joueur Gentil ne le tuera pas car le <Role SOULARD /> n’a aucune capacité à tuer un rôle ou à en faire tuer un.
 
 
 ### Bluffer le Soûlard
 
-- Commencez la partie en bluffant le rôle d’un Villageois. Le <Role.SOULARD /> commence la partie en croyant être un Villageois, faites la même chose.
+- Commencez la partie en bluffant le rôle d’un Villageois. Le <Role SOULARD /> commence la partie en croyant être un Villageois, faites la même chose.
 
-- Bluffez un rôle à information tel que la <Role.VOYANTE />, l'<Role.ENQUETEUR />, l’<Role.EMPATHIQUE />, la <Role.LAVANDIERE />, le <Role.CROQUEMORT /> ou l’<Role.ARCHIVISTE /> et donnez de la fausse information au village. Si votre information s’avère incohérente (exemple : vous annoncez avoir vu un <Role.VERTUEUX /> entre deux joueurs et que personne ne confirme votre information), vous aurez alors l’air d’être le <Role.SOULARD />.
+- Bluffez un rôle à information tel que la <Role VOYANTE />, l'<Role ENQUETEUR />, l’<Role EMPATHIQUE />, la <Role LAVANDIERE />, le <Role CROQUE_MORT /> ou l’<Role ARCHIVISTE /> et donnez de la fausse information au village. Si votre information s’avère incohérente (exemple : vous annoncez avoir vu un <Role VERTUEUX /> entre deux joueurs et que personne ne confirme votre information), vous aurez alors l’air d’être le <Role SOULARD />.
 
-- Bluffez un rôle qui a une capacité qui a échoué, ayez l’air surpris et suggérez que vous êtes probablement le <Role.SOULARD />. Par exemple, bluffez le <Role.MOINE /> et annoncez que vous avez protégé le joueur qui vient de mourir la nuit précédente ou encore bluffez le <Role.SOLDAT /> et prévoyez avec votre Démon de mourir à un moment la nuit.
+- Bluffez un rôle qui a une capacité qui a échoué, ayez l’air surpris et suggérez que vous êtes probablement le <Role SOULARD />. Par exemple, bluffez le <Role MOINE /> et annoncez que vous avez protégé le joueur qui vient de mourir la nuit précédente ou encore bluffez le <Role SOLDAT /> et prévoyez avec votre Démon de mourir à un moment la nuit.
 
-- Laissez penser qu’il y a un <Role.SOULARD /> dans la partie, cela aura tendance à mettre le village sur de mauvaises pistes ! Les Gentils chercheront le <Role.SOULARD /> au lieu de chercher le Démon et auront même tendance à ne pas croire les informations qu’ils auront.
+- Laissez penser qu’il y a un <Role SOULARD /> dans la partie, cela aura tendance à mettre le village sur de mauvaises pistes ! Les Gentils chercheront le <Role SOULARD /> au lieu de chercher le Démon et auront même tendance à ne pas croire les informations qu’ils auront.
 
-- Insinuez qu’un joueur en particulier est le <Role.SOULARD />. Cette technique peut vous sortir de situation délicate si le joueur en question met en difficulté votre équipe. Exemple : Un <Role.CROQUEMORT /> annonce que le Village a exécuté l’<Role.EMPOISONNEUR />.
+- Insinuez qu’un joueur en particulier est le <Role SOULARD />. Cette technique peut vous sortir de situation délicate si le joueur en question met en difficulté votre équipe. Exemple : Un <Role CROQUE_MORT /> annonce que le Village a exécuté l’<Role EMPOISONNEUR />.
 
-- Pour convaincre le village qu’il y a réellement un <Role.SOULARD /> en jeu, il faut que votre histoire soit cohérente et concorde avec le nombre d’Etrangers de la partie. Exemple : dans la composition initiale, il y a un seul Etranger. Si vous dites que la <Role.PUCELLE /> est <Role.SOULARD />. Si un véritable Etranger se dévoile (le <Role.VERTUEUX />), la seule possibilité pour que la <Role.PUCELLE /> soit <Role.SOULARD />, c’est que ce <Role.VERTUEUX /> mente sur son rôle.
+- Pour convaincre le village qu’il y a réellement un <Role SOULARD /> en jeu, il faut que votre histoire soit cohérente et concorde avec le nombre d’Etrangers de la partie. Exemple : dans la composition initiale, il y a un seul Etranger. Si vous dites que la <Role PUCELLE /> est <Role SOULARD />. Si un véritable Etranger se dévoile (le <Role VERTUEUX />), la seule possibilité pour que la <Role PUCELLE /> soit <Role SOULARD />, c’est que ce <Role VERTUEUX /> mente sur son rôle.
 
-- Si vous voulez qu’un de vos Acolytes vienne confirmer votre bluff de <Role.SOULARD />, dites-lui de se dévoiler en tant qu’<Role.ARCHIVISTE />. Le <Role.GARDIEN /> ou le <Role.CROQUEMORT /> peuvent aussi vous confirmer en tant que <Role.SOULARD /> mais cela implique que l’un d’entre vous ait à mourir pour que cela fonctionne.
+- Si vous voulez qu’un de vos Acolytes vienne confirmer votre bluff de <Role SOULARD />, dites-lui de se dévoiler en tant qu’<Role ARCHIVISTE />. Le <Role GARDIEN /> ou le <Role CROQUE_MORT /> peuvent aussi vous confirmer en tant que <Role SOULARD /> mais cela implique que l’un d’entre vous ait à mourir pour que cela fonctionne.
 
-- Si vous avez planifié de bluffer le <Role.SOULARD /> plus tard dans la partie, donnez les informations inverses que vous aimeriez que les Gentils pensent.
-> Vous prétendez être l’<Role.EMPATHIQUE /> et plus tard dans la partie, vous voulez faire exécuter vos voisins qui sont Gentils. Annoncez avoir reçu “0” du Conteur puis persuadez le Village que vous êtes en réalité le <Role.SOULARD />. Ainsi le “0” obtenu précédemment passe pour faux et au moins un de vos voisins passera pour Maléfique. Avec un peu de chance, vous pourrez peut-être même réussir à faire exécuter les deux !
+- Si vous avez planifié de bluffer le <Role SOULARD /> plus tard dans la partie, donnez les informations inverses que vous aimeriez que les Gentils pensent.
+> Vous prétendez être l’<Role EMPATHIQUE /> et plus tard dans la partie, vous voulez faire exécuter vos voisins qui sont Gentils. Annoncez avoir reçu “0” du Conteur puis persuadez le Village que vous êtes en réalité le <Role SOULARD />. Ainsi le “0” obtenu précédemment passe pour faux et au moins un de vos voisins passera pour Maléfique. Avec un peu de chance, vous pourrez peut-être même réussir à faire exécuter les deux !

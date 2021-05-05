@@ -1,11 +1,22 @@
 import MarkdownDocument from '../markdown-document'
 
-export class Role extends MarkdownDocument {
+export abstract class Role extends MarkdownDocument {
     constructor(readonly name: string, public readonly filename: string = name.toLowerCase()) {
         super(name, filename)
     }
     protected _base_url = '/docs/roles'
+
+    static fromName: (name: string) => Role = (name: string) => {
+        if (isRole(name))
+            return Villageois[name] || Etranger[name] || Sbire[name] || Demon[name]
+        else
+            throw new Error(`BoTC Role not found: ${name}`)
+    }
 }
+
+export const isRole = (key: string) => [Villageois, Etranger, Sbire, Demon]
+    .flatMap(type => Object.keys(type))
+    .includes(key)
 
 export class Villageois extends Role {
     static readonly AERONAUTE = new Villageois('Aéronaute', 'aeronaute')

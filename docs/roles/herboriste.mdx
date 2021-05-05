@@ -2,12 +2,13 @@
 title: Herboriste
 ---
 
-import * as Module from '/src/components/module/module.component'
-import * as Role from '/src/components/role/role.component'
+import Module from '/src/components/module/module.component'
+import Role from '/src/components/role/role.component'
 
 <img src='/img/blood-on-the-clocktower/roles/herboriste.png' height='150' />
 
-#### Module : <Module.BADMOONRISING />
+<Role HERBORISTE header />
+
 #### Nom original : Tea Lady
 #### Villageois - Alignement Gentil
 #### Rôle Passif - Ne se réveille pas la nuit
@@ -18,17 +19,17 @@ Si vos deux voisins sont Gentils, ils ne peuvent pas mourir.
 
 ### Exemples
 
-- L’<Role.HERBORISTE /> est voisin du <Role.CONSPIRATEUR /> et de la <Role.BRUTE /> Gentille. Le <Role.CONSPIRATEUR /> est exécuté et meurt. Maintenant, les deux voisins de l’<Role.HERBORISTE /> sont la <Role.BRUTE /> Gentille et la <Role.COURTISANE />. Le Démon attaque la <Role.COURTISANE />, mais celle-ci reste en vie. Plus tard, la <Role.BRUTE /> devient Méchante et le Démon attaque de nouveau la <Role.COURTISANE />. Cette fois-ci, la <Role.COURTISANE /> meurt.
+- L’<Role HERBORISTE /> est voisin du <Role CONSPIRATEUR /> et de la <Role BRUTE /> Gentille. Le <Role CONSPIRATEUR /> est exécuté et meurt. Maintenant, les deux voisins de l’<Role HERBORISTE /> sont la <Role BRUTE /> Gentille et la <Role COURTISANE />. Le Démon attaque la <Role COURTISANE />, mais celle-ci reste en vie. Plus tard, la <Role BRUTE /> devient Méchante et le Démon attaque de nouveau la <Role COURTISANE />. Cette fois-ci, la <Role COURTISANE /> meurt.
 
-- Les voisins de l’<Role.HERBORISTE /> sont la Matronne Gentille et le Magistrat Gentil. La Matronne peut être exilée mais ne peut pas mourir.
+- Les voisins de l’<Role HERBORISTE /> sont la Matronne Gentille et le Magistrat Gentil. La Matronne peut être exilée mais ne peut pas mourir.
 
 ### Mécaniques et Conseils
 
-**L’<Role.HERBORISTE /> est un protecteur puissant, mais lui-même vulnérable.** Décider quand et à qui vous révéler orientera votre stratégie. Si vous vous révélez tôt, ceci peut vous aider à provoquer l’exécution de vos voisins (le meilleur cas étant de confirmer deux joueurs Gentils), mais ceci vous expose aux Maléfiques. Cachez précautionneusement son rôle d’<Role.HERBORISTE /> rendra l’enquête plus difficile mais vous survivrez plus longtemps et pourrait piéger le Démon sur un de vos voisins protégés. Il n’y a pas de bonne ou de mauvaise façon de jouer, à vous de voir quelle stratégie vous souhaitez adopter.
+**L’<Role HERBORISTE /> est un protecteur puissant, mais lui-même vulnérable.** Décider quand et à qui vous révéler orientera votre stratégie. Si vous vous révélez tôt, ceci peut vous aider à provoquer l’exécution de vos voisins (le meilleur cas étant de confirmer deux joueurs Gentils), mais ceci vous expose aux Maléfiques. Cachez précautionneusement son rôle d’<Role HERBORISTE /> rendra l’enquête plus difficile mais vous survivrez plus longtemps et pourrait piéger le Démon sur un de vos voisins protégés. Il n’y a pas de bonne ou de mauvaise façon de jouer, à vous de voir quelle stratégie vous souhaitez adopter.
 
-**Provoquez l'exécution de vos voisins.** Si un de vos voisins est exécuté et qu’il survit, il y a de grandes chances que ce soit dû à votre capacité et que vos deux voisins soient Gentils. Évitez de viser des rôles naturellement protégés de l’exécution (<Role.MARIN /> et <Role.FOU />). Gardez également en tête le <Role.PACIFISTE />, qui pourrait sauver de l’exécution un de vos voisins Gentils sans pour autant que votre autre voisin soit également Gentil. Enfin, un Avocat du Diable peut également vous piéger en utilisant sa capacité sur un de vos Voisins Maléfiques au moment de son exécution.
+**Provoquez l'exécution de vos voisins.** Si un de vos voisins est exécuté et qu’il survit, il y a de grandes chances que ce soit dû à votre capacité et que vos deux voisins soient Gentils. Évitez de viser des rôles naturellement protégés de l’exécution (<Role MARIN /> et <Role FOU />). Gardez également en tête le <Role PACIFISTE />, qui pourrait sauver de l’exécution un de vos voisins Gentils sans pour autant que votre autre voisin soit également Gentil. Enfin, un Avocat du Diable peut également vous piéger en utilisant sa capacité sur un de vos Voisins Maléfiques au moment de son exécution.
 
-**Vous pouvez aussi choisir de rester cacher.** Attendez que les choses se passent et observez. Suivant l’alignement de vos deux voisins, cachez votre identité au Démon peut donner un certain avantage. Si vos deux voisins sont Gentils, alors ils sont protégés et le Démon pourrait gaspiller son attaque sur l’un d’entre eux. Si vous avez au moins un voisin Maléfique, alors vous ne protégez personne. Si jamais l’un de vos voisins décède, alors l’un d’eux était forcément Maléfique et c’est à vous de mener l’enquête. Ceci peut se révéler particulièrement utile pour repérer un <Role.ZOMBUUL /> qui vient de se suicider.
+**Vous pouvez aussi choisir de rester cacher.** Attendez que les choses se passent et observez. Suivant l’alignement de vos deux voisins, cachez votre identité au Démon peut donner un certain avantage. Si vos deux voisins sont Gentils, alors ils sont protégés et le Démon pourrait gaspiller son attaque sur l’un d’entre eux. Si vous avez au moins un voisin Maléfique, alors vous ne protégez personne. Si jamais l’un de vos voisins décède, alors l’un d’eux était forcément Maléfique et c’est à vous de mener l’enquête. Ceci peut se révéler particulièrement utile pour repérer un <Role ZOMBUUL /> qui vient de se suicider.
 
 **Gagnez la confiance de vos voisins.** Même avant de les innocenter, vous devriez les encourager à jouer avec vous. Après tout, s’ils arrivent tous deux à prouver qu’ils sont Gentils, alors votre capacité les protégera. Dans les petits Villages où les exécutions sont précieuses, ceci peut être décisif pour rassembler l’équipe des Gentils sans nécessairement gaspiller du temps pour innocenter certaines personnes.
 
@@ -36,13 +37,13 @@ Si vos deux voisins sont Gentils, ils ne peuvent pas mourir.
 
 ### Bluffer le rôle d’Herboriste
 
-**Si vos deux voisins sont Gentils, provoquez l’exécution de l’un d’eux.** Si le Village exécute un de vos voisins et qu’il n’est pas sauvé, vous pouvez vous retourner sur votre second voisin encore vivant. Ainsi, si le Village croit votre bluff d’<Role.HERBORISTE />, vous pouvez continuer de réclamer des exécutions et obtenir la mort d’un ou deux voisins Gentils à moindre frais.
+**Si vos deux voisins sont Gentils, provoquez l’exécution de l’un d’eux.** Si le Village exécute un de vos voisins et qu’il n’est pas sauvé, vous pouvez vous retourner sur votre second voisin encore vivant. Ainsi, si le Village croit votre bluff d’<Role HERBORISTE />, vous pouvez continuer de réclamer des exécutions et obtenir la mort d’un ou deux voisins Gentils à moindre frais.
 
 **Si l’un de vos voisins est Maléfique, soyez discret.** Détourner l’attention du Village de vos voisins, prétextant qu’ils sont tous deux possiblement à l’abri du Démon. De plus, expliquez que le Village a intérêt à traquer les Maléfiques plutôt qu’à dépenser du temps et risquer des vies pour innocenter des Gentils.
 
 **Choisir à quel moment vous dévoiler est crucial.** Si vous vous révélez trop tôt, le Village pourrait se demander pourquoi vous êtes encore en vie après 4 ou 5 nuits d’attaque du Démon. Si vous vous révélez trop tard, vous devrez justifier pourquoi vous ne vous êtes pas manifesté. Trouvez le juste milieu.
 
-**Si un avocat du Diable est en jeu, jouez avec lui.** Demandez-lui de protéger un de vos voisins que vous inciterez à exécuter le jour suivant. Si un de vos deux voisins est sauvé de l’exécution, ceci apparaîtra exactement comme si vous étiez l’<Role.HERBORISTE /> et que vos deux voisins étaient Gentils. Ceci est encore plus avantageux si l’un de vos voisins est en réalité Maléfique. Cette preuve devrait forcer le Village à vous laisser tranquille, vous et vos deux voisins.
+**Si un avocat du Diable est en jeu, jouez avec lui.** Demandez-lui de protéger un de vos voisins que vous inciterez à exécuter le jour suivant. Si un de vos deux voisins est sauvé de l’exécution, ceci apparaîtra exactement comme si vous étiez l’<Role HERBORISTE /> et que vos deux voisins étaient Gentils. Ceci est encore plus avantageux si l’un de vos voisins est en réalité Maléfique. Cette preuve devrait forcer le Village à vous laisser tranquille, vous et vos deux voisins.
 
 **Orientez les exécutions comme cela vous arrange.** De manière évidente, vous n’avez aucun intérêt à inciter à exécuter un de vos acolytes Maléfiques. De plus, si vous êtes Sbire et si le Démon devient l’un de vos voisins, vous serez tous deux dans l’embarras. Ainsi, essayez de garder toujours au moins un autre joueur vivant entre le Démon et vous.
 

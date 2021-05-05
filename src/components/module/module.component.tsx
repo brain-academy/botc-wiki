@@ -1,12 +1,27 @@
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import React from 'react'
 import {Demon, Etranger, Sbire, Villageois} from '../role/role'
-import {RoleComponent} from '../role/role.component'
-import Module from './module'
+import Role from '../role/role.component'
+import {default as M, isModule} from './module'
 
 const types = ['Villageois', 'Etrangers', 'Sbires', 'Démons']
 
-const ModuleComponent = ({module: {roles, name, path, imageUrl, description, fabled, theme}, page, tile}: {module: Module, page?: boolean, tile?: boolean}) => {
+interface ModuleProps {
+    module: M
+    page?: boolean
+    tile?: boolean
+}
+
+const Module = ({page, tile, module, ...other}: ModuleProps & any) => {
+    if (!module) {
+        const validModules: string[] = Object.keys(other).filter(isModule)
+        if (validModules.length > 1)
+            throw new Error(`Found multiple BOTC modules in the same component: ${validModules.join('|')}`)
+        if (validModules.length === 0)
+            throw new Error(`Found Module component with no valid BoTC Module (component's attributes: [${Object.keys(other)}])`)
+        module = M.fromName(validModules[0])
+    }
+    const {imageUrl, fabled, roles, path, name, description, theme}: M = module
     const imgUrl = useBaseUrl(imageUrl);
     if (!!page)
         return <div>
@@ -22,7 +37,7 @@ const ModuleComponent = ({module: {roles, name, path, imageUrl, description, fab
                             <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
                                 {roles
                                     .filter(role => role instanceof type)
-                                    .map(role => <RoleComponent role={role} tile />)
+                                    .map(role => <Role role={role} tile />)
                                 }
                             </div>
                         </React.Fragment>
@@ -43,8 +58,4 @@ const ModuleComponent = ({module: {roles, name, path, imageUrl, description, fab
     else return <a href={path}>{name}</a>
 }
 
-export const TROUBLEBREWING = ({page, tile}: {page?: boolean, tile?: boolean}) => <ModuleComponent module={Module.TROUBLE_BREWING} page={page} tile={tile} />
-export const BADMOONRISING = ({page, tile}: {page?: boolean, tile?: boolean}) => <ModuleComponent module={Module.BAD_MOON_RISING} page={page} tile={tile} />
-export const SECTSANDVIOLETS = ({page, tile}: {page?: boolean, tile?: boolean}) => <ModuleComponent module={Module.SECTS_AND_VIOLETS} page={page} tile={tile} />
-export const DEADLYPENANCEDAY = ({page, tile}: {page?: boolean, tile?: boolean}) => <ModuleComponent module={Module.DEADLY_PENANCE_DAY} page={page} tile={tile} />
-export const LARGELYUNFAIRE = ({page, tile}: {page?: boolean, tile?: boolean}) => <ModuleComponent module={Module.LARGELY_UN_FAIRE} page={page} tile={tile} />
+export default Module

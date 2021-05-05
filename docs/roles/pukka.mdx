@@ -2,13 +2,14 @@
 title: Pukka
 ---
 
-import * as Module from '/src/components/module/module.component'
-import * as Role from '/src/components/role/role.component'
+import Module from '/src/components/module/module.component'
+import Role from '/src/components/role/role.component'
 
 <img src='/img/blood-on-the-clocktower/roles/pukka.png' height='150' />
 
-#### Module : <Module.BADMOONRISING />
-#### Nom original : <Role.PUKKA />
+<Role PUKKA header />
+
+#### Nom original : <Role PUKKA />
 #### Démon - Alignement Maléfique
 #### Rôle Actif - Se réveille toutes les nuits pour utiliser sa capacité
 
@@ -18,41 +19,41 @@ Chaque nuit, choisissez un joueur : il est empoisonné jusqu’à la nuit suivan
 
 ### Exemples
 
-- Lors de la première nuit, le <Role.PUKKA /> empoisonne la <Role.FEMMEDECHAMBRE />. Plus tard dans la nuit, la <Role.FEMMEDECHAMBRE />  obtient de fausses informations. La nuit suivante, la <Role.FEMMEDECHAMBRE /> meurt.
+- Lors de la première nuit, le <Role PUKKA /> empoisonne la <Role FEMME_DE_CHAMBRE />. Plus tard dans la nuit, la <Role FEMME_DE_CHAMBRE />  obtient de fausses informations. La nuit suivante, la <Role FEMME_DE_CHAMBRE /> meurt.
 
-- Le <Role.PUKKA /> empoisonne le <Role.FOU />. Le lendemain, le <Role.FOU /> est exécuté et meurt parce qu’il est empoisonné. La nuit suivante, personne ne meurt, mais le <Role.PUKKA /> empoisonne un autre joueur, qui meurt la nuit suivante.
+- Le <Role PUKKA /> empoisonne le <Role FOU />. Le lendemain, le <Role FOU /> est exécuté et meurt parce qu’il est empoisonné. La nuit suivante, personne ne meurt, mais le <Role PUKKA /> empoisonne un autre joueur, qui meurt la nuit suivante.
 
-- Le <Role.PUKKA /> empoisonne le <Role.PACIFISTE />. La nuit suivante, l'<Role.EXORCISTE /> choisit le <Role.PUKKA />. Le <Role.PACIFISTE /> meurt, mais le <Role.PUKKA /> ne se réveille pas pour attaquer cette nuit.
+- Le <Role PUKKA /> empoisonne le <Role PACIFISTE />. La nuit suivante, l'<Role EXORCISTE /> choisit le <Role PUKKA />. Le <Role PACIFISTE /> meurt, mais le <Role PUKKA /> ne se réveille pas pour attaquer cette nuit.
 
 ### Mécaniques et Conseils
 
-**Le <Role.PUKKA /> est le Démon le plus sournois de <Module.BADMOONRISING /> par sa méchanceté et sa cruauté.** Tous les autres Démons laissent un répit au Village la première nuit ; le <Role.PUKKA /> n'a pas une telle patience et sème le chaos dans le Village dès la première nuit, sélectionnant sa première victime avant même que les Villageois aient une chance d'agir. Le <Role.ZOMBUUL /> est un peu plus résistant que vous, le <Role.SHABALOTH /> et le <Role.PO /> peuvent tuer plus efficacement, mais ils sont vulnérables à l’arme la plus implacable du Village : l’information. Non seulement vous tuez mais vous neutralisez en plus vos victimes, les obligeant à passer leurs derniers jours dans le délire, leurs informations confuses et le danger qu'elles représentaient autrefois ne sont plus rien. Le Village espère toujours que vous n'êtes pas en jeu, de peur de devoir passer toute la partie à douter de chaque information.
+**Le <Role PUKKA /> est le Démon le plus sournois de <Module BAD_MOON_RISING /> par sa méchanceté et sa cruauté.** Tous les autres Démons laissent un répit au Village la première nuit ; le <Role PUKKA /> n'a pas une telle patience et sème le chaos dans le Village dès la première nuit, sélectionnant sa première victime avant même que les Villageois aient une chance d'agir. Le <Role ZOMBUUL /> est un peu plus résistant que vous, le <Role SHABALOTH /> et le <Role PO /> peuvent tuer plus efficacement, mais ils sont vulnérables à l’arme la plus implacable du Village : l’information. Non seulement vous tuez mais vous neutralisez en plus vos victimes, les obligeant à passer leurs derniers jours dans le délire, leurs informations confuses et le danger qu'elles représentaient autrefois ne sont plus rien. Le Village espère toujours que vous n'êtes pas en jeu, de peur de devoir passer toute la partie à douter de chaque information.
 
-**Combinez les cibles que vous voulez empoisonner ainsi que celles que vous voulez tuer.** Une Femme de Chambre agressive et bavarde peut être d’une grande d’aide au-delà de la tombe si elle ne réalise pas qu’elle était empoisonnée juste avant de mourir et que sa dernière information est fausse. Avec une bonne préparation, vous pouvez neutraliser un <Role.EXORCISTE /> ou une <Role.COURTISANE /> avant qu'ils ne vous attrapent, ou vous pouvez exposer les clients d'un <Role.AUBERGISTE /> à votre <Role.PARRAIN /> ou à la malédiction de la <Role.GITANE />. Vous êtes le seul joueur Maléfique de <Module.BADMOONRISING /> pouvant brouiller les informations du Village, alors pourquoi ne pas en profiter pleinement?
+**Combinez les cibles que vous voulez empoisonner ainsi que celles que vous voulez tuer.** Une Femme de Chambre agressive et bavarde peut être d’une grande d’aide au-delà de la tombe si elle ne réalise pas qu’elle était empoisonnée juste avant de mourir et que sa dernière information est fausse. Avec une bonne préparation, vous pouvez neutraliser un <Role EXORCISTE /> ou une <Role COURTISANE /> avant qu'ils ne vous attrapent, ou vous pouvez exposer les clients d'un <Role AUBERGISTE /> à votre <Role PARRAIN /> ou à la malédiction de la <Role GITANE />. Vous êtes le seul joueur Maléfique de <Module BAD_MOON_RISING /> pouvant brouiller les informations du Village, alors pourquoi ne pas en profiter pleinement?
 
-**Ne ciblez pas les joueurs qui seront exécutés le lendemain.** Si le Village exécute votre victime empoisonnée, il n'y aura pas de mort cette nuit-là de votre part... ce qui indique que le <Role.PUKKA /> ou le <Role.ZOMBUUL /> est en jeu. Une seule exécution mal chronométrée peut vous mettre dans l'embarras pour le reste de la partie !
+**Ne ciblez pas les joueurs qui seront exécutés le lendemain.** Si le Village exécute votre victime empoisonnée, il n'y aura pas de mort cette nuit-là de votre part... ce qui indique que le <Role PUKKA /> ou le <Role ZOMBUUL /> est en jeu. Une seule exécution mal chronométrée peut vous mettre dans l'embarras pour le reste de la partie !
 
-**Ciblez les Villageois affirmant être immunisés contre l'exécution, comme le <Role.MARIN /> ou un <Role.HERBORISTE /> et ses voisins.** Si vous arrivez à provoquer son exécution le jour suivant, votre cible empoisonnée ne sera pas protégée et mourra, amenant le trouble et la discorde au sein du Village. Vous pouvez avancer que ce joueur a bluffé sa capacité en utilisant un Avocat du Diable. Le cas échéant, il n’y aura aucune mort la nuit suivante (car le Village a exécuté votre cible empoisonnée) et vous pouvez déclarer que le <Role.ZOMBUUL /> est peut-être en jeu (Et vous gagnez un tour précieux chaque fois que le Village exécute un mort).
+**Ciblez les Villageois affirmant être immunisés contre l'exécution, comme le <Role MARIN /> ou un <Role HERBORISTE /> et ses voisins.** Si vous arrivez à provoquer son exécution le jour suivant, votre cible empoisonnée ne sera pas protégée et mourra, amenant le trouble et la discorde au sein du Village. Vous pouvez avancer que ce joueur a bluffé sa capacité en utilisant un Avocat du Diable. Le cas échéant, il n’y aura aucune mort la nuit suivante (car le Village a exécuté votre cible empoisonnée) et vous pouvez déclarer que le <Role ZOMBUUL /> est peut-être en jeu (Et vous gagnez un tour précieux chaque fois que le Village exécute un mort).
 
-**Ne ciblez pas des Villageois protégés par un tiers.** Excepté l’inébranlable <Role.BRUTE />, votre attaque empoisonnée peut venir à bout de toutes les protections personnelles, c’est-à-dire les rôles qui se protègent eux-même comme le <Role.MARIN /> ou le <Role.FOU />. En revanche, votre attaque n’a aucun effet sur des personnes protégées par un tiers comme peut le faire l’<Role.AUBERGISTE /> ou l’<Role.HERBORISTE />. Vous perdriez un tour précieux à ne tuer personne. Soyez méthodique et implacable en préparant un plan sans faille.
+**Ne ciblez pas des Villageois protégés par un tiers.** Excepté l’inébranlable <Role BRUTE />, votre attaque empoisonnée peut venir à bout de toutes les protections personnelles, c’est-à-dire les rôles qui se protègent eux-même comme le <Role MARIN /> ou le <Role FOU />. En revanche, votre attaque n’a aucun effet sur des personnes protégées par un tiers comme peut le faire l’<Role AUBERGISTE /> ou l’<Role HERBORISTE />. Vous perdriez un tour précieux à ne tuer personne. Soyez méthodique et implacable en préparant un plan sans faille.
 
-**Masquez votre présence de <Role.PUKKA /> le plus longtemps possible.** Une fois que le Village sait que vous êtes en jeu, il peut commencer à revenir en arrière sur vos informations empoisonnées, annulant tout votre travail de sape ! Bien qu'il puisse sembler que bluffer un <Role.ZOMBUUL /> serait le choix évident, il peut en fait être plus facile d'imiter un <Role.SHABALOTH /> ou même un <Role.PO /> avec l'aide d'un <Role.ASSASSIN /> ou d'un <Role.PARRAIN />... ou juste des Villageois qui prennent des risques. Par exemple, si vous connaissez une <Role.COMMERE /> et que sa déclaration produira une mort cette nuit-là, cela peut être le moment de faire agir vos Sbires, créant plusieurs morts qui imitent une attaque de <Role.PO /> chargée. Bien qu'ils puissent éventuellement vous retrouver, le but est que même s’ils y arrivent, il soit trop tard pour vous arrêter !
+**Masquez votre présence de <Role PUKKA /> le plus longtemps possible.** Une fois que le Village sait que vous êtes en jeu, il peut commencer à revenir en arrière sur vos informations empoisonnées, annulant tout votre travail de sape ! Bien qu'il puisse sembler que bluffer un <Role ZOMBUUL /> serait le choix évident, il peut en fait être plus facile d'imiter un <Role SHABALOTH /> ou même un <Role PO /> avec l'aide d'un <Role ASSASSIN /> ou d'un <Role PARRAIN />... ou juste des Villageois qui prennent des risques. Par exemple, si vous connaissez une <Role COMMERE /> et que sa déclaration produira une mort cette nuit-là, cela peut être le moment de faire agir vos Sbires, créant plusieurs morts qui imitent une attaque de <Role PO /> chargée. Bien qu'ils puissent éventuellement vous retrouver, le but est que même s’ils y arrivent, il soit trop tard pour vous arrêter !
 
 ### Jouer contre le Pukka
 
-**Déterminez si le <Role.PUKKA /> est en jeu.** Cherchez les morts suspectes de nuit, comme un <Role.FOU /> qui meurt très tôt ou un <Role.MARIN /> censé être invincible et sobre. Autre indice, si personne ne meurt la nuit, cela peut être à cause d'une cible empoisonnée par le <Role.PUKKA /> et exécutée par le Village. Si ces deux situations sont récurrentes, envisagez qu’un <Role.PUKKA /> est certainement en jeu.
+**Déterminez si le <Role PUKKA /> est en jeu.** Cherchez les morts suspectes de nuit, comme un <Role FOU /> qui meurt très tôt ou un <Role MARIN /> censé être invincible et sobre. Autre indice, si personne ne meurt la nuit, cela peut être à cause d'une cible empoisonnée par le <Role PUKKA /> et exécutée par le Village. Si ces deux situations sont récurrentes, envisagez qu’un <Role PUKKA /> est certainement en jeu.
 
-**Revenez sur les dernières informations des morts de nuit.** Une fois que vous avez compris qu'un <Role.PUKKA /> est en jeu, vous devez refaire l’enquête en considérant que chaque joueur décédé était empoisonné la nuit et le jour précédent. Revenir en arrière peut être compliqué, car ce qui s'est passé la veille au soir est plus difficile à retenir que ce qui s'est passé le jour même, mais cela est crucial pour mener une enquête efficace et significative. Le poison du <Role.PUKKA /> peut totalement tromper des Villageois juste avant leur mort, en voici quelques exemples :
+**Revenez sur les dernières informations des morts de nuit.** Une fois que vous avez compris qu'un <Role PUKKA /> est en jeu, vous devez refaire l’enquête en considérant que chaque joueur décédé était empoisonné la nuit et le jour précédent. Revenir en arrière peut être compliqué, car ce qui s'est passé la veille au soir est plus difficile à retenir que ce qui s'est passé le jour même, mais cela est crucial pour mener une enquête efficace et significative. Le poison du <Role PUKKA /> peut totalement tromper des Villageois juste avant leur mort, en voici quelques exemples :
 
-**La capacité d’un <Role.HERBORISTE /> n’a pas fonctionné.**
+**La capacité d’un <Role HERBORISTE /> n’a pas fonctionné.**
 
-**Le <Role.PARIEUR /> est en vie alors que son dernier pari n’était pas juste.**
+**Le <Role PARIEUR /> est en vie alors que son dernier pari n’était pas juste.**
 
-**La <Role.FEMMEDECHAMBRE /> reçoit de fausses informations.**
+**La <Role FEMME_DE_CHAMBRE /> reçoit de fausses informations.**
 
-**L’<Role.EXORCISTE /> a réussi à choisir le Démon mais celui-ci a tout de même agi.**
+**L’<Role EXORCISTE /> a réussi à choisir le Démon mais celui-ci a tout de même agi.**
 
-**Si le <Role.PUKKA /> est en jeu, personne n'est en sécurité.** Par exemple, la capacité du <Role.MARIN /> et du <Role.FOU /> ne les protège plus de l’attaque du Démon. Comme le <Role.PUKKA /> agit dès la première nuit, il peut être avantageux que chaque joueur révèle publiquement son rôle et ses informations dès que possible. Parfois, il est plus avantageux que certains joueurs Gentils cachent leur rôle afin d’éviter l’attaque du Démon, mais avec le <Role.PUKKA />, ce n'est pas le cas. Révélez tout et travaillez en équipe pour traduire cet empoisonneur meurtrier en justice!
+**Si le <Role PUKKA /> est en jeu, personne n'est en sécurité.** Par exemple, la capacité du <Role MARIN /> et du <Role FOU /> ne les protège plus de l’attaque du Démon. Comme le <Role PUKKA /> agit dès la première nuit, il peut être avantageux que chaque joueur révèle publiquement son rôle et ses informations dès que possible. Parfois, il est plus avantageux que certains joueurs Gentils cachent leur rôle afin d’éviter l’attaque du Démon, mais avec le <Role PUKKA />, ce n'est pas le cas. Révélez tout et travaillez en équipe pour traduire cet empoisonneur meurtrier en justice!
 
-**À défaut de suspects, exécutez les joueurs que vous pensez empoisonnés.** Il est préférable d'exécuter un joueur Gentil empoisonné par le <Role.PUKKA /> qu'un joueur Gentil qui ne l'est pas. D’une part, cette personne va décéder du poison du <Role.PUKKA /> quoiqu’il se passe. D’autre part, lorsqu’une victime empoisonnée par le <Role.PUKKA /> est exécutée, personne ne meurt à cause du Démon la nuit suivante et ceci génère de l’information. Évidemment, il est toujours préférable d’exécuter des Maléfiques, mais si vous n'avez aucun suspect en vue, penchez toujours vers les joueurs qui semblent empoisonnés. Enfin, méfiez-vous car cet argument peut facilement être repris par les Maléfiques pour exécuter des rôles importants.
+**À défaut de suspects, exécutez les joueurs que vous pensez empoisonnés.** Il est préférable d'exécuter un joueur Gentil empoisonné par le <Role PUKKA /> qu'un joueur Gentil qui ne l'est pas. D’une part, cette personne va décéder du poison du <Role PUKKA /> quoiqu’il se passe. D’autre part, lorsqu’une victime empoisonnée par le <Role PUKKA /> est exécutée, personne ne meurt à cause du Démon la nuit suivante et ceci génère de l’information. Évidemment, il est toujours préférable d’exécuter des Maléfiques, mais si vous n'avez aucun suspect en vue, penchez toujours vers les joueurs qui semblent empoisonnés. Enfin, méfiez-vous car cet argument peut facilement être repris par les Maléfiques pour exécuter des rôles importants.
 

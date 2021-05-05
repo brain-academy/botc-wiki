@@ -2,12 +2,13 @@
 title: Professeur
 ---
 
-import * as Module from '/src/components/module/module.component'
-import * as Role from '/src/components/role/role.component'
+import Module from '/src/components/module/module.component'
+import Role from '/src/components/role/role.component'
 
 <img src='/img/blood-on-the-clocktower/roles/professeur.png' height='150' />
 
-#### Module : <Module.BADMOONRISING />
+<Role PROFESSEUR header />
+
 #### Nom original : Professor
 #### Villageois - Alignement Gentil
 #### Rôle à usage unique - Se réveille toutes les nuits jusqu’à l’utilisation de sa capacité
@@ -20,13 +21,13 @@ S’il s’agit d’un Villageois, il sera ressuscité.
 
 ### Exemples
 
-- Le <Role.PROFESSEUR /> choisit un joueur mort qui s’avère être la <Role.MAMIE />. La <Role.MAMIE /> revient en jeu. Son pouvoir est réinitialisé et elle obtient l’identité d’un nouveau petit-fils.
+- Le <Role PROFESSEUR /> choisit un joueur mort qui s’avère être la <Role MAMIE />. La <Role MAMIE /> revient en jeu. Son pouvoir est réinitialisé et elle obtient l’identité d’un nouveau petit-fils.
 
-- Le <Role.PROFESSEUR /> choisit un joueur mort qui se prétend <Role.HERBORISTE />. Le joueur est en réalité le <Role.LUNATIQUE />. Personne n’est ressuscité.
+- Le <Role PROFESSEUR /> choisit un joueur mort qui se prétend <Role HERBORISTE />. Le joueur est en réalité le <Role LUNATIQUE />. Personne n’est ressuscité.
 
-- Le <Role.PROFESSEUR /> choisit un joueur apparemment mort, mais ce dernier vient d’être régurgité par le <Role.SHABALOTH /> et est maintenant en vie. Le <Role.PROFESSEUR /> doit choisir un autre joueur mort.
+- Le <Role PROFESSEUR /> choisit un joueur apparemment mort, mais ce dernier vient d’être régurgité par le <Role SHABALOTH /> et est maintenant en vie. Le <Role PROFESSEUR /> doit choisir un autre joueur mort.
 
-- Le <Role.PROFESSEUR /> est ivre et choisit de ressusciter le <Role.FOU />. Rien ne se passe car le <Role.PROFESSEUR /> est ivre. De plus, il ne pourra plus utiliser sa capacité et ne se réveillera plus jusqu’à la fin de la partie.
+- Le <Role PROFESSEUR /> est ivre et choisit de ressusciter le <Role FOU />. Rien ne se passe car le <Role PROFESSEUR /> est ivre. De plus, il ne pourra plus utiliser sa capacité et ne se réveillera plus jusqu’à la fin de la partie.
 
 ### Mécaniques et Conseils
 
@@ -44,13 +45,13 @@ S’il s’agit d’un Villageois, il sera ressuscité.
 
 **Provoquer très tôt l’exécution d’un Villageois pour ensuite le ramener à la vie.** Ceci peut être une bonne tactique pour innocenter deux personnes, particulièrement en début de partie. En revanche, les deux joueurs devront se faire mutuellement confiance pour aller au bout de cette manœuvre.
 
-**Discutez avec le joueur concerné avant de le ramener à la vie.** D’une part, ceci augmentera votre crédibilité car vous pourriez couvrir la régurgitation d’un <Role.SHABALOTH /> (car le <Role.SHABALOTH /> ne choisit pas les joueurs morts qu’il régurgite). D’autre part, le joueur mort pourrait vous prévenir s’il était un Étranger bluffant Villageois. Ainsi, dans le cas où la personne concernée accepte d'être ressuscité et que votre capacité échoue, vous pouvez raisonnablement en conclure qu’il s’agit d’un Maléfique.
+**Discutez avec le joueur concerné avant de le ramener à la vie.** D’une part, ceci augmentera votre crédibilité car vous pourriez couvrir la régurgitation d’un <Role SHABALOTH /> (car le <Role SHABALOTH /> ne choisit pas les joueurs morts qu’il régurgite). D’autre part, le joueur mort pourrait vous prévenir s’il était un Étranger bluffant Villageois. Ainsi, dans le cas où la personne concernée accepte d'être ressuscité et que votre capacité échoue, vous pouvez raisonnablement en conclure qu’il s’agit d’un Maléfique.
 
-**Pour rester en vie, vous pouvez affirmer avoir déjà utilisé votre capacité alors que vous l’avez encore.** Dans ce cas, inventez une histoire crédible pour expliquer le fait que votre capacité n’ait pas fonctionné (voir ci-dessous “Bluffer le rôle de <Role.PROFESSEUR />”). Ceci devrait vous protéger de deux façons. D’une part, une fois sa capacité utilisée, le <Role.PROFESSEUR /> ne représente plus une menace pour les Maléfiques et devrait rester à l’abri du Démon. D’autre part, attirer la suspicion du Village devrait également écarter l’attaque du Démon, car il est plus logique d’éliminer des joueurs complètement innocentés par le Village. Néanmoins, comme tout bluff de Gentil, vous allez devoir “rattraper” votre Village en expliquant les détails et les raisons de votre bluff.
+**Pour rester en vie, vous pouvez affirmer avoir déjà utilisé votre capacité alors que vous l’avez encore.** Dans ce cas, inventez une histoire crédible pour expliquer le fait que votre capacité n’ait pas fonctionné (voir ci-dessous “Bluffer le rôle de <Role PROFESSEUR />”). Ceci devrait vous protéger de deux façons. D’une part, une fois sa capacité utilisée, le <Role PROFESSEUR /> ne représente plus une menace pour les Maléfiques et devrait rester à l’abri du Démon. D’autre part, attirer la suspicion du Village devrait également écarter l’attaque du Démon, car il est plus logique d’éliminer des joueurs complètement innocentés par le Village. Néanmoins, comme tout bluff de Gentil, vous allez devoir “rattraper” votre Village en expliquant les détails et les raisons de votre bluff.
 
 ### Bluffer le rôle de Professeur
 
-**Vous ne pouvez ressusciter personne.** Préparez une explication pour le justifier. Le <Role.PROFESSEUR /> est un bluff compliqué dans <Module.BADMOONRISING />, construisez donc votre histoire à l’avance avant d’être pris au dépourvu.
+**Vous ne pouvez ressusciter personne.** Préparez une explication pour le justifier. Le <Role PROFESSEUR /> est un bluff compliqué dans <Module BAD_MOON_RISING />, construisez donc votre histoire à l’avance avant d’être pris au dépourvu.
 
 **Expliquez que le joueur visé était Maléfique.** Vous pouvez affirmer avoir essayé de ressusciter un joueur suspect afin de confirmer son rôle de Maléfique. Cela vous fournira une bonne raison pour expliquer l’échec de votre capacité.
 
@@ -58,5 +59,5 @@ S’il s’agit d’un Villageois, il sera ressuscité.
 
 **Affirmez avoir visé un Gentil.** Dans ce cas, ceci jette la suspicion sur deux personnes : le joueur visé et vous. Néanmoins, cette manœuvre vous met très en avant et sera plus adaptée pour un Sbire que pour le Démon lui-même.
 
-**Si un joueur est régurgité par un <Role.SHABALOTH />, sautez sur l’occasion.** Un joueur ressuscité par le <Role.PROFESSEUR /> ne peut se différencier d’un joueur régurgité par le <Role.SHABALOTH />. Si vous vous apercevez au petit matin qu’un joueur vient d’être régurgité, un des Maléfiques a intérêt à brouiller les pistes en déclarant avoir utilisé sa capacité de <Role.PROFESSEUR />. D’une part, ceci peut vous innocenter en tant que <Role.PROFESSEUR />. (Le bénéfice est double si la personne ressuscitée est un Sbire.) D’autre part, ceci cachera le fait qu’un <Role.SHABALOTH /> est en jeu.
+**Si un joueur est régurgité par un <Role SHABALOTH />, sautez sur l’occasion.** Un joueur ressuscité par le <Role PROFESSEUR /> ne peut se différencier d’un joueur régurgité par le <Role SHABALOTH />. Si vous vous apercevez au petit matin qu’un joueur vient d’être régurgité, un des Maléfiques a intérêt à brouiller les pistes en déclarant avoir utilisé sa capacité de <Role PROFESSEUR />. D’une part, ceci peut vous innocenter en tant que <Role PROFESSEUR />. (Le bénéfice est double si la personne ressuscitée est un Sbire.) D’autre part, ceci cachera le fait qu’un <Role SHABALOTH /> est en jeu.
 

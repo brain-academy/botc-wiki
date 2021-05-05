@@ -2,12 +2,13 @@
 title: Croque-Mort
 ---
 
-import * as Module from '/src/components/module/module.component'
-import * as Role from '/src/components/role/role.component'
+import Module from '/src/components/module/module.component'
+import Role from '/src/components/role/role.component'
 
 <img src='/img/blood-on-the-clocktower/roles/croque-mort.png' height='150' />
 
-#### Modules : <Module.TROUBLEBREWING />
+<Role CROQUE_MORT header />
+
 #### Nom Original : Undertaker
 #### Villageois
 #### Alignement : Gentil
@@ -18,49 +19,49 @@ import * as Role from '/src/components/role/role.component'
 Chaque nuit, vous apprenez le rôle du joueur qui vient d’être exécuté le jour précédent.
 
 ### Exemple 
-> Le <Role.MAIRE /> est exécuté aujourd’hui. La nuit suivante, le <Role.CROQUEMORT /> apprend qu’il s’agissait du <Role.MAIRE />.
+> Le <Role MAIRE /> est exécuté aujourd’hui. La nuit suivante, le <Role CROQUE_MORT /> apprend qu’il s’agissait du <Role MAIRE />.
 
-> Le <Role.SOULARD />, qui pense être la <Role.PUCELLE />, est exécuté. La nuit suivante, le <Role.CROQUEMORT /> apprend qu’on a exécuté le <Role.SOULARD />. Le <Role.CROQUEMORT /> apprend le “vrai” rôle du joueur exécuté et non le rôle que ce dernier pense être.
+> Le <Role SOULARD />, qui pense être la <Role PUCELLE />, est exécuté. La nuit suivante, le <Role CROQUE_MORT /> apprend qu’on a exécuté le <Role SOULARD />. Le <Role CROQUE_MORT /> apprend le “vrai” rôle du joueur exécuté et non le rôle que ce dernier pense être.
 
-> L'<Role.ESPION /> est exécuté. Deux voyageurs sont exilés. La nuit suivante, on dévoile le rôle du <Role.MAJORDOME /> au <Role.CROQUEMORT />. L'<Role.ESPION /> est en l'occurrence identifié comme étant le <Role.MAJORDOME />. Les exils de Voyageurs ne sont pas des exécutions et de ce fait, le <Role.CROQUEMORT /> n’a pas d’information sur eux.
+> L'<Role ESPION /> est exécuté. Deux voyageurs sont exilés. La nuit suivante, on dévoile le rôle du <Role MAJORDOME /> au <Role CROQUE_MORT />. L'<Role ESPION /> est en l'occurrence identifié comme étant le <Role MAJORDOME />. Les exils de Voyageurs ne sont pas des exécutions et de ce fait, le <Role CROQUE_MORT /> n’a pas d’information sur eux.
 
-> Personne n’est exécuté : le <Role.CROQUEMORT /> n’est pas réveillé cette nuit.
+> Personne n’est exécuté : le <Role CROQUE_MORT /> n’est pas réveillé cette nuit.
  
 ### Mécaniques et conseils
 - Plus il y a de joueurs exécutés, plus vous aurez d’informations. Il est primordial que vous incitiez à un maximum d’exécutions : votez oui lors des nominations ! Les Gentils peuvent tuer des joueurs Maléfiques principalement à travers les exécutions. Si vous n’arrivez pas à tuer le Démon au cours des différentes exécutions, vous aurez tout de même un maximum d'informations sur les rôles de chacun lors du dernier jour.
 
 - Vous n’apprenez pas le rôle des Voyageurs, ils sont exilés et non exécutés. La seule exception est le Bouc-Émissaire qui peut être exécuté à travers la capacité de son rôle. Néanmoins vous n’apprenez pas son allégeance pour autant.
 
-- Exécuter un joueur sur lequel vous n’avez aucune information peut donner de la crédibilité au rôle de <Role.CROQUEMORT /> que vous prétendez avoir. De la même manière, exécuter un joueur qui s’est dévoilé publiquement est un bon moyen de renforcer votre crédibilité en confirmant ou infirmant le rôle que l'exécuté annonçait avoir.
+- Exécuter un joueur sur lequel vous n’avez aucune information peut donner de la crédibilité au rôle de <Role CROQUE_MORT /> que vous prétendez avoir. De la même manière, exécuter un joueur qui s’est dévoilé publiquement est un bon moyen de renforcer votre crédibilité en confirmant ou infirmant le rôle que l'exécuté annonçait avoir.
 
-- Les rôles intéressants à exécuter en début de partie sont ceux dits de première nuit (notamment <Role.LAVANDIERE /> et <Role.ARCHIVISTE />)  qui permettent d'innocenter un autre rôle (respectivement de Villageois ou d’Etranger).
+- Les rôles intéressants à exécuter en début de partie sont ceux dits de première nuit (notamment <Role LAVANDIERE /> et <Role ARCHIVISTE />)  qui permettent d'innocenter un autre rôle (respectivement de Villageois ou d’Etranger).
 
-- Exécuter des personnages comme la <Role.VOYANTE /> peut signifier avoir moins d’information par la suite mais cela peut aussi vous permettre de confirmer tout ce qui a été dit jusqu’alors. Si la <Role.VOYANTE /> venait à être tuée pendant la nuit par le Démon, vous n’aurez pas la chance de vérifier son identité !
+- Exécuter des personnages comme la <Role VOYANTE /> peut signifier avoir moins d’information par la suite mais cela peut aussi vous permettre de confirmer tout ce qui a été dit jusqu’alors. Si la <Role VOYANTE /> venait à être tuée pendant la nuit par le Démon, vous n’aurez pas la chance de vérifier son identité !
 
 - Si vous vous dévoilez rapidement, vous vous exposez  à la mort ou à l'empoisonnement tandis que si vous temporisez, vous collecterez davantage d’informations en avançant dans la partie. Toutefois, assurez-vous de les communiquer avant la fin de la partie !
 
-- Se dévoiler rapidement peut aussi s’avérer être une stratégie payante surtout si vous avez réussi à identifier le potentiel Démon ! Et pourquoi ne pas invoquer la protection du <Role.MOINE /> ? Même si ce dernier n’est pas en jeu, le Démon peut croire qu’il est présent et dans le doute, il sera moins enclin à vous attaquer.
+- Se dévoiler rapidement peut aussi s’avérer être une stratégie payante surtout si vous avez réussi à identifier le potentiel Démon ! Et pourquoi ne pas invoquer la protection du <Role MOINE /> ? Même si ce dernier n’est pas en jeu, le Démon peut croire qu’il est présent et dans le doute, il sera moins enclin à vous attaquer.
 
-- Si le Conteur vous révèle que c’est le <Role.IMP /> qui a été exécuté, il est très probable qu’il y ait une <Role.CROQUEUSEDHOMMES />’homme dans la partie et qu’elle soit devenue le Démon !
+- Si le Conteur vous révèle que c’est le <Role IMP /> qui a été exécuté, il est très probable qu’il y ait une <Role CROQUEUSE_D_HOMMES />’homme dans la partie et qu’elle soit devenue le Démon !
 
-- Si le joueur exécuté est le <Role.SOULARD />, vous aurez l’information “<Role.SOULARD />” et pas le rôle qu’il pense être.
+- Si le joueur exécuté est le <Role SOULARD />, vous aurez l’information “<Role SOULARD />” et pas le rôle qu’il pense être.
 
-- Un joueur qui meurt en nominant la <Role.PUCELLE /> est considéré comme étant exécuté et son rôle vous sera dévoilé pendant la nuit.
+- Un joueur qui meurt en nominant la <Role PUCELLE /> est considéré comme étant exécuté et son rôle vous sera dévoilé pendant la nuit.
 
-- Attention à l'<Role.ESPION /> et au <Role.RECLUS /> ! Ils peuvent être respectivement considérés comme Gentils ou Maléfiques et donc le rôle qui vous sera révélé n’est pas forcément leur “vrai” rôle (fonctionnement différent de celui du Villageois) parce que leur capacités continuent de fonctionner même lorsqu’ils sont morts.
+- Attention à l'<Role ESPION /> et au <Role RECLUS /> ! Ils peuvent être respectivement considérés comme Gentils ou Maléfiques et donc le rôle qui vous sera révélé n’est pas forcément leur “vrai” rôle (fonctionnement différent de celui du Villageois) parce que leur capacités continuent de fonctionner même lorsqu’ils sont morts.
 
-- Si vous pensez qu’un <Role.CROQUEMORT /> est en jeu, vous pouvez mentir sur votre identité et vous faire exécuter afin de vérifier que le prétendu <Role.CROQUEMORT /> annonce votre véritable rôle et non celui que vous prétendiez avoir.
+- Si vous pensez qu’un <Role CROQUE_MORT /> est en jeu, vous pouvez mentir sur votre identité et vous faire exécuter afin de vérifier que le prétendu <Role CROQUE_MORT /> annonce votre véritable rôle et non celui que vous prétendiez avoir.
 
 ### Bluffer le Croque-Mort
 
-- Un <Role.CROQUEMORT /> Gentil peut très bien attendre quelques jours avant de se dévoiler comme <Role.CROQUEMORT />. N’ayez pas peur de rester discret pendant les premiers jours ou même prétendre être un autre rôle puis de basculer sur le <Role.CROQUEMORT /> par la suite. Vous pourrez expliquer ce revirement comme étant une stratégie qui visait à vous prémunir du démon afin de récolter un maximum d’informations en évitant de mourir les premières nuits.
+- Un <Role CROQUE_MORT /> Gentil peut très bien attendre quelques jours avant de se dévoiler comme <Role CROQUE_MORT />. N’ayez pas peur de rester discret pendant les premiers jours ou même prétendre être un autre rôle puis de basculer sur le <Role CROQUE_MORT /> par la suite. Vous pourrez expliquer ce revirement comme étant une stratégie qui visait à vous prémunir du démon afin de récolter un maximum d’informations en évitant de mourir les premières nuits.
 
-- Vous pouvez renforcer la crédibilité de votre bluff en confirmant les rôles de joueurs Gentils. Pour que cela soit payant, il vous faut savoir leur rôle avant de les exécuter. Si vous êtes un <Role.ESPION /> ou qu’un de vos Acolytes est l'<Role.ESPION />, vous pouvez vous appuyer sur cette stratégie redoutablement efficace puisque vous connaissez les rôles de tout le monde.
+- Vous pouvez renforcer la crédibilité de votre bluff en confirmant les rôles de joueurs Gentils. Pour que cela soit payant, il vous faut savoir leur rôle avant de les exécuter. Si vous êtes un <Role ESPION /> ou qu’un de vos Acolytes est l'<Role ESPION />, vous pouvez vous appuyer sur cette stratégie redoutablement efficace puisque vous connaissez les rôles de tout le monde.
 
 - Vous pouvez jeter la suspicion sur des joueurs Gentils en annonçant qu’ils sont en réalité des Sbires ou même le Démon. C’est assez risqué parce que le joueur en question saura que vous êtes Maléfique, ce sera alors votre parole contre la sienne. Toutefois, gardez en tête qu’en règle générale, davantage de joueurs Gentils seront exécutés. Cette stratégie peut être donc très intéressante mais à utiliser avec parcimonie.
 
 - Si un autre joueur Maléfique meurt d’une exécution, vous avez alors le choix de dire qu’il est soit Maléfique, soit Gentil. Si vous annoncez qu’il était Gentil, vous donnez du poids à tout ce qu’il a dit et vous vous innocentez mutuellement. 
 
-- Si vous annoncez le joueur comme étant Maléfique, il devrait avoir tendance (espérons-le pour vous !) à agir de manière plus louche, ce qui potentiellement renforce votre bluff de <Role.CROQUEMORT /> et d’une manière votre crédibilité.
+- Si vous annoncez le joueur comme étant Maléfique, il devrait avoir tendance (espérons-le pour vous !) à agir de manière plus louche, ce qui potentiellement renforce votre bluff de <Role CROQUE_MORT /> et d’une manière votre crédibilité.
 
-- Un bon moyen de brouiller l’enquête du village est d’annoncer avoir vu un <Role.SOULARD /> et non pas le rôle de Villageois que la personne prétendait être. Si le Village vous croit (la mécanique est d’autant plus renforcée si la personne exécutée vous fait confiance), alors ils partiront du principe que les informations données par ce joueur sont fausses. De même, si vous ne savez pas quel rôle a le joueur exécuté, prétendre qu’il est <Role.SOULARD /> est un bon moyen de vous en sortir !
+- Un bon moyen de brouiller l’enquête du village est d’annoncer avoir vu un <Role SOULARD /> et non pas le rôle de Villageois que la personne prétendait être. Si le Village vous croit (la mécanique est d’autant plus renforcée si la personne exécutée vous fait confiance), alors ils partiront du principe que les informations données par ce joueur sont fausses. De même, si vous ne savez pas quel rôle a le joueur exécuté, prétendre qu’il est <Role SOULARD /> est un bon moyen de vous en sortir !

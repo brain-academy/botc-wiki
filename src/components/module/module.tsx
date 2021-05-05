@@ -27,6 +27,17 @@ export default class Module extends MarkdownDocument {
         this.theme = theme
     }
 
+    static containing: (role: Role) => Module[] = (role) => Module.MODULES
+        .filter(module => module.roles.includes(role))
+
+
+    static fromName = (name: string) => {
+        if (isModule(name))
+            return Module[name]
+        else
+            throw new Error(`BoTC Module not found : ${name}`)
+    }
+
     static readonly TROUBLE_BREWING = new Module(
         {
             name: 'Trouble Brewing',
@@ -203,4 +214,14 @@ export default class Module extends MarkdownDocument {
         ]
     })
 
+    private static MODULES = [
+        Module.TROUBLE_BREWING,
+        Module.BAD_MOON_RISING,
+        Module.SECTS_AND_VIOLETS,
+        Module.DEADLY_PENANCE_DAY,
+        Module.LARGELY_UN_FAIRE,
+    ]
+
 }
+
+export const isModule = (key: string) => Object.keys(Module).includes(key)
