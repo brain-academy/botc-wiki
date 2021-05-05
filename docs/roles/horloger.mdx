@@ -7,11 +7,36 @@ import * as Role from '/src/components/role/role.component'
 
 <img src='/img/blood-on-the-clocktower/roles/horloger.png' height='150' />
 
-#### Modules : <Module.TROUBLEBREWING />
-#### Nom Original : Librarian
+#### Modules : <Module.SECTSANDVIOLETS /> <Module.LARGELYUNFAIRE />
+#### Nom Original : CLOCKMAKER
 #### Villageois
 #### Alignement : Gentil 
 #### Rôle de première nuit
 #### Réveillé seulement la première nuit
 
 ### Description :
+
+La première nuit, le Conteur vous apprend à quelle distance se trouve le Sbire le plus proche du Démon.
+La distance est le nombre de joueurs assis commençant par le joueur le plus proche du Démon et se terminant par le Sbire le plus proche, peu importe le sens horaire ou anti-horaire. Il y a toujours au moins une distance de un (1).
+ 
+### Exemples  
+> Le <Role.FANGGU /> est assis à côté de la <Role.VIEILLE CHOUETTE />. L'<Role.HORLOGER /> aura un "1".  
+
+> Dans le sens des aiguille d'une montre (sens horaire), en partant du Démon <Role.NODASHII />, on trouve le <Role.REVEUR />, le <Role.CHARMEUR DE SERPENT /> et le <Role.JUMEAUMALEFIQUE />.
+Dans le sens contraire des aiguilles d'une montre (sens anti-horaire) en partant du <Role.NODASHII />, on trouve la <Role.BETEDEFOIRE />, la <Role.DULCINEE />, le <Role.FAUSSAIRE />, le <Role.SAGE /> et la <Role.SORCIERE />.
+Etant donné que la <Role.SORCIERE /> est à 5 places du Démon et que le <Role.JUMEAU MALEFIQUE /> est à 3 places seulement, l'<Role.HORLOGER /> aura un "3".
+
+> Les deux voisins du <Role.FANGGU /> sont des Voyageurs, l'un est Gentil, l'autre est Maléfique. L'un des voisins d'un des Voyageurs est le <Role.MANIPULATEUR />. Durant la première nuit, l'<Role.HORLOGER /> aura un "2" car un Voyageur n'est pas un Sbire.
+
+### Mécaniques et conseils
+
+- Vous n'êtes pas obligés de dévoiler votre information immédiatement, attendez un jour ou deux de façon à observer les autres joueurs et déceler des comportements suspects : les Maléfiques pourraient se relâcher en pensant qu'aucune information d'<Role.HORLOGER /> ne sortira.
+- Votre information a plus de valeur si vous arrivez à identifer un Sbire. Trouvez un Sbire et vous pourrez réduire de façon significative votre liste de Démons suspects. Vous devriez vous coordonner avec d'autres Gentils pour vous couvrir, vous et votre information. Des rôles détectent l'alignement des joueurs (comme l'<Role.ORACLE /> ou la <Role.COUTURIERE />) pendant que d'autres détectent des Sbires et le Démon (tel que la <Role.FLEURISTE />, le <Role.CRIEUR /> ou même le <Role.CHARMEURDESERPENT />).
+- Si vous obtenez un grand chiffre (supérieur à 3), les Sbires sont probablement proches et donc éloignés du Démon. A contrario, si vous obtenez un chiffre inférieur à 2, un des Sbires est certainement proche d'un Démon. Servez-vous de cette information pour observer les interactions des joueurs.
+- Si vous avez une suspicion sur un joueur qui pourrait être potentiellement le Démon, observez par rapport à votre chiffre les joueurs qui pourraient être Sbire et analysez leurs informations. Les Sbires auront plus de mal à se cacher par rapport à un Démon (qui lui a, immédiatement à sa disposition, les Demons Bluff), essayez de tirer avantage rapidement de ce point faible.
+- Un peu comme le <Role.CUISTOT />, votre information prendra de la valeur au fur et à mesure que la partie avance et que les morts s'enchaînent. Comme les Maléfiques ne meurt en général pas de nuit, ils ont tendance à vivre longtemps et se soutiendront dans leurs arguments et les mécaniques qu'ils défendent et qu'ils insisteront pour les rendre plus crédibles qu'en début de partie. Regardez bien les joueurs encore vivants qui correspondent à votre information, s'ils se coordonnent pour se défendre mutuellement, vous pourriez avoir à faire à des Maléfiques !           
+- Tous les Sbires que vous aurez face à vous possèdent des capacités assez visibles et évidentes, ce qui signifie que leurs capacités disparaîtront aussi de manière évidente avec leur mort. Si vous remarquez subitement que personne ne meurt de la <Role.SORCIERE />, n'est frappé de folie par le <Role.MANIPULATEUR /> ou transformé par la <Role.VIEILLECHOUETTE />, vous avez alors peut-être exécuté un Sbire. Déterminez qui vous ramènera tout de suite au Démon ! 
+Le <Role.JUMEAUXMALEFIQUE /> est un peu une exception car vous le connaîtrez à peu de chose près dès le début de la partie.           
+Cela signifie que vous savez (jusqu'à ce moment) qu'il y a quatres options de Démons depuis le tout début)
+
+### Bluffer le rôle d’Horloger
