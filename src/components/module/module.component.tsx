@@ -47,3 +47,4 @@ export const TROUBLEBREWING = ({page, tile}: {page?: boolean, tile?: boolean}) =
 export const BADMOONRISING = ({page, tile}: {page?: boolean, tile?: boolean}) => <ModuleComponent module={Module.BAD_MOON_RISING} page={page} tile={tile} />
 export const SECTSANDVIOLETS = ({page, tile}: {page?: boolean, tile?: boolean}) => <ModuleComponent module={Module.SECTS_AND_VIOLETS} page={page} tile={tile} />
 export const DEADLYPENANCEDAY = ({page, tile}: {page?: boolean, tile?: boolean}) => <ModuleComponent module={Module.DEADLY_PENANCE_DAY} page={page} tile={tile} />
+export const LARGELYUNFAIRE = ({page, tile}: {page?: boolean, tile?: boolean}) => <ModuleComponent module={Module.LARGELY_UN_FAIRE} page={page} tile={tile} />

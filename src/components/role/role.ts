@@ -8,9 +8,12 @@ export class Role extends MarkdownDocument {
 }
 
 export class Villageois extends Role {
+    static readonly AERONAUTE = new Villageois('Aéronaute', 'aeronaute')
+    static readonly AMNESIQUE = new Villageois('Amnésique', 'amnesique')
     static readonly ARCHIVISTE = new Villageois('Archiviste')
     static readonly ARTISTE = new Villageois('Artiste')
     static readonly AUBERGISTE = new Villageois('Aubergiste')
+    static readonly CANNIBALE = new Villageois('Cannibale')
     static readonly CHARMEUR_DE_SERPENT = new Villageois('Chasseur de serpent', 'charmeur-de-serpent')
     static readonly CHASSEUR_DE_PRIMES = new Villageois('Chasseur de primes', 'chasseur-de-primes')
     static readonly CHEF_DE_SECTE = new Villageois('Chef de Secte', 'chef-de-secte')
@@ -28,6 +31,7 @@ export class Villageois extends Role {
     static readonly FLEURISTE = new Villageois('Fleuriste')
     static readonly FOU = new Villageois('Fou')
     static readonly GARDIEN = new Villageois('Gardien')
+    static readonly GENERAL = new Villageois('Général', 'general')
     static readonly HORLOGER = new Villageois('Horloger')
     static readonly JONGLEUR = new Villageois('Jongleur')
     static readonly LAVANDIERE = new Villageois('Lavandière', 'lavandiere')
@@ -42,6 +46,7 @@ export class Villageois extends Role {
     static readonly ORACLE = new Villageois('Oracle')
     static readonly PACIFISTE = new Villageois('Pacifiste')
     static readonly PARIEUR = new Villageois('Parieur')
+    static readonly PECHEUR = new Villageois('Pêcheur', 'pecheur')
     static readonly PREDICATEUR = new Villageois('Predicateur')
     static readonly PROFESSEUR = new Villageois('Professeur')
     static readonly PUCELLE = new Villageois('Pucelle')
@@ -77,16 +82,19 @@ export class Sbire extends Role {
     static readonly CROQUEUSE_D_HOMMES = new Sbire('Croqueuse d\'hommes', 'croqueuse-d-hommes')
     static readonly EMPOISONNEUR = new Sbire('Empoisonneur')
     static readonly ESPION = new Sbire('Espion', 'espion')
+    static readonly GOBELIN = new Sbire('Gobelin')
     static readonly JUMEAU_MALEFIQUE = new Sbire('Jumeau Maléfique', 'jumeau-malefique')
     static readonly MANIPULATEUR = new Sbire('Manipulateur')
     static readonly PARRAIN = new Sbire('Parrain')
     static readonly SORCIERE = new Sbire('Sorcière', 'sorciere')
+    static readonly VEUVE_NOIRE = new Sbire('Veuve Noire')
     static readonly VIEILLE_CHOUETTE = new Sbire('Vieille Chouette', 'vieille-chouette')
 }
 
 export class Demon extends Role {
     static readonly FANG_GU = new Demon('Fang Gu', 'fang-gu')
     static readonly IMP = new Demon('Imp')
+    static readonly LEVIATHAN = new Demon('Léviathan', 'leviathan')
     static readonly PO = new Demon('Po', 'po')
     static readonly PUKKA = new Demon('Pukka')
     static readonly NO_DASHII = new Demon('No Dashii', 'no-dashii')

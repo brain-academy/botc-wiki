@@ -174,5 +174,33 @@ export default class Module extends MarkdownDocument {
             Demon.PTIT_MONSTRE
         ]
     })
+    static readonly LARGELY_UN_FAIRE = new Module({
+        name: 'Largely Un Faire',
+        _filename: 'largely-un-faire',
+        roles: [
+            Villageois.AERONAUTE,
+            Villageois.EMPATHIQUE,
+            Villageois.GENERAL,
+            Villageois.CHARMEUR_DE_SERPENT,
+            Villageois.CROQUE_MORT,
+            Villageois.SAVANT,
+            Villageois.AMNESIQUE,
+            Villageois.CANNIBALE,
+            Villageois.FAUSSAIRE,
+            Villageois.COUTURIERE,
+            Villageois.ARTISTE,
+            Villageois.PECHEUR,
+            Villageois.MERCENAIRE,
+            Etranger.BETE_DE_FOIRE,
+            Etranger.SOULARD,
+            Etranger.VERTUEUX,
+            Etranger.LUNATIQUE,
+            Sbire.GOBELIN,
+            Sbire.BARON,
+            Sbire.CROQUEUSE_D_HOMMES,
+            Sbire.VEUVE_NOIRE,
+            Demon.LEVIATHAN
+        ]
+    })
 
 }
