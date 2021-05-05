@@ -84,6 +84,8 @@ export class Sbire extends Role {
     static readonly ESPION = new Sbire('Espion', 'espion')
     static readonly GOBELIN = new Sbire('Gobelin')
     static readonly JUMEAU_MALEFIQUE = new Sbire('Jumeau Maléfique', 'jumeau-malefique')
+    static readonly JUMEAUX_MALEFIQUES = new Sbire('Jumeaux Maléfiques', 'jumeau-malefique')
+    static readonly JUMEAU = new Sbire('Jumeau', 'jumeau-malefique')
     static readonly MANIPULATEUR = new Sbire('Manipulateur')
     static readonly PARRAIN = new Sbire('Parrain')
     static readonly SORCIERE = new Sbire('Sorcière', 'sorciere')

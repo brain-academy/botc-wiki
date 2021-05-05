@@ -89,6 +89,8 @@ export const CROQUEUSEDHOMMES = ({tile}: {tile?: boolean}) => <RoleComponent rol
 export const EMPOISONNEUR = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.EMPOISONNEUR} tile={tile} />
 export const ESPION = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.ESPION} tile={tile} />
 export const JUMEAUMALEFIQUE = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.JUMEAU_MALEFIQUE} tile={tile} />
+export const JUMEAUXMALEFIQUES = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.JUMEAUX_MALEFIQUES} tile={tile} />
+export const JUMEAU = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.JUMEAU} tile={tile} />
 export const MANIPULATEUR = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.MANIPULATEUR} tile={tile} />
 export const PARRAIN = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.PARRAIN} tile={tile} />
 export const SORCIERE = ({tile}: {tile?: boolean}) => <RoleComponent role={Sbire.SORCIERE} tile={tile} />
