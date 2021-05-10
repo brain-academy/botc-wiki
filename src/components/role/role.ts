@@ -25,7 +25,7 @@ export class Villageois extends Role {
     static readonly ARTISTE = new Villageois('Artiste')
     static readonly AUBERGISTE = new Villageois('Aubergiste')
     static readonly CANNIBALE = new Villageois('Cannibale')
-    static readonly CHARMEUR_DE_SERPENT = new Villageois('Chasseur de serpent', 'charmeur-de-serpent')
+    static readonly CHARMEUR_DE_SERPENT = new Villageois('Charmeur de serpent', 'charmeur-de-serpent')
     static readonly CHASSEUR_DE_PRIMES = new Villageois('Chasseur de primes', 'chasseur-de-primes')
     static readonly CHEF_DE_SECTE = new Villageois('Chef de Secte', 'chef-de-secte')
     static readonly COMMERE = new Villageois('Commère', 'commere')
