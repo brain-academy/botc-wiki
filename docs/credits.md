@@ -7,7 +7,7 @@ La Brain Academy (TBA) tient à remercier chaleureusement toute la communauté B
 Ceci concerne particulièrement :
 
 - Fred, de la Communauté Francophone Blood On The Clock Tower 
-- Lilajax alias Steph, de l’Antre des Louveteaux
+- Steph, de l’Antre des Louveteaux
 - Tous les joueurs de la Communauté Francophone Blood On The Clock Tower dont les joueurs de l’Antre des Louveteaux, la Meute, les joueurs de Paris, Nantes, Montpellier et ceux dispersés par monts par vaux à travers le Monde
 - Et enfin, notre Chère Communauté lyonnaise IRL et en ligne de la Brain Academy Lyon, qui se retournent le cerveau chaque semaine dans des enquêtes épiques et palpitantes
 
