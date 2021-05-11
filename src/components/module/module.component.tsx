@@ -55,7 +55,7 @@ const Module = ({page, tile, module, ...other}: ModuleProps & any) => {
             </a>
             <p style={{padding: '0 10px 0 10px', whiteSpace: 'pre-line'}}>{description}</p>
         </div>
-    else return <a href={path}>{name}</a>
+    else return <a href={path} style={{color: theme?.color}}>{name}</a>
 }
 
 export default Module

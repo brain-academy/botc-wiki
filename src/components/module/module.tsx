@@ -15,10 +15,10 @@ export default class Module extends MarkdownDocument {
     readonly theme?: Theme
 
     private constructor(
-        {name, _filename = name.toLowerCase(), roles, imageUrl, summary, description, fabled, theme}:
-            {name: string, _filename: string, roles: Role[], imageUrl?: string, summary?: string, description?: string, fabled?: string, theme?: Theme}
+        {name, filename = name.toLowerCase(), roles, imageUrl, summary, description, fabled, theme}:
+            {name: string, filename: string, roles: Role[], imageUrl?: string, summary?: string, description?: string, fabled?: string, theme?: Theme}
     ) {
-        super(name, _filename)
+        super(name, filename)
         this.roles = roles
         this.imageUrl = imageUrl
         this.summary = summary
@@ -41,7 +41,7 @@ export default class Module extends MarkdownDocument {
     static readonly TROUBLE_BREWING = new Module(
         {
             name: 'Trouble Brewing',
-            _filename: 'trouble-brewing',
+            filename: 'trouble-brewing',
             imageUrl: 'img/blood-on-the-clocktower/BOTC-TB.png',
             roles: [
                 Villageois.LAVANDIERE,
@@ -79,7 +79,7 @@ export default class Module extends MarkdownDocument {
         })
     static readonly BAD_MOON_RISING = new Module({
         name: 'Bad Moon Rising',
-        _filename: 'bad-moon-rising',
+        filename: 'bad-moon-rising',
         imageUrl: 'img/blood-on-the-clocktower/BOTC-BMR.png',
         roles: [
             Villageois.MAMIE,
@@ -120,7 +120,7 @@ export default class Module extends MarkdownDocument {
     })
     static readonly SECTS_AND_VIOLETS = new Module({
         name: 'Sects & Violets',
-        _filename: 'sects-and-violets',
+        filename: 'sects-and-violets',
         imageUrl: 'img/blood-on-the-clocktower/BOTC-SV.png',
         roles: [
             Villageois.HORLOGER,
@@ -158,7 +158,7 @@ export default class Module extends MarkdownDocument {
     })
     static readonly DEADLY_PENANCE_DAY = new Module({
         name: 'Deadly Penance Day - TBA Custom',
-        _filename: 'deadly-penance-day',
+        filename: 'deadly-penance-day',
         roles: [
             Villageois.CUISTOT,
             Villageois.ENQUETEUR,
@@ -187,7 +187,7 @@ export default class Module extends MarkdownDocument {
     })
     static readonly LARGELY_UN_FAIRE = new Module({
         name: 'Largely Un Faire',
-        _filename: 'largely-un-faire',
+        filename: 'largely-un-faire',
         roles: [
             Villageois.AERONAUTE,
             Villageois.EMPATHIQUE,
