@@ -63,7 +63,7 @@ const type = (role: R) => {
 
 const alignemnt = (role: R) => {
     if (role instanceof Villageois || role instanceof Etranger)
-        return 'Gentil'
+        return 'Gentil/Bon'
     else if (role instanceof Sbire || role instanceof Demon)
         return 'Maléfique'
 }

@@ -148,7 +148,7 @@ export default class Module extends MarkdownDocument {
             Demon.VIGORMORTIS,
             Demon.VORTOX,
         ],
-        theme: {color: 'violet'},
+        theme: {color: 'darkorchid'},
         summary: `La Folie arrive et l'Empoisonnement est plus présent que jamais !
         Sects & Violets sera votre 3ème expérience sur BotC, à réserver aux joueurs confirmés.`,
         description: `La Folie arrive et l'Empoisonnement est plus présent que jamais !
