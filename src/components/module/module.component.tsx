@@ -49,7 +49,7 @@ const Module = ({page, tile, module, ...other}: ModuleProps & any) => {
             <a href={path}>
                 {
                     !!imgUrl
-                        ? <img style={{width: '300px', height: '300px'}} src={imgUrl} alt={name} />
+                        ? <img style={{width: '330px', height: '300px'}} src={imgUrl} alt={name} />
                         : <h3 style={{textAlign: 'center'}}>{name}</h3>
                 }
             </a>
