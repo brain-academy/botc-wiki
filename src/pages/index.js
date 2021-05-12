@@ -8,17 +8,6 @@ import styles from './styles.module.css';
 
 const features = [
     {
-        title: 'Bad Moon Rising',
-        imageUrl: 'img/blood-on-the-clocktower/BOTC-BMR.png',
-        module: 'bad-moon-rising',
-        description: (
-            <>
-                Une razzia de morts, un concert de décès !
-                Une place prépondérante pour l'ivresse et la protection, Bad Moon Rising sera votre 2ème expérience de jeu sur BotC, pour les joueurs intermédiaires.
-            </>
-        ),
-    },
-    {
         title: 'Trouble Brewing',
         imageUrl: 'img/blood-on-the-clocktower/BOTC-TB.png',
         module: 'trouble-brewing',
@@ -26,6 +15,17 @@ const features = [
             <>
                 De l'art de l'ivresse à celui d'empoisonnement...
                 Trouble Brewing sera votre première expérience dans le monde fantastique de Blood On The Clock Tower ! C'est par ce module qu'on commence.
+            </>
+        ),
+    },
+    {
+        title: 'Bad Moon Rising',
+        imageUrl: 'img/blood-on-the-clocktower/BOTC-BMR.png',
+        module: 'bad-moon-rising',
+        description: (
+            <>
+                Une razzia de morts, un concert de décès !
+                Une place prépondérante pour l'ivresse et la protection, Bad Moon Rising sera votre 2ème expérience de jeu sur BotC, pour les joueurs intermédiaires.
             </>
         ),
     },
