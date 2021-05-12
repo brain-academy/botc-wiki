@@ -115,11 +115,11 @@ export class Sbire extends Role implements Evil {
     static readonly JUMEAU_MALEFIQUE = new Sbire({name: 'Jumeau Maléfique', filename: 'jumeau-malefique', originalName: 'Evil Twin'})
     static readonly JUMEAUX_MALEFIQUES = new Sbire({name: 'Jumeaux Maléfiques', filename: 'jumeau-malefique', originalName: 'Evil Twin'})
     static readonly JUMEAU = new Sbire({name: 'Jumeau', filename: 'jumeau-malefique', originalName: 'Evil Twin'})
-    static readonly MANIPULATEUR = new Sbire({name: 'Manipulateur', originalName: 'Cerenovus', })
+    static readonly MANIPULATEUR = new Sbire({name: 'Manipulateur', originalName: 'Cerenovus', wakeUpSchedule: 'EVERY_NIGHT'})
     static readonly PARRAIN = new Sbire({name: 'Parrain', originalName: 'Godfather'})
-    static readonly SORCIERE = new Sbire({name: 'Sorcière', filename: 'sorciere', originalName: 'Witch'})
+    static readonly SORCIERE = new Sbire({name: 'Sorcière', filename: 'sorciere', originalName: 'Witch', wakeUpSchedule: 'EVERY_NIGHT'})
     static readonly VEUVE_NOIRE = new Sbire({name: 'Veuve Noire', originalName: 'Widow'})
-    static readonly VIEILLE_CHOUETTE = new Sbire({name: 'Vieille Chouette', filename: 'vieille-chouette', originalName: 'Pit Hag'})
+    static readonly VIEILLE_CHOUETTE = new Sbire({name: 'Vieille Chouette', filename: 'vieille-chouette', originalName: 'Pit Hag', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
 }
 
 export class Demon extends Role implements Evil {
