@@ -1,5 +1,5 @@
 import MarkdownDocument from '../markdown-document'
-import {Evil, Good, Class, WakeUpSchedule} from './type'
+import {Class, Evil, Good, WakeUpSchedule} from './type'
 
 export abstract class Role extends MarkdownDocument {
 
@@ -21,7 +21,7 @@ export abstract class Role extends MarkdownDocument {
         this.class = clazz || this.class
         this.wakeUpSchedule = !!wakeUpSchedule ? wakeUpSchedule : this.wakeUpSchedule
     }
-    protected _base_url = '/docs/roles'
+    protected _base_url = '/botc-wiki/docs/roles'
 
     static fromName: (name: string) => Role = (name: string) => {
         if (isRole(name))

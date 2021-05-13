@@ -5,7 +5,7 @@ type Theme = {color: string}
 
 export default class Module extends MarkdownDocument {
 
-    protected _base_url = '/docs/modules'
+    protected _base_url = '/botc-wiki/docs/modules'
 
     readonly roles: Role[]
     readonly imageUrl?: string

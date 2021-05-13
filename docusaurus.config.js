@@ -3,13 +3,13 @@ let fs = require('fs')
 module.exports = {
     title: 'Brain Academy',
     tagline: 'Welcome to the Brain Academy',
-    url: 'https://brain-academy.github.io',
-    baseUrl: '/',
+    url: 'https://brain-academy.github.io/botc-wiki',
+    baseUrl: '/botc-wiki/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/brain-academy-logo.jpg',
     organizationName: 'brain-academy', // Usually your GitHub org/user name.
-    projectName: 'wiki', // Usually your repo name.
+    projectName: 'botc-wiki', // Usually your repo name.
     themeConfig: {
         colorMode: {
             defaultMode: 'dark',
