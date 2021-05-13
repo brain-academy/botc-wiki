@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://brain-academy.github.io/botc-wiki/blog</id>
+    <title>Brain Academy Blog</title>
+    <updated>2021-01-18T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://brain-academy.github.io/botc-wiki/blog"/>
+    <subtitle>Brain Academy Blog</subtitle>
+    <icon>https://brain-academy.github.io/botc-wiki/img/brain-academy-logo.jpg</icon>
+    <entry>
+        <title type="html"><![CDATA[Coming Soon]]></title>
+        <id>blog-soon</id>
+        <link href="https://brain-academy.github.io/botc-wiki/blog/blog-soon"/>
+        <updated>2021-01-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Coming soon® !]]></summary>
+    </entry>
+</feed>
