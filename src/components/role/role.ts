@@ -21,7 +21,7 @@ export abstract class Role extends MarkdownDocument {
         this.class = clazz || this.class
         this.wakeUpSchedule = !!wakeUpSchedule ? wakeUpSchedule : this.wakeUpSchedule
     }
-    protected _base_url = '/botc-wiki/docs/roles'
+    protected _base_url = '/docs/roles'
 
     static fromName: (name: string) => Role = (name: string) => {
         if (isRole(name))

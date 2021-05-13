@@ -1,8 +1,9 @@
+import useBaseUrl from '@docusaurus/useBaseUrl'
 import React, {Fragment} from 'react'
 import Module from '../module/module'
 import {default as ModuleComponent} from '../module/module.component'
 import {Demon, Etranger, isRole, Role as R, Sbire, Villageois} from './role'
-import {RenderClass, RenderWakeUpSchedule, WakeUpSchedule} from './type'
+import {RenderClass, RenderWakeUpSchedule} from './type'
 
 interface RoleProps {
     role: R
@@ -31,7 +32,7 @@ const Role = ({tile, header, role, ...other}: RoleProps) => {
         !!tile ?
             <a href={role.path}>
                 <div style={{border: `5px double ${roleTypeToColor(role)}`, width: '160px', height: '160px', textAlign: 'center'}}>
-                    <img src={`/img/blood-on-the-clocktower/roles/icons/${role.filename}.png`} height='150' />
+                    <img src={useBaseUrl(`/img/blood-on-the-clocktower/roles/icons/${role.filename}.png`)} height='150' />
                     <span style={{position: 'relative', top: '-30%', fontWeight: 'bold', color: roleTypeToColor(role)}}>{role.name}</span>
                 </div>
             </a>

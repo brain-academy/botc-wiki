@@ -3,7 +3,7 @@ let fs = require('fs')
 module.exports = {
     title: 'Brain Academy',
     tagline: 'Welcome to the Brain Academy',
-    url: 'https://brain-academy.github.io/botc-wiki',
+    url: 'https://brain-academy.github.io',
     baseUrl: '/botc-wiki/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -37,7 +37,7 @@ module.exports = {
                     position: 'right'
                 },
                 {
-                    href: 'https://github.com/brain-academy/wiki',
+                    href: 'https://github.com/brain-academy/botc-wiki',
                     label: 'GitHub',
                     position: 'right',
                 },
@@ -59,7 +59,7 @@ module.exports = {
                         },
                         {
                             label: 'GitHub',
-                            href: 'https://github.com/brain-academy/wiki',
+                            href: 'https://github.com/brain-academy/botc-wiki',
                         },
                     ],
                 },
