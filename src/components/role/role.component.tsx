@@ -30,11 +30,9 @@ const Role = ({tile, header, role, ...other}: RoleProps) => {
         </Fragment>
         :
         !!tile ?
-            <a href={role.path}>
-                <div style={{border: `5px double ${roleTypeToColor(role)}`, width: '160px', height: '160px', textAlign: 'center'}}>
-                    <img src={useBaseUrl(`/img/blood-on-the-clocktower/roles/icons/${role.filename}.png`)} height='150' />
-                    <span style={{position: 'relative', top: '-30%', fontWeight: 'bold', color: roleTypeToColor(role)}}>{role.name}</span>
-                </div>
+            <a href={role.path} style={{border: `5px double ${roleTypeToColor(role)}`, width: '160px', height: '160px', textAlign: 'center'}}>
+                <img src={useBaseUrl(`/img/blood-on-the-clocktower/roles/icons/${role.filename}.png`)} height='150' />
+                <span style={{position: 'relative', top: '-30%', fontWeight: 'bold', color: roleTypeToColor(role)}}>{role.name}</span>
             </a>
             :
             <a href={role.path} style={{color: roleTypeToColor(role), fontWeight: 'bold'}}>{role.name}</a>
