@@ -80,7 +80,7 @@ export class Villageois extends Role implements Good {
     static readonly PROFESSEUR = new Villageois({name: 'Professeur', originalName: 'Professor', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
     static readonly PUCELLE = new Villageois({name: 'Pucelle', originalName: 'Virgin'})
     static readonly REVEUR = new Villageois({name: 'Reveur', originalName: 'Dreamer', class: 'DETECTION', wakeUpSchedule: 'EVERY_NIGHT'})
-    static readonly SAGE = new Villageois({name: 'Sage', originalName: 'Sage', class: 'DETECTION'})
+    static readonly SAGE = new Villageois({name: 'Sage', originalName: 'Sage', class: 'DETECTION', wakeUpSchedule: `Lorsqu'il est assassiné par le Démon`})
     static readonly SAVANT = new Villageois({name: 'Savant', originalName: 'Savant'})
     static readonly SOLDAT = new Villageois({name: 'Soldat', originalName: 'Soldier', class: 'TANK'})
     static readonly VOYANTE = new Villageois({name: 'Voyante', originalName: 'Fortune Teller', class: 'DETECTION', wakeUpSchedule: 'EVERY_NIGHT'})
