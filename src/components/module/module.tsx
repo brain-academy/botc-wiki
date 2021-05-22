@@ -135,6 +135,7 @@ export default class Module extends MarkdownDocument {
             Villageois.FAUSSAIRE,
             Villageois.ARTISTE,
             Villageois.JONGLEUR,
+            Villageois.SAGE,
             Etranger.BETE_DE_FOIRE,
             Etranger.BARBIER,
             Etranger.DULCINEE,
