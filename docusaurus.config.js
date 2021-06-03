@@ -4,6 +4,7 @@ module.exports = {
     title: 'Brain Academy',
     tagline: 'Welcome to the Brain Academy',
     url: 'https://brain-academy.github.io',
+    siteUrl: 'https://brain-academy.fr/wiki/botc/',
     baseUrl: '/botc-wiki/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
