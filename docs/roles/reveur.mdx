@@ -12,4 +12,54 @@ import Role from '/src/components/role/role.component'
 
 ### Description :
 
-- Chaque nuit, choisissez un joueur (en dehors de vous-même et d'un Voyageur) : 
+- Chaque nuit, choisissez un joueur (en dehors de vous-même et d'un Voyageur) : Vous aurez deux informations : Son rôle et un rôle du camp opposé.
+
+### Exemples  
+> Le <Role REVEUR /> choisit un joueur qui est la <Role BETE_DE_FOIRE />. Le <Role REVEUR /> apprend que ce joueur est soit la <Role BETE_DE_FOIRE /> soit le <Role MANIPULATEUR />.
+
+> Le <Role REVEUR /> choisit un joueur qui était le <Role FAUSSAIRE /> mais qui a pris la capacité du <Role FLEURISTE /> plutôt dans la nuit. Le <Role REVEUR /> apprend que ce joueur est soit le <Role FAUSSAIRE />, soit le <Role VIGORMORTIS />.
+
+> Aujourd’hui, le <Role JUMEAU_MALEFIQUE /> et l’<Role ARTISTE /> prétendent être l’<Role ARTISTE />. Cette nuit, le <Role REVEUR /> choisit le joueur qui est le <Role JUMEAU_MALEFIQUE />. Si le conteur veut aider le village, il pourrait montrer <Role JUMEAU_MALEFIQUE /> ou <Role DULCINEE />. Mais le conteur décide d’aider les maléfiques et montre <Role JUMEAU_MALEFIQUE /> et <Role ARTISTE /> au Rêveur.
+
+> Le <Role REVEUR /> choisit le joueur qui est le > Le <Role VORTOX />. L’information du > Le <Role REVEUR /> doit être fausse à cause du > Le <Role VORTOX /> alors le > Le <Role REVEUR /> apprend que ce joueur est soit l’> Le <Role ORACLE />, soit le > Le <Role NO_DASHII />.
+
+### Mécaniques et conseils
+- Chaque fois que vous choisissez un joueur, vous apprenez quel joueur maléfique il pourrait potentiellement être. Prêtez une attention particulière à celle-ci car elle vous donne une surprenant quantité d’information même si elle est fausse. Par exemple, n’importe quel joueur indiqué comme potentiel sbire ne peut pas être le démon ce qui vous permet de l’exclure de la liste des suspects.
+
+- Votre capacité est un magnifique détecteur pour le <Role VORTOX /> ou le <Role NO_DASHII /> car contrairement aux autres joueurs, il peut être très facile de confirmer si votre information est correcte ou non. Si vous avez un joueur avec lequel les informations ne collent pas, soyez suspicieux. Si vous en avez trois, il est temps d’envisager d’autres options. 
+
+- Essayez de choisir des joueurs qui ne sont pas proches de vous. Si vous êtes voisin d’un <Role NO_DASHII />, vous serez empoisonnés et votre information va avantager le démon. En choisissant un joueur éloigné de votre position dans le village, vous avez moins de chance de choisir un joueur maléfique et d’avoir une information biaisée tôt dans la partie (mais vous êtes libres de revenir rapidement à vos voisins par la suite).
+
+- Donner votre information a tendance à être plus puissant en début partie qu’en fin de partie. Peu de joueurs auront publiquement dévoilé leur rôle et puisque les maléfiques ont souvent besoin de temps pour se coordonner, vous avez plus de chances de réussir à prouver que vous êtes villageois.
+
+- Lorsque vous échangez des informations avec un joueur que vous avez choisi, soyez attentif à ne pas révéler votre information en premier. Si vous avez affaire à un maléfique, leur indiquer un rôle de villageois va leur donner une idée de bluff. A la place, faites-en sorte qu’il se dévoile en premier et voyez si votre information s’aligne avec ses déclarations.
+
+- En révélant votre information en premier lors d’un échange, vous allez prouver à coup sûr à ce joueur que vous êtes le Rêveur si votre information est bonne. Cela leur permet de vous accorder une grande confiance rapidement car il est difficile d’avoir des informations par d’autres moyens.
+
+- Encouragez les joueurs à ne pas se dévoiler trop tôt dans la partie. Si c’est le cas, vous pouvez toujours vérifier leur déclaration mais cela va être plus dur pour vous de faire vos preuves puisqu’il n’y aura que peu de mystères.
+
+- Choisissez des joueurs dont vous pensez qu’ils mentent, pas ceux dont vous pensez qu’ils disent la vérité. Attraper un joueur en flagrant délit de mensonge est magnifique, car vous saurez quel maléfique il est et vous pourrez décider tout de suite si vous voulez le faire exécuter.
+
+- Vous ne devriez jamais recevoir une information sur un <Role VORTOX /> car il ne peut avoir aucune information correcte avec un Vortox. Cela signifie que si le <Role VORTOX /> est jeu, votre information sera incorrecte alors vous recevrez toujours un autre rôle maléfique.
+ 
+- Si vous avez un <Role JUMEAU_MALEFIQUE />, ne perdez de temps à le vérifier. Vous recevrez le rôle du gentil jumeau et le <Role JUMEAU_MALEFIQUE /> pour les deux joueurs, ce qui n’est… pas très utile. Vous pouvez néanmoins vérifier le <Role VORTOX /> de cette façon puisque l’information doit être fausse. 
+
+### Bluffer le Sage
+
+- Le premier jour est le plus dur. Si vous vous dévoilez tôt dans le premier jour vous le ferez avant que d'autres joueurs se dévoilent. Il est plus facile de prétendre avoir choisi un camarade maléfique et espérer qu’il comprenne qu’il devrait jouer sur votre bluff. Cela peut particulière fonctionner si vous êtes le Démon puisque vous connaissez 3 rôles qui ne sont pas en jeu. Par exemple, si vous déclarez être le rêveur, et que votre sbire est le <Role CRIEUR /> ou le <Role FANG_GU />, votre déclaration de Rêveur peut être confirmée si le Sbire confirme être le <Role CRIEUR />.
+
+- Si vous avez choisi un joueur et que vous ne savez pas son rôle, poussez-les à se révéler. Acquiescez ensuite et dites « Comme prévu », ou confirmez-les directement. Les villageois bluffent plus rarement et vont donc plus souvent révéler leur vrai rôle s’ils sont nominés ou si on leur demande simplement. 
+
+- Prétendez avoir choisi des joueurs qui se sont déjà dévoilés au village. Ainsi, vous vous rendez plus crédible aux yeux de ce joueur. Par exemple, si vous dites que l'<Role HORLOGER /> est soit <Role HORLOGER /> soit <Role VIGORMORTIS />, il sera plus enclin à croire que vous êtes villageois que si vous déclarez qu’il est <Role JONGLEUR /> ou <Role SORCIERE />.
+
+- Si vous voulez jeter la suspicion sur un villageois (au risque de vous rendre vous-même suspect), vous pouvez déclarer que vous avez appris que c’est un personnage qui a intérêt à garder son rôle secret (comme le <Role SAGE /> ou la <Role BETE_DE_FOIRE />, ou la <Role DULCINEE /> ou le <Role MALADROIT />). Même après que le joueur nie être un rôle de ce type, le village pourrait penser que vous être bien le rêveur qui a eu des informations très utiles.
+
+- Si vous déclarez qu’un joueur peut être un sbire en particulier, assurez-vous de savoir quel sbire est en jeu car c’est le sbire que vous voulez suggérer. Par exemple, s’il n’y a qu’un sbire en jeu et que le village sait qu’il s’agit de la <Role SORCIERE /> car un joueur est mort en nominant, déclarer qu’un joueur est le <Role FLEURISTE /> ou le <Role MANIPULATEUR /> ne vous rend pas très digne de confiance. Le conteur devrait presque toujours montrer à un vrai rêveur des sbires qui sont en jeu afin de lui laisser plus de doutes.
+
+- Quand vous donnez des informations sur un villageois, préférez révéler un possible démon plutôt qu’un sbire. Le village sera plus suspicieux sur un démon potentiel et sera plus enclin à tenter une exécution.
+
+- Quand vous donner des informations sur un maléfique, préférez révéler un rôle de sbire plutôt qu’un démon. Le village sera moins suspicieux et moins enclin à tenter une exécution que sur un démon potentiel.
+
+- Attendez quelques jours avant de vous dévoiler en tant que rêveur. Cela vous donne le temps de peaufiner votre histoire.
+
+- Ne dites jamais que vous avez appris qu’un joueur est potentiellement le <Role VORTOX /> ! Si un Vortox est vraiment en jeu, alors un rêveur n’aurait jamais pu apprendre qu’un joueur est potentiellement le <Role VORTOX /> car toutes les informations de rêveur doivent être fausses.  
