@@ -8,6 +8,7 @@ module.exports = {
         Accueil: [ 'index' ],
         Modules: MODULES.map(module => `modules/${module}`),
         Roles: fs.readdirSync('docs/roles/').map(role_file => `roles/${role_file.split('.')[ 0 ]}`),
+        Documents: ['strategies', 'conteurs'],
         Fiches: FICHES.map(fiche => `fiches/${fiche}`),
     },
 };
