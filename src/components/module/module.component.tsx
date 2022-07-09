@@ -1,10 +1,10 @@
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import React from 'react'
-import {Demon, Etranger, Sbire, Villageois} from '../role/role'
+import {Demon, Etranger, Sbire, Villageois, Voyageur, Legendaire} from '../role/role'
 import Role from '../role/role.component'
 import {default as M, isModule} from './module'
 
-const types = ['Villageois', 'Etrangers', 'Sbires', 'Démons']
+const types = ['Villageois', 'Etrangers', 'Sbires', 'Démons', 'Voyageurs', 'Légendaires']
 
 interface ModuleProps {
     module: M
@@ -30,7 +30,7 @@ const Module = ({page, tile, module, ...other}: ModuleProps & any) => {
                 <label>"</label>{fabled}<label>"</label>
             </p>}
             {
-                [Villageois, Etranger, Sbire, Demon]
+                [Villageois, Etranger, Sbire, Demon, Voyageur, Legendaire]
                     .map((type, i) => (
                         <React.Fragment>
                             <h1 style={{padding: '20px 0 0 0'}}>{types[i]}</h1>

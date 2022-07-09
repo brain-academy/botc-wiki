@@ -1,5 +1,5 @@
 import MarkdownDocument from '../markdown-document'
-import {Demon, Etranger, Role, Sbire, Villageois} from '../role/role'
+import {Demon, Etranger, Role, Sbire, Villageois, Voyageur, Legendaire} from '../role/role'
 
 type Theme = {color: string}
 

@@ -135,3 +135,11 @@ export class Demon extends Role implements Evil {
     static readonly VORTOX = new Demon({name: 'Vortox', originalName: 'Vortox', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
     static readonly ZOMBUUL = new Demon({name: 'Zombuul', originalName: 'Zombuul', wakeUpSchedule: `Si aucune exécution la veille`})
 }
+
+export class Voyageur extends Role {
+
+}
+
+export class Legendaire extends Role {
+
+}
