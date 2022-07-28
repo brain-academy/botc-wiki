@@ -137,9 +137,9 @@ export class Demon extends Role implements Evil {
 }
 
 export class Voyageur extends Role {
-
+    static readonly BOUC_EMISSAIRE = new Voyageur({name: 'Bouc Emissaire', filename: 'bouc-emissaire', originalName: 'Scapegoat'})
 }
 
 export class Legendaire extends Role {
-
+    static readonly PRECHEUR_DE_L_APOCALPSE = new Legendaire({name: 'Precheur de l apocalypse', filename: 'prêcheur-de-l-apocalpse', originalName: 'Doomsayer'}) 
 }
