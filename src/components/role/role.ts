@@ -25,16 +25,12 @@ export abstract class Role extends MarkdownDocument {
 
     static fromName: (name: string) => Role = (name: string) => {
         if (isRole(name))
-            return Villageois[name] || Etranger[name] || Sbire[name] || Demon[name]
+            return Villageois[name] || Etranger[name] || Sbire[name] || Demon[name] || Voyageur[name] || Legendaire[name]
         else
             throw new Error(`BoTC Role not found: ${name}`)
     }
 
 }
-
-export const isRole = (key: string) => [Villageois, Etranger, Sbire, Demon]
-    .flatMap(type => Object.keys(type))
-    .includes(key)
 
 export class Villageois extends Role implements Good {
     static readonly AERONAUTE = new Villageois({name: 'Aéronaute', filename: 'aeronaute', originalName: 'Baloonist', class: 'DETECTION', wakeUpSchedule: 'EVERY_NIGHT'})
@@ -141,5 +137,11 @@ export class Voyageur extends Role {
 }
 
 export class Legendaire extends Role {
-    static readonly PRECHEUR_DE_L_APOCALPSE = new Legendaire({name: 'Precheur de l apocalypse', filename: 'prêcheur-de-l-apocalpse', originalName: 'Doomsayer'}) 
+    static readonly PRECHEUR_DE_L_APOCALYPSE = new Legendaire({name: `Precheur de l'apocalypse`, filename: 'precheur-de-l-apocalypse', originalName: 'Doomsayer'}) 
 }
+
+export const isRole = (key: string) => roleClasses
+    .flatMap(type => Object.keys(type))
+    .includes(key)
+
+export const roleClasses = [Villageois, Etranger, Sbire, Demon, Voyageur, Legendaire]

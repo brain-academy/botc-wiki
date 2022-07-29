@@ -1,6 +1,6 @@
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import React from 'react'
-import {Demon, Etranger, Sbire, Villageois, Voyageur, Legendaire} from '../role/role'
+import {roleClasses} from '../role/role'
 import Role from '../role/role.component'
 import {default as M, isModule} from './module'
 
@@ -30,8 +30,7 @@ const Module = ({page, tile, module, ...other}: ModuleProps & any) => {
                 <label>"</label>{fabled}<label>"</label>
             </p>}
             {
-                [Villageois, Etranger, Sbire, Demon, Voyageur, Legendaire]
-                    .map((type, i) => (
+                roleClasses.map((type, i) => (
                         <React.Fragment>
                             <h1 style={{padding: '20px 0 0 0'}}>{types[i]}</h1>
                             <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
