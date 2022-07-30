@@ -152,13 +152,17 @@ export class Sbire extends Role implements Evil {
 export class Demon extends Role implements Evil {
     readonly type = "Demon"
 
+    static readonly AL_HADIKHIA = new Demon({name: 'Al-Hadikhia', filename: 'al-hadikhia', originalName: 'Al-Hadikhia', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
+    static readonly EMEUTE = new Demon({name: 'Emeute', originalName: 'Riot'})
     static readonly FANG_GU = new Demon({name: 'Fang Gu', filename: 'fang-gu', originalName: 'Fang Gu', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
     static readonly IMP = new Demon({name: 'Imp', originalName: 'Imp', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
+    static readonly LEGION = new Demon({name: 'Légion', originalName: 'Legion'})
     static readonly LEVIATHAN = new Demon({name: 'Léviathan', filename: 'leviathan', originalName: 'Leviathan'})
     static readonly PO = new Demon({name: 'Po', filename: 'po', originalName: 'Po', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
     static readonly PUKKA = new Demon({name: 'Pukka', originalName: 'Pukka', wakeUpSchedule: 'EVERY_NIGHT'})
     static readonly NO_DASHII = new Demon({name: 'No Dashii', filename: 'no-dashii', originalName: 'No Dashii', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
-    static readonly SHABALOTH = new Demon({name: 'Shabaloth', originalName: 'Shabaloth', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
+    static readonly SANGSUE = new Demon({name: 'Sangsue', originalName: 'Lleech', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
+    static readonly SHABALOTH = new Demon({name: 'Shabaloth', originalName: 'Shabaloth', wakeUpSchedule: 'EVERY_NIGHT'})
     static readonly PTIT_MONSTRE = new Demon({name: 'P\'tit Monstre', filename: 'ptit-monstre', originalName: 'Lil Monsta', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
     static readonly VIGORMORTIS = new Demon({name: 'Vigormortis', originalName: 'Vigormortis', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
     static readonly VORTOX = new Demon({name: 'Vortox', originalName: 'Vortox', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
