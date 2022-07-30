@@ -169,7 +169,7 @@ export class Legendaire extends Role {
     static readonly ANGE = new Legendaire({name: `Ange`, originalName: 'Angel'})
     static readonly ARTISAN = new Legendaire({name: `Artisan`, originalName: 'Toymaker'})
     static readonly BIBLIOTHECAIRE = new Legendaire({name: `Bibliothécaire`, originalName: 'Hells Librarian'})
-    static readonly BOUDDHIST = new Legendaire({name: `Bouddhiste`, originalName: 'Buddhist'})
+    static readonly BOUDDHISTE = new Legendaire({name: `Bouddhiste`, originalName: 'Buddhist'})
     static readonly PRECHEUR_DE_L_APOCALYPSE = new Legendaire({name: `Precheur de l'apocalypse`, filename: 'precheur-de-l-apocalypse', originalName: 'Doomsayer'})
     static readonly REVOLUTIONNAIRE = new Legendaire({name: `Révolutionnaire`, originalName: 'Revolutionnary'})
     static readonly TROUBLE_FETE = new Legendaire({name: `Trouble-fête`, filename: 'trouble-fete', originalName: 'Fiddler'})
