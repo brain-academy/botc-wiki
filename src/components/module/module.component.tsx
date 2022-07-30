@@ -31,12 +31,12 @@ const Module = ({page, tile, module, ...other}: ModuleProps & any) => {
             </p>}
             {
                 roleClasses.map((type, i) => (
-                        <React.Fragment>
+                        <React.Fragment key={i}>
                             <h1 style={{padding: '20px 0 0 0'}}>{types[i]}</h1>
                             <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
                                 {roles
                                     .filter(role => role instanceof type)
-                                    .map(role => <Role role={role} tile />)
+                                    .map(role => <Role key={role.name} role={role} tile />)
                                 }
                             </div>
                         </React.Fragment>
