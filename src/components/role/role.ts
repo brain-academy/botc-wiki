@@ -149,6 +149,7 @@ export class Voyageur extends Role {
     static readonly MENDIANT = new Voyageur({name: 'Mendiant', originalName: 'Beggar'})
     static readonly VENGEUR = new Voyageur({name: 'Vengeur', originalName: 'Gunslinger'})
     static readonly VOLEUR = new Voyageur({name: 'Voleur', originalName: 'Thief', wakeUpSchedule: 'EVERY_NIGHT'})
+    static readonly APPRENTI = new Voyageur({name: 'Apprenti', originalName: 'Apprentice', wakeUpSchedule: 'Lors de sa première nuit puis identique au rôle attribué'})
 }
 
 export class Legendaire extends Role {
