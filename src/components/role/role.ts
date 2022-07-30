@@ -150,6 +150,17 @@ export class Voyageur extends Role {
     static readonly VENGEUR = new Voyageur({name: 'Vengeur', originalName: 'Gunslinger'})
     static readonly VOLEUR = new Voyageur({name: 'Voleur', originalName: 'Thief', wakeUpSchedule: 'EVERY_NIGHT'})
     static readonly APPRENTI = new Voyageur({name: 'Apprenti', originalName: 'Apprentice', wakeUpSchedule: 'Lors de sa première nuit puis identique au rôle attribué'})
+    static readonly ARCHEVEQUE = new Voyageur({name: 'Archevêque', originalName: 'Bishop'})
+    static readonly MAGISTRAT = new Voyageur({name: 'Magistrat', originalName: 'Judge'})
+    static readonly MATRONE = new Voyageur({name: 'Matrone', originalName: 'Matron', wakeUpSchedule: 'EVERY_NIGHT'})
+    static readonly NECROMANT = new Voyageur({name: 'Necromant', originalName: 'Voudon'})
+    static readonly BARISTA = new Voyageur({name: 'Barista', originalName: 'Barista'})
+    static readonly BOUCHER = new Voyageur({name: 'Necromant', filename: 'bouc-emissaire', originalName: 'Butcher'})
+    static readonly COLLECTEUR_D_OS = new Voyageur({name: 'Necromant', filename: 'bouc-emissaire', originalName: 'Bone collector', wakeUpSchedule: 'UNTIL_ABILITY_CONSUMED'})
+    static readonly DEVIANT = new Voyageur({name: 'Necromant', filename: 'bouc-emissaire', originalName: 'Deviant'})
+    static readonly FILLE_DE_JOIE = new Voyageur({name: 'Necromant', filename: 'bouc-emissaire', originalName: 'Harlot', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
+    static readonly GANGSTER = new Voyageur({name: 'Necromant', filename: 'bouc-emissaire', originalName: 'Gangster'})
+                                                  
 }
 
 export class Legendaire extends Role {
