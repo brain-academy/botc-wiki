@@ -129,6 +129,7 @@ export class Sbire extends Role implements Evil {
     static readonly ASSASSIN = new Sbire({name: 'Assassin', originalName: 'Assassin', wakeUpSchedule: 'UNTIL_ABILITY_CONSUMED'})
     static readonly AVOCAT_DU_DIABLE = new Sbire({name: 'Avocat du Diable', filename: 'avocat-du-diable', originalName: `Devil's Advocate`, class: 'PROTECTION', wakeUpSchedule: 'EVERY_NIGHT'})
     static readonly BARON = new Sbire({name: 'Baron', originalName: 'Baron'})
+    static readonly BOOMDANDY = new Sbire({name: 'Boomdandy', originalName: 'Boomdandy'})
     static readonly CONSPIRATEUR = new Sbire({name: 'Conspirateur', originalName: 'Mastermind'})
     static readonly CROQUEUSE_D_HOMMES = new Sbire({name: 'Croqueuse d\'hommes', filename: 'croqueuse-d-hommes', originalName: 'Scarlet Woman'})
     static readonly EMPOISONNEUR = new Sbire({name: 'Empoisonneur', originalName: 'Poisoner', wakeUpSchedule: 'EVERY_NIGHT'})
@@ -138,9 +139,13 @@ export class Sbire extends Role implements Evil {
     static readonly JUMEAUX_MALEFIQUES = new Sbire({name: 'Jumeaux Maléfiques', filename: 'jumeau-malefique', originalName: 'Evil Twin'})
     static readonly JUMEAU = new Sbire({name: 'Jumeau', filename: 'jumeau-malefique', originalName: 'Evil Twin'})
     static readonly MANIPULATEUR = new Sbire({name: 'Manipulateur', originalName: 'Cerenovus', wakeUpSchedule: 'EVERY_NIGHT'})
+    static readonly MARIONETTE = new Sbire({name: 'Marionette', originalName: 'Marionette', wakeUpSchedule: 'Identique au faux rôle attribué'})
+    static readonly MEZEPHELES = new Sbire({name: 'Mezepheles', originalName: 'Mezepheles', wakeUpSchedule: 'FIRST_NIGHT'})
     static readonly PARRAIN = new Sbire({name: 'Parrain', originalName: 'Godfather'})
+    static readonly PROPHETE_DE_L_EFFROI = new Sbire({name: `Prophète de l'effroi`, filename: 'prophete-de-l-effroi', originalName: 'Fearmonger', wakeUpSchedule: 'EVERY_NIGHT'})
+    static readonly PSYCHOPATHE = new Sbire({name: 'Psychopathe', originalName: 'Psychopath'})
     static readonly SORCIERE = new Sbire({name: 'Sorcière', filename: 'sorciere', originalName: 'Witch', wakeUpSchedule: 'EVERY_NIGHT'})
-    static readonly VEUVE_NOIRE = new Sbire({name: 'Veuve Noire', originalName: 'Widow'})
+    static readonly VEUVE_NOIRE = new Sbire({name: 'Veuve Noire', originalName: 'Widow', wakeUpSchedule: 'FIRST_NIGHT'})
     static readonly VIEILLE_CHOUETTE = new Sbire({name: 'Vieille Chouette', filename: 'vieille-chouette', originalName: 'Pit Hag', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
 }
 
