@@ -3,6 +3,7 @@ import {Class, Evil, Good, WakeUpSchedule} from './type'
 
 export abstract class Role extends MarkdownDocument {
 
+    readonly type: string = ''
     readonly originalName: string
     readonly class: Class = 'SPECIALIST'
     readonly wakeUpSchedule: WakeUpSchedule | string = 'NEVER'
@@ -33,6 +34,8 @@ export abstract class Role extends MarkdownDocument {
 }
 
 export class Villageois extends Role implements Good {
+    readonly type = "Villageois"
+
     static readonly AERONAUTE = new Villageois({name: 'Aéronaute', filename: 'aeronaute', originalName: 'Baloonist', class: 'DETECTION', wakeUpSchedule: 'EVERY_NIGHT'})
     static readonly AMNESIQUE = new Villageois({name: 'Amnésique', filename: 'amnesique', originalName: 'Amnesic'})
     static readonly ARCHIVISTE = new Villageois({name: 'Archiviste', originalName: 'Librarian', class: 'FIRST_NIGHT', wakeUpSchedule: 'FIRST_NIGHT'})
@@ -83,6 +86,8 @@ export class Villageois extends Role implements Good {
 }
 
 export class Etranger extends Role implements Good {
+    readonly type = "Etranger"
+
     static readonly BARBIER = new Etranger({name: 'Barbier', originalName: 'Barber'})
     static readonly BETE_DE_FOIRE = new Etranger({name: 'Bete de foire', filename: 'bete-de-foire', originalName: 'Mutant'})
     static readonly BRUTE = new Etranger({name: 'Brute', originalName: 'Goon', wakeUpSchedule: `Lorsque ciblé la première fois de nuit par l'alignement opposé à l'alignement actuel`})
@@ -100,6 +105,8 @@ export class Etranger extends Role implements Good {
 }
 
 export class Sbire extends Role implements Evil {
+    readonly type = "Sbire"
+
     static readonly ASSASSIN = new Sbire({name: 'Assassin', originalName: 'Assassin', wakeUpSchedule: 'UNTIL_ABILITY_CONSUMED'})
     static readonly AVOCAT_DU_DIABLE = new Sbire({name: 'Avocat du Diable', filename: 'avocat-du-diable', originalName: `Devil's Advocate`, class: 'PROTECTION', wakeUpSchedule: 'EVERY_NIGHT'})
     static readonly BARON = new Sbire({name: 'Baron', originalName: 'Baron'})
@@ -119,6 +126,8 @@ export class Sbire extends Role implements Evil {
 }
 
 export class Demon extends Role implements Evil {
+    readonly type = "Demon"
+
     static readonly FANG_GU = new Demon({name: 'Fang Gu', filename: 'fang-gu', originalName: 'Fang Gu', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
     static readonly IMP = new Demon({name: 'Imp', originalName: 'Imp', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
     static readonly LEVIATHAN = new Demon({name: 'Léviathan', filename: 'leviathan', originalName: 'Leviathan'})
@@ -133,10 +142,14 @@ export class Demon extends Role implements Evil {
 }
 
 export class Voyageur extends Role {
+    readonly type = "Voyageur"
+
     static readonly BOUC_EMISSAIRE = new Voyageur({name: 'Bouc Emissaire', filename: 'bouc-emissaire', originalName: 'Scapegoat'})
 }
 
 export class Legendaire extends Role {
+    readonly type = "Legendaire"
+
     static readonly PRECHEUR_DE_L_APOCALYPSE = new Legendaire({name: `Precheur de l'apocalypse`, filename: 'precheur-de-l-apocalypse', originalName: 'Doomsayer'}) 
 }
 

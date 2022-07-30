@@ -24,7 +24,7 @@ const Role = ({tile, header, role, ...other}: RoleProps) => {
         <Fragment>
             <h4>Modules : {Module.containing(role).reduce((acc, module, index) => <Fragment>{acc}{index > 0 && ' - '}<ModuleComponent module={module} /></Fragment>, <Fragment></Fragment>)}</h4>
             <h4>Nom Original : {role.originalName}</h4>
-            <h4>Alignement : {role.constructor.name} - {alignment(role)}</h4>
+            <h4>Alignement : {role.type} - {alignment(role)}</h4>
             <h4>Classe : {RenderClass[role.class]}</h4>
             <h4>Réveil : {RenderWakeUpSchedule[role.wakeUpSchedule] || role.wakeUpSchedule}</h4>
         </Fragment>
