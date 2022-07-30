@@ -101,14 +101,20 @@ export class Villageois extends Role implements Good {
 export class Etranger extends Role implements Good {
     readonly type = "Etranger"
 
+    static readonly ACROBATE = new Etranger({name: 'Acrobate', originalName: 'Acrobat'})
+    static readonly BALANCE = new Etranger({name: 'Balance', originalName: 'Snitch'})
     static readonly BARBIER = new Etranger({name: 'Barbier', originalName: 'Barber'})
     static readonly BETE_DE_FOIRE = new Etranger({name: 'Bete de foire', filename: 'bete-de-foire', originalName: 'Mutant'})
     static readonly BRUTE = new Etranger({name: 'Brute', originalName: 'Goon', wakeUpSchedule: `Lorsque ciblé la première fois de nuit par l'alignement opposé à l'alignement actuel`})
+    static readonly DEMOISELLE = new Etranger({name: 'Demoiselle', originalName: 'Damsel'})
     static readonly DULCINEE = new Etranger({name: 'Dulcinée', filename: 'dulcinee', originalName: 'Sweetheart'})
     static readonly GITANE = new Etranger({name: 'Gitane', originalName: 'Moonchild'})
+    static readonly GOLEM = new Etranger({name: 'Golem', originalName: 'Golem'})
+    static readonly HERETIQUE = new Etranger({name: 'Hérétique', originalName: 'Heretic'})
     static readonly INVENTEUR = new Etranger({name: 'Inventeur', originalName: 'Tinker'})
     static readonly LUNATIQUE = new Etranger({name: 'Lunatique', originalName: 'Lunatic', wakeUpSchedule: 'EVERY_NIGHT'})
     static readonly MAJORDOME = new Etranger({name: 'Majordome', originalName: 'Butler', wakeUpSchedule: 'EVERY_NIGHT'})
+    static readonly MAITRE_DES_PUZZLES = new Etranger({name: 'Maître des puzzles', filename: 'maitre-des-puzzles', originalName: 'Puzzlemaster'})
     static readonly MALADROIT = new Etranger({name: 'Maladroit', originalName: 'Klutz'})
     static readonly POLITICIEN = new Etranger({name: 'Politicien', originalName: 'Politician'})
     static readonly RECLUS = new Etranger({name: 'Reclus', originalName: 'Recluse'})
