@@ -172,13 +172,13 @@ export class Legendaire extends Role {
     static readonly BOUDDHIST = new Legendaire({name: `Ange`, originalName: 'Angel'})
     static readonly PRECHEUR_DE_L_APOCALYPSE = new Legendaire({name: `Precheur de l'apocalypse`, filename: 'precheur-de-l-apocalypse', originalName: 'Doomsayer'})
     static readonly REVOLUTIONNAIRE = new Legendaire({name: `Révolutionnaire`, originalName: 'Revolutionnary'})
-    static readonly TROUBLE_FETE = new Legendaire({name: `Trouble-fête`, originalName: 'Fiddler'})
+    static readonly TROUBLE_FETE = new Legendaire({name: `Trouble-fête`, filename: 'trouble-fete', originalName: 'Fiddler'})
     static readonly BARATINEUR = new Legendaire({name: `Baratineur`, originalName: 'Fibbin'})
     static readonly DUCHESSE = new Legendaire({name: `Duchesse`, originalName: 'Duchess'})
-    static readonly MAUVAIS_GENIE = new Legendaire({name: `Mauvais génie`, originalName: 'Djinn'})
+    static readonly MAUVAIS_GENIE = new Legendaire({name: `Mauvais génie`, filename: 'mauvais-genie', originalName: 'Djinn'})
     static readonly PROTECTRICE = new Legendaire({name: `Protectrice`, originalName: 'Spirit of Ivory'})
     static readonly SENTINELLE = new Legendaire({name: `Sentinelle`, originalName: 'Sentinel'})
-    static readonly CHASSEUR_D_ORAGE = new Legendaire({name: `Chasseur d'orage`, originalName: 'Storm Catcher'})
+    static readonly CHASSEUR_D_ORAGE = new Legendaire({name: `Chasseur d'orage`, filename: 'chasseur-d-orage', originalName: 'Storm Catcher'})
 }
 
 export const isRole = (key: string) => roleClasses
