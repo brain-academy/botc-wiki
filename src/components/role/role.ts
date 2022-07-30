@@ -145,6 +145,8 @@ export class Voyageur extends Role {
     readonly type = "Voyageur"
 
     static readonly BOUC_EMISSAIRE = new Voyageur({name: 'Bouc Emissaire', filename: 'bouc-emissaire', originalName: 'Scapegoat'})
+    static readonly VENGEUR = new Voyageur({name: 'Vengeur', originalName: 'Gunslinger'})
+    static readonly VOLEUR = new Voyageur({name: 'Voleur', originalName: 'Thief', wakeUpSchedule: 'EVERY_NIGHT'})
 }
 
 export class Legendaire extends Role {
