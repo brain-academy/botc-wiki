@@ -36,10 +36,10 @@ export abstract class Role extends MarkdownDocument {
 export class Villageois extends Role implements Good {
     readonly type = "Villageois"
 
-    static readonly AERONAUTE = new Villageois({name: 'Aéronaute', filename: 'aeronaute', originalName: 'Baloonist', class: 'DETECTION', wakeUpSchedule: 'EVERY_NIGHT'})
+    static readonly AERONAUTE = new Villageois({name: 'Aéronaute', filename: 'aeronaute', originalName: 'Balloonist', class: 'DETECTION', wakeUpSchedule: 'EVERY_NIGHT'})
     static readonly ALCHIMISTE = new Villageois({name: 'Alchimiste', originalName: 'Alchemist', wakeUpSchedule: 'La première nuit puis identique au rôle attribué'})
     static readonly AMNESIQUE = new Villageois({name: 'Amnésique', filename: 'amnesique', originalName: 'Amnesic'})
-    static readonly ATHEE = new Villageois({name: 'Athée', originalName: 'Atheist'})
+    static readonly ATHEE = new Villageois({name: 'Athée', filename: 'athee', originalName: 'Atheist'})
     static readonly ARCHIVISTE = new Villageois({name: 'Archiviste', originalName: 'Librarian', class: 'FIRST_NIGHT', wakeUpSchedule: 'FIRST_NIGHT'})
     static readonly ARTISTE = new Villageois({name: 'Artiste', originalName: 'Artist'})
     static readonly AUBERGISTE = new Villageois({name: 'Aubergiste', originalName: 'Innkeeper', class: 'PROTECTION', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})

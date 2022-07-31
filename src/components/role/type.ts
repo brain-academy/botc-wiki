@@ -19,5 +19,5 @@ export const RenderWakeUpSchedule = {
     FIRST_NIGHT: 'Uniquement la première nuit',
     EVERY_NIGHT: 'Toutes les nuits',
     EVERY_NIGHT_BUT_FIRST: 'Toutes les nuits, sauf la première',
-    UNTIL_ABILITY_CONSUMED: `Rôle à usage unique - Se réveille toutes les nuits jusqu’à l’utilisation de sa capacité`,
+    UNTIL_ABILITY_CONSUMED: `Rôle à usage unique - Se réveille toutes les nuits jusqu'à l'utilisation de sa capacité`,
 }
