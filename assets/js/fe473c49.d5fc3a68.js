@@ -1,1 +1,0 @@
-(self.webpackChunkdocusaurus_wiki=self.webpackChunkdocusaurus_wiki||[]).push([[4501],{8626:function(s){"use strict";s.exports=JSON.parse('{"allTagsPath":"/botc-wiki/blog/tags","slug":"soon","name":"soon","count":1,"permalink":"/botc-wiki/blog/tags/soon"}')}}]);
