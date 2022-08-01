@@ -15,7 +15,11 @@ module.exports = {
             defaultMode: 'dark',
             respectPrefersColorScheme: true
         },
-        hideableSidebar: true,
+        docs: {
+            sidebar: {
+                hideable: true
+            }
+        },
         navbar: {
             title: 'Brain Academy',
             logo: {
