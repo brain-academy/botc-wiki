@@ -7,7 +7,11 @@ export default abstract class MarkdownDocument {
     protected constructor(readonly name: string, readonly filename: string = name.toLowerCase()) { }
 
     get path(): string {
-        return `${useBaseUrl(this._base_url)}/${this.filename}`
+        return useBaseUrl(`${this._base_url}/${this.filename}`)
+    }
+
+    get iconPath(): string {
+        return useBaseUrl(`/static/img/blood-on-the-clocktower/roles/icons/${this.filename}.png`)
     }
 
 }
