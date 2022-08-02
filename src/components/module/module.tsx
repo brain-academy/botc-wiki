@@ -65,7 +65,12 @@ export default class Module extends MarkdownDocument {
                 Sbire.ESPION,
                 Sbire.CROQUEUSE_D_HOMMES,
                 Sbire.BARON,
-                Demon.IMP
+                Demon.IMP,
+                Voyageur.BOUC_EMISSAIRE,
+                Voyageur.BUREAUCRATE,
+                Voyageur.MENDIANT,
+                Voyageur.VENGEUR,
+                Voyageur.VOLEUR
             ],
             theme: {color: 'red'},
             summary: `De l'art de l'ivresse à celui d'empoisonnement...
