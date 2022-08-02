@@ -110,7 +110,7 @@ export class Etranger extends Role implements Good {
     static readonly DULCINEE = new Etranger({name: 'Dulcinée', filename: 'dulcinee', originalName: 'Sweetheart'})
     static readonly GITANE = new Etranger({name: 'Gitane', originalName: 'Moonchild'})
     static readonly GOLEM = new Etranger({name: 'Golem', originalName: 'Golem'})
-    static readonly HERETIQUE = new Etranger({name: 'Hérétique', originalName: 'Heretic'})
+    static readonly HERETIQUE = new Etranger({name: 'Hérétique', filename: 'heretique', originalName: 'Heretic'})
     static readonly INVENTEUR = new Etranger({name: 'Inventeur', originalName: 'Tinker'})
     static readonly LUNATIQUE = new Etranger({name: 'Lunatique', originalName: 'Lunatic', wakeUpSchedule: 'EVERY_NIGHT'})
     static readonly MAJORDOME = new Etranger({name: 'Majordome', originalName: 'Butler', wakeUpSchedule: 'EVERY_NIGHT'})
