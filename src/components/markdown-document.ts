@@ -11,7 +11,7 @@ export default abstract class MarkdownDocument {
     }
 
     get iconPath(): string {
-        return useBaseUrl(`/static/img/blood-on-the-clocktower/roles/icons/${this.filename}.png`)
+        return useBaseUrl(`/img/blood-on-the-clocktower/roles/icons/${this.filename}.png`)
     }
 
 }

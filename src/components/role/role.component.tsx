@@ -22,7 +22,7 @@ const Role = ({tile, header, role, ...other}: RoleProps) => {
     }
     return !!header ?
         <Fragment>
-            <img src={useBaseUrl(`/img/blood-on-the-clocktower/roles/icons/${role.filename || role.name.toLowerCase()}.png`)} height='150' />
+            <img src={role.iconPath} height='150' />
 
             <h4>Modules : {Module.containing(role).reduce((acc, module, index) => <Fragment>{acc}{index > 0 && ' - '}<ModuleComponent module={module} /></Fragment>, <Fragment></Fragment>)}</h4>
             <h4>Nom Original : {role.originalName}</h4>
