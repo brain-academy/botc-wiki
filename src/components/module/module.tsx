@@ -302,7 +302,9 @@ export default class Module extends MarkdownDocument {
             Demon.PTIT_MONSTRE,
             Demon.SANGSUE,
             Voyageur.GANGSTER
-        ]
+        ],
+        detail: `Les rôles expérimentaux sont des rôles qui n’ont pas encore de script officiel associé. Plus tard, ils pourraient être inclus dans des scripts d’extensions officiels. Pour l’instant, vous êtes encouragés à les tester en les incluant dans vos propres scripts.
+        Recommandés pour les joueurs et conteurs qui ont joué beaucoup de parties de Blood on the Clocktower.`
     })
 
     private static MODULES = [

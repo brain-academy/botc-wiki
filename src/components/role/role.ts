@@ -145,7 +145,7 @@ export class Sbire extends Role implements Evil {
     static readonly PROPHETE_DE_L_EFFROI = new Sbire({name: `Prophète de l'effroi`, filename: 'prophete-de-l-effroi', originalName: 'Fearmonger', wakeUpSchedule: 'EVERY_NIGHT'})
     static readonly PSYCHOPATHE = new Sbire({name: 'Psychopathe', originalName: 'Psychopath'})
     static readonly SORCIERE = new Sbire({name: 'Sorcière', filename: 'sorciere', originalName: 'Witch', wakeUpSchedule: 'EVERY_NIGHT'})
-    static readonly VEUVE_NOIRE = new Sbire({name: 'Veuve Noire', originalName: 'Widow', wakeUpSchedule: 'FIRST_NIGHT'})
+    static readonly VEUVE_NOIRE = new Sbire({name: 'Veuve Noire', filename: 'veuve-noire', originalName: 'Widow', wakeUpSchedule: 'FIRST_NIGHT'})
     static readonly VIEILLE_CHOUETTE = new Sbire({name: 'Vieille Chouette', filename: 'vieille-chouette', originalName: 'Pit Hag', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'})
 }
 
