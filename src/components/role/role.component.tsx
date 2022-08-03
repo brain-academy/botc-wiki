@@ -50,7 +50,7 @@ const roleTypeToColor = (role: R) => {
     else if (role instanceof Demon)
         return 'rgb(197,0,0)'
     else if (role instanceof Voyageur)
-        return 'rgb(21,94,28)'
+        return 'rgb(154,77,159)'
     else if (role instanceof Legendaire)
         return 'rgb(168,153,50)'
 }
