@@ -255,12 +255,63 @@ export default class Module extends MarkdownDocument {
         ]
     })
 
+    static readonly EXPERIMENTAL = new Module({
+        name: 'Expérimental',
+        filename: 'experimental',
+        roles: [
+            Villageois.AERONAUTE,
+            Villageois.ALCHIMISTE,
+            Villageois.AMNESIQUE,
+            Villageois.ATHEE,
+            Villageois.CANNIBALE,
+            Villageois.CHASSEUR,
+            Villageois.CHASSEUR_DE_PRIMES,
+            Villageois.CHEF_DE_SECTE,
+            Villageois.CULTIVATEUR_DE_PAVOT,
+            Villageois.ENFANT_DE_CHOEUR,
+            Villageois.FERMIER,
+            Villageois.GENERAL,
+            Villageois.INGENIEUR,
+            Villageois.LYCANTHROPE,
+            Villageois.MAGICIEN,
+            Villageois.NOBLE,
+            Villageois.PECHEUR,
+            Villageois.PREDICATEUR,
+            Villageois.ROI,
+            Villageois.PECHEUR,
+            Villageois.PIXIE,
+            Villageois.VEILLEUR_DE_NUIT,
+            Etranger.ACROBATE,
+            Etranger.BALANCE,
+            Etranger.DEMOISELLE,
+            Etranger.GOLEM,
+            Etranger.HERETIQUE,
+            Etranger.MAITRE_DES_PUZZLES,
+            Etranger.POLITICIEN,
+            Sbire.BOOMDANDY,
+            Sbire.GOBELIN,
+            Sbire.MARIONETTE,
+            Sbire.MEZEPHELES,
+            Sbire.PROPHETE_DE_L_EFFROI,
+            Sbire.PSYCHOPATHE,
+            Sbire.VEUVE_NOIRE,
+            Demon.AL_HADIKHIA,
+            Demon.EMEUTE,
+            Demon.LEGION,
+            Demon.LEVIATHAN,
+            Demon.PTIT_MONSTRE,
+            Demon.SANGSUE,
+            Voyageur.GANGSTER
+        ]
+    })
+
     private static MODULES = [
         Module.TROUBLE_BREWING,
         Module.BAD_MOON_RISING,
         Module.SECTS_AND_VIOLETS,
         Module.DEADLY_PENANCE_DAY,
         Module.LARGELY_UN_FAIRE,
+        Module.EXPERIMENTAL,
     ]
 
 }
