@@ -200,4 +200,4 @@ export const LEGENDAIRE: { [key: string]: Legendaire } = {
     CHASSEUR_D_ORAGE: new Legendaire({ name: `Chasseur d'orage`, filename: 'chasseur-d-orage', originalName: 'Storm Catcher' }),
 }
 
-export const roles: { [key: string]: Role } = { ...VILLAGEOIS, ...ETRANGER, ...SBIRE, ...DEMON, ...VOYAGEUR }
+export const roles: { [key: string]: Role } = { ...VILLAGEOIS, ...ETRANGER, ...SBIRE, ...DEMON, ...VOYAGEUR, ...LEGENDAIRE }
