@@ -15,3 +15,5 @@ export default abstract class MarkdownDocument {
     }
 
 }
+
+export type Theme = { color: string }
