@@ -32,10 +32,6 @@ export class Legendaire extends Role {
 
 export const groups = [Villageois, Etranger, Sbire, Demon, Voyageur, Legendaire]
 
-export const isRole = (key: string) => groups
-    .flatMap(type => Object.keys(type))
-    .includes(key)
-
 export const VILLAGEOIS: { [key: string]: Villageois } = {
     AERONAUTE: new Villageois({ name: 'Aéronaute', filename: 'aeronaute', originalName: 'Balloonist', class: 'DETECTION', wakeUpSchedule: 'EVERY_NIGHT' }),
     ALCHIMISTE: new Villageois({ name: 'Alchimiste', originalName: 'Alchemist', wakeUpSchedule: 'La première nuit puis identique au rôle attribué' }),
@@ -121,7 +117,6 @@ export const ETRANGER: { [key: string]: Etranger } = {
     VERTUEUX: new Etranger({ name: 'Vertueux', originalName: 'Saint' }),
 }
 
-
 export const SBIRE: { [key: string]: Sbire } = {
     ASSASSIN: new Sbire({ name: 'Assassin', originalName: 'Assassin', wakeUpSchedule: 'UNTIL_ABILITY_CONSUMED' }),
     AVOCAT_DU_DIABLE: new Sbire({ name: 'Avocat du Diable', filename: 'avocat-du-diable', originalName: `Devil's Advocate`, class: 'PROTECTION', wakeUpSchedule: 'EVERY_NIGHT' }),
@@ -145,7 +140,6 @@ export const SBIRE: { [key: string]: Sbire } = {
     VEUVE_NOIRE: new Sbire({ name: 'Veuve Noire', filename: 'veuve-noire', originalName: 'Widow', wakeUpSchedule: 'FIRST_NIGHT' }),
     VIEILLE_CHOUETTE: new Sbire({ name: 'Vieille Chouette', filename: 'vieille-chouette', originalName: 'Pit Hag', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST' }),
 }
-
 
 export const DEMON: { [key: string]: Demon } = {
     AL_HADIKHIA: new Demon({ name: 'Al-Hadikhia', filename: 'al-hadikhia', originalName: 'Al-Hadikhia', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST' }),

@@ -1,5 +1,5 @@
 import { Role } from "../role/role"
-import { VILLAGEOIS, ETRANGER, SBIRE, DEMON, VOYAGEUR } from "../role/roles"
+import { DEMON, ETRANGER, SBIRE, VILLAGEOIS, VOYAGEUR } from "../role/roles"
 import Module from "./module"
 
 const TROUBLE_BREWING = new Module(

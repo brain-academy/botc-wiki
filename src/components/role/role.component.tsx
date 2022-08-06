@@ -1,8 +1,8 @@
-import React, {Fragment} from 'react'
+import React, { Fragment } from 'react'
 import Module from '../module/module'
-import {default as ModuleComponent} from '../module/module.component'
+import { default as ModuleComponent } from '../module/module.component'
 import { modules } from '../module/modules'
-import {Role as R, WakeUpSchedule} from './role'
+import { Role as R, WakeUpSchedule } from './role'
 import { Demon, Etranger, roles, Sbire, Villageois } from './roles'
 
 interface RoleProps {
@@ -11,7 +11,7 @@ interface RoleProps {
     header?: boolean
 }
 
-const Role = ({tile, header, role, ...other}: RoleProps) => {
+const Role = ({ tile, header, role, ...other }: RoleProps) => {
     if (!role) {
         const validRoles: R[] = Object.keys(other).map(name => roles[name])
         if (validRoles.length > 1)
@@ -21,7 +21,7 @@ const Role = ({tile, header, role, ...other}: RoleProps) => {
         role = validRoles[0]
     }
 
-    const {name, originalName, path, iconPath, type, class: clazz, theme: {color}, wakeUpSchedule} = role
+    const { name, originalName, path, iconPath, type, class: clazz, theme: { color }, wakeUpSchedule } = role
 
     return !!header ?
         <Fragment>
@@ -35,12 +35,12 @@ const Role = ({tile, header, role, ...other}: RoleProps) => {
         </Fragment>
         :
         !!tile ?
-            <a href={path} style={{border: `5px double ${color}`, width: '160px', height: '160px', textAlign: 'center'}}>
+            <a href={path} style={{ border: `5px double ${color}`, width: '160px', height: '160px', textAlign: 'center' }}>
                 <img src={iconPath} height='150' />
-                <span style={{position: 'relative', top: '-30%', fontWeight: 'bold', color}}>{name}</span>
+                <span style={{ position: 'relative', top: '-30%', fontWeight: 'bold', color }}>{name}</span>
             </a>
             :
-            <a href={path} style={{color, fontWeight: 'bold'}}>{role.name}</a>
+            <a href={path} style={{ color, fontWeight: 'bold' }}>{role.name}</a>
 }
 
 const alignment = (role: R) => {
