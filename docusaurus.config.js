@@ -3,7 +3,7 @@ let fs = require('fs')
 module.exports = {
     title: 'Brain Academy',
     tagline: 'Welcome to the Brain Academy',
-    url: 'https://brain-academy.github.io/',
+    url: 'https://brain-academy.github.io',
     baseUrl: '/botc-wiki/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
