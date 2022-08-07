@@ -17,12 +17,10 @@ jobs:
           node-version: '16.x'
       - name: Test Build
         run: |
-          if [ -e yarn.lock ]; then
-          yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
-          npm ci
+          if [ -e package-lock.json ]; then
+          npm ci --legacy-peer-deps
           else
-          npm i
+          npm i --legacy-peer-deps
           fi
           npm run build
   gh-release:
@@ -53,11 +51,9 @@ jobs:
         run: |
           git config --global user.email "actions@gihub.com"
           git config --global user.name "gh-actions"
-          if [ -e yarn.lock ]; then
-          yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
-          npm ci
+          if [ -e package-lock.json ]; then
+          npm ci --legacy-peer-deps
           else
-          npm i
+          npm i --legacy-peer-deps
           fi
           npx docusaurus deploy
