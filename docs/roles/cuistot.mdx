@@ -9,23 +9,35 @@ import Role from '/src/domain/role/role.component'
 
 ### Description
 
-La première nuit, le Conteur vous indique combien il y a de joueurs Maléfiques assis côte à côte dans la partie.
- 
+La première nuit, le Conteur vous indique combien il y a de paires de joueurs Maléfiques assis côte à côte dans la partie.
+
+Le cuistot apprend si les maléfiques sont assis côte à côte. 
+
+-	Durant la première nuit, le cuistot apprend le nombre total exact de paires de maléfiques. Une paire représente deux joueurs mais un joueur peut faire partie de deux paires différentes. Donc, deux joueurs assis côte à côte représentent une paire ; trois joueurs représentent deux paires ; quatre joueurs représentent trois paires, etc…
+
+-	Le cuistot détecte les voyageurs maléfiques tout comme les autres types de rôles mais seulement si ces voyageurs sont arrivés dans le village avant que le Cuistot n’agisse.
+
 ### Exemples
 
-> Aucun joueur Maléfique n’est assis l’un à côté de l’autre. Le <Role CUISTOT /> obtient “0”.
+> Aucun joueur Maléfique ne sont assis l’un à côté de l’autre. Le <Role CUISTOT /> obtient “0”.
 
-> L’<Role IMP /> est assis à côté du <Role BARON /> et l’<Role EMPOISONNEUR /> est assis à côté de la <Role CROQUEUSE_D_HOMMES />. Le Cuistot obtient “2” (soit 2 paires de Maléfiques)
+> L’<Role IMP /> est assis à côté du <Role BARON /> et l’<Role EMPOISONNEUR /> est assis à côté de la <Role CROQUEUSE_D_HOMMES />. Le Cuistot obtient “2” (soit 2 paires de Maléfiques).
 
-> Un Bouc-Émissaire Maléfique est assis entre l’<Role IMP /> et un Sbire et deux autres sbires sont assis l’un à côté de l’autre. Le <Role CUISTOT /> obtient ‘3’ (soit 3 paires : 2 paires pour les 3 personnes à côté : <Role IMP />/Bouc Émissaire + Bouc Émissaire / <Role IMP /> puis la 3eme paire pour les deux autres Sbires qui sont côte à côte)
+> Un <Role BOUC_EMISSAIRE /> Maléfique est assis entre l’<Role IMP /> et un Sbire et deux autres sbires sont assis l’un à côté de l’autre. Le <Role CUISTOT /> obtient ‘3’ (soit 3 paires : 2 paires pour les 3 personnes à côté : <Role IMP />/<Role BOUC_EMISSAIRE /> + <Role BOUC_EMISSAIRE /> / <Role IMP /> puis la 3eme paire pour les deux autres Sbires qui sont côte à côte).
 
 
 
-#### Mécanismes et conseils
+### Mécanismes et conseils
 
-- Au début de la partie, votre information est difficile à traiter. Toutefois, elle prendra de l’importance en la combinant avec les informations de vos alliés. Si vous arrivez à identifier un <Role EMPATHIQUE /> ou une <Role VOYANTE />, et donc savoir qui est Gentil ou Maléfique, votre information de <Role CUISTOT /> s'avérera extrêmement utile pour l'enquête du Village. Y compris en la croisant avec les informations d’une <Role LAVANDIERE />, d’un <Role ARCHIVISTE /> ou d’un <Role ENQUETEUR />, les emplacements des Maléfiques pourraient se dévoiler petit à petit.
+- Au début de la partie, votre information est difficile à traiter. Toutefois, elle prendra de l’importance en la combinant avec les informations de vos alliés. Si vous arrivez à identifier un <Role EMPATHIQUE /> ou une <Role VOYANTE />, et donc savoir qui est Gentil ou Maléfique, votre information de <Role CUISTOT /> s'avérera extrêmement utile pour l'enquête du Village. Y compris en la croisant avec les informations d’une <Role LAVANDIERE />, d’un <Role ARCHIVISTE /> ou d’un <Role ENQUETEUR />, les emplacements des Maléfiques pourraient se dévoiler petit à petit. Par exemple, si vous savez que les maléfiques sont assis côte à côte, et que l’<Role ENQUETEUR /> dit que le joueur A ou B est le sbire, vous savez qu’un des voisins de A ou B a plus de chance d’être maléfique.
 
-- Si vous obtenez un “0” du Conteur, cela signifie qu’aucun Maléfique n’est normalement assis l’un à côté de l’autre. Si vous suspectez une personne d’être Maléfique, cela signifie qu’à priori, ses 2 voisins sont Gentils. De même, si la personne située à 2 places de vous est Gentille, vous pouvez en déduire que votre voisin l’est aussi.
+- Si un <Role CROQUE_MORT /> voit qu’un maléfique a été exécuté, vous avez des informations sur ses voisins. Si vous avez un 0, ses voisins sont surement gentils mais vous devriez les suspecter si vous avez un nombre plus grand.
+
+- Votre information sera plus utile à mesure que la partie avance. Quand juste trois joueurs sont en vie et que vous savez que l’un d’entre eux est maléfique, le fait de savoir que les maléfiques sont assis côte à côte ou non peut décider du sort de la partie. Rappeler au village votre information vitale à ce moment.
+
+- Obtenir un “0” du Conteur signifie qu’aucun Maléfique n’est normalement assis l’un à côté de l’autre. Observez les voisins qui se lève pour aller discuter dans la journée. Ils peuvent être maléfiques mais peuvent être gentils et avoir simplement des secrets à partager.
+
+- Si vous savez que les maléfiques ne sont pas côte à côte et que vous suspectez une personne d’être Maléfique, cela signifie qu’à priori, ses 2 voisins sont Gentils. De même, si la personne située à 2 places de vous est Gentille, vous pouvez en déduire que votre voisin l’est aussi.
 
 - Obtenir un “1” ou plus du Conteur veut dire que des joueurs Maléfiques sont assis les uns à côté des autres. Faites attention aux interactions des joueurs en débats privés, des Maléfiques sont peut-être en train d’élaborer des stratégies.
 
@@ -33,14 +45,22 @@ La première nuit, le Conteur vous indique combien il y a de joueurs Maléfiques
 
 - L'<Role ESPION /> peut ne pas être compté en tant que Maléfique et donc vous donner une information incorrecte sur le nombre de paires ! De même que le <Role RECLUS /> peut vous donner un faux positif. Pour pouvoir vous fier à votre information, enquêtez dès que possible sur la présence ou l’absence d’un <Role RECLUS /> et d’un <Role ESPION />. Pour détecter un <Role ESPION /> faites attention à qui meurt la nuit et fiez-vous à votre intuition. Si des rôles importants meurent rapidement chaque nuit, il est possible qu’il y ait un <Role ESPION /> dans la partie.
 
+- Si la partie est en Teensyville (5 ou 6 joueurs) alors le démon et le sbire ne se connaissent pas et chercheront désespérément qui est qui. Donner votre information peut les inciter à faire confiance en la mauvaise personne. Par exemple, dire que les maléfiques sont assis côte à côte, alors qu'ils ne le sont pas, signifie que le démon pourrait se révéler à un de ses gentils voisins accidentellement ou qu'un sbire ne votera pour l'exécution de son voisin mais votera possiblement pour l'exécution du démon à la place.
 
+### Bluffer le Cuistot
 
-#### Bluffer le Cuistot
+- Vous êtes supposés recevoir des informations uniquement durant la première nuit ! On vous aurait montré un nombre.
 
-- Annoncer qu’il y a soit “0” ou “1” paire de joueurs Maléfiques assis l’un à côté de l’autre est assez commun. Des annonces plus élevées (2-3 ou +) étant statistiquement plus rares, vous pourriez vite devenir suspect. Faites aussi attention à ce que le nombre de paires annoncées soit cohérent avec le nombre de joueurs Maléfiques dans la partie.
+- Annoncer qu’il y a soit “0” ou “1” paire de joueurs Maléfiques assis l’un à côté de l’autre est assez commun. Des annonces plus élevées (2-3 ou +) étant statistiquement plus rares, vous pourriez vite devenir suspect. Faites aussi attention à ce que le nombre de paires annoncées soit cohérent avec le nombre de joueurs Maléfiques dans la partie. En général, même si le <Role RECLUS /> s'enregistre comme maléfique pour le Cuistot, il ne peut jamais y avoir plus de paires que de joueurs maléfiques. Dans Trouble Breing, la seule faon de dépasser 4 est d'avoir des voyageurs maléfiques.
 
 - Donner une fausse information au Village peut vraiment troubler l’enquête ! Les joueurs risquent de s’accuser entre voisins et faire le travail pour vous !
 
 - Donner une bonne information au Village peut confirmer l'allégeance de certains joueurs et du coup vous innocenter. Par contre, s’ils pensent que vous êtes Maléfiques avant que vous révéliez votre information, ils risquent de penser que l’information que vous avez fournie est fausse alors qu’elle est vraie et cela pourrait aider votre équipe Maléfique.
 
-- Le <Role CUISTOT /> est un bluff assez facile. N'hésitez pas à l’utiliser en tant que débutant, cela peut embrouiller le village sans trop vous exposer.
+- Le <Role CUISTOT /> est un bluff assez facile. N'hésitez pas à l’utiliser en tant que débutant, cela peut embrouiller le village sans avoir besoin de vous exposer en inventant de nouvelles informations chaque jour.
+
+- Attention au <Role RECLUS />! Si vous savez qu'il est assis à coté d'un maléfique, dire au village qu'il y a des paires pourrait accidentellement condamner votre comparse. Si vous êtes <Role ESPION /> ou avez un <Role ESPION /> dans votre équipe, vous pouvez aussi construire votre mensonge sur la position du faux positif de la <Role VOYANTE />.
+
+#### Comment conter ?
+
+Durant la première nuit, réveillez le cuistot. Montrez-lui avec vos doigts (0,1,2, etc…) le nombre de paires de joueurs maléfiques. Rendormez le cuistot.

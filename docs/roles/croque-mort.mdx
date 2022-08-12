@@ -8,7 +8,19 @@ import Role from '/src/domain/role/role.component'
 <Role CROQUE_MORT header />
 
 ### Description
-Chaque nuit, vous apprenez le rôle du joueur qui vient d’être exécuté le jour précédent.
+
+Chaque nuit, vous apprenez quel est le rôle du joueur qui vient d’être exécuté le jour précédent.
+
+Le croque-mort apprend quel rôle a été exécuté aujourd’hui.
+
+-	Le joueur doit mourir par exécution pour que le croque-mort apprenne qui il est. La mort de jour pour d’autres raisons comme le choix du vengeur ou l’exil d’un voyageur ne compte pas.
+
+-	Le croque-mort se réveille chaque nuit, sauf la première, car il n’y a pas encore eu d’exécution.
+
+-	Si personne n’est mort ce jour, le croque-mort n’apprend rien. Le conteur ne réveille pas le croque-mort ou le réveille mais ne lui montre pas de jeton de rôle. 
+
+-	Si le <Role SOULARD /> est exécuté, le croque-mort voit le jeton du <Role SOULARD /> et non le jeton du rôle de villageois que le <Role SOULARD /> pensait être. 
+
 
 ### Exemple 
 > Le <Role MAIRE /> est exécuté aujourd’hui. La nuit suivante, le <Role CROQUE_MORT /> apprend qu’il s’agissait du <Role MAIRE />.
@@ -22,7 +34,7 @@ Chaque nuit, vous apprenez le rôle du joueur qui vient d’être exécuté le j
 ### Mécaniques et conseils
 - Plus il y a de joueurs exécutés, plus vous aurez d’informations. Il est primordial que vous incitiez à un maximum d’exécutions : votez oui lors des nominations ! Les Gentils peuvent tuer des joueurs Maléfiques principalement à travers les exécutions. Si vous n’arrivez pas à tuer le Démon au cours des différentes exécutions, vous aurez tout de même un maximum d'informations sur les rôles de chacun lors du dernier jour.
 
-- Vous n’apprenez pas le rôle des Voyageurs, ils sont exilés et non exécutés. La seule exception est le Bouc-Émissaire qui peut être exécuté à travers la capacité de son rôle. Néanmoins vous n’apprenez pas son allégeance pour autant.
+- Vous n’apprenez pas le rôle des Voyageurs, ils sont exilés et non exécutés. La seule exception est le <Role BOUC_EMISSAIRE /> qui peut être exécuté à travers la capacité de son rôle. Néanmoins vous n’apprenez pas son alignement mais seulement son rôle.
 
 - Exécuter un joueur sur lequel vous n’avez aucune information peut donner de la crédibilité au rôle de <Role CROQUE_MORT /> que vous prétendez avoir. De la même manière, exécuter un joueur qui s’est dévoilé publiquement est un bon moyen de renforcer votre crédibilité en confirmant ou infirmant le rôle que l'exécuté annonçait avoir.
 
@@ -34,9 +46,13 @@ Chaque nuit, vous apprenez le rôle du joueur qui vient d’être exécuté le j
 
 - Se dévoiler rapidement peut aussi s’avérer être une stratégie payante surtout si vous avez réussi à identifier le potentiel Démon ! Et pourquoi ne pas invoquer la protection du <Role MOINE /> ? Même si ce dernier n’est pas en jeu, le Démon peut croire qu’il est présent et dans le doute, il sera moins enclin à vous attaquer.
 
-- Si le Conteur vous révèle que c’est le <Role IMP /> qui a été exécuté, il est très probable qu’il y ait une <Role CROQUEUSE_D_HOMMES />’homme dans la partie et qu’elle soit devenue le Démon !
+- Si le Conteur vous révèle que c’est le <Role IMP /> qui a été exécuté, il est très probable qu’il y ait une <Role CROQUEUSE_D_HOMMES /> dans la partie et qu’elle soit devenue le Démon !
 
 - Si le joueur exécuté est le <Role SOULARD />, vous aurez l’information “<Role SOULARD />” et pas le rôle qu’il pense être.
+
+- Si vous voyez un rôle de gentil, vous pouvez faire confiance à ce joueur et vous dévoiler à lui. Ensuite, si vous prétendez être le croque-mort, ce joueur pourra vous soutenir.
+
+- Si vous voez un rôle de maléfique, il n'est pas sage de faire confiance à ce joueur et vous dévoiler à lui. Vous pouvez néanmoins leur dire être le croque-mort et avoir vu le rôle qu'il bluff afin que le <Role IMP /> et l'<Role EMPOISONNEUR /> vous laissent tranquille.
 
 - Un joueur qui meurt en nominant la <Role PUCELLE /> est considéré comme étant exécuté et son rôle vous sera dévoilé pendant la nuit.
 
@@ -45,6 +61,8 @@ Chaque nuit, vous apprenez le rôle du joueur qui vient d’être exécuté le j
 - Si vous pensez qu’un <Role CROQUE_MORT /> est en jeu, vous pouvez mentir sur votre identité et vous faire exécuter afin de vérifier que le prétendu <Role CROQUE_MORT /> annonce votre véritable rôle et non celui que vous prétendiez avoir.
 
 ### Bluffer le Croque-Mort
+
+- Chaque nuit, excepté la première, le conteur vous aura reveillé pour vous montrer le rôle de la personne qui a été exécuté.
 
 - Un <Role CROQUE_MORT /> Gentil peut très bien attendre quelques jours avant de se dévoiler comme <Role CROQUE_MORT />. N’ayez pas peur de rester discret pendant les premiers jours ou même prétendre être un autre rôle puis de basculer sur le <Role CROQUE_MORT /> par la suite. Vous pourrez expliquer ce revirement comme étant une stratégie qui visait à vous prémunir du démon afin de récolter un maximum d’informations en évitant de mourir les premières nuits.
 
@@ -57,3 +75,11 @@ Chaque nuit, vous apprenez le rôle du joueur qui vient d’être exécuté le j
 - Si vous annoncez le joueur comme étant Maléfique, il devrait avoir tendance (espérons-le pour vous !) à agir de manière plus louche, ce qui potentiellement renforce votre bluff de <Role CROQUE_MORT /> et d’une manière votre crédibilité.
 
 - Un bon moyen de brouiller l’enquête du village est d’annoncer avoir vu un <Role SOULARD /> et non pas le rôle de Villageois que la personne prétendait être. Si le Village vous croit (la mécanique est d’autant plus renforcée si la personne exécutée vous fait confiance), alors ils partiront du principe que les informations données par ce joueur sont fausses. De même, si vous ne savez pas quel rôle a le joueur exécuté, prétendre qu’il est <Role SOULARD /> est un bon moyen de vous en sortir !
+
+### Comment conter ?
+
+Si un joueur meurt par exécution, placez le jeton de rappel « Exécuté » du croque-mort devant le jeton de rôle du joueur exécuté.
+
+Chaque nuit, sauf la première, si n’importe quel joueur est mort de l’exécution ce jour, réveillez le croque-mort. Montrez-lui le jeton de rôle associé au jeton rappel « Exécuté » placé précédemment. Rendormez le croque-mort. Retirer le jeton de rappel du croque-mort à votre convenance. 
+
+_Dans Trouble Brewing, il ne peut y avoir qu’une exécution par jour et une exécution provoque la mort d’un joueur. Dans d’autres éditions, il peut y avoir plus d’une exécution par jour (auquel cas, le conteur choisit quel rôle il montre au croque-mort) ou l’exécution ne provoque pas la mort (auquel cas, le croque-mort n’apprend rien)._

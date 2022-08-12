@@ -10,25 +10,34 @@ import Role from '/src/domain/role/role.component'
 ### Description
 La première nuit, le Conteur vous désigne 2 joueurs. Il vous donne ensuite le rôle de Sbire de l’un de deux.
 
+L’Enquêteur apprend qu’un sbire spécifique est en jeu mais ne sait pas qui l’est.
+
+-	Durant la première nuit, l’enquêteur est réveillé. Le conteur lui désigne deux joueurs ainsi que le rôle de sbire de l’un d’entre eux.
+
+-	Il n’apprend cette information qu’une seule fois et n’apprend plus rien par la suite.
+
+
 ### Exemples
-> Maud (<Role BARON />) et Yoan <Role MAIRE />) sont montrés par le Conteur à l’<Role ENQUETEUR /> qui aura l’information qu’un des deux joueurs est le <Role BARON />.
+> Maud (<Role BARON />) et Yoan (<Role MAIRE />) sont montrés par le Conteur à l’<Role ENQUETEUR /> qui aura l’information qu’un des deux joueurs est le <Role BARON />.
 
-> Mehdi (<Role ESPION />) et Sabrina (<Role EMPOISONNEUR />) sont montrés par le Conteur à  l'<Role ENQUETEUR /> qui aura l’information qu’un des deux joueurs est le  <Role ESPION />.
+> Mehdi l'(<Role ESPION />) et Sabrina l'(<Role EMPOISONNEUR />) sont montrés par le Conteur à  l'<Role ENQUETEUR /> qui aura l’information qu’un des deux joueurs est l' <Role ESPION />.
 
-> Caroline est le <Role RECLUS /> et Manon est l’<Role IMP />. l’<Role ENQUETEUR /> apprend qu’il y a l’<Role EMPOISONNEUR /> parmi elles (le <Role RECLUS /> peut être reconnu comme Maléfique ou comme Gentil, le Conteur décide. Ici, il est reconnu en tant que <Role EMPOISONNEUR />)
+> Caroline est le <Role RECLUS /> et Manon est l’<Role IMP />. L’<Role ENQUETEUR /> apprend qu’il y a l’<Role EMPOISONNEUR /> parmi elles (le <Role RECLUS /> peut être reconnu comme Maléfique ou comme Gentil, le Conteur décide. Ici, il est reconnu en tant qu' <Role EMPOISONNEUR />).
  
  
 ### Mécaniques et conseils
 
-- Donnez votre information dès que vous pouvez. Il sera probablement difficile de déterminer qui est le Sbire parmi les deux joueurs désignés. Mais si le Village vous croit, il devrait vraisemblablement exécuter les deux joueurs et donc le Sbire.
+- Donnez votre information dès que vous pouvez. Il sera probablement difficile de déterminer qui est le Sbire parmi les deux joueurs désignés. Mais si le Village vous croit, il devrait vraisemblablement exécuter les deux joueurs et donc le Sbire avant le dernier jour.
 
 - Bien que votre information ne sera probablement pas suffisante pour exécuter un joueur, elle devrait se combiner avec d’autres informations des Villageois (<Role EMPATHIQUE /> ou <Role CUISTOT /> par exemple) pour incriminer les Maléfiques. Si vous faites confiance aux autres joueurs, vous pouvez allier vos forces pour exécuter un Sbire en début de partie, ce qui réduit le nombre de vote et pouvoir Maléfique dans le village et vous donne donc l’avantage.
 
-- Si vous avez des doutes sur un des deux joueurs désignés par le Conteur, ne dites rien et étudiez son comportement. S'il vole en permanence au secours d’un autre joueur, il est probable que ce joueur soit le Démon. S’il essaie en permanence d'exécuter un autre joueur, vous pouvez potentiellement en déduire que ce dernier est Gentil. Vous pouvez aussi attendre de récolter d’autres informations qui viendraient étayer votre théorie. Si le Sbire est toujours en vie lors du dernier jour, vous savez alors qu’il n’est pas le Démon et par conséquent qu’il ne faut pas l'exécuter.
+- Si vous avez des doutes sur un des deux joueurs désignés par le Conteur, ne dites rien et étudiez son comportement. S'il vole en permanence au secours d’un autre joueur, il est probable que ce joueur soit le Démon. S’il essaie en permanence d'exécuter un autre joueur, vous pouvez potentiellement en déduire que ce dernier est Gentil. Vous pouvez aussi attendre de récolter d’autres informations qui viendraient étayer votre théorie. Si le Sbire est toujours en vie lors du dernier jour, vous savez alors qu’il n’est probablement pas le Démon et par conséquent qu’il ne faut pas l'exécuter.
 
 - Au lieu de révéler vos informations publiquement, échanger en secret avec d’autres joueurs pour trouver des informations qui viendraient compléter vos informations et ainsi identifier un Sbire.
 
-- Si vous apprenez qu’un Sbire est la <Role CROQUEUSE_D_HOMMES />’homme et que vous l'exécutez en début de partie, elle ne nuira plus à l'enquête du Village.
+- Si vous apprenez qu’une <Role CROQUEUSE_D_HOMMES /> ou un <Role EMPOISONNEUR /> est en jeu, il est très important de l'exécuter dès que possible ! Leur puissante capacité nuit au village tant qu'ils sont en jeu.
+
+- Tous les sbires sont dangereux. Si vous apprenez qu’un <Role BARON /> ou un <Role ESPION /> est en jeu, il reste important de les exécuter. Même si leur capacité a déjà affecté le jeu, ils ont toujours leur pouvoir de vote et de nomination et pourrait potentiellement devenir le <Role IMP />.
 
 - Si vous apprenez qu’il n’y a pas de <Role BARON /> dans la partie, demandez aux Etrangers de se dévoiler. Vérifiez que vous ayez le bon nombre d’Etrangers et jetez la suspicion sur eux si trop joueurs “Etrangers” se sont dévoilés.
 
@@ -39,20 +48,28 @@ La première nuit, le Conteur vous désigne 2 joueurs. Il vous donne ensuite le 
 
 ### Bluffer l'Enquêteur
 
-- Choisissez deux joueurs gentils et dites que l’un d’entre eux est un Sbire. En choisissant l’<Role EMPOISONNEUR /> ou la <Role CROQUEUSE_D_HOMMES />’homme, vous devriez motiver suffisamment le village exécuter le Sbire “repéré”. Le Village peut ne pas vouloir exécuter immédiatement un <Role BARON /> ou un <Role ESPION />.
+- Restez cohérent dans votre discours, vous êtes supposés recevoir des informations uniquement durant la première nuit ! On vous aurait désigné deux joueurs et montré un jeton de rôle de sbire.
 
-- Si vous annoncez qu’il y a un <Role BARON /> en jeu, un autre joueur Maléfique devra à un moment ou à un autre se dévoiler Etranger sinon les gentils vont vite s’apercevoir que vous mentez si le nombre d’Etrangers ne correspond pas. L’idéal est de donner à l’autre Maléfique la stratégie à suivre. 
+- Choisissez deux joueurs gentils et dites que l’un d’entre eux est un Sbire. En choisissant l’<Role EMPOISONNEUR /> ou la <Role CROQUEUSE_D_HOMMES />, vous devriez motiver suffisamment le village exécuter le Sbire “repéré”. Le Village peut ne pas vouloir exécuter immédiatement un <Role BARON /> ou un <Role ESPION /> mais le fera probablement.
 
-- Si un autre joueur Maléfique se dévoile en temps qu’<Role ENQUETEUR /> et annonce qu’il y a un <Role BARON /> dans la partie, vous devriez probablement vous dévoiler en tant qu’Etranger pour étayer le bluff de votre acolyte.
+- Si vous êtes le Démon, ou un sbire ambitieux, annoncez aux gentils les Sbires qui sont réellement dans la partie peut vous permettre d'apparaître comme étant de confiance, en particulier si d’autres joueurs, comme le <Role CROQUE_MORT />,  peuvent confirmer vos informations. Cela peut aussi être renforcé par un Sbire qui fait tout pour apparaître très suspect aux yeux du village. Après tout, plus le Sbire est visible, plus votre rôle d'<Role ENQUETEUR /> est crédible.
 
-- Si vous êtes <Role ESPION /> ou avez un <Role ESPION /> dans votre équipe, il sera important de cibler les rôles clés du Village avec votre accusation.
+- Si vous annoncez qu’il y a un <Role BARON /> en jeu, un autre joueur Maléfique devra à un moment ou à un autre se dévoiler Etranger sinon les gentils vont vite s’apercevoir que vous mentez si le nombre d’Etrangers ne correspond pas. L’idéal est de donner à l’autre Maléfique la stratégie à suivre. Si un autre joueur Maléfique se dévoile en temps qu’<Role ENQUETEUR /> et annonce qu’il y a un <Role BARON /> dans la partie, vous devriez probablement vous dévoiler en tant qu’Etranger pour étayer le bluff de votre acolyte.
 
 - Annoncer secrètement qu’il y a un Sbire entre deux joueurs Gentils peut permettre de distiller énormément de méfiance entre ces deux joueurs voire même au sein du Village.
 
 - Annoncer la présence d’un Sbire qui n’est en réalité pas dans la partie peut causer énormément de confusion, aiguiller le Village dans de mauvaises directions ou étayer les bluff de vos acolytes Maléfiques. Par exemple :
-> Annoncer qu’il y a un <Role BARON /> en jeu peut aider à dédouaner le Démon qui se prétend Etranger
+  
+    - Annoncer qu’il y a un <Role BARON /> en jeu peut aider à dédouaner le Démon qui se prétend Etranger
+  
+    - Bluffer qu’il y a un <Role EMPOISONNEUR /> dans la partie alors qu’il s’agit en réalité d’une <Role CROQUEUSE_D_HOMMES /> 
 
-> Bluffer qu’il y a un <Role EMPOISONNEUR /> dans la partie alors qu’il s’agit en réalité d’une <Role CROQUEUSE_D_HOMMES /> 
-
-- Si vous êtes le Démon, annoncez aux gentils les Sbires qui sont réellement dans la partie peut vous permettre d'apparaître comme étant de confiance, en particulier si d’autres joueurs peuvent confirmer vos informations. Cela peut aussi être renforcé par un Sbire qui fait tout pour apparaître très suspect aux yeux du village. Après tout, plus le Sbire est visible, plus votre rôle d'<Role ENQUETEUR /> est crédible.
 - Si un <Role ENQUETEUR /> a déjà communiqué ses informations publiquement et que vous n’êtes pas un des joueurs suspectés, dévoilez-vous en tant qu'<Role ENQUETEUR />, le VRAI ! Et dénoncez l’autre <Role ENQUETEUR /> comme étant un Sbire potentiel, cela le rendrait suspect aux yeux du Village et donc dédouaner potentiellement le vrai Sbire que vous cherchez à protéger. 
+
+- Si vous êtes <Role ESPION /> ou avez un <Role ESPION /> dans votre équipe, il sera important de cibler les rôles clés du Village avec votre accusation.
+
+### Comment conter ?
+
+En préparant le grimoire ou la première nuit, placez le jeton de rappel « Sbire » de l’enquêteur devant le jeton de rôle d’un des sbires de votre choix. Placez également le jeton de rappel « Autre » de l’Enquêteur devant n’importe quel autre jeton de rôle de votre choix.
+
+Durant la première nuit, réveillez l’Enquêteur et montrez-lui les personnes associées aux jetons de rappel « Sbire » et « Autre ». Montrez-lui ensuite le jeton de rôle du joueur associé au jeton de rappel « Sbire ». Rendormez l’Enquêteur. Retirez ensuite les jetons de rappel du grimoire à votre convenance.

@@ -9,42 +9,68 @@ import Role from '/src/domain/role/role.component'
 
 ### Description :
 La première nuit, le Conteur vous désigne 2 joueurs et vous donne ensuite le rôle d’Etranger de l’un des deux.
+
+L’Archiviste apprend qu’un étranger spécifique est en jeu mais ne sait pas qui l’est.
+
+-	Durant la première nuit, l’archiviste est réveillé. Le conteur lui désigne deux joueurs ainsi que le rôle d’étranger de l’un d’entre eux.
+
+-	Il n’apprend cette information qu’une seule fois et n’apprend plus rien par la suite.
+
+-	Le <Role SOULARD /> est un étranger. Si l’Archiviste apprend qu’un des deux joueurs désignés est le <Role SOULARD />, il n’apprend pas le rôle de villageois que le <Role SOULARD /> pense être.
+
  
 ### Exemples  
-> John (<Role VERTUEUX />) et Matthieu (<Role BARON />) sont montrés par le Conteur à l’<Role ARCHIVISTE /> qui aura l’information qu’un des deux joueurs est le <Role VERTUEUX />
+> John (<Role VERTUEUX />) et Matthieu (<Role BARON />) sont montrés par le Conteur à l’<Role ARCHIVISTE /> qui aura l’information qu’un des deux joueurs est le <Role VERTUEUX />.
 
-> S’il n’y a pas d’Etranger dans la partie, l’Archiviste aura l’information “0” par le Conteur
+> S’il n’y a pas d’Etranger dans la partie, l’Archiviste aura l’information “0” par le Conteur.
 
-> Tia (qui est <Role SOULARD />) pense qu’elle est le <Role MOINE /> et Lucy est le <Role CROQUE_MORT />. L’<Role ARCHIVISTE /> apprend qu’entre Tia et Lucy se trouve le <Role SOULARD /> (point mécanique : L’<Role ARCHIVISTE /> apprend le vrai rôle du joueur, en l’occurence que Tia est le <Role SOULARD />)
+> Tia (qui est <Role SOULARD />) pense qu’elle est le <Role MOINE /> et Lucy est le <Role CROQUE_MORT />. L’<Role ARCHIVISTE /> apprend qu’entre Tia et Lucy se trouve le <Role SOULARD /> (point mécanique : L’<Role ARCHIVISTE /> apprend le vrai rôle du joueur, en l’occurence que Tia est le <Role SOULARD />).
 
 
 ### Mécaniques et conseils
 - Il est très important de déceler rapidement lequel des deux joueurs désigné est celui dont vous avez le rôle. Ce joueur joue pour les Gentils, même si son pouvoir d’Etranger handicape le Village. De plus :
-> C’est un vote pour l’équipe des Gentils
-> Vous êtes sûrs que ce n’est pas le Démon
+    
+    - C’est un vote pour l’équipe des Gentils.
+    
+    - Vous êtes sûrs que ce n’est pas le Démon.
 
-- Si vous obtenez un “0” du Conteur, cela signifie qu’il n’y a pas d’Etranger dans le Village. Par déduction, vous savez aussi qu’il n’y a pas de <Role BARON />. Vous pouvez aussi pousser des joueurs à bluffer des rôles d’Etrangers pour les amener à se trahir !
+- Si vous obtenez un “0” du Conteur, cela signifie qu’il n’y a pas d’Etranger dans le Village. Par déduction, vous savez aussi qu’il n’y a pas de <Role BARON />. Vous pouvez aussi pousser des joueurs à bluffer des rôles d’Etrangers en mentant sur vos informations pour amener les maléfiques à se trahir !
 
-- Vous pouvez utiliser les informations reçues durant la première nuit pour innocenter un joueur gentil et ainsi potentiellement bénéficier des informations qu’ils pourraient avoir de son côté si celui-ci a un rôle de détection comme l’Empathique ou le <Role GARDIEN />.
+- Vous pouvez utiliser les informations reçues durant la première nuit pour innocenter un joueur gentil et ainsi potentiellement confirmer d'autres informations le concernant si celui-ci est vérifié par rôle de détection comme l’Empathique ou le <Role GARDIEN />.
 
-- Attendre jusqu'au dernier jour (ou très tard dans la partie) pour partager vos informations avec le groupe peut aussi être une autre stratégie. C’est risqué mais si le Villageois en question reste en vie jusqu’au dernier jour, vous connaîtrez ainsi un joueur qui n’est pas le Démon ! Cela sera plus facile d’identifier ce dernier en réduisant le nombre de suspects.
+- Attendre jusqu'au dernier jour (ou très tard dans la partie) pour partager vos informations avec le groupe peut aussi être une autre stratégie. C’est risqué mais si l' Etranger en question reste en vie jusqu’au dernier jour, vous connaîtrez ainsi un joueur qui n’est pas le Démon ! Cela sera plus facile d’identifier ce dernier en réduisant le nombre de suspects de 3 à 2.
 
-- Les rôles comme le <Role VERTUEUX /> veulent mourir la nuit plutôt que le jour (surtout que si le <Role VERTUEUX /> meurt de jour par exécution, le Village perd immédiatement). Le Démon va souvent garder les rôles d’Etrangers en vie, vous pouvez utiliser vos informations pour cacher l’identité de ces derniers et les faire passer pour un rôle plus important. Le Démon sera donc plus enclin à attaquer ces “faux” rôles (ex : Vous faites passer le <Role VERTUEUX /> pour un <Role MOINE />), vous protégerez ainsi les autres Villageois indirectement (ex: <Role EMPATHIQUE />, ou <Role VOYANTE />) en faisant “perdre un tour” au Démon.
+- Puisque vous recevez toutes vos informations la première nuit, vous pourriez trouver utile de la confirmer en nominant une <Role PUCELLE />. Une autre possibilité est de prétendre être quelqu'un de plus puissant pour inciter le démon à vous tuer protégeant ainsi un <Role CROQUE_MORT /> ou un <Role MOINE />.
 
-- Si parmi les deux joueurs désignés il y a un Villageois, il est pertinent de leur communiquer rapidement cette information. Ils savent donc que les informations obtenues du Conteur sont potentiellement erronées.
+- Les rôles comme le <Role VERTUEUX /> veulent mourir la nuit plutôt que le jour. Le Démon va souvent garder les rôles d’Etrangers en vie, vous pouvez donc essayer d’attirer le démon sur lui. Peut-être pouvez-vous insinuer qu’il a un rôle plus important ? Peut-être pouvez-vous faire savoir qu’il est confirmé qu’il n’est pas le démon, ce qui signifie que le véritable démon devra le tuer dans la nuit ou alors il n’aura qu’une seule autre personne qui pourra être suspecté d’être le démon ? Dans les deux cas, un <Role IMP /> qui attaque un étranger signifie qu’il n’attaque pas un empathique ou <Role EMPATHIQUE />, ou <Role VOYANTE /> et qu’il « perd un tour ».
 
-- A l’inverse, vous pouvez délibérément donner des mauvaises informations sur qui est le Villageois ; le Démon ne ciblera probablement pas un Villageois ; vous protégerez ainsi ces rôles !
+- Si parmi les deux joueurs désignés il y a un <Role SOULARD />, il est pertinent de leur communiquer rapidement cette information. Ils savent donc que les informations obtenues du Conteur sont potentiellement erronées ce qui est aussi une information. 
+
+- A l'inverse, vous pouvez aussi donner de fausses informations sur qui est le <Role SOULARD />. Le démon est moins enclin à attaquer des joueurs qu'il pense être le <Role SOULARD />. Ainsi, vous protéger des joueurs qui sont sobres et qui obtiennent des informations pendant que le démon tue le véritable <Role SOULARD /> à la place.
+
+- Si vous voyez deux joueurs comme potentiel <Role SOULARD />, souvenez-vous que vous pourriez être le véritable <Role SOULARD />.
 
 - Donner vos informations gratuitement incitera les autres joueurs à avoir confiance en vous mais peut-être n’aurez vous pas confiance en les autres : il est toujours possible que ce soit un joueur Maléfique qui rebondisse sur votre information et se mette à bluffer le rôle que vous lui avez communiqué. Par contre, si vous demandez à certains joueurs de vous révéler leur rôle et que cela coïncide avec les informations obtenues du Conteur, vous pourrez leur accorder votre confiance mais eux pourraient être amenés à moins vous faire confiance. Essayez de trouver le juste milieu en donnant des informations partielles des deux côtés. Par exemple, échanger une liste de quelques rôles potentiels et demandez-lui de vous dévoiler quel rôle il pense que vous êtes.
  
 ### Bluffer le rôle d’Archiviste
 
+- Restez cohérent dans votre discours, vous êtes supposés recevoir des informations uniquement durant la première nuit ! On vous aurait désigné deux joueurs et montré un jeton de rôle d'étranger.
+
 - Vous pouvez utiliser vos informations pour soutenir un acolyte Maléfique en le faisant passer pour un innocent aux yeux du Village, vous apportez de la crédibilité au rôle qu’il s’est approprié (particulièrement s’il a choisi <Role VERTUEUX /> ou <Role RECLUS />), cela vous permettra aussi d’échanger des informations avec lui et de soutenir vos théories respectives parce que vous êtes tous deux identifiés comme Gentils.
 
 - Vous pouvez aussi utiliser vos informations pour soutenir un joueur Gentil. Les Etrangers qui ont du mal à acquérir la confiance du Village apprécieront qu’un Archiviste viennent confirmer leur rôle, ils seront donc plus enclins à vous croire et à vous suivre sur les votes.
 
-- En nommant deux joueurs Gentils comme étant potentiellement Villageois, vous pourrez les faire douter sur la qualité de leurs informations ou la puissance de leur capacité (ex : <Role MAIRE />). Le <Role SOULARD /> est un bluff plutôt prudent puisque personne ne pourra confirmer ou infirmer votre information pendant un certain temps.
+- En nommant deux joueurs Gentils comme étant potentiellement <Role SOULARD />, vous pourrez les faire douter sur la qualité de leurs informations ou la puissance de leur capacité (ex : <Role MAIRE />). Le <Role SOULARD /> est un bluff plutôt prudent puisque personne ne pourra confirmer ou infirmer votre information pendant un certain temps.
 
-- Vous pouvez aussi désigner un de vos acolytes Maléfiques comme étant potentiellement le Villageois. Ce qui permet de les protéger si leur bluff ne tient plus et que les informations qu’ils ont données ne tiennent plus la route : “Bah oui, c’est normal, il est Villageois”
+- Vous pouvez aussi désigner un de vos acolytes Maléfiques comme étant potentiellement le <Role SOULARD />. Ce qui permet de les protéger si leur bluff ne tient plus et que les informations qu’ils ont données ne tiennent plus la route : “Bah oui, c’est normal, il est <Role SOULARD />”
 
 - Vous pouvez révéler quel rôle d’Etranger est dans la partie, sans nommer les joueurs désignés. Cela incitera un joueur gentil à venir se dévoiler à vous en vous confirmant son rôle. Si le rôle n’est en réalité pas dans la partie et que personne ne se dévoile, un autre joueur maléfique peut venir conforter votre bluff en bluffant à son tour le rôle d’Etranger que vous évoquiez.
+
+- Si vous êtes <Role ESPION /> ou avez un <Role ESPION /> dans votre équipe, il pourrait vous transmettre d'excellentes informations pour donner du crédit à votre bluff.
+
+### Comment conter ?
+
+En préparant le grimoire ou la première nuit, placez le jeton de rappel « Etranger » de l’archiviste devant le jeton de rôle d’un des étrangers de votre choix. Placez également le jeton de rappel « Autre » de l'Archiviste devant n’importe quel autre jeton de rôle de votre choix.
+
+Durant la première nuit, réveillez l’Archiviste et montrez-lui les personnes associées aux jetons de rappel « Etranger » et « Autre ». Montrez-lui ensuite le jeton de rôle du joueur associé au jeton de rappel « Etranger ». Rendormez l’Archiviste. Retirez ensuite les jetons de rappel du grimoire à votre convenance.
+

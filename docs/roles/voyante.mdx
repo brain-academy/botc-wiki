@@ -8,29 +8,44 @@ import Role from '/src/domain/role/role.component'
 <Role VOYANTE header />
 
 ### Description
-Chaque nuit, choisissez 2 joueurs et vous apprenez si l’un d’eux est un Démon (et uniquement Démon, vous ne détectez pas les Sbires).
-Le Conteur choisit un des joueurs “Gentil” comme étant un faux-positif et vous pouvez voir le <Role RECLUS /> comme étant le Démon. Le faux positif est déterminé à l’avance par le Conteur et ne changera pas durant toute la partie.
+
+Chaque nuit, choisissez 2 joueurs. Vous apprenez si l’un d’eux est le démon (Oui ; Non). Un des joueurs gentils est votre faux positif.
+
+La voyante peut détecter qui est le démon mais pense parfois qu’un joueur gentil est le démon.
+
+-	Chaque nuit, la voyante choisit deux joueurs et apprends si au moins l’un d’entre eux est le démon. Elle n’apprend pas qui parmi eux est le démon mais juste que l’un d’entre eux l’est. Si aucun des deux n’est le démon, la voyante l’apprend.
+
+-	Malheureusement, un joueur gentil, appelé le faux positif, sera considéré comme le démon si la voyante le choisit. Le faux positif est le même pour toute la partie. Ce joueur peut être n’importe quel joueur gentil, y compris la voyante elle-même et la voyante ne sait pas qui est son faux positif.
+
+-	La voyante peut choisir deux joueurs, vivants ou morts, ou même elle-même. Si elle choisit un démon mort, elle reçoit un « oui ». 
+
  
-### Exemple
-> La <Role VOYANTE /> choisit le <Role MOINE /> et le <Role CROQUE_MORT />, elle obtient un “NON” du Conteur
+### Exemples
 
-> La <Role VOYANTE /> choisit l’<Role IMP /> et l’<Role EMPATHIQUE />, elle obtient un “OUI”
+> La <Role VOYANTE /> choisit le <Role MOINE /> et le <Role CROQUE_MORT />, elle obtient un “NON” du Conteur.
 
-> La <Role VOYANTE /> choisit l’<Role IMP /> en vie et l’ancien <Role IMP /> à présent mort, elle obtient un “OUI”
+> La <Role VOYANTE /> choisit l’<Role IMP /> et l’<Role EMPATHIQUE />, elle obtient un “OUI”.
 
-> La <Role VOYANTE /> choisit l’ancien <Role IMP /> à présent mort et le <Role CUISTOT />, elle obtient un “OUI” car le <Role IMP /> s’est réincarné ailleurs mais son rôle de <Role IMP /> persiste 
+> La <Role VOYANTE /> choisit un <Role MAJORDOME />  en vie et un <Role IMP /> à présent mort, elle obtient un “OUI”.
 
-> La <Role VOYANTE /> se choisit elle-même et le <Role VERTUEUX />. Le <Role VERTUEUX /> est le faux positif, elle obtient un “OUI”
+> La <Role VOYANTE /> se choisit elle-même et le <Role VERTUEUX />. Le <Role VERTUEUX /> est le faux positif, elle obtient un “OUI”.
 
-> La <Role VOYANTE /> choisit le <Role RECLUS /> et le <Role GARDIEN />, elle peut obtenir un “OUI”
+> La <Role VOYANTE /> choisit le <Role RECLUS /> et le <Role GARDIEN />, elle peut obtenir un “OUI”.
 
 
 ### Mécaniques et conseils
+
 - Obtenir un “NON” est plus utile qu’un “OUI” car cela réduit la liste des suspects et signifie qu’aucun des deux joueurs n’est, à cet instant, le Démon.
+
+- Votre information ne concerne que le démon. Avoir un "NON" sur quelqu'un ne signifie pas qu'il est gentil. Ca peut toujours être un sbire.
 
 - Vous pouvez recouper les joueurs que vous avez dédouané pour comprendre à qui correspond le “OUI” obtenu : choisissez un des joueurs sur lequel vous avez obtenu un “OUI” ainsi qu’un joueur sur lequel vous avez obtenu un “NON”. Si vous obtenez à présent un “OUI”, vous pouvez normalement en déduire que vous avez identifié un potentiel Démon. Si c’est un “NON”, il s’agit probablement de l’autre personne sur laquelle vous aviez obtenu un “OUI”.
 
+- Si vous avez obtenu un "OUI" sur des joueurs pour lesquels vous avez des suspicions, obtenir la confirmation de qui déclenche ce "OUI" est un objectif évident, surtout si ce joueur est encore vivant à la fin de la partie.
+
 - Vous avez peu de nuits pour rassembler un maximum d’informations, commencez par faire des paires sans avoir de doublons puis recoupez ensuite vos informations pour resserrer les mailles du filet sur les joueurs les plus suspects.
+
+- Rappelez vous que le <Role IMP /> peut être exécuté et ainsi, la <Role CROQUEUSE_D_HOMMES /> deviendra le démon qui pourra à son tour se tuer pour qu'un autre sbire prenne le relais. Même si vous avez un "NON" sur quelqu'un en début de partie, cela ne signifie pas qu'elle ne peut pas être le démon maintenant. Si vous pensez que le démon est mort, essayez de choisir un joueur que vous pensez être sbire et pour qui vous aviez eu un "NON" pour voir si cette information a changée.
 
 - Votre faux-positif est déterminé au début de la partie et ne change pas, c’est le seul joueur qui produira pour vous de la fausse information (sauf si le <Role RECLUS /> est en jeu). Gardez en tête que votre faux positif peut être n’importe qui, vous inclut : obtenir un “OUI” n’est donc ne signifie pas à 100% que vous avez identifié le Démon.
 
@@ -38,11 +53,13 @@ Le Conteur choisit un des joueurs “Gentil” comme étant un faux-positif et v
 
 - Faites attention au <Role RECLUS />, il peut être identifié comme étant le Démon par votre pouvoir (Ce n’est pas la même mécanique que le faux positif, les deux peuvent coexister dans une même partie).
 
-- Bluffer un rôle que le Démon n’ait pas envie de tuer en priorité (<Role VERTUEUX />, <Role MAJORDOME />, <Role SOLDAT /> ou <Role GARDIEN />) peut vous permettre de vivre plus longtemps.
+- Bluffer un rôle que le Démon n’a pas envie de tuer en priorité (<Role VERTUEUX />, <Role MAJORDOME />, <Role SOLDAT /> ou <Role GARDIEN />) peut vous permettre de vivre plus longtemps et d'avoir plus d'information.
  
 ### Bluffer le rôle de Voyante
 
 - Prenez en compte que vous êtes censés vous réveiller chaque nuit où vous êtes en vie, y compris la première. Quand vous vous dévoilerez au Village en tant que <Role VOYANTE />, ils attendront des explications détaillées sur chaque nuit. Préparez à l’avance votre histoire et soyez cohérent avec ce que vous auriez dit à certains joueurs en privé.
+
+- Vous pouvez mentir en prétendant que ces deux joueurs ne sont pas le démon pour dédouaner vos camarades maléfiques.
 
 - La <Role VOYANTE /> peut vraiment semer le doute dans le Village. Le <Role RECLUS /> peut être vu comme étant le Démon et le Démon peut changer de personne (suicide ou <Role CROQUEUSE_D_HOMMES />’homme). Le faux positif peut aussi donner une mauvaise information rendant suspect un joueur “Gentil”. Trouvez toujours le moyen de donner une explication plausible si vos informations n’apparaissent pas comme logiques aux yeux des autres Villageois et soyez convaincants !
 
@@ -56,4 +73,14 @@ Le Conteur choisit un des joueurs “Gentil” comme étant un faux-positif et v
 
 - Si vous êtes le <Role IMP />, vous pouvez vous dévoiler publiquement comme étant la <Role VOYANTE /> puis vous suicider la nuit pour ajouter de la crédibilité à vos informations.
 
-- Si vous êtes la <Role CROQUEUSE_D_HOMMES />’homme, vous pouvez accuser votre vrai Démon et faire tout pour qu’il soit exécuté. Cela permet à un éventuel <Role CROQUE_MORT /> de confirmer que vous avez exécuté le Démon et donc que vous êtes bel et bien la <Role VOYANTE /> !
+- Si vous êtes la <Role CROQUEUSE_D_HOMMES />, vous pouvez accuser votre vrai Démon et faire tout pour qu’il soit exécuté. Cela permet à un éventuel <Role CROQUE_MORT /> de confirmer que vous avez exécuté le Démon et donc que vous êtes bel et bien la <Role VOYANTE /> !
+
+- Si vous savez qu'il y a <Role RECLUS />, prétendez avoir eu un "OUI" sur lui. Si vous êtes <Role ESPION /> ou avez un <Role ESPION /> dans votre équipe, vous pouvez prétendre avoir eu un "OUI" sur le <Role RECLUS /> avant qu'il ne se dévoile ce qui donnerait du crédit à votre bluff.
+
+### Comment conter ?
+
+En préparant le grimoire ou la première nuit, placez le jeton de rappel « Faux positif » de la voyante devant le jeton de rôle d’un des joueurs gentils de votre choix. Ce joueur sera le faux positif de la voyante pour toute la partie.
+
+Chaque nuit, réveillez la Voyante. La voyante désigne deux joueurs de son choix. Si l’un des joueurs choisi est le démon ou le faux positif, faites un « oui » de la tête. Sinon, faites un « non » de la tête. Rendormez la voyante.
+
+_Dans les villages plus petits, faire de la voyante son propre faux positif est quelques fois conseillé car la voyante a de meilleures informations de cette façon._
