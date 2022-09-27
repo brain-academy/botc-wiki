@@ -1,10 +1,10 @@
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import React from 'react'
 import { Iconised, MarkdownDocument, Theme } from '../../core/markdown-types'
+import { RoleType } from '../role/role'
 import Role from '../role/role.component'
 import M from './module'
 import { Modules } from './modules'
-import { RoleType } from '../role/role'
 
 const _base_url = '/docs/modules'
 const _base_image_path = '/img/blood-on-the-clocktower/modules'
@@ -28,7 +28,7 @@ const Module = ({ page, tile, module, ...other }: ModuleProps) => {
     let { iconPath, fabled, roles, path, name, description }: M & MarkdownDocument & Iconised = Iconised(MarkdownDocument({ _base_url, _base_image_path, ...module }))
     iconPath = useBaseUrl(iconPath)
     path = useBaseUrl(path)
-    const { color, darkBackgroundColor, lightBackgroundColor }: Theme = ModuleStyles.get(Object.keys(other)[0]) || { color: 'black', darkBackgroundColor: 'darkgrey', lightBackgroundColor: 'lightgrey' }
+    const { color, darkBackgroundColor, lightBackgroundColor }: Theme = Modules[Object.keys(other)[0]]?.theme || { color: 'black', darkBackgroundColor: 'darkgrey', lightBackgroundColor: 'lightgrey' }
 
     if (!!page)
         return <div>
@@ -66,10 +66,8 @@ const Module = ({ page, tile, module, ...other }: ModuleProps) => {
     else return <a href={path} style={{ color }}>{name}</a>
 }
 
-export default Module
+Modules.TROUBLE_BREWING.theme = { color: 'red', darkBackgroundColor: '', lightBackgroundColor: '' }
+Modules.BAD_MOON_RISING.theme = { color: 'orange', darkBackgroundColor: '', lightBackgroundColor: '' }
+Modules.SECTS_AND_VIOLETS.theme = { color: 'darkorchid', darkBackgroundColor: '', lightBackgroundColor: '' }
 
-const ModuleStyles = new Map<string, Theme>([
-    ['TROUBLE_BREWING', { color: 'red', darkBackgroundColor: '', lightBackgroundColor: '' }],
-    ['BAD_MOON_RISING', { color: 'orange', darkBackgroundColor: '', lightBackgroundColor: '' }],
-    ['SECTS_AND_VIOLETS', { color: 'darkorchid', darkBackgroundColor: '', lightBackgroundColor: '' }]
-])
+export default Module

@@ -63,7 +63,7 @@ export const VILLAGEOIS = {
     VOYANTE: Villageois.new({ name: 'Voyante', originalName: 'Fortune Teller', clazz: 'DETECTION', wakeUpSchedule: 'EVERY_NIGHT' }),
 }
 
-export const ETRANGER: { [key: string]: Etranger } = {
+export const ETRANGER = {
     ACROBATE: Etranger.new({ name: 'Acrobate', originalName: 'Acrobat' }),
     BALANCE: Etranger.new({ name: 'Balance', originalName: 'Snitch' }),
     BARBIER: Etranger.new({ name: 'Barbier', originalName: 'Barber' }),
@@ -85,7 +85,7 @@ export const ETRANGER: { [key: string]: Etranger } = {
     VERTUEUX: Etranger.new({ name: 'Vertueux', originalName: 'Saint' }),
 }
 
-export const SBIRE: { [key: string]: Sbire } = {
+export const SBIRE = {
     ASSASSIN: Sbire.new({ name: 'Assassin', originalName: 'Assassin', wakeUpSchedule: 'UNTIL_ABILITY_CONSUMED' }),
     AVOCAT_DU_DIABLE: Sbire.new({ name: 'Avocat du Diable', filename: 'avocat-du-diable', originalName: `Devil's Advocate`, clazz: 'PROTECTION', wakeUpSchedule: 'EVERY_NIGHT' }),
     BARON: Sbire.new({ name: 'Baron', originalName: 'Baron' }),
@@ -109,7 +109,7 @@ export const SBIRE: { [key: string]: Sbire } = {
     VIEILLE_CHOUETTE: Sbire.new({ name: 'Vieille Chouette', filename: 'vieille-chouette', originalName: 'Pit Hag', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST' }),
 }
 
-export const DEMON: { [key: string]: Demon } = {
+export const DEMON = {
     AL_HADIKHIA: Demon.new({ name: 'Al-Hadikhia', filename: 'al-hadikhia', originalName: 'Al-Hadikhia', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST' }),
     EMEUTE: Demon.new({ name: 'Emeute', originalName: 'Riot' }),
     FANG_GU: Demon.new({ name: 'Fang Gu', filename: 'fang-gu', originalName: 'Fang Gu', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST' }),
@@ -127,7 +127,7 @@ export const DEMON: { [key: string]: Demon } = {
     ZOMBUUL: Demon.new({ name: 'Zombuul', originalName: 'Zombuul', wakeUpSchedule: `Si aucune exécution la veille` }),
 }
 
-export const VOYAGEUR: { [key: string]: Voyageur } = {
+export const VOYAGEUR = {
     BOUC_EMISSAIRE: Voyageur.new({ name: 'Bouc Emissaire', filename: 'bouc-emissaire', originalName: 'Scapegoat' }),
     BUREAUCRATE: Voyageur.new({ name: 'Bureaucrate', originalName: 'Bureaucrat', wakeUpSchedule: 'EVERY_NIGHT' }),
     MENDIANT: Voyageur.new({ name: 'Mendiant', originalName: 'Beggar' }),
@@ -146,7 +146,7 @@ export const VOYAGEUR: { [key: string]: Voyageur } = {
     GANGSTER: Voyageur.new({ name: 'Gangster', originalName: 'Gangster' }),
 }
 
-export const LEGENDAIRE: { [key: string]: Legendaire } = {
+export const LEGENDAIRE = {
     ANGE: Legendaire.new({ name: `Ange`, originalName: 'Angel' }),
     ARTISAN: Legendaire.new({ name: `Artisan`, originalName: 'Toymaker' }),
     BIBLIOTHECAIRE: Legendaire.new({ name: `Bibliothécaire`, filename: 'bibliothecaire', originalName: 'Hells Librarian' }),

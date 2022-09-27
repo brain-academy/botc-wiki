@@ -2,13 +2,15 @@ import Role from "../role/role"
 import { DEMON, ETRANGER, SBIRE, VILLAGEOIS, VOYAGEUR } from "../role/roles"
 import M from "./module"
 
+type ExtendableModule = M & {[key: string]: any}
+
 export const Modules: {
-    TROUBLE_BREWING: M,
-    BAD_MOON_RISING: M,
-    SECTS_AND_VIOLETS: M,
-    DEADLY_PENANCE_DAY: M,
-    LARGELY_UN_FAIRE: M,
-    EXPERIMENTAL: M,
+    TROUBLE_BREWING: ExtendableModule,
+    BAD_MOON_RISING: ExtendableModule,
+    SECTS_AND_VIOLETS: ExtendableModule,
+    DEADLY_PENANCE_DAY: ExtendableModule,
+    LARGELY_UN_FAIRE: ExtendableModule,
+    EXPERIMENTAL: ExtendableModule,
     [key: string]: any
 } = {
     TROUBLE_BREWING: {
