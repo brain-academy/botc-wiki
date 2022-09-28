@@ -16,14 +16,8 @@ interface ModuleProps {
 }
 
 const Module = ({ page, tile, module, ...other }: ModuleProps) => {
-    if (!module) {
-        const validModules: M[] = Object.keys(other).map(name => Modules[name])
-        if (validModules.length > 1)
-            throw new Error(`Found multiple BOTC modules in the same component: ${validModules.join('|')}`)
-        if (validModules.length === 0)
-            throw new Error(`Found Module component with no valid BoTC Module (component's attributes: [${Object.keys(other)}])`)
-        module = validModules[0]
-    }
+    if (!module) 
+        module = Modules[Object.keys(other)[0]] as M
 
     let { iconPath, fabled, roles, path, name, description }: M & MarkdownDocument & Iconised = Iconised(MarkdownDocument({ _base_url, _base_image_path, ...module }))
     iconPath = useBaseUrl(iconPath)

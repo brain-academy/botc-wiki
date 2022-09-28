@@ -5,7 +5,7 @@ import Module from '../module/module'
 import { default as ModuleComponent } from '../module/module.component'
 import { Modules } from '../module/modules'
 import R, { Demon, Etranger, Legendaire, RoleType, Sbire, Villageois, Voyageur, WakeUpSchedule } from './role'
-import { ROLES } from './roles'
+import { Roles } from './roles'
 import { jsx } from '@emotion/react'
 import { Iconised, MarkdownDocument, Theme } from '../../core/markdown-types'
 
@@ -19,17 +19,11 @@ interface RoleProps {
 }
 
 const Role = ({ tile, header, role, ...other }: RoleProps) => {
-    if (!role) {
-        const validRoles: R[] = Object.keys(other).map(name => ROLES[name])
-        if (validRoles.length > 1)
-            throw new Error(`Found multiple BoTC roles in the same component: ${validRoles.join('|')}`)
-        if (validRoles.length === 0)
-            throw new Error(`Found Role component with no valid BoTC Role (component's attributes: [${Object.keys(other)}])`)
-        role = validRoles[0]
-    }
-    
-    let { name, type, originalName, path, iconPath, clazz, wakeUpSchedule }: R & MarkdownDocument & Iconised = Iconised(MarkdownDocument({_base_url, _base_image_path, ...role}))
-    const {color, darkBackgroundColor, lightBackgroundColor}: Theme = RoleStyles.get(role.type) || { color: 'black', darkBackgroundColor: 'darkgrey', lightBackgroundColor: 'lightgrey' }
+    if (!role)
+        role = { ...Roles.VILLAGEOIS, ...Roles.ETRANGER, ...Roles.SBIRE, ...Roles.DEMON, ...Roles.VOYAGEUR, ...Roles.LEGENDAIRE }[Object.keys(other)[0]] as R
+
+    let { name, type, originalName, path, iconPath, clazz, wakeUpSchedule }: R & MarkdownDocument & Iconised = Iconised(MarkdownDocument({ _base_url, _base_image_path, ...role }))
+    const { color, darkBackgroundColor, lightBackgroundColor }: Theme = RoleStyles.get(role.type) || { color: 'black', darkBackgroundColor: 'darkgrey', lightBackgroundColor: 'lightgrey' }
     path = useBaseUrl(path)
     iconPath = useBaseUrl(iconPath)
 
@@ -78,5 +72,5 @@ const RoleStyles = new Map<RoleType, Theme>([
     [RoleType.Sbire, { color: 'rgb(248,2,5)', darkBackgroundColor: 'rgb(201, 1, 4)', lightBackgroundColor: '' }],
     [RoleType.Demon, { color: 'rgb(197,0,0)', darkBackgroundColor: 'rgb(141, 0, 0)', lightBackgroundColor: '' }],
     [RoleType.Voyageur, { color: 'rgb(154,77,159)', darkBackgroundColor: 'rgb(126, 63, 131)', lightBackgroundColor: '' }],
-    [RoleType.Legendaire,{ color: 'rgb(168,153,50)', darkBackgroundColor: 'rgb(139, 127, 43)', lightBackgroundColor: '' }]
+    [RoleType.Legendaire, { color: 'rgb(168,153,50)', darkBackgroundColor: 'rgb(139, 127, 43)', lightBackgroundColor: '' }]
 ])
