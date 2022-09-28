@@ -1,8 +1,8 @@
 import Role from "../role/role"
 import { Roles } from "../role/roles"
-import M from "./module"
+import Module from "./module"
 
-type ExtendableModule = M & {[key: string]: any}
+type ExtendableModule = Module & { [key: string]: any }
 
 export const Modules: {
     TROUBLE_BREWING: ExtendableModule,
@@ -10,7 +10,7 @@ export const Modules: {
     SECTS_AND_VIOLETS: ExtendableModule,
     DEADLY_PENANCE_DAY: ExtendableModule,
     LARGELY_UN_FAIRE: ExtendableModule,
-    EXPERIMENTAL: ExtendableModule,
+    EXPERIMENTAL?: ExtendableModule,
     [key: string]: any
 } = {
     TROUBLE_BREWING: {
@@ -217,60 +217,23 @@ export const Modules: {
             Roles.SBIRE.VEUVE_NOIRE,
             Roles.DEMON.LEVIATHAN
         ]
-    },
-    EXPERIMENTAL: {
-        name: 'Expérimental',
-        filename: 'experimental',
-        roles: [
-            Roles.VILLAGEOIS.AERONAUTE,
-            Roles.VILLAGEOIS.ALCHIMISTE,
-            Roles.VILLAGEOIS.AMNESIQUE,
-            Roles.VILLAGEOIS.ATHEE,
-            Roles.VILLAGEOIS.CANNIBALE,
-            Roles.VILLAGEOIS.CHASSEUR,
-            Roles.VILLAGEOIS.CHASSEUR_DE_PRIMES,
-            Roles.VILLAGEOIS.CHEF_DE_SECTE,
-            Roles.VILLAGEOIS.CULTIVATEUR_DE_PAVOT,
-            Roles.VILLAGEOIS.ENFANT_DE_CHOEUR,
-            Roles.VILLAGEOIS.FERMIER,
-            Roles.VILLAGEOIS.GENERAL,
-            Roles.VILLAGEOIS.INGENIEUR,
-            Roles.VILLAGEOIS.LYCANTHROPE,
-            Roles.VILLAGEOIS.MAGICIEN,
-            Roles.VILLAGEOIS.NOBLE,
-            Roles.VILLAGEOIS.PECHEUR,
-            Roles.VILLAGEOIS.PREDICATEUR,
-            Roles.VILLAGEOIS.ROI,
-            Roles.VILLAGEOIS.PIXIE,
-            Roles.VILLAGEOIS.VEILLEUR_DE_NUIT,
-            Roles.ETRANGER.ACROBATE,
-            Roles.ETRANGER.BALANCE,
-            Roles.ETRANGER.DEMOISELLE,
-            Roles.ETRANGER.GOLEM,
-            Roles.ETRANGER.HERETIQUE,
-            Roles.ETRANGER.MAITRE_DES_PUZZLES,
-            Roles.ETRANGER.POLITICIEN,
-            Roles.SBIRE.BOOMDANDY,
-            Roles.SBIRE.GOBELIN,
-            Roles.SBIRE.MARIONETTE,
-            Roles.SBIRE.MEZEPHELES,
-            Roles.SBIRE.PROPHETE_DE_L_EFFROI,
-            Roles.SBIRE.PSYCHOPATHE,
-            Roles.SBIRE.VEUVE_NOIRE,
-            Roles.DEMON.AL_HADIKHIA,
-            Roles.DEMON.EMEUTE,
-            Roles.DEMON.LEGION,
-            Roles.DEMON.LEVIATHAN,
-            Roles.DEMON.PTIT_MONSTRE,
-            Roles.DEMON.SANGSUE,
-            Roles.VOYAGEUR.GANGSTER
-        ],
-        detail: `Les rôles expérimentaux sont des rôles qui n’ont pas encore de script officiel associé. Plus tard, ils pourraient être inclus dans des scripts d’extensions officiels. Pour l’instant, vous êtes encouragés à les tester en les incluant dans vos propres scripts.
-    Recommandés pour les joueurs et conteurs qui ont joué beaucoup de parties de Blood on the Clocktower.`
     }
+}
+
+Modules.EXPERIMENTAL = {
+    name: 'Expérimental',
+    filename: 'experimental',
+    roles: Object.values(Roles)
+        .reduce((a, b) => ([...a, ...Object.values(b)]), [] as Role[])
+        .filter(role => !Object.values(Modules)
+            .flatMap((module: Module) => module.roles)
+            .map(r => r.name)
+            .includes(role.name)),
+    detail: `Les rôles expérimentaux sont des rôles qui n’ont pas encore de script officiel associé. Plus tard, ils pourraient être inclus dans des scripts d’extensions officiels. Pour l’instant, vous êtes encouragés à les tester en les incluant dans vos propres scripts.
+    Recommandés pour les joueurs et conteurs qui ont joué beaucoup de parties de Blood on the Clocktower.`
 }
 
 export const MAIN_MODULES = [Modules.TROUBLE_BREWING, Modules.BAD_MOON_RISING, Modules.SECTS_AND_VIOLETS]
 
-Modules.containing = (role: Role): M[] => (Object.values(Modules) as M[])
+Modules.containing = (role: Role): Module[] => (Object.values(Modules) as Module[])
     .filter(module => module?.roles?.includes(role) || false)

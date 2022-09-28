@@ -20,7 +20,7 @@ interface RoleProps {
 }
 
 const Role = ({ tile, header, role, ...other }: RoleProps) => {
-    const { colorMode, setColorMode } = useColorMode()
+    const { colorMode } = useColorMode()
 
     if (!role)
         role = { ...Roles.VILLAGEOIS, ...Roles.ETRANGER, ...Roles.SBIRE, ...Roles.DEMON, ...Roles.VOYAGEUR, ...Roles.LEGENDAIRE }[Object.keys(other)[0]] as R

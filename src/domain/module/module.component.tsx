@@ -27,10 +27,12 @@ const Module = ({ page, tile, module, ...other }: ModuleProps) => {
     path = useBaseUrl(path)
     const { color, darkBackgroundColor, lightBackgroundColor }: Theme = Modules[Object.keys(other)[0]]?.theme || { color: 'black', darkBackgroundColor: 'darkgrey', lightBackgroundColor: 'lightgrey' }
 
-
     if (!!page)
         return <div>
-            {<div style={{ width: '100%', textAlign: 'center' }}><img style={{ width: '300px', height: '300px' }} src={iconPath} alt={name} /></div>}
+            {
+                hasImage &&
+                <div style={{ width: '100%', textAlign: 'center' }}><img style={{ width: '300px', height: '300px' }} src={iconPath} onError={() => setHasImage(false)} /></div>
+            }
             {fabled && <p style={{ whiteSpace: 'pre-line', textAlign: 'justify', textJustify: 'inter-word', fontStyle: 'italic', fontSize: 'large', color }}>
                 <label>"</label>{fabled}<label>"</label>
             </p>}
