@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import useBaseUrl from '@docusaurus/useBaseUrl'
+import { useColorMode } from '@docusaurus/theme-common'
 import React, { useState } from 'react'
 import { Iconised, MarkdownDocument, Theme } from '../../core/markdown-types'
 import { RoleType } from '../role/role'
@@ -19,13 +20,16 @@ interface ModuleProps {
 
 const Module = ({ page, tile, module, ...other }: ModuleProps) => {
     let [hasImage, setHasImage] = useState(true)
+    const { colorMode } = useColorMode()
+
     if (!module)
         module = Modules[Object.keys(other)[0]] as M
 
-    let { iconPath, fabled, roles, path, name, description }: M & MarkdownDocument & Iconised = Iconised(MarkdownDocument({ _base_url, _base_image_path, ...module }))
+    let { iconPath, fabled, detail, roles, path, name, description }: M & MarkdownDocument & Iconised = Iconised(MarkdownDocument({ _base_url, _base_image_path, ...module }))
     iconPath = useBaseUrl(iconPath)
     path = useBaseUrl(path)
-    const { color, darkBackgroundColor, lightBackgroundColor }: Theme = Modules[Object.keys(other)[0]]?.theme || { color: 'black', darkBackgroundColor: 'darkgrey', lightBackgroundColor: 'lightgrey' }
+    const { color, darkBackgroundColor, lightBackgroundColor }: Theme = Modules[Object.keys(other)[0]]?.theme
+        || { color: colorMode === 'dark' ? 'lightgrey' : 'black', darkBackgroundColor: 'darkgrey', lightBackgroundColor: 'lightgrey' }
 
     if (!!page)
         return <div>
@@ -33,8 +37,8 @@ const Module = ({ page, tile, module, ...other }: ModuleProps) => {
                 hasImage &&
                 <div style={{ width: '100%', textAlign: 'center' }}><img style={{ width: '300px', height: '300px' }} src={iconPath} onError={() => setHasImage(false)} /></div>
             }
-            {fabled && <p style={{ whiteSpace: 'pre-line', textAlign: 'justify', textJustify: 'inter-word', fontStyle: 'italic', fontSize: 'large', color }}>
-                <label>"</label>{fabled}<label>"</label>
+            {(fabled || detail) && <p style={{ whiteSpace: 'pre-line', textAlign: 'justify', textJustify: 'inter-word', fontStyle: 'italic', fontSize: 'large', color }}>
+                <label>"</label>{fabled || detail}<label>"</label>
             </p>}
             {
                 Object.keys(RoleType)

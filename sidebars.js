@@ -1,6 +1,6 @@
 let fs = require('fs')
 
-const MODULES = ['trouble-brewing', 'bad-moon-rising', 'sects-and-violets', 'deadly-penance-day','experimental']
+const MODULES = ['trouble-brewing', 'bad-moon-rising', 'sects-and-violets', 'deadly-penance-day', 'largely-un-faire','experimental']
 const FICHES = ['trouble-brewing', 'bad-moon-rising', 'sects-and-violets', 'deadly-penance-day', 'a-day-to-remember', 'laissez-un-faire', 'largely-un-faire']
 
 module.exports = {
