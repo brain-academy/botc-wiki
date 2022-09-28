@@ -12,10 +12,12 @@
         "clear": "docusaurus clear"
     },
     "dependencies": {
+        "@chakra-ui/react": "^2.3.4",
         "@docusaurus/core": "^2.0.1",
         "@docusaurus/module-type-aliases": "^2.0.1",
         "@docusaurus/preset-classic": "^2.0.1",
         "@emotion/react": "^11.10.4",
+        "@emotion/styled": "^11.10.4",
         "@tsconfig/docusaurus": "^1.0.6",
         "@types/react": "^18.0.16",
         "@types/react-helmet": "^6.1.5",
@@ -23,6 +25,7 @@
         "babel-plugin-transform-class-properties": "^6.24.1",
         "clsx": "^1.2.1",
         "docusaurus-plugin-sass": "^0.2.2",
+        "framer-motion": "^7.4.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-jsx": "^1.0.0",

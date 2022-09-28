@@ -21,7 +21,3 @@ export interface Theme {
     darkBackgroundColor: string,
     lightBackgroundColor: string
 }
-
-export function Themed(theme: Theme, base: any) {
-    return { theme, ...base }
-}

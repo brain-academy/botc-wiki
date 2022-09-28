@@ -1,10 +1,12 @@
+/** @jsx jsx */
 import useBaseUrl from '@docusaurus/useBaseUrl'
-import React from 'react'
+import React, { useState } from 'react'
 import { Iconised, MarkdownDocument, Theme } from '../../core/markdown-types'
 import { RoleType } from '../role/role'
 import Role from '../role/role.component'
 import M from './module'
 import { Modules } from './modules'
+import { jsx } from '@emotion/react'
 
 const _base_url = '/docs/modules'
 const _base_image_path = '/img/blood-on-the-clocktower/modules'
@@ -16,7 +18,8 @@ interface ModuleProps {
 }
 
 const Module = ({ page, tile, module, ...other }: ModuleProps) => {
-    if (!module) 
+    let [hasImage, setHasImage] = useState(true)
+    if (!module)
         module = Modules[Object.keys(other)[0]] as M
 
     let { iconPath, fabled, roles, path, name, description }: M & MarkdownDocument & Iconised = Iconised(MarkdownDocument({ _base_url, _base_image_path, ...module }))
@@ -24,9 +27,10 @@ const Module = ({ page, tile, module, ...other }: ModuleProps) => {
     path = useBaseUrl(path)
     const { color, darkBackgroundColor, lightBackgroundColor }: Theme = Modules[Object.keys(other)[0]]?.theme || { color: 'black', darkBackgroundColor: 'darkgrey', lightBackgroundColor: 'lightgrey' }
 
+
     if (!!page)
         return <div>
-            {iconPath && <div style={{ width: '100%', textAlign: 'center' }}><img style={{ width: '300px', height: '300px' }} src={iconPath} alt={name} /></div>}
+            {<div style={{ width: '100%', textAlign: 'center' }}><img style={{ width: '300px', height: '300px' }} src={iconPath} alt={name} /></div>}
             {fabled && <p style={{ whiteSpace: 'pre-line', textAlign: 'justify', textJustify: 'inter-word', fontStyle: 'italic', fontSize: 'large', color }}>
                 <label>"</label>{fabled}<label>"</label>
             </p>}
@@ -47,12 +51,16 @@ const Module = ({ page, tile, module, ...other }: ModuleProps) => {
             }
         </div>
     else if (!!tile)
-        return <div style={{ width: '100%', maxWidth: '400px', marginBottom: '20px', textAlign: 'center' }}>
+        return <div css={{ width: '100%', maxWidth: '400px', marginBottom: '20px', textAlign: 'center' }}>
             <a href={path}>
                 {
-                    !!iconPath
-                        ? <img style={{ width: '330px', height: '300px' }} src={iconPath} alt={name} />
-                        : <h3 style={{ textAlign: 'center' }}>{name}</h3>
+                    <React.Fragment>
+                        {
+                            !!hasImage ?
+                                <img css={{ width: '330px', height: '300px', display: '' }} src={iconPath} onError={() => setHasImage(false)} alt={name} />
+                                : <h3 css={{ textAlign: 'center' }}>{name}</h3>
+                        }
+                    </React.Fragment>
                 }
             </a>
             <p style={{ padding: '0 10px 0 10px', whiteSpace: 'pre-line' }}>{description}</p>

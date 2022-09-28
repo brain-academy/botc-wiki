@@ -4,7 +4,7 @@
         "src/"
     ],
     "compilerOptions": {
-        "lib": ["ESNext"],
+        "lib": ["ESNext", "DOM"],
         "target": "es6",
         "declaration": true,
         "moduleResolution": "node",
