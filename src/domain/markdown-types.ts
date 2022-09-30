@@ -16,6 +16,8 @@ export function Iconised<T>(base: T & { filename: string, _base_image_path: stri
     }
 }
 
+export type Themed = { theme: Theme }
+
 export interface Theme {
     color: string,
     darkBackgroundColor: string,

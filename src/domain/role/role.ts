@@ -1,4 +1,6 @@
-export abstract class Role {
+import { BotcEntity } from "../botc-entity"
+
+export abstract class Role implements BotcEntity {
 
     constructor(
         readonly name: string = name.toLocaleLowerCase(),
@@ -19,7 +21,7 @@ export abstract class Role {
     }
 }
 
-export enum RoleType { Villageois, Etranger, Sbire, Demon, Voyageur, Legendaire }
+export enum RoleType { Villageois, Etranger, Sbire, Demon, Voyageur }
 
 export interface CreateRole {
     name: string
@@ -52,11 +54,6 @@ export class Demon extends Role implements Evil {
 export class Voyageur extends Role {
     static readonly type = RoleType.Voyageur
     static new = (role: CreateRole): Voyageur => super.new({ type: this.type, ...role })
-}
-
-export class Legendaire extends Role {
-    static readonly type = RoleType.Legendaire
-    static new = (role: CreateRole): Legendaire => super.new({ type: this.type, ...role })
 }
 
 /** Alignment type */

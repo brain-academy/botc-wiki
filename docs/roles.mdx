@@ -1,0 +1,31 @@
+---
+title: Rôles
+hide_title: true
+---
+
+import { Roles } from '/src/domain/role/roles'
+import Role from '/src/components/role.component'
+
+## Villageois
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
+	{ Object.values(Roles.VILLAGEOIS).map(role => <Role key={role.name} role={role} tile="true" />) }
+</div>
+
+## Étrangers
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
+	{ Object.values(Roles.ETRANGER).map(role => <Role key={role.name} role={role} tile="true" />) }
+</div>
+
+## Sbires
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
+	{ Object.values(Roles.SBIRE).map(role => <Role key={role.name} role={role} tile="true" />) }
+</div>
+
+## Démons
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
+	{ Object.values(Roles.DEMON).map(role => <Role key={role.name} role={role} tile="true" />) }
+</div>

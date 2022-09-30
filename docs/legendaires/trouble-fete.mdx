@@ -2,10 +2,10 @@
 title: Trouble-fête
 ---
 
-import Module from '/src/domain/module/module.component'
-import Role from '/src/domain/role/role.component'
+import Module from '/src/components/module.component'
+import Fabled from '/src/components/fabled.component'
 
-<Role TROUBLE_FETE header />
+<Fabled TROUBLE_FETE header />
 
 ### Description :
 
@@ -13,20 +13,20 @@ Une fois par partie, le démon va secrètement choisir un joueur gentil vivant. 
 
 Certaines parties n’auront pas assez de temps pour se terminer. Peut-être que l’endroit où vous jouez va fermer. Peut-être que certains joueurs ont besoin de partir subitement et que la partie ne peut pas continuer sans eux. Peut-être que les villageois refusent de tuer le jour et que le démon refuse de tuer la nuit. 
 
-Le <Role TROUBLE_FETE /> peut être activer par le conteur à n’importe quel moment. Pour cela, tous les joueurs ferment leurs yeux pendant que le démon choisit un joueur gentil vivant à provoquer en duel. Ensuite, après une minute ou deux, tous les joueurs vont choisir (en levant la main) lequel de ces deux joueurs gagne. La partie est ensuite finie et l’équipe du joueur victorieux gagne.
+Le <Fabled TROUBLE_FETE /> peut être activer par le conteur à n’importe quel moment. Pour cela, tous les joueurs ferment leurs yeux pendant que le démon choisit un joueur gentil vivant à provoquer en duel. Ensuite, après une minute ou deux, tous les joueurs vont choisir (en levant la main) lequel de ces deux joueurs gagne. La partie est ensuite finie et l’équipe du joueur victorieux gagne.
 
 Comme pour un exil, la décision du village n’est pas affectée par les capacités et les morts peuvent voter normalement. Le voleur ne peut pas voler un vote, le nécromant n’a pas d’effet, etc…
 
-Les joueurs ne peuvent plus utiliser leurs capacités une fois que le <Role TROUBLE_FETE /> a été activé. Le <Role MERCENAIRE /> ne peut plus utiliser sa flèche, l’<Role ARTISTE /> ne peut plus poser de question, etc…
+Les joueurs ne peuvent plus utiliser leurs capacités une fois que le <Fabled TROUBLE_FETE /> a été activé. Le <Role MERCENAIRE /> ne peut plus utiliser sa flèche, l’<Role ARTISTE /> ne peut plus poser de question, etc…
 
 Si le vote est une égalité, les maléfiques gagnent.
 
 
 ### Exemples :
 
-La partie commence mais devra finir dans 45 minutes à cause d’une tempête qui approche. Le conteur ajoute le <Role TROUBLE_FETE />. Après 40 minutes, le <Role TROUBLE_FETE /> s’active. Les joueurs choisissent le joueur gentil donc le village gagne.
+La partie commence mais devra finir dans 45 minutes à cause d’une tempête qui approche. Le conteur ajoute le <Fabled TROUBLE_FETE />. Après 40 minutes, le <Fabled TROUBLE_FETE /> s’active. Les joueurs choisissent le joueur gentil donc le village gagne.
 
-Il n’y a plus que quatre joueurs en vie. Chaque jour, personne ne nomine. Chaque nuit, le démon choisi de tuer un mort. Puisque cette situation pourrait durer indéfiniment, le conteur invoque le <Role TROUBLE_FETE /> pour que la partie puisse finir. 
+Il n’y a plus que quatre joueurs en vie. Chaque jour, personne ne nomine. Chaque nuit, le démon choisi de tuer un mort. Puisque cette situation pourrait durer indéfiniment, le conteur invoque le <Fabled TROUBLE_FETE /> pour que la partie puisse finir. 
 
 
 ### Comment conter ?

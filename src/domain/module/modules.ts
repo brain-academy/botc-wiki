@@ -10,7 +10,6 @@ export const Modules: {
     SECTS_AND_VIOLETS: ExtendableModule,
     DEADLY_PENANCE_DAY: ExtendableModule,
     LARGELY_UN_FAIRE: ExtendableModule,
-    EXPERIMENTAL?: ExtendableModule,
     [key: string]: any
 } = {
     TROUBLE_BREWING: {
