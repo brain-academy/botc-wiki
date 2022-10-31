@@ -8,7 +8,17 @@ import Role from '/src/domain/role/role.component'
 <Role RECLUS header />
 
 ### Description
-Vous êtes un Etranger et le Conteur vous fait généralement reconnaître en tant que Maléfique (Sbire ou Démon) à tous les rôles qui vous verront, même si vous êtes mort.
+Vous pouvez être considéré comme maléfique (sbire ou démon) même lorsque vous êtes mort.
+
+Le reclus apparaît comme maléfique mais est en réalité gentil.
+
+-	A chaque fois que l’alignement du reclus est détecté, le conteur choisis si le reclus est détecté comme gentil ou comme maléfique.
+
+-	A chaque fois que le reclus est ciblé par une capacité qui affecte des sbires en particulier ou un démon, le conteur choisi si le reclus est considéré comme ce sbire spécifique ou le démon.
+
+-	Le reclus peut être considéré comme gentil ou maléfique, ou, comme une étranger, sbire, ou démon à différents moments de la même nuit. Le conteur choisis ce qu’il lui semble le plus intéressant.
+
+-	Un reclus qui est considéré comme un sbire spécifique ou un démon n’a pas la capacité de ce rôle. Par exemple, un reclus qui est considéré comme un empoisonneur ne se réveille pas la nuit et ne peux pas empoisonner un joueur.
 
 
 ### Exemple
@@ -47,3 +57,7 @@ Vous êtes un Etranger et le Conteur vous fait généralement reconnaître en ta
 - Etant donné que le <Role RECLUS /> continue d’être vu comme Maléfique en étant mort, poursuivez votre bluff jusqu’à la fin de la partie même si des rôles comme le <Role CROQUE_MORT /> ou le <Role GARDIEN /> ont vous ont détecté en Maléfique. En défendant la thèse qu’un Sbire ou un Démon est encore en jeu, vous perturbez l’enquête des Villageois .
 
 - Comme vous êtes censé être généralement vu comme Maléfique, le Village devrait se servir de cette information. Faites attention aux rôles comme le <Role CUISTOT /> qui vous utilisera certainement comme référence pour trouver une paire. Si vous êtes assis à côté d’un Acolyte Maléfique, attendez éventuellement de voir quels rôles se dévoilent sinon cela pourrait se retourner contre votre équipe.
+
+### Comment conter ?
+
+A chaque fois que le reclus est ciblé par une capacité qui détecte ou affecte les maléfiques, choisissez le rôle et l’alignement pour lequel est considéré le reclus. _Faites ce qui vous paraît le plus approprié comme montrer un jeton de rôle maléfique, faire oui de la tête, donner un nombre avec les doigts ou permettre à une capacité de fonctionner qui aurait normalement affecté les maléfiques, sbire ou démon._

@@ -10,6 +10,15 @@ import Role from '/src/domain/role/role.component'
 ### Description
 Chaque nuit, sauf la première (appelée Nuit 0), choisissez un joueur, il meurt.
 Si vous vous choisissez (suicide), vous mourez et un Sbire devient l’<Role IMP />. C’est ce qu’on appelle le phénomène du “Starpass”.
+
+Le Imp tue la nuit et peut faire des copies de lui-même… à un certain prix.
+
+-	A chaque nuit, sauf la première, le imp choisis un joueur à tuer. Comme beaucoup de rôles agissent après le démon, ce joueur ne pourra probablement pas utiliser sa capacité ce soir.
+
+-	Le Imp étant un démon, il sait qui sont ses sbires et connaît trois rôles gentils qui ne sont pas en jeu et qu’il peut bluffer sans risques.
+
+-	Si le Imp meurt, la partie est terminée et le village gagne. Toutefois, si le Imp se tue lui-même la nuit, il meurt et un sbire en vie devient le Imp. Ce nouveau Imp n’agit pas le même soir mais est maintenant bel et bien un Imp qui tue chaque nuit suivante et perds la partie s’il meurt.
+
  
 ### Exemple
 > C’est la première nuit (Nuit 0). Le <Role IMP /> apprend que Rémi et Yann sont ses Sbires. Le <Role IMP /> apprend également que le <Role MOINE />, le <Role CUISTOT /> et l’<Role ARCHIVISTE /> ne sont pas en jeu. Le <Role IMP /> bluffe le rôle du <Role CUISTOT /> puis en milieu de partie, il change de bluff et prétend être <Role MAIRE />. Plus tard, le <Role IMP /> est exécuté et les Gentils gagnent.
@@ -65,3 +74,13 @@ Si vous vous choisissez (suicide), vous mourez et un Sbire devient l’<Role IMP
 > Il peut aussi bluffer être le <Role MERCENAIRE />, tirer sa flèche sur un Sbire puis mourir afin de “starpass” en faveur de son Sbire ainsi innocenté (cela fonctionne aussi, voire mieux, avec le vrai <Role MERCENAIRE /> qui tire sur un Sbire puis que ce dernier devienne le Démon par la suite via le “starpass”)
 
 > Le <Role IMP /> peut choisir de ne tuer personne la nuit pour permettre à l’un de ses Sbires de bluffer un rôle comme le <Role SOLDAT /> ou le <Role MOINE />. Les Gentils auront tendance à croire un <Role SOLDAT /> s’il n’y a pas de morts et en faisant un starpass vers ce joueur, vous tourneriez bien la partie en votre faveur !
+
+### Comment conter ?
+
+Chaque nuit, sauf la première, réveillez le Imp. Le Imp désigne n’importe quel joueur. Rendormez le Imp. Le joueur choisi meurt. Placez le jeton de rappel « Assassiné » du démon devant le jeton de rôle du joueur choisi dans le grimoire et placez le linceul. 
+
+Si le Imp se tue la nuit, choisissez un sbire vivant et remplacez son jeton de rôle par un nouveau jeton de Imp, changeant ainsi son rôle. Réveillez le nouveau Imp, montrez-lui le jeton d’information « Tu es » et montrez-lui ensuite le jeton de rôle du Imp. Rendormez le nouveau Imp.
+
+A l’aube, déclarez quel joueur est mort pendant la nuit. (Ne dites pas comment il est mort.)
+
+_Si le Imp attaque un joueur mort la nuit, laissez-le faire. A chaque fois qu’une capacité dit « choisissez un joueur » cela signifie bien n’importe quel joueur, vivant ou mort. Le Imp peut essayez de bluffer le soldat, par exemple, et ce genre d’action renforce son bluff._

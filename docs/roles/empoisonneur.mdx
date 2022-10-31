@@ -8,7 +8,17 @@ import Role from '/src/domain/role/role.component'
 <Role EMPOISONNEUR header />
 
 ### Description
-Vous êtes un Maléfique. Chaque nuit, choisissez n’importe quel joueur : sa capacité ne fonctionne pas ou est altérée cette nuit ainsi que le jour suivant.
+
+Chaque nuit, choisissez n’importe quel joueur : sa capacité ne fonctionne pas correctement cette nuit ainsi que le jour suivant.
+
+L’empoisonneur sabote secrètement les capacités d’un rôle.
+
+-	Chaque nuit, l’empoisonneur choisis quelqu’un à empoisonner pour cette nuit et le jour suivant.
+
+-	Un joueur empoisonné n’a pas de capacité mais le conteur fait comme si c’était le cas. Il n’a aucun effet réel sur le jeu. Toutefois, pour garder l’illusion que le joueur empoisonné ne l’est pas, le conteur le réveil et le fait agir comme si tout se passait normalement.
+
+-	Si un joueur empoisonné utilise une capacité unique, qui s’utilise « une fois par partie » alors qu’ils sont empoisonnés, il ne peut plus réutiliser sa capacité plus tard.
+
 
 ### Exemple
 > Pendant la nuit, l’<Role EMPOISONNEUR /> cible le <Role MERCENAIRE />. Le jour suivant, celui-ci vise le <Role IMP /> et rien ne se passe car la capacité du <Role MERCENAIRE /> est inactive dû à l'empoisonnement.
@@ -36,6 +46,7 @@ Vous êtes un Maléfique. Chaque nuit, choisissez n’importe quel joueur : sa c
 
 - Vous serez généralement plus efficace en tant qu’<Role EMPOISONNEUR /> si vous changez de cible régulièrement plutôt que d’empoisonner systématiquement la même personne. Par exemple, vous n’avez besoin d’empoisonner la <Role VOYANTE /> uniquement lorsqu’elle va vérifier votre Démon (sous réserve que vous sachiez qu’elle va aller vérifier votre Démon. Les Maléfiques doivent donc inciter la <Role VOYANTE /> à vérifier le Démon la prochaine nuit. En procédant ainsi, il sera plus difficile pour le Village de comprendre qu’il y a un <Role EMPOISONNEUR /> en jeu et quelles ont été ses cibles.
 
+- La première nuit, si vous ne savez pas qui empoisonner, choisissez un joueur assis à coté de votre démon. Vous savez qui est le démon et dans le cas où l'empathique est assis à coté du démon, vous endommagerez sérieusement les informations des gentils.
 
 ### Combattre un Empoisonneur
 - En général, vous pouvez considérer que votre capacité a fonctionné pendant la première nuit et le premier jour. Vu que l’empoisonneur ne connaît que ses acolytes Maléfiques, il empoisonnera obligatoirement au hasard. C’est très important de garder cela en tête notamment pour les rôles qui ne peuvent déclencher leur capacité qu’une seule fois par partie tels que la <Role PUCELLE /> ou le <Role MERCENAIRE />.
@@ -48,13 +59,20 @@ Vous êtes un Maléfique. Chaque nuit, choisissez n’importe quel joueur : sa c
 
 - Si l’<Role EMPOISONNEUR /> n’a pas identifié de cible prioritaire, il aura tendance à choisir des joueurs qui sont:
 
-> Forts ou qui arrivent à rallier à ses théories le reste du village
+    - Forts ou qui arrivent à rallier à ses théories le reste du village
 
-> Ses amis - C’est difficile de résister !
+    - Ses amis - C’est difficile de résister !
 
-> Discrets et qui essaient de ne pas attirer l’attention puisqu’ils ont l’air d’avoir quelque chose à cacher.
+    - Discrets et qui essaient de ne pas attirer l’attention puisqu’ils ont l’air d’avoir quelque chose à cacher.
 
 - A la différence d’autres Sbires, l’<Role EMPOISONNEUR /> est puissant tant qu’il est en vie. Si vous avez une piste sur un potentiel <Role EMPOISONNEUR />, c’est toujours une bonne chose de les exécuter rapidement dans la partie. Par exemple, un <Role ENQUETEUR /> voit un <Role EMPOISONNEUR /> entre deux joueurs, il est plus sûr d'exécuter les deux. Par ailleurs, si deux joueurs se dévoilent avoir le même rôle, il y a souvent un Sbire parmi eux. En les exécutant tous les deux, vous avez probablement réussi à éliminer un Maléfique.
 
-- Certaines fois, l'<Role EMPOISONNEUR /> va bluffer le rôle de <Role VERTUEUX /> et le dilemme va forcément se poser : faut-il prendre le risque d'exécuter un joueur qui se prétend <Role VERTUEUX /> ou faut-il prendre le risque de continuer à jouer avec un <Role EMPOISONNEUR /> dans la partie ? 
-Il n'y a pas de règle absolue mais votre enquête (mécanique et comportementale) devra s'orienter de façon à déterminer si ce joueur dit la vérité sans toutefois oublier d'enquêter sur le reste de vos informations. 
+- Certaines fois, l'<Role EMPOISONNEUR /> va bluffer le rôle de <Role VERTUEUX /> et le dilemme va forcément se poser : faut-il prendre le risque d'exécuter un joueur qui se prétend <Role VERTUEUX /> ou faut-il prendre le risque de continuer à jouer avec un <Role EMPOISONNEUR /> dans la partie ? Il n'y a pas de règle absolue mais votre enquête (mécanique et comportementale) devra s'orienter de façon à déterminer si ce joueur dit la vérité sans toutefois oublier d'enquêter sur le reste de vos informations. Il est préférable d'exécuter les deux.
+
+- Contrairement à d'autres sbires, l'empoisonneur est dangereux tout au long de la partie tant qu'il est en vie. Si vous suspectez des personnes d'être empoisonneur, il est toujours préférable de les éliminer aussi tôt que possible. Par exemple, un <Role ENQUETEUR /> pourrait savoir qu'un joueur parmi deux est l' <Role EMPOISONNEUR />. Il est alors préférable d'éxécuter les deux. Il peut aussi arriver que deux joueurs prétendent être le même rôle. C'est habituellement un indice qu'un sbire prétend être un rôle déjà en jeu et éliminer les deux enleve l'<Role Empoisonneur /> de l'équation.
+
+### Comment conter ?
+
+Chaque nuit, réveillez l’empoisonneur. Il désigne un joueur de son choix. Le joueur choisi est alors empoisonné, placez le jeton de rappel « empoisonné » devant le jeton de rôle du joueur choisi. Rendormez l’empoisonneur. (_Le joueur empoisonné se réveille et agit normalement. Mais il n’a pas de capacité mais ne le sait pas. Si sa capacité doit lui donner des informations, vous pouvez donner de fausses informations si vous le souhaitez Voir la section « Ivresse et empoisonnement » du livret de règle._)
+
+A chaque crépuscule, le joueur empoisonné redevient sain. Retirez alors le jeton de rappel « Empoisonné ». 

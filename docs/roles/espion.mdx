@@ -8,11 +8,19 @@ import Role from '/src/domain/role/role.component'
 <Role ESPION header />
 
 ### Description
-Vous avez deux capacités. 
+Vous avez deux capacités : 
 
-Chaque nuit, vous êtes réveillé en dernier et vous avez accès au Grimoire : vous voyez tous les joueurs et leurs rôles ainsi que toutes les actions qui se déroulées dans la nuit.  
+    - Chaque nuit, vous êtes réveillé en dernier et vous avez accès au Grimoire : vous voyez tous les joueurs et leurs rôles ainsi que toutes les actions qui se déroulées dans la nuit.  
 
-Vous êtes généralement reconnu comme étant Gentil (Villageois ou Etranger) même si vous êtes mort.
+    - Vous êtes généralement reconnu comme étant Gentil (Villageois ou Etranger) même si vous êtes mort.
+
+Chaque nuit, vous avez accès au grimoire (rôle et interactions).
+
+L’espion sait le rôle de tout le monde. Il passe pour gentil alors qu’il est en réalité maléfique.
+
+-	Si un rôle a une capacité qui détecterait ou affecterait un joueur gentil, alors l’espion pourrait être considéré comme un rôle gentil. Si un rôle a une capacité qui détecte les villageois et les étrangers, alors l’espion pourrait être considéré comme un villageois spécifique ou un étranger spécifique. Ceci est à la discrétion du conteur de voir comment l’espion est considéré. Il est peut-être considéré de plusieurs rôles ou alignements différents au cours de la même nuit.
+
+-	Un espion qui est considéré comme un villageois ou étranger n’a pas la capacité de ce villageois ou de cet étranger. Par exemple, un espion qui est considéré comme un mercenaire ne peut pas tuer le démon en tirant dessus.
 
 ### Exemple 
 > La <Role LAVANDIERE /> apprend qu’il y a un <Role GARDIEN /> parmi David et Priscilla. David est le <Role MOINE /> et Priscilla est l'<Role ESPION /> vu en tant que <Role GARDIEN />.
@@ -41,6 +49,8 @@ Vous êtes généralement reconnu comme étant Gentil (Villageois ou Etranger) m
 
 - L'<Role ESPION /> est très intéressant pour mettre en place des bluffs à plusieurs. Par exemple, vous vous dévoilez en tant que <Role LAVANDIERE />, <Role ARCHIVISTE /> ou <Role GARDIEN /> et vous confirmez le bluff de votre Démon.
 
+- Vous serez souvent déctecté comme gentil ce qui est génial si vous êtes assis à coté d'un <Role EMPATHIQUE /> ou si un <Role CUISTOT /> est en jeu. Cela servira votre objectif de vous infiltrer parmi les gentils et gagner leur confiance. 
+
 - Vous pouvez aussi passer des informations à vos Acolytes de manière publique si vous arrivez à le faire subtilement. Par exemple : “J’ai entendu dire qu’il y avait un <Role MERCENAIRE /> dans la partie mais je ne dirai évidemment pas de qui il s’agit pour le protéger”. Ainsi, John devrait comprendre ce que vous faites et commencera à bluffer le <Role MERCENAIRE />.
 
 - Assurez-vous en tant que Maléfique que le Conteur sache quel rôle vous bluffez, cela lui permettra de confirmer votre bluff aux autres joueurs. Par exemple, si vous êtes en train de bluffer <Role MAJORDOME /> et que vous êtes exécuté, le Conteur montrera au <Role CROQUE_MORT /> le jeton du <Role MAJORDOME />.
@@ -62,4 +72,12 @@ Vous êtes généralement reconnu comme étant Gentil (Villageois ou Etranger) m
 
 - Si le rôle d'<Role ESPION /> est révélé à un <Role CROQUE_MORT /> ou à un <Role GARDIEN />, il est assez probable que ce soit une fausse information donnée par le Conteur : les joueurs doivent essayer de comprendre quelle mécanique est à l’origine de cette information suspecte.
 
-- L’<Role IMP /> aura tendance à starpass à un <Role ESPION />, surtout si celui-ci s’est complètement innocenté aux yeux du village. Faites attention aux morts de nuit qui, à priori n’ont pas de sens, cela vous permettra de détecter ce genre de manœuvre.
+- L’<Role IMP /> aura tendance à se tuer lui-même pour que l'<Role ESPION /> devienne le nouveau démon (=starpass), surtout si celui-ci s’est complètement innocenté aux yeux du village. Faites attention aux morts de nuit qui, à priori n’ont pas de sens, cela vous permettra de détecter ce genre de manœuvre.
+
+### Comment conter ?
+
+Chaque nuit, réveillez l’espion et montrez-lui le grimoire tant qu’il en a besoin. Rendormez l’espion.
+
+A chaque fois que l’espion est visé par une capacité qui détecte ou affecte les gentils, choisissez pour quel rôle et quel alignement est considéré l’espion. (_Faites ce qui est approprié, tel que montrez un jeton de rôle gentil, faire oui de la tête, donner des chiffres avec vos doigts ou faire fonctionner une capacité qui n’affecte normalement que les gentils, villageois ou étranger._)
+
+_Rappelez-vous de garder votre grimoire rangé et à jour et de le montrer à l’espion avec la bonne orientation pour que l’espion reconnaisse facilement qui est qui._ 

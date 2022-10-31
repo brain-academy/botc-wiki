@@ -8,7 +8,20 @@ import Role from '/src/domain/role/role.component'
 <Role MERCENAIRE header />
 
 ### Description
-Une fois par partie, à n’importe quel moment de la journée, choisissez publiquement un joueur. Si c’est un Démon, il meurt.
+Une fois par partie, à n’importe quel moment de la journée, annoncez publiquement que vous êtes le mercenaire et que vous tirez sur un joueur. Si c’est un Démon, il meurt.
+
+Le mercenaire peut tuer le démon en devinant qui c’est.
+
+-	Le mercenaire peut choisir d’utiliser sa capacité n’importe quand dans la journée et doit déclarer à tout le monde qu’il l’utilise. Si le mercenaire choisit le démon, le démon meurt immédiatement. Sinon, rien ne se passe.
+
+-	Les joueurs n’apprennent pas le rôle du joueur mort. Après tout, ça pourrait être le reclus !
+
+-	Un mercenaire qui utilise sa capacité en étant ivre ou empoisonné ne pourra plus l’utiliser.
+
+-	Le mercenaire voudra choisir un joueur vivant. Même si le mercenaire choisit un Imp mort, rien ne se passe car un joueur mort, ne peut pas mourir à nouveau. 
+
+-	Les joueurs peuvent dire ce qu’ils veulent à n’importe quel moment alors un joueur qui prétend être le mercenaire peut prétendre utiliser la capacité du mercenaire. 
+
 
 
 ### Exemple
@@ -42,9 +55,9 @@ Une fois par partie, à n’importe quel moment de la journée, choisissez publi
 ### Bluffer le Mercenaire
 - Personne ne mourra lorsque vous utiliserez votre “capacité” de <Role MERCENAIRE />. En considérant cela, il y a plusieurs moyen de bluffer ce rôle :
 
-> Ciblez délibérément le Démon ou un autre Maléfique pour qu’ils apparaissent comme n’étant pas le Démon. C’est très intéressant si une <Role CROQUEUSE_D_HOMMES /> est en jeu puisque le Démon peut mourir et lui transmettre le rôle de <Role IMP /> en sachant qu’elle aura été dédouanée par votre “fausse” flèche.
+    - Ciblez délibérément le Démon ou un autre Maléfique pour qu’ils apparaissent comme n’étant pas le Démon. C’est très intéressant si une <Role CROQUEUSE_D_HOMMES /> est en jeu puisque le Démon peut mourir et lui transmettre le rôle de <Role IMP /> en sachant qu’elle aura été dédouanée par votre “fausse” flèche.
 
-> Ciblez un joueur Gentil pour gagner sa confiance et faire équipe avec vous vu que vous l’avez innocenté.
+    - Ciblez un joueur Gentil pour gagner sa confiance et faire équipe avec vous vu que vous l’avez innocenté.
 
 - Vous pouvez décider de cibler un joueur Gentil pour jeter de la suspicion sur lui. Vous montrez que vous essayer de protéger un joueur avec votre capacité et ainsi apparaissez alors tous les deux suspects.
 
@@ -52,4 +65,12 @@ Une fois par partie, à n’importe quel moment de la journée, choisissez publi
 
 - Pour les Gentils comme pour les Maléfiques, bluffer un <Role MERCENAIRE /> qui a déjà utilisé sa capacité est intéressant. Pour un Gentil, être un <Role MERCENAIRE /> qui a utilisé son pouvoir fait de vous une cible non prioritaire pour le Démon. Pour un Maléfique, le bluff n’est pas compliqué et il est difficile de démontrer que vous mentiez.
 
-- Le <Role MERCENAIRE /> est aussi un plan B viable. Si vous vous dévoilez comme étant un rôle et que celui-ci est déjà dans la partie ou que vous êtes suspect aux yeux du Village, “avouez” que vous mentiez sur votre rôle afin de survivre un ou deux tours de plus. Après tout c’est une tactique qu’un vrai <Role MERCENAIRE /> pourrait très bien adopter !
+- Le <Role MERCENAIRE /> est aussi un plan B viable. Si vous vous dévoilez comme étant un rôle et que celui-ci est déjà dans la partie ou que vous êtes suspect aux yeux du Village, "avouez" que vous mentiez sur votre rôle afin de survivre un ou deux tours de plus. Après tout c’est une tactique qu’un vrai <Role MERCENAIRE /> pourrait très bien adopter !
+
+### Comment conter ?
+
+Durant la journée, le mercenaire déclare vouloir utiliser sa capacité. Si cela arrive, il désigne n’importe quel joueur. Si le joueur choisi est un démon vivant, déclarez que le joueur choisi meurt. Mettez un linceul devant le jeton de rôle de ce joueur dans le grimoire. Si le joueur choisi n’est pas un démon vivant, déclarez « Il ne se passe rien ». Dans tous les cas, le mercenaire perd sa capacité. Placez le jeton de rappel « Utilisé » du mercenaire devant le jeton de rôle du mercenaire.
+
+_Si un joueur bluff le rôle de mercenaire et déclare vouloir utiliser sa capacité, agissez comme s’il était le véritable mercenaire. Laissez un temps de discussion si nécessaire et faites semblant de déplacer le jeton de rappel dans votre grimoire. Dites ensuite « Il ne se passe rien »._
+
+_Quand le mercenaire déclare vouloir utiliser sa capacité, laissez au village une minute ou deux pour discuter sur qui tirer. Cela permet au village de porter la responsabilité de la victoire (ou de la défaite !) mais le mercenaire a toujours le dernier mot._

@@ -9,13 +9,25 @@ import Role from '/src/domain/role/role.component'
 
 ### Description
 
-Rappel : dans Blood On The Clock Tower, “voter” signifie voter OUI contre un joueur pour l’exécuter.
+Chaque nuit, choisissez un autre joueur qui devient votre maître. La prochaine journée, vous ne pourrez voter que lorsque votre maître votera.
 
-Chaque nuit, choisissez un autre joueur qui devient votre maître. La prochaine journée, vous ne pourrez voter que lorsque votre maître votera. 
-> S’il vote non, vous êtes obligé de voter non.
+Le majordome ne peut voter que lorsque son maître vote.
 
-> S’il doit voter après vous, vous êtes obligés de voter non.
+-	Chaque nuit, le majordome choisis un joueur pour qu’il devienne son maître. Cela peut être le même joueur que la nuit dernière ou un différent.
 
+-	Si le maître a sa main levée pour voter ou si le vote du maître a déjà été compté, le majordome peut lever sa main pour voter.
+
+-	Si le maître a sa main baissée, signalant ainsi qu’il ne vote pas ou si le maitre baisse la main avant que son vote ne soit compté, le majordome doit également baisser sa main.
+
+-	Il n’est pas de la responsabilité du conteur de surveiller le majordome. Il est responsable de son propre vote. Voter délibérément sans en avoir le droit est considéré comme de la triche.
+
+-	Comme les exils ne sont pas affectés par les capacités, le majordome peut voter librement en faveur d’un exil.
+
+-	Les joueurs morts ne peuvent lever la main pour voter que s’il leur reste leur dernier vote. Si le majordome choisis un mort comme maître, cela s’applique toujours.
+
+-	Le majordome n’est jamais forcé de voter
+
+-	Le vote du majordome peut être comptabilisé par le conteur avant ou après celui de son maître. La position dans le village n’est pas prise en compte.
 
 ### Exemple
 > Durant la nuit, le <Role MAJORDOME /> choisit Sylvain comme maître. Le jour suivant, si Sylvain lève sa main pour voter lors d’une exécution, le <Role MAJORDOME /> a alors le choix de voter aussi. Si Sylvain vote non, le <Role MAJORDOME /> ne peut pas voter oui.
@@ -51,3 +63,11 @@ Chaque nuit, choisissez un autre joueur qui devient votre maître. La prochaine 
 - Si vous devez vraiment voter et que vous aviez prêté allégeance à un maître qui a une bonne vision du jeu et que ce dernier ne souhaite pas voter, “votez” en prétextant que vous avez changé de maître secrètement, de manière ponctuelle ou définitivement. Attention, cela pourrait irriter votre précédent maître.
 
 - Vous pouvez faire pression sur votre maître pour qu’il vote sur les joueurs qui vous arrangent en le menaçant de choisir un autre maître s’il ne vous laisse pas voter pour ces derniers.
+
+### Comment conter ?
+
+Chaque nuit, réveillez le majordome. Il désigne n’importe quel joueur. Placer le jeton de rappel « Maître » du majordome devant le jeton de rôle de ce joueur. Rendormez le majordome.
+
+Pendant une nomination, le majordome ne peut avoir sa main levée pour voter que si son maître a sa main levée également ou si son vote a déjà été comptabilisé.
+
+_Si le majordome vote illégalement par accident, comptez tout de même le vote du majordome. Si vous ne le faîte pas, le total sera inférieur à ce qu’il devrait être et tout le monde saura qui est le majordome ce qui est injuste pour les maléfiques. Les erreurs arrivent, poursuivez simplement la partie et discutez en privé avec le majordome plus tard._
