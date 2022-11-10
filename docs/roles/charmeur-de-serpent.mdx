@@ -11,6 +11,13 @@ import Role from '/src/domain/role/role.component'
 
 Chaque nuit, choisissez un joueur vivant. Si ce joueur est un démon, vous échangez de rôle et d’alignement avec lui et il est empoisonné.
 
+Le charmeur de serpent apprend si un joueur n’est pas le démon… mais pourrait devenir le démon s’il devient trop avide ou audacieux.
+
+-	Chaque nuit, il choisit un joueur. Si ce joueur n’est pas le démon, rien ne se passe. S’il est le démon, le charmeur de serpent devient le démon et devient aussi maléfique et le démon devient un gentil charmeur de serpent empoisonné.
+
+-	Si le faussaire a la capacité du charmeur de serpent et devient le démon, le démon devient un gentil faussaire empoissonné. 
+
+
 ### Exemples  
 > Le <Role CHARMEUR_DE_SERPENT /> choisit un joueur qui est la <Role VIEILLE_CHOUETTE /> alors rien ne se passe. Le <Role CHARMEUR_DE_SERPENT /> se rendort simplement. La nuit suivant, le <Role CHARMEUR_DE_SERPENT /> se choisit lui-même alors rien ne se passe.
 
@@ -50,3 +57,13 @@ Chaque nuit, choisissez un joueur vivant. Si ce joueur est un démon, vous écha
 - Si vous êtes le démon, vous pouvez prétendre être devenu gentil à cause du charmeur de serpent ! C’est risqué car un ancien démon pourrait être exécuté « juste au cas où » mais peut fonctionner si vous le faites plus tard dans la partie. Vous pouvez prévoir de bluffer comme a dès le début ou le garder comme bluff de secours au cas où les choses tournent mal. Si vous étiez vraiment rendu gentil par le charmeur de serpent, alors le charmeur de serpent d’origine serait maintenant le démon maléfique et blufferait probablement un autre rôle. Cela veut dire que vous pouvez bluffer un démon devenu gentil sans risque à ce niveau-là. Si vous le faites, soyez néanmoins préparé à dire au village qui sont vos sbires. Le village voudra le savoir. A vous de décider, si vous leur dites la vérité ou non.
 
 - Si vous êtes un sbire, vous pouvez prétendre être le démon qui a été rendu gentil par le charmeur de serpent. Si vous faites cela, le village voudra savoir qui était vos sbires et vous aurez une décision difficile. Allez-vous leur dire que des joueurs autre que votre démon sont vos sbires ? Faites cela si vous pensez que le village voudra exécuter les sbires. Allez-vous leur dire que votre démon est un de vos sbires ? Faites cela si vous pensez que le village gardera les sbires en vie et poussez-les à rechercher le démon.
+
+### Comment conter?
+
+Chaque nuit, réveillez le charmeur de serpent. Il désigne n’importe quel joueur vivant.
+
+Si ce joueur n’est pas le démon, rien ne se passe Rendormez le charmeur de serpent.
+
+Si ce joueur est le démon, l’ancien charmeur de serpent devient le nouveau démon (_maléfique_) and l’ancien démon devient le (_gentil_) charmeur de serpent empoisonné. Echangez les jetons de rôle du charmeur de serpent et du démon. Le nouveau charmeur de serpent est empoisonné. Placez le jeton de rappel « Empoisonné » du charmeur de serpent devant son jeton de rôle. Réveillez le nouveau démon et montrez-lui le jeton d’information « TU ES » suivi d’un pouce vers le bas puis à nouveau le jeton « TU ES » puis le jeton de rôle du démon. (_Cela montre qu’il est maintenant maléfique et démon_). Rendormez le nouveau démon. Réveillez le nouveau charmeur de serpent et montrez-lui le jeton d’information « TU ES » suivi d’un pouce vers le haut puis à nouveau le jeton « TU ES » puis le jeton du charmeur de serpent. (_Cela montre qu’il est maintenant gentil et charmeur de serpent_). Rendormez le nouveau charmeur de serpent.
+
+_Dans l’étrange cas ou le charmeur de serpent est maléfique ou le cas où le démon est gentil, échangez leur alignement de façon appropriée_. 

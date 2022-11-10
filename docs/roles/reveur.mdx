@@ -9,7 +9,16 @@ import Role from '/src/domain/role/role.component'
 
 ### Description :
 
-- Chaque nuit, choisissez un joueur (en dehors de vous-même et d'un Voyageur) : Vous aurez deux informations : Son rôle et un rôle du camp opposé.
+Chaque nuit, choisissez un joueur (en dehors de vous-même et d'un Voyageur) : Vous aurez deux informations : Son rôle et un rôle du camp opposé.
+
+Le Rêveur apprend quel joueur est quel rôle mais n’en n’est jamais sûr.
+
+-	Chaque nuit, le rêveur choisit un joueur et apprends deux rôles. Un que le joueur est et un que le joueur n’est pas.
+
+-	Le jeton du rôle faux est choisi en fonction du type du jeton de rôle du joueur choisi. Si le rêveur choisit un joueur qui est villageois ou étranger, le je ton du faux rôle sera celui d’un sbire ou d’un Sbire ou d’un démon. S’il choisit un sbire ou un démon, le jeton du faux rôle sera celui d’un villageois ou d’un étranger.
+
+-	Le rêveur ne peut pas se choisir lui-même ni un voyageur. 
+
 
 ### Exemples  
 > Le <Role REVEUR /> choisit un joueur qui est la <Role BETE_DE_FOIRE />. Le <Role REVEUR /> apprend que ce joueur est soit la <Role BETE_DE_FOIRE /> soit le <Role MANIPULATEUR />.
@@ -60,3 +69,9 @@ import Role from '/src/domain/role/role.component'
 - Attendez quelques jours avant de vous dévoiler en tant que rêveur. Cela vous donne le temps de peaufiner votre histoire.
 
 - Ne dites jamais que vous avez appris qu’un joueur est potentiellement le <Role VORTOX /> ! Si un Vortox est vraiment en jeu, alors un rêveur n’aurait jamais pu apprendre qu’un joueur est potentiellement le <Role VORTOX /> car toutes les informations de rêveur doivent être fausses.  
+
+### Comment conter?
+
+Chaque nuit, réveillez le rêveur. Il désigne n’importe quel autre joueur. Si le joueur est un villageois ou un étranger, montrez son jeton de rôle et n’importe quel jeton de rôle de sbire ou de démon. Si le joueur choisi est un sbire ou un démon, montrez son jeton de rôle et n’importe quel jeton de rôle de villageois ou d’étranger. Rendormez ensuite le Rêveur.
+
+_Si le rêveur choisi un maléfique, vous pouvez aider les maléfiques en montrant le jeton du rôle que ce maléfique est en train de bluffer ou si vous montrez un rôle qui a intérêt à se cacher comme le charmeur de serpent, le sage, la bête de foire ou le maladroit_

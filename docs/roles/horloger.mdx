@@ -11,7 +11,16 @@ import Role from '/src/domain/role/role.component'
 
 La première nuit, le Conteur vous apprend à quelle distance se trouve le Sbire le plus proche du Démon.
 La distance est le nombre de joueurs assis commençant par le joueur le plus proche du Démon et se terminant par le Sbire le plus proche, peu importe le sens ; horaire ou anti-horaire. Il y a toujours au moins une distance de un (1).
- 
+
+La première nuit, le Conteur vous indique le nombre de place entre le démon et son sbire le plus proche. (Nombre de place minimum : 1) 
+
+L’horloger apprend la distance entre du démon vers son sbire le plus proche.
+
+-	L’horloger a cette information la première nuit
+
+-	La distance est le nombre de joueurs assis commençant par le joueur assis à côté du démon et finissant au sbire le plus proche dans le sens horaire ou antihoraire.
+
+
 ### Exemples  
 > Le <Role FANG_GU /> est assis à côté de la <Role VIEILLE_CHOUETTE />. L'<Role HORLOGER /> aura un "1".  
 
@@ -41,9 +50,7 @@ Cela signifie que vous savez (jusqu'à ce moment) qu'il y a quatres options de D
 - Les Gentils pouvant se faire une idée de qui sont les Sbires (surtout si une des capacités de Sbire a disparu du jeu), attention justement à qui vous tuez de nuit et particulièrement si vous choisissez un Sbire avec ses capacités qui étaient particulièrement actifs et visibles. Par exemple, les Gentils vont souvent s'apercevoir qu'ils ont exécutés la <Role VIEILLE_CHOUETTE /> (surtout depuis qu'il n'y a plus de changement de rôles pendant la nuit) et à ce moment là, le focus sera sur vous et pour prouver votre information, il y aura un consensus général pour tuer le joueur qui serait pointé par votre information.
 Quoiq'il en soit, si vous tuez la <Role VIEILLE_CHOUETTE /> de nuit, les Gentils croieront alors qu'ils ont réellement exécuté la <Role VIEILLE_CHOUETTE /> le jour précédent. Cela peut aider ou non votre histoire, selon ce que les Gentils croient à ce moment là, particulièrement s'ils pensent qu'un <Role VORTOX /> est en jeu.
 
-### MECANIQUE CONTEUR
+### Comment conter?
 
-- Pendant la première nuit, réveillez l'<Role HORLOGER />. Montrez avec vos doigts le chiffre que vous souhaitez communiquer (1 ; 2 ; 3...), qui correspondra à la distance entre le Démon et le Sbire le plus proche, en commençant par le voisin du Démon le plus proche de ce Sbire.
-Dites ensuite à l'<Role HORLOGER /> de se rendormir.
-
+Pendant la première nuit, réveillez l'Horloger. Montrez avec vos doigts le chiffre que vous souhaitez communiquer (1 ; 2 ; 3...), qui correspondra à la distance entre le Démon et le Sbire le plus proche, en commençant par le voisin du Démon le plus proche de ce Sbire. Rendormez ensuite l’Horloger.
 
