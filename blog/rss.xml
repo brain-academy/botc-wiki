@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Brain Academy Blog</title>
-        <link>https://brain-academy.github.io/blog</link>
+        <link>https://brain-academy.github.io/botc-wiki/blog</link>
         <description>Brain Academy Blog</description>
         <lastBuildDate>Mon, 18 Jan 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,7 +10,7 @@
         <language>en</language>
         <item>
             <title><![CDATA[Coming Soon]]></title>
-            <link>https://brain-academy.github.io/blog/blog-soon</link>
+            <link>https://brain-academy.github.io/botc-wiki/blog/blog-soon</link>
             <guid>blog-soon</guid>
             <pubDate>Mon, 18 Jan 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Coming soon® !]]></description>
