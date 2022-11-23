@@ -1,5 +1,3 @@
-let fs = require('fs')
-
 module.exports = {
     title: 'Brain Academy',
     tagline: 'Welcome to the Brain Academy',
