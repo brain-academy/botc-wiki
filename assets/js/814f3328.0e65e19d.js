@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocusaurus_wiki=self.webpackChunkdocusaurus_wiki||[]).push([[2535],{5641:s=>{s.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Coming Soon","permalink":"/blog/blog-soon"}]}')}}]);
