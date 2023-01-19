@@ -152,7 +152,7 @@ export const Roles = {
         TROUBLE_FETE: Legendaire.new({ name: `Trouble-fête`, filename: 'trouble-fete', originalName: 'Fiddler' }),
         BARATINEUR: Legendaire.new({ name: `Baratineur`, originalName: 'Fibbin' }),
         DUCHESSE: Legendaire.new({ name: `Duchesse`, originalName: 'Duchess' }),
-        MAUVAIS_GENIE: Legendaire.new({ name: `Mauvais génie`, filename: 'mauvais-genie', originalName: 'Djinn' }),
+        DJINN: Legendaire.new({ name: `Djinn`, filename: 'djinn', originalName: 'Djinn' }),
         PROTECTRICE: Legendaire.new({ name: `Protectrice`, originalName: 'Spirit of Ivory' }),
         SENTINELLE: Legendaire.new({ name: `Sentinelle`, originalName: 'Sentinel' }),
         CHASSEUR_D_ORAGE: Legendaire.new({ name: `Chasseur d'orage`, filename: 'chasseur-d-orage', originalName: 'Storm Catcher' }),
