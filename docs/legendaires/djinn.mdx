@@ -3,10 +3,32 @@ title: Djinn
 ---
 
 import Module from '/src/components/module.component'
+import Role from '/src/components/role.component'
 import Fabled from '/src/components/fabled.component'
 
 <Fabled DJINN header />
 
+Ajoutez le Djinn pour toutes les parties qui contiennent une icône jinx sur le script. Le Djinn résout les jinx en créant une règle unique (pour les scripts personnalisés uniquement)
+
 ### Description :
+
+Utilisez la règle spéciale du Djinn. Tous les joueurs la connaissent.
+
+### Exemples :
+
+> La <Role VIEILLE_CHOUETTE /> et l’<Role HERETIQUE /> sont jinxés. En début de partie, le conteur indique la règle spéciale « Une <Role VIEILLE_CHOUETTE /> ne peut pas créer un <Role HERETIQUE />. ». Plus tard dans la partie, la <Role VIEILLE_CHOUETTE /> essaye de créer une <Role HERETIQUE />. Le conteur fait non de la tête et la <Role VIEILLE_CHOUETTE /> doit choisir un autre rôle à créer.
+
+> L’<Role ESPION /> et le <Role MAGICIEN /> sont jinxés. En début de partie, le conteur indique la règle spéciale « Quand l’<Role ESPION /> voit le grimoire, les jetons du démon et du <Role MAGICIEN /> sont retirés. » Il n’y ni <Role ESPION />, ni <Role MAGICIEN /> en jeu mais le conteur précise systématiquement la règle pour que le village n’ait aucune indication sur le type de sbire en jeu.
+
+### Explications :
+
+En créant une liste de rôle avec l’outil de création de script, certaines combinaisons de rôles seront marquées par une petit symbole inhabituel d’un autre rôle qui apparaît dans la liste. Ces rôles sont jinxés. Leurs capacités se neutralisent ou se contredisent d’une certaine façon. Le Djinn créé une règle spéciale qui fait en sorte que ces rôles fonctionnent bien ensemble. Quelques rôles jinxés fonctionnent même encore mieux avec la règle du Djinn !
+
+La règle spéciale du Djinn est automatiquement décrite par l’outil de création de script quand une combinaison de rôle jinxée est sur la liste. Il y a plein de règles spéciales du Djinn. Chacune est façonnée pour un contexte spécifique. S’il y a des rôles jinxés sur le script, même s’ils ne sont pas en jeu, le conteur rappelle les jinx à tous les joueurs en début de partie.
+
+Le Djinn peut faire appliquer plusieurs règles d’un coup. S’il y a plusieurs combinaisons jinxées, le conteur rappelle toutes les règles spéciales du Djinn.
+
+
+### Règles spéciales du Djinn :
 
 Coming soon...
