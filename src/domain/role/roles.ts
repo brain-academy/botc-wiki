@@ -96,7 +96,7 @@ export const Roles = {
 		GOBELIN: Sbire.new({name: 'Gobelin', originalName: 'Gobelin'}),
 		JUMEAU_MALEFIQUE: Sbire.new({name: 'Jumeau Maléfique', filename: 'jumeau-malefique', originalName: 'Evil Twin'}),
 		MANIPULATEUR: Sbire.new({name: 'Manipulateur', originalName: 'Cerenovus', wakeUpSchedule: 'EVERY_NIGHT'}),
-		MARIONETTE: Sbire.new({name: 'Marionette', originalName: 'Marionette', wakeUpSchedule: 'Identique au faux rôle attribué'}),
+		MARIONNETTE: Sbire.new({name: 'Marionnette', originalName: 'Marionette', wakeUpSchedule: 'Identique au faux rôle attribué'}),
 		MEZEPHELES: Sbire.new({name: 'Mezepheles', originalName: 'Mezepheles', wakeUpSchedule: 'FIRST_NIGHT'}),
 		PARRAIN: Sbire.new({name: 'Parrain', originalName: 'Godfather'}),
 		PROPHETE_DE_L_EFFROI: Sbire.new({name: `Prophète de l'effroi`, filename: 'prophete-de-l-effroi', originalName: 'Fearmonger', wakeUpSchedule: 'EVERY_NIGHT'}),
