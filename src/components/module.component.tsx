@@ -12,7 +12,7 @@ const _base_url = '/docs/modules'
 const _base_image_path = '/img/blood-on-the-clocktower/modules'
 
 interface ModuleProps {
-	module?: M,
+	module?: M
 	page?: boolean
 	tile?: boolean
 }
@@ -21,8 +21,11 @@ const Module = ({page, tile, module, ...other}: ModuleProps) => {
 
 	const [hasImage, setHasImage] = useState(true)
 
-	if (!module)
+	if (!module) {
+		const moduleName = Object.keys(other)[0]
 		module = Modules[Object.keys(other)[0]] as M
+		if (!module) throw Error(`The module ${moduleName} does not seem to exist. Could there be a typo in the name ?`)
+	}
 
 	let {iconPath, fabled, detail, roles, path, name, description}: M & MarkdownDocument & Iconised = Iconised(MarkdownDocument({_base_url, _base_image_path, ...module}))
 	iconPath = useBaseUrl(iconPath)
