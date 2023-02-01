@@ -29,3 +29,9 @@ import Role from '/src/components/role.component'
 <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
 	{ Object.values(Roles.DEMON).map(role => <Role key={role.name} role={role} tile="true" />) }
 </div>
+
+## Voyageurs
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
+	{ Object.values(Roles.VOYAGEUR).map(role => <Role key={role.name} role={role} tile="true" />) }
+</div>
