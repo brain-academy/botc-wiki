@@ -13,7 +13,7 @@ module.exports = {
 		{
 			type: 'category', label: 'Documents', items: [
 				[
-					'glossaire', 'deroulement', 'regles', 'strategies', 'conteurs', 'guide_athee', 'guide_folie', 'guide_legion', 'guide_marionnette'
+					'glossaire', 'deroulement', 'regles', 'strategies', 'conteurs', 'guide_athee', 'guide_folie', 'guide_laissez_un_faire', 'guide_legion', 'guide_marionnette'
 					// { type: 'category', label: 'Feuilles de rôle', items: [FICHES.map(fiche => `fiches/${fiche}`)] },
 				] ]
 		},
