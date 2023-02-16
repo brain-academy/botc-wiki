@@ -7,9 +7,19 @@ import Role from '/src/components/role.component'
 
 <Role FLEURISTE header />
 
-### Description :
+### Description
 
 Chaque nuit*, vous apprenez si le Démon a voté le jour précédent.
+
+Le fleuriste apprend si le démon a voté ou non.
+
+-   Un vote du démon compte que nominé soit exécuté ou non.
+
+-   Le fleuriste ne détecte pas si le démon a levé sa main pour d’autres raisons, comme par exemple, quand le joueur « vote » pour quoi commander à diner ou pour exiler un voyageur.
+    
+-   Si le démon change après que le démon d’origine ait voté mais avant que le fleuriste se réveille pour apprendre son information, le fleuriste détecte le démon d’origine. 
+    
+-   S’il y a deux démons (ou plus !), même des démons morts, le fleuriste détecte si l’un d’entre eux a voté. Même si un seul des démons a voté, le fleuriste aura un « oui ».
  
 ### Exemples  
 > Il y a eu une nomination aujourd’hui. Beaucoup de joueurs ont voté, le joueur a été exécuté, mais le démon n’a pas voté. Cette nuit, le <Role FLEURISTE /> apprends que le démon n’a pas voté.
@@ -48,3 +58,13 @@ Chaque nuit*, vous apprenez si le Démon a voté le jour précédent.
 - Agissez de façon confuse. Le fleuriste est un rôle qui peut être déstabilisant. Il peut y avoir beaucoup de joueurs qui votent et même de véritables fleuristes peuvent faire des erreurs en se rappelant qui a voté et qui n’a pas voté, en particulier avec plusieurs nominations par jour. Prétendre au village que vous êtes le fleuriste mais que vous n’êtes plus très sûr ou que vous avez du mal à déduire qui est le démon est acceptable. Même donner des informations contradictions de temps en temps ne sera souvent pas si suspect. 
 
 - Les fleuristes peuvent détecter si un <Role VORTOX /> est en jeu en de rares circonstances. Si un <Role VORTOX /> est en jeu et que vous pensez que le village est en train de le savoir, donner des vraies informations sur le vote du démon afin que le village pense l’inverse. 
+
+### Comment conter ?
+
+Chaque début de journée, placez le jeton de rappel « Démon n’a pas voté » devant le jeton de rôle du fleuriste et retirez le jeton de rappel « Démon a voté » s’il était présent.
+
+Chaque jour, si le démon vote pour une exécution, remplacez le jeton de rappel « Démon n’a pas voté » par le jeton de rappel « Démon a voté ».
+
+Chaque nuit, excepté la première, réveillez le fleuriste. Si le jeton de rappel « Démon n’a pas voté » est devant son jeton de rôle, faites « non » de la tête. Si c’est le jeton de rappel « Démon a voté », faites « oui » de la tête. Rendormez ensuite le fleuriste.
+
+_Si vous avez oublié si le démon a voté ou non, réveillez le démon la nuit et demandez-lui en montrant le jeton d’information « As-tu voté aujourd’hui ? ». Il doit répondre honnêtement et se rendormir ensuite._
