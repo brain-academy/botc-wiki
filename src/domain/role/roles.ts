@@ -4,7 +4,7 @@ export const Roles = {
 	VILLAGEOIS: {
 		AERONAUTE: Villageois.new({name: 'Aéronaute', filename: 'aeronaute', originalName: 'Balloonist', clazz: 'DETECTION', wakeUpSchedule: 'EVERY_NIGHT'}),
 		ALCHIMISTE: Villageois.new({name: 'Alchimiste', originalName: 'Alchemist', wakeUpSchedule: 'La première nuit puis identique au rôle attribué'}),
-		AMNESIQUE: Villageois.new({name: 'Amnésique', filename: 'amnesique', originalName: 'Amnesic'}),
+		AMNESIQUE: Villageois.new({name: 'Amnésique', filename: 'amnesique', originalName: 'Amnesiac'}),
 		ARCHIVISTE: Villageois.new({name: 'Archiviste', originalName: 'Librarian', clazz: 'FIRST_NIGHT', wakeUpSchedule: 'FIRST_NIGHT'}),
 		ARTISTE: Villageois.new({name: 'Artiste', originalName: 'Artist'}),
 		ATHEE: Villageois.new({name: 'Athée', filename: 'athee', originalName: 'Atheist'}),
@@ -107,7 +107,7 @@ export const Roles = {
 	},
 	DEMON: {
 		AL_HADIKHIA: Demon.new({name: 'Al-Hadikhia', filename: 'al-hadikhia', originalName: 'Al-Hadikhia', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
-		EMEUTE: Demon.new({name: 'Emeute', originalName: 'Riot'}),
+		EMEUTIER: Demon.new({name: 'Emeutier', originalName: 'Riot'}),
 		FANG_GU: Demon.new({name: 'Fang Gu', filename: 'fang-gu', originalName: 'Fang Gu', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
 		IMP: Demon.new({name: 'Imp', originalName: 'Imp', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
 		LEGION: Demon.new({name: 'Légion', filename: 'legion', originalName: 'Legion'}),
