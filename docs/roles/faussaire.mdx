@@ -11,9 +11,21 @@ import Role from '/src/components/role.component'
 
 Une fois dans la partie, pendant une nuit, choisissez auprès du Conteur un rôle de "Gentil" et obtenez ses capacités. Si un joueur ayant ce rôle est en jeu, il deviendra ivre.
 
+Le faussaire décide de sa capacité.
+
+- Il peut le faire une fois par partie. Quand il le fait, il gagne la capacité de ce rôle. Il ne devient pas ce rôle.
+
+- Il pourrait attendre un peu pour choisir un rôle. Si le faussaire choisit un rôle qui est déjà en jeu, le joueur qui a ce rôle devient ivre. Si le faussaire meure ensuite ou devient ivre ou empoisonné, le joueur qu'il a rendu ivre devient à nouveau sobre.
+
+- Si le faussaire choisit un rôle qui n'était pas en jeu au moment du choix mais qui est en jeu maintenant, le joueur qui a ce rôle devient ivre.
+
+- Si le faussaire récupère sa capacité par le collecteur d'os ou utilise sa capacité deux fois grâce au barista, le faussaire peut choisir une nouvelle capacité ou prendre la même qu'avant.
+
+- Si la capacité choisie fonctionne dans la mort, comme le maladroit, elle fonctionne aussi si le faussaire est mort.
+
 ### Exemples
 
-> Durant la première nuit, le <Role FAUSSAIRE /> choisit le Rêveur et obtient alors les capacités de ce dernier et agira comme le Rêveur le ferait normalement.     
+> Durant la première nuit, le <Role FAUSSAIRE /> choisit le <Role REVEUR /> et obtient alors les capacités de ce dernier et agira comme le <Role REVEUR /> le ferait normalement.     
 
 > Lors de la troisième nuit, le <Role FAUSSAIRE /> choisit d'avoir la capacité de l'<Role HORLOGER />. Cette nuit, il apprend le nombre de places entre le démon et le sbire le plus proche.
 
@@ -21,28 +33,63 @@ Une fois dans la partie, pendant une nuit, choisissez auprès du Conteur un rôl
 
 ### Mécanique et conseils
 
-- L' atout le plus fort du faussaire est sa polyvalence. Vous pouvez imitier n'importe que rôle Gentil du script, qu'il soit en jeu ou non. Essayez de mener votre enquête de votre côté en analysant le rôle qui manque au village ou ce qui serait le plus efficace pour contrer les maléfiques. Chaque villageois est une option viable.
+- L' atout le plus fort du faussaire est sa polyvalence. Vous pouvez imiter n'importe que rôle Gentil du script, qu'il soit en jeu ou non. Essayez de mener votre enquête de votre côté en analysant le rôle qui manque au village ou ce qui serait le plus efficace pour contrer les maléfiques. Chaque villageois est une option viable :
 
-- Si vous connaissez le rôle d'un joueur et que vous voulez copier ce pouvoir, mettez vous d'accord pour savoir quand prendre son pouvoir pour ne pas le rendre ivre au moment où il souhaiterait utiliser son pouvoir par exemple
+	> <Role HORLOGER /> : Puisque l'<Role HORLOGER /> a déjà son information la première nuit, vous pouvez assurément imiter la capacité de l'<Role HORLOGER /> à n'importe quel moment ensuite. Non seulement, cela va confirmer une information existante d'<Role HORLOGER />, mais avoir cette information plus tard dans la partie peut vous aider à relier les sbires à leur démon en croisant avec les autres informations.
 
-- Vous pouvez prendre aussi un Etranger comme le <Role BARBIER /> ou le Maladroit. Ce ne sont pas des rôles aussi puissants que des rôles de Villageois mais cela peut en valoir la chandelle : 
+	> <Role REVEUR /> : Si les gens se taisent sur leur rôle, choisissez le <Role REVEUR /> pour avoir cette information à découvert ! Un <Role REVEUR /> a de grandes informations et peut rapidement construire un cercle de confiance avec les autres gentils. C'est aussi un fantastique détecteur à <Role VORTOX /> !
 
-	> Vous pouvez rendre un Etranger ivre. Si vous pensez que le Démon veuille tuer une Dulcinée par exemple, c’est une excellente chose que de la rendre ivre et neutraliser ainsi son pouvoir.
-  > La capacité d’un Maladroit est effrayante, vous pouvez être certain que si la partie n’est pas terminée, le choix du Maladroit doit être juste. Si vous souhaitez ne pas prendre de risque, choisissez le Maladroit et rendez le ivre.
-	> Vous pouvez aussi choisir un Etranger si vous pensez qu’un Fang Gu est en jeu, ce qui vous donnerait une chance de changer en Maléfique. Bien sûr, vous n’abuseriez pas de votre fantastique capacité pour faire une telle action, n’est-ce-pas ?
+	> <Role CHARMEUR_DE_SERPENT /> : Le <Role CHARMEUR_DE_SERPENT /> peut détecter qui est et qui n'est pas le démon et ne peut pas être affecté par le <Role VORTOX /> ce qui rend son information très pertinente. Cela vous offre aussi l'opportunité de devenir le démon mais vous n'abuseriez jamais de votre pouvoir pour ça n'est ce pas ?
 
-- Utiliser votre capacité tôt dans la partie vous permet d’avoir plus d’impact dans le jeu par rapport au rôle que vous allez copier. Au moins, si le Démon vous tue, vous aurez utilisé votre  rôle de substitution. Personne ne veut mourir en tant que simple <Role FAUSSAIRE />, non ?
+	> <Role MATHEMATICIEN /> : Savoir qui ou qui n'a pas des informations pertinentes est vital dans Sects & Violets, en particulier quand vous combattez un démon comme le <Role NO_DASHII />. Si vous voulez avoir un indicateur sur la pertinence des informations du village, personne n'est plus efficace que le <Role MATHEMATICIEN />.
 
-- La stratégie contraire qui consiste à copier un rôle en fin de partie est plus risquée mais en sachant quels sont les rôles et de quelle façon l’enquête s’est orientée, vous aurez plus de latitude pour choisir le rôle qu’il faut pour venir compléter les informations de votre camp et le faire triompher.
-Par exemple, vous pensez qu’un Vigormortis est en jeu ? Prenez l’Oracle. Vous avez un problème sur une situation de Jumeau Maléfique ? Sélectionnez la Couturière. Besoin d’une réponse juste ? L’Artiste peut vous aider…
+	> <Role FLEURISTE /> : Un <Role FLEURISTE /> innocent terrifie plus un démon que la plupart des villageois de Sects & Violets. Savoir quand le démon a ou n'a pas voté est une information cruciale car elle réduit les cachettes du démon dans ce village d'innocents. Imiter cette capacité secrètement est encore mieux puisque vous pourriez bercer le démon dans un faux sentiment de sécurité.
 
-- Si un joueur donne des informations régulières tel que l’Oracle ou le Rêveur, vous pouvez secrètement et délibérément dupliquer leur rôle. Maintenant qu’ils sont ivres, leurs informations devraient être différentes des vôtres ou être carrément opposées les unes des autres. Si leurs informations restent invariablement les mêmes malgré le fait qu’ils soient ivres, vous pouvez raisonnablement vous dire qu’ils sont Maléfiques.
+	> <Role CRIEUR /> : Ce que le <Role FLEURISTE /> est au démon, le <Role CRIEUR /> l'est aux sbires. C'est une excellente option si vous avez une <Role SORCIERE /> en jeu puisque les gentils peuvent être réticents à nominer et les maléfiques plus volontaires. C'est une autre imitation qui vaut le coup d'être faite secrètement car les sbires seront à l'aise en pensant qu'il n'y a pas de <Role CRIEUR />. en jeu... et subitement vous voilà !
+
+	> <Role ORACLE /> : Pouvoir faire confiance aux morts est extrêmement important dans blood on the clocktower. Malheuresement, un démon comme le <Role VIGORMORTIS /> rend cela plus difficile dans Sects&Violets car les sbires infiltrennt les morts sous le déguisement de pauvres victimes du démon. Le contre ultime à cela est l'<Role ORACLE /> qui juge les morts. Même sans vous inquiétez du vicieux <Role VIGORMORTIS />, votre information est incroyable.
+
+	> <Role SAVANT /> : Si vous avez l'impression qu'il n'y a pas assez d'informations dans la partie en général, le <Role SAVANT /> est la solution. Avoir des indices chaque jour directement de la part du conteur vous donnera beaucoup d'informations variées avec lesquelles travailler et cela aidera grandement le village qui essayera d'en déduire qui est maléfique.
+
+	> <Role COUTURIERE /> : Vérifier l'alignement des autres joueurs vous donnera un indiquera instantanément si vous vous devriez leur faire confiance ou non. Si vous avez des suspicions particulières sur un ou plusieurs joueurs, la <Role COUTURIERE /> va vous donner une indication sur leur véritable allégence. Cela a aussi l'avantage d'être une capacité à usage unique ce qui signifie que vous pouvez coordonnez votre copie de capacité avec la véritable couturière et avoir tous les deux des informations utilisables.
+
+	> <Role ARTISTE /> : Avoir la possibilité de poser une question oui/non au conteur à propos de la partie est très puissant. Ne sous estimez pas ce que cela peut apporter à la partie. Il n'y a pas de limites ! Tout comme la <Role COUTURIERE />, l'<Role ARTISTE /> n'utilise sa capacité qu'une fois alors faites attention et vous pourriez finir avec deux questions d'<Role ARTISTE /> !
+
+	> <Role JONGLEUR /> : Le <Role JONGLEUR /> agit lors de sa première nuit, pas la première nuit du jeu. Cela signifie qu'après quelques jours vous pouvez surgir de manière inattendue en tant que <Role JONGLEUR /> et confirmer un certain nombre de joueur rapidement et facilement. Beaucoup de joueurs seront réticents à se révéler le premier jour mais s'ouvriront au fil des jours. Cela vous donne un avantage sur le véritable <Role JONGLEUR />. 
+
+	> <Role SAGE /> : Prétendez être n'importe quel autre villageois de cette liste pour n'importe quelle raison mais copier la capacité du <Role SAGE />. Le concept d'avoir un <Role FLEURISTE /> ou un <Role SAVANT /> qui apparaît subitement en ville rendra le démon nerveux ce qui constitue le piège parfait pour qu'il vous tue la nuit. 
+
+- Vous pouvez prendre aussi un Etranger comme le <Role BARBIER /> ou le <Role MALADROIT />. Ce ne sont pas des rôles aussi puissants que des rôles de Villageois mais cela peut en valoir la chandelle : 
+
+	> Vous pouvez rendre un Etranger ivre. Si vous pensez que le Démon veuille tuer une <Role DULCINEE /> par exemple, c’est une excellente chose que de la rendre ivre et neutraliser ainsi son pouvoir.
+    
+	> La capacité d’un <Role MALADROIT /> est effrayante, vous pouvez être certain que si la partie n’est pas terminée, le choix du <Role MALADROIT /> doit être juste. Si vous avez cruellement besoin d'informations ou que vous aimez juste prendre des risques, ça peut être une option pour vous.
+
+-Utiliser votre capacité tôt dans la partie est souvent à votre avantage. Plus tôt vous agissez, plus vous aurez d'informations et d'impact sur la partie en général. Au moins, si le Démon vous tue, vous aurez fait quelque chose. Personne ne veut mourir en tant que simple faussaire, non ?
+
+-  Choisir de copier un rôle en fin de partie est plus risqué mais vous permet de faire un choix plus réfléchi sur la capacité à copier. Vous aurez alors une meilleure idée de qui est en jeu, de quels maléfiques vous combattez ou de quel rôle sera le plus utile pour renforcer les villageois.
+Par exemple, vous pensez qu’un <Role VIGORMORTIS /> est en jeu ? Prenez l’<Role ORACLE />. Vous avez un problème sur une situation de <Role JUMEAU_MALEFIQUE /> ? Sélectionnez la <Role COUTURIERE />. Besoin d’une réponse précise ? L’<Role ARTISTE /> peut vous aider.
+
+- Chercher des informations avant de prendre une décision ! Provoquer l'ivresse d'un joueur peut handicaper votre équiper autant que cela pourrait l'aider. Savoir qui est en jeu et ce que vous pouvez copier sans impacter vos équipiers est très important.
+
+- Si un joueur donne des informations régulières tel que l’<Role ORACLE /> ou le <Role REVEUR />, vous pouvez secrètement et délibérément dupliquer leur rôle. Maintenant qu’ils sont ivres, leurs informations devraient être différentes des vôtres ou être carrément opposées les unes des autres. Si leurs informations restent invariablement les mêmes malgré le fait qu’ils soient ivres, vous pouvez raisonnablement vous dire qu’ils sont maléfiques.
 
 - Oubliez toutes les informations qu’on vous donne sur cette page et faites vous plaisir en copiant le rôle qui vous fait envie ! Des <Role CHARMEUR_DE_SERPENT /> parmi les lecteurs ?
 
-- Des fois, c’est une bonne stratégie de dédoubler un rôle. Cela assure que l'information d'un rôle de vilalgeois soit dans la partie même si le démon tue l'un d'entre vous. surtout si vous avez peur qu’il meurt. Par exemple, si vous avez un Jumeau Maléfique en jeu et que vous avez peur de perdre votre <Role CRIEUR />, dupliquez-le et même si l’un d’entre vous meurt, l’autre pourra toujours prendre la relève, c’est une stratégie gagnante-gagnante pour les deux joueurs et le Village aussi.    
+- Des fois, c’est une bonne stratégie de dédoubler un rôle. Cela assure que l'information d'un rôle de villageois soit dans la partie même si le démon tue l'un d'entre vous. surtout si vous avez peur qu’il meurt. Cela signifie aussi que le village est moins incité à vous exécuter.
+Par exemple, si vous avez un <Role JUMEAU_MALEFIQUE /> en jeu et que vous avez peur de perdre votre <Role CRIEUR />, dupliquez-le. Ainsi, le village apprends dans tous les cas si un sbire a nominé car si c'est vous qui mourrez, le <Role CRIEUR /> d'origine aura l'information. C’est un gagnant-gagnant.
 
 ### Bluffer le faussaire
+
+- Pour neutraliser la capacité d'un joueur, prétendez avoir choisi d'imiter sa capacité. Vous pouvez prétendre l'avoir déjà fait car vous ne saviez pas que ce rôle était en jeu. Ou vous pouvez aussi prétendre l'avoir fait après coup car vous ne croyiez pas que ce joueur était le rôle qu'il prétend être ou parce que vous vouliez simplement assurer le coup en doublant la capacité existante. Par exemple, un <Role SAVANT /> est en jeu et obtient de bonnes informations. Cette nuit, vous prétendez avoir copié sa capacité ce qui signifierait que le véritable <Role SAVANT /> aurait des informations biaisées et qu'elles devraient être ignorées. Quand on vous demande pourquoi vous avez fait cela, vous pouvez dire que les informations de <Role SAVANT /> sont très utiles et que le démon ne peut pas tuer les deux <Role SAVANT /> à la fois. En plus, vous n'étiez pas sûr que le <Role SAVANT /> disait la vérité de toute façon.
+
+- Le faussaire est également un bon bluff de secours si votre bluff initial ne fonctionne pas ou que vous êtes en doublon avec un villageois en jeu. Quand ce joueur prétend avoir le rôle que vous prétendez avoir, vous pouvez dire que vous êtes le faussaire qui a copié cette capacité.
+
+- Pour semer un maximum de confusions, choisissez un rôle à information. <Role SAVANT /> est difficile et nécessite de créer une paire d'informations chaque jours mais c'est très créatif. <Role HORLOGER /> est un bluff simple mais peu écarter le village du droit chemin très facilement. La <Role COUTURIERE /> ou l'<Role ARTISTE /> peut causer toute sorte de chaos alors que le <Role REVEUR /> ou le <Role JONGLEUR /> tend à confirmer des informations que le village a déjà ce qui vous permet de vous couvrir.
+
+- Au lieu de vous contenter de dire au village le rôle que vous avez imité, impliquez le dans la décision du rôle à imiter. Demandez aux joueurs quels rôles serait le plus bénéfique selon eux. Vous pouvez le faire en secret avec un ou deux joueurs mais vous pouvez aussi le demander publiquement. Le village a tendance à faire confiance aux joueurs de bonne volonté et il n'y a rien de mieux pour ça que demander son avis sur la capacité que vous devriez imiter.
+
+- Si un maléfique bluff un rôle et que ça ne se passe pas bien pour lui, prétendez avoir copier la capacité du rôle qui prétend être. Si ses informations ne collaient pas, le village pourrait maintenant le croire s'il croit que vous êtes vraiment le faussaire qui l'a rendu ivre. Et s'ils sont toujours suspicieux sur ce joueur, alors vous pouvez toujours dire que vous avez choisi son rôle car vous le trouviez suspect aussi. Par exemple, si un de vos camarades sbire bluff le <Role FLEURISTE /> et que l'ensemble de ses informations n'a pas de sens, le village va le soupçonner d'être maléfique. Si vous dites « Aha! L'information du <Role FLEURISTE /> est fausse car je suis le faussaire qui a choisi la capacité du <Role FLEURISTE /> et donc le <Role FLEURISTE /> d'origine est ivre. C'est parfaitement logique ! », alors le village pourrait vous croire vous et votre comparse. Si, en revanche, le village est toujours suspicieux que le sbire n'est pas vraiment le <Role FLEURISTE />, vous pouvez dire « Je suis d'accord. C'est pour ça que j'étais à l'aise en choisissant ce rôle. Si le prétendu <Role FLEURISTE /> n'est pas le <Role FLEURISTE /> alors ça n'a pas de conséquence si j'ai choisi cette capacité. » Boom.
 
 ### Comment conter?
 
