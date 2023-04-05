@@ -7,7 +7,7 @@ export abstract class Role implements BotcEntity {
         readonly type: RoleType,
         readonly filename: string,
         readonly originalName: string,
-        readonly clazz: keyof typeof Class,
+        readonly clazz: keyof typeof Clazz | string,
         readonly wakeUpSchedule: keyof typeof WakeUpSchedule | string,
     ) { }
 
@@ -27,7 +27,7 @@ export interface CreateRole {
     name: string
     filename?: string
     originalName: string
-    clazz?: keyof typeof Class
+    clazz?: keyof typeof Clazz | string
     wakeUpSchedule?: keyof typeof WakeUpSchedule | string
 }
 
@@ -60,7 +60,7 @@ export class Voyageur extends Role {
 export type Good = {}
 export type Evil = {}
 
-export const Class: { [key: string]: string } = {
+export const Clazz: { [key: string]: string } = {
     DETECTION: 'Détection',
     PROTECTION: 'Protection',
     TANK: 'Tank',

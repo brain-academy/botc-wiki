@@ -4,7 +4,7 @@ import {Tile} from './core/tile.component'
 import {Iconised, MarkdownDocument, Theme} from '../domain/markdown-types'
 import Module from '../domain/module/module'
 import {Modules} from '../domain/module/modules'
-import R, {RoleType, WakeUpSchedule} from '../domain/role/role'
+import R, {RoleType, Clazz, WakeUpSchedule} from '../domain/role/role'
 import {Roles} from '../domain/role/roles'
 import {default as ModuleComponent} from './module.component'
 
@@ -37,7 +37,7 @@ const Role = ({tile, header, role, ...other}: RoleProps) => {
 			<h4>Modules : {(Modules.containing(role) as Module[]).reduce((acc, module, index) => <React.Fragment>{acc}{index > 0 && ' - '}<ModuleComponent module={module} /></React.Fragment>, <React.Fragment></React.Fragment>)}</h4>
 			<h4>Nom Original : {originalName}</h4>
 			<h4>Alignement : {RoleType[type]} - {alignment(type)}</h4>
-			<h4>Classe : {clazz}</h4>
+			<h4>Classe : {Clazz[clazz] || clazz}</h4>
 			<h4>Réveil : {WakeUpSchedule[wakeUpSchedule] || wakeUpSchedule}</h4>
 		</React.Fragment>
 		:

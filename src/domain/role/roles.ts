@@ -3,7 +3,7 @@ import {Demon, Etranger, Sbire, Villageois, Voyageur} from "./role"
 export const Roles = {
 	VILLAGEOIS: {
 		AERONAUTE: Villageois.new({name: 'Aéronaute', filename: 'aeronaute', originalName: 'Balloonist', clazz: 'DETECTION', wakeUpSchedule: 'EVERY_NIGHT'}),
-		ALCHIMISTE: Villageois.new({name: 'Alchimiste', originalName: 'Alchemist', wakeUpSchedule: 'La première nuit puis identique au rôle attribué'}),
+		ALCHIMISTE: Villageois.new({name: 'Alchimiste', originalName: 'Alchemist', wakeUpSchedule: 'La première nuit, puis identique au rôle attribué'}),
 		AMNESIQUE: Villageois.new({name: 'Amnésique', filename: 'amnesique', originalName: 'Amnesiac'}),
 		ARCHIVISTE: Villageois.new({name: 'Archiviste', originalName: 'Librarian', clazz: 'FIRST_NIGHT', wakeUpSchedule: 'FIRST_NIGHT'}),
 		ARTISTE: Villageois.new({name: 'Artiste', originalName: 'Artist'}),
@@ -98,7 +98,7 @@ export const Roles = {
 		MANIPULATEUR: Sbire.new({name: 'Manipulateur', originalName: 'Cerenovus', wakeUpSchedule: 'EVERY_NIGHT'}),
 		MARIONNETTE: Sbire.new({name: 'Marionnette', originalName: 'Marionette', wakeUpSchedule: 'Identique au faux rôle attribué'}),
 		MEZEPHELES: Sbire.new({name: 'Mezepheles', originalName: 'Mezepheles', wakeUpSchedule: 'FIRST_NIGHT'}),
-		PARRAIN: Sbire.new({name: 'Parrain', originalName: 'Godfather', wakeUpSchedule: 'La première nuit puis quand un étranger meurt de jour'}),
+		PARRAIN: Sbire.new({name: 'Parrain', originalName: 'Godfather', wakeUpSchedule: 'La première nuit, puis quand un étranger meurt de jour'}),
 		PROPHETE_DE_L_EFFROI: Sbire.new({name: `Prophète de l'effroi`, filename: 'prophete-de-l-effroi', originalName: 'Fearmonger', wakeUpSchedule: 'EVERY_NIGHT'}),
 		PSYCHOPATHE: Sbire.new({name: 'Psychopathe', originalName: 'Psychopath'}),
 		SORCIERE: Sbire.new({name: 'Sorcière', filename: 'sorciere', originalName: 'Witch', wakeUpSchedule: 'EVERY_NIGHT'}),
