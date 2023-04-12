@@ -10,8 +10,15 @@ import Role from '/src/components/role.component'
 ### Description
 
 Chaque nuit, choisissez un joueur et un rôle qu’il devient (si ce rôle n’est pas en jeu) sans changer d’alignement. Si un démon est créé, les morts de cette nuit seront laissés au choix du conteur.
- 
-### Exemples  
+
+La vieille chouette transforme le rôle d’un joueur en un autre rôle.
+
+-   Chaque nuit, la vieille chouette choisit un joueur et quel rôle il sera transformé.
+
+-   Elle ne peut pas créer de doublon de rôle. Si le rôle choisi est déjà en jeu, rien ne se passe.
+
+### Exemples 
+
 > La <Role VIEILLE_CHOUETTE /> transforme l'<Role HORLOGER /> en <Role BETE_DE_FOIRE />.
 
 > La <Role VIEILLE_CHOUETTE /> essaye de transformer le <Role SAVANT /> en <Role SAGE /> mais rien ne se passe car il y a déjà un <Role SAGE /> en jeu.
@@ -21,6 +28,7 @@ Chaque nuit, choisissez un joueur et un rôle qu’il devient (si ce rôle n’e
 > Durant la dernière nuit, la <Role VIEILLE_CHOUETTE /> transforme l’<Role ORACLE /> en villageois <Role NO_DASHII />. Le conteur tue seulement le véritable démon maléfique pour qu’un seul démon soit vivant sur la dernière journée. 
 
 ### Mécaniques et conseils
+
 - Votre capacité change le rôle d’un joueur mais pas son alignement. Cela signifie que si vous transformez un villageois en <Role SORCIERE />, il y aura un villageois avec une capacité de sbire. De la même façon, si vous transformez un maléfique en <Role FAUSSAIRE />, il y a maintenant un maléfique avec une capacité de villageois. Il faut bien avoir cela à l’esprit lorsqu’on choisit un joueur à transformer. Il y a des avantages à créer un maléfique avec des capacités de villageois ou d’étranger ou même des villageois avec des capacités de sbire ou de démon, mais vous pourriez être très déçu si vous vous attendiez à ce qu’un villageois vienne grossir vos rangs de maléfiques.
 
 - Créer un nouveau démon n’est possible que pour la vieille chouette. Vous pouvez transformez votre démon en un autre démon (par exemple en introduisant subitement un <Role VORTOX /> dans le jeu), mais vous pouvez aussi déplacer le démon en transformant un autre joueur maléfique en démon. Enfin, vous pouvez créer un démon villageois en transformant l’un de vos adversaires. Ce grand pouvoir peut présenter de gros désavantages. Le conteur peut contrebalancer vos tentatives en choisissant les morts de la nuit. Ainsi, « déplacer » un démon va souvent provoquer la mort d’un autre maléfique (habituellement l’ancien démon). Le conteur vous laissera rarement continuer une partie avec plusieurs démons vivants.  Des tentatives plus subtiles, comme simplement changer le type de votre démon, feront qu’il n’y aura aucune mort cette nuit pour que le village ait une indication que quelque chose a changé. Enfin, bien qu’il soit possible qu’un démon villageois coexiste avec le vrai démon, vous devriez être très prudent car le démon a toujours la possibilité de tuer la nuit et sa motivation à éliminer les maléfiques est restée intacte ! De plus, faites attention, lorsque vous transformez un <Role VIGORMORTIS /> : A la seconde où il a été transformé, vous perdrez vos capacités si vous êtes déjà mort.
@@ -56,3 +64,15 @@ Chaque nuit, choisissez un joueur et un rôle qu’il devient (si ce rôle n’e
 - Souvenez-vous que si vous changez de rôle, votre alignement ne change pas. Si vous êtes un villageois et que vous être transformé en <Role SORCIERE />, vous êtes toujours du coté du village et vous pouvez maintenant utilisez votre capacité de Sorcière pour maudir un autre joueur… peut être même un maléfique si vous avez de la chance. Si vous êtes un villageois qui est tranformé en démon, alors vous êtes un démon qui joue avec le village. Vous pouvez utiliser votre capacité pour tuer un jouer la nuit et possiblement tuer le démon maléfique de cette façon. Si vous devenez un démon villageois, souvenez-vous que le village ne gagne que lorsque tous les démons sont morts, vous inclus, donc vous et le démon maléfique devez mourir pour que le village gagne. 
 
 - La capacité de la vieille chouette ne créé que des personnes dont le rôle n’était pas déjà en jeu. Bluffez un rôle indésirable pour que la vieille chouette ne soit pas tenté de transformer quelqu’un en ce personnage. Par exemple, si vous bluffez la <Role DULCINEE />, alors la Vieille chouette n’esssayera de transformer un joueur en Dulcinée et pourrait accidentellement choisir un rôle déjà en jeu… ce qui signifie qu’aucune transformation ne produira ici. Même si la vieille chouette réussit une transformation, en bluffant un rôle, vous garantissez presque le fait que la vieille chouette ne choisira pas ce rôle indésirable en particulier.
+
+### Comment conter?
+
+Chaque nuit sauf la première, réveillez la vieille chouette. Elle désigne n’importe quel joueur et n’importe quel rôle de la fiche de rôle. Rendormez la vieille chouette.
+
+Si le rôle choisi est en jeu, rien ne se passe.
+
+Si le rôle choisi n’est pas en jeu, réveillez ce joueur. Montrez-lui le jeton d’informations « TU ES » puis son nouveau jeton de rôle puis rendormez-le. Remplacez son ancien jeton de rôle par son nouveau jeton de rôle dans le grimpire. (_Vous pourriez avoir besoin de retourner le jeton de rôle si sa couleur ne correspond pas à l’alignement du joueur. Vous pourriez avoir besoin de rappeler à ce joueur que son alignement n’a pas changé en lui faisant un pouce vers le haut ou un pouce vers le bas_)
+
+Si un démon est créé, vous pouvez choisir qui vous tuez ou qui vous ne tuez pas au cours de la nuit pour équilibrer le jeu. Les morts additionnelles sont considérées comme des attaques de la vieille chouette.
+
+_Si la vieille chouette transforme un démon en un autre démon, il est préférable de ne faire aucune mort cette nuit pour que le village ait un indice que le démon a changé. Vous pouvez même réveiller le démon pour voir qui il veut attaquer puis le rendormir et décider que personne ne meurt. Si la vieille chouette créé un nouveau démon maléfique, il est préférable de tuer l’ancien démon et peut être d’autres joueurs pour signaler au village que le démon a changé. Si la vieille chouette créé un gentil démon, il est préférable de tuer l’un des démons (si c’est la dernière nuit) ou de laisser les démons courir (si ce n’est pas la dernière nuit) mais puisque tous les démons doivent mourir pour que le village gagne, faites attention._

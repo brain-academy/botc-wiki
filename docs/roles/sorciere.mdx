@@ -11,6 +11,14 @@ import Role from '/src/components/role.component'
 Chaque nuit, lancez votre malédiction sur un joueur. Si celui-ci nomine la jour d’après, il meurt immédiatement. 
 S’il reste 3 joueurs en jeu, votre capacité ne fonctionne plus.
 
+La sorcière maudit un joueur pour qu’il meurt s’il nomine.
+
+-   Chaque nuit, la sorcière choisir un joueur à maudire. Ce joueur meurt s’il nomine qui que ce soit le jour suivant. Sa nomination se poursuit néanmoins.
+
+-   La malédiction de la sorcière persiste seulement un jour mais la sorcière peut maudire le même joueur continuellement chaque nuit.
+
+-   Dès que seulement trois joueurs restent en vie, la malédiction de la sorcière est immédiatement retirée et la sorcière n’agit plus.
+
 
 ### Exemples 
 
@@ -44,7 +52,6 @@ Une autre option intéressante est de prendre le Sage (Sects & Violets), dont la
 N’oubliez pas que vous pouvez maudire un joueur mort, cela cachera votre capacité au Village.
 
 
-
 ### Combattre la Sorcière
 
 - Vous avez juste à vous méfier lorsque vous nominez alors qu’une <Role SORCIERE /> est en jeu mais vous ne le saurez pas nécessairement lors du jour 1. Attention à ceux qui nominent le premier jour. Si l’existence d’une <Role SORCIERE /> est avérée suite au décès d’un joueur maudit par elle, continuez à vous méfier lorsque vous nominez.
@@ -56,3 +63,9 @@ N’oubliez pas que vous pouvez maudire un joueur mort, cela cachera votre capac
 - Les joueurs qui mourront de la <Role SORCIERE /> sont la plupart du temps Gentil. La <Role SORCIERE />, surtout si le joueur est débutant, va typiquement utiliser sa capacité sur des joueurs bons et en particulier sur des rôles puissants. Si le Savant, le Fleuriste, l’Horloger, le <Role PARIEUR />, l’<Role EXORCISTE />… meurent en nominant, vous pouvez en déduire qu’il était probablement Gentil et que ses informations sont justes.
 
 - Ne laissez pas la peur vous guider, emparez-vous de la phase de jour ! Nominez et tant pis si vous perdez un ou deux joueurs, ce n’est pas la fin du monde. Ces morts vont certainement rapprocher les Maléfiques de la victoire mais vous avez toujours la possibilité d’exécuter le Démon. Concentrez-vous sur le moment présent et non pas sur ce qui aurait dû être fait, c’est trop tard
+
+### Comment conter?
+
+Chaque nuit, réveillez la sorcière. Elle désigne n’importe quel joueur. Rendormez la sorcière. Marquez le joueur avec le jeton de rappel « MAUDIT »
+
+Le jour suivant, si ce joueur marqué « MAUDIT » fait une nomination, déclarez immédiatement sa mort. (_la nomination continue normalement_)

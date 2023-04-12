@@ -10,8 +10,21 @@ import Role from '/src/components/role.component'
 ### Description
 
 Vous et un joueur d'alignement opposé (votre jumeau) vous connaissez. Si le joueur gentil est exécuté, les maléfiques gagnent. Le village ne peut pas gagner si vous êtes tous les deux en vie (même si le démon est mort).
- 
+
+Le jumeau maléfique usurpe le rôle d’un joueur gentil afin que le village ne sache pas quel jumeau est gentil et quel jumeau est maléfique.
+
+-   Le jumeau maléfique est en paire avec un joueur gentil choisi par le conteur qui sera considéré comme le jumeau gentil.
+
+-   La première nuit, le jumeau maléfique et le jumeau gentil se réveillent ensemble pour un contact visuel et apprenne le rôle de chacun.
+
+-   Si le jumeau gentil est exécuté, les maléfiques l’emporte. Si le jumeau maléfique est exécuté, la partie continue. Un jumeau maléfique mort n’a pas de capacité donc les maléfiques ne gagnent pas si le jumeau gentil est exécuté après. Le village ne peut pas gagner tant que les deux jumeaux sont en vie. Même si le démon est mort, la partie continue. Le village doit tuer le jumeau maléfique ET le démon pour gagner.
+
+-   Si un joueur gentil est transformé en jumeau maléfique, il est toujours gentil et un joueur maléfique devient son jumeau. Peu importe quel jumeau est quel rôle. Ce qui importe est leur alignement. Le village peut sereinement exécuter le joueur maléfique mais s’il exécute le joueur gentil, les maléfiques gagnent.
+
+-   Si les deux jumeaux sont du même alignement, le conteur choisit un nouveau jumeau.
+
 ### Exemples  
+
 > Les deux jumeaux prétendent être l’<Role ORACLE />. Le <Role JUMEAU_MALEFIQUE /> est exécuté. La partie continue.
 
 > La <Role VIEILLE_CHOUETTE /> transforme le <Role SAGE />, qui est aussi le jumeau villageois en <Role BETE_DE_FOIRE />. Les deux jumeaux essayent de convaincre le groupe qu’ils sont la <Role BETE_DE_FOIRE />. Le conteur exécute immédiatement la <Role BETE_DE_FOIRE /> qui est aussi le Jumeau Villageois. La partie se termine et les maléfiques gagnent.
@@ -21,7 +34,8 @@ Vous et un joueur d'alignement opposé (votre jumeau) vous connaissez. Si le jou
 > La <Role VIEILLE_CHOUETTE /> transforme un villageois en <Role JUMEAU_MALEFIQUE /> (qui joue toujours pour le village car l'alignement ne change pas). Le village exécute ce <Role JUMEAU_MALEFIQUE />. Les maléfiques gagnent.
 
 ### Mécaniques et conseils
--  La première nuit, vous apprenez le rôle de votre jumeau et il connaît le vôtre. C’est une indication sur un rôle à bluffer. Prétendez avoir le même rôle que votre jumeau. Evidemment, en bluffant ce rôle, il y aura un doublon avec votre jumeau. Néanmoins, comme votre jumeau va continuellement déclarer que vous êtes maléfique de toute façon, prétendre le même rôle ne vas pas plus vous incriminer. En réalité, bluffer le rôle de votre jumeau est l’option la moins risquée. Si vous bluffez un autre rôle déjà en jeu, alors le village saura à coup sûr que vous êtes maléfique. Par exemple, si le jumeau villageois est l’<Role HORLOGER /> et que le jumeau maléfique bluffe l’<Role HORLOGER /> , le village saura qu’un des horlogers est maléfique mais ne saura pas lequel. Dans la partie suivante, le jumeau villageois est <Role MALADROIT />  et le Jumeau maléfique bluff <Role JONGLEUR /> . Le véritable <Role JONGLEUR /> se révèle et comme le village sait qu’un des jumeaux est maléfique, ils exécutent celui qui prétend être le <Role JONGLEUR />, car ils savent aussi qu’un des deux Jongleurs ment. 
+
+- La première nuit, vous apprenez le rôle de votre jumeau et il connaît le vôtre. C’est une indication sur un rôle à bluffer. Prétendez avoir le même rôle que votre jumeau. Evidemment, en bluffant ce rôle, il y aura un doublon avec votre jumeau. Néanmoins, comme votre jumeau va continuellement déclarer que vous êtes maléfique de toute façon, prétendre le même rôle ne vas pas plus vous incriminer. En réalité, bluffer le rôle de votre jumeau est l’option la moins risquée. Si vous bluffez un autre rôle déjà en jeu, alors le village saura à coup sûr que vous êtes maléfique. Par exemple, si le jumeau villageois est l’<Role HORLOGER /> et que le jumeau maléfique bluffe l’<Role HORLOGER /> , le village saura qu’un des horlogers est maléfique mais ne saura pas lequel. Dans la partie suivante, le jumeau villageois est <Role MALADROIT />  et le Jumeau maléfique bluff <Role JONGLEUR /> . Le véritable <Role JONGLEUR /> se révèle et comme le village sait qu’un des jumeaux est maléfique, ils exécutent celui qui prétend être le <Role JONGLEUR />, car ils savent aussi qu’un des deux Jongleurs ment. 
 
 - Dites que le jumeau villageois est le jumeau maléfique. Dites-le encore et encore et encore. Après tout, c’est que le jumeau villageois fera. 
 
@@ -56,3 +70,13 @@ Vous et un joueur d'alignement opposé (votre jumeau) vous connaissez. Si le jou
 - Si seulement une personne accuse un joueur d’être le jumeau maléfique, croyez l’acusateur, pas l’accusé. La plupart des jumeaux maléfiques vont aussi déclarer que leur accusateur est le jumeau maléfique mais pas toujours. Dans ce genre de situations, vous avez un choix :  Soit croire que l’accusateur dit la vérité et exécuter l’accusé, avec pour conséquence possible d’avoir tué une Sbire. Soit vous croyez que l’accusé montre la vérité et exécuter l’accusateur avec pour conséquence possible de perdre la partie. Il est bien trop risqué de tuer l’accusateur. En tout cas, pas avant d’avoir une preuve solide contre lui. Alors, si vous devez tuer l’un d’entre eux, exécuter l’accusé.
 
 - Quand les morts cessent de se produire la nuit, vous avez presque certainement exécuté le Démon. Puisque la partie continue alors que le démon est mort (Le village ne PEUT PAS gagner tant que le jumeau maléfique est en vie) le démon est certainement mort et ne peuvent plus tuer la nuit.
+
+### Comment conter?
+
+En préparant le grimoire, choisissez un jumeau gentil en marquant un joueur gentil avec le jeton de rappel « JUMEAU ». Durant la première nuit, réveillez les jumeaux. Laissez-les avoir un contact visuel. Désignez le jumeau maléfique et montrez ensuite le jeton de rôle du jumeau maléfique au joueur gentil. Désignez le jumeau gentil et montrez le jeton de rôle de ce joueur au jumeau maléfique. Rendormez-les ensuite. 
+
+Tant que les deux jumeaux sont en vie, le village ne peut pas gagner. Si le jumeau gentil est exécuté, les maléfiques gagnent.
+
+_Si la vieille chouette créé un jumeau maléfique durant la dernière nuit, vous pouvez soit choisir le démon comme jumeau ou un joueur mort pour que le village ait toujours une chance de gagner._
+
+_c’est rarement une bonne idée de choisir un voyageur d’être un jumeau_

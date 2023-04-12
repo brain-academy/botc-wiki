@@ -8,9 +8,19 @@ import Role from '/src/components/role.component'
 <Role VORTOX header />
 
 ### Description
+
 Chaque nuit, choisissez un joueur. Il meurt. Toutes les capacités à informations des rôles de villageois sont fausses. S’il n’y a pas d’exécutions, les maléfiques gagnent.
  
-### Exemples  
+Le Vortox falsifie toutes les informations.
+
+-   A chaque fois qu’un villageois reçoit des informations grâce à sa capacité, il reçoit de fausses informations. Même s’ils sont ivres ou empoisonnés, cela doit être faux.
+
+-   Le Vortox n’affecte pas les informations obtenues par d’autres moyens comme par exemple, l’explicatio nde règles par le conteur ou quand un joueur change de rôle ou d’alignement.
+
+-   Quand la nuit tombe, si personne n’a été exécuté, les maléfiques gagnent. L’exil d’un voyageur ne compte pas comme une exécution.
+
+### Exemples 
+
 > Le <Role VORTOX /> tue le <Role SAGE />. Le <Role SAGE /> apprend deux joueurs et aucun des deux n’est le démon.
 
 > Personne n’a nominé ou voté aujourd’hui. Cette nuit, le <Role CRIEUR /> et le <Role FLEURISTE /> ont un « Oui ».
@@ -22,6 +32,7 @@ Chaque nuit, choisissez un joueur. Il meurt. Toutes les capacités à informatio
 > Aujourd’hui, un joueur est mort de la <Role SORCIERE />, deux voyageurs ont étés exilés, 5 nominations se sont déroulées mais personne n’a été exécuté. Les maléfiques gagnent.
 
 ### Mécaniques et conseils
+
 - En tant que démon, vous avez deux avantages significatifs. Forcer le village a exécuté (sinon… !) et forcer toutes les informations à être fausses. Cette combinaison mortelle fait de vous le démon le plus terrifiant de la liste. La simple suspicion de votre présence fera trembler le village. Attention cependant, vous n’êtes pas invulnérable et si le village pense que vous êtes probablement en jeu, alors ils peuvent commencer à inverser tous les mensonges causés par votre capacité et votre équipe maléfique se fera coincer très rapidement.
 
 - Donner une véritable information pour masquer l’existence de votre capacité de vortox. Beaucoup d’informations de Sects & Violets sont binaires et il peut être difficile de prouver votre existence à moins que le village soit prêt à y consacrer de puissantes capacités (comme celle de l’<Role ARTISTE /> ou du <Role JONGLEUR />). Cela signifie qu’il est difficile de considérer une information comme vrai ou fausse dès le début. Ajouter des informations vrais ou vérifiables dans votre bluff vous fera paraître digne de confiance et éloignera le village de la piste du Vortox.
@@ -51,3 +62,11 @@ Chaque nuit, choisissez un joueur. Il meurt. Toutes les capacités à informatio
 - Attention au <Role NO_DASHII />, au <Role FAUSSAIRE /> et la <Role DULCINEE />. A cause de leurs capacités qui peuvent empoisonner ou rendre ivre, certains joueurs auront de fausses informations. Si vous pensez avoir de fausses informations, essayer de déterminer si cela affecte tout le village ou juste vous.
 
 - Tous les rôles qui reçoivent de l’information ne sont pas affectés par le Vortox. Le <Role CHARMEUR_DE_SERPENT /> par exemple, sait qui n’est pas démon par effet secondaire de sa capapcité qui n’est pas à proprement parlé une capacité à information. Grace à cela, cette information peut être considérée comme vraie dans une partie avec une Vortox.
+
+### Comment conter?
+
+Tant que le Vortox est vivant, vous devez donner de fausses informations à chaque fois qu’une capacité de villageois vous le demande.
+
+Chaque nuit, sauf la première, réveillez le Vortox. Il désigne un joueur. Ce joueur meurt. Marquez-le avec le jeton de rappel « ASSASSINE ». Rendormez le Vortox. 
+
+Au crépuscule, si personne n’a été exécuté ce jour, le partie se termine et les maléfiques gagnent.

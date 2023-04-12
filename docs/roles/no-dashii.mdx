@@ -10,12 +10,20 @@ import Role from '/src/components/role.component'
 ### Description
 Chaque nuit, sauf la première (appelée Nuit 0), choisissez un joueur, il meurt. Vos deux voisins villageois les plus proches (morts ou vifs) sont empoisonnés.
  
+Le No Dashii empoisonne ses voisins villageois.
+
+-   Les villageois les plus proches du No Dashii dans le sens horaire et antihoraire sont empoisonnés qu’ils soient morts ou vivants. Si un No Dashii meurt ou perd sa capacité, ces joueurs deviennent sains. Deux villageois seront toujours empoisonnés de cette façon car les voisins étrangers sbires ou voyageurs seront sautés.
+
+-   Si un nouveau joueur devient le No Dashii, ou si un un villageois empoisonné se transforme en un rôle non villageois, alors les joueurs qui sont empoisonnés changent immédiatement pour s’adapter à qui sont les voisins du No Dashii.
+
 ### Exemples  
+
 > Au début de la partie, le <Role NO_DASHII /> a pour voisin un <Role CRIEUR /> et un <Role CHARMEUR_DE_SERPENT />. Ils sont tous les deux empoisonnés. Quelques jours plus tard, ils sont tous les deux morts et les voisins vivants les plus proches du <Role NO_DASHII /> sont un <Role HORLOGER /> et un <Role BARBIER /> qui ne sont pas empoisonnés.
 
 > Dans le sens des aiguilles d’une montre, les voisins du <Role NO_DASHII /> sont le <Role FAUSSAIRE />, le <Role MATHEMATICIEN /> et le <Role SAGE />. Dans le sens inverse des aiguilles d’une montre, ce sont la <Role SORCIERE />, la <Role BETE_DE_FOIRE /> et la <Role COUTURIERE />. Le <Role FAUSSAIRE /> et la <Role COUTURIERE /> sont empoisonnés.
 
 ### Mécaniques et conseils
+
 - Trouver qui sont vos voisins villageois. Vous pourriez être assis à côté de sbires, d’étrangers ou de voyageurs alors il n’est peut-être pas évident de savoir immédiatement qui est empoisonné.
 
 - Une fois que vous savez qui vos voisins villageois les plus proches, défendez-les le plus possible. Ecoutez-les. Répétez leurs arguments au village. Puisqu’ils sont empoisonnés, leurs informations sont probablement fausses et diffuser ces fausses informations jettera de la suspicion sur d’autres joueurs et plus particulièrement si vous n’êtes pas la source de ces informations.
@@ -35,3 +43,11 @@ Chaque nuit, sauf la première (appelée Nuit 0), choisissez un joueur, il meurt
 - Il y a quelques sources de mauvaises informations dans Sects & Violets mais si vous êtes villageois et que vous suspectez que votre information est altérée, un bon début est de surveiller vos voisins et de voir si l’un d’eux est suspect. Si le responsable de cela est le No Dashii, il doit être proche de vous.
 
 - En fonction de la taille du village, déterminer qu’un No Dashii est en jeu par rapport à un <Role VIGORMORTIS /> par exemple, est relativement simple. Si la plupart des informations du village ont du sens, il n’y a probablement pas de No Dashii en jeu. Toutefois, si un bon nombre d’informations du village n’a pas de sens, vous pourriez être confronté à un No Dashii ou un <Role VORTOX />. Déterminez alors si TOUTES les informations sont biaisées ou « juste » LA PLUPART peut faire la différence entre une victoire et une défaite si mémorable qu’elle sera encore citée dans les années à venir.
+
+### Comment conter?
+
+En préparant le grimoire la première nuit, les deux villageois voisins du No Dashii sont empoisonnés. Marquez-les avec le jeton de rappel « EMPOISONNE ». 
+
+Si un villageois empoisonné par le No Dashii devient un rôle qui n’est pas villageois ou que le No Dashii devient un autre rôle ou si un nouveau joueur devient le No Dashii, les nouveaux voisins villageois du No Dashii deviennent empoisonnés et les anciens voisins deviennent sains. Déplacez les jetons de rappel « EMPOISONNE » immédiatement si nécessaire.
+
+Chaque nuit sauf la première, réveillez le No Dashii. Il désigne un joueur. Ce joueur meurt. Marquez-le avec le jeton de rappel « ASSASSINE ». Rendormez-le No Dashii.

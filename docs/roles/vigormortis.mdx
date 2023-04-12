@@ -10,8 +10,19 @@ import Role from '/src/components/role.component'
 ### Description
 
 Chaque nuit*, choisissez un joueur, il meurt. S’il s’agit d’un Sbire, il garde ses capacités (même mort) et vous empoisonnez un des Villageois voisins (mort ou vif) du Sbire [-1 Etranger].
- 
+
+Le vigormortis tue ses propres sbires mais ceux-ci gardent leur capacité.
+
+-   A chaque fois que le vigormortis tue un sbire, celui-ci meurt mais garde sa capacité tant que le vigormortis reste en vie. La sorcière, le manipulateur et la vieille chouette agissent encore chaque nuit.
+
+-   Un peu comme le no dashii, le villageois le plus proche du sbire mort dans le sens des aiguilles d’une montre ou dans le sens contraire devient empoisonné même s’il est mort. Si le Vigormortis meurt ou d’une certaine manière perd sa capacité alors ces joueurs redeviennent sain à nouveau. Un villageois par sbire mort sera toujours empoisonné de cette façon car les voisins étrangers sbires ou démons sont sautés. Le conteur choisi lequel des deux villageois est empoisonné.
+
+-   Tous les sbires tués par le vigormortis gardent leur capacité et un villageois empoisonné. Pas juste le dernier.
+
+-   Si un sbire mort devient un rôle autre que sbire, il n’empoisonne plus de villageois et n’a plus de capacité. Si un sbire mort devient ivre ou empoisonné, il perd sa capacité jusqu’à ce qu’il devienne sobre ou sain à nouveau.
+
 ### Exemples  
+
 > Le <Role VIGORMORTIS /> tue la <Role SORCIERE />. Le joueur que la <Role SORCIERE /> a maudit aujourd’hui reste maudit. Le jour suivant, le joueur maudit nomine, il meurt.
 
 > Le <Role VIGORMORTIS /> tue le <Role JUMEAU_MALEFIQUE />. Le <Role JUMEAU_MALEFIQUE /> est voisin d’un <Role MALADROIT /> et d’un <Role FLEURISTE />. Le <Role SAGE /> est le prochain voisin du <Role MALADROIT />. Le conteur décide que le <Role SAGE /> est empoisonné.
@@ -19,6 +30,7 @@ Chaque nuit*, choisissez un joueur, il meurt. S’il s’agit d’un Sbire, il g
 > Le <Role VIGORMORTIS /> tue la <Role VIEILLE_CHOUETTE />. La <Role VIEILLE_CHOUETTE /> transforme le <Role SAVANT /> en <Role SORCIERE />. Le <Role VIGORMORTIS /> tue la <Role SORCIERE /> qui maudit et tue un joueur. La <Role VIEILLE_CHOUETTE /> transforme la <Role SORCIERE /> morte en <Role ORACLE /> qui n’a maintenant aucune capacité. La <Role VIEILLE_CHOUETTE /> transforme le <Role VIGORMORTIS /> en <Role VORTOX />. La <Role VIEILLE_CHOUETTE /> n’a maintenant plus de capacité.
 
 ### Mécaniques et conseils
+
 - Tuer vos sbires aussi tôt que possible. Si vous tuez vos sbires de nuit, ils gardent leurs capacités. Si vos sbires meurent pendant la journée, leur capacité est perdue. Les tuer vous-même leur garanti de garder leurs capacités pour le reste de la partie. Une <Role SORCIERE />, une <Role VIEILLE_CHOUETTE /> ou un <Role MANIPULATEUR /> qui a la garantie d’agir chaque nuit est un avantage incroyable pour votre équipe soit en causant la perte des capacités du village par la mort (<Role SORCIERE /> et <Role MANIPULATEUR />) ou en devenant un autre rôle (<Role VIEILLE_CHOUETTE />). Dans Sects & Violets, toutes les façons de réduire la quantité d’informations reçues par le village jusqu’au jour final sera d’une grande aide.
 
 - Soyez patients et écoutez ce que les gentils ont à dire. S’ils n’ont pas de suspicions sur aucun de vos sbires, il est probablement mieux de les garder en vie. Chaque jour, vos sbires peuvent utiliser leur vote pour vous éviter d’être exécuté et cela est très utile. Il n’y a aucun bénéfice à tuer un sbire avant que vous ne pensiez qu’il pourrait être exécuté par le village.
@@ -48,3 +60,11 @@ Chaque nuit*, choisissez un joueur, il meurt. S’il s’agit d’un Sbire, il g
 - S’il semble qu’un joueur obtienne de fausses informations mais que ce n’est pas le cas de la majorité des autres joueurs, vous avez probablement un Vigormortis ou un <Role NO_DASHII /> en jeu. Quoiqu’il en soit, commencer à exécuter les joueurs assis à côté de villageois dignes de confiance. Soit vous tuer un <Role NO_DASHII />, soit vous apprenez qu’un Vigormortis est en jeu.
 
 - Quand un villageois obtient soudainement de fausses informations, cela est généralement dû à l’empoisonnement du Vigormortis ou l’ivresse provoquée par la <Role DULCINEE />. Le <Role VORTOX /> et le <Role NO_DASHII /> provoque de fausses informations depuis le début. Si vous identifiez un joueur qui avait de bonnes informations mais qui en reçoit de mauvaises ensuite, alors vous savez aussi que le joueur mort cette nuit est un sbire. Savoir quel joueur mort est un sbire peut être très utile, en particulier quand elle est combinée à l’information de l’<Role HORLOGER />, du <Role CRIEUR />, du <Role REVEUR />, de la <Role COUTURIERE /> ou du <Role JONGLEUR />.
+
+### Comment conter?
+
+En préparant le grimoire, avant de mettre les jetons de rôle dans le sac, retirez un jeton d’étranger et ajoutez un jeton de rôle de villageois (_S’il n’y a pas d’étrangers à retirer, n’ajoutez pas de jeton de rôle de villageois_)
+
+Chaque nuit, sauf la première, réveillez le vigormortis. Il désigne n’importe quel joueur. Rendormez le vigormortis. Si le joueur choisi n’est pas un sbire, il meurt. Marquez-le avec le jeton de rappel « ASSASSINE ».
+
+Si le joueur choisi est un sbire, il meurt. Marquez-le avec le jeton de rappel « ASSASSINE » et le jeton de rappel « CAPACITE ACTIVE ». Le villageois le plus proche dans le sens horaire ou antihoraire est empoisonné. Marquez-le avec le jeton de rappel « EMPOISONNE ».
