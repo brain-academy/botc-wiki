@@ -30,7 +30,7 @@ export const Roles = {
 		FERMIER: Villageois.new({name: 'Fermier', originalName: 'Farmer'}),
 		FLEURISTE: Villageois.new({name: 'Fleuriste', originalName: 'Flowergirl', clazz: 'DETECTION', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
 		FOU: Villageois.new({name: 'Fou', originalName: 'Fool', clazz: 'TANK'}),
-		GARDIEN: Villageois.new({name: 'Gardien', originalName: 'Ravenkeeper', clazz: 'DETECTION', wakeUpSchedule: 'Si tué pendant la nuit'}),
+		GARDIEN: Villageois.new({name: 'Gardien', originalName: 'Ravenkeeper', clazz: 'DETECTION', wakeUpSchedule: 'S\'il est tué pendant la nuit'}),
 		GENERAL: Villageois.new({name: 'Général', filename: 'general', originalName: 'General'}),
 		HERBORISTE: Villageois.new({name: 'Herboriste', originalName: 'Tea Lady', clazz: 'PROTECTION'}),
 		HORLOGER: Villageois.new({name: 'Horloger', originalName: 'Clockmaker', clazz: 'FIRST_NIGHT', wakeUpSchedule: 'FIRST_NIGHT'}),
