@@ -11,15 +11,15 @@ import Role from '/src/components/role.component'
 
 La première fois que vous êtes nominé, si le joueur vous nominant est un Villageois, il est immédiatement exécuté.
 
-La pucelle est protégée de l’exécution…possiblement. En général, un joueur qui nomine une pucelle meurt.
+La pucelle est protégée de l’exécution… possiblement. En général, un joueur qui nomine une pucelle meurt.
 
 -	Si un villageois nomine la pucelle, alors ce villageois est immédiatement exécuté. Comme il ne peut y avoir qu’une exécution par jour, les nominations se terminent immédiatement et on passe à la nuit même si un autre joueur était exécutable.
 
--	Seuls les villageois peuvent être exécutés par la capacité de la pucelle. Si un étranger, un sbire, un démon nomine la pucelle, rien ne se passe et la nomination et le vote se poursuive normalement.
+-	Seuls les villageois peuvent être exécutés par la capacité de la pucelle. Si un étranger, un sbire, un démon nomine la pucelle, rien ne se passe et la nomination et le vote se poursuivent normalement.
 
--	La capacité de la pucelle est puissante car si un villageois nomine et meurt alors les deux joueurs sont très certainement des villageois.
+-	La capacité de la pucelle est puissante car si un villageois la nomine et meurt alors les deux joueurs sont très certainement des villageois.
 
--	Après avoir été nominé pour la première fois, la Pucelle perd sa capacité même le joueur qui a nominé n’est pas mort et même si la pucelle était ivre ou empoisonnée.
+-	Après avoir été nominé pour la première fois, la Pucelle perd sa capacité même si le joueur qui a nominé n’est pas mort et même si la pucelle était ivre ou empoisonnée.
 
 
 ### Exemples 
@@ -43,7 +43,7 @@ La pucelle est protégée de l’exécution…possiblement. En général, un jou
 
 - Une fois que votre capacité est déclenchée, la personne vous ayant nominé est immédiatement exécutée (même si un autre joueur a été nominé et a recueilli assez de votes pour être exécutable). Par cette action, vous pouvez bloquer une exécution et prouver par la même occasion que vous êtes la <Role PUCELLE />.
 
-- Si vous vous êtes dévoilé en tant que <Role PUCELLE /> mais que vous n’avez pas encore utilisé votre capacité, vous serez alors une cible de choix pour le Démon et l’<Role EMPOISONNEUR />. En utilisant votre capacité tôt dans la partie minimise les risques et fait de vous une personne de confiance pour le Village qui peut coordonner l’enquête et faire circuler l’information.
+- Si vous vous êtes dévoilé en tant que <Role PUCELLE /> mais que vous n’avez pas encore utilisé votre capacité, vous serez alors une cible de choix pour le Démon et l’<Role EMPOISONNEUR />. Utiliser votre capacité tôt dans la partie minimise les risques et fait de vous une personne de confiance pour le Village qui peut coordonner l’enquête et faire circuler l’information.
 
 - Vous pouvez choisir de temporiser quelques jours avant d’annoncer que vous êtes la <Role PUCELLE />, cela vous laisse l’opportunité de “choisir” la personne qui vous nominera. Vous pourrez ainsi dédouaner un Gentil ou mettre au grand jour le bluff d’un joueur Maléfique !
 
@@ -53,21 +53,23 @@ La pucelle est protégée de l’exécution…possiblement. En général, un jou
 
     - La personne qui vous a nominé est Maléfique ! Les joueurs Maléfiques peuvent avoir intérêt à vous nominer pour gaspiller votre capacité et laisser planer le doute sur votre rôle mais aussi le sien.
 
-    - La personne qui vous a nominée est un Etranger notamment le <Role SOULARD />
+    - La personne qui vous a nominée est un Etranger notamment le <Role SOULARD />.
 
-    - Vous êtes vous même <Role SOULARD /> : votre capacité n’a jamais existé. Vous avez été empoisonné : votre capacité ne fonctionne plus jusqu’au crépuscule.
+    - Vous êtes vous même <Role SOULARD /> : votre capacité n’a jamais existé. 
+    
+    - Vous avez été empoisonné : votre capacité ne fonctionne plus jusqu’au crépuscule.
 
 - Faites attention à l'<Role ESPION /> ! C’est le seul joueur Maléfique qui peut déclencher votre capacité puisqu’il peut être vu comme étant Villageois.
 
 
 ### Bluffer la Pucelle
-- Un joueur Gentil ne sera jamais exécuté en vous nominant. Ce qui veut dire que lorsque vous serez nominé, l’un de vous ou les deux sera suspecté d’être Maléfique ou <Role SOULARD />. Si vous arrivez à vous faire nominer par un joueur suspecté d’être Maléfique, cela jettera encore plus le doute sur lui et par la même occasion vous innocenterait un peu plus.
+- Un joueur Gentil ne sera jamais exécuté en vous nominant. Ce qui veut dire que lorsque vous serez nominé, l’un de vous ou les deux seront suspecté d’être Maléfique ou <Role SOULARD />. Si vous arrivez à vous faire nominer par un joueur suspecté d’être Maléfique, cela jettera encore plus le doute sur lui et par la même occasion vous innocenterait un peu plus.
 
 - Si une <Role PUCELLE /> est nominée mais qu’un des deux joueurs est le <Role SOULARD />, la capacité de la <Role PUCELLE /> ne se déclenche pas puisque :
 
-    - Soit la <Role PUCELLE /> est en réalité le <Role SOULARD /> (et donc pas la <Role PUCELLE />)
+    - Soit la <Role PUCELLE /> est en réalité le <Role SOULARD /> (et donc pas la <Role PUCELLE />).
 
-    - Soit l’accusateur est un Etranger (et donc pas un Villageois). 
+    - Soit l’accusateur est un Etranger (et donc pas un Villageois).
 
 Quand personne ne meurt en vous accusant, vous pourrez arguer que l’un de vous est <Role SOULARD />. En plus, vous pourrez remettre en cause les informations que le Village a obtenu.
 
