@@ -11,6 +11,18 @@ import Role from '/src/components/role.component'
 
 Chaque nuit, choisissez un joueur : il est empoisonné jusqu’à la nuit suivante, puis il meurt et redevient sain.
 
+Le pukka empoisonne sa victime qui meurt plus tard.
+
+-   Quand le pukka attaque, sa victime est immédiatement empoisonnée. La nuit suivante, juste après la nouvelle attaque du pukka, ce joueur meurt.
+
+-   Contrairement à la plupart des autres démons, le pukka agit la première nuit.
+
+-   L’exorciste empêche le pukka de se réveiller pour empoisonnée un joueur. L’aubergiste empêche le pukka de tuer un joueur empoisonné et ce joueur n’est ensuite plus empoisonné.
+
+-   Si le pukka est ivre et choisit un joueur, ce joueur n’est pas empoisonné et donc ne meurt pas la nuit suivante.
+
+-   Si le pukka était sobre quand il a choisi un joueur la nuit précédente mais est ivre cette nuit, le joueur ne meurt pas. Mais quand le pukka redevient sobre, le poison reprend son effet et tue le joueur la nuit.
+
 ### Exemples
 
 - Lors de la première nuit, le <Role PUKKA /> empoisonne la <Role FEMME_DE_CHAMBRE />. Plus tard dans la nuit, la <Role FEMME_DE_CHAMBRE />  obtient de fausses informations. La nuit suivante, la <Role FEMME_DE_CHAMBRE /> meurt.
@@ -53,3 +65,10 @@ Chaque nuit, choisissez un joueur : il est empoisonné jusqu’à la nuit suivan
 
 **À défaut de suspects, exécutez les joueurs que vous pensez empoisonnés.** Il est préférable d'exécuter un joueur Gentil empoisonné par le <Role PUKKA /> qu'un joueur Gentil qui ne l'est pas. D’une part, cette personne va décéder du poison du <Role PUKKA /> quoiqu’il se passe. D’autre part, lorsqu’une victime empoisonnée par le <Role PUKKA /> est exécutée, personne ne meurt à cause du Démon la nuit suivante et ceci génère de l’information. Évidemment, il est toujours préférable d’exécuter des Maléfiques, mais si vous n'avez aucun suspect en vue, penchez toujours vers les joueurs qui semblent empoisonnés. Enfin, méfiez-vous car cet argument peut facilement être repris par les Maléfiques pour exécuter des rôles importants.
 
+### Comment conter?
+
+Chaque nuit, réveillez le pukka. Il désigne n’importe quel joueur. Rendormez le pukka. Le joueur choisi est empoisonné. Marquez-le avec le jeton de rappel « Empoisonné ».
+
+Chaque nuit, sauf la première, le joueur marqué « Empoisonné » meurt. Marquez-le avec le jeton de rappel « Mort » et retirez le jeton de rappel « Empoisonné ».
+
+_Les joueurs que le pukka tue sont toujours empoisonnés au moment de leur mort. Si vous utilisez des rôles d’autres éditions, vous pourriez avoir besoin de garder le jeton de rappel « empoisonné » sur le mort jusqu’à ce que sa capacité soit résolue. Par exemple, si le pukka tue le sage, le sage pourraient avoir de fausses informations à cause de l’empoisonnement du pukka._
