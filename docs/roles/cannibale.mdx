@@ -11,7 +11,20 @@ import Role from '/src/components/role.component'
 
 Vous recevez la capacité du dernier rôle mort par exécution. Si l'exécuté était maléfique, vous êtes empoisonné jusqu’à ce qu’un nouveau rôle « gentil » soit exécuté.
 
+Le cannibale mange les rôles exécutés pour gagner leur capacité.
+
+-   Si un joueur meurt par exécution, le cannibale gagne sa capacité. Si un maléfique meurt par exécution, le cannibale pense seulement avoir gagné une capacité mais comme le cannibale est empoisonné, le conteur peut lui mentir. 
+
+-   Chaque fois qu’un joueur meurt par exécution, le cannibale perd la capacité du joueur précédent.
+
+-   Exécuter un joueur mort ne permet pas au cannibale d’avoir cette capacité. Exécuter un joueur vivant mais qui ne meurt pas non plus. Un joueur doit mourir de l’exécution pour que le cannibale prenne sa capacité.
+
+-   Le cannibale ne sait pas quelle capacité il gagne. Il doit le deviner lui-même.
+
+-   Si le cannibale a une capacité du type « même mort » comme celle du reclus ou une capacité qui fonctionne implicitement dans la mort, comme le gardien ou la dulcinée, le cannibale garde cette capacité s’il meurt mais perd sa capacité de cannibale.
+
 ### Exemples  
+
 > L’<Role HORLOGER /> est exécuté et meurt. La nuit suivant, le <Role CANNIBALE /> apprend « 2 » car le démon et le sbire sont à deux places l’un de l’autre.
 
 > C’est la troisième nuit et la <Role VEUVE_NOIRE /> vient d’être exécutée. Comme la <Role VEUVE_NOIRE /> bluffait la <Role VOYANTE />, le conteur demande au <Role CANNIBALE /> de choisir deux joueurs mais apprend un « non » après avoir pourtant choisi le démon car ils n’ont en réalité pas la capacité de la <Role VOYANTE /> (ou de la <Role VEUVE_NOIRE />) car il est empoisonné.
@@ -19,6 +32,7 @@ Vous recevez la capacité du dernier rôle mort par exécution. Si l'exécuté �
 > C’est la quatrième nuit et la <Role BETE_DE_FOIRE /> vient d’être exécutée. Le <Role CANNIBALE /> n’apprend rien ce soir car une véritable <Role BETE_DE_FOIRE /> ne se réveillerait pas.
 
 ### Mécaniques et conseils
+
 - Exécutez des gens ! Bien qu’il ne soit pas avantageux d’exécuter des joueurs gentils, votre capacité réduit grandement cet inconvénient. Même si le village exécute un villageois par accident, le fait que vous puissiez récupérer sa capacité devrait aider le village de façon significative. 
 
 - Gardez une attention particulière sur les villageois avec une capacité qui ne s’utilise qu’une fois par partie. Vous pouvez manger ce villageois, utiliser sa capacité unique et continuer à manger d’autres villageois ensuite.
@@ -40,4 +54,9 @@ Vous recevez la capacité du dernier rôle mort par exécution. Si l'exécuté �
 - Soyez prêts à feindre une nouvelle capacité à chaque qu’un joueur meurt par exécution. Cela peut signifier discuter avec les personnes qui pourraient être exécutés avant qu’elles ne meurent ou de conspirer avec vos alliés. Si vous déclarez manger un joueur qui a des informations chaque nuit mais que vous ne déclarez pas avoir d’information après leur exécution, vous pourriez être dans le pétrin. A moins, bien sûr, que vous ne déclariez que cette absence est probablement dû au fait que cette personne était maléfique et qu’elle vous a empoisonné !
 
 ### Comment conter?
-Coming soon....
+
+Si un joueur gentil meurt par exécution, marquez-le avec le jeton de rappel « Mort aujourd’hui » et retirez le jeton de rappel « Empoisonné » si nécessaire. Le cannibale a maintenant la capacité de ce joueur (_ne lui pas laquelle_) et se réveillera la nuit quand ce rôle doit normalement se réveiller.
+
+Si un joueur maléfique meurt par exécution, marquez-le avec le jeton de rappel « Mort aujourd’hui » et ajoutez le jeton de rappel « Empoisonné ». Le cannibale est empoisonné. Vous pouvez le réveillez au moment où ce rôle maléfique se réveille normalement et prétendre qu’il a une nouvelle capacité.
+
+_Prêtez attention à quel rôle bluffe chaque joueur maléfique. Si un maléfique est exécuté, alors sa capacité bluffée est la meilleure capacité à simuler pour le cannibale._
