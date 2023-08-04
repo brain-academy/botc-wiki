@@ -109,7 +109,7 @@ export const Roles = {
 		SORCIERE: Sbire.new({name: 'Sorcière', filename: 'sorciere', originalName: 'Witch', wakeUpSchedule: 'EVERY_NIGHT'}),
 		VEUVE_NOIRE: Sbire.new({name: 'Veuve Noire', filename: 'veuve-noire', originalName: 'Widow', wakeUpSchedule: 'FIRST_NIGHT'}),
 		VIEILLE_CHOUETTE: Sbire.new({name: 'Vieille Chouette', filename: 'vieille-chouette', originalName: 'Pit Hag', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
-		VIZIR: Sbire.new({name: `Vizir`,originalName: 'Vizier'}),
+		VIZIR: Sbire.new({name: 'Vizir',originalName: 'Vizier'}),
 	},
 	DEMON: {
 		AL_HADIKHIA: Demon.new({name: 'Al-Hadikhia', filename: 'al-hadikhia', originalName: 'Al-Hadikhia', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
