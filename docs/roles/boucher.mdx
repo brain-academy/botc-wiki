@@ -11,6 +11,30 @@ import Role from '/src/components/role.component'
 
 Chaque jour, après la première exécution, vous pouvez à nouveau nominer.
 
+Le Boucher permet une deuxième exécution de se produire par jour.
+
+-   Après que le premier joueur exécuté est mort, le Boucher peut nominer un deuxième joueur pour l'exécution. Le Boucher peut nominer un joueur qui a déjà été nominé aujourd'hui, et le Boucher peut faire une nomination même s'il a déjà fait une nomination plus tôt dans la journée. 
+
+-   Si un joueur est exécuté, même s'il ne meurt pas, le Boucher peut utiliser sa capacité. Les joueurs peuvent choisir de voter ou de ne pas voter, il n'y a donc aucune garantie que cette nomination supplémentaire entraînera une exécution - elle doit toujours obtenir suffisamment de votes - mais cette deuxième nomination ne doit pas dépasser le décompte des votes des nominations précédentes. 
+
+-   Si aucune exécution ne se produit aujourd'hui, alors le Boucher ne peut pas du tout utiliser sa capacité aujourd'hui. 
+
 ### Exemples
 
-Coming soon
+> La Sorcière est exécutée et meurt. Ensuite, le Boucher nomine le Sage, qui obtient suffisamment de votes pour être exécuté. Le Sage meurt également. 
+
+> Le Collectionneur d'Os est exilé, puis la fille de joie est exilée. Il n'y a pas d'exécutions aujourd'hui. Le Boucher n'a pas le droit de nominer à nouveau, car les exils ne sont pas des exécutions. 
+
+> Le Boucher nomine le Crieur, mais le Crieur n'est pas exécuté. Le Mathématicien obtient plus de votes et est exécuté aujourd'hui. Le jeu continue et le Boucher nomine à nouveau le Crieur. Cette fois-ci, suffisamment de mains se lèvent et le Crieur est exécuté. 
+
+### Mécaniques et conseils si vous êtes gentil
+
+Coming soon...
+
+### Mécaniques et conseils si vous êtes maléfique
+
+Coming soon...
+
+### Comment conter
+
+Chaque jour, immédiatement après l'exécution d'un joueur, le Boucher peut nominer un autre joueur pour l'exécution. (_Rappelez-lui au besoin._) Pour que cette nomination réussisse, elle doit obtenir un décompte des votes d'au moins la moitié des joueurs vivants, comme d'habitude, mais elle n'a pas besoin de dépasser les votes de l'exécution qui a déclenché la capacité du Boucher. Si cette deuxième exécution réussit, cela n'autorise pas le Boucher à nominer un troisième joueur.
