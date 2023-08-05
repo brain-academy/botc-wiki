@@ -4,6 +4,7 @@ title: Baratineur
 
 import Module from '/src/components/module.component'
 import Fabled from '/src/components/fabled.component'
+import Role from '/src/components/role.component'
 
 <Fabled BARATINEUR header />
 
@@ -23,9 +24,9 @@ Ajoutez le Baratineur si votre scénario a trop d'informations ou aucune possibi
 
 ### Exemples
 
-> La première nuit, tous les joueurs obtiennent des informations correctes. La deuxième nuit, l'Empathique apprend qu'il a un joueur maléfique comme voisin, mais tous ses voisins sont en réalité gentils. Pour le reste de la partie, tous les joueurs gentils obtiennent des informations correctes. 
+> La première nuit, tous les joueurs obtiennent des informations correctes. La deuxième nuit, l'<Role EMPATHIQUE /> apprend qu'il a un joueur maléfique comme voisin, mais tous ses voisins sont en réalité gentils. Pour le reste de la partie, tous les joueurs gentils obtiennent des informations correctes. 
 
-> La Pucelle est nominée par un Villageois. Ce Villageois est immédiatement exécuté car le Baratineur ne peut pas faire dysfonctionner une capacité. Plus tard, le Moine protège un joueur. Là encore, la capacité du Moine ne peut pas échouer à cause de la capacité du Baratineur. Plus tard, le Gardien meurt la nuit et obtient de fausses informations, car les informations provenant d'une capacité peuvent être affectées par la capacité du Baratineur. 
+> La <Role PUCELLE /> est nominée par un Villageois. Ce Villageois est immédiatement exécuté car le Baratineur ne peut pas faire dysfonctionner une capacité. Plus tard, le <Role MOINE /> protège un joueur. Là encore, la capacité du <Role MOINE /> ne peut pas échouer à cause de la capacité du Baratineur. Plus tard, le <Role GARDIEN /> meurt la nuit et obtient de fausses informations, car les informations provenant d'une capacité peuvent être affectées par la capacité du Baratineur. 
 
 ### Comment conter
 

@@ -4,6 +4,7 @@ title: Sentinelle
 
 import Module from '/src/components/module.component'
 import Fabled from '/src/components/fabled.component'
+import Role from '/src/components/role.component'
 
 <Fabled SENTINELLE header />
 
@@ -19,9 +20,9 @@ Ajoutez la Sentinelle à votre script pour garder le nombre de Marginaux en jeu 
 
 ### Exemples
 
-> Il y a sept joueurs dans ce jeu. Il n'y a aucun rôle sur la liste des rôles qui ajoute des Etrangers. Le Démon bluffe en tant que Vertueux. Une Sentinelle est en jeu, donc les joueurs gentils ne sont pas sûrs s'il y a réellement un Vertueux ou non. 
+> Il y a sept joueurs dans ce jeu. Il n'y a aucun rôle sur la liste des rôles qui ajoute des Etrangers. Le Démon bluffe en tant que <Role VERTUEUX />. Une Sentinelle est en jeu, donc les joueurs gentils ne sont pas sûrs s'il y a réellement un <Role VERTUEUX /> ou non. 
 
-> Il y a neuf joueurs dans ce jeu. Même si un Baron est sur la liste des rôles, les Villageois savent qu'aucun Baron n'est en jeu parce que la Sorcière vient de tuer un joueur, il ne devrait donc y avoir que deux Etrangers en jeu. Cependant, les Etrangers ne peuvent pas être fiables parce qu'une Sentinelle est en jeu. En effet, il y a un Etrangers de moins que la normale dans ce jeu, et la Sorcière bluffe en tant que Majordome.
+> Il y a neuf joueurs dans ce jeu. Même si un Baron est sur la liste des rôles, les Villageois savent qu'aucun <Role BARON /> n'est en jeu parce que la <Role SORCIERE /> vient de tuer un joueur, il ne devrait donc y avoir que deux Etrangers en jeu. Cependant, les Etrangers ne peuvent pas être fiables parce qu'une Sentinelle est en jeu. En effet, il y a un Etrangers de moins que la normale dans ce jeu, et la <Role SORCIERE /> bluffe en tant que <Role MAJORDOME />.
 
 ### Comment Conter ?
 

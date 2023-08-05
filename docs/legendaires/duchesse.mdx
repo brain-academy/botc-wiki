@@ -4,6 +4,7 @@ title: Duchesse
 
 import Module from '/src/components/module.component'
 import Fabled from '/src/components/fabled.component'
+import Role from '/src/components/role.component'
 
 <Fabled DUCHESSE header />
 
@@ -23,11 +24,11 @@ Ajoutez la Duchesse si votre scénario contient trop peu d'informations ou trop 
 
 ### Exemples
 
-> Le Soldat, le Pacifiste et le Sage visitent la Duchesse. Le Soldat et le Pacifiste apprennent un "0". Le Sage apprend un "1". 
+> Le <Role SOLDAT />, le <Role PACIFISTE /> et le <Role SAGE /> visitent la Duchesse. Le <Role SOLDAT /> et le <Role PACIFISTE /> apprennent un "0". Le <Role SAGE /> apprend un "1". 
 
-> Le Mutant, le Majordome et Po visitent la Duchesse. Le Mutant apprend un "1", le Majordome apprend un "2", et Po apprend un "1".
+> La <Role BETE_DE_FOIRE />, le <Role MAJORDOME /> et le <Role PO /> visitent la Duchesse. La <Role BETE_DE_FOIRE /> apprend un "1", le <Role MAJORDOME /> apprend un "2", et le <Role PO /> apprend un "1".
 
-> Le Conspirateur, l'Imp et le Ménestrel visitent la Duchesse. Le Conspirateur apprend un "2", l'Imp apprend un "1", et le Ménestrel apprend un "2". 
+> Le <Role CONSPIRATEUR />, le <Role IMP /> et le <Role MENESTREL /> visitent la Duchesse. Le <Role CONSPIRATEUR /> apprend un "2", le <Role IMP /> apprend un "1", et le <Role MENESTREL /> apprend un "2". 
 
 ### Comment conter
 
