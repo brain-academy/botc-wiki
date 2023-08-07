@@ -11,9 +11,19 @@ import Role from '/src/components/role.component'
 
 Vous commencez en apprenant un joueur gentil.
 
+L'intendant connaît un joueur gentil.
+
+-   L'intendant apprend le nom d'un joueur mais pas son rôle.
+
+-   L'intendant apprend son information lors de la première nuit.
+
+-   S'il entre en jeu en milieu de partie, alors l'intendant apprend son information cette nuit là à la place.
+
 ### Exemples
 
-Coming soon...
+> L'<Role INTENDANT /> apprend qu'Alex est gentil. Alex est le <Role CROQUE_MORT />.
+
+> La <Role VIEILLE_CHOUETTE /> transforme le <Role CULTIVATEUR_DE_PAVOT /> en <Role INTENDANT />. Cette même nuit, l'<Role INTENDANT /> apprend que Jonathan est gentil. Jonathan est l'<Role ESPION /> mais considéré comme gentil. 
 
 ### Mécaniques et conseils
 
@@ -25,7 +35,7 @@ Coming soon...
 
 ### Comment conter
 
-Coming soon...
+En préparant la première nuit, mettre le jeton de rappel « connu » devant n'importe quel jeton de rôle gentil. Durant la première nuit, réveiller l'intendant. Désignez-lui le joueur marqué « Connu ». Rendormez l'intendant.
 
 **Interactions notables**
 

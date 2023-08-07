@@ -11,9 +11,27 @@ import Role from '/src/components/role.component'
 
 Tous les joueurs savent qui vous êtes. Vous ne pouvez pas mourir la journée. Si un gentil a voté, vous pouvez choisir d'exécuter immédiatement.
 
+Le vizir exécute des joueurs sans le consentement du village. 
+
+-   Le premier jour, tous les joueurs savent qui est le Vizir s’il est en jeu.
+
+-   Pendant la journée, le vizir ne peut en aucun cas mourir.
+
+-   Après la fin d’un vote, si le vizir choisit d'exécuter le nominé (et qu'au moins un joueur gentil a voté), il est exécuté immédiatement.  Cela compte comme la seule exécution autorisée chaque jour.
+
+-   Après la fin d’un vote, si le vizir choisit d'exécuter le nominé (et qu'aucun joueur gentil n'a voté), rien ne se passe.
+
+-   Même si le décompte des voix est inférieur à 50 % des joueurs vivants, le vizir peut toujours exécuter.  Même si un autre joueur a plus de voix que le joueur actuel, le vizir peut toujours exécuter.
+
+-   Le vizir n'a pas à forcer une exécution chaque jour.
+
 ### Exemples
 
-Coming soon...
+> Le <Role ROI /> a été nominé.  Cinq personnes votent, mais le <Role VIZIR /> n'utilise pas sa capacité.  Le <Role BOOMDANDY /> est nominé et huit personnes votent. Le <Role VIZIR /> utilise sa capacité et le <Role BOOMDANDY /> est exécuté immédiatement.
+
+> Le démon a sept voix contre lui et est "sur le point de mourir".  Le <Role VIZIR /> nomine Zariko le <Role BARBIER />.  Deux joueurs maléfiques et un joueur gentil votent.  Le <Role VIZIR /> déclare que Zariko est exécuté.  Le démon survit aujourd'hui.
+
+> Le village décide de nominer le <Role VIZIR /> et de l’exécuter.  Le <Role VIZIR /> ne meurt pas.  Cette nuit-là, le démon tue le <Role VIZIR />.
 
 ### Mécaniques et conseils
 
@@ -25,8 +43,12 @@ Coming soon...
 
 ### Comment conter
 
-Coming soon...
+Lorsque la première nuit est terminée, déclarez que le Vizir est en jeu, et de quel joueur il s'agit.
+
+Si un vote vient de se terminer, qu'un ou plusieurs joueurs gentils ont voté et que le vizir déclare que le nominé est exécuté, ce joueur est exécuté et meurt.  Il n'y a plus de nominations, ou de votes ou d'exécutions aujourd’hui.
 
 **Interactions notables**
+
+Ivresse/poison : Si le vizir est ivre ou empoisonné, il peut mourir pendant la journée et ne peut pas choisir d'exécuter immédiatement, mais les joueurs ne l'apprennent que si le vizir tente de le faire.
 
 Coming soon...
