@@ -81,6 +81,7 @@ export const Roles = {
 		LUNATIQUE: Etranger.new({name: 'Lunatique', originalName: 'Lunatic', wakeUpSchedule: 'EVERY_NIGHT'}),
 		MAJORDOME: Etranger.new({name: 'Majordome', originalName: 'Butler', wakeUpSchedule: 'EVERY_NIGHT'}),
 		MAITRE_DES_PUZZLES: Etranger.new({name: 'Maître des puzzles', filename: 'maitre-des-puzzles', originalName: 'Puzzlemaster'}),
+		MEDECIN_DE_PESTE: Etranger.new({name: 'Médecin de peste', filename: 'medecin-de-peste', originalName: 'Plague doctor'}),
 		MALADROIT: Etranger.new({name: 'Maladroit', originalName: 'Klutz'}),
 		POLITICIEN: Etranger.new({name: 'Politicien', originalName: 'Politician'}),
 		RECLUS: Etranger.new({name: 'Reclus', originalName: 'Recluse'}),
