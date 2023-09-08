@@ -18,7 +18,7 @@ export const FABLED = {
 	BARATINEUR: Fabled.new({name: `Baratineur`, originalName: 'Fibbin'}),
 	BIBLIOTHECAIRE: Fabled.new({name: `Bibliothécaire`, filename: 'bibliothecaire', originalName: 'Hells Librarian'}),
 	BOUDDHISTE: Fabled.new({name: `Bouddhiste`, originalName: 'Buddhist'}),
-	CHASSEUR_D_ORAGE: Fabled.new({name: `Chasseur d'orage`, filename: 'chasseur-d-orage', originalName: 'Storm Catcher'}),
+	CHASSEUR_D_ORAGES: Fabled.new({name: `Chasseur d'orages`, filename: 'chasseur-d-orages', originalName: 'Storm Catcher'}),
 	CONTREBANDIER: Fabled.new({name: `Contrebandier`, originalName: 'Bootleger'}),
 	DJINN: Fabled.new({name: `Djinn`, filename: 'djinn', originalName: 'Djinn'}),
 	DUCHESSE: Fabled.new({name: `Duchesse`, originalName: 'Duchess'}),
