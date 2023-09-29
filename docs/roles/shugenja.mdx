@@ -1,0 +1,66 @@
+---
+title: Shugenja
+---
+
+import Module from '/src/components/module.component'
+import Role from '/src/components/role.component'
+
+<Role SHUGENJA header />
+
+### Description
+
+Vous commencez en apprenant si votre voisin maléfique le plus proche est dans le sens horaire ou antihoraire. Si c'est équidistant, l'info est arbitraire.
+
+Le shugenja fait confiance aux joueurs à sa gauche ou à sa droite.
+
+-	Le maléfique le plus proche est le joueur avec le plus petit nombre de place en le shugenja et le joueur maléfique.
+
+-	Si les maléfiques sont « équidistants » cela signifie que le joueur maléfique maléfique le plus proche dans le sens horaire est au même nombre de places du shugenja que le joueur maléfique le plus proche dans le sens antihoraire.
+
+-	Si les maléfiques sont équidistants, le conteur donne une information « arbitraire » au shugenja. Cela signifie que le conteur choisit s’il dit au shugenja que le joueur maléfique est dans le sens horaire ou antihoraire.
+
+-	Le shugenja ne sait pas si son info est arbitraire ou non.
+
+-	Le shugenja ne sais pas à combien de place se situe le maléfique se situe.
+
+-	Si le shugenja est créé en milieu de partie, le shugenja se réveille cette nuit et reçoit son information.
+
+-	Le conteur communique avec le shugenja en pointant du doigt la direction appropriée mais peut utiliser une autre méthode s’il le souhaite. 
+
+### Exemples
+
+> L’<Role ORGUE_DE_BARBARIE /> est à 2 places du shugenja dans le sens horaire. Le <Role PROPHETE_DE_L_EFFROI /> est à 3 places du shugenja dans le sens antihoraire. Le shugenja se réveille et apprend que le joueur maléfique le plus proche est dans le sens horaire.
+
+> La <Role MARIONETTE /> est à 1 place du shugenja dans le sens horaire. La <Role VEUVE_NOIRE /> est à 1 place du shugenja dans le sens antihoraire. Le shugenja se réveille et le conteur choisit de dire au shugenja que le joueur maléfique le plus proche est dans le sens horaire.
+
+### Mécaniques et conseils
+
+- En général, il est préférable de supposer que votre information n’est pas arbitraire à cause de l’équidistance car c’est bien moins probable que d’avoir une direction ou une autre. Evidemment, c’est intéressant de garder cette possibilité en tête mais pour commencer, il est préférable de supposer que votre information est vraie.
+
+- Si vous apprenez le sens horaire par exemple, vous pouvez certainement faire confiance au joueur qui est à coté de vous dans le sens antihoraire. Faites d’une conversation avec lui votre priorité et construisez une confiance mutuelle car votre information indique qu’il est probablement gentil donc vous devriez mettre le focus sur un adversaire commun dans l’autre direction.
+
+- Si vous pensez, après un moment, que vos deux voisins sont gentils, déplacez le raisonnement d’une place et voyez ce que cette nouvelle paire de voisins vous dit. Si vous êtes assez certain que le voisin de votre voisin est maléfique, cela implique que vous pouvez probablement faire confiance à vos deux voisins et aussi au joueur à deux place de vous dans le sens opposé à votre information. 
+
+- Si votre information n’a vraiment pas de sens et que vous sentez que vous ne pouvez pas faire confiance à vos voisins, c’est le moment de reconsidérer l’équidistance. Réfléchissez aux paires de joueurs à mesure du nombre de places de la vôtre. Est-ce que ça a du sens s’ils sont maléfiques ensembles ? Ont-ils parlés ? Est-ce que leurs infos sont complémentaires mais ne collent pas avec les autres informations ? Votent-ils ensembles ? Est-ce qu’ils collaborent ou se font confiance sans bonne raison ? 
+
+- Votre information peut sembler parfois très nébuleuse. Est-ce que mon voisin dans le sens horaire est maléfique ? Ou est-ce qu’il est gentil et que c’est le joueur suivant qui est maléfique ? Ou même le joueur suivant ? Ou peut-être que cette information est arbitraire et c’est en fait une paire de joueur à quelques places de moi qui sont maléfiques ? Le plus important, c’est que plus la partie dure, plus vous pouvez avoir des informations complémentaires et réduire les options. Après tout, à moins que les maléfiques aient changés durant la partie, votre information est tout aussi utile dans le trio final pour déterminer qui était maléfique le premier jour.
+
+- Révélez votre information tôt. Cela permet aux autres joueurs d’orienter l’utilisation de leurs capacités en conséquence en basant sur la confiance qu’ils ont envers vos voisins et en utilisant votre information pour réduire la liste de suspects. Cela vous permet potentiellement de faire exécuter les joueurs dans la direction que vous avez appris en l’absence d’autres informations pour guider les efforts du village.
+
+- Révélez votre information tardivement. Si un maléfique se sent grillé ou qu’il y a une grosse information contre eux, il évitera probablement de parler à ses coéquipiers. Vous voudrez attendre et observer pour voir à qui votre maléfique supposé parle pour essayer de remonter ce fil jusqu’au démon.
+
+- Si vous trouvez un maléfique dans la direction qu’on vous a donné, vous avez confirmé au moins un joueur dans l’autre direction. Vous pouvez maintenant faire confiance à ce joueur implicitement sur votre information et vous devriez tiré avantage à travailler ensemble pour le reste de la partie. 
+
+- Mentez à vos voisins (ou à tout le monde) à propos de votre information et voyez comment ils réagissent. Un maléfique qui entend cette information va savoir que vous bluffez ou que vous avez une fausse information par ivresse ou empoisonnement mais c’est dans leur intérêt de jouer avec cette information car ça leur permet de pousser sur des joueurs gentils dans l’autre direction. Voyez qui joue avec cette information pour essaye r d’en avoir une lecture sur qui semble surinvestit pour suivre la direction indiquée. 
+
+### Bluffer le Shugenja
+
+- Choisissez un voisin que vous essayerez de rendre maléfique et faites-le exécuté. Evidemment, ça a le premier avantage de faire exécuter un joueur gentil ! Mais aussi, si vous avez un maléfique assis dans l’autre direction, ça peut avoir l’autre avantage de le rendre plus gentil car si le village croit que celui que vous avez exécuté est maléfique, ça implique fortement que le joueur dans l’autre direction est gentil. Soyez néanmoins un peu prudent ici car vous ne voulez pas que le village se demande si cette information n’était pas arbitraire et que vos deux sont maléfiques.
+
+- Choisissez un voisin pour le rendre gentil et bâtir une relation de confiance. C’est doublement vrai si vous trouvez un voisin qui a de mauvaises informations qui peut être mal interprété pour jeter plus de suspicion sur vos voisins dans l’autre direction.  Ça fera paraitre vos informations comme complémentaires et bénéfiques ce qui renforcera la confiance de ce joueur et plus largement, du village.
+
+- Ne considérez pas l’équidistance. Vous arriverez plus probablement à faire suspecter des joueurs gentils si vous partez du principe que votre information est correcte car vous avez une direction spécifique à suivre. Si vous supposez que c’est équidistant, votre information devient plus nébuleuse et il est plus difficile de jouer avec et de s’en servir pour faire votre contre des gentils. 
+
+- Supposez que c’est équidistant si vous voulez essayer de passer pour gentil, mais incertain. Ce n’est pas mal pour un démon qui veut passer sous le radar. Vous pouvez passer une bonne partie du temps en semblant sincèrement essayer de traiter votre information sans vouloir accidentellement faire exécuter des joueurs gentils et pour jeter une petite suspicion sur plusieurs paires de joueurs depuis votre place sans attirer trop d’attention sur vous. Après tout, si une paire de joueurs donnée a de la confiance, ça signifie juste que c’est une paire à un autre nombre de place non ?
+
+- Rappelez-vous que l’équidistance est là pour s’y replier si on commence à vous suspecter car l’information ne semble pas correcte. Après tout, ce n’est pas votre faute si cette information est arbitraire. Il y a peut-être juste une paire de maléfique qui travaille pour se rendre gentil l’un et l’autre et vous rendre suspect en conséquence. 

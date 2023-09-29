@@ -62,6 +62,7 @@ export const Roles = {
 		ROI: Villageois.new({name: 'Roi', originalName: 'King', wakeUpSchedule: 'Si le nombre de mort est strictement supérieur au nombre de vivants'}),
 		SAGE: Villageois.new({name: 'Sage', originalName: 'Sage', clazz: 'DETECTION', wakeUpSchedule: `Lorsqu'il est assassiné par le Démon`}),
 		SAVANT: Villageois.new({name: 'Savant', originalName: 'Savant'}),
+		SHUGENJA: Villageois.new({name: 'Shugenja', originalName: 'Shugenja', wakeUpSchedule: 'FIRST_NIGHT'}),
 		SOLDAT: Villageois.new({name: 'Soldat', originalName: 'Soldier', clazz: 'TANK'}),
 		VEILLEUR_DE_NUIT: Villageois.new({name: 'Veilleur de nuit', filename: 'veilleur-de-nuit', originalName: 'Nightwatchman', wakeUpSchedule: 'UNTIL_ABILITY_CONSUMED'}),
 		VOYANTE: Villageois.new({name: 'Voyante', originalName: 'Fortune Teller', clazz: 'DETECTION', wakeUpSchedule: 'EVERY_NIGHT'}),
