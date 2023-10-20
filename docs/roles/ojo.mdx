@@ -9,6 +9,18 @@ import Role from '/src/components/role.component'
 
 ### Description
 
+Chaque nuit*, choisissez un rôle, il meurt. S’il n’est pas en jeu, le conteur choisit qui meurt.
+
+L’ojo choisit spécifiquement quel rôle meurt.
+
+-	Contrairement à d’autres démons, l’ojo doit choisir un rôle et non un joueur. Le conteur devra peut-être le rappeler au joueur. Nous recommandons que tous les joueurs aient la feuille de rôle durant la nuit.
+
+-	L’ojo peut tuer des rôles maléfiques s’il le souhaite.
+
+-	S’il y a plusieurs instances d’un rôle particulier en jeu et que l’ojo choisit la mort de ce rôle, seulement un des joueurs qui a ce rôle meurt.
+
+-	Si l’ojo choisit un rôle qui n’est pas en jeu, le conteur va presque toujours choisir de tuer un joueur vivant. Il est possible mais inhabituel pour un conteur de choisir un joueur mort ou de tuer un maléfique.
+
 ### Exemples
 
 > L’<Role OJO /> choisit le <Role MEDECIN_DE_PESTE />. Le <Role MEDECIN_DE_PESTE /> meurt. La nuit suivante, l’ojo choisit le <Role CULTIVATEUR_DE_PAVOT />. Le <Role CULTIVATEUR_DE_PAVOT /> meurt. La nuit suivante, l’<Role OJO /> choisit l’<Role EMPATHIQUE />. Il n’y a pas d’<Role EMPATHIQUE /> en jeu donc le conteur choisit que le <Role SHUGENJA /> meurt à la place.
