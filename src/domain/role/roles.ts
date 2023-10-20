@@ -123,6 +123,7 @@ export const Roles = {
 		PO: Demon.new({name: 'Po', filename: 'po', originalName: 'Po', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
 		PUKKA: Demon.new({name: 'Pukka', originalName: 'Pukka', wakeUpSchedule: 'EVERY_NIGHT'}),
 		NO_DASHII: Demon.new({name: 'No Dashii', filename: 'no-dashii', originalName: 'No Dashii', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
+		OJO: Demon.new({name: 'Ojo', filename: 'ojo', originalName: 'Ojo', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
 		SANGSUE: Demon.new({name: 'Sangsue', originalName: 'Lleech', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
 		SHABALOTH: Demon.new({name: 'Shabaloth', originalName: 'Shabaloth', wakeUpSchedule: 'EVERY_NIGHT'}),
 		PTIT_MONSTRE: Demon.new({name: 'P\'tit Monstre', filename: 'ptit-monstre', originalName: 'Lil Monsta', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
