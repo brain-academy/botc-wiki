@@ -73,6 +73,7 @@ export const Roles = {
 		BARBIER: Etranger.new({name: 'Barbier', originalName: 'Barber'}),
 		BETE_DE_FOIRE: Etranger.new({name: 'Bete de foire', filename: 'bete-de-foire', originalName: 'Mutant'}),
 		BRUTE: Etranger.new({name: 'Brute', originalName: 'Goon', wakeUpSchedule: `Lorsque ciblé la première fois de nuit par l'alignement opposé à l'alignement actuel`}),
+		CHAPELIER: Etranger.new({name: 'Chapelier', originalName: 'Chapelier'}),
 		DEMOISELLE: Etranger.new({name: 'Demoiselle', originalName: 'Damsel'}),
 		DULCINEE: Etranger.new({name: 'Dulcinée', filename: 'dulcinee', originalName: 'Sweetheart'}),
 		GITANE: Etranger.new({name: 'Gitane', originalName: 'Moonchild'}),
