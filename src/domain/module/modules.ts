@@ -186,7 +186,7 @@ export const Modules: {
             Roles.SBIRE.BARON,
             Roles.SBIRE.SORCIERE,
             Roles.SBIRE.ESPION,
-            Roles.DEMON.PTIT_MONSTRE
+            Roles.DEMON.P_TIT_MONSTRE
         ]
     },
     LARGELY_UN_FAIRE: {

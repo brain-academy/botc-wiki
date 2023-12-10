@@ -127,7 +127,7 @@ export const Roles = {
 		OJO: Demon.new({name: 'Ojo', filename: 'ojo', originalName: 'Ojo', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
 		SANGSUE: Demon.new({name: 'Sangsue', originalName: 'Lleech', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
 		SHABALOTH: Demon.new({name: 'Shabaloth', originalName: 'Shabaloth', wakeUpSchedule: 'EVERY_NIGHT'}),
-		PTIT_MONSTRE: Demon.new({name: 'P\'tit Monstre', filename: 'ptit-monstre', originalName: 'Lil Monsta', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
+		P_TIT_MONSTRE: Demon.new({name: 'P\'tit Monstre', filename: 'p-tit-monstre', originalName: 'Lil Monsta', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
 		VIGORMORTIS: Demon.new({name: 'Vigormortis', originalName: 'Vigormortis', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
 		VORTOX: Demon.new({name: 'Vortox', originalName: 'Vortox', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
 		ZOMBUUL: Demon.new({name: 'Zombuul', originalName: 'Zombuul', wakeUpSchedule: `Si aucune exécution la veille`}),
