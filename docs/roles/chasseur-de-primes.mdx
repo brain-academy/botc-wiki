@@ -1,9 +1,10 @@
 ---
-title: Chasseur de prime
+title: Chasseur de primes
 ---
 
 import Module from '/src/components/module.component'
 import Role from '/src/components/role.component'
+import Fabled from '/src/components/fabled.component'
 
 <Role CHASSEUR_DE_PRIMES header />
 
@@ -15,34 +16,42 @@ Le chasseur de primes apprend tous les joueurs maléfiques l’un après l’aut
 
 ### Exemples
 
-> Rémi (<Role CHASSEUR_DE_PRIMES />) apprend que David (<Role SORCIERE />) est sa cible. Julian (<Role FEMME_DE_CHAMBRE />) est réveillé par le conteur, il apprend qu’il est maléfique.
+> La première nuit, le <Role CHASSEUR_DE_PRIMES /> apprend que Yann est maléfique. Yann est le <Role ROI /> qui est passé maléfique à cause du <Role CHASSEUR_DE_PRIMES />. Le jour suivant, le <Role ROI /> meurt. La nuit suivante, le <Role CHASSEUR_DE_PRIMES /> apprend que Pras est maléfique. Pras est le <Role GOBELIN />. 
 
-> Plus tard, David (<Role SORCIERE />) est exécuté. La nuit qui suit, Rémi (<Role CHASSEUR_DE_PRIMES />) est réveillé, le Conteur lui indique une nouvelle cible : Julian (<Role FEMME_DE_CHAMBRE /> maléfique)
+> La première nuit, le <Role CHASSEUR_DE_PRIMES /> apprend qu’Alex est maléfique. Trois jours plus tard, Alex meurt. Cette nuit, le <Role CHASSEUR_DE_PRIMES /> apprend qu’Aurélie est maléfique. Aurélie est un sbire. Trois nuits plus tard, le démon tue Aurélie et le <Role CHASSEUR_DE_PRIMES /> apprend que Kaïna est maléfique. Kaïna est le démon. L’herboriste qui a été rendu maléfique à cause du <Role CHASSEUR_DE_PRIMES /> est toujours vivant.
+
 
 ### Mécaniques et conseils
 
-- Le Conteur choisit en début de partie un Villageois qui va être Maléfique. Ce joueur est réveillé la première nuit (nuit 0) et apprend son alignement Maléfique. Ainsi, lorsque le <Role CHASSEUR_DE_PRIMES /> est en jeu, il y a un Maléfique de plus dans la partie : un Démon, le nombre de Sbires prévu par la composition standard du village, plus un Villageois qui est Maléfique.
+- C’est assez simple n’est-ce pas? Vous savez qu’un joueur est maléfique dès le début du premier jour ! Même un <Role ENQUETEUR /> n’est pas si fort ! Vous devriez le dire à tout le monde immédiatement et faire exécuter ce vil scélérat dès que possible et vous pourrez avoir plus d’informations sur ses ignobles amis qui trainent dans le village et vous rapprocher de l’identité du démon !
 
-- Le Conteur choisit n’importe quel joueur Maléfique (pas forcément le Villageois Maléfique), il est traqué alors par le <Role CHASSEUR_DE_PRIMES />. Le <Role CHASSEUR_DE_PRIMES /> est alors réveillé nuit 0 et apprend que ce joueur est Maléfique (sans lui donner son rôle).
+- Vous connaissez un joueur maléfique mais il ne vous connaît pas… Vous pouvez peut -être en profiter pour vous asseoir dans l’ombre et prêtez attention à qui il parle pour déterminer s’il semble commencer sans bluff et qu’il en récupère un après une certaine conversation ou peut-être qu’il semble complètement perdu sans être sûr de savoir à qui parler. Cela peut vous dire qui sont les autres maléfiques dans le premier cas et que c’est probablement le villageois maléfique dans le second cas. Dans les deux cas, vous avez maintenant une meilleure idée de qui d’autre peut être maléfique et si vous le faites exécuté et que vous recevez le nom d’un des joueurs à qui il a parlé le premier jour, c’est une preuve de plus que votre information est correcte !
 
-- Lorsque ce joueur Maléfique meurt, le <Role CHASSEUR_DE_PRIMES /> se voit assigné une nouvelle cible pendant la nuit, il est alors réveillé par le Conteur et celui-ci lui indique un autre joueur Maléfique.
+- Une fois que votre rôle est public, vous êtes une cible de premier choix pour le démon, donc, choisissez bien le moment pour rendre votre information publique. Vous dévoilez trop tôt pourrait vous faire tuer avant d’avoir le plein potentiel de vos informations. Vous dévoilez trop tard ne vous permettra pas de convaincre assez de personnes d’exécuter votre cible pour avoir plus d’informations. La partie peut littéralement basculer sur le nombre d’informations que vous recevrez, si vous arrivez à faire votre chemin en exécutant tous les maléfiques et trouvez qui est le démon mais cela vous requiert à la fois le contrôle de beaucoup d’exécutions et de survivre jusqu’à ce moment donc les informations publiques sur vous doit être planifié ave une grande minutie ! 
 
-- Les joueurs traqués sont toujours Maléfiques même si le <Role CHASSEUR_DE_PRIMES /> est empoisonné ou ivre de nuit. Par contre, si le <Role CHASSEUR_DE_PRIMES /> est ivre ou empoisonné, il pourrait recevoir une information erronée et donc se voir indiquer un joueur bon comme étant sa cible.
+- Rappelez-vous que vous avez rendu un villageois maléfique dans cette partie ! Non seulement, les maléfiques ont un pouvoir de nomination et de vote en plus, mais il a aussi un bluff gratuit dans le rôle qu’il a reçu s’il le souhaite. Pire, il est incité à mentir sur ses informations donc c’est une autre source de désinformation donc il faut s’inquiéter. Il faut aussi garder en tête que si la partie arrive au tro final avec un maléfique en plus, il faudra un vote de gentil en plus sur le démon pour que les maléfiques ne puissent pas votez en surnombre juste avec les voix de maléfiques !
 
-> Julian (<Role FEMME_DE_CHAMBRE />) est choisi par le Conteur comme étant la cible de Rémi (<Role CHASSEUR_DE_PRIMES />), Julian est informé qu’il est Maléfique. Sylvain (<Role MARIN />), choisit Rémi. Rémi est donc ivre, le Conteur lui indique que sa cible est Alex (<Role HERBORISTE />) et non pas Julian.
+- Peut-être que c’est l’occasion d’aller voir le maléfique que vous connaissez et d’essayer de le convaincre que vous êtes maléfique aussi ! S’il est le villageois maléfique à cause de votre capacité, il ne saura pas qui sont les autres maléfiques et pourrait simplement vous faire confiance si vous vous dévoilez maléfique à lui. Cependant, s’il est le sbire, il va peut-être se méfier et comprendre qu’il est la cible du chasseur de primes et il pourrait dire à son démon de vous tuer donc utiliser cette tactique avec précaution !
 
-> Plus tard dans la partie, Rémi (<Role CHASSEUR_DE_PRIMES />) parvient à faire exécuter Alex qu’il pense Maléfique. Rémi n’est pas réveillé la nuit par le Conteur pour lui indiquer une nouvelle cible étant donné que sa vraie cible (Julian) est toujours en vie.
+- Si vous rester caché, vous avez toujours besoin d’exécuter vos cibles. Donc vous aurez besoin de quelqu’un qui fait passer l’informations publiquement pour vous ou de faire passer l’information en secret, pour que le village soit d’accord pour exécuter votre cible. Vous aurez besoin de beaucoup de votes, particulièrement si vous voyez un sbire contre lequel les maléfiques ne voudront pas voter.
 
-> Si nous reprenons le dernier exemple et partant du principe que Rémi est encore une fois ivre ou empoisonné lorsque Alex (<Role HERBORISTE />, fausse cible du chasseur de primes) est exécuté, le Conteur peut alors choisir de réveiller Rémi pendant la nuit pour lui donner une nouvelle cible, qui sera fausse du fait de l’empoisonnement, la vraie cible n’ayant pas changée : il s’agit toujours en réalité de Julian (<Role FEMME_DE_CHAMBRE /> maléfique).
- 
-- Dans le cas où la cible du <Role CHASSEUR_DE_PRIMES /> devienne Gentil, cette personne ne peut plus être la cible du chasseur de prime. Le Conteur réveillera le <Role CHASSEUR_DE_PRIMES /> pour lui indiquer une nouvelle cible Maléfique.
-> Kaina (<Role CHEF_DE_SECTE />) était maléfique parce que assise à côté de deux joueurs maléfiques. La cible précédente du <Role CHASSEUR_DE_PRIMES /> meurt, et le conteur indique Kaina comme nouvelle cible. Pendant la journée, un voisin de Kaina est exécuté et le nouveau voisin de Kaina est Gentil.
+- Votre information est malheureusement très fragile si vous êtes empoisonné. Vous apprendrez presque toujours un joueur gentil plutôt qu’un maléfique et vous pourriez ne pas avoir envie d’exécuter ce joueur. Si vous pensez que vous avez été grillé par les maléfiques et que vous êtes constamment empoisonné et que vous faites constamment confiance à votre cible, il sera peut-être temps d’accepter que vous n’aurez pas d’autres informations et accepter la mort si le village ne vous fait pas confiance… ou vous pouvez peut être discuter avec ce jouer et voir s’il est d’accord pour mourir pour que vous ayez une information supplémentaire et de préférence sans êtes empoisonné cette fois ; Ou vous pouvez focaliser votre attention sur le satané <Role EMPOISONNEUR /> ou cette <Role VEUVE_NOIRE /> qui sape vos informations et espérer que le démon tue votre cible dans la nuit pour avoir une nouvelle information juteuse !
 
-> Le Conteur choisit alors pendant la nuit de faire changer l’alignement de Kaina (<Role CHEF_DE_SECTE /> qui est assise à côté d’un joueur gentil). Kaina est devenue gentille et ne peut donc plus être la cible du <Role CHASSEUR_DE_PRIMES />. Le Conteur réveille pendant la nuit le <Role CHASSEUR_DE_PRIMES /> pour lui indiquer une nouvelle cible.
+- Prêtez attention aux maléfiques du script. Vous ne voulez pas mener une croisade du village pour exécuter votre cible pour vous rendre finalement compte que c’était un <Role GOBELIN /> ou un <Role BOOMDANDY /> qui vient juste de gagner la partie pour son équipe maléfique.
 
 ### Bluffer le chasseur de primes
 
-Comming soon...
+- Bluffer le chasseur de primes est un travail de longue haleine. Vous aurez besoin d’une historie détaillée de quel joueur vous avez vu maléfique au cours de la partie. Il peut être sage d’attendre silencieusement dans l’ombre à observer la partie pour mettre votre histoire au clair. Rappelez-vous, vous aurez besoin de prétendre avoir vu une série de joueurs que vous avez vu maléfique et ça doit coller avec toutes les informations des autres joueurs que vous prétendez être gentils par élimination.
+
+- Vous dévoilez comme chasseur de primes jeter beaucoup de doute sur d’autres joueurs. Vous pouvez faire tuer des joueurs clés et saper la confiance entre les joueurs. Chercher des rôles qui détectent l’alignement comme l’<Role EMPATHIQUE /> ou le <Role CHEF_DE_SECTE /> car ils peuvent découvrir que vous mentez.
+
+- Soyez attentif à vos déclarations. Quand vous prétendrez être chasseur de primes, vous accusez une ou plusieurs joueurs d’être maléfique. Plus le nombre de joueurs que vous accusez est grand, plus vous vous faites des ennemis. Toutefois, si vous y parvenez, ça peut être une bonne façon de diviser les gentils en deux camps. Ça peut aussi être une bonne façon de retirer l’attention qu’il y a sur le démon s’il est suspecté.
+
+- Créer une clique ave joueurs gentils car vous aurez besoin d’un bloc d’alliés pour exécuter les joueurs que vous « voyez maléfiques ». Choisissez un joueur ou deux lors de la première journée pour former une alliance et passer les informations au compte-goutte. Même si vous êtes découvert, vous aurez probablement fait exécuté un ou deux joueurs de toute façon avant de vous faire exécuter et toutes ces exécutions ne seront pas sur le démon.
+
+- Si vous vous dévoilez publiquement, soyez prêts à être exécuté ou à ce que le démon vous tue. Un chasseur de primes public qui survit tard dans la partie est très suspect. Les chasseurs de primes sont des cibles de haute priorité pour le démon car s’ils sont laissés en vie assez longtemps, ils peuvent apprendre qui est le démon. Donc si vous pensez que vous capacité de sbire n’a plus qu’une valeur limitée, faite en sorte que le démon vous tue car « vous vous êtes dévoilée pour augmenter la confiance accordée à vos déclarations en mourant de nuit. 
+
+- S’il y a un joueur qui vote de façon erratique, vous pouvez le faire passer pour villageois maléfique car un villageois maléfique aurait été créé avec le chasseur de primes et ce maléfique ne connait pas son équipe et voterait probablement de cette façon. Ça peut être une très bonne façon d’isoler un joueur qui semblait digne de confiance et qui avait son rôle vérifié car il aurait bien commencé villageois mais ensuite passé maléfique par votre capacité. C’est une très bonne façon de saboter des joueurs prouvés comme la <Role PUCELLE /> ou le <Role MERCENAIRE />. 
 
 ### Comment conter ?
 
@@ -61,3 +70,62 @@ Il est important de souligner que si vous pensez que le chasseur de primes a dé
 Pour les voyageurs, quitter la partie et être exilé entraîne la mort. Donc si un chasseur de primes a vu un voyageur n’importe laquelle de ces situations entraînera une nouvelle information pour le chasseur de primes cette nuit. 
 
 NB : Comme le chasseur de primes ajoute un joueur maléfique, il faut faire très attention en l’ajoutant dans un script qui contient déjà un rôle qui peut permettre un changement d’alignement. Dès qu’il y a plus d’un joueur qui peut devenir maléfique, il est très facile pour les maléfiques d’avoir une majorité de votes et même les maléfiques n’apprécient pas vraiment cette situation. Des scripts avec Brute, Mezephles, Fang Gu, Politicien ou Chef de secte en plus ont été faits et ne sont pas fun…
+
+**Interaction notables**
+
+- <Role ALCHIMISTE /> : Le chasseur de primes peut rendre l’alchimiste maléfique ce qui reviendra à “renvoyer” la capacité de sbire dans les mains des maléfiques.
+
+- <Role CANNIBALE /> / <Role FAUSSAIRE /> / <Role PIXIE /> / <Role DEMOISELLE /> / <Role VIEILLE_CHOUETTE /> / <Role APPRENTI /> : Si un joueur gagne la capacité du chasseur de primes alors que la partie a déjà commencé, un villageois ne devient pas maléfique. La capacité [entre crochets] est ignorée car fait partie de la préparation de partie. Toutefois, si un apprenti rejoint le village avant que la partie ne commence et qu’il est donc là au début de la première nuit, son effet [entre crochets] aura effet (jaugez votre ratio de maléfique en conséquence !).
+
+- <Role CANNIBALE /> : Un villageois maléfique qui meurt par exécution va empoisonner le cannibale. Un cannibale qui gagne la capacité du chasseur de primes ne doit pas nécessairement voir le même joueur que le chasseur de primes originel. 
+
+- <Role CHEF_DE_SECTE /> : Le chasseur de primes ne peut pas voir le chef de secte comme cible maléfique la première nuit car le chef de secte ne change d’alignement qu’en fin de nuit et sera donc toujours gentil quand le chasseur de primes se réveillera pour apprendre sa cible la première nuit même si le chef de secte passe maléfique plus tard cette même nuit… A moins que le chasseur de primes lui-même, par sa capacité ne fasse passer le chef de secte maléfique.
+
+- <Role COURTISANE /> : Même s’il choisit le chasseur de primes la première nuit, cela n’empêche pas un villageois de passer maléfique car c’est une capacité qui s’applique à la préparation de la partie.
+
+- <Role CULTIVATEUR_DE_PAVOT /> : Le villageois maléfique n’est pas sbire ou démon donc il ne connaît pas les maléfique quand le cultivateur de pavot meurt.
+
+- <Role FERMIER /> : Même si le fermier est maléfique, un joueur gentil vivant devient le fermier.
+
+- <Role FOU /> : Si le fou est le joueur que connaît le chasseur de primes, le chasseur n’aura pas de nouvelles cibles avant que le fou ne meurt pour de bon (= la deuxième fois qu’il meurt)
+
+- <Role INGENIEUR /> : Le villageois maléfique n’est pas affecté par l’ingénieur car il n’est pas sbire ou démon.
+
+- <Role MAGICIEN /> : Le villageois maléfique n’est pas affecté par le magicien, car ce n’est ni un sbire, ni un démon.
+
+- <Role MAIRE /> : Si aucune exécution ne se passe alors qu’il y a juste trois joueurs en vie dont le maire maléfique, les maléfiques gagnent.
+
+- <Role MAMIE /> : La mamie ne peut pas apprendre le villageois maléfique comme descendance car sa capacité indique qu’elle connaît un joueur gentil.
+
+- <Role PROFESSEUR /> : Un professeur peut ressusciter un villageois maléfique. 
+
+- <Role PUCELLE /> : Un villageois maléfique peut déclencher la capacité de la pucelle.
+
+- <Role REVEUR /> : Ce n’est pas parce qu’un villageois est maléfique que c’est un rôle invalide pour le rêveur. Il doit toujours voir un jeton de rôle de villageois et un jeton de rôle de sbire ou de démon.
+
+- <Role BRUTE /> : Si on montre la brute au chasseur de primes, ce n’est pas “choisir” la brute avec sa capacité donc le chasseur de primes n’est pas rendu ivre et ne change pas son alignement.
+
+- <Role DEMOISELLE /> : Si un villageois maléfique devine la demoiselle, rien ne se passe car il n’est pas sbire. La tentative n’est pas utilisée.
+
+- <Role RECLUS /> : Le chasseur de primes peut apprendre le reclus comme joueur maléfique.
+
+- <Role SOULARD /> / <Role MARIONNETTE /> : Si le chasseur de primes doit être le soulard ou la marionnette, ça doit être décidé avant qu’un villageois soit réveillé pour l’informer de son alignement maléfique (en conséquence de la capacité du chasseur de primes). Le soulard et la marionnette ne sont pas des cibles valides de villageois à passer maléfique par la capacité du chasseur de primes.
+
+- <Role ESPION /> : “Techniquement” peut être considéré comme villageois à faire passer maléfique par la capacité du chasseur de primes…. Faites pas l’idiot.
+
+- <Role AL_HADIKHIA /> : Si un chasseur de primes est ressuscité par l’al-hadikhia (ou autre), il apprendra un joueur maléfique cette nuit. Ça peut être le même joueur que précédemment ou un autre joueur. Si la maléfique, que le chasseur de primes voit, meurt alors le chasseur de primes a nouvelle cible. Si ensuite, cette première cible revient à la vie grâce à l’al-hadikhia, le chasseur de primes ne peut pas voir de nouvelles cibles si ce joueur remeurt. Par exemple, le chasseur de primes voit « X » la première nuit, la nuit 2, il voit « Y » mais « X » revient à la vie grâce à l’Al-Hadikhia. Le deuxième jour, « X » est exécuté à nouveau. La troisième nuit, le chasseur de primes n’a pas de nouvelle cible car sa cible maléfique actuelle, « Y », est toujours en vie.
+
+- <Role NO_DASHII /> : Empoisonnera un villageois maléfique. Il est toujours villageois bien qu’il soit maléfique et donc sera affecté par le No Dashii.
+
+- <Role P_TIT_MONSTRE />  : Le villageois maléfique n’est pas un sbire et donc ne se réveille pas pour choisir un babysitter.
+
+- <Role SANGSUE /> : Si la sangsue choisis le chasseur de primes ou le villageois maléfique comme hôte, cela n’empêche pas un villageois d’être maléfique à cause de la capacité du chasseur de primes car c’est une capacité d’installation [entre crochets].
+
+- <Role VORTOX /> :  Le villageois maléfique a toujours de fausses informations dans une partie avec vortox. 
+
+- <Role ZOMBUUL /> : Si un chasseur de primes apprend le zombuul et que le zombuul “meurt” une première fois, le chasseur de primes verra un nouveau joueur bien que le zombuul soit techniquement toujours vivant. 
+
+- <Role BARISTA /> : Un chasseur de primes qui joue deux fois apprend deux joueurs maléfiques en une nuit. Il apprendra ensuite un nouveau joueur, une fois qu’une des cibles est morte. C’est généralement une bonne idée de montrer le même joueur si la cible A ou la cible B meurt pour restaurer le fait que le chasseur de primes ne connaisse qu’un joueur maléfique à la fois à partir de ce moment.
+
+- <Fabled REVOLUTIONNAIRE /> :  Le révolutionnaire peut faire qu’un joueur gentil est mal considéré ce qui fait que le chasseur de primes pourrait le voir comme cible.
+Aussi, les paires de révolutionnaires sont décidées en préparation de partie, en même temps que le villageois rendu maléfique par le chasseur de primes. En conséquences, vous ne pouvez pas choisir l’un d’eux comme villageois qui passe maléfique. Toutefois, vous pourriez toutefois faire une paire avec le villageois maléfique est un sbire ou un démon.
