@@ -119,6 +119,7 @@ export const Roles = {
 		EMEUTIER: Demon.new({name: 'Emeutier', originalName: 'Riot'}),
 		FANG_GU: Demon.new({name: 'Fang Gu', filename: 'fang-gu', originalName: 'Fang Gu', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
 		IMP: Demon.new({name: 'Imp', originalName: 'Imp', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),
+		KAZALI: Demon.new({name: 'Kazali', originalName: 'Kazali', wakeUpSchedule: 'EVERY_NIGHT'}),
 		LEGION: Demon.new({name: 'Légion', filename: 'legion', originalName: 'Legion'}),
 		LEVIATHAN: Demon.new({name: 'Léviathan', filename: 'leviathan', originalName: 'Leviathan'}),
 		PO: Demon.new({name: 'Po', filename: 'po', originalName: 'Po', wakeUpSchedule: 'EVERY_NIGHT_BUT_FIRST'}),

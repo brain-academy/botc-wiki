@@ -1,0 +1,94 @@
+---
+title: Kazali
+---
+
+import Module from '/src/components/module.component'
+import Role from '/src/components/role.component'
+
+<Role KAZALI header />
+
+### Description
+
+Chaque nuit*, choisissez un joueur, il meurt. [Vous choisissez quel joueur est quel sbire. - ? à + ? etrangers]
+
+Le kazali choisit lui-même ses sbires.
+
+-   Si un kazali est créé en milieu de partie, le kazali ne choisit pas de nouveaux sbires.
+
+-	Le conteur peut donner les rôles originels des sbires comme bluffs au démon car ces rôles ne sont plus en jeu.
+
+-	Le kazali agit à un moment qui est techniquement à la fois durant la préparation du grimoire et durant la première nuit.
+
+-	Le conteur peut garder le kazali éveillé ou le rendormir quand il réveille les sbires pour les informer de leur rôle.
+
+-	Seuls les sbires qui sont sur le script peuvent être choisis. Il n’est pas autorisé d’avoir deux fois le même sbire.
+
+### Exemples
+
+> Il y a 15 joueurs mais encore aucun sbire en jeu. Le <Role KAZALI /> se réveille et choisit que Pras devient l’<Role ORGUE_DE_BARBARIE /> maléfique, Pacha devient le <Role VIZIR /> maléfique et que Gil devient le <Role GOBELIN /> maléfique. 
+
+### Mécaniques et conseils
+
+- Choisissez les joueurs avec lesquels vous avez la meilleure synergie pour être maléfique. C’est l’occasion de constituer une équipe de maléfiques qui va toujours vous aider à détruire ces pauvres joueurs gentils qui ne se doutent de rien.
+
+- Si vous hésitez, choisissez les joueurs que vous craignez quand vous êtes maléfique et qu’ils sont gentils. Si vous ne pouvez pas les battre, faites-en des alliés !
+
+- Choisissez des joueurs qui ne sont pas les meilleurs choix pour un kazali. Si les choix paraissent étranges, il est plus probable que le village croira que les sbires ont étés tirés au hasard et il ne cherchera pas un kazali. 
+
+- Ignorez la « meilleur stratégie » et choisissez qui vous paraît être le plus amusant ! Au final, ce jeu est fait pour s’amuser et s’il y a des gens avec qui vous vous amusez toujours lorsque vous êtes dans la même équipe, choisissez-les, mettez-les dans votre équipe et provoquez un joyeux bazar ensemble !
+
+- Choisissez des sbires qui se complètent bien. Un <Role ORGUE_DE_BARBARIE /> peut avoir une bonne synergie avec un <Role GOBELIN /> ou un <Role BOOMDANDY />. Une <Role VIEILLE_CHOUETTE /> aime avoir une <Role VEUVE_NOIRE /> qui lui indique qui cibler. Constituez la meilleure combinaison.
+
+- Choisissez des sbires qui vous permettent de faire croire qu’un autre démon est en jeu. Peut-être que vous voulez passer sous le radar pendant un moment donc il peut être utile de choisir un <Role ASSASSIN /> pour que le village puisse envisager que le démon en jeu est un démon qui attaque plusieurs fois. Ou choisissez un <Role AVOCAT_DU_DIABLE /> pour que le village s’inquiète d’une <Role SANGSUE />.
+
+- Donnez aux joueurs que vous choisissez un rôle qui correspond bien à son style de jeu. Vous choisissez non seulement qui est dans votre équipe mais vous leur assigner aussi un rôle ! Tirez-en avantage et donnez à vos nouveaux sbires des rôles qu’ils adorent joueur et dont ils tireront le meilleur parti. 
+
+### Combattre le Kazali
+
+- Ne vous attendez pas à trouver des sbires sans bluffs. Il n’y en aura pas! Une des caractéristiques du kazali est que tous les sbires commencent par apprendre un rôle qui n’est pas en jeu (le premier rôle qu’il a tiré) donc ils auront tous un bluff gratuit pour commencer la partie et vous ne pourrez pas attraper un joueur de cette façon. 
+
+- Toutefois, ça peut aussi constituer un indice ! Si tout le monde semble content et volontaire pour dévoiler son rôle tôt, il y a peut-être un kazali en jeu qui a assuré que tous les maléfiques aient un bluff à utiliser.
+
+- Faites le compte des étrangers. Comme le kazali peut affecter le nombre d’étranger de façon imprévisible, ce n’est pas toujours un signe mais ça pourrait l’être, en particulier si vous avez une information qui indique que rien d’autre ne pourrait affecter le compte d’étranger et que vous vous retrouvez avec un nombre d’étrangers incohérent.
+
+- Si vous pensez avoir trouvé un sbire, demandez-vous qui choisirait ce joueur et qui d’autre il choisirait. Mettez-vous à la place de chaque joueur du village et demandez-vous si le sbire que vous avez trouvé serait un allié de choix pour ce joueur. Si oui, est-ce que ce joueur pourrait bien être démon avec les informations que vous avez et pouvez-vous le corroborer en déterminant qui d’autre il aurait pu choisir comme son sbire ?
+
+### Comment conter
+
+En préparant le grimoire, retirer tous les rôles de sbires et ajoutez des rôles de villageois ou d’étrangers.
+
+Durant la première nuit, réveillez le kazali. Le kazali désigne un joueur et un sbire sur la feuille de rôle. Remplacez les anciens jetons de rôles par les jetons de rôles de sbires appropriés. Réveillez les sbires un à un et montrez-leur le jeton d’information « Tu es » et le jeton de rôle de sbire et tendez votre pouce vers le bas. Répétez cela jusqu’à avoir le nombre de sbires appropriés. Rendormez le kazali.
+
+Chaque nuit, sauf la première, réveillez le kazali. Il désigne n’importe quel joueur. Ce joueur meurt.
+
+_En fonction du script, ajouter plus d’un étranger peut sérieusement désavantager le village._
+
+**Interaction notables**
+
+Ivresse/empoisonnement : Le kazali ne peut pas être rendu ivre ou empoisonné la première nuit ce qui bloquerait son choix des sbires. Il agit avant toute source d’ivresse ou d’empoisonnement, excepté la brute (voir ci-dessous)
+
+- <Role AERONAUTE /> : Un aéronaute pourrait être remplacé par le choix du kazali mais comme son effet à la préparation peut aussi être provoquée par la capacité du kazali, c’est légitime.
+
+- <Role ALCHIMISTE /> : Le kazali doit choisir les sbires en jeu donc le contour sait quels rôles ne sont pas en jeu pour choisir la capacité de l’alchimiste.
+
+- <Role CHASSEUR /> : Jinx – “Si le kazali choisit la demoiselle pour devenir sbire et qu’un chasseur est en jeu, un joueur gentil devient la demoiselle.”
+
+- <Role CHASSEUR_DE_PRIMES /> : Jinx: “Un villageois maléfique n’est créé que si le chasseur de primes est toujours en jeu après que le kazali ait agit.” 
+
+- <Role CULTIVATEUR_DE_PAVOT /> : Si le cultivateur de pivot est en jeu, le conteur devrait rendormir le kazali lorsqu’il réveille les sbires pour les informer de leur changement de rôle et il peut ensuite joueur le cultivateur de pavot comme d’habitude. 
+
+- <Role ENFANT_DE_CHOEUR /> : Jinx – “Le kazali ne peut pas choisir le roi pour qu’il devienne sbire si un enfant de chœur est en jeu.”
+
+- <Role FEMME_DE_CHAMBRE /> : Les sbires qui se réveillent pour apprendre leur nouvelle identité ne se réveillent à cause de leur propre capacité mais à cause de celle du kazali.
+
+- <Role MAGICIEN /> : Si le magicien est en jeu, le contour devrait rendormir le kazali lorsqu’il réveille chaque sbire pour les informer de leur nouveau rôle. Montrez ensuite aux sbires, le démon et le magicien durant la phase d’informations des sbires. 
+
+- <Role SOLDAT /> : Pauvre kazali! Vous pourriez vous retrouver avec un sbire de moins maintenant! Faites bien attention de bien voir les deux joueurs que vous avez choisi lors de la phase d’information du démon !
+
+- <Role BRUTE /> : Jinx: “Si le kazali choisit la brute pour devenir sbire, les choix de sbires restant sont décidés par le conteur.”
+
+- <Role DEMOISELLE /> : Les sbires sont informés à propos de la demoiselle après que le kazali ait fait ses choix. Donc si la demoiselle est choisie par le kazali pour devenir sbire, les sbires n’apprennent pas qu’une demoiselle était en jeu.
+
+- <Role LUNATIQUE /> : Bien que la capacité du lunatique requiert techniquement que le démon apprenne quels joueurs un lunatique kazali aurait choisi comme sbires, le contour peut choisir de ne pas le faire.
+
+- <Role MARIONNETTE /> : Jinx: “Si le kazali choisit de créer une marionnette, il doit choisir un de ses voisins.”
