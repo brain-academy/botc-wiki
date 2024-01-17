@@ -1,0 +1,723 @@
+{
+  "VILLAGEOIS": {
+    "AERONAUTE": {
+      "name": "Aéronaute",
+      "filename": "aeronaute",
+      "originalName": "Balloonist",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "ALCHIMISTE": {
+      "name": "Alchimiste",
+      "originalName": "Alchemist",
+      "wakeUpSchedule": "La première nuit, puis identique au rôle attribué"
+    },
+    "AMNESIQUE": {
+      "name": "Amnésique",
+      "filename": "amnesique",
+      "originalName": "Amnesiac"
+    },
+    "ARCHIVISTE": {
+      "name": "Archiviste",
+      "originalName": "Librarian",
+      "clazz": "FIRST_NIGHT",
+      "wakeUpSchedule": "FIRST_NIGHT"
+    },
+    "ARTISTE": {
+      "name": "Artiste",
+      "originalName": "Artist"
+    },
+    "ATHEE": {
+      "name": "Athée",
+      "filename": "athee",
+      "originalName": "Atheist"
+    },
+    "AUBERGISTE": {
+      "name": "Aubergiste",
+      "originalName": "Innkeeper",
+      "clazz": "PROTECTION",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "CANNIBALE": {
+      "name": "Cannibale",
+      "originalName": "Cannibal",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "CHARMEUR_DE_SERPENT": {
+      "name": "Charmeur de serpent",
+      "filename": "charmeur-de-serpent",
+      "originalName": "Snake Charmer",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "CHASSEUR": {
+      "name": "Chasseur",
+      "originalName": "Huntsman",
+      "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
+    },
+    "CHASSEUR_DE_PRIMES": {
+      "name": "Chasseur de primes",
+      "filename": "chasseur-de-primes",
+      "originalName": "Bounty Hunter",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "Lorsque la cible actuelle est décédée"
+    },
+    "CHEF_DE_SECTE": {
+      "name": "Chef de Secte",
+      "filename": "chef-de-secte",
+      "originalName": "Cult Leader",
+      "wakeUpSchedule": "Lors d\"un changement d\"alignement"
+    },
+    "CHEVALIER": {
+      "name": "Chevalier",
+      "originalName": "Knight",
+      "wakeUpSchedule": "FIRST_NIGHT"
+    },
+    "COMMERE": {
+      "name": "Commère",
+      "filename": "commere",
+      "originalName": "Gossip",
+      "clazz": "DETECTION"
+    },
+    "COURTISANE": {
+      "name": "Courtisane",
+      "originalName": "Courtier",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
+    },
+    "COUTURIERE": {
+      "name": "Couturiere",
+      "originalName": "Seamstress",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
+    },
+    "CRIEUR": {
+      "name": "Crieur",
+      "originalName": "Town Crier",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "CROQUE_MORT": {
+      "name": "Croque-Mort",
+      "filename": "croque-mort",
+      "originalName": "Undertaker",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "Si exécution la veille"
+    },
+    "CUISTOT": {
+      "name": "Cuistot",
+      "originalName": "Chef",
+      "clazz": "FIRST_NIGHT",
+      "wakeUpSchedule": "FIRST_NIGHT"
+    },
+    "CULTIVATEUR_DE_PAVOT": {
+      "name": "Cultivateur de pavot",
+      "filename": "cultivateur-de-pavot",
+      "originalName": "Poppy Grower"
+    },
+    "EMPATHIQUE": {
+      "name": "Empathique",
+      "originalName": "Empath",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "ENFANT_DE_CHOEUR": {
+      "name": "Enfant de choeur",
+      "filename": "enfant-de-choeur",
+      "originalName": "Choirboy",
+      "wakeUpSchedule": "Si le roi est tué par le démon"
+    },
+    "ENQUETEUR": {
+      "name": "Enquêteur",
+      "filename": "enqueteur",
+      "originalName": "Investigator",
+      "clazz": "FIRST_NIGHT",
+      "wakeUpSchedule": "FIRST_NIGHT"
+    },
+    "EXORCISTE": {
+      "name": "Exorciste",
+      "originalName": "Exorcist",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "FAUSSAIRE": {
+      "name": "Faussaire",
+      "originalName": "Philosopher",
+      "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
+    },
+    "FEMME_DE_CHAMBRE": {
+      "name": "Femme de Chambre",
+      "filename": "femme-de-chambre",
+      "originalName": "Chambermaid",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "FERMIER": {
+      "name": "Fermier",
+      "originalName": "Farmer"
+    },
+    "FLEURISTE": {
+      "name": "Fleuriste",
+      "originalName": "Flowergirl",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "FOU": {
+      "name": "Fou",
+      "originalName": "Fool",
+      "clazz": "TANK"
+    },
+    "GARDIEN": {
+      "name": "Gardien",
+      "originalName": "Ravenkeeper",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "S\"il est tué pendant la nuit"
+    },
+    "GENERAL": {
+      "name": "Général",
+      "filename": "general",
+      "originalName": "General"
+    },
+    "GRANDE_PRETRESSE": {
+      "name": "Grande prêtresse",
+      "filename": "grande-pretresse",
+      "originalName": "High Pristress",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "HERBORISTE": {
+      "name": "Herboriste",
+      "originalName": "Tea Lady",
+      "clazz": "PROTECTION"
+    },
+    "HORLOGER": {
+      "name": "Horloger",
+      "originalName": "Clockmaker",
+      "clazz": "FIRST_NIGHT",
+      "wakeUpSchedule": "FIRST_NIGHT"
+    },
+    "INGENIEUR": {
+      "name": "Ingénieur",
+      "filename": "ingenieur",
+      "originalName": "Engineer",
+      "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
+    },
+    "INTENDANT": {
+      "name": "Intendant",
+      "originalName": "Steward",
+      "wakeUpSchedule": "FIRST_NIGHT"
+    },
+    "JONGLEUR": {
+      "name": "Jongleur",
+      "originalName": "Juggler",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "Uniquement la seconde nuit"
+    },
+    "LAVANDIERE": {
+      "name": "Lavandière",
+      "filename": "lavandiere",
+      "originalName": "Washerwoman - Laundry Hand",
+      "clazz": "FIRST_NIGHT",
+      "wakeUpSchedule": "FIRST_NIGHT"
+    },
+    "LYCANTHROPE": {
+      "name": "Lycanthrope",
+      "originalName": "Lycanthrope",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "MAGICIEN": {
+      "name": "Magicien",
+      "originalName": "Magician"
+    },
+    "MAIRE": { "name": "Maire", "originalName": "Mayor" },
+    "MAMIE": {
+      "name": "Mamie",
+      "originalName": "Grandmother",
+      "clazz": "FIRST_NIGHT",
+      "wakeUpSchedule": "FIRST_NIGHT"
+    },
+    "MARIN": {
+      "name": "Marin",
+      "originalName": "Sailor",
+      "clazz": "TANK",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "MATHEMATICIEN": {
+      "name": "Mathematicien",
+      "originalName": "Mathematician",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "MENESTREL": {
+      "name": "Ménestrel",
+      "filename": "menestrel",
+      "originalName": "Minstrel",
+      "clazz": "DETECTION"
+    },
+    "MERCENAIRE": {
+      "name": "Mercenaire",
+      "originalName": "Slayer"
+    },
+    "MOINE": {
+      "name": "Moine",
+      "originalName": "Monk",
+      "clazz": "PROTECTION",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "NOBLE": {
+      "name": "Noble",
+      "originalName": "Noble",
+      "wakeUpSchedule": "FIRST_NIGHT"
+    },
+    "ORACLE": {
+      "name": "Oracle",
+      "originalName": "Oracle",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "PACIFISTE": {
+      "name": "Pacifiste",
+      "originalName": "Pacifist",
+      "clazz": "PROTECTION"
+    },
+    "PARIEUR": {
+      "name": "Parieur",
+      "originalName": "Gambler",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "PECHEUR": {
+      "name": "Pêcheur",
+      "filename": "pecheur",
+      "originalName": "Fisherman"
+    },
+    "PIXIE": {
+      "name": "Pixie",
+      "originalName": "Pixie",
+      "wakeUpSchedule": "FIRST_NIGHT"
+    },
+    "PREDICATEUR": {
+      "name": "Predicateur",
+      "originalName": "Predicator",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "PROFESSEUR": {
+      "name": "Professeur",
+      "originalName": "Professor",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "PUCELLE": {
+      "name": "Pucelle",
+      "originalName": "Virgin"
+    },
+    "REVEUR": {
+      "name": "Reveur",
+      "originalName": "Dreamer",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "ROI": {
+      "name": "Roi",
+      "originalName": "King",
+      "wakeUpSchedule": "Si le nombre de mort est strictement supérieur au nombre de vivants"
+    },
+    "SAGE": {
+      "name": "Sage",
+      "originalName": "Sage",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "Lorsqu\"il est assassiné par le Démon"
+    },
+    "SAVANT": {
+      "name": "Savant",
+      "originalName": "Savant"
+    },
+    "SHUGENJA": {
+      "name": "Shugenja",
+      "originalName": "Shugenja",
+      "wakeUpSchedule": "FIRST_NIGHT"
+    },
+    "SOLDAT": {
+      "name": "Soldat",
+      "originalName": "Soldier",
+      "clazz": "TANK"
+    },
+    "VEILLEUR_DE_NUIT": {
+      "name": "Veilleur de nuit",
+      "filename": "veilleur-de-nuit",
+      "originalName": "Nightwatchman",
+      "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
+    },
+    "VOYANTE": {
+      "name": "Voyante",
+      "originalName": "Fortune Teller",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    }
+  },
+  "ETRANGER": {
+    "ACROBATE": {
+      "name": "Acrobate",
+      "originalName": "Acrobat"
+    },
+    "BALANCE": {
+      "name": "Balance",
+      "originalName": "Snitch"
+    },
+    "BARBIER": {
+      "name": "Barbier",
+      "originalName": "Barber"
+    },
+    "BETE_DE_FOIRE": {
+      "name": "Bete de foire",
+      "filename": "bete-de-foire",
+      "originalName": "Mutant"
+    },
+    "BRUTE": {
+      "name": "Brute",
+      "originalName": "Goon",
+      "wakeUpSchedule": "Lorsque ciblé la première fois de nuit par l\"alignement opposé à l\"alignement actuel"
+    },
+    "CHAPELIER": {
+      "name": "Chapelier",
+      "originalName": "Chapelier"
+    },
+    "DEMOISELLE": {
+      "name": "Demoiselle",
+      "originalName": "Damsel"
+    },
+    "DULCINEE": {
+      "name": "Dulcinée",
+      "filename": "dulcinee",
+      "originalName": "Sweetheart"
+    },
+    "GITANE": {
+      "name": "Gitane",
+      "originalName": "Moonchild"
+    },
+    "GOLEM": { "name": "Golem", "originalName": "Golem" },
+    "HERETIQUE": {
+      "name": "Hérétique",
+      "filename": "heretique",
+      "originalName": "Heretic"
+    },
+    "INVENTEUR": {
+      "name": "Inventeur",
+      "originalName": "Tinker"
+    },
+    "LUNATIQUE": {
+      "name": "Lunatique",
+      "originalName": "Lunatic",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "MAJORDOME": {
+      "name": "Majordome",
+      "originalName": "Butler",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "MAITRE_DES_PUZZLES": {
+      "name": "Maître des puzzles",
+      "filename": "maitre-des-puzzles",
+      "originalName": "Puzzlemaster"
+    },
+    "MEDECIN_DE_PESTE": {
+      "name": "Médecin de peste",
+      "filename": "medecin-de-peste",
+      "originalName": "Plague doctor"
+    },
+    "MALADROIT": {
+      "name": "Maladroit",
+      "originalName": "Klutz"
+    },
+    "POLITICIEN": {
+      "name": "Politicien",
+      "originalName": "Politician"
+    },
+    "RECLUS": {
+      "name": "Reclus",
+      "originalName": "Recluse"
+    },
+    "SOULARD": {
+      "name": "Soûlard",
+      "filename": "soulard",
+      "originalName": "Drunk",
+      "wakeUpSchedule": "Identique au faux rôle attribué"
+    },
+    "VERTUEUX": {
+      "name": "Vertueux",
+      "originalName": "Saint"
+    }
+  },
+  "SBIRE": {
+    "ASSASSIN": {
+      "name": "Assassin",
+      "originalName": "Assassin",
+      "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
+    },
+    "AVOCAT_DU_DIABLE": {
+      "name": "Avocat du Diable",
+      "filename": "avocat-du-diable",
+      "originalName": "Devil\"s Advocate",
+      "clazz": "PROTECTION",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "BARON": { "name": "Baron", "originalName": "Baron" },
+    "BOOMDANDY": {
+      "name": "Boomdandy",
+      "originalName": "Boomdandy"
+    },
+    "CONSPIRATEUR": {
+      "name": "Conspirateur",
+      "originalName": "Mastermind"
+    },
+    "CROQUEUSE_D_HOMMES": {
+      "name": "Croqueuse d\"hommes",
+      "filename": "croqueuse-d-hommes",
+      "originalName": "Scarlet Woman"
+    },
+    "EMPOISONNEUR": {
+      "name": "Empoisonneur",
+      "originalName": "Poisoner",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "ESPION": {
+      "name": "Espion",
+      "originalName": "Spy",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "GOBELIN": {
+      "name": "Gobelin",
+      "originalName": "Gobelin"
+    },
+    "HARPIE": {
+      "name": "Harpie",
+      "originalName": "Harpy",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "JUMEAU_MALEFIQUE": {
+      "name": "Jumeau Maléfique",
+      "filename": "jumeau-malefique",
+      "originalName": "Evil Twin"
+    },
+    "MANIPULATEUR": {
+      "name": "Manipulateur",
+      "originalName": "Cerenovus",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "MARIONNETTE": {
+      "name": "Marionnette",
+      "originalName": "Marionette",
+      "wakeUpSchedule": "Identique au faux rôle attribué"
+    },
+    "MEZEPHELES": {
+      "name": "Mezepheles",
+      "originalName": "Mezepheles",
+      "wakeUpSchedule": "FIRST_NIGHT"
+    },
+    "ORGUE_DE_BARBARIE": {
+      "name": "Orgue de barbarie",
+      "filename": "orgue-de-barbarie",
+      "originalName": "Organ Grinder"
+    },
+    "PARRAIN": {
+      "name": "Parrain",
+      "originalName": "Godfather",
+      "wakeUpSchedule": "La première nuit, puis quand un étranger meurt de jour"
+    },
+    "PROPHETE_DE_L_EFFROI": {
+      "name": "Prophète de l\"effroi",
+      "filename": "prophete-de-l-effroi",
+      "originalName": "Fearmonger",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "PSYCHOPATHE": {
+      "name": "Psychopathe",
+      "originalName": "Psychopath"
+    },
+    "SORCIERE": {
+      "name": "Sorcière",
+      "filename": "sorciere",
+      "originalName": "Witch",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "VEUVE_NOIRE": {
+      "name": "Veuve Noire",
+      "filename": "veuve-noire",
+      "originalName": "Widow",
+      "wakeUpSchedule": "FIRST_NIGHT"
+    },
+    "VIEILLE_CHOUETTE": {
+      "name": "Vieille Chouette",
+      "filename": "vieille-chouette",
+      "originalName": "Pit Hag",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "VIZIR": { "name": "Vizir", "originalName": "Vizier" }
+  },
+  "DEMON": {
+    "AL_HADIKHIA": {
+      "name": "Al-Hadikhia",
+      "filename": "al-hadikhia",
+      "originalName": "Al-Hadikhia",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "EMEUTIER": {
+      "name": "Emeutier",
+      "originalName": "Riot"
+    },
+    "FANG_GU": {
+      "name": "Fang Gu",
+      "filename": "fang-gu",
+      "originalName": "Fang Gu",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "IMP": {
+      "name": "Imp",
+      "originalName": "Imp",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "KAZALI": {
+      "name": "Kazali",
+      "originalName": "Kazali",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "LEGION": {
+      "name": "Légion",
+      "filename": "legion",
+      "originalName": "Legion"
+    },
+    "LEVIATHAN": {
+      "name": "Léviathan",
+      "filename": "leviathan",
+      "originalName": "Leviathan"
+    },
+    "PO": {
+      "name": "Po",
+      "filename": "po",
+      "originalName": "Po",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "PUKKA": {
+      "name": "Pukka",
+      "originalName": "Pukka",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "NO_DASHII": {
+      "name": "No Dashii",
+      "filename": "no-dashii",
+      "originalName": "No Dashii",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "OJO": {
+      "name": "Ojo",
+      "filename": "ojo",
+      "originalName": "Ojo",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "SANGSUE": {
+      "name": "Sangsue",
+      "originalName": "Lleech",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "SHABALOTH": {
+      "name": "Shabaloth",
+      "originalName": "Shabaloth",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "P_TIT_MONSTRE": {
+      "name": "P\"tit Monstre",
+      "filename": "p-tit-monstre",
+      "originalName": "Lil Monsta",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "VIGORMORTIS": {
+      "name": "Vigormortis",
+      "originalName": "Vigormortis",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "VORTOX": {
+      "name": "Vortox",
+      "originalName": "Vortox",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "ZOMBUUL": {
+      "name": "Zombuul",
+      "originalName": "Zombuul",
+      "wakeUpSchedule": "Si aucune exécution la veille"
+    }
+  },
+  "VOYAGEUR": {
+    "BOUC_EMISSAIRE": {
+      "name": "Bouc Emissaire",
+      "filename": "bouc-emissaire",
+      "originalName": "Scapegoat"
+    },
+    "BUREAUCRATE": {
+      "name": "Bureaucrate",
+      "originalName": "Bureaucrat",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "MENDIANT": {
+      "name": "Mendiant",
+      "originalName": "Beggar"
+    },
+    "VENGEUR": {
+      "name": "Vengeur",
+      "originalName": "Gunslinger"
+    },
+    "VOLEUR": {
+      "name": "Voleur",
+      "originalName": "Thief",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "APPRENTI": {
+      "name": "Apprenti",
+      "originalName": "Apprentice",
+      "wakeUpSchedule": "Lors de sa première nuit puis identique au rôle attribué"
+    },
+    "ARCHEVEQUE": {
+      "name": "Archevêque",
+      "filename": "archeveque",
+      "originalName": "Bishop"
+    },
+    "MAGISTRAT": {
+      "name": "Magistrat",
+      "originalName": "Judge"
+    },
+    "MATRONE": {
+      "name": "Matrone",
+      "originalName": "Matron",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "NECROMANT": {
+      "name": "Necromant",
+      "originalName": "Voudon"
+    },
+    "BARISTA": {
+      "name": "Barista",
+      "originalName": "Barista"
+    },
+    "BOUCHER": {
+      "name": "Boucher",
+      "originalName": "Butcher"
+    },
+    "COLLECTEUR_D_OS": {
+      "name": "Collecteur d\"os",
+      "filename": "collecteur-d-os",
+      "originalName": "Bone collector",
+      "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
+    },
+    "DEVIANT": {
+      "name": "Déviant",
+      "filename": "deviant",
+      "originalName": "Deviant"
+    },
+    "FILLE_DE_JOIE": {
+      "name": "Fille de joie",
+      "filename": "fille-de-joie",
+      "originalName": "Harlot",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "GANGSTER": {
+      "name": "Gangster",
+      "originalName": "Gangster"
+    }
+  }
+}
