@@ -1,5 +1,12 @@
 {
   "VILLAGEOIS": {
+    "test": {
+      "name": "te's\"t",
+      "filename": "qsdf",
+      "originalName": "qsdf",
+      "clazz": "qdsf",
+      "wakeUpSchedule": "qdsf"
+    },
     "AERONAUTE": {
       "name": "Aéronaute",
       "filename": "aeronaute",
