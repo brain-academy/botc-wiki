@@ -181,7 +181,7 @@
     "GRANDE_PRETRESSE": {
       "name": "Grande prêtresse",
       "filename": "grande-pretresse",
-      "originalName": "High Pristress",
+      "originalName": "High Priestess",
       "wakeUpSchedule": "EVERY_NIGHT"
     },
     "HERBORISTE": {
@@ -215,7 +215,7 @@
     "LAVANDIERE": {
       "name": "Lavandière",
       "filename": "lavandiere",
-      "originalName": "Washerwoman - Laundry Hand",
+      "originalName": "Washerwoman",
       "clazz": "FIRST_NIGHT",
       "wakeUpSchedule": "FIRST_NIGHT"
     },
@@ -296,7 +296,7 @@
     },
     "PREDICATEUR": {
       "name": "Predicateur",
-      "originalName": "Predicator",
+      "originalName": "Preacher",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
     "PROFESSEUR": {
@@ -454,7 +454,7 @@
     "AVOCAT_DU_DIABLE": {
       "name": "Avocat du Diable",
       "filename": "avocat-du-diable",
-      "originalName": "Devil\"s Advocate",
+      "originalName": "Devil's Advocate",
       "clazz": "PROTECTION",
       "wakeUpSchedule": "EVERY_NIGHT"
     },
@@ -624,7 +624,7 @@
     "P_TIT_MONSTRE": {
       "name": "P\"tit Monstre",
       "filename": "p-tit-monstre",
-      "originalName": "Lil Monsta",
+      "originalName": "Lil' Monsta",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
     "VIGORMORTIS": {
