@@ -468,7 +468,7 @@
       "originalName": "Mastermind"
     },
     "CROQUEUSE_D_HOMMES": {
-      "name": "Croqueuse d\"hommes",
+      "name": "Croqueuse d'hommes",
       "filename": "croqueuse-d-hommes",
       "originalName": "Scarlet Woman"
     },
@@ -522,7 +522,7 @@
       "wakeUpSchedule": "La première nuit, puis quand un étranger meurt de jour"
     },
     "PROPHETE_DE_L_EFFROI": {
-      "name": "Prophète de l\"effroi",
+      "name": "Prophète de l'effroi",
       "filename": "prophete-de-l-effroi",
       "originalName": "Fearmonger",
       "wakeUpSchedule": "EVERY_NIGHT"
@@ -622,7 +622,7 @@
       "wakeUpSchedule": "EVERY_NIGHT"
     },
     "P_TIT_MONSTRE": {
-      "name": "P\"tit Monstre",
+      "name": "P'tit Monstre",
       "filename": "p-tit-monstre",
       "originalName": "Lil' Monsta",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
@@ -699,7 +699,7 @@
       "originalName": "Butcher"
     },
     "COLLECTEUR_D_OS": {
-      "name": "Collecteur d\"os",
+      "name": "Collecteur d'os",
       "filename": "collecteur-d-os",
       "originalName": "Bone collector",
       "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
