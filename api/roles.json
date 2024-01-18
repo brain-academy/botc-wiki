@@ -546,7 +546,7 @@
     "VIEILLE_CHOUETTE": {
       "name": "Vieille Chouette",
       "filename": "vieille-chouette",
-      "originalName": "Pit Hag",
+      "originalName": "Pit-Hag",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
     "VIZIR": { "name": "Vizir", "originalName": "Vizier" }
