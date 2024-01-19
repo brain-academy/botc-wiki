@@ -1,27 +1,28 @@
-import { Demon, Etranger, Sbire, Villageois, Voyageur } from "./role";
+import JsonRoles from '../../../static/api/roles.json'
+import Role, { Demon, Etranger, Sbire, Villageois, Voyageur } from './role'
 
-const data = require("../../../static/api/roles.json");
+export const Roles = Object.fromEntries(
+	Object.entries(JsonRoles)
+		.map(([key, role]) => ([key, rolesInstances(role)])
+	)
+) as {[roleType in keyof typeof JsonRoles]: {[role in keyof typeof JsonRoles[roleType]]: Role}}
 
-export const Roles = {
-  VILLAGEOIS: { ...data.VILLAGEOIS },
-  ETRANGER: { ...data.ETRANGER },
-  SBIRE: { ...data.SBIRE },
-  DEMON: { ...data.DEMON },
-  VOYAGEUR: { ...data.VOYAGEUR },
-};
+type JsonRole = typeof JsonRoles[keyof typeof JsonRoles]
 
-Object.keys(Roles.VILLAGEOIS).map(
-  (key) => (Roles.VILLAGEOIS[key] = Villageois.new(Roles.VILLAGEOIS[key]))
-);
-Object.keys(Roles.ETRANGER).map(
-  (key) => (Roles.ETRANGER[key] = Etranger.new(Roles.ETRANGER[key]))
-);
-Object.keys(Roles.SBIRE).map(
-  (key) => (Roles.SBIRE[key] = Sbire.new(Roles.SBIRE[key]))
-);
-Object.keys(Roles.DEMON).map(
-  (key) => (Roles.DEMON[key] = Demon.new(Roles.DEMON[key]))
-);
-Object.keys(Roles.VOYAGEUR).map(
-  (key) => (Roles.VOYAGEUR[key] = Voyageur.new(Roles.VOYAGEUR[key]))
-);
+function ctor(jsonRole: JsonRole) {
+	switch (typeof jsonRole) {
+		case typeof JsonRoles.VILLAGEOIS: return Villageois
+		case typeof JsonRoles.ETRANGER: return Etranger
+		case typeof JsonRoles.SBIRE: return Sbire
+		case typeof JsonRoles.DEMON: return Demon
+		default: return Voyageur
+	}
+}
+
+function rolesInstances(jsonRole: JsonRole) {
+	return Object.fromEntries(
+		Object.entries(jsonRole)
+			.map(([key, role]) => ([key, ctor(jsonRole).new(role)])
+		)
+	)
+}
