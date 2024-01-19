@@ -1,7 +1,7 @@
 {
     "extends": "@tsconfig/docusaurus/tsconfig.json",
     "include": [
-        "src/", "sidebar"
+        "src/", "sidebar", "static/api/roles.json"
     ],
     "compilerOptions": {
         "lib": ["ESNext", "DOM"],
@@ -17,6 +17,8 @@
         "forceConsistentCasingInFileNames": true,
         "outDir": "dist",
         "jsx": "react-jsx",
-        "jsxImportSource": "@emotion/react"
+        "jsxImportSource": "@emotion/react",
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
     }
 }
