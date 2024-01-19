@@ -1,3 +1,9 @@
+Here is our Blood on the ClockTower wiki : https://brain-academy.github.io/botc-wiki/
+This wiki is built, redacted and maintained by The Brain Academy
+
+
+Built on Docusaurus :
+
 # Website
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
