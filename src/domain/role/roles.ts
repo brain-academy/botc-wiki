@@ -10,11 +10,11 @@ export const Roles = Object.fromEntries(
 type JsonRole = typeof JsonRoles[keyof typeof JsonRoles]
 
 function ctor(jsonRole: JsonRole) {
-	switch (typeof jsonRole) {
-		case typeof JsonRoles.VILLAGEOIS: return Villageois
-		case typeof JsonRoles.ETRANGER: return Etranger
-		case typeof JsonRoles.SBIRE: return Sbire
-		case typeof JsonRoles.DEMON: return Demon
+	switch (jsonRole) {
+		case JsonRoles.VILLAGEOIS: return Villageois
+		case JsonRoles.ETRANGER: return Etranger
+		case JsonRoles.SBIRE: return Sbire
+		case JsonRoles.DEMON: return Demon
 		default: return Voyageur
 	}
 }
