@@ -195,6 +195,12 @@
       "clazz": "FIRST_NIGHT",
       "wakeUpSchedule": "FIRST_NIGHT"
     },
+    "IDIOT_DU_VILLAGE": {
+      "name": "Idiot du village",
+      "filename": "idiot-du-village",
+      "originalName": "Village Idiot",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
     "INGENIEUR": {
       "name": "Ingénieur",
       "filename": "ingenieur",
