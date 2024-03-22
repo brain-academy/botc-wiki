@@ -497,6 +497,10 @@
       "originalName": "Harpy",
       "wakeUpSchedule": "EVERY_NIGHT"
     },
+    "INVOCATEUR": {
+      "name": "Invocateur",
+      "originalName": "Summoner"
+    },
     "JUMEAU_MALEFIQUE": {
       "name": "Jumeau Maléfique",
       "filename": "jumeau-malefique",
@@ -643,6 +647,11 @@
       "originalName": "Vortox",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
+    "YAGGABLABLA": {
+      "name": "Yaggablabla",
+      "originalName": "Yaggababble",
+      "wakeUpSchedule": "FIRST_NIGHT"
+    },    
     "ZOMBUUL": {
       "name": "Zombuul",
       "originalName": "Zombuul",
