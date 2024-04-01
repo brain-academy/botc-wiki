@@ -15,7 +15,8 @@
     "AMNESIQUE": {
       "name": "Amnésique",
       "filename": "amnesique",
-      "originalName": "Amnesiac"
+      "originalName": "Amnesiac",
+      "wakeUpSchedule": "Selon capacité"
     },
     "ARCHIVISTE": {
       "name": "Archiviste",
@@ -176,7 +177,8 @@
     "GENERAL": {
       "name": "Général",
       "filename": "general",
-      "originalName": "General"
+      "originalName": "General",
+      "wakeUpSchedule": "EVERY_NIGHT"
     },
     "GRANDE_PRETRESSE": {
       "name": "Grande prêtresse",
@@ -499,12 +501,14 @@
     },
     "INVOCATEUR": {
       "name": "Invocateur",
-      "originalName": "Summoner"
+      "originalName": "Summoner",
+      "wakeUpSchedule": "Première nuit pour les bluffs et troisième nuit pour choisir un démon"
     },
     "JUMEAU_MALEFIQUE": {
       "name": "Jumeau Maléfique",
       "filename": "jumeau-malefique",
-      "originalName": "Evil Twin"
+      "originalName": "Evil Twin",
+      "wakeUpSchedule": "FIRST_NIGHT"
     },
     "MANIPULATEUR": {
       "name": "Manipulateur",
@@ -624,7 +628,7 @@
     "SANGSUE": {
       "name": "Sangsue",
       "originalName": "Lleech",
-      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+      "wakeUpSchedule": "EVERY_NIGHT"
     },
     "SHABALOTH": {
       "name": "Shabaloth",
@@ -634,8 +638,7 @@
     "P_TIT_MONSTRE": {
       "name": "P'tit Monstre",
       "filename": "p-tit-monstre",
-      "originalName": "Lil' Monsta",
-      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+      "originalName": "Lil' Monsta"
     },
     "VIGORMORTIS": {
       "name": "Vigormortis",
