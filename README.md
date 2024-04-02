@@ -12,6 +12,7 @@ This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern 
 
 ```console
 yarn install
+npm i --legacy-peer-deps
 ```
 
 ## Local Development
