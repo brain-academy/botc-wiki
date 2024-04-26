@@ -39,6 +39,10 @@
       "clazz": "PROTECTION",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
+    "BANSHEE": {
+      "name": "Banshee",
+      "originalName": "Banshee"
+    },    
     "CANNIBALE": {
       "name": "Cannibale",
       "originalName": "Cannibal",
