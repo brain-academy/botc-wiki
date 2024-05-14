@@ -19,14 +19,14 @@ def main():
             save_role_description(file_path)
 
             # Remove the role's description
-            file_content = re.search(r'(?P<NotDesc>Exemples(.|\n)+)',
-                                    file_content).group('NotDesc').strip()
+            file_content = re.search(r'(?P<NotDesc>Exemple(.|\n)+)',
+                                     file_content).group('NotDesc').strip()
 
         os.makedirs(os.path.dirname(dest_path), exist_ok=True)
         with open(dest_path, 'w') as file:
             file.write(file_content)
 
-    with open(dest_path + "/regles/Explication_regles.txt", 'w') as file:
+    with open(get_dest_path("") + "/Explication_regles.txt", 'w') as file:
         file.write(open("./Explication_regles.txt", 'r').read())
 
 
@@ -34,8 +34,8 @@ def save_role_description(file_path):
     file_content = remove_unwanted_lines(file_path)
 
     # Filters only the description
-    role_description = re.match(r'(?P<Description>(.|\n)+(?=Exemples))',
-                            file_content).group('Description').strip()
+    role_description = re.search(r'(?P<Description>(.|\n)+(?=Exemple))',
+                                    file_content).group('Description').strip()
 
     file_path = get_dest_path(file_path).replace(
         '/roles/', '/roles/descriptions/')
@@ -74,7 +74,8 @@ def remove_unwanted_lines(file_path):
     regex_to_replace = [('###(.+)', '\\1 :'),
                         ('<Role(.+?)/>', role_setter),
                         ('<Fabled(.+?)/>', fabled_setter),
-                        ('<Module(.+?)/>', module_setter)]
+                        ('<Module(.+?)/>', module_setter),
+                        ('haque nuit\*(?!\*)', 'haque nuit (sauf la première)')]
 
     regex_patterns_to_delete = ['---\\n',
                                 'title.+\\n',

@@ -11,10 +11,12 @@ def reset_path():
 
 
 def get_dest_path(file_path):
-    path = ''
-    if any(fn in file_path for fn in ["regles", "deroulement", "glossaire"]):
-        path = DEST_PATH + "/regles"
+    if file_path.strip() == '':
+        return DEST_PATH
 
     path = DEST_PATH
+
+    if any(fn in file_path for fn in ["regles", "deroulement", "glossaire"]):
+        path = DEST_PATH + "/regles"
 
     return file_path.replace('../docs', path).replace('-', '')
