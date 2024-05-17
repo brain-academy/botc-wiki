@@ -35,7 +35,14 @@ def save_role_description(file_path):
 
     # Filters only the description
     role_description = re.search(r'(?P<Description>(.|\n)+(?=Exemple))',
-                                    file_content).group('Description').strip()
+                                 file_content).group('Description').strip()
+
+    role_name = re.search(
+        r'(?<=\/)([^/]+)\.mdx', file_path).group(1).replace('-', ' ')
+
+    # Replaces 'Description' with 'Description "roleName"'
+    role_description = re.sub(
+        'Description', 'Description ' + role_name, role_description)
 
     file_path = get_dest_path(file_path).replace(
         '/roles/', '/roles/descriptions/')
