@@ -8,19 +8,22 @@ from utils import reset_path
 def main():
     reset_path()
 
+    # For all roles
+    parse_roles_to_json()
+
     # For all files to format
     for file_path in get_files_to_format():
         dest_path = get_dest_path(file_path)
 
         file_content = remove_unwanted_lines(file_path)
 
-        if '/roles/' in file_path:
-            # If it is a role, save its description
-            save_role_description(file_path)
+        # if '/roles/' in file_path:
+        #     # If it is a role, save its description
+        #     save_role_description(file_path)
 
-            # Remove the role's description
-            file_content = re.search(r'(?P<NotDesc>Exemple(.|\n)+)',
-                                     file_content).group('NotDesc').strip()
+        #     # Remove the role's description
+        #     file_content = re.search(r'(?P<NotDesc>Exemple(.|\n)+)',
+        #                              file_content).group('NotDesc').strip()
 
         os.makedirs(os.path.dirname(dest_path), exist_ok=True)
         with open(dest_path, 'w') as file:
@@ -52,12 +55,55 @@ def save_role_description(file_path):
         file.write(role_description)
 
 
+def parse_roles_to_json():
+    roles_json = []
+
+    for role_path in get_roles():
+        file_content = open(role_path, 'r').read()
+
+        # Get the real name of the role
+        role_name = re.search(r'title: (?P<Description>.+)', file_content)
+
+        # Matches the description content until the next '###'
+        description = re.search(
+            r'Description(\s|\n)+(?P<Description>(.|\n)+?(?=\n+###))', file_content)
+
+        # Exemples
+        examples = re.search(
+            r'Exemples(\s|\n)+(?P<Examples>(.|\n)+?(?=\n+###))', file_content)
+
+        # Mécaniques & conseils
+        # !!! Attention ! Certains fichiers précises 'Si vous êtes gentil|maléfique ' !!!
+        mecanics = re.search(r'Mécaniques et conseils(\s|\n)+(?P<Mecanics>(.|\n)+?(?=\n+###))', file_content)
+
+        # Bluffer
+        #TODO: Match from next line (avoir the role name)
+        bluff = re.search(r'Bluffer(\s|\n)+(?P<Bluff>(.|\n)+?(?=\n+###))', file_content)
+        
+        # Combattre
+        #TODO: Match from next line (avoir the role name)
+        fight = re.search(r'Bluffer(\s|\n)+(?P<Bluff>(.|\n)+?(?=\n+###))', file_content)
+
+        # Comment conter
+        #TODO : Certains fichiers ont un '?' après le texte.
+
+
+def get_roles():
+    path = "../docs/roles/*"
+
+    files = sorted(glob(path, recursive=True))
+    for file in files:
+        print(file)
+        yield file
+
+
 def get_files_to_format():
     path = "../docs/**/*.mdx"
     ignored = ["legendaires.mdx",
                "roles.mdx",
                "index.mdx",
                "/fiches/",
+               "/roles/",
                "guide_laissez_un_faire.mdx",
                "/modules/"]
 
@@ -65,6 +111,7 @@ def get_files_to_format():
     for file in files:
         if any(ign in file for ign in ignored):
             continue  # skip this file
+        print(file)
         yield file
 
 

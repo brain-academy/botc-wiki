@@ -27,3 +27,18 @@ Pour nominer un joueur que vous souhaitez tuer, dites simplement "Je nomine Bob"
 Chaque jour, vous pouvez nominer pour autant de joueurs que vous le souhaitez, et quiconque a le plus de voix est exécuté. Il faut un nombre de vote égal ou supérieur à 50% des joueurs en vie ou l'exécution est annulée. En cas d'égalité, aucun joueur est exécuté.
 
 Si vous mourrez, vous continuez d'avoir une importance dans la partie. Vous pouvez continuer de parler, et vous fermez vos yeux pendant la nuit. Vous pouvez encore gagner ou perdre avec votre équipe. En réalité, le résultat de la partie se détermine souvent suite aux votes et opinions des joueurs morts. Lorsque vous mourez, vous perdez votre compétence, vous ne pouvez plus nominer, et il vous reste un dernier vote pour toute la partie, à utiliser soigneusement.
+
+
+Il y a toujours un seul Démon par partie. La composition du village est prédéfinie en amont selon le nombre de joueurs : 
+- 5 Joueurs : 3 Villageois, 0 Etrangers, 1 Sbire, 1 Démon
+- 6 Joueurs : 3 Villageois, 1 Etrangers, 1 Sbire, 1 Démon
+- 7 Joueurs : 5 Villageois, 0 Etrangers, 1 Sbire, 1 Démon
+- 8 Joueurs : 5 Villageois, 1 Etrangers, 1 Sbire, 1 Démon
+- 9 Joueurs : 5 Villageois, 2 Etrangers, 1 Sbire, 1 Démon
+- 10 Joueurs : 7 Villageois, 0 Etrangers, 2 Sbire, 1 Démon
+- 11 Joueurs : 7 Villageois, 1 Etrangers, 2 Sbire, 1 Démon
+- 12 Joueurs : 7 Villageois, 2 Etrangers, 2 Sbire, 1 Démon
+- 13 Joueurs : 9 Villageois, 0 Etrangers, 3 Sbire, 1 Démon
+- 14 Joueurs : 9 Villageois, 1 Etrangers, 3 Sbire, 1 Démon
+- 15 Joueurs et plus : 9 Villageois, 2 Etrangers, 3 Sbire, 1 Démon
+A plus de 15 joueurs, des rôles de 'Voyageur' sont ajoutés
