@@ -3,6 +3,8 @@ import os
 import re
 from utils import get_dest_path
 from utils import reset_path
+from constants import *
+import json
 
 
 def main():
@@ -57,35 +59,71 @@ def save_role_description(file_path):
 
 def parse_roles_to_json():
     roles_json = []
+    travellers = [
+        "bouc-emissaire",
+        "bureaucrate",
+        "mendiant",
+        "vengeur",
+        "voleur",
+        "apprenti",
+        "archeveque",
+        "magistrat",
+        "matrone",
+        "necromant",
+        "barista",
+        "boucher",
+        "collecteur-d-os",
+        "deviant",
+        "fille-de-joie",
+        "gangster"]
 
     for role_path in get_roles():
-        file_content = open(role_path, 'r').read()
+        if any(traveller in role_path for traveller in travellers):
+            continue  # skip this file
+        file_content = parse_file(role_path)
 
         # Get the real name of the role
-        role_name = re.search(r'title: (?P<Description>.+)', file_content)
+        role_name = re.search(REGEX_ROLE_NAME, file_content).group('RoleName')
 
         # Matches the description content until the next '###'
         description = re.search(
-            r'Description(\s|\n)+(?P<Description>(.|\n)+?(?=\n+###))', file_content)
+            REGEX_DESCRIPTION, file_content).group("Description")
 
         # Exemples
-        examples = re.search(
-            r'Exemples(\s|\n)+(?P<Examples>(.|\n)+?(?=\n+###))', file_content)
+        examples = re.search(REGEX_EXAMPLES, file_content).group("Examples")
 
         # Mécaniques & conseils
-        # !!! Attention ! Certains fichiers précises 'Si vous êtes gentil|maléfique ' !!!
-        mecanics = re.search(r'Mécaniques et conseils(\s|\n)+(?P<Mecanics>(.|\n)+?(?=\n+###))', file_content)
+        # !!! for travellers = 'Si vous êtes gentil|maléfique ' => excluded for now
+        mecanics = re.search(REGEX_MECANICS, file_content).group("Mecanics")
 
         # Bluffer
-        #TODO: Match from next line (avoir the role name)
-        bluff = re.search(r'Bluffer(\s|\n)+(?P<Bluff>(.|\n)+?(?=\n+###))', file_content)
-        
+        re_bluff = re.search(REGEX_BLUFF, file_content)
+        bluff = re_bluff.group("Bluff") if re_bluff is not None else ""
+
         # Combattre
-        #TODO: Match from next line (avoir the role name)
-        fight = re.search(r'Bluffer(\s|\n)+(?P<Bluff>(.|\n)+?(?=\n+###))', file_content)
+        re_fight = re.search(REGEX_FIGHT, file_content)
+        fight = re_fight.group("Fight") if re_fight is not None else ""
 
         # Comment conter
-        #TODO : Certains fichiers ont un '?' après le texte.
+        storytelling = re.search(
+            REGEX_STORYTELLING, file_content).group("Storytelling")
+
+        role = {
+            role_name: {
+                "description": description.strip(),
+                "examples": examples.strip(),
+                "mecanics_tips": mecanics.strip(),
+                "bluff": bluff.strip(),
+                "fight": fight.strip(),
+                "storytelling": storytelling.strip(),
+            }
+        }
+
+        roles_json.append(role)
+
+    with open('./data.json', 'w') as file:
+        file.write(json.dumps(roles_json, indent=4,
+                   ensure_ascii=False).replace("\u00a0", ""))
 
 
 def get_roles():
@@ -93,7 +131,6 @@ def get_roles():
 
     files = sorted(glob(path, recursive=True))
     for file in files:
-        print(file)
         yield file
 
 
@@ -111,8 +148,23 @@ def get_files_to_format():
     for file in files:
         if any(ign in file for ign in ignored):
             continue  # skip this file
-        print(file)
         yield file
+
+
+def parse_file(file_path):
+    file_content = open(file_path, 'r').read()
+
+    def link_setter(pat): return pat.group(1).lower().replace("_", " ")
+
+    regex_to_replace = [('<Role(.+?)/>', link_setter),
+                        ('<Fabled(.+?)/>', link_setter),
+                        ('<Module(.+?)/>', link_setter),
+                        ('haque nuit\*(?!\*)', 'haque nuit (sauf la première)')]
+
+    for r in regex_to_replace:
+        file_content = re.sub(r[0], r[1], file_content)
+
+    return file_content
 
 
 def remove_unwanted_lines(file_path):

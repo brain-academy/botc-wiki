@@ -1,0 +1,7 @@
+REGEX_ROLE_NAME=r'title: (?P<RoleName>.+)'
+REGEX_DESCRIPTION=r'### Description(\s|\n)+(?P<Description>(.|\n)+?(?=\n+###))'
+REGEX_EXAMPLES=r'### Exemples(\s|\n)+(?P<Examples>(.|\n)+?(?=\n+###))'
+REGEX_MECANICS=r'### Mécaniques et conseils(\s|\n)+(?P<Mecanics>(.|\n)+?(?=\n+###))'
+REGEX_BLUFF=r'### Bluffer.+(\s|\n)+(?P<Bluff>(.|\n)+?(?=\n+###))'
+REGEX_FIGHT=r'### Combattre.+(\s|\n)+(?P<Fight>(.|\n)+?(?=\n+###))'
+REGEX_STORYTELLING=r'### Comment conter.*(\s|\n)+(?P<Storytelling>(.|\n)+)'
