@@ -95,6 +95,8 @@ SBIRES
 
 -   <Role INVOCATEUR /> et <Role INGENIEUR /> : Si l’Ingénieur retire un Invocateur avant que celui-ci ait utilisé sa capacité, alors l’Invocateur utilise sa capacité immédiatement.
 
+-   <Role INVOCATEUR /> et <Role PREDICATEUR /> : Si le Prédicateur choisit l’Invocateur la troisième nuit ou avant, l’Invocateur choisit le Démon mais le conteur choisit le joueur.
+
 -   <Role INVOCATEUR /> et <Role KAZALI /> : L’Invocateur ne peut pas créer un Démon déjà en jeu. Si l’Invocateur créé un Démon qui n’est pas en jeu, les morts de cette nuit sont arbitraires.
 
 -   <Role INVOCATEUR /> et <Role LEGION /> : Si l’invocateur choisit de créer une légion, la plupart des joueurs (y compris tous les maléfiques) deviennent légion.
@@ -123,13 +125,11 @@ SBIRES
 
 -   <Role MARIONNETTE /> et <Role P_TIT_MONSTRE /> : La Marionnette est voisine d’un sbire et non du démon. La Marionnette n’est pas réveillée pour choisir qui garde le petit monstre et n’apprend pas qu’elle est <Role MARIONNETTE /> si elle garde le <Role P_TIT_MONSTRE />.
 
--   <Role ORGUE_DE_BARBARIE /> et <Role FLEURISTE /> : Si l’Orgue de Barbarie provoque des votes les yeux fermés, le Fleuriste se réveille la nuit pour choisir un joueur : il apprend si ce joueur a voté aujourd’hui.
-
 -   <Role ORGUE_DE_BARBARIE /> et <Role MAJORDOME /> : Si l’Orgue de Barbarie provoque un vote les yeux fermés, le Majordome peut lever la main pour voter, mais son vote n'est compté que si son maître a également voté.
 
--   <Role ORGUE_DE_BARBARIE /> et <Role MENESTREL /> Seul un des rôles jinxés peut être en jeu. Les maléfiques commencent en sachant quel joueur a ce rôle.
+-   <Role ORGUE_DE_BARBARIE /> et <Role MENESTREL /> : Si le Ménestrel rend tout le monde ivre, l’Orgue de Barbarie garde sa capacité mais le Ménestrel garde ses yeux ouverts pendant les votes.
 
--   <Role ORGUE_DE_BARBARIE /> et <Role PREDICATEUR /> Seul un des rôles jinxés peut être en jeu. Les maléfiques commencent en sachant quel joueur a ce rôle.
+-   <Role ORGUE_DE_BARBARIE /> et <Role PREDICATEUR /> : Si le Prédicateur vise l’Orgue de Barbarie, celui-ci garde sa capacité mais le Prédicateur garde ses yeux ouverts pendant les votes.
 
 -   <Role PARRAIN /> et <Role HERETIQUE /> : Seul un des rôles jinxés peut être en jeu.
 
@@ -174,7 +174,7 @@ SBIRES
 
 DEMONS
 
--   <Role AL_HADIKHIA /> et <Role CONSPIRATEUR /> : Seul un des rôles jinxés peut être en jeu. Les maléfiques commencent en sachant quel joueur a ce rôle.
+-   <Role AL_HADIKHIA /> et <Role CONSPIRATEUR /> : Si l’Al-Hadikhia meurt par exécution et que le Conspirateur est en vie, l’Al-Hadikhia choisit trois joueurs gentils cette nuit : Si les trois choisissent la vie, les maléfiques gagnent. Sinon, le village gagne.
 
 -   <Role AL_HADIKHIA /> et <Role CROQUEUSE_D_HOMMES /> : S'il y a deux Al-Hadikhia vivants, la Croqueuse d'hommes d'origine redevient la Croqueuse d'hommes.
 
@@ -244,6 +244,8 @@ DEMONS
 
 -   <Role KAZALI /> et <Role ENFANT_DE_CHOEUR /> : “Le Kazali ne peut pas choisir le Roi pour qu’il devienne sbire si un Enfant de choeur est en jeu.”
 
+-   <Role KAZALI /> et <Role SOLDAT /> : Si le Kazali transforme le Soldat en Sbire, le Soldat choisit quel sbire, qui n’est pas déjà en jeu, il devient.
+
 -   <Role KAZALI /> et <Role BRUTE /> : “Si le Kazali choisit la Brute pour devenir sbire, les choix de sbires restant sont décidés par le conteur.”
 
 -   <Role KAZALI /> et <Role MARIONNETTE /> : “Si le Kazali choisit de créer une Marionnette, il doit choisir un de ses voisins.”
@@ -252,7 +254,9 @@ DEMONS
 
 -   <Role LEGION /> et <Role INGENIEUR /> : Légion et Ingénieur ne peuvent pas être en jeu au début de la partie. Si l’Ingénieur créé une Légion, la plupart des joueurs (incluant tous les maléfiques) deviennent des Légions maléfiques.
 
--   <Role LEGION /> et <Role PREDICATEUR /> : Seul un des rôles jinxés peut être en jeu.
+-   <Role LEGION /> et <Role PREDICATEUR /> : Si le Prédicateur choisit une Legion, le joueur Legion garde sa capacité mais le Prédicateur pourrait apprendre qu’il est Legion.
+
+-   <Role LEGION /> et <Role MENESTREL /> : Si une Legion est morte par exécution ce jour, la Legion garde sa capacité mais le Menestrel pourrait apprendre qu’elle est Legion.
 
 -   <Role LEVIATHAN /> et <Role AUBERGISTE /> : Si le Léviathan nomine et exécute un joueur choisit par l’Aubergiste, ce joueur ne meurt pas.
 
@@ -278,7 +282,7 @@ DEMONS
 
 -   <Role P_TIT_MONSTRE /> et <Role CULTIVATEUR_DE_PAVOT /> : Si un Cultivateur de Pavot est en jeu, les sbires ne se réveillent pas ensemble. Ils se réveillent un à un jusqu’à ce que l’un d’eux accepte de garder le P'tit Monstre.
 
--   <Role P_TIT_MONSTRE /> et <Role MAGICIEN /> : Seul un des rôles jinxés peut être en jeu.
+-   <Role P_TIT_MONSTRE /> et <Role MAGICIEN /> : Chaque nuit, le Magicien choisit un Sbire : Si ce Sbire et le P’tit Monstre sont en jeu, ce Sbire garde le P’tit Monstre.
 
 -   <Role P_TIT_MONSTRE /> et <Role ORGUE_DE_BARBARIE /> : Les votes pour l’Orgue de Barbarie comptent si l’Orgue de Barbarie garde le Orgue de Barbarie.
 
