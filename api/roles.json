@@ -12,6 +12,10 @@
       "originalName": "Alchemist",
       "wakeUpSchedule": "La première nuit, puis identique au rôle attribué"
     },
+    "ALSAAHIR": {
+      "name": "Alsaahir",
+      "originalName": "Alsaahir"
+    },
     "AMNESIQUE": {
       "name": "Amnésique",
       "filename": "amnesique",
