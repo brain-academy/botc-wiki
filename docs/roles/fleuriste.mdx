@@ -11,62 +11,62 @@ import Role from '/src/components/role.component'
 
 Chaque nuit*, vous apprenez si le Démon a voté aujourd'hui.
 
-Le fleuriste apprend si le démon a voté ou non.
+Le fleuriste apprend si le Démon a voté ou non.
 
--   Un vote du démon compte que nominé soit exécuté ou non.
+-   Un vote du Démon compte que nominé soit exécuté ou non.
 
--   Le fleuriste ne détecte pas si le démon a levé sa main pour d’autres raisons, comme par exemple, quand le joueur « vote » pour quoi commander à diner ou pour exiler un voyageur.
+-   Le fleuriste ne détecte pas si le Démon a levé sa main pour d’autres raisons, comme par exemple, quand le joueur « vote » pour quoi commander à diner ou pour exiler un voyageur.
     
--   Si le démon change après que le démon d’origine ait voté mais avant que le fleuriste se réveille pour apprendre son information, le fleuriste détecte le démon d’origine. 
+-   Si le Démon change après que le Démon d’origine ait voté mais avant que le fleuriste se réveille pour apprendre son information, le fleuriste détecte le Démon d’origine. 
     
--   S’il y a deux démons (ou plus !), même des démons morts, le fleuriste détecte si l’un d’entre eux a voté. Même si un seul des démons a voté, le fleuriste aura un « oui ».
+-   S’il y a deux Démons (ou plus !), même des Démons morts, le fleuriste détecte si l’un d’entre eux a voté. Même si un seul des Démons a voté, le fleuriste aura un « oui ».
  
 ### Exemples  
 
-> Il y a eu une nomination aujourd’hui. Beaucoup de joueurs ont voté, le joueur a été exécuté, mais le démon n’a pas voté. Cette nuit, le <Role FLEURISTE /> apprends que le démon n’a pas voté.
+> Il y a eu une nomination aujourd’hui. Beaucoup de joueurs ont voté, le joueur a été exécuté, mais le Démon n’a pas voté. Cette nuit, le <Role FLEURISTE /> apprends que le Démon n’a pas voté.
 
-> Il y avait trois nominations aujourd’hui. Le démon a voté durant la deuxième nomination. Personne n’a été exécuté. Cette nuit, le <Role FLEURISTE /> apprend que le démon a voté aujourd’hui.
+> Il y avait trois nominations aujourd’hui. Le Démon a voté durant la deuxième nomination. Personne n’a été exécuté. Cette nuit, le <Role FLEURISTE /> apprend que le Démon a voté aujourd’hui.
 
-> Il n’y a pas eu de nominations aujourd’hui. Un voyageur a été exilé et tous les joueurs ont voté pour cet exil. Cette nuit, le <Role FLEURISTE /> apprend que le démon n’a pas voté. (Les exils ne sont jamais affectés par les capacités).
+> Il n’y a pas eu de nominations aujourd’hui. Un voyageur a été exilé et tous les joueurs ont voté pour cet exil. Cette nuit, le <Role FLEURISTE /> apprend que le Démon n’a pas voté. (Les exils ne sont jamais affectés par les capacités).
 
 ### Mécaniques et conseils
 
-- Faites attention ! Vous avez besoin de traquer qui vote chaque jour ou votre information ne sera pas très utile. Les maléfiques peuvent et mentiront probablement sur le fait qu’ils aient voté ou non donc vous ne pouvez pas vous reposer sur le village pour savoir qui a voté si vous avez oublié. Votre information réduit la liste des démons potentiels à chaque fois que vous la recevez alors soyez sûrs qu’elle sera bien utile.
+- Faites attention ! Vous avez besoin de traquer qui vote chaque jour ou votre information ne sera pas très utile. Les maléfiques peuvent et mentiront probablement sur le fait qu’ils aient voté ou non donc vous ne pouvez pas vous reposer sur le village pour savoir qui a voté si vous avez oublié. Votre information réduit la liste des Démons potentiels à chaque fois que vous la recevez alors soyez sûrs qu’elle sera bien utile.
 
-- Surveillez aussi bien les joueurs qui votent que ceux qui ne votent pas. Les maléfiques sont moins enclin à vouloir voter et attirer votre attention. Mais si vous avez beaucoup de joueurs qui votent et que le conteur vous indique « non » alors vous savez que le démon est parmi ceux qui ceux qui n’ont pas voté ce jour. Gardez aussi un œil sur les joueurs qui suivent la majorité des votes. Il peut s’agir du démon qui essaye de se dissimuler parmi le plus grand nombre de joueur pour limiter votre information. 
+- Surveillez aussi bien les joueurs qui votent que ceux qui ne votent pas. Les maléfiques sont moins enclin à vouloir voter et attirer votre attention. Mais si vous avez beaucoup de joueurs qui votent et que le conteur vous indique « non » alors vous savez que le Démon est parmi ceux qui ceux qui n’ont pas voté ce jour. Gardez aussi un œil sur les joueurs qui suivent la majorité des votes. Il peut s’agir du Démon qui essaye de se dissimuler parmi le plus grand nombre de joueur pour limiter votre information. 
 
-- Pour une exécution, la moitié des votes joueurs vivants est requise. Si une exécution se produit, essayez de convaincre le groupe de limiter leurs votes au strict minimum. Cela vous permettra de faire une séparation nette entre deux groupes de joueurs. Si vous recevez un « Oui », alors vous savez que le démon est parmi ceux qui ont voté aujourd’hui. Si vous recevez un « Non », vous savez que le démon est parmi ceux qui n’ont pas voté. Contrôler les votes de cette façon permet plus facilement de réduire la liste des possibles démons MAIS soyez conscients que cela vous fera tuer bien plus rapidement que si vous restez silencieux et observez les votes naturellement.
+- Pour une exécution, la moitié des votes joueurs vivants est requise. Si une exécution se produit, essayez de convaincre le groupe de limiter leurs votes au strict minimum. Cela vous permettra de faire une séparation nette entre deux groupes de joueurs. Si vous recevez un « Oui », alors vous savez que le Démon est parmi ceux qui ont voté aujourd’hui. Si vous recevez un « Non », vous savez que le Démon est parmi ceux qui n’ont pas voté. Contrôler les votes de cette façon permet plus facilement de réduire la liste des possibles Démons MAIS soyez conscients que cela vous fera tuer bien plus rapidement que si vous restez silencieux et observez les votes naturellement.
 
-- Votre pouvoir vous permet de détecter le démon donc vous êtes une cible de haute valeur pour les maléfiques pour être neutralisé ou tué. Essayez de former une alliance avec un joueur que vous pensez gentil et laissez-le faire les discours à votre place. En particulier si ce joueur est le <Role SAGE /> (qui veut que le démon le tue), il sera alors avide pour prendre votre rôle et attirer l’ire du démon pendant que vous continuez à collecter des informations discrètement. Cela peut aussi vous protéger de la <Role SORCIERE />, du <Role MANIPULATEUR /> et de la <Role VIEILLE_CHOUETTE /> qui peuvent vous gêner.
+- Votre pouvoir vous permet de détecter le Démon donc vous êtes une cible de haute valeur pour les maléfiques pour être neutralisé ou tué. Essayez de former une alliance avec un joueur que vous pensez gentil et laissez-le faire les discours à votre place. En particulier si ce joueur est le <Role SAGE /> (qui veut que le Démon le tue), il sera alors avide pour prendre votre rôle et attirer l’ire du Démon pendant que vous continuez à collecter des informations discrètement. Cela peut aussi vous protéger de la <Role SORCIERE />, du <Role MANIPULATEUR /> et de la <Role VIEILLE_CHOUETTE /> qui peuvent vous gêner.
 
 - Vous avez synergie avec le <Role CRIEUR /> car vous êtes tous les deux très impliqués dans les nominations et les exécutions. Pendant que vous surveillez qui vous aidez, prêtez aussi attention à qui a nominé. Non seulement, cela peut aussi votre camarade crieur mais si vous contrôlez les votes pour le bien de votre information, cela ne vous coute pas grand-chose d’y ajouter un petit extra.
 
-- Vous pouvez détecter si un <Role VORTOX /> est en jeu en de rares circonstances. Si tous les joueurs votent et que vous apprenez que le démon n’a pas voté alors soit le <Role VORTOX /> est en jeu, ce qui une information extrêmement utile, ou alors vous êtes empoisonné ou ivre, ce qui est aussi une information très utile !
+- Vous pouvez détecter si un <Role VORTOX /> est en jeu en de rares circonstances. Si tous les joueurs votent et que vous apprenez que le Démon n’a pas voté alors soit le <Role VORTOX /> est en jeu, ce qui une information extrêmement utile, ou alors vous êtes empoisonné ou ivre, ce qui est aussi une information très utile !
 
 ### Bluffer le rôle de Fleuriste
 
-- L’information que vous donnez chaque jour réduira la liste des joueurs qui peuvent être démon. Si le deuxième jour, vous dites qu’un joueur parmi cinq est le démon, ce nombre peut tomber à trois le jour suivant. N’impliquez pas vos camarades maléfiques si possible. Prêtez attention à qui a voté et qui n’a pas voté et faites-en sorte que des gentils soient tués.
+- L’information que vous donnez chaque jour réduira la liste des joueurs qui peuvent être Démon. Si le deuxième jour, vous dites qu’un joueur parmi cinq est le Démon, ce nombre peut tomber à trois le jour suivant. N’impliquez pas vos camarades maléfiques si possible. Prêtez attention à qui a voté et qui n’a pas voté et faites-en sorte que des gentils soient tués.
 
-- Ou, si vous impliquez des joueurs maléfiques de cette façon, faites-en sorte de passer pour un maléfique. Souriez quand vous mentez. Accusez des joueurs dignes de confiances d’être maléfiques. Faites des erreurs sur votre rôle. Si vous paraissez maléfique, les joueurs que le village croit que vous essayez de tuer passeront pour gentil. Si un de ces joueurs est le démon alors bon travail.
+- Ou, si vous impliquez des joueurs maléfiques de cette façon, faites-en sorte de passer pour un maléfique. Souriez quand vous mentez. Accusez des joueurs dignes de confiances d’être maléfiques. Faites des erreurs sur votre rôle. Si vous paraissez maléfique, les joueurs que le village croit que vous essayez de tuer passeront pour gentil. Si un de ces joueurs est le Démon alors bon travail.
 
-- Vous pouvez diriger les votes du village dans un sens en particulier. Si vous suggérez qui devrait ou ne devrait pas voter, vous pouvez donner une information plus accablante le jour suivant. Toutefois, puisque le démon voudrait normalement tuer un véritable fleuriste qui agirait de cette façon, le village se demandera probablement pourquoi vous êtes toujours en vie après quelques jours.
+- Vous pouvez diriger les votes du village dans un sens en particulier. Si vous suggérez qui devrait ou ne devrait pas voter, vous pouvez donner une information plus accablante le jour suivant. Toutefois, puisque le Démon voudrait normalement tuer un véritable fleuriste qui agirait de cette façon, le village se demandera probablement pourquoi vous êtes toujours en vie après quelques jours.
 
-- Si vous êtes un sbire, faites-en sortes que le démon vous tue la nuit. Les joueurs qui meurent la nuit sont habituellement moins suspecté que ceux qui meurent par exécution. 
+- Si vous êtes un sbire, faites-en sortes que le Démon vous tue la nuit. Les joueurs qui meurent la nuit sont habituellement moins suspecté que ceux qui meurent par exécution. 
 
 - Restez silencieux pour quelques jours avant de révéler que vous êtes le fleuriste. Les véritables fleuristes le font habituellement alors cela vous rend plus légitime.  Ou alors, bluffez un rôle qui ne va pas perturber le jeu pour quelques jours comme le <Role SAGE /> ou la <Role DULCINEE /> et ensuite révéler être le fleuriste plus tard.
 
-- Le fleuriste est un excellent bluff de secours, au cas où votre premier bluff tombe à l’eau. Par exemple, si vous causez le chaos en bluffant en tant que <Role JONGLEUR />, ou <Role COUTURIERE />, alors, plus tard dans le jeu, prétendre être en réalité le fleuriste et ce que vous avez dit avant était du bluff que vous avez utilisé pour inciter le démon à vous laisser en vie.
+- Le fleuriste est un excellent bluff de secours, au cas où votre premier bluff tombe à l’eau. Par exemple, si vous causez le chaos en bluffant en tant que <Role JONGLEUR />, ou <Role COUTURIERE />, alors, plus tard dans le jeu, prétendre être en réalité le fleuriste et ce que vous avez dit avant était du bluff que vous avez utilisé pour inciter le Démon à vous laisser en vie.
 
-- Agissez de façon confuse. Le fleuriste est un rôle qui peut être déstabilisant. Il peut y avoir beaucoup de joueurs qui votent et même de véritables fleuristes peuvent faire des erreurs en se rappelant qui a voté et qui n’a pas voté, en particulier avec plusieurs nominations par jour. Prétendre au village que vous êtes le fleuriste mais que vous n’êtes plus très sûr ou que vous avez du mal à déduire qui est le démon est acceptable. Même donner des informations contradictions de temps en temps ne sera souvent pas si suspect. 
+- Agissez de façon confuse. Le fleuriste est un rôle qui peut être déstabilisant. Il peut y avoir beaucoup de joueurs qui votent et même de véritables fleuristes peuvent faire des erreurs en se rappelant qui a voté et qui n’a pas voté, en particulier avec plusieurs nominations par jour. Prétendre au village que vous êtes le fleuriste mais que vous n’êtes plus très sûr ou que vous avez du mal à déduire qui est le Démon est acceptable. Même donner des informations contradictions de temps en temps ne sera souvent pas si suspect. 
 
-- Les fleuristes peuvent détecter si un <Role VORTOX /> est en jeu en de rares circonstances. Si un <Role VORTOX /> est en jeu et que vous pensez que le village est en train de le savoir, donner des vraies informations sur le vote du démon afin que le village pense l’inverse. 
+- Les fleuristes peuvent détecter si un <Role VORTOX /> est en jeu en de rares circonstances. Si un <Role VORTOX /> est en jeu et que vous pensez que le village est en train de le savoir, donner des vraies informations sur le vote du Démon afin que le village pense l’inverse. 
 
 ### Comment conter ?
 
 Chaque début de journée, placez le jeton de rappel "Démon n’a pas voté" devant le jeton de rôle du fleuriste et retirez le jeton de rappel "Démon a voté" s’il était présent.
 
-Chaque jour, si le démon vote pour une exécution, remplacez le jeton de rappel "Démon n’a pas voté" par le jeton de rappel "Démon a voté".
+Chaque jour, si le Démon vote pour une exécution, remplacez le jeton de rappel "Démon n’a pas voté" par le jeton de rappel "Démon a voté".
 
 Chaque nuit, excepté la première, réveillez le fleuriste. Si le jeton de rappel "Démon n’a pas voté" est devant son jeton de rôle, faites « non » de la tête. Si c’est le jeton de rappel "Démon a voté", faites « oui » de la tête. Rendormez ensuite le fleuriste.
 
-_Si vous avez oublié si le démon a voté ou non, réveillez le démon la nuit et demandez-lui en montrant le jeton d’information « As-tu voté aujourd’hui ? ». Il doit répondre honnêtement et se rendormir ensuite._
+_Si vous avez oublié si le Démon a voté ou non, réveillez le Démon la nuit et demandez-lui en montrant le jeton d’information « As-tu voté aujourd’hui ? ». Il doit répondre honnêtement et se rendormir ensuite._
