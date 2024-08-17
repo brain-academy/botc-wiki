@@ -11,21 +11,21 @@ import Role from '/src/components/role.component'
 
 Vous êtes protégé des effets du Démon.
 
-Le soldat ne peut pas être tué par le Démon.
+Le Soldat ne peut pas être tué par le Démon.
 
--	Le soldat ne peut pas mourir de la capacité du Démon. Donc si le Imp attaque le soldat la nuit, rien ne se passe. Personne ne meurt. Le Imp ne peut pas choisir un autre joueur à attaquer à la place.
+-	Le Soldat ne peut pas mourir de la capacité du Démon. Donc si le Imp attaque le Soldat la nuit, rien ne se passe. Personne ne meurt. Le Imp ne peut pas choisir un autre joueur à attaquer à la place.
 
--	Le Soldat peut toujours mourir d’une exécution, même si celui qui l’a nominé est le Démon. Le soldat est protégé de la capacité à tuer du Démon pas des actions du joueur qui est le Démon.
+-	Le Soldat peut toujours mourir d’une exécution, même si celui qui l’a nominé est le Démon. Le Soldat est protégé de la capacité à tuer du Démon pas des actions du joueur qui est le Démon.
 
 ### Exemples
 
-> L’<Role IMP /> attaque le <Role SOLDAT />. Le <Role SOLDAT /> ne meurt pas. Personne ne meurt cette nuit.
+> L’<Role IMP /> attaque le Soldat. Le Soldat ne meurt pas. Personne ne meurt cette nuit.
 
-> L’<Role EMPOISONNEUR /> empoisonne le <Role SOLDAT /> et l’<Role IMP /> attaque le <Role SOLDAT />. Le <Role SOLDAT /> meurt puisque sa capacité était altérée.
+> L’<Role EMPOISONNEUR /> empoisonne le Soldat et l’<Role IMP /> attaque le Soldat. Le Soldat meurt puisque sa capacité était altérée.
 
-> L’<Role IMP /> attaque le <Role SOLDAT />. Le <Role SOLDAT /> meurt parce qu’il était en réalité le <Role SOULARD /> et non le <Role SOLDAT />.
+> L’<Role IMP /> attaque le Soldat. Le Soldat meurt parce qu’il était en réalité le <Role SOULARD /> et non le Soldat.
 
-> L’<Role IMP /> attaque le <Role MAIRE />. Le Conteur choisit que le <Role SOLDAT /> meurt à la place. Toutefois, comme le <Role SOLDAT /> ne peut pas mourir du Démon, personne ne meurt ce soir.
+> L’<Role IMP /> attaque le <Role MAIRE />. Le Conteur choisit que le Soldat meurt à la place. Toutefois, comme le Soldat ne peut pas mourir du Démon, personne ne meurt ce soir.
 
 
 ### Mécaniques et conseils
@@ -36,11 +36,11 @@ Le soldat ne peut pas être tué par le Démon.
 
     - Puisqu’il n’y a pas de mort cette nuit, cela vient confirmer votre rôle. Vous pouvez bluffer un rôle intéressant à tuer pour les Maléfiques (<Role VOYANTE />, <Role CROQUE_MORT />, <Role EMPATHIQUE />, <Role MERCENAIRE />...) pour attirer le Démon la nuit.
 
-- Si vous arrivez à prouver que vous êtes le <Role SOLDAT />, les Gentils ont un avantage considérable pour la dernière journée. Au lieu d’avoir à choisir parmi trois joueurs, il n’y a qu’un potentiel Démon parmi deux joueurs !
+- Si vous arrivez à prouver que vous êtes le Soldat, les Gentils ont un avantage considérable pour la dernière journée. Au lieu d’avoir à choisir parmi trois joueurs, il n’y a qu’un potentiel Démon parmi deux joueurs !
 
 - Un Démon ne vous attaquera plus après avoir échoué à vous éliminer la première fois. Si vous arrivez à convaincre que vous étiez en réalité protégé par le <Role MOINE />, vous inciterez le Démon à retenter sa chance et lui faire perdre à nouveau un tour.
 
-- Vous pouvez échanger secrètement votre rôle avec un autre rôle puissant qui cherche à se protéger. Il ne devrait pas se faire attaquer vu qu’il se dit <Role SOLDAT />, vous communiquerez leurs informations au Village pour essayer d’attirer le Démon sur vous.
+- Vous pouvez échanger secrètement votre rôle avec un autre rôle puissant qui cherche à se protéger. Il ne devrait pas se faire attaquer vu qu’il se dit Soldat, vous communiquerez leurs informations au Village pour essayer d’attirer le Démon sur vous.
 
 - Si vous mourez de nuit, vous êtes soit empoisonné, soit <Role SOULARD />. C’est une bonne information pour le Village :
 
@@ -50,23 +50,23 @@ Le soldat ne peut pas être tué par le Démon.
 
 - Si vous êtes toujours en vie à la fin de la partie, que vous n’avez dévoilé votre rôle à personne et qu’il y a eu un mort chaque nuit, il est probable qu’il y ait un <Role ESPION /> dans la partie. Faites attention aux interactions entre joueurs en débats privés pour essayer d’identifier l'<Role ESPION /> et son Démon.
 
-- Attention : lorsque vous êtes <Role SOLDAT />, vous aurez accès à peu d'informations durant l’enquête du Village qui peut se méfier de vous ; il est simple de bluffer <Role SOLDAT /> (à moins qu’un <Role GARDIEN /> ou une <Role LAVANDIERE /> vous confirme) et peu de mécaniques peuvent vous dédouaner. Si vous restez en vie longtemps dans la partie, il est facile pour les Maléfiques de jeter la suspicion sur vous. 
+- Attention : lorsque vous êtes Soldat, vous aurez accès à peu d'informations durant l’enquête du Village qui peut se méfier de vous ; il est simple de bluffer Soldat (à moins qu’un <Role GARDIEN /> ou une <Role LAVANDIERE /> vous confirme) et peu de mécaniques peuvent vous dédouaner. Si vous restez en vie longtemps dans la partie, il est facile pour les Maléfiques de jeter la suspicion sur vous. 
 
 
 ### Bluffer le Soldat
 
-- Le <Role SOLDAT /> est un bluff facile vu que vous ne donnez aucune information et que votre capacité explique pourquoi vous restez en vie longtemps dans la partie. Cela ne veut pas dire que vous pouvez rester tranquille dans votre coin pour le reste de la partie. Puisqu’il n’y a pas grand chose qui puisse vous dédouaner aux yeux du village, vous pouvez apparaître comme suspect assez rapidement. 
+- Le Soldat est un bluff facile vu que vous ne donnez aucune information et que votre capacité explique pourquoi vous restez en vie longtemps dans la partie. Cela ne veut pas dire que vous pouvez rester tranquille dans votre coin pour le reste de la partie. Puisqu’il n’y a pas grand chose qui puisse vous dédouaner aux yeux du village, vous pouvez apparaître comme suspect assez rapidement. 
 
-- En restant discret et en essayant de ne pas attirer l’attention, vous pouvez apparaître comme un rôle important… ou comme un <Role SOLDAT /> qui essaie d’attirer le Démon. Restez discret et apparaissez comme méfiant pendant quelques jours, vous serez vu à ce moment véritablement comme quelqu’un qui essaie de se faire attaquer par le Démon. Cette stratégie a ses limites car vous n’êtes pas le seul rôle à pouvoir faire ce genre de choses (<Role GARDIEN /> par exemple).
+- En restant discret et en essayant de ne pas attirer l’attention, vous pouvez apparaître comme un rôle important… ou comme un Soldat qui essaie d’attirer le Démon. Restez discret et apparaissez comme méfiant pendant quelques jours, vous serez vu à ce moment véritablement comme quelqu’un qui essaie de se faire attaquer par le Démon. Cette stratégie a ses limites car vous n’êtes pas le seul rôle à pouvoir faire ce genre de choses (<Role GARDIEN /> par exemple).
 
-- Les Maléfiques peuvent décider d’attaquer un joueur déjà mort. En procédant de la sorte, ils diront qu’il n’y a pas eu de mort cette nuit et que le <Role SOLDAT /> a certainement été attaqué !
+- Les Maléfiques peuvent décider d’attaquer un joueur déjà mort. En procédant de la sorte, ils diront qu’il n’y a pas eu de mort cette nuit et que le Soldat a certainement été attaqué !
 
-- Puisque vous ne pouvez pas mourir la nuit, les personnages à information blufferont souvent votre rôle de <Role SOLDAT />. Vous pouvez gagner leur confiance en vous dévoilant à eux en privé comme étant le vrai <Role SOLDAT /> et en leur proposant d’échanger vos rôles respectifs. Ils seront ainsi “protégés” et vous deviendrez une cible de choix. Si vous avez un <Role EMPOISONNEUR /> dans la partie, empoisonnez alors ce joueur pour que sa capacité soit altérée !
+- Puisque vous ne pouvez pas mourir la nuit, les personnages à information blufferont souvent votre rôle de Soldat. Vous pouvez gagner leur confiance en vous dévoilant à eux en privé comme étant le vrai Soldat et en leur proposant d’échanger vos rôles respectifs. Ils seront ainsi “protégés” et vous deviendrez une cible de choix. Si vous avez un <Role EMPOISONNEUR /> dans la partie, empoisonnez alors ce joueur pour que sa capacité soit altérée !
 
-- Le <Role SOLDAT /> ne peut pas mourir la nuit sauf s’il est empoisonné ou <Role SOULARD />. Si vous mourez, ayez une bonne histoire à faire avaler au Village !
+- Le Soldat ne peut pas mourir la nuit sauf s’il est empoisonné ou <Role SOULARD />. Si vous mourez, ayez une bonne histoire à faire avaler au Village !
 
 ### Comment conter ?
 
-Durant la nuit, si le Démon attaque le soldat, le soldat reste en vie. (_A l’aube, annoncez que personne n’est mort cette nuit._)
+Durant la nuit, si le Démon attaque le Soldat, le Soldat reste en vie. (_A l’aube, annoncez que personne n’est mort cette nuit._)
 
-_Dans d’autres éditions, le Démon peut avoir une capacité supplémentaire que de tuer. Le soldat est aussi protégé de tous les autres effets négatifs de la capacité du Démon comme l’empoisonnement ou le changement d'alignement._
+_Dans d’autres éditions, le Démon peut avoir une capacité supplémentaire que de tuer. Le Soldat est aussi protégé de tous les autres effets négatifs de la capacité du Démon comme l’empoisonnement ou le changement d'alignement._

@@ -11,33 +11,33 @@ import Role from '/src/components/role.component'
 
 Quand un Sbire meurt par exécution, tous les autres joueurs (sauf les Voyageurs) sont ivres jusqu’au crépuscule du jour suivant.
 
-Le ménestrel rend tout le monde ivre si un Sbire meurt.
+Le Ménestrel rend tout le monde ivre si un Sbire meurt.
 
--   Si un Sbire est exécuté et meurt, tous les joueurs (sauf le ménestrel) deviennent ivres immédiatement et restent ivres toute la nuit et le jour suivant. Les Villageois, Etrangers, Sbires et même le démon deviennent ivres mais pas les voyageurs. Cela n’arrive pas si le Sbire meurt la nuit.
+-   Si un Sbire est exécuté et meurt, tous les joueurs (sauf le Ménestrel) deviennent ivres immédiatement et restent ivres toute la nuit et le jour suivant. Les Villageois, Etrangers, Sbires et même le démon deviennent ivres mais pas les voyageurs. Cela n’arrive pas si le Sbire meurt la nuit.
 
--   Si un Sbire mort est exécuté, la capacité du ménestrel ne s’active pas. Un mort ne peut pas mourir une deuxième fois ! Si un Sbire est exécuté mais qu’il ne meurt pas, la capacité du ménestrel ne se déclenche pas. Si le ménestrel est ivre ou empoisonné quand un Sbire meurt par exécution, la capacité du ménestrel ne se déclenche pas.
+-   Si un Sbire mort est exécuté, la capacité du Ménestrel ne s’active pas. Un mort ne peut pas mourir une deuxième fois ! Si un Sbire est exécuté mais qu’il ne meurt pas, la capacité du Ménestrel ne se déclenche pas. Si le Ménestrel est ivre ou empoisonné quand un Sbire meurt par exécution, la capacité du Ménestrel ne se déclenche pas.
 
 ### Exemples
 
 > Lors du premier jour, le <Role PACIFISTE /> est exécuté. Comme ce n’est pas un Sbire, rien ne se passe.
 
-> Lors du premier jour, l’<Role ASSASSIN /> est exécuté et le <Role MENESTREL /> enivre tout le Village jusqu’au prochain crépuscule. Le jour suivant, le <Role PARRAIN /> est exécuté et le <Role MENESTREL /> enivre à nouveau tout le monde. Le jour suivant, le <Role MAGISTRAT /> Maléfique est exilé et personne n’est exécuté. Le <Role MENESTREL /> n’enivre personne car le <Role MAGISTRAT /> n’est pas un Sbire mais un Voyageur.
+> Lors du premier jour, l’<Role ASSASSIN /> est exécuté et le Ménestrel enivre tout le Village jusqu’au prochain crépuscule. Le jour suivant, le <Role PARRAIN /> est exécuté et le Ménestrel enivre à nouveau tout le monde. Le jour suivant, le <Role MAGISTRAT /> Maléfique est exilé et personne n’est exécuté. Le Ménestrel n’enivre personne car le <Role MAGISTRAT /> n’est pas un Sbire mais un Voyageur.
 
-> Durant la journée, l’<Role ASSASSIN /> est exécuté et le <Role MENESTREL /> enivre tout le monde. Le jour d’après, le <Role ZOMBUUL /> est exécuté et meurt pour la première fois. Les Gentils gagnent, car le <Role ZOMBUUL /> est ivre et perd sa capacité.
+> Durant la journée, l’<Role ASSASSIN /> est exécuté et le Ménestrel enivre tout le monde. Le jour d’après, le <Role ZOMBUUL /> est exécuté et meurt pour la première fois. Les Gentils gagnent, car le <Role ZOMBUUL /> est ivre et perd sa capacité.
 
 ### Mécaniques et conseils
 
-- Le <Role MENESTREL /> obtient une des informations les plus fiables du jeu. Si votre capacité s’active, tout le Village est ivre et il devrait y en avoir des preuves évidentes, notamment une nuit sans mort. D’une part, ceci confirmera votre rôle de <Role MENESTREL />. D’autre part, ceci facilitera votre enquête.
+- Le Ménestrel obtient une des informations les plus fiables du jeu. Si votre capacité s’active, tout le Village est ivre et il devrait y en avoir des preuves évidentes, notamment une nuit sans mort. D’une part, ceci confirmera votre rôle de Ménestrel. D’autre part, ceci facilitera votre enquête.
 
-- Si un joueur est exécuté et que personne ne meurt la nuit suivante, menez l’enquête. L’explication la plus vraisemblable est que ce joueur est Sbire et que votre capacité de <Role MENESTREL /> s’est activée. Cependant, ceci reste à confirmer. Cherchez des indices de l’ivresse générale au sein du Village. Des rôles de détection peuvent avoir des informations incohérentes (<Role FEMME_DE_CHAMBRE />, <Role PARIEUR />). De plus, aucune exécution ne peut plus être sauvée (<Role MARIN />, <Role PACIFISTE />, <Role FOU />, Avocat du Diable).
+- Si un joueur est exécuté et que personne ne meurt la nuit suivante, menez l’enquête. L’explication la plus vraisemblable est que ce joueur est Sbire et que votre capacité de Ménestrel s’est activée. Cependant, ceci reste à confirmer. Cherchez des indices de l’ivresse générale au sein du Village. Des rôles de détection peuvent avoir des informations incohérentes (<Role FEMME_DE_CHAMBRE />, <Role PARIEUR />). De plus, aucune exécution ne peut plus être sauvée (<Role MARIN />, <Role PACIFISTE />, <Role FOU />, Avocat du Diable).
 
-- Une nuit sans mort peut avoir d’autres causes que votre capacité de <Role MENESTREL />. (Protection comme <Role MARIN />, <Role AUBERGISTE /> ou <Role FOU />. <Role EXORCISTE /> ou <Role COURTISANE /> qui neutralise le Démon. <Role PO /> qui charge. Ou tout simplement le Démon qui mange des morts. Ou le <Role MENESTREL /> est ivre ou empoisonné).
+- Une nuit sans mort peut avoir d’autres causes que votre capacité de Ménestrel. (Protection comme <Role MARIN />, <Role AUBERGISTE /> ou <Role FOU />. <Role EXORCISTE /> ou <Role COURTISANE /> qui neutralise le Démon. <Role PO /> qui charge. Ou tout simplement le Démon qui mange des morts. Ou le Ménestrel est ivre ou empoisonné).
 
-- Si un joueur est exécuté et qu’une ou plusieurs personnes meurent la nuit suivante, ceci innocente le dernier joueur exécuté. Comme votre capacité de <Role MENESTREL /> ne s’est pas activée, cela signifie que ce joueur n’était pas un Sbire. De plus, comme l’exécution du Démon achève la partie (sauf <Role ZOMBUUL /> ou <Role CONSPIRATEUR />), le dernier joueur exécuté ne peut pas non plus être le Démon et il n’est donc pas Maléfique. Cependant, gardez en tête que vous auriez pu être ivre ou empoisonné, et que le <Role PUKKA /> tue à retardement.
+- Si un joueur est exécuté et qu’une ou plusieurs personnes meurent la nuit suivante, ceci innocente le dernier joueur exécuté. Comme votre capacité de Ménestrel ne s’est pas activée, cela signifie que ce joueur n’était pas un Sbire. De plus, comme l’exécution du Démon achève la partie (sauf <Role ZOMBUUL /> ou <Role CONSPIRATEUR />), le dernier joueur exécuté ne peut pas non plus être le Démon et il n’est donc pas Maléfique. Cependant, gardez en tête que vous auriez pu être ivre ou empoisonné, et que le <Role PUKKA /> tue à retardement.
 
 - Soyez agressif : cherchez les Sbires et forcez les exécutions. N’attendez pas passivement que votre capacité s'active par chance. Les Sbires ne sont pas du genre à se dénoncer et à mourir de leur plein gré. Plus il y a d’exécutions, plus vous avez de chance de trouver un Sbire et d’activer votre capacité. Dans <Module BAD_MOON_RISING />, l’exécution du Village est un outil à manier avec prudence en raison du compte de morts, parfois imprévisible et funeste. Cependant, à la manière d’un Croque-Mort, vous devez aller chercher de l’information via les exécutions de jour. En plus d’une nuit sans aucun mort, certains Sbires constituent de réelles menaces pour le Village (<Role ASSASSIN />, <Role CONSPIRATEUR />). Jouez plus agressif qu’à l’accoutumée.
 
-- Vous êtes une cible moins exposée. À moins qu’un Sbire s’apprête à être exécuté, le <Role MENESTREL /> est amené à survivre un peu plus longtemps dans le Village, simplement parce que le Démon doit s’occuper en priorité d’opposants plus dangereux comme l’<Role EXORCISTE /> ou l’<Role HERBORISTE />. Profitez de cette ouverture. Si vous manoeuvrez intelligemment, le Village exécutera un ou deux Sbires avant que le Démon ait eu le temps de vous dévorer.
+- Vous êtes une cible moins exposée. À moins qu’un Sbire s’apprête à être exécuté, le Ménestrel est amené à survivre un peu plus longtemps dans le Village, simplement parce que le Démon doit s’occuper en priorité d’opposants plus dangereux comme l’<Role EXORCISTE /> ou l’<Role HERBORISTE />. Profitez de cette ouverture. Si vous manoeuvrez intelligemment, le Village exécutera un ou deux Sbires avant que le Démon ait eu le temps de vous dévorer.
 
 - Surveillez vos arrières. Si vous mourez de manière inexpliquée, ceci peut signifier que le Village s’apprête à exécuter un Sbire et que les Maléfiques ne veulent pas que votre capacité révèle sa culpabilité au grand jour.
 
@@ -45,16 +45,16 @@ Le ménestrel rend tout le monde ivre si un Sbire meurt.
 
 ### Bluffer le Ménestrel
 
-- Le <Role MENESTREL /> est un bluff passif, donc facile mais peu solide. Il n’y a pas grand chose à faire à part rappeler au Village que vous êtes <Role MENESTREL />. Par facilité, des joueurs Gentils peuvent prétendre être <Role MENESTREL /> pour couvrir leur vrai rôle, comme par exemple l’<Role EXORCISTE />. Vous pouvez faire de même.
+- Le Ménestrel est un bluff passif, donc facile mais peu solide. Il n’y a pas grand chose à faire à part rappeler au Village que vous êtes Ménestrel. Par facilité, des joueurs Gentils peuvent prétendre être Ménestrel pour couvrir leur vrai rôle, comme par exemple l’<Role EXORCISTE />. Vous pouvez faire de même.
 
 - S’il n’y a aucun mort, affirmez qu’un Sbire vient d’être exécuté et que votre pouvoir a enivré tout le Village. Non seulement cela jette de la suspicion sur un joueur et vous dédouane aux yeux du groupe, mais en plus vous pouvez convaincre le Village que toutes ses informations sont fausses, menant à l’impasse de nombreux rôles de détection nocturne comme la <Role FEMME_DE_CHAMBRE />, l’<Role EXORCISTE />, le <Role PARIEUR /> ou la <Role GITANE />. Idéalement, arrangez-vous avec le Démon pour qu’il ne tue personne lorsque vous savez qu’il n’y aura pas d’autre mort (<Role PARIEUR />, <Role COMMERE />, <Role ASSASSIN />). Au pire, même s’il y a un mort mais qu’il n’est pas du Démon, cela brouillera les pistes pour le Village.
 
-- Etant donné que vous n’êtes pas le <Role MENESTREL />, dans le cas où un Sbire est exécuté, le Démon va normalement tuer cette nuit. Vous pouvez vous justifier en expliquant que votre capacité ne s’est pas activée et que le Sbire dernièrement exécuté n’en était pas un. Vous pouvez même être plus discret en vous contentant de rappeler nonchalamment votre rôle de <Role MENESTREL /> et en laissant le Village déduire le reste par lui-même.
+- Etant donné que vous n’êtes pas le Ménestrel, dans le cas où un Sbire est exécuté, le Démon va normalement tuer cette nuit. Vous pouvez vous justifier en expliquant que votre capacité ne s’est pas activée et que le Sbire dernièrement exécuté n’en était pas un. Vous pouvez même être plus discret en vous contentant de rappeler nonchalamment votre rôle de Ménestrel et en laissant le Village déduire le reste par lui-même.
 
-- Comme un vrai <Role MENESTREL />, encouragez les exécutions. C’est un prétexte à point nommé pour que les Gentils s’éliminent entre eux de leur plein gré.
+- Comme un vrai Ménestrel, encouragez les exécutions. C’est un prétexte à point nommé pour que les Gentils s’éliminent entre eux de leur plein gré.
 
-- Si vous êtes le Démon et qu’un vrai <Role MENESTREL /> est en jeu, évitez de tuer certaines nuits afin de brouiller les pistes. Si un <Role MENESTREL /> pense qu’un Sbire vient d’être exécuté alors qu’il s’agit d’un Gentil, non seulement les soupçons s'orienteront à tort sur ce dernier, mais le reste des joueurs Gentils penseront être ivres à cause du <Role MENESTREL /> alors qu’il sont en réalité sobres.
+- Si vous êtes le Démon et qu’un vrai Ménestrel est en jeu, évitez de tuer certaines nuits afin de brouiller les pistes. Si un Ménestrel pense qu’un Sbire vient d’être exécuté alors qu’il s’agit d’un Gentil, non seulement les soupçons s'orienteront à tort sur ce dernier, mais le reste des joueurs Gentils penseront être ivres à cause du Ménestrel alors qu’il sont en réalité sobres.
 
 ### Comment conter?
 
-Durant la journée, si un Sbire meurt par exécution, tous les autres joueurs, sauf les voyageurs sont ivres. Mettez le jeton de rappel "Tous ivres" du ménestrel au centre du grimoire.
+Durant la journée, si un Sbire meurt par exécution, tous les autres joueurs, sauf les voyageurs sont ivres. Mettez le jeton de rappel "Tous ivres" du Ménestrel au centre du grimoire.

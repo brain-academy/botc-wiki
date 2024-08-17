@@ -11,21 +11,21 @@ import Role from '/src/components/role.component'
 
 Chaque nuit, vous apprenez combien de vos deux voisins vivants sont maléfiques.
 
-L’empathique apprend continuellement si ses voisins sont maléfiques.
+L’Empathique apprend continuellement si ses voisins sont maléfiques.
 
--	L’empathique apprend seulement combien de ses voisins sont maléfiques mais pas qui l’est.
+-	L’Empathique apprend seulement combien de ses voisins sont maléfiques mais pas qui l’est.
 
--	L’empathique ne détecte pas les joueurs morts. Donc si l’empathique est assis à côté d’un joueur mort, il ne reçoit pas d’informations sur ce joueur mort. Il reçoit plutôt des informations sur le joueur vivant le plus proche dans cette direction.
+-	L’Empathique ne détecte pas les joueurs morts. Donc si l’Empathique est assis à côté d’un joueur mort, il ne reçoit pas d’informations sur ce joueur mort. Il reçoit plutôt des informations sur le joueur vivant le plus proche dans cette direction.
 
--	L’empathique agit après le Démon, donc, si le Démon tue un des voisins de l’empathique, celui-ci n’aura pas d’informations sur ce joueur maintenant décédé. L’information de l’empathique est pertinente à l’aube et non au crépuscule.  
+-	L’Empathique agit après le Démon, donc, si le Démon tue un des voisins de l’Empathique, celui-ci n’aura pas d’informations sur ce joueur maintenant décédé. L’information de l’Empathique est pertinente à l’aube et non au crépuscule.  
 
 ### Exemples
 
-> Les deux voisins de l'<Role EMPATHIQUE /> sont des joueurs Gentils - un <Role SOLDAT /> et un <Role MOINE />. L'Empathique obtient alors "0" du Conteur.
+> Les deux voisins de l'Empathique sont des joueurs Gentils - un <Role SOLDAT /> et un <Role MOINE />. L'Empathique obtient alors "0" du Conteur.
 
-> Le jour suivant, le <Role SOLDAT /> est exécuté. Durant la nuit, le <Role MOINE /> est tué par l’<Role IMP />. L'<Role EMPATHIQUE /> détecte maintenant les joueurs qui étaient assis à côté du <Role SOLDAT /> et du <Role MOINE /> : un <Role ARCHIVISTE /> et un <Role VENGEUR /> Maléfique. L’<Role EMPATHIQUE /> obtient alors cette fois "1".
+> Le jour suivant, le <Role SOLDAT /> est exécuté. Durant la nuit, le <Role MOINE /> est tué par l’<Role IMP />. L'Empathique détecte maintenant les joueurs qui étaient assis à côté du <Role SOLDAT /> et du <Role MOINE /> : un <Role ARCHIVISTE /> et un <Role VENGEUR /> Maléfique. L’Empathique obtient alors cette fois "1".
 
-> Il y a seulement trois joueurs en vie : l'<Role EMPATHIQUE />, l’<Role IMP /> et le <Role BARON />. Peu importe les places, l'<Role EMPATHIQUE /> obtient alors "2".
+> Il y a seulement trois joueurs en vie : l'Empathique, l’<Role IMP /> et le <Role BARON />. Peu importe les places, l'Empathique obtient alors "2".
  
 ### Mécaniques et conseils
 
@@ -67,8 +67,8 @@ L’empathique apprend continuellement si ses voisins sont maléfiques.
 
 - Quand vos voisins meurent, vous pouvez changer le chiffre annoncé. Cela peut vous permettre d’enfoncer le clou sur un joueur récemment exécuté ou de porter la suspicion sur vos nouveaux voisins. Si vous tentez un bluff risqué, comme avoir une deuxième fois un "2" après avoir fait exécuter l’un de vos voisins, vous risquez fort de perdre en crédibilité et donc d'apparaître comme Maléfiques aux yeux du Village.
 
-- Du fait que l’<Role EMPATHIQUE /> soit un puissant rôle de détection, cela paraîtra très suspect si vous êtes encore en vie à la fin de la partie. Jouez la "discret" et ne partagez vos informations qu’avec quelques personnes. Vous pouvez éventuellement prétendre que vous pensez être <Role SOULARD /> ou empoisonné.
+- Du fait que l’Empathique soit un puissant rôle de détection, cela paraîtra très suspect si vous êtes encore en vie à la fin de la partie. Jouez la "discret" et ne partagez vos informations qu’avec quelques personnes. Vous pouvez éventuellement prétendre que vous pensez être <Role SOULARD /> ou empoisonné.
 
 ### Comment conter ?
 
-Chaque nuit, réveillez l’empathique. Montrez-lui un nombre de doigts ("0", "1" ou "2") qui est égal au nombre de joueurs maléfiques voisins de l’empathique. Rendormez l’empathique. 
+Chaque nuit, réveillez l’Empathique. Montrez-lui un nombre de doigts ("0", "1" ou "2") qui est égal au nombre de joueurs maléfiques voisins de l’Empathique. Rendormez l’Empathique. 

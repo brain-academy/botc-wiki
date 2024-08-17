@@ -1,5 +1,5 @@
 ---
-title: Vieille Chouette
+title: Vieille chouette
 ---
 
 import Module from '/src/components/module.component'
@@ -11,27 +11,27 @@ import Role from '/src/components/role.component'
 
 Chaque nuit*, choisissez un joueur et un rôle qu’il devient (si ce rôle n’est pas en jeu). Si un Démon est créé, les morts de cette nuit sont arbitraires.
 
-La vieille chouette transforme le rôle d’un joueur en un autre rôle.
+La Vieille chouette transforme le rôle d’un joueur en un autre rôle.
 
--   Chaque nuit, la vieille chouette choisit un joueur et en quel rôle il sera transformé.
+-   Chaque nuit, la Vieille chouette choisit un joueur et en quel rôle il sera transformé.
 
 -   Elle ne peut pas créer de doublon de rôle. Si le rôle choisi est déjà en jeu, rien ne se passe.
 
 ### Exemples 
 
-> La <Role VIEILLE_CHOUETTE /> transforme l'<Role HORLOGER /> en <Role BETE_DE_FOIRE />.
+> La Vieille chouette transforme l'<Role HORLOGER /> en <Role BETE_DE_FOIRE />.
 
-> La <Role VIEILLE_CHOUETTE /> essaye de transformer le <Role SAVANT /> en <Role SAGE /> mais rien ne se passe car il y a déjà un <Role SAGE /> en jeu.
+> La Vieille chouette essaye de transformer le <Role SAVANT /> en <Role SAGE /> mais rien ne se passe car il y a déjà un <Role SAGE /> en jeu.
 
-> La <Role VIEILLE_CHOUETTE /> transforme le <Role FLEURISTE /> en <Role JUMEAU_MALEFIQUE />. Maintenant, il y a un Villageois avec la capacité de <Role JUMEAU_MALEFIQUE />, alors le Villageois jumeau maléfique et un joueur maléfique sont réveillés pour se reconnaître ainsi que leur rôle.  
+> La Vieille chouette transforme le <Role FLEURISTE /> en <Role JUMEAU_MALEFIQUE />. Maintenant, il y a un Villageois avec la capacité de <Role JUMEAU_MALEFIQUE />, alors le Villageois jumeau maléfique et un joueur maléfique sont réveillés pour se reconnaître ainsi que leur rôle.  
 
-> Durant la dernière nuit, la <Role VIEILLE_CHOUETTE /> transforme l’<Role ORACLE /> en Villageois <Role NO_DASHII />. Le Conteur tue seulement le véritable Démon maléfique pour qu’un seul Démon soit vivant sur la dernière journée. 
+> Durant la dernière nuit, la Vieille chouette transforme l’<Role ORACLE /> en Villageois <Role NO_DASHII />. Le Conteur tue seulement le véritable Démon maléfique pour qu’un seul Démon soit vivant sur la dernière journée. 
 
 ### Mécaniques et conseils
 
 - Votre capacité change le rôle d’un joueur mais pas son alignement. Cela signifie que si vous transformez un Villageois en <Role SORCIERE />, il y aura un Villageois avec une capacité de Sbire. De la même façon, si vous transformez un maléfique en <Role FAUSSAIRE />, il y a maintenant un maléfique avec une capacité de Villageois. Il faut bien avoir cela à l’esprit lorsqu’on choisit un joueur à transformer. Il y a des avantages à créer un maléfique avec des capacités de Villageois ou d’Etranger ou même des Villageois avec des capacités de Sbire ou de Démon, mais vous pourriez être très déçu si vous vous attendiez à ce qu’un Villageois vienne grossir vos rangs de maléfiques.
 
-- Créer un nouveau Démon n’est possible que pour la vieille chouette. Vous pouvez transformez votre Démon en un autre Démon (par exemple en introduisant subitement un <Role VORTOX /> dans le jeu), mais vous pouvez aussi déplacer le Démon en transformant un autre joueur maléfique en Démon. Enfin, vous pouvez créer un Démon Villageois en transformant l’un de vos adversaires. Ce grand pouvoir peut présenter de gros désavantages. Le Conteur peut contrebalancer vos tentatives en choisissant les morts de la nuit. Ainsi, « déplacer » un Démon va souvent provoquer la mort d’un autre maléfique (habituellement l’ancien Démon). Le Conteur vous laissera rarement continuer une partie avec plusieurs Démons vivants.  Des tentatives plus subtiles, comme simplement changer le type de votre Démon, feront qu’il n’y aura aucune mort cette nuit pour que le village ait une indication que quelque chose a changé. Enfin, bien qu’il soit possible qu’un Démon Villageois coexiste avec le vrai Démon, vous devriez être très prudent car le Démon a toujours la possibilité de tuer la nuit et sa motivation à éliminer les maléfiques est restée intacte ! De plus, faites attention, lorsque vous transformez un <Role VIGORMORTIS /> : A la seconde où il a été transformé, vous perdrez vos capacités si vous êtes déjà mort.
+- Créer un nouveau Démon n’est possible que pour la Vieille chouette. Vous pouvez transformez votre Démon en un autre Démon (par exemple en introduisant subitement un <Role VORTOX /> dans le jeu), mais vous pouvez aussi déplacer le Démon en transformant un autre joueur maléfique en Démon. Enfin, vous pouvez créer un Démon Villageois en transformant l’un de vos adversaires. Ce grand pouvoir peut présenter de gros désavantages. Le Conteur peut contrebalancer vos tentatives en choisissant les morts de la nuit. Ainsi, « déplacer » un Démon va souvent provoquer la mort d’un autre maléfique (habituellement l’ancien Démon). Le Conteur vous laissera rarement continuer une partie avec plusieurs Démons vivants.  Des tentatives plus subtiles, comme simplement changer le type de votre Démon, feront qu’il n’y aura aucune mort cette nuit pour que le village ait une indication que quelque chose a changé. Enfin, bien qu’il soit possible qu’un Démon Villageois coexiste avec le vrai Démon, vous devriez être très prudent car le Démon a toujours la possibilité de tuer la nuit et sa motivation à éliminer les maléfiques est restée intacte ! De plus, faites attention, lorsque vous transformez un <Role VIGORMORTIS /> : A la seconde où il a été transformé, vous perdrez vos capacités si vous êtes déjà mort.
 
 - Créer des Etrangers ! Un <Role SAVANT /> compromet votre équipe avec ses bonnes informations ? Transformez-le en <Role DULCINEE />. Vous suspectez qu’un <Role SAGE /> essaye d’attirer l’attention de votre Démon ? Maintenant, c’est un simple <Role MALADROIT /> et mourir ne semble plus si attractif. Votre Démon est un <Role FANG_GU /> et n’a plus de sortie de secours ? Créez-en une nouvelle.
 
@@ -43,37 +43,37 @@ La vieille chouette transforme le rôle d’un joueur en un autre rôle.
 
 - Transformez-vous ! Bien que cela signifie la fin de votre série de transformations, il y a plein d’occasions où votre propre transformation peut changer le cours du jeu. Le village vous fait grandement confiance ? Devenez le <Role NO_DASHII /> et prenez la suite de votre Démon. Vous voulez sournoisement compromettre le <Role FLEURISTE /> ? Transformez-vous en <Role FAUSSAIRE /> maléfique puis choisissez de devenir le <Role FLEURISTE /> rendant le Fleuriste d’origine Soûlard. Vous voulez simplement changer le rythme ? Devenez la <Role SORCIERE /> et maudissez ce joueur qui se sentait en sécurité lors des nominations !
 
-- Si vous ne transformez pas un joueur une nuit, faites-en sorte qu’un maléfique déclare avoir été transformé en un rôle qui n’est pas en jeu, même si ce n’est pas le cas. Les joueurs qui déclarent publiquement avoir été transformé ont tendance à être immédiatement cru par le village puisque la vieille chouette transforme le plus souvent des Villageois. Ou, si vous être un maléfique qui a été transformé par la vieille chouette cette nuit, dites au groupe que vous avez été transformé en un Villageois. 
+- Si vous ne transformez pas un joueur une nuit, faites-en sorte qu’un maléfique déclare avoir été transformé en un rôle qui n’est pas en jeu, même si ce n’est pas le cas. Les joueurs qui déclarent publiquement avoir été transformé ont tendance à être immédiatement cru par le village puisque la Vieille chouette transforme le plus souvent des Villageois. Ou, si vous être un maléfique qui a été transformé par la Vieille chouette cette nuit, dites au groupe que vous avez été transformé en un Villageois. 
 
-- A un moment dans la partie, arrêtez les transformations. Tant que vous le faites, le village saura qu’une vieille chouette est en jeu. Cette stratégie est particulièrement efficace dans les parties avec un seul Sbire ou si l’autre Sbire est le <Role JUMEAU_MALEFIQUE />. Si le village sait que tous les Sbires sont encore en vie, alors ils savent aussi que tous les morts sont des Villageois. Mais s’ils peuvent penser qu’un Sbire est mort, ils ne sauront pas nécessairement à quel mort faire confiance. 
+- A un moment dans la partie, arrêtez les transformations. Tant que vous le faites, le village saura qu’une Vieille chouette est en jeu. Cette stratégie est particulièrement efficace dans les parties avec un seul Sbire ou si l’autre Sbire est le <Role JUMEAU_MALEFIQUE />. Si le village sait que tous les Sbires sont encore en vie, alors ils savent aussi que tous les morts sont des Villageois. Mais s’ils peuvent penser qu’un Sbire est mort, ils ne sauront pas nécessairement à quel mort faire confiance. 
 
-- Si un maléfique prétend être victime du <Role MANIPULATEUR />, ou prétend qu’un <Role JUMEAU_MALEFIQUE /> est en jeu, alors leur déclaration peut être contradictoire avec celle d’un Villageois qui prétend avoir été transformé par la vieille chouette. S’il y a un seul Sbire en jeu et que c’est la vieille chouette, alors prétendre être victime du <Role MANIPULATEUR /> n’aura pas de sens. Soyez attentifs à vos camarades maléfiques et ne transformez pas la nuit si vous voulez que leur bluff soit crédible.
+- Si un maléfique prétend être victime du <Role MANIPULATEUR />, ou prétend qu’un <Role JUMEAU_MALEFIQUE /> est en jeu, alors leur déclaration peut être contradictoire avec celle d’un Villageois qui prétend avoir été transformé par la Vieille chouette. S’il y a un seul Sbire en jeu et que c’est la Vieille chouette, alors prétendre être victime du <Role MANIPULATEUR /> n’aura pas de sens. Soyez attentifs à vos camarades maléfiques et ne transformez pas la nuit si vous voulez que leur bluff soit crédible.
 
 - Vous pouvez transformez les voyageurs… peut-être. Les règles concernant ce point sont encore à l’étude.
  
-### Combattre la vieille chouette
+### Combattre la Vieille chouette
 
-- Si la vieille chouette vous transforme en un autre personnage, dites-le immédiatement au village le jour suivant. Les joueurs auront tendance à vous croire bon car la vieille chouette vous a ciblé.
+- Si la Vieille chouette vous transforme en un autre personnage, dites-le immédiatement au village le jour suivant. Les joueurs auront tendance à vous croire bon car la Vieille chouette vous a ciblé.
 
-- Tant que des transformations se passent de nuit, vous savez qu’une vieille chouette est en vie. Cela signifie que les joueurs morts sont plus dignes de confiance pour le village. Dans une partie avec un seul Sbire, tant que la vieille chouette est manifestement en vie, vous pouvez accorder votre confiance à tous les joueurs morts. 
+- Tant que des transformations se passent de nuit, vous savez qu’une Vieille chouette est en vie. Cela signifie que les joueurs morts sont plus dignes de confiance pour le village. Dans une partie avec un seul Sbire, tant que la Vieille chouette est manifestement en vie, vous pouvez accorder votre confiance à tous les joueurs morts. 
 
-- Si un jouer a précédemment été transformé la nuit mais que personne n’a été transformé la nuit dernière, alors soit la vieille chouette a transformé un maléfique (qui ne le dit pas au village), soit la vieille chouette a choisi un rôle déjà en jeu, soit la vieille chouette est morte. Quand il n’y a pas de transformations la nuit, enquetez sur ces possibilités et voyez si cela revèle quelque chose d’utile.
+- Si un jouer a précédemment été transformé la nuit mais que personne n’a été transformé la nuit dernière, alors soit la Vieille chouette a transformé un maléfique (qui ne le dit pas au village), soit la Vieille chouette a choisi un rôle déjà en jeu, soit la Vieille chouette est morte. Quand il n’y a pas de transformations la nuit, enquetez sur ces possibilités et voyez si cela revèle quelque chose d’utile.
 
-- Si le nombre de mort la nuit est différent de 1, alors il est probable que la vieille chouette a transformé un joueur en Démon. Habituellement, si la vieille chouette transforme le Démon en un autre Démon, aucune mort ne se produira la nuit. Si la vieille chouette créé un nouveau Démon ( en se transformant ou en transformant un autre Sbire en Démon par exemple) alors il y a deux morts la nuit… et l’une d’elle est probablement l’ancien Démon. Quand ces morts inhabituelles se produisent, partez du principe que le type du Démon a changé. Maintenant, il y a peut être un <Role VORTOX />, alors que c’était impossible avant, ou il y a peut être un <Role FANG_GU /> à la place du <Role NO_DASHII />, ce qui signifie que les Villageois empoisonnées ne le seront plus.
+- Si le nombre de mort la nuit est différent de 1, alors il est probable que la Vieille chouette a transformé un joueur en Démon. Habituellement, si la Vieille chouette transforme le Démon en un autre Démon, aucune mort ne se produira la nuit. Si la Vieille chouette créé un nouveau Démon ( en se transformant ou en transformant un autre Sbire en Démon par exemple) alors il y a deux morts la nuit… et l’une d’elle est probablement l’ancien Démon. Quand ces morts inhabituelles se produisent, partez du principe que le type du Démon a changé. Maintenant, il y a peut être un <Role VORTOX />, alors que c’était impossible avant, ou il y a peut être un <Role FANG_GU /> à la place du <Role NO_DASHII />, ce qui signifie que les Villageois empoisonnées ne le seront plus.
 
 - Souvenez-vous que si vous changez de rôle, votre alignement ne change pas. Si vous êtes un Villageois et que vous être transformé en <Role SORCIERE />, vous êtes toujours du coté du village et vous pouvez maintenant utilisez votre capacité de Sorcière pour maudir un autre joueur… peut être même un maléfique si vous avez de la chance. Si vous êtes un Villageois qui est tranformé en Démon, alors vous êtes un Démon qui joue avec le village. Vous pouvez utiliser votre capacité pour tuer un jouer la nuit et possiblement tuer le Démon maléfique de cette façon. Si vous devenez un Démon Villageois, souvenez-vous que le village ne gagne que lorsque tous les Démons sont morts, vous inclus, donc vous et le Démon maléfique devez mourir pour que le village gagne. 
 
-- La capacité de la vieille chouette ne créé que des personnes dont le rôle n’était pas déjà en jeu. Bluffez un rôle indésirable pour que la vieille chouette ne soit pas tenté de transformer quelqu’un en ce personnage. Par exemple, si vous bluffez la <Role DULCINEE />, alors la Vieille chouette n’esssayera de transformer un joueur en Dulcinée et pourrait accidentellement choisir un rôle déjà en jeu… ce qui signifie qu’aucune transformation ne produira ici. Même si la vieille chouette réussit une transformation, en bluffant un rôle, vous garantissez presque le fait que la vieille chouette ne choisira pas ce rôle indésirable en particulier.
+- La capacité de la Vieille chouette ne créé que des personnes dont le rôle n’était pas déjà en jeu. Bluffez un rôle indésirable pour que la Vieille chouette ne soit pas tenté de transformer quelqu’un en ce personnage. Par exemple, si vous bluffez la <Role DULCINEE />, alors la Vieille chouette n’esssayera de transformer un joueur en Dulcinée et pourrait accidentellement choisir un rôle déjà en jeu… ce qui signifie qu’aucune transformation ne produira ici. Même si la Vieille chouette réussit une transformation, en bluffant un rôle, vous garantissez presque le fait que la Vieille chouette ne choisira pas ce rôle indésirable en particulier.
 
 ### Comment conter?
 
-Chaque nuit sauf la première, réveillez la vieille chouette. Elle désigne n’importe quel joueur et n’importe quel rôle de la fiche de rôle. Rendormez la vieille chouette.
+Chaque nuit sauf la première, réveillez la Vieille chouette. Elle désigne n’importe quel joueur et n’importe quel rôle de la fiche de rôle. Rendormez la Vieille chouette.
 
 Si le rôle choisi est en jeu, rien ne se passe.
 
 Si le rôle choisi n’est pas en jeu, réveillez ce joueur. Montrez-lui le jeton d’informations « TU ES » puis son nouveau jeton de rôle puis rendormez-le. Remplacez son ancien jeton de rôle par son nouveau jeton de rôle dans le grimpire. (_Vous pourriez avoir besoin de retourner le jeton de rôle si sa couleur ne correspond pas à l’alignement du joueur. Vous pourriez avoir besoin de rappeler à ce joueur que son alignement n’a pas changé en lui faisant un pouce vers le haut ou un pouce vers le bas_)
 
-Si un Démon est créé, vous pouvez choisir qui vous tuez ou qui vous ne tuez pas au cours de la nuit pour équilibrer le jeu. Les morts additionnelles sont considérées comme des attaques de la vieille chouette.
+Si un Démon est créé, vous pouvez choisir qui vous tuez ou qui vous ne tuez pas au cours de la nuit pour équilibrer le jeu. Les morts additionnelles sont considérées comme des attaques de la Vieille chouette.
 
-_Si la vieille chouette transforme un Démon en un autre Démon, il est préférable de ne faire aucune mort cette nuit pour que le village ait un indice que le Démon a changé. Vous pouvez même réveiller le Démon pour voir qui il veut attaquer puis le rendormir et décider que personne ne meurt. Si la vieille chouette créé un nouveau Démon maléfique, il est préférable de tuer l’ancien Démon et peut être d’autres joueurs pour signaler au village que le Démon a changé. Si la vieille chouette créé un gentil Démon, il est préférable de tuer l’un des Démons (si c’est la dernière nuit) ou de laisser les Démons courir (si ce n’est pas la dernière nuit) mais puisque tous les Démons doivent mourir pour que le village gagne, faites attention._
+_Si la Vieille chouette transforme un Démon en un autre Démon, il est préférable de ne faire aucune mort cette nuit pour que le village ait un indice que le Démon a changé. Vous pouvez même réveiller le Démon pour voir qui il veut attaquer puis le rendormir et décider que personne ne meurt. Si la Vieille chouette créé un nouveau Démon maléfique, il est préférable de tuer l’ancien Démon et peut être d’autres joueurs pour signaler au village que le Démon a changé. Si la Vieille chouette créé un gentil Démon, il est préférable de tuer l’un des Démons (si c’est la dernière nuit) ou de laisser les Démons courir (si ce n’est pas la dernière nuit) mais puisque tous les Démons doivent mourir pour que le village gagne, faites attention._
 

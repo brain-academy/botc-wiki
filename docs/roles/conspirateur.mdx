@@ -11,13 +11,13 @@ import Role from '/src/components/role.component'
 
 Si le Démon meurt par exécution (mettant fin à la partie), jouez une journée de plus. Si un joueur est exécuté lors de cette journée, son équipe perd.
 
-Le conspirateur peut toujours gagner après la mort du Démon.
+Le Conspirateur peut toujours gagner après la mort du Démon.
 
 -   Si le Démon meurt par exécution, la partie continue. Les joueurs n’apprennent pas que le Démon est mort. Le jour suivant, si un joueur gentil est exécuté, qu’il meurt ou non de cette exécution, alors les maléfiques gagnent. Si un maléfique est exécuté ou que personne n’est exécuté, alors le village gagne.
 
 -   Un Démon mort ne peut pas attaquer. Il perd sa capacité comme les autres morts. Durant cette nuit et journée supplémentaire, les rôles des joueurs vivants fonctionnent normalement.
 
--   Si le Démon meurt et que seuls deux joueurs sont laissés en vie, la partie continue toujours pour un dernier jour. Les maléfiques ne gagnent pas avec les deux joueurs en vie et les gentils ne gagnent pas en ayant tué le Démon. La capacité du conspirateur dit « jouez un jour supplémentaire » et les capacités surpassent les règles standards. 
+-   Si le Démon meurt et que seuls deux joueurs sont laissés en vie, la partie continue toujours pour un dernier jour. Les maléfiques ne gagnent pas avec les deux joueurs en vie et les gentils ne gagnent pas en ayant tué le Démon. La capacité du Conspirateur dit « jouez un jour supplémentaire » et les capacités surpassent les règles standards. 
 
 ### Exemples
 
@@ -25,15 +25,15 @@ Le conspirateur peut toujours gagner après la mort du Démon.
 
 > Le <Role PO /> meurt par exécution. Le jour suivant, le <Role PARRAIN /> est exécuté, mais reste en vie car il est protégé par l’Avocat du Diable. Cependant, le joueur exécuté était Maléfique, donc le Village gagne.
 
-> Le <Role ZOMBUUL /> est exécuté, meurt une première fois et apparaît mort. La capacité du <Role CONSPIRATEUR /> ne s’active pas, car le <Role ZOMBUUL /> n’est pas vraiment mort. Quand le <Role ZOMBUUL /> est exécuté une seconde fois, il meurt pour de vrai, la capacité du <Role CONSPIRATEUR /> s’active et la partie continue pour une journée de plus.
+> Le <Role ZOMBUUL /> est exécuté, meurt une première fois et apparaît mort. La capacité du Conspirateur ne s’active pas, car le <Role ZOMBUUL /> n’est pas vraiment mort. Quand le <Role ZOMBUUL /> est exécuté une seconde fois, il meurt pour de vrai, la capacité du Conspirateur s’active et la partie continue pour une journée de plus.
 
 ### Mécaniques et conseils
 
-- Vous êtes le dernier atout des Maléfiques. Le conspirateur est un Sbire qui continue les sinistres intentions du Démon, même après sa mort, donnant aux Maléfiques une seconde chance de gagner. Essayez d’être le dernier de votre équipe à survivre tout en cachant votre présence jusqu’au bout.
+- Vous êtes le dernier atout des Maléfiques. Le Conspirateur est un Sbire qui continue les sinistres intentions du Démon, même après sa mort, donnant aux Maléfiques une seconde chance de gagner. Essayez d’être le dernier de votre équipe à survivre tout en cachant votre présence jusqu’au bout.
 
 - Restez en vie, coûte que coûte. Votre capacité est le plan de secours des Maléfiques qui sera utilisé en dernier recours, et il ne sera d’aucune utilité si vous êtes mort avant. Coordonnez-vous avec votre Démon pour prendre un bluff solide qui vous intégrera dans l’équipe des Gentils. L’idéal pour vous est un rôle qui ne s’active pas la nuit (contrairement à la <Role FEMME_DE_CHAMBRE /> par exemple, qui peut attirer la suspicion) et que les Gentils voudront protéger, comme le <Role PACIFISTE />, l’<Role HERBORISTE /> ou le <Role MENESTREL />.
 
-- En tant que conspirateur, le timing fait tout. Les Gentils se montreront souvent très prudents, et s’ils pensent avoir tué le Démon, ils auront tendance à prendre des précautions en n'exécutant personne le jour suivant. Pour passer outre, cela signifie que le Démon doit se faire exécuter tôt dans la partie ou que le Village ne doit avoir aucun doute que le dernier joueur exécuté est le Démon. <Module BAD_MOON_RISING /> est l’unique module où le Démon peut mourir le premier jour et faire gagner la partie aux Maléfiques.
+- En tant que Conspirateur, le timing fait tout. Les Gentils se montreront souvent très prudents, et s’ils pensent avoir tué le Démon, ils auront tendance à prendre des précautions en n'exécutant personne le jour suivant. Pour passer outre, cela signifie que le Démon doit se faire exécuter tôt dans la partie ou que le Village ne doit avoir aucun doute que le dernier joueur exécuté est le Démon. <Module BAD_MOON_RISING /> est l’unique module où le Démon peut mourir le premier jour et faire gagner la partie aux Maléfiques.
 
 - Encouragez le Village à exécuter. Si certains groupes n’auront besoin d’aucune aide extérieure pour exécuter des joueurs, n’ayez pas peur de forcer le trait si le Village est frileux dans les exécutions. Habituez le Village à exécuter chaque jour afin qu’ils continuent une fois que le Démon sera exécuté et mort. Vous ne voulez pas qu’ils gâchent votre unique chance de victoire. Rappelez-leur que les exécutions génèrent de l’information, comme confirmer les capacités de <Role MARIN /> ou d’<Role HERBORISTE /> et chercher la présence d’un <Role AVOCAT_DU_DIABLE />, et qu’à cause du Démon, le Village ne peut pas se permettre de perdre du temps pour exécuter les Maléfiques. Tout ceci est vrai, vous faisant paraître encore plus innocent aux yeux du Village.
 
@@ -45,13 +45,13 @@ Le conspirateur peut toujours gagner après la mort du Démon.
 
 ### Combattre le Conspirateur
 
-- Cherchez quels Sbires sont en jeu. Procédez par élimination ; tous les Sbires autres que le conspirateur laissent des détails caractéristiques signalant leur présence. L’<Role AVOCAT_DU_DIABLE /> sauve les joueurs de l’exécution, l’<Role ASSASSIN /> provoque une mort supplémentaire de nuit, tout comme le <Role PARRAIN />, qui en plus, modifie le compte d’Etrangers. Si vous êtes capables de percevoir et traiter ces informations, vous pourrez déterminer si un conspirateur est en jeu ou non. S’il est absent de la partie, le Village peut se passer de prudence lors des exécutions, en particulier, confirmer l’alignement d’un joueur avant son exécution n’est pas primordial.
+- Cherchez quels Sbires sont en jeu. Procédez par élimination ; tous les Sbires autres que le Conspirateur laissent des détails caractéristiques signalant leur présence. L’<Role AVOCAT_DU_DIABLE /> sauve les joueurs de l’exécution, l’<Role ASSASSIN /> provoque une mort supplémentaire de nuit, tout comme le <Role PARRAIN />, qui en plus, modifie le compte d’Etrangers. Si vous êtes capables de percevoir et traiter ces informations, vous pourrez déterminer si un Conspirateur est en jeu ou non. S’il est absent de la partie, le Village peut se passer de prudence lors des exécutions, en particulier, confirmer l’alignement d’un joueur avant son exécution n’est pas primordial.
 
-- En cas de doute, le conspirateur est sans doute en jeu. Si vous n’avez aucun indice indiquant qu’un autre Sbire est jeu, cela signifie qu’un conspirateur rôde probablement dans le Village. Le cas échéant, il vaut mieux prendre toutes les précautions nécessaires et supposer qu’il est présent.
+- En cas de doute, le Conspirateur est sans doute en jeu. Si vous n’avez aucun indice indiquant qu’un autre Sbire est jeu, cela signifie qu’un Conspirateur rôde probablement dans le Village. Le cas échéant, il vaut mieux prendre toutes les précautions nécessaires et supposer qu’il est présent.
 
-- Après une nuit sans mort, soyez particulièrement vigilant sur votre exécution du jour suivant. S’il y a eu au moins une mort de nuit, vous pouvez supposer que le Démon est encore dans la partie et que vous pouvez exécuter sans crainte. Cependant, suite à une nuit sans mort, commencez à considérer que la dernière personne exécutée est peut-être le Démon et que le conspirateur vient d’activer sa capacité ultime. Le cas échéant, soyez prudent sur le joueur que vous exécutez le jour suivant. Il est même envisageable de n’exécuter personne, juste au cas où.
+- Après une nuit sans mort, soyez particulièrement vigilant sur votre exécution du jour suivant. S’il y a eu au moins une mort de nuit, vous pouvez supposer que le Démon est encore dans la partie et que vous pouvez exécuter sans crainte. Cependant, suite à une nuit sans mort, commencez à considérer que la dernière personne exécutée est peut-être le Démon et que le Conspirateur vient d’activer sa capacité ultime. Le cas échéant, soyez prudent sur le joueur que vous exécutez le jour suivant. Il est même envisageable de n’exécuter personne, juste au cas où.
 
-- Un conspirateur mort est un conspirateur inoffensif. Comme tout joueur, le conspirateur ne peut plus utiliser sa capacité une fois mort. Exécutez autant de joueurs que possible, dans l’espoir de tuer le conspirateur avant le Démon. Comme l’<Role AVOCAT_DU_DIABLE />, le conspirateur n’est utile que s’il reste en vie. Ne ratez pas une occasion d’exécution. Faites de votre mieux pour trouver les Sbires et priez votre bonne étoile.
+- Un Conspirateur mort est un Conspirateur inoffensif. Comme tout joueur, le Conspirateur ne peut plus utiliser sa capacité une fois mort. Exécutez autant de joueurs que possible, dans l’espoir de tuer le Conspirateur avant le Démon. Comme l’<Role AVOCAT_DU_DIABLE />, le Conspirateur n’est utile que s’il reste en vie. Ne ratez pas une occasion d’exécution. Faites de votre mieux pour trouver les Sbires et priez votre bonne étoile.
 
 ### Comment conter?
 

@@ -11,21 +11,21 @@ import Role from '/src/components/role.component'
 
 Chaque nuit, choisissez un joueur : son vote compte négativement le jour suivant.
 
-Le voleur vole les votes d’un joueur, ce qui fait que son vote compte maintenant négativement.
+Le Voleur vole les votes d’un joueur, ce qui fait que son vote compte maintenant négativement.
 
--	Quand un joueur choisit par le voleur vote, le compte total de vote diminue de 1 au lieu d’augmenter de 1.  Cela arrive à chaque fois que le joueur vote aujourd’hui.
+-	Quand un joueur choisit par le Voleur vote, le compte total de vote diminue de 1 au lieu d’augmenter de 1.  Cela arrive à chaque fois que le joueur vote aujourd’hui.
 
--	Le joueur avec un vote négatif retrouve son vote positif si le voleur meurt ou est exilé car le voleur perd alors sa capacité.
+-	Le joueur avec un vote négatif retrouve son vote positif si le Voleur meurt ou est exilé car le Voleur perd alors sa capacité.
 
--	Les exils ne sont jamais affectés par les capacités, donc le joueur avec le vote négatif peut voter en faveur d’un exil sans être affecté par la capacité du voleur.
+-	Les exils ne sont jamais affectés par les capacités, donc le joueur avec le vote négatif peut voter en faveur d’un exil sans être affecté par la capacité du Voleur.
 
--	Puisque le Conteur compte le nombre de vote à voix haute au fur et à mesure que son bras tourne autour du village, tout le monde saura qui est choisi par le voleur.
+-	Puisque le Conteur compte le nombre de vote à voix haute au fur et à mesure que son bras tourne autour du village, tout le monde saura qui est choisi par le Voleur.
 
 ### Exemples
 
-> Le <Role VOLEUR /> choisit Anthony. Le jour suivant, en comptant les voix pour le premier vote, le Conteur dit « 1…2…3…2…3…4…5. » Le joueur nominé a eu cinq voix pour son exécution et les nominations se poursuivent.
+> Le Voleur choisit Anthony. Le jour suivant, en comptant les voix pour le premier vote, le Conteur dit « 1…2…3…2…3…4…5. » Le joueur nominé a eu cinq voix pour son exécution et les nominations se poursuivent.
 
-> Le <Role VOLEUR /> choisir Mika. Mika vote pour une exécution et au lieu que le compte total soit de 6, il est de 4. Puisque 10 joueurs sont en vie, le nominé n’est pas exécutable. Plus tard ce jour, les joueurs votent pour exiler le <Role VENGEUR />. Mika vote pour l’exil et son vote compte positivement.
+> Le Voleur choisir Mika. Mika vote pour une exécution et au lieu que le compte total soit de 6, il est de 4. Puisque 10 joueurs sont en vie, le nominé n’est pas exécutable. Plus tard ce jour, les joueurs votent pour exiler le <Role VENGEUR />. Mika vote pour l’exil et son vote compte positivement.
 
 ### Mécaniques et conseils si vous êtes gentil
 
@@ -55,6 +55,6 @@ Le voleur vole les votes d’un joueur, ce qui fait que son vote compte maintena
 
 ### Comment conter?
 
-Chaque nuit, réveillez le voleur. Il désigne n’importe quel joueur. Dans le grimoire, placez le jeton de rappel "Vote négatif" du voleur devant ce joueur. Rendormez le voleur.
+Chaque nuit, réveillez le Voleur. Il désigne n’importe quel joueur. Dans le grimoire, placez le jeton de rappel "Vote négatif" du Voleur devant ce joueur. Rendormez le Voleur.
 
 A chaque fois que vous comptez la voix d’un joueur marqué par le jeton "Vote négatif", comptez le en soustrayant un vote et non en additionnant. _Comptez-le à voix haute comme d’habitude_. 

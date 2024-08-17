@@ -11,25 +11,25 @@ import Role from '/src/components/role.component'
 
 Une fois par partie, la nuit, choisissez un joueur vivant : si c’est la Demoiselle, elle devient un Villageois qui n’était pas en jeu. [+ Demoiselle]
 
-Le chasseur sauve la Demoiselle avant que les Sbires ne la trouvent…On l’espère.
+Le Chasseur sauve la Demoiselle avant que les Sbires ne la trouvent…On l’espère.
 
--   La Demoiselle peut être en jeu sans le chasseur. Durant la phase de préparation, si le chasseur est en jeu mais pas la Demoiselle, ajoutez la Demoiselle. Si la Demoiselle est déjà en jeu, le chasseur n’ajoute pas une deuxième Demoiselle.
+-   La Demoiselle peut être en jeu sans le Chasseur. Durant la phase de préparation, si le Chasseur est en jeu mais pas la Demoiselle, ajoutez la Demoiselle. Si la Demoiselle est déjà en jeu, le Chasseur n’ajoute pas une deuxième Demoiselle.
 
--   Si le chasseur choisit bien la Demoiselle cette nuit, la Demoiselle devient immédiatement un Villageois qui n’était pas en jeu. Le Conteur choisi le rôle et informe la Demoiselle.
+-   Si le Chasseur choisit bien la Demoiselle cette nuit, la Demoiselle devient immédiatement un Villageois qui n’était pas en jeu. Le Conteur choisi le rôle et informe la Demoiselle.
 
 -   Quand la Demoiselle devient un Villageois, elle gagne la capacité du Villageois et perd la capacité de Demoiselle.
 
--   Le chasseur n’a qu’une tentative et elle est nocturne. 
+-   Le Chasseur n’a qu’une tentative et elle est nocturne. 
 
 -   Les Sbires ont une chance au total et elle doit être publique pendant le jour. Si un Sbire devin qui est la Demoiselle, les maléfiques gagnent. Si un Sbire se trompe sur qui est la Demoiselle, la tentative est utilisée et les autres Sbires ne peuvent plus gagner en trouvant bien qui est la Demoiselle.
 
--   Si la Demoiselle est ivre ou empoisonnée mais que le chasseur est sobre et sain, la Demoiselle peut toujours devenir un Villageois.
+-   Si la Demoiselle est ivre ou empoisonnée mais que le Chasseur est sobre et sain, la Demoiselle peut toujours devenir un Villageois.
 
 ### Exemples
 
-> Le <Role CHASSEUR /> est réveillé la première nuit mais n’utilise pas sa capacité. La seconde nuit, le <Role CHASSEUR /> choisit la <Role DEMOISELLE />. La <Role DEMOISELLE /> devient alors le <Role CROQUE_MORT /> et apprend le rôle du joueur qui est mort le jour précédent.
+> Le Chasseur est réveillé la première nuit mais n’utilise pas sa capacité. La seconde nuit, le Chasseur choisit la <Role DEMOISELLE />. La <Role DEMOISELLE /> devient alors le <Role CROQUE_MORT /> et apprend le rôle du joueur qui est mort le jour précédent.
 
-> Le <Role CHASSEUR /> choisit Gil. Gil est le <Role GENERAL /> alors rien ne se passe. Le <Role CHASSEUR /> n’est plus réveillé la nuit.
+> Le Chasseur choisit Gil. Gil est le <Role GENERAL /> alors rien ne se passe. Le Chasseur n’est plus réveillé la nuit.
 
 ### Mécaniques et conseils
 
@@ -43,65 +43,65 @@ Le chasseur sauve la Demoiselle avant que les Sbires ne la trouvent…On l’esp
 
 - Essayer de débusquer les Sbires ou de les brain pour les pousser à faire une tentative publique. Allez voir les personnes suspectes en prétendant être <Role DEMOISELLE /> ou demandez à des joueurs de confiance « d’accidentellement » laisser savoir qu’il y a une <Role DEMOISELLE /> en jeu à quelqu’un dont vous n’êtes pas sûr ou juste après qu’il vous ai parlé. Si le Sbire mord et utilise sa tentative sur vous (ou n’importe qui qui n’est pas <Role DEMOISELLE /> pour ce que ça importe !) alors ils ne peuvent plus attaquer votre vraie <Role DEMOISELLE />.
 
-### Bluffer le chasseur
+### Bluffer le Chasseur
 
-- Si vous étiez le chasseur, une <Role DEMOISELLE /> serait aussi en jeu. A un moment, un autre maléfique va devoir prétendre être <Role DEMOISELLE /> sinon vous avez avoir l’air plutôt suspect. Un autre maléfique peut se prétendre <Role DEMOISELLE /> après sa mort. Si vous prétendez être chasseur et qu’un autre maléfique prétend être <Role DEMOISELLE />, ça sera plus digne de confiance que d’avoir un chasseur solitaire qui sera suspect.
+- Si vous étiez le Chasseur, une <Role DEMOISELLE /> serait aussi en jeu. A un moment, un autre maléfique va devoir prétendre être <Role DEMOISELLE /> sinon vous avez avoir l’air plutôt suspect. Un autre maléfique peut se prétendre <Role DEMOISELLE /> après sa mort. Si vous prétendez être Chasseur et qu’un autre maléfique prétend être <Role DEMOISELLE />, ça sera plus digne de confiance que d’avoir un Chasseur solitaire qui sera suspect.
 
-- Prétendre être le chasseur peut débusquer une véritable <Role DEMOISELLE />. Si vous êtes assez convainquant dans votre « secours de <Role DEMOISELLE /> en détresse » et que vous arrivez à piéger une véritable <Role DEMOISELLE /> pour qu'elle se dévoile, un Sbire pourra deviner qui est la <Role DEMOISELLE /> et gagner la partie.
+- Prétendre être le Chasseur peut débusquer une véritable <Role DEMOISELLE />. Si vous êtes assez convainquant dans votre « secours de <Role DEMOISELLE /> en détresse » et que vous arrivez à piéger une véritable <Role DEMOISELLE /> pour qu'elle se dévoile, un Sbire pourra deviner qui est la <Role DEMOISELLE /> et gagner la partie.
 
-- Le chasseur peut être un bluff de secours si votre bluff initial tombe à l’eau car le chasseur est un rôle gentil qui a des raisons de ne pas se dévoiler tôt. Si vous prétendez être la <Role LAVANDIERE /> ou la <Role PUCELLE /> et que votre bluff tourne mal, vous pouvez vous prétendre chasseur qui essayait de cacher son vrai rôle.
+- Le Chasseur peut être un bluff de secours si votre bluff initial tombe à l’eau car le Chasseur est un rôle gentil qui a des raisons de ne pas se dévoiler tôt. Si vous prétendez être la <Role LAVANDIERE /> ou la <Role PUCELLE /> et que votre bluff tourne mal, vous pouvez vous prétendre Chasseur qui essayait de cacher son vrai rôle.
 
-- Si vous êtes un Sbire, vous savez si une <Role DEMOISELLE /> est en jeu ou non. Si non, vous savez que le chasseur n’est pas en jeu. Il n’y a donc peu de risque si deux maléfiques font équipe pour un duo chasseur/<Role DEMOISELLE />. Le seul risque de faire équipe ainsi c’est que le village attendra que la <Role DEMOISELLE /> devienne un Villageois qui n’était pas en jeu. Parlez au démon pour connaître un des bluffs pour que la <Role DEMOISELLE /> prétendre l’être devenu. Vous pouvez également être le chasseur et prétendre qu’un des Sbires morts est la <Role DEMOISELLE /> et le rendre plus digne de confiance. 
+- Si vous êtes un Sbire, vous savez si une <Role DEMOISELLE /> est en jeu ou non. Si non, vous savez que le Chasseur n’est pas en jeu. Il n’y a donc peu de risque si deux maléfiques font équipe pour un duo Chasseur/<Role DEMOISELLE />. Le seul risque de faire équipe ainsi c’est que le village attendra que la <Role DEMOISELLE /> devienne un Villageois qui n’était pas en jeu. Parlez au démon pour connaître un des bluffs pour que la <Role DEMOISELLE /> prétendre l’être devenu. Vous pouvez également être le Chasseur et prétendre qu’un des Sbires morts est la <Role DEMOISELLE /> et le rendre plus digne de confiance. 
 
-- Prétendez être le chasseur même si ça créé un doublon. S’il n’y a pas d’autres chasseur, la <Role DEMOISELLE /> va plus probablement vous faire confiance. S’il y a un autre chasseur, vous allez créer un dilemme et rendre la <Role DEMOISELLE /> si terriblement anxieuse qu’elle ne se dévoilera à aucun d’entre vous et préfera se faire exécuté plutôt que de risquer que l’un de vous puisse la deviner avec succès et donc de passer une exécution qui n’est pas sur votre démon et également de neutraliser le potentiel de la capacité du chasseur.
+- Prétendez être le Chasseur même si ça créé un doublon. S’il n’y a pas d’autres Chasseur, la <Role DEMOISELLE /> va plus probablement vous faire confiance. S’il y a un autre Chasseur, vous allez créer un dilemme et rendre la <Role DEMOISELLE /> si terriblement anxieuse qu’elle ne se dévoilera à aucun d’entre vous et préfera se faire exécuté plutôt que de risquer que l’un de vous puisse la deviner avec succès et donc de passer une exécution qui n’est pas sur votre démon et également de neutraliser le potentiel de la capacité du Chasseur.
 
 ### Comment conter
 
-En préparant la partie, avant de mettre les jetons dans le sac, si la Demoiselle n’est pas déjà en jeu, retirez un jeton de Villageois et remplacez-le par le jeton de rôle de Demoiselle. Le chasseur peut donc maintenir le ratio Villageois/Etrangers ou dans les faits finir en [+1 Etranger].
+En préparant la partie, avant de mettre les jetons dans le sac, si la Demoiselle n’est pas déjà en jeu, retirez un jeton de Villageois et remplacez-le par le jeton de rôle de Demoiselle. Le Chasseur peut donc maintenir le ratio Villageois/Etrangers ou dans les faits finir en [+1 Etranger].
 
-Chaque nuit, réveillez le chasseur.
+Chaque nuit, réveillez le Chasseur.
 
-S’il fait « non » de la tête, rendormez le chasseur.
+S’il fait « non » de la tête, rendormez le Chasseur.
 
-S’il désigne un joueur, rendormez le chasseur. Le chasseur perd sa capacité. Marquez-le avec le jeton de rappel "Utilisé" et retirez son jeton de nuit de la feuille d’ordre de nuit. S’il a choisi la Demoiselle, réveillez la Demoiselle et montrez-lui le jeton d’information « TU ES » puis un jeton de rôle de Villageois qui n’était pas en jeu. Rendormez ensuite la Demoiselle. Elle a maintenant cette capacité de Villageois alors remplacez le jeton de rôle de Demoiselle par le jeton de rôle de Villageois. 
+S’il désigne un joueur, rendormez le Chasseur. Le Chasseur perd sa capacité. Marquez-le avec le jeton de rappel "Utilisé" et retirez son jeton de nuit de la feuille d’ordre de nuit. S’il a choisi la Demoiselle, réveillez la Demoiselle et montrez-lui le jeton d’information « TU ES » puis un jeton de rôle de Villageois qui n’était pas en jeu. Rendormez ensuite la Demoiselle. Elle a maintenant cette capacité de Villageois alors remplacez le jeton de rôle de Demoiselle par le jeton de rôle de Villageois. 
 
 ** Compléments Conteur**
 
-Si le chasseur désigne un joueur mort, faites « non » de la tête et incitez-le à choisir quelqu’un d’autre.
+Si le Chasseur désigne un joueur mort, faites « non » de la tête et incitez-le à choisir quelqu’un d’autre.
 
-Si le joueur choisi n’est pas la Demoiselle, rien ne se passe. Dans ce cas, le chasseur cesse de se réveiller chaque nuit car il a utilisé sa capacité. 
+Si le joueur choisi n’est pas la Demoiselle, rien ne se passe. Dans ce cas, le Chasseur cesse de se réveiller chaque nuit car il a utilisé sa capacité. 
 
-La nouvelle capacité de Villageois de la Demoiselle prend effet immédiatement. Donc si la Demoiselle est devenue un Villageois qui se réveille après le chasseur ou à des informations de début de partie, elle se réveille à son tour dans l’ordre de nuit ou immédiatement le cas échéant. En général, cette nouvelle capacité de Villageois ne devrait pas être un des bluffs du démon si vous pouvez l’éviter car c’est injuste vis-à-vis des maléfiques.
+La nouvelle capacité de Villageois de la Demoiselle prend effet immédiatement. Donc si la Demoiselle est devenue un Villageois qui se réveille après le Chasseur ou à des informations de début de partie, elle se réveille à son tour dans l’ordre de nuit ou immédiatement le cas échéant. En général, cette nouvelle capacité de Villageois ne devrait pas être un des bluffs du démon si vous pouvez l’éviter car c’est injuste vis-à-vis des maléfiques.
 
-Si le chasseur est ivre/empoisonné quand il choisit, comme pour les autres capacités à usage unique, la capacité est considérée comme utilisée. Si la Demoiselle est ivre/empoisonnée quand elle est choisie, elle change toujours de rôle mais reste ivre/empoisonnée avec sa nouvelle capacité.
+Si le Chasseur est ivre/empoisonné quand il choisit, comme pour les autres capacités à usage unique, la capacité est considérée comme utilisée. Si la Demoiselle est ivre/empoisonnée quand elle est choisie, elle change toujours de rôle mais reste ivre/empoisonnée avec sa nouvelle capacité.
 
-Si un joueur a la capacité de la Demoiselle mais n’est pas Demoiselle (faussaire, cannibale), il n’est pas affecté par la capacité du chasseur car elle spécifie le rôle de Demoiselle lui-même comme celui qui est affecté.
+Si un joueur a la capacité de la Demoiselle mais n’est pas Demoiselle (faussaire, cannibale), il n’est pas affecté par la capacité du Chasseur car elle spécifie le rôle de Demoiselle lui-même comme celui qui est affecté.
 
-**Interactions notables - chasseur**
+**Interactions notables - Chasseur**
 
-- <Role AERONAUTE /> : Peut voir la Demoiselle deux fois si le timing le permet, une fois comme Etranger et une fois comme Villageois après avoir été transformé par le chasseur.
+- <Role AERONAUTE /> : Peut voir la Demoiselle deux fois si le timing le permet, une fois comme Etranger et une fois comme Villageois après avoir été transformé par le Chasseur.
 
-- <Role COURTISANE /> : Si la courtisane rend la Demoiselle ivre et que le chasseur choisit la Demoiselle, celle-ci devient Villageois et n’est donc plus ivre car elle n’est plus Demoiselle.
+- <Role COURTISANE /> : Si la courtisane rend la Demoiselle ivre et que le Chasseur choisit la Demoiselle, celle-ci devient Villageois et n’est donc plus ivre car elle n’est plus Demoiselle.
 
 - <Role CROQUE_MORT /> / <Role REVEUR /> / <Role GARDIEN /> / <Role PARIEUR /> / <Role FILLE_DE_JOIE /> : Verrait le rôle que la Demoiselle est devenue après sa transformation, pas le rôle de Demoiselle.
 
-- <Role PIXIE /> : Peut voir le chasseur ce qui confirme au pixie à la fois le chasseur et la Demoiselle si elle se dévoile (probablement une fois qu’elle est morte).
+- <Role PIXIE /> : Peut voir le Chasseur ce qui confirme au pixie à la fois le Chasseur et la Demoiselle si elle se dévoile (probablement une fois qu’elle est morte).
 
 - <Role BARBIER /> : Si la Demoiselle transformée est échangée par la capacité du barbier, l’autre joueur devient le rôle de Villageois que la Demoiselle était devenue. Il ne devient pas la Demoiselle car la Demoiselle a changé de rôle, pas simplement de capacité.
 
 - <Role PARRAIN /> / <Role FANG_GU /> : Si la Demoiselle transformée en Villageois meurt pendant la journée, le parrain ne se réveille pas pour tuer cette nuit et le fang gu ne peut pas se tranférer sur elle car elle n’est plus Demoiselle et elle n’est plus Etranger.
 
-- <Role MARIONNETTE /> : La Demoiselle ne peut pas être la marionnette si le chasseur est en jeu. Le chasseur pourrait en revanche être la marionnette dans ce cas. Jinx - "Si la marionnette pense être le chasseur, la Demoiselle a été ajoutée."
+- <Role MARIONNETTE /> : La Demoiselle ne peut pas être la marionnette si le Chasseur est en jeu. Le Chasseur pourrait en revanche être la marionnette dans ce cas. Jinx - "Si la marionnette pense être le Chasseur, la Demoiselle a été ajoutée."
 
-- <Role KAZALI /> : Jinx - "Si le <Role KAZALI /> choisit la <Role DEMOISELLE /> pour devenir Sbire et qu’un <Role CHASSEUR /> est en jeu, un joueur gentil devient la <Role DEMOISELLE />." 
+- <Role KAZALI /> : Jinx - "Si le <Role KAZALI /> choisit la <Role DEMOISELLE /> pour devenir Sbire et qu’un Chasseur est en jeu, un joueur gentil devient la <Role DEMOISELLE />." 
 
-- <Role SANGSUE /> : La Demoiselle peut toujours être transformée par le chasseur même si la Demoiselle est l’hôte de la sangsue. Elle continue simplement d’être empoisonnée.
+- <Role SANGSUE /> : La Demoiselle peut toujours être transformée par le Chasseur même si la Demoiselle est l’hôte de la sangsue. Elle continue simplement d’être empoisonnée.
 
-- <Role BARISTA /> : Si le barista le fait jouer deux fois, le chasseur peut choisir deux joueurs la même nuit s’il n’avait pas encore utilisé sa capacité ou sera réveille pour choisir à nouveau s’il avait déjà utilisé sa capacité une nuit précédente. La Demoiselle, si elle est choisie, ne change de rôle qu’une fois.
+- <Role BARISTA /> : Si le barista le fait jouer deux fois, le Chasseur peut choisir deux joueurs la même nuit s’il n’avait pas encore utilisé sa capacité ou sera réveille pour choisir à nouveau s’il avait déjà utilisé sa capacité une nuit précédente. La Demoiselle, si elle est choisie, ne change de rôle qu’une fois.
 
 **Intéractions notables – Demoiselle devenant un nouveau Villageois**
 
-- <Role AERONAUTE /> / <Role CHASSEUR_DE_PRIMES /> / <Role ENFANT_DE_CHOEUR /> : Si la Demoiselle devient un rôle avec des capacités [impactant la compo], ces effets ne sont pas appliqués quand la Demoiselle change car c’est après l’installation.
+- <Role AERONAUTE /> / <Role Chasseur_DE_PRIMES /> / <Role ENFANT_DE_CHOEUR /> : Si la Demoiselle devient un rôle avec des capacités [impactant la compo], ces effets ne sont pas appliqués quand la Demoiselle change car c’est après l’installation.
 
 - <Role CANNIBALE /> / <Role CRIEUR /> / <Role CROQUE_MORT /> / <Role COMMERE /> / <Role FLEURISTE /> / <Role MATHEMATICIEN /> : Si la Demoiselle devient un de ces rôles qui a une information sur des actions antérieures, cette nouvelel capacité prendra effet cette même nuit donc si vous envisager de faire de la Demoiselle un de ces rôles, il peut être utile d’utilsier les jetons de rappels appropriés pour anticiper l’information à donner si le changement se fait. (Ex : suivre si le commérage de la Demoiselle était correct avec le jeton de rappel de la commère ou si le démon a voté ave le jeton de rappel du fleuriste)
 
@@ -109,7 +109,7 @@ Si un joueur a la capacité de la Demoiselle mais n’est pas Demoiselle (faussa
 
 - <Role FAUSSAIRE /> : La Demoiselle peut devenir le rôle dont la capacité a été choisie par le faussaire auquel cas, l’ex Demoiselle devient immédiatement ivre par la capacité du faussaire.
 
-- <Role FEMME_DE_CHAMBRE /> : Si la femme de chamble choisi la Demoiselle la nuit où elle devient un autre Villageois par le chasseur, elle ne compte comme se réveillant que si c’est le cas avec sa nouvelle capacité. Le réveil pour apprendre son nouveau rôle ne provient pas de sa capacité et donc n’est pas considéré pour la femme de chambre.
+- <Role FEMME_DE_CHAMBRE /> : Si la femme de chamble choisi la Demoiselle la nuit où elle devient un autre Villageois par le Chasseur, elle ne compte comme se réveillant que si c’est le cas avec sa nouvelle capacité. Le réveil pour apprendre son nouveau rôle ne provient pas de sa capacité et donc n’est pas considéré pour la femme de chambre.
 
 - <Role JONGLEUR /> : Si la Demoiselle devient le jongleur, leur premier jour est le jour suivant donc elle peut jongler ce jour et avoir son information la nuit suivante.
 
