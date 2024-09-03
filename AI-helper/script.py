@@ -35,30 +35,30 @@ def main():
         file.write(open("./Explication_regles.txt", 'r').read())
 
 
-def save_role_description(file_path):
-    file_content = remove_unwanted_lines(file_path)
+# def save_role_description(file_path):
+#     file_content = remove_unwanted_lines(file_path)
 
-    # Filters only the description
-    role_description = re.search(r'(?P<Description>(.|\n)+(?=Exemple))',
-                                 file_content).group('Description').strip()
+#     # Filters only the description
+#     role_description = re.search(r'(?P<Description>(.|\n)+(?=Exemple))',
+#                                  file_content).group('Description').strip()
 
-    role_name = re.search(
-        r'(?<=\/)([^/]+)\.mdx', file_path).group(1).replace('-', ' ')
+#     role_name = re.search(
+#         r'(?<=\/)([^/]+)\.mdx', file_path).group(1).replace('-', ' ')
 
-    # Replaces 'Description' with 'Description "roleName"'
-    role_description = re.sub(
-        'Description', 'Description ' + role_name, role_description)
+#     # Replaces 'Description' with 'Description "roleName"'
+#     role_description = re.sub(
+#         'Description', 'Description ' + role_name, role_description)
 
-    file_path = get_dest_path(file_path).replace(
-        '/roles/', '/roles/descriptions/')
+#     file_path = get_dest_path(file_path).replace(
+#         '/roles/', '/roles/descriptions/')
 
-    os.makedirs(os.path.dirname(file_path), exist_ok=True)
-    with open(file_path.replace('-', ''), 'w') as file:
-        file.write(role_description)
+#     os.makedirs(os.path.dirname(file_path), exist_ok=True)
+#     with open(file_path.replace('-', ''), 'w') as file:
+#         file.write(role_description)
 
 
 def parse_roles_to_json():
-    roles_json = []
+    roles_json_result = {}
     travellers = [
         "bouc-emissaire",
         "bureaucrate",
@@ -76,6 +76,8 @@ def parse_roles_to_json():
         "deviant",
         "fille-de-joie",
         "gangster"]
+
+    roles_json = get_roles_json()
 
     for role_path in get_roles():
         if any(traveller in role_path for traveller in travellers):
@@ -105,24 +107,25 @@ def parse_roles_to_json():
         fight = re_fight.group("Fight") if re_fight is not None else ""
 
         # Comment conter
-        storytelling = re.search(
-            REGEX_STORYTELLING, file_content).group("Storytelling")
+        re_storytelling = re.search(REGEX_STORYTELLING, file_content)
+        storytelling = re_storytelling.group(
+            "Storytelling") if re_storytelling is not None else ""
 
-        role = {
-            role_name: {
-                "description": description.strip(),
-                "examples": examples.strip(),
-                "mecanics_tips": mecanics.strip(),
-                "bluff": bluff.strip(),
-                "fight": fight.strip(),
-                "storytelling": storytelling.strip(),
-            }
+        description_type = get_description_type(role_name)
+
+        roles_json_result[role_name] = {
+            "description": description_type + " " + description.strip(),
+            "examples": examples.strip(),
+            "mecanics_tips": mecanics.strip(),
+            "bluff": bluff.strip(),
+            "fight": fight.strip(),
+            "storytelling": storytelling.strip(),
         }
 
-        roles_json.append(role)
-
-    with open('./data.json', 'w') as file:
-        file.write(json.dumps(roles_json, indent=4,
+    data_json_path = './data/data.json'
+    os.makedirs(os.path.dirname(data_json_path), exist_ok=True)
+    with open(data_json_path, 'w') as file:
+        file.write(json.dumps(roles_json_result, indent=4,
                    ensure_ascii=False).replace("\u00a0", ""))
 
 
@@ -132,6 +135,36 @@ def get_roles():
     files = sorted(glob(path, recursive=True))
     for file in files:
         yield file
+
+
+def get_description_type(role_name):
+    roles_json = get_roles_json()
+    for element in roles_json.get("VILLAGEOIS").values():
+        if element["name"] == role_name:
+            return "-Villageois gentil-"
+
+    for element in roles_json.get("ETRANGER").values():
+        if element["name"] == role_name:
+            return "-Etranger gentil-"
+
+    for element in roles_json.get("SBIRE").values():
+        if element["name"] == role_name:
+            return "-Sbire maléfique-"
+
+    for element in roles_json.get("DEMON").values():
+        if element["name"] == role_name:
+            return "-Démon maléfique-"
+
+    return ""
+
+
+def get_roles_json():
+    path = "../static/api/roles.json"
+
+    file_content = json.loads(open(path, 'r').read())
+
+    # list(file_content.get("VILLAGEOIS").values())[0].get("name")
+    return file_content
 
 
 def get_files_to_format():

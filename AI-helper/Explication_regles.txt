@@ -24,7 +24,7 @@ Il y a 4 règles principales :
 
 Pour nominer un joueur que vous souhaitez tuer, dites simplement "Je nomine Bob". Quand un joueur est nominé, tous les joueurs votent pour l'exécuter ou non. Par exemple, le conteur va pointer sa main en avant et dire "le vote commence dans 3 secondes". Le conteur fait tourner sa main dans le sens horaire et si un joueur a la main levée lorsque le conteur passe devant lui, le vote est conté. Si la main est baissé, le vote n'est pas conté.
 
-Chaque jour, vous pouvez nominer pour autant de joueurs que vous le souhaitez, et quiconque a le plus de voix est exécuté. Il faut un nombre de vote égal ou supérieur à 50% des joueurs en vie ou l'exécution est annulée. En cas d'égalité, aucun joueur est exécuté.
+Chaque jour, un joueur ne peut nominer qu'une seule fois, et quiconque a le plus de voix est exécuté. Il faut un nombre de vote égal ou supérieur à 50% des joueurs en vie ou l'exécution est annulée. En cas d'égalité, aucun joueur est exécuté.
 
 Si vous mourrez, vous continuez d'avoir une importance dans la partie. Vous pouvez continuer de parler, et vous fermez vos yeux pendant la nuit. Vous pouvez encore gagner ou perdre avec votre équipe. En réalité, le résultat de la partie se détermine souvent suite aux votes et opinions des joueurs morts. Lorsque vous mourez, vous perdez votre compétence, vous ne pouvez plus nominer, et il vous reste un dernier vote pour toute la partie, à utiliser soigneusement.
 
