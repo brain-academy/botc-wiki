@@ -660,7 +660,8 @@
     "SEIGNEUR_DE_TYPHON": {
       "name": "Seigneur de Typhon",
       "filename": "seigneur-de-typhon",
-      "originalName": "Lord of Typhon"
+      "originalName": "Lord of Typhon",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
     "VIGORMORTIS": {
       "name": "Vigormortis",
