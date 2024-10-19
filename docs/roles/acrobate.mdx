@@ -9,79 +9,17 @@ import Role from '/src/components/role.component'
 
 ### Description
 
-Chaque nuit*, si l’un de vos voisins gentil et vivant est ivre ou empoisonné, vous mourez.
+Chaque nuit*, choisissez un joueur. Si est ou devient ivre ou empoisonné, vous mourez.
 
-L’Acrobate meurt ses voisins sont ivres ou empoisonnés. 
-
-### Exemples 
-
-> L’Acrobate est entre du <Role LYCANTHROPE /> et de l’<Role AMNESIQUE />. Le <Role LYCANTHROPE /> est empoisonné par la <Role VEUVE_NOIRE />. La première nuit, l’Acrobate vit car la capacité de l’Acrobate ne s’applique pas la première nuit. La seconde nuit, l’Acrobate meurt.
-
-> L’Acrobate est entre la <Role GITANE /> et le <Role SOLDAT />. Le <Role SOLDAT /> est exécuté et les nouveaux voisins vivants de l’Acrobate sont la <Role GITANE /> et le <Role BOOMDANDY /> et le voisin du <Role BOOMDANDY /> est l'<Role HERBORISTE /> . La <Role GITANE /> meurt la nuit et les voisins vivants de l’Acrobate sont maintenant le <Role MARIN /> ivre et le <Role BOOMDANDY />. L’Acrobate meurt.
-
-> L’Acrobate est entre le <Role IMP /> et le <Role REVEUR />. Le <Role IMP /> aussi l’<Role HORLOGER /> pour voisin. L’Acrobate ne meurt pas car ni le <Role REVEUR />, ni l’<Role HORLOGER /> ne sont ivres ou empoisonnés. (La capacité de l’Acrobate ignore les maléfiques donc le statut du <Role IMP /> n’est pas considéré.) Le <Role CHARMEUR_DE_SERPENT /> choisit le <Role IMP /> ce qui transforme le <Role IMP /> en <Role CHARMEUR_DE_SERPENT /> empoisonné. L’Acrobate meurt.
-
-### Mécaniques et conseils
-
-- Le terme « voisin vivant et gentil » signifie spécifiquement votre voisin vivant et gentil le plus proche dans le sens horaire et dans le sens antihoraire plutôt que si vos voisins vivants sont gentils. Donc si le voisin le plus proche dans le sens horaire est maléfique, ce joueur sera ignoré et on passera au joueur suivant jusqu’à ce que ce soit un joueur vivant et gentil.
-
-- Vos voisins sont cruciaux pour votre capacité et vous voulez savoir s’ils ont des rôles à informations et si oui, de quel type. Beaucoup de vos stratégies possibles dépendent de qui ils sont et il est donc important que vous en sachiez le plus possible si leur identité et ce qu’ils font.
-
-- Ne considérez pas la première nuit. Vous ne pouvez pas mourir la première nuit. Mais prêtez attention à qui est vivant et qui est mort les nuits suivantes. Les vivants et les morts vont déterminer quels sont vos voisins vivants gentils les plus proches.
-
-- Même s’il semble que votre capacité ne peut que vous faire du faire, c’est en réalité assez utile. Si vous vivez la nuit, cela signifie que vos voisins vivants gentils sont tous les deux sobres et sains. Bien que ça ne puisse rien vous dire sur les informations de première nuit, si vos voisins vivants sont inquiets à propos de leurs informations à cause d’une potentielle ivresse ou empoisonnement, vous pouvez leur confirmer qu’ils ne sont pas affectés par cela. 
-
-- L’Acrobate ne réagit qu’à l’ivresse et l’empoisonnement des voisins vivants et gentils mais ça n’interagit pas avec les joueurs mal considérés ou étant fous. Si l’Acrobate a un voisin vivant gentil sous l’effet du <Role MANIPULATEUR />, il n’y a pas d’effet sur la capacité de l’Acrobate. Si l’Acrobate est à côté d’un faux positif de la <Role VOYANTE />, il n’y a pas d’effet. Toutefois, si l’Acrobate a le <Role RECLUS /> comme voisin et qu’il est empoisonné, cela causera la mort de l’Acrobate (le <Role RECLUS /> ne peut alors pas être considéré comme maléfique dans ce cas).
-
-- Si vous mourez la nuit, cela signifie que l’un de vos voisins vivant gentil est ivre ou empoisonné. Supposez que les deux sont ivres ou empoisonné et déterminer quelle information a le plus de sens. Aussi, si vous pouvez déterminer pourquoi ils sont ivres ou empoisonné, vous déterminerez peut-être quel type de Sbire est en jeu, comme un <Role <Role EMPOISONNEUR /> /> ou vous pourriez confirmer l’identité d’un gentil comme le <Role MARIN />.
-
-- S’il semble que vous êtes mort dû à l’empoisonnement d’un joueur et que ce n’est pas votre voisin vivant le plus proche, c’est qu’il y a des maléfiques entre vous. C’est vraiment une information très utile que vous voulez présenter au village.
-
-- Si vous mourez, révélez votre rôle immédiatement pour que le village sache qu’un de vos voisins vivant et gentil est ivre ou empoisonné. Ça peut être crucial pour empêcher un rôle dont la capacité est à usage unique de gaspiller sa capacité comme un <Role MERCENAIRE /> ou une <Role COUTURIERE />.
-
-- Si vous ne mourez pas, soit les sources d’ivresse et d’empoisonnement ne sont pas en jeu, ou alors elles ne ciblent pas vos voisins vivants. S’il y a une <Role VEUVE_NOIRE /> en jeu, vous savez que vos voisins n’ont pas été ciblée par sa capacité.
-
-- Cherchez des joueurs gentils qui peuvent rendre d’autres joueurs ivres ou empoisonnés comme l’<Role AUBERGISTE /> ou le <Role MARIN /> car ils peuvent être très utiles pour vérifier votre rôle en déclenchant votre capacité. Faites que l’<Role AUBERGISTE /> choisisse vos voisins car l’un d’eux sera alors ivre. Dites au <Role MARIN /> de choisir un de vos voisins vivants car le <Role MARIN /> pourra aussi savoir s’il est sobre ou non et pourra prouver son identité après avoir prouvé la vôtre.
-
-- Si vous êtes le seul mort de nuit, c’est probablement une attaque classique du Démon. Si vous un mort parmi d’autres, alors votre capacité est une bonne explication pour votre mort. Considérez juste les autres sources de morts nocturnes comme l’<Role ASSASSIN /> ou la <Role COMMERE />.
-
-- Essayez d’induire qu’un de vos voisins gentils est un rôle à information puissant pour le faire passer pour une cible parfaite pour un empoisonnement. Par exemple, dites que votre voisin <Role HORLOGER /> est en fait <Role AERONAUTE />. Cela pourra entrainer le gaspillage d’un possible empoisonnement sur un jouer sur lequel ça n’aura pas d’effet. Cela requiert de la coordination avec votre voisin. 
-
-- Dévoilez-vous immédiatement et prenez des mesures de protections contre l’empoisonnement de vos voisins. Si les maléfiques savent que vous êtes l’Acrobate, ils ne voudront pas empoisonner vos voisins. Vous pouvez éventuellement faire que vos voisins protègent le voisin suivant si sa capacité est plus importante à protéger.
-
-### Bluffer l'Acrobate
-
-- Dévoilez-vous comme Acrobate et utilisez votre supposée capacité comme un motif pour faire exécuter un ou plusieurs de vos voisins gentils. Même si leur capacité ne cause pas de dommages aux maléfiques, ça force toujours le village à utiliser une de ses exécutions sur un joueur gentil.
-
-- Si vous bluffez Acrobate et que vous êtes maléfique, il est alors peu probable que vous mourez la nuit. Vous aurez besoin de fournir une explication sur pourquoi vos voisins vivants sont toujours sobres et sains. Cela ne devrait pas être très dur à faire car l’ivresse et l’empoisonnement ne sont pas si rependus mais ça vous aide à préparer votre surprise. Soit vous pouvez dire qu’il ni ivresse ni empoisonnement dans cette partie, ou que les joueurs ivres ou empoisonnés sont morts. C’est bien plus facile que de déclarer qu’il y a un joueur ivre ou empoisonné mais que vous savez qui c’est.
-
-- Dévoilez-vous comme Acrobate et utilisez le fait que vous ne mouriez pas comme une raison tout du long de la partie comme une preuve de l’inexistence d’un rôle à empoisonnement. La chance que vous mouriez avec un <Role <Role EMPOISONNEUR /> /> en jeu augmente avec le temps. S’il y a un <Role EMPOISONNEUR /> sur le script, utilisez le fait que vous n’êtes pas mort de la partie pour suggérer qu’il n’y en a pas. 
-
-- Si vous êtes un Sbire, faire que votre Démon vous tue la nuit peut faire croire au village que l’un de vos voisins est ivre ou empoisonné. Si vous êtes voisin du Démon, c’est l’occasion pour lui de donner de fausses informations. Si vous n’êtes pas voisin du Démon, la confusion pourrait suffire pour que votre sacrifice vaille le coup. Dans tous les cas, la nuit ou vous mourez peut juste sembler être celle ou vous êtes tué par le Démon donc cette stratégie fonctionne mieux avec des rôles qui ajoutent ou retirent des morts la nuit comme l’<Role AUBERGISTE />, l’<Role HERBORISTE />, le <Role SOLDAT /> ou le <Role CONSPIRATEUR />. 
-
-- Dévoilez-vous immédiatement comme Acrobate car cela pourrait donner à vos voisins une fausse impression qu’ils sont immunisés contre l’empoisonnement. Peut-être que vous êtes la <Role VEUVE_NOIRE /> qui a empoisonné son voisin.
-
-- Quand un voisin pense que son information est bizarre à cause de l’ivresse ou de l’empoisonnement, dites-leur que vous êtes Acrobate donc que ça ne peut pas être le cas. Cela lui fera croire que son information bizarre est correcte et fera capoté sa stratégie. 
+L’Acrobate si le joueur qu'il choisit est ivre ou empoisonné.
 
 ### Comment conter?
 
-Chaque nuit, sauf la première, vérifiez si les voisins vivants de l'Acrobate sont ivres ou empoisonnés. Si l'un d'entre l'est, marquez l'Acrobate avec le jeton de rappel "mort".
+Chaque nuit, sauf la première, réveillez l'Acrobate. L'Acrobate désigne un joueur. Rendormez l'Acrobate. Marquez le joueur "Choisi" avec le jeton de rappel.
+
+Si le joueur choisi est ivre ou empoisonné à n'importe quel moment durant la nuit, l'Acrobate meurt. Marquez l'Acrobate avec le jeton de rappel "mort"et ajoutez le linceul.
 
 _Du point de vue de l'Acrobate, le <Role SOULARD /> est considéré comme ivre._
-
-**Compléments Conteur**
-
-Il y a deux façons de faire les choses vis-à-vis de l’Acrobate. Lui laisser la possibilité de mourir dès la première nuit où ne pas le permettre.
-
-La première équilibre plus les votes. Un Etranger mort mais confirmé la première nuit est plus avantageux pour le village que s’il y avait un joueur de moins dans la partie. Mais un Etranger non confirmé qui peut mourir à tout moment est à peu près la même chose qu’avoir un joueur de moins dans la partie.
-
-Si vous n’aimez pas l’idée d’un Acrobate qui meurt la première nuit, ce qui peut être mal vu ou bien vu selon les joueurs, voici une version alternative.
-
-Une deuxième version où l’Acrobate ne peut pas mourir la première nuit est plus intéressant avec des Démons qui peuvent attaquer plusieurs fois la nuit. Toutefois, la capacité a moins de chances de se déclencher car il y a déjà deux attaques de Démons que l’Acrobate doit éviter.
-
-Il n’y a pas de morts la première nuit car ce n’est pas drôle de tirer un rôle et de mourir sur un coup de hasard sans avoir pu faire quoique ce soit. C’est aussi pour ça que les Démons ne tuent pas la première nuit ou que d’autres rôles comme la vieille chouette n’agissent pas. Si vous mourez d’exécution ou par attaque de maléfiques, cela est aussi dû à votre façon de jouer.
-
-Pour ces raisons, la deuxième option où l’Acrobate ne peut pas mourir la première nuit est plus utilisée.
 
 
 
