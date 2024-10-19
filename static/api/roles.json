@@ -1,5 +1,9 @@
 {
   "VILLAGEOIS": {
+    "ACROBATE": {
+      "name": "Acrobate",
+      "originalName": "Acrobat"
+    },
     "AERONAUTE": {
       "name": "Aéronaute",
       "filename": "aeronaute",
@@ -369,10 +373,6 @@
     }
   },
   "ETRANGER": {
-    "ACROBATE": {
-      "name": "Acrobate",
-      "originalName": "Acrobat"
-    },
     "BALANCE": {
       "name": "Balance",
       "originalName": "Snitch"
@@ -561,6 +561,12 @@
     "PSYCHOPATHE": {
       "name": "Psychopathe",
       "originalName": "Psychopath"
+    },
+    "SCIENTIFIQUE": {
+      "name": "Scientifique",
+      "filename": "scientifique",
+      "originalName": "Boffin",
+      "wakeUpSchedule": "FIRST_NIGHT"
     },
     "SORCIERE": {
       "name": "Sorcière",
