@@ -765,6 +765,10 @@
     "GANGSTER": {
       "name": "Gangster",
       "originalName": "Gangster"
-    }
+    },
+    "GNOME": {
+      "name": "Gnome",
+      "originalName": "Gnome"
+    } 
   }
 }
