@@ -586,7 +586,11 @@
       "originalName": "Pit-Hag",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
-    "VIZIR": { "name": "Vizir", "originalName": "Vizier" }
+    "VIZIR": { "name": "Vizir", "originalName": "Vizier" },
+    "XAAN": {
+      "name": "Xaan",
+      "originalName": "Xaan"
+    }
   },
   "DEMON": {
     "AL_HADIKHIA": {
