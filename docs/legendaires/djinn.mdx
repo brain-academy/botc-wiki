@@ -40,21 +40,25 @@ La règle spéciale du Djinn permet à des rôles jinxés d’être sur le même
 
 Villageois
 
+-   <Role CHASSEUR_DE_PRIMES /> et <Role FAUSSAIRE /> : Si le Faussaire prend la capacité du Chasseur de primes, un Villageois pourrait passer maléfique.
+
+-   <Role CHASSEUR_DE_PRIMES /> et <Role KAZALI /> : Un Villageois maléfique n'est créé que si le Chasseur de primes est encore en jeu après l'action du Kazali.
+
 -   <Role CANNIBALE /> et <Role CULTIVATEUR_DE_PAVOT /> : Si le Cannibale mange le Cultivateur de pavot, puis meurt ou perd la capacité du Cultivateur de pavot, le Démon et les Sbires se reconnaissent cette nuit.
 
--   <Role CANNIBALE /> et <Role JONGLEUR /> : Si le Jongleur énonce ses combinaisons lors de son premier jour puis meurt par exécution, cette nuit, le Cannibale apprend combien de combinaisons énoncées par le Jongleur étaient correctes.
+-   <Role CANNIBALE /> et <Role JONGLEUR /> :  Si le Cannibale gagne la capacité du Jongleur, il l’apprend.
 
 -   <Role CANNIBALE /> et <Role MAJORDOME /> : Si le Cannibale gagne la capacité du Majordome, il l’apprend.
 
 -   <Role CANNIBALE /> et <Role ZELOTE /> : Si le Cannibale gagne la capacité du Zélote, il l’apprend.
 
--   <Role FEMME_DE_CHAMBRE /> et <Role MATHEMATICIEN /> : La Femme de chambre apprend si le Mathématicien se réveille ce soir ou non, même si la Femme de chambre se réveille avant.
+-   <Role MATHEMATICIEN /> et <Role FEMME_DE_CHAMBRE /> : La Femme de chambre apprend si le Mathématicien se réveille ce soir ou non, même si la Femme de chambre se réveille avant.
 
--   <Role FAUSSAIRE /> et <Role CHASSEUR_DE_PRIMES /> : Si le Faussaire prend la capacité du Chasseur de primes, un Villageois pourrait passer maléfique.
+-   <Role MATHEMATICIEN /> et <Role LUNATIQUE /> : Le Mathématicien apprend si le Lunatique attaque un joueur différent que celui qui est attaqué par le véritable Démon.
 
 Etrangers
 
--   <Role LUNATIQUE /> et <Role MATHEMATICIEN /> : Le Mathématicien apprend si le Lunatique attaque un joueur différent que celui qui est attaqué par le véritable Démon.
+-
 
 -   <Role OGRE /> et <Role RECLUS /> : Si le Reclus est considéré comme maléfique pour l’Ogre, l’Ogre apprend qu’il est maléfique.
 
@@ -154,11 +158,13 @@ Sbires
 
 -   <Role SCIENTIFIQUE /> et <Role SOULARD /> : Si le Démon a la capacité du Soûlard, le Scientifique choisit un Villageois pour avoir cette capacité à la place.
 
--   <Role VEUVE_NOIRE /> et <Role ALCHIMISTE /> : L’Alchimiste ne peut pas avoir la capacité de la Veuve noire.
+-   <Role VEUVE_NOIRE /> et <Role ALCHIMISTE /> : Si l’Alchimiste a la capacité de la Veuve noire, il ne voit pas le Grimoire.
 
 -   <Role VEUVE_NOIRE /> et <Role CULTIVATEUR_DE_PAVOT /> : Si le Cultivateur de pavot est en jeu, la Veuve noire ne voit pas le Grimoire jusqu’à ce que le Cultivateur de pavot meurt.
 
 -   <Role VEUVE_NOIRE /> et <Role DEMOISELLE /> : Si la Veuve noire est (ou a été en jeu) alors la Demoiselle est empoisonnée.
+
+-   <Role VEUVE_NOIRE /> et <Role ESPION /> : Si l’Alchimiste a la capacité de l’Espion, il ne voit pas le Grimoire et le véritable Espion ne peut pas être mal considéré.
 
 -   <Role VEUVE_NOIRE /> et <Role HERETIQUE /> : Seul un des rôles jinxés peut être en jeu.
 
@@ -175,8 +181,6 @@ Sbires
 -   <Role VIEILLE_CHOUETTE /> et <Role IDIOT_DU_VILLAGE /> : S'il y a un jeton de rôle de disponible, la Vieille chouette peut créer un Idiot du village supplémentaire. Si c'est le cas, l'Idiot du village ivre pourrait changer.
 
 -   <Role VIEILLE_CHOUETTE /> et <Role POLITICIEN /> : Si la Vieille chouette transforme un maléfique en Politicien, il ne peut pas redevenir gentil grâce à sa capacité.
-
--   <Role VIZIR /> et <Role ALCHIMISTE /> : Si l’Alchimiste a la capacité du Vizir, il ne peut exécuter immédiatement que si trois joueurs ou plus ont votés, peu importe l'alignement des joueurs.
 
 -   <Role VIZIR /> et <Role ALSAAHIR /> : Si le Vizir est en jeu, l’Alsaahir doit aussi deviner le(s) rôle(s) de Démon en jeu.
 
@@ -200,65 +204,27 @@ Démons
 
 -   <Role AL_HADIKHIA /> et <Role CROQUEUSE_D_HOMMES /> : S'il y a deux Al-Hadikhia vivants, la Croqueuse d'hommes d'origine redevient la Croqueuse d'hommes.
 
--   <Role EMEUTIER /> et <Role AUBERGISTE /> : Si un Emeutier nomine et tue un joueur protégé par l’Aubergiste, le joueur protégé par l’Aubergiste ne meurt pas.
+-   <Role EMEUTIER /> et <Role AUBERGISTE /> : Si un Emeutier est en jeu, le joueur protégé par l'Aubergiste, est protégé de toutes les capacités de maléfique.
 
--   <Role EMEUTIER /> et <Role AVOCAT_DU_DIABLE /> : Les joueurs qui meurent par nomination sont considérés comme exécutés pour l’Avocat du Diable.
+-   <Role EMEUTIER /> et <Role BANSHEE /> : Chaque nuit, l'Emeutier choisit un joueur vivant (différent des nuits précédentes) : Une Banshee choisie meurt et obtient sa capacité.
 
--   <Role EMEUTIER /> et <Role BALANCE /> : Si une Balance est en jeu, chaque Emeutier reçoit 3 bluffs supplémentaires.
+-   <Role EMEUTIER /> et <Role EXORCISTE /> : Si l'Exorciste choisi l'Emeutier la trosième nuit, les Sbires ne deviennent pas Emeutier.
 
--   <Role EMEUTIER /> et <Role BANSHEE /> : Si un Emeutier nomine et tue la Banshee, tous les joueurs apprennent que la Banshee est morte et la Banshee peut nominer deux joueurs immédiatement.
+-   <Role EMEUTIER /> et <Role FERMIER /> : Chaque nuit, l'Emeutier choisit un joueur vivant (différent des nuits précédentes) : Un Fermier choisi utilise sa capacité mais ne meurt pas.
 
--   <Role EMEUTIER /> et <Role CANNIBALE /> : Les joueurs qui meurent par nomination sont considérés comme exécutés pour le Cannibale.
+-   <Role EMEUTIER /> et <Role GARDIEN /> : Chaque nuit, l'Emeutier choisit un joueur vivant (différent des nuits précédentes) : Un Gardien choisi utilise sa capacité mais ne meurt pas.
 
--   <Role EMEUTIER /> et <Role CHAPELIER /> : Si le Chapelier meurt et qu’un Emeutier choisit un autre type de Démon, une équipe de maléfique “normale” est créé à partir des joueurs Emeutiers. Si le Chapelier meut et que le Démon choisit Emeutier, les Sbires deviennent Emeutiers aussi.
+-   <Role EMEUTIER /> et <Role MAMIE /> : Si un Emeutier est en jeu et que la descendance meurt de jour, la Mamie meurt également.
 
--   <Role EMEUTIER /> et <Role CRIEUR /> : Les Emeutiers sont considérés comme des Sbires pour le Crieur.
+-   <Role EMEUTIER /> et <Role MAIRE /> : Le Maire peut choisir de stopper les nominations. S'il le fait lorsqu'il n'y a plus qu'un seul Emeutier, le village gagne. Sinon, les maléfiques gagnent.
 
--   <Role EMEUTIER /> et <Role CROQUE_MORT /> : Les joueurs qui meurent par nomination sont considérés comme exécutés pour le Croque-mort.
+-   <Role EMEUTIER /> et <Role MOINE /> : Si un Emeutier est en jeu, le joueur protégé par le Moine, est protégé de toutes les capacités de maléfique.
 
--   <Role EMEUTIER /> et <Role DEMOISELLE /> : Les Emeutiers sont considérés comme des Sbires pour la Demoiselle.
+-   <Role EMEUTIER /> et <Role ROI /> : Si un émeutier est en jeu et qu'au moins un joueur est mort, le Roi apprend un rôel vivant chaque nuit.
 
--   <Role EMEUTIER /> et <Role ENQUETEUR /> : Les Emeutiers sont considérés comme des Sbires pour l’Enqueteur.
+-   <Role EMEUTIER /> et <Role SAGE /> : Chaque nuit, l'Emeutier choisit un joueur vivant (différent des nuits précédentes) : Un Sage choisi utilise sa capacité mais ne meurt pas.
 
--   <Role EMEUTIER /> et <Role EXORCISTE /> :  Seul un des rôles jinxés peut être en jeu.
-
--   <Role EMEUTIER /> et <Role FERMIER /> : Si un Emeutier nomine et tue le Fermier, le Fermier utilise sa capacité la nuit suivante.
-
--   <Role EMEUTIER /> et <Role FLEURISTE /> :  Seul un des rôles jinxés peut être en jeu.
-
--   <Role EMEUTIER /> et <Role GARDIEN /> : Si un Emeutier nomine et tue le Gardien, le Gardien utilise sa capacité la nuit suivante.
-
--   <Role EMEUTIER /> et <Role GOLEM /> : Si le Golem nomine un Emeutier, l’Emeutier ne meurt pas.
-
--   <Role EMEUTIER /> et <Role HORLOGER /> : Les Emeutiers sont considérés comme des Sbires pour l’Horloger.
-
--   <Role EMEUTIER /> et <Role INGENIEUR /> : Les Emeutiers et l’Ingénieur ne peuvent pas être en jeu au début de la partie. Si un Ingénieur créé un Emeutier, tous les maléfiques deviennent Emeutiers.
-
--   <Role EMEUTIER /> et <Role MAIRE /> : Si le troisième jour commence avec juste trois joueurs en vie et que les joueurs choisissent en groupe de ne pas nominer alors l’équipe du Maire gagne (si le Maire est vivant.)
-
--   <Role EMEUTIER /> et <Role MAJORDOME /> : Le Majordome ne peut pas nominer son maître.
-
--   <Role EMEUTIER /> et <Role MAMIE /> Si un Emeutier nomine et tue la descendance, la Mamie meurt également.
-
--   <Role EMEUTIER /> et <Role MENESTREL /> :  Seul un des rôles jinxés peut être en jeu.
-
--   <Role EMEUTIER /> et <Role MOINE /> : Si un Emeutier nomine et tue un joueur protégé par le Moine, le joueur protégé par le Moine ne meurt pas.
-
--   <Role EMEUTIER /> et <Role PACIFISTE /> : Les joueurs qui meurent par nomination sont considérés comme exécutés pour le Pacifiste.
-
--   <Role EMEUTIER /> et <Role PREDICATEUR /> : Les Emeutiers sont considérés comme des Sbires pour le Prédicateur.
-
--   <Role EMEUTIER /> et <Role ROI /> : Si un Emeutier nomine et tue le Roi et que l’Enfant de chœur est vivant, l’Enfant de chœur utilise sa capacité la nuit suivante.
-
--   <Role EMEUTIER /> et <Role SAGE /> : Si un Emeutier nomine et tue le Sage, le Sage utilise sa capacité la nuit suivante.
-
--   <Role EMEUTIER /> et <Role SOLDAT /> : Si un Emeutier nomine le Soldat, le Soldat ne meurt pas.
-
--   <Role EMEUTIER /> et <Role VERTUEUX /> : Si un joueur gentil nomine et tue le Vertueux, l’équipe du Vertueux perd.
-
--   <Role EMEUTIER /> et <Role VIEILLE_CHOUETTE /> : Si la Vieille chouette créé un Emeutier, tous les maléfiques deviennent Emeutiers. Si une Vieille chouette créé un Emeutier après le troisième jour, la partie continue pour un jour de plus.
-
--   <Role EMEUTIER /> et <Role ZELOTE /> : Si vous êtes nominé, vous devez renominer même si vous êtes mort.
+-   <Role EMEUTIER /> et <Role SOLDAT /> : Si un Emeutier est en jeu, le Soldat est protégé de toutes les capacités de maléfique.
 
 -   <Role FANG_GU /> et <Role CROQUEUSE_D_HOMMES /> : Si le Fang Gu choisi un Etranger et meurt, la Croqueuse d'hommes ne devient pas le Fang Gu.
 
@@ -284,23 +250,29 @@ Démons
 
 -   <Role LEGION /> et <Role ZELOTE /> : Le Zélote peut être considéré comme maléfique pour la capacité de la Légion.
 
--   <Role LEVIATHAN /> et <Role AUBERGISTE /> : Si le Léviathan nomine et exécute un joueur choisit par l’Aubergiste, ce joueur ne meurt pas.
+-   <Role LEVIATHAN /> et <Role AUBERGISTE /> : Si le Léviathan est en jeu, les joueurs protégés par l’Aubergiste sont protégés de toutes les capacités de maléfiques.
 
--   <Role LEVIATHAN /> et <Role BANSHEE /> : Si un Léviathan est en jeu et que la Banshee meurt par exécution, tous les joueurs apprennent que la Banshee est morte et la Banshee obtient sa capacité. 
+-   <Role LEVIATHAN /> et <Role BANSHEE /> : Chaque nuit, le Leviathan choisit un joueur vivant (différent des nuits précédentes) : Une Banshee choisie meurt et obtient sa capacité.
 
 -   <Role LEVIATHAN /> et <Role CHAPELIER /> : Si le Chapelier meurt le cinquième jour ou après, le Démon ne peut pas choisir Léviathan.
 
--   <Role LEVIATHAN /> et <Role FERMIER /> : Si le Léviathan est jeu et qu’un Fermier meurt par exécution, un joueur gentil devient un Fermier cette nuit.
+-   <Role LEVIATHAN /> et <Role EXORCISTE /> : Les maléfiques ne gagnent pas quand plus d’un joueur gentil a été exécuté tant que l’Exorciste est en vie et a déjà choisi le Léviathan avec succès.
 
--   <Role LEVIATHAN /> et <Role GARDIEN /> : Si le Léviathan est en jeu et que le Gardien meurt par exécution, il se réveille cette nuit pour utiliser da capacité. 
+-   <Role LEVIATHAN /> et <Role FERMIER /> : Chaque nuit, le Léviathan choisit un joueur vivant (différent des nuits précédentes) : Un Fermier choisi meurt et obtient sa capacité.
+
+-   <Role LEVIATHAN /> et <Role GARDIEN /> : Chaque nuit, le Léviathan choisit un joueur vivant (différent des nuits précédentes) : Un Gardien choisi utilise sa capacité mais ne meurt pas.  
 
 -   <Role LEVIATHAN /> et <Role MAIRE /> : Si un Léviathan est en jeu est qu’aucune exécution ne se passe le jour 5, le village gagne.
 
--   <Role LEVIATHAN /> et <Role MOINE /> : Si le Léviathan nomine et exécute le joueur que le Moine a protégé, ce joueur ne meurt pas. 
+-   <Role LEVIATHAN /> et <Role MAMIE /> : Si la descendance meurt par exécution, les maléfiques gagnent.
 
--   <Role LEVIATHAN /> et <Role SAGE /> : Si le Léviathan est en jeu et que le Sage meurt par exécution, il se réveille cette nuit pour utiliser sa capacité.
+-   <Role LEVIATHAN /> et <Role MOINE /> : Si le Léviathan est en jeu, le joueur protégé par le Moine est protégé de toutes les capacités de maléfiques.
 
--   <Role LEVIATHAN /> et <Role SOLDAT /> : Si le Léviathan nomine et exécute le Soldat, le Soldat ne meurt pas.
+-   <Role LEVIATHAN /> et <Role ROI /> : Si le Léviathan est en jeu et qu’au moins un joueur est mort, le Roi apprend un rôle vivant chaque nuit.
+
+-   <Role LEVIATHAN /> et <Role SAGE /> : Chaque nuit, le Léviathan choisit un joueur vivant (différent des nuits précédentes) : Un Sage choisi utilise sa capacité mais ne meurt pas.
+
+-   <Role LEVIATHAN /> et <Role SOLDAT /> : Si le Léviathan est en jeu, le Soldat est protégé de toutes les capacités des maléfiques.
 
 -   <Role LEVIATHAN /> et <Role VIEILLE_CHOUETTE /> : Après le cinquième joueur la Vieille chouette ne peut pas choisir de mettre un Léviathan est en jeu.
 

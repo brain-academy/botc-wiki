@@ -9,7 +9,7 @@ import Role from '/src/components/role.component'
 
 ### Description
 
-Les nominés meurent mais peuvent immédiatement re-nominer (le 3ème jour, ils doivent). Après 3 jours, les maléfiques gagnent. [Tous les Sbires sont Emeutiers.]
+Le 3ème jour, les Sbires deviennent des Emeutiers et les nominés meurent mais nominent un joueur vivant immédiatement. Cela doit se produire.
 
 Les Emeutiers tue tout le monde dans la panique.
 
@@ -73,13 +73,9 @@ Les Emeutiers tue tout le monde dans la panique.
 
 ### Comment conter
 
-En préparant la partie, avant de mettre les jetons de rôles dans le sac, remplacez tous les jetons de Sbires par des jetons Emeutiers. Durant la première nuit, sautez les étapes d’informations des Sbires. Durant la phase d’information du Démon, réveillez tous les Emeutiers et laissez-les avoir un contact visuel. Montrez à chaque émeutier les trois jetons de rôle de bluff et rendormez-les ensuite.
+Durant la troisième nuit, réveillez les Sbires un à un et indiquez leur qu'ils sont Emeurtiers.
 
-Chaque fois qu’un joueur est nominé, il meurt. Déclarez sa mort et ajoutez un linceul immédiatement. Dites-lui qu’il peut nominer encore et comptez publiquement « 3…2…1… » et s’il nomine avant la fin du décompte, répétez le processus pour le nouveau nominé (_il meurt, peut nominer,etc.._) S’il ne nomine pas avant la fin du décompte, la journée se termine.
-
-Le troisième jour, les joueurs nominés meurent et doivent renominer . Si la journée se termine avec plus de deux joueurs en vie, les maléfiques gagnent. 
-
-_Règle optionnelle : Quand les Emeutiers sont en jeu, les morts ne peuvent pas être nominés (C’est plus fun et c’est le but originel des Emeutiers.)_
+A partir du troisème jour, chaque fois qu’un joueur est nominé, il meurt. Déclarez sa mort et ajoutez un linceul immédiatement. Dites-lui qu’il doit nominer un joueur vivant et comptez publiquement « 3…2…1… ». S’il ne nomine pas avant la fin du décompte, le Conteur nomine à sa place. 
 
 ** Compléments Conteur**
 
@@ -99,65 +95,41 @@ Si un émeutier est ivre ou empoisonné avec d’autres Emeutiers vivants, cela 
 
 - <Role AERONAUTE /> : Ne peut avoir qu’un maximum de trois tour d’information ce qui tombe bien comme il ne devrait pas y avoir de Sbires dans une partie avec des Emeutiers. Il aurait donc, un Villageois, un Etranger et un émeutier s’il survit assez longtemps !
 
-- <Role AUBERGISTE /> : jinx – « Si un émeutier nomine un joueur protégé par l’aubergiste, le joueur protégé par l’aubergiste ne meurt pas. »
+- <Role AUBERGISTE /> : jinx – « Si un Emeutier est en jeu, le joueur protégé par l'Aubergiste, est protégé de toutes les capacités de maléfique. »
 
-- <Role CANNIBALE /> : jinx – « Les joueurs qui meurent par nominations sont considérés comme étant exécutés pour le cannibale. » Donc le cannibale a la capacité du dernier joueur mort par nomination le jour précédent.
+- <Role BANSHEE /> : jinx – "Chaque nuit*, l'Emeutier choisit un joueur vivant (différent des nuits précédentes) : Une Banshee choisie meurt et obtient sa capacité."
 
 - <Role COURTISANE /> : Si la courtisane choisit l’émeutier, exactement un seul émeutier est rendu ivre. Ce joueur est choisi par le Conteur.
 
-- <Role CRIEUR /> : jinx – « Les Emeutiers sont considérés comme des Sbires pour le crieur. »
-
-- <Role CROQUE_MORT /> : jinx – « Les joueurs qui meurent par nomination sont considérés comme exécutés pour le croque-mort. »
-
-- <Role CULTIVATEUR_DE_PAVOT /> : Chaque Emeutiers est réveillé individuellement et apprend les bluffs mais pas qui sont ses comparses Emeutiers.
-
-- <Role ENQUETEUR /> : jinx – « Les Emeutiers sont considérés comme des Sbires pour l’enquêteur. » Donc un enquêteur serait réveillé et on lui désignerait deux joueurs, dont l’un est émeutier et un jeton de rôle de Sbire.
-
-- <Role EXORCISTE /> : jinx - : « Seulement un rôle jinxé peut être en jeu. »
+- <Role EXORCISTE /> : jinx - : « Si l'Exorciste choisi l'Emeutier la trosième nuit, les Sbires ne deviennent pas Emeutier. »
 
 - <Role FAUSSAIRE /> : Premièrement, il n’est pas conseillé de mettre un faussaire dans un script avec des Emeutiers sauf si vous êtes prêt à affronter les jinxs. Deuxièmement, soyez prudent avec les autres rôles que vous mettez dans le script si les Emeutiers et le faussaire sont déjà dedans. Si vous insistez pour le faire quand même, voici la règle conseillée par les créateurs du jeu. Si le faussaire choisit un rôle qui a un jinx « Seulement un rôle jinxé peut être en jeu. » et que le rôle « opposé » est déjà en jeu considérez que c’est l’usage unique du faussaire et dites au faussaire que ce rôle opposé est en jeu. Par exemple, avec des Emeutiers en jeu, le faussaire choisi l’exorciste. Il faudrait lui montrer le jeton de rôle de l’émeutier, le rendormir et ne plus le réveiller. (Cela va probablement impliquer de dire à vos joueurs le fonctionnement de cette interaction avant que la partie ne commence car c’est une interaction peu ordinaire.) C’est parce qu’il ne peut pas gagner la capacité d’un rôle opposé à un rôle déjà en jeu sans que la partie ne soit « cassée » d’une certaine manière. Mais être capable de confirmer que les Emeutiers (ou légion, ou quelconque autre rôle avec un jinx du type « les deux ne peuvent être en jeu ») sont ou ne sont pas en jeu est assez puissant et vaut probablement le prix d’une capacité à usage unique.
 
-- <Role FERMIER /> : jinx – « Si un émeutier nomine et tue un fermier, le fermier utilise sa capacité la nuit suivante »
-
-- <Role FLEURISTE /> : jinx - « Seulement un rôle jinxé peut être en jeu. »
+- <Role FERMIER /> : « Chaque nuit, l'Emeutier choisit un joueur vivant (différent des nuits précédentes) : Un Fermier choisi utilise sa capacité mais ne meurt pas. »
 
 - <Role FOU /> : Si nominé dans une partie d’Emeutiers, il utilise sa première vie mais doit toujours renominer derrière. (Mise en situation : Laurent nomine Zariko le fou, Zariko ne meurt pas, qui nomines-tu ?3…2…1… » ect…)
 
-- <Role GARDIEN /> : jinx – « Si un émeutier nomine et tue le gardien, le gardien utilise sa capacité la nuit suivante. »
+- <Role GARDIEN /> : « Chaque nuit, l'Emeutier choisit un joueur vivant (différent des nuits précédentes) : Un Gardien choisi utilise sa capacité mais ne meurt pas. »
 
-- <Role HERBORISTE /> : Si les deux voisins de l’herboriste sont gentils, ils ne peuvent pas mourir à cause d’une nomination mais ils peuvent toujours (doivent le 3ème jour) nominer à nouveau.
-
-- <Role HORLOGER /> : jinx – « Les Emeutiers sont considérés comme des Sbires pour l’horloger. » Dans une partie de p’tit monstre, de légion ou d’émeutier, cela implique de montrer le plus petit chiffre possible.
-
-- <Role INGENIEUR /> : jinx – « Les Emeutiers et l’ingénieur ne peuvent pas être tous les deux en jeu en début de partie. Si l’ingénieur créé des Emeutiers, les maléfiques deviennent Emeutiers. » 
+- <Role HERBORISTE /> : Si les deux voisins de l’herboriste sont gentils, ils ne peuvent pas mourir à cause d’une nomination mais ils doivent toujours nominer à nouveau.
 
 - <Role LYCANTHROPE /> : N’empêche pas les morts durant le jour, seulement celles durant la nuit. 
 
-- <Role MAGICIEN /> : Si le magicien est en jeu, les Emeutiers ne se réveillent pas ensemble. Ils sont réveillés séparément et on leur désigne leurs comparses Emeutiers, magicien inclus.
+- <Role MAMIE /> : Jinx - « Si un Emeutier est en jeu et que la descendance meurt de jour, la Mamie meurt également. »
 
-- <Role MAIRE /> : jinx – « Si le troisième jour commence avec juste trois joueurs en vie et que les joueurs choisissent en groupe de ne pas nominer alors l’équipe du maire gagne (si le maire est vivant.) » 
+- <Role MAIRE /> : Jinx - « Le Maire peut choisir de stopper les nominations. S'il le fait lorsqu'il n'y a plus qu'un seul Emeutier, le village gagne. Sinon, les maléfiques gagnent. »
 
-- <Role MAMIE /> : « Si un émeutier nomine et tue la descendance, la mamie meurt également. »
-
-- <Role MENESTREL /> : jinx – « Seulement un rôle jinxé peut être en jeu. »
-
-- <Role MOINE /> : jinx – « Si un émeutier nomine le joueur protégé par le moine, le joueur protégé par le moine ne meurt pas. » 
-
-- <Role PACIFISTE /> : jinx – « Les joueurs qui meurent par nomination sont considérés comme exécutés pour le pacifiste. » 
+- <Role MOINE /> : jinx – « Si un Emeutier est en jeu, le joueur protégé par le Moine, est protégé de toutes les capacités de maléfique. » 
 
 - <Role PIXIE /> : Peut gagner sa capacité durant la journée et appliquer son effet avant même de se rendre compte qu’elle l’avait. Exemple : Un pixie herboriste qui protège immédiatement ses voisins gentils quand l’herboriste d’origine est nominé. Si le pixie obtient une capacité de début de partie, grâce à une mort à cause des Emeutiers durant la journée, mais meurt le même jour, il ne sera pas réveillez la nuit suivante pour utiliser cette capacité gagnée.
 
-- <Role PREDICATEUR /> : jinx – « Les Emeutiers sont considérés comme des Sbires pour le prédicateur. »
-
 - <Role PUCELLE /> : Si la pucelle est nominée par un Villageois dans une partie avec Emeutiers, la pucelle meurt et le Villageois est immédiatement exécuté ce qui met fin à la journée.
 
-- <Role ROI /> : Tous les Emeutiers savent qu’un roi est en jeu car ils sont tous considérés comme Démon. Jinx « Si un émeutier nomine et tue le roi et que l’enfant de chœur est vivant, l’enfant de chœur utilise sa capacité la nuit suivante. » Cela s’applique même si l’enfant de chœur meurt plus tard dans la même journée avant d’apprendre son information. Ce jinx est sur le roi plutôt que sur l’enfant de chœur pour attirer l’attention des Emeutiers que c’est la nomination sur le roi qui va déclencher le jinx, pas la nomination sur l’enfant de chœur.
+- <Role ROI /> : Jinx « Si un émeutier est en jeu et qu'au moins un joueur est mort, le Roi apprend un rôel vivant chaque nuit. »
 
-- <Role SAGE /> : jinx – « Si un émeutier nomine et tue le sage, le sage utilise sa capacité la nuit suivante. »
+- <Role SAGE /> : jinx – « Chaque nuit*, l'Emeutier choisit un joueur vivant (différent des nuits précédentes) : Un Sage choisi utilise sa capacité mais ne meurt pas. »
 
-- <Role SOLDAT /> : jinx – « Si un émeutier nomine un soldat, alors le soldat ne meurt pas. » Le soldat n’est également pas forcé de nominer bien que ça soit généralement dans son intérêt de le faire. Néanmoins, cela fait partie de la capacité du Démon et donc le soldat en est protégé. Donc, même le 3ème jour, il n’est pas obligé de nominer. Cela dit, un Conteur le 1et et le 2ème jour fera toujours le décompte de trois secondes et ensuite terminera le jour si le soldat n’a pas nominé. Le troisième jour, il est préférable de faire le décompte. Le soldat n’est techniquement pas forcé de nominé mais s’il ne nomine pas à temps, il est pour l’instant recommandé de mettre fin à la journée et donc à la partie avec une victoire des Emeutiers.
-
-- <Role BALANCE /> : jinx – « Si une balance est en jeu, chaque émeutier reçoit 3 bluffs supplémentaires. »
+- <Role SOLDAT /> : jinx – « Si un Emeutier est en jeu, le Soldat est protégé de toutes les capacités de maléfique. » Le soldat n’est également pas forcé de nominer bien que ça soit généralement dans son intérêt de le faire. Néanmoins, cela fait partie de la capacité du Démon et donc le soldat en est protégé. Donc, même le 3ème jour, il n’est pas obligé de nominer. Cela dit, un Conteur fera toujours le décompte de trois secondes et ensuite nominera si le soldat n’a pas nominé.
 
 - <Role BARBIER /> : Comme un autre Démon qui est sur de multiples joueurs, le Conteur choisit un Démon vivant pour procéder à l’échange du barbier.
 
@@ -169,25 +141,13 @@ Si un émeutier est ivre ou empoisonné avec d’autres Emeutiers vivants, cela 
 
 - <Role GITANE /> : Voir maladroit
 
-- <Role GOLEM /> : jinx – « Si le golem nomine un émeutier, l’émeutier ne meurt pas. » C’est parce que si le golem est nominé au milieu d’une chaîne, il meurt immédiatement, soit avant sa nomination, donc sa capacité n’aurait pas d’effets quand il nomine et donc n’aurait aucun effet dans une partie d’Emeutiers. Jinx amélioré : Si le golem est le premier à nominer durant la journée (utilisant ainsi sa capacité unique) et est ensuite nominé, il peut nominer une deuxième fois pour poursuivre la chaîne car il meurt immédiatement donc la capacité de restriction du golem n’est plus effective.
-
 - <Role LUNATIQUE /> : Tous les Emeutiers savent qui est le lunatique et qui il choisit. Dans un module avec Emeutiers et lunatique, vous devriez réveillez les Emeutiers individuellement pour leur donner leurs bluffs, l’identité du lunatique le cas échéant et leurs comparses Emeutiers. Sinon, le lunatique sait tout de suite s’il est lunatique ou non. 
 
 - <Role MAITRE_DES_PUZZLES /> : Si le maître des puzzles devine qui est ivre à cause de sa capacité, il apprend n’importe quel joueur qui est émeutier. 
 
-- <Role MAJORDOME /> : jinx – « Le majordome ne peut pas nominer son maître. »
-
 - <Role MALADROIT /> : L’émeutier incite à des parties avec choix à grande pression à faire rapidement donc vous devriez indiquer à vos joueurs qu’ils devront aussi faire des choix rapides s’il meut en tant que maladroit ou gitane (cela outrepasse la période habituelle ou le village peut brièvement discuter du choix.) Il faut annoncer qu’il meurt puis commencez le décompte habituel pour la capacité de l’émeutier durant laquelle il doit se prétendre maladroit et choisir un joueur. En tant que Conteur, vous pouvez ensuite confirmer que la partie continue ou non selon le choix et ensuite recommencez le décompte des trois secondes pour la capacité de l’émeutier.
 
-- <Role VERTUEUX /> : jinx – « Si un joueur gentil nomine et tue le vertueux, l’équipe du vertueux perd. »
-
-- <Role ZELOTE /> : Jinx : "Si vous êtes nominé, vous devez renominer même si vous êtes mort."
-
-- <Role AVOCAT_DU_DIABLE /> : jinx – « Les joueurs qui meurt par nomination sont considérés comme exécutés pour l’avocat du diable. »
-
 - <Role INVOCATEUR /> : jinx – "Si l’Invocateur créé un Emeutier, tous les Sbires deviennent Emeutiers."
-
-- <Role VIEILLE_CHOUETTE /> : jinx – « Si la vieille chouette créé un émeutier, tous les maléfiques deviennent émeutier. Si une vieille chouette créé un émeutier après le troisième jour, la partie continue pour un jour de plus. »
 
 - <Role ARCHEVEQUE /> / <Role BOUC_EMISSAIRE /> / <Role BOUCHER /> / <Role BUREAUCRATE /> / <Role MAGISTRAT /> / <Role MENDIANT /> / <Role NECROMANT /> / <Role VENGEUR /> / <Role VOLEUR /> : Souvent inutiles dans une partie d’Emeutiers, il est préférable de ne pas les utiliser. Ils n’ont pas de jinx spécifiques et, pour certains, vous pourriez tout à fait les faire fonctionner avec une règle maison mais mieux vaut l’éviter. Les parties avec Emeutiers sont généralement rapides donc il n’y a généralement pas besoin de faire rentrer des Voyageurs plus tard ou de les faire partie plus tôt.
 
