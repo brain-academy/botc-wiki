@@ -58,19 +58,41 @@ Villageois
 
 Etrangers
 
--
+-   <Role HERETIQUE /> et <Role BARON /> : Le Baron ne pourrait ajouter qu’un seul Etranger au lieu de deux.
+
+-   <Role HERETIQUE /> et <Role ESPION /> : Seul un des rôles jinxés peut être en jeu.
+
+-   <Role HERETIQUE /> et <Role PARRAIN /> : Seul un des rôles jinxés peut être en jeu.
+
+-   <Role HERETIQUE /> et <Role SCIENTIFIQUE /> : Le Démon ne peut pas avoir la capacité de l’Hérétique.
+
+-   <Role HERETIQUE /> et <Role VEUVE_NOIRE /> : Une Vieille chouette ne peut pas créer un hérétique.
+
+-   <Role HERETIQUE /> et <Role SANGSUE /> : Si la Sangsue a empoisonné l’Hérétique et que la Sangsue meurt. L’Héretique reste empoisonné.
+
+-   <Role HERETIQUE /> et <Role VIEILLE_CHOUETTE /> : Une Vieille chouette ne peut pas créer un Héretique.
 
 -   <Role OGRE /> et <Role RECLUS /> : Si le Reclus est considéré comme maléfique pour l’Ogre, l’Ogre apprend qu’il est maléfique.
 
+-   <Role MAJORDOME /> et <Role ORGUE_DE_BARBARIE /> : Si l’Orgue de barbarie provoque un vote les yeux fermés, le Majordome peut lever la main pour voter, mais son vote n'est compté que si son maître a également voté.
+
+-   <Role MEDECIN_DE_PESTE  /> et <Role BARON /> : Si le Conteur gagne la capacité du Baron, jusqu'à deux joueurs deviennent des Etrangers qui n'étaient pas en jeu.
+
+-   <Role MEDECIN_DE_PESTE /> et <Role BOOMDANDY /> : Si le Médecin de peste est exécuté et que le Conteur gagnerait la capacité du Boomdandy, la capacité du Boomdandy se déclenche immédiatement.
+
+-   <Role MEDECIN_DE_PESTE /> et <Role CROQUEUSE_D_HOMMES /> : Si le Médecin de peste meurt, un Sbire vivant gagne la capacité de la Croqueuse d'hommes en plus de sa propre capacité et il l'apprend.
+
+-   <Role MEDECIN_DE_PESTE /> et <Role ESPION /> : Si le Médecin de peste meurt, un Sbire vivant gagne la capacité de l'Espion en plus de sa propre capacité et il l'apprend.
+
+-   <Role MEDECIN_DE_PESTE /> et <Role GOBELIN /> : Si le Médecin de meurt, un Sbire vivant gagne la capacité du Gobelin en plus de sa propre capacité et il l'apprend.
+
+-   <Role MEDECIN_DE_PESTE /> et <Role JUMEAU_MALEFIQUE /> : Le Conteur ne peut pas gagner la capacité du Jumeau Maléfique si le Médecin de peste meurt.
+
+-   <Role MEDECIN_DE_PESTE /> et <Role MARIONNETTE /> : Si le Démon a un voisin vivant qui est Villageois ou Etranger quand le Médecin de peste meurt, ce joueur devient une Marionnette maléfique. S'il y a déjà un joueur devenu maléfique, ceci ne se produit pas.
+
+-   <Role MEDECIN_DE_PESTE /> et <Role PROPHETE_DE_L_EFFROI /> : Si le Médecin de peste meurt, un Sbire vivant gagne la capacité du Prophète de l'effroi en plus de sa propre capacité et il l'apprend.
+
 Sbires
-
--   <Role BARON /> et <Role HERETIQUE /> : Le Baron ne pourrait ajouter qu’un seul Etranger au lieu de deux.
-
--   <Role BARON  /> et <Role MEDECIN_DE_PESTE /> : Si le Conteur gagne la capacité du Baron, jusqu'à deux joueurs deviennent des Etrangers qui n'étaient pas en jeu.
-
--   <Role BOOMDANDY /> et <Role MEDECIN_DE_PESTE /> : Si le Médecin de peste est exécuté et que le Conteur gagnerait la capacité du Boomdandy, la capacité du Boomdandy se déclenche immédiatement.
-
--   <Role CROQUEUSE_D_HOMMES /> et <Role MEDECIN_DE_PESTE /> : Si le Médecin de peste meurt, un Sbire vivant gagne la capacité de la Croqueuse d'hommes en plus de sa propre capacité et il l'apprend.
 
 -   <Role ESPION /> et <Role ALCHIMISTE /> : L’Alchimiste ne peut pas avoir la capacité de l’Espion.
 
@@ -78,17 +100,9 @@ Sbires
 
 -   <Role ESPION /> et <Role DEMOISELLE /> : Si l’Espion est (ou a été en jeu) alors la Demoiselle est empoisonnée.
 
--   <Role ESPION /> et <Role HERETIQUE /> : Seul un des rôles jinxés peut être en jeu.
-
 -   <Role ESPION /> et <Role MAGICIEN /> : Quand l’Espion voit le Grimoire, les jetons de rôles du Magicien et du Démon sont retirés.
 
--   <Role ESPION /> et <Role MEDECIN_DE_PESTE /> : Si le Médecin de peste meurt, un Sbire vivant gagne la capacité de l'Espion en plus de sa propre capacité et il l'apprend.
-
 -   <Role ESPION /> et <Role OGRE /> : L'Espion est considéré comme maléfique pour l'Ogre.
-
--   <Role GOBELIN /> et <Role MANIPULATEUR /> : Le Manipulateur peut choisir de rendre un joueur fou d’être Gobelin.
-
--   <Role GOBELIN /> et <Role MEDECIN_DE_PESTE /> : Si le Médecin de meurt, un Sbire vivant gagne la capacité du Gobelin en plus de sa propre capacité et il l'apprend.
 
 -   <Role INVOCATEUR /> et <Role ALCHIMISTE /> : S’il y a un Alchimiste invocateur en jeu, la partie commence avec un Démon en jeu comme d’habitude. Si l’Alchimiste invocateur choisi un joueur, il transforme ce joueur en Démon mais sans changer son alignement.
 
@@ -97,8 +111,6 @@ Sbires
 -   <Role INVOCATEUR /> et <Role CHAPELIER /> : L’Invocateur ne peut pas créer un Démon déjà en jeu. Si l’Invocateur créé un Démon qui n’est pas en jeu, les morts de cette nuit sont arbitraires.
 
 -   <Role INVOCATEUR /> et <Role CULTIVATEUR_DE_PAVOT /> : Si le Cultivateur de pavot est vivant lorsque l’invocateur agit, celui-ci choisit le type de Démon mais le Conteur choisit le joueur.
-
--   <Role INVOCATEUR /> et <Role EMEUTIER /> : Si l’Invocateur créé un Emeutier, tous les Sbires deviennent Emeutiers.
 
 -   <Role INVOCATEUR /> et <Role HORLOGER /> : Si l’invocateur est en jeu, l’Horloger ne reçoit pas sont information tant qu’un Démon n’est pas créé.
 
@@ -120,7 +132,7 @@ Sbires
 
 -   <Role INVOCATEUR /> et <Role ZOMBUUL /> : Si l’Invocateur choisit un joueur mort pour être le Zombuul, le Conteur traite ce joueur comme un Zombuul qui est a déjà utilisé sa première vie.
 
--   <Role JUMEAU_MALEFIQUE /> et <Role MEDECIN_DE_PESTE /> : Le Conteur ne peut pas gagner la capacité du Jumeau Maléfique si le Médecin de peste meurt.
+-   <Role MANIPULATEUR /> et <Role GOBELIN /> : Le Manipulateur peut choisir de rendre un joueur fou d’être Gobelin.
 
 -   <Role MARIONNETTE /> et <Role AERONAUTE /> : Si la Marionnette pense être l’aéronaute, 1 Etranger a pu être ajouté.
 
@@ -132,23 +144,13 @@ Sbires
 
 -   <Role MARIONNETTE /> et <Role DEMOISELLE /> :  La Marionnette ne sait pas qu’il y a une Demoiselle en jeu.
 
--   <Role MARIONNETTE /> et <Role MEDECIN_DE_PESTE /> : Si le Démon a un voisin vivant qui est Villageois ou Etranger quand le Médecin de peste meurt, ce joueur devient une Marionnette maléfique. S'il y a déjà un joueur devenu maléfique, ceci ne se produit pas.
-
 -   <Role MARIONNETTE /> et <Role P_TIT_MONSTRE /> : La Marionnette est voisine d’un Sbire et non du Démon. La Marionnette n’est pas réveillée pour choisir qui garde le P'tit monstre et n’apprend pas qu’elle est <Role MARIONNETTE /> si elle garde le P'tit monstre.
-
--   <Role ORGUE_DE_BARBARIE /> et <Role MAJORDOME /> : Si l’Orgue de barbarie provoque un vote les yeux fermés, le Majordome peut lever la main pour voter, mais son vote n'est compté que si son maître a également voté.
-
--   <Role PARRAIN /> et <Role HERETIQUE /> : Seul un des rôles jinxés peut être en jeu.
-
--   <Role PROPHETE_DE_L_EFFROI /> et <Role MEDECIN_DE_PESTE /> : Si le Médecin de peste meurt, un Sbire vivant gagne la capacité du Prophète de l'effroi en plus de sa propre capacité et il l'apprend.
 
 -   <Role SCIENTIFIQUE /> et <Role ALCHIMISTE /> : Si un Alchimiste a la capacité du Scientifique, l’Alchimiste n’apprend pas la capacité que le Démon reçoit.
 
 -   <Role SCIENTIFIQUE /> et <Role BRUTE /> : Si le Démon a la capacité de la Brute, il ne peut pas passer gentil grâce à sa capacité.
 
 -   <Role SCIENTIFIQUE /> et <Role DULCINEE /> : S’il y a un jeton de libre, le Scientifique peut donner au Démon la capacité d’Idiot du village.: Quand le Démon meurt, quelqu’un (idéalement un joueur gentil) est ivre tant que le Scientifique a sa capacité.
-
--   <Role SCIENTIFIQUE /> et <Role HERETIQUE /> : Le Démon ne peut pas avoir la capacité de l’Hérétique.
 
 -   <Role SCIENTIFIQUE /> et <Role IDIOT_DU_VILLAGE /> : S’il y a un jeton de libre, le Scientifique peut donner au Démon la capacité d’Idiot du village.
 
@@ -164,10 +166,6 @@ Sbires
 
 -   <Role VEUVE_NOIRE /> et <Role DEMOISELLE /> : Si la Veuve noire est (ou a été en jeu) alors la Demoiselle est empoisonnée.
 
--   <Role VEUVE_NOIRE /> et <Role ESPION /> : Si l’Alchimiste a la capacité de l’Espion, il ne voit pas le Grimoire et le véritable Espion ne peut pas être mal considéré.
-
--   <Role VEUVE_NOIRE /> et <Role HERETIQUE /> : Seul un des rôles jinxés peut être en jeu.
-
 -   <Role VEUVE_NOIRE /> et <Role MAGICIEN /> : Quand la Veuve noire voit le Grimoire, les jetons de rôles du Magicien et du Démon sont retirés.
 
 -   <Role VIEILLE_CHOUETTE /> et <Role BRUTE /> : Si la Vieille chouette transforme un maléfique en Brute, elle ne peut pas redevenir gentille grâce à sa capacité.
@@ -175,8 +173,6 @@ Sbires
 -   <Role VIEILLE_CHOUETTE /> et <Role CHEF_DE_SECTE /> : Si la Vieille chouette transforme un maléfique en Chef de Secte, il ne peut pas redevenir gentil grâce à sa capacité.
 
 -   <Role VIEILLE_CHOUETTE /> et <Role DEMOISELLE /> : Si la Vieille chouette créé une Demoiselle, le Conteur choisi de quel joueur il s’agit.
-
--   <Role VIEILLE_CHOUETTE /> et <Role HERETIQUE /> : Une Vieille chouette ne peut pas créer un Héretique.
 
 -   <Role VIEILLE_CHOUETTE /> et <Role IDIOT_DU_VILLAGE /> : S'il y a un jeton de rôle de disponible, la Vieille chouette peut créer un Idiot du village supplémentaire. Si c'est le cas, l'Idiot du village ivre pourrait changer.
 
@@ -289,8 +285,6 @@ Démons
 -   <Role SANGSUE /> et <Role CONSPIRATEUR /> : Si le Conspirateur est en vie et que l’hôte de la Sangsue est exécuté, la Sangsue vie mais perd sa capacité.
 
 -   <Role SANGSUE /> et <Role MERCENAIRE /> : Si le Mercenaire tire sur l’hôte de la Sangsue, l’hôte meurt.
-
--   <Role SANGSUE /> et <Role HERETIQUE /> : Si la Sangsue a empoisonné l’Hérétique et que la Sangsue meurt. L’Héretique reste empoisonné.
 
 -   <Role VORTOX /> et <Role BANSHEE /> : Si le Vortox est en jeu et que le Démon tue la Banshee, les joueurs apprennent toujours que la Banshee est morte.
 
