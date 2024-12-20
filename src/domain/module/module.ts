@@ -6,5 +6,6 @@ export default interface Module extends BotcEntity {
     summary?: string
     description?: string
     fabled?: string
+    gameplay?: string
     detail?: string
 }

@@ -27,7 +27,7 @@ const Module = ({page, tile, module, ...other}: ModuleProps) => {
 		if (!module) throw Error(`The module ${moduleName} does not seem to exist. Could there be a typo in the name ?`)
 	}
 
-	let {iconPath, fabled, detail, roles, path, name, description}: M & MarkdownDocument & Iconised = Iconised(MarkdownDocument({_base_url, _base_image_path, ...module}))
+	let {iconPath, fabled, gameplay, detail, roles, path, name, description}: M & MarkdownDocument & Iconised = Iconised(MarkdownDocument({_base_url, _base_image_path, ...module}))
 	iconPath = useBaseUrl(iconPath)
 	path = useBaseUrl(path)
 	const {color}: Theme = (module as M & {theme: Theme}).theme || {color: ''}
@@ -38,9 +38,13 @@ const Module = ({page, tile, module, ...other}: ModuleProps) => {
 				hasImage &&
 				<div style={{width: '100%', textAlign: 'center'}}><img style={{width: '300px', height: '300px'}} src={iconPath} onError={() => setHasImage(false)} /></div>
 			}
-			{(fabled || detail) && <p style={{whiteSpace: 'pre-line', textAlign: 'justify', textJustify: 'inter-word', fontStyle: 'italic', fontSize: 'large', color}}>
-				<label>"</label>{fabled || detail}<label>"</label>
-			</p>}
+			{fabled && (<p style={{whiteSpace: 'pre-line', textAlign: 'justify', textJustify: 'inter-word', fontStyle: 'italic', fontSize: 'large', color}}>
+				<label>"</label>{fabled}<label>"</label>
+			</p>)}
+			{gameplay && (
+            <p style={{ whiteSpace: 'pre-line', textAlign: 'justify', textJustify: 'inter-word', fontSize: 'medium', color: 'gray' }}>
+                {gameplay}
+            </p>)}
 			{
 				Object.keys(RoleType)
 					.filter(isNaN as any)
@@ -56,6 +60,11 @@ const Module = ({page, tile, module, ...other}: ModuleProps) => {
 						</React.Fragment>
 					))
 			}
+			{detail && (
+            <p style={{ whiteSpace: 'pre-line', textAlign: 'justify', textJustify: 'inter-word', fontSize: 'medium', color: 'gray' }}>
+                {detail}
+            </p>
+        )}
 		</div>
 	else if (!!tile)
 		return <div css={{width: '100%', maxWidth: '400px', marginBottom: '20px', textAlign: 'center'}}>
@@ -78,8 +87,8 @@ const Module = ({page, tile, module, ...other}: ModuleProps) => {
 Modules.TROUBLE_BREWING.theme = {color: 'red'}
 Modules.BAD_MOON_RISING.theme = {color: 'orange'}
 Modules.SECTS_AND_VIOLETS.theme = {color: 'darkorchid'}
-Modules.DEADLY_PENANCE_DAY.theme = {color: 'blue'}
-Modules.LARGELY_UN_FAIRE.theme = {color: 'green'}
+Modules.DEADLY_PENANCE_DAY.theme = {color: 'grey'}
+Modules.LARGELY_UN_FAIRE.theme = {color: 'grey'}
 Modules['EXPERIMENTAL'].theme = {color: 'yellow'}
 
 export default Module
