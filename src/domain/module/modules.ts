@@ -209,7 +209,7 @@ export const Modules: {
     
         Pour ajouter encore plus de confusion, les étrangers vont probablement mentir sur leur identité pendant toute la partie et peut être même que certains villageois feront la même chose. Un étranger qui meurt peut causer de terribles désavantages au village alors les démons avisés voudront souvent les tuer dès que possible.
     
-        Les maléfiques voudront tuer ou retirer la menace des villageois les plus dangereux le plus vite possible. Le démon ne peut tuer qu’une fois par nuit mais les sbires comme la vieille_chouette, la sorcière ou le manipulateur peuvent réellement aider à amaigrir les rangs des gentils si les sbires sont intelligents. Les maléfiques devront aussi réfléchir à donner de vraies ou de fausses informations au village puisque celui-ci pourrait renverser cette information en fonction du typé dé démon qu’ils pense en jeu.
+        Les maléfiques voudront tuer ou retirer la menace des villageois les plus dangereux le plus vite possible. Le démon ne peut tuer qu’une fois par nuit mais les sbires comme la vieille_chouette, la sorcière ou le manipulateur peuvent réellement aider à amaigrir les rangs des gentils si les sbires sont intelligents. Les maléfiques devront aussi réfléchir à donner de vraies ou de fausses informations au village puisque celui-ci pourrait renverser cette information en fonction du type de démon qu’ils pense en jeu.
         
         `,
         detail:`
