@@ -568,6 +568,11 @@
       "originalName": "Boffin",
       "wakeUpSchedule": "FIRST_NIGHT"
     },
+    "SORCIER": {
+      "name": "Sorcier",
+      "filename": "sorcier",
+      "originalName": "Wizard"
+    },
     "SORCIERE": {
       "name": "Sorcière",
       "filename": "sorciere",
