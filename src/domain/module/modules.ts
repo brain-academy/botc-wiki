@@ -201,7 +201,7 @@ export const Modules: {
         gameplay: `
         Sects & Violets est le plus fou des trois scripts de bases. Les gentils reçoivent des informations extraordinaires chaque nuit. Toutefois, les maléfiques sont très variés et menaçants et peuvent jeter une grande confusion sur le village. Les joueurs peuvent changer d’alignement ou de rôle. Les maléfiques peuvent perdre de la trace de qui est qui. C’est aussi la première apparition de la folie qui peut venir bloquer l’avancée de l’enquête. 
     
-        Intermédiaire. Recommandé pour les joueurs qui veulent jouer fort et de faon inattendue en repoussant les limites de ce qui peut se faire dans un jeu à identité caché. 
+        Intermédiaire. Recommandé pour les joueurs qui veulent jouer fort et de façon inattendue en repoussant les limites de ce qui peut se faire dans un jeu à identité caché. 
    
         Quand vous jouez à Sects & Violets…
     
