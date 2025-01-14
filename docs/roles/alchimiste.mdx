@@ -66,9 +66,9 @@ L’Alchimiste a cette capacité de Sbire. Il l’utilise comme s’il était Sb
 
 Bien qu’il ait une capacité de Sbire, l’Alchimiste reste un Villageois donc les détections d’alignement ou de rôle délecteront bien un Alchimiste Villageois gentil. Les choses qui affectent les Sbires, n’affectent pas l’Alchimiste. Il n’est évidemment pas impliqué dans la phase d’informations de Sbire et de Démon.
 
-Fonctionnellement, l’Alchimiste doit être traité comme “ayant la capacité d’un Sbire” plutôt qu’un « Sbire ». Donc, s’il y a un Apprenti, l’Alchimiste et lui ne peuvent pas avoir la même capacité.  Ils ne se bloquent pas en mettant une capacité de Sbire en jeu. 
+Fonctionnellement, l’Alchimiste doit être traité comme “ayant la capacité d’un Sbire” plutôt qu’un « Sbire ». S’il y a un Apprenti, l’Alchimiste et lui peuvent avoir la même capacité.
 
-Notez que l’Alchimiste a sa capacité à la préparation de la partie. C’est là que vous déciderez de la capacité de l’Alchimiste donc les capacités [entre crochets] des Sbires sont à appliquer. Par exemple ; un Alchimiste Baron ou Parrain modifiera le compte d’Etranger, etc…
+Notez que l’Alchimiste a sa capacité à la préparation de la partie. C’est là que vous déciderez de la capacité de l’Alchimiste donc les capacités [entre crochets] des Sbires sont à appliquer. Par exemple, un Alchimiste Baron ou Parrain modifiera le compte d’Etranger, etc…
 
 La place de l’Alchimiste dans la nuit doit être ajusté à la volée par le Conteur en fonction de sa capacité. Sa place dans la première nuit est pour couvrir le cas où il a la capacité de l’empoisonneur car il doit être capable d’empoisonner en premier. S’il gagne une autre capacité de Sbire, sa place dans l’ordre de nuit doit être ajustée pour qu’il aussi vulnérable à l’ivresse ou l’empoisonnement que s’il était le véritable Sbire. 
 
@@ -76,7 +76,7 @@ Si un Alchimiste meurt puis est ressuscité ou s’il échange de rôle ; la cap
 
 Si l’Alchimiste est ivre/empoisonné la première nuit, il peut (mais ce n’est pas obligatoire) apprendre une capacité différente de celle qu’il a réellement acquise. Tant qu’il est ivre ou empoisonné, il devrait être réveillé comme s’il avait cette capacité. S’il ne commence pas ivre/empoisonné mais qu’il le devient plus tard dans la partie, il est plus facile de lui laisser croire qu’il a toujours la capacité qui lui a été indiquée mais ne plus la faire fonctionner. Il est toutefois légal de lui qu’il a maintenant une autre capacité de Sbire si c’est faisable (voir interaction avec la vieille chouette ci-dessous).
 
-Dans une partie avec Vortox, l’Alchimiste apprendra une capacité qui est en jeu. Savoir quel Sbire n’est pas en jeu est traité comme une information et devra donc être falsifié.  Toutefois, il sera réveillé pour faire les choix en fonction de la capacité qu’il a réellement, pas celle qui lui a été indiqué donc il pourrait être capable de comprendre ce qu’il s’est passé. 
+Dans une partie avec Vortox, l’Alchimiste apprendra une capacité qu'il n'a pas. Cela est traité comme une information et devra donc être falsifié.  Toutefois, il sera réveillé pour faire les choix en fonction de la capacité qu’il a réellement, pas celle qui lui a été indiqué donc il pourrait être capable de comprendre ce qu’il s’est passé. 
 
 **Interactions notables**
 
@@ -90,9 +90,9 @@ Dans une partie avec Vortox, l’Alchimiste apprendra une capacité qui est en j
 
 - <Role INVOCATEUR /> : Jinx - "S’il y a un Alchimiste Invocateur en jeu, la partie commence avec un Démon en jeu comme d’habitude. Si l’Alchimiste Invocateur choisi un joueur, il transforme ce joueur en Démon mais sans changer son alignement."
 
-- <Role JUMEAU_MALEFIQUE /> : Le jumeau d’alignement oppose sera un maléfique. Si le gentil Alchimiste Jumeau maléfique est exécuté, les maléfiques gagnent.
+- <Role JUMEAU_MALEFIQUE /> : Le jumeau d’alignement opposé sera un maléfique. Si le gentil Alchimiste Jumeau maléfique est exécuté, les maléfiques gagnent.
 
-- <Role PROPHETE_DE_L_EFFROI /> : l’annonce est la même que pour un véritable Prophète de l’effroi. « Le Prophète de l’effroi a choisi… »
+- <Role PROPHETE_DE_L_EFFROI /> : L’annonce est la même que pour un véritable Prophète de l’effroi. « Le Prophète de l’effroi a choisi… »
 
 - <Role MANIPULATEUR /> : Pas de différence entre un Manipulateur et un Alchimiste Manipulateur pour la folie. On lui montre toujours le jeton de rôle du Manipulateur et le jeton du rôle pour lequel il est manipulé.
 
@@ -104,8 +104,6 @@ Dans une partie avec Vortox, l’Alchimiste apprendra une capacité qui est en j
 
 - <Role VIEILLE_CHOUETTE /> : Si la Vielle chouette créé un Sbire dont l’Alchimiste avait déjà la capacité, l’Alchimiste changera de capacité s’il y a toujours une capacité de Sbire qui n’est pas en jeu. S’il n’y en a plus, l’Alchimiste peut garder sa capacité ou en prendre une autre déjà en jeu. Si l’Alchimiste change de capacité, il doit l’apprendre. Il est recommandé de montrer le jeton d’information « Tu es », puis le jeton de rôle de l’Alchimiste puis le jeton de rôle du Sbire.
 
-- <Role LEGION /> : L’Alchimiste ne peut pas avoir la capacité de Légion. La légion n’est pas considérée comme Sbire jusqu’à ce qu’elle soit en jeu.
-
-- <Role P_TIT_MONSTRE /> : Si le P’tit monstre est jeu et que, par conséquent, il n’y a pas de capacité de Sbires qui ne sont pas en jeu, ce n’est pas la fin du monde si l’Alchimiste duplique une capacité déjà en jeu. Mais il est préférable de s’assurer qu’il y a au moins 5 Sbires sur un script qui inclue l’Alchimiste et le P’tit monstre pour éviter ce scénario. L’Alchimiste n’est pas un Sbire donc ne se réveille pas pour choisir qui garde le P’tit monstre.
+- <Role LEGION /> : L’Alchimiste ne peut pas avoir la capacité de Légion. La Légion n’est pas considérée comme Sbire jusqu’à ce qu’elle soit en jeu.
 
 - <Role APPRENTI /> : Peut obtenir la capacité de l’Alchimiste et donc obtenir une capacité de Sbire en étant gentil.
