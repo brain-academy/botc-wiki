@@ -136,10 +136,10 @@
       "wakeUpSchedule": "EVERY_NIGHT"
     },
     "ENFANT_DE_CHOEUR": {
-      "name": "Enfant de choeur",
+      "name": "Enfant de chœur",
       "filename": "enfant-de-choeur",
       "originalName": "Choirboy",
-      "wakeUpSchedule": "Si le roi est tué par le démon"
+      "wakeUpSchedule": "Si le Roi est tué par le Démon"
     },
     "ENQUETEUR": {
       "name": "Enquêteur",
@@ -262,13 +262,13 @@
       "wakeUpSchedule": "EVERY_NIGHT"
     },
     "MATHEMATICIEN": {
-      "name": "Mathematicien",
+      "name": "Mathématicien",
       "originalName": "Mathematician",
       "wakeUpSchedule": "EVERY_NIGHT"
     },
     "MENESTREL": {
       "name": "Ménestrel",
-      "filename": "menestrel",
+      "filename": "Ménestrel",
       "originalName": "Minstrel",
       "clazz": "DETECTION"
     },
@@ -519,7 +519,7 @@
     "INVOCATEUR": {
       "name": "Invocateur",
       "originalName": "Summoner",
-      "wakeUpSchedule": "Première nuit pour les bluffs et troisième nuit pour choisir un démon"
+      "wakeUpSchedule": "Première nuit pour les bluffs et troisième nuit pour choisir un Démon"
     },
     "JUMEAU_MALEFIQUE": {
       "name": "Jumeau Maléfique",
@@ -550,7 +550,7 @@
     "PARRAIN": {
       "name": "Parrain",
       "originalName": "Godfather",
-      "wakeUpSchedule": "La première nuit, puis quand un étranger meurt de jour"
+      "wakeUpSchedule": "La première nuit, puis quand un Etranger meurt de jour"
     },
     "PROPHETE_DE_L_EFFROI": {
       "name": "Prophète de l'effroi",
@@ -701,7 +701,7 @@
   },
   "VOYAGEUR": {
     "BOUC_EMISSAIRE": {
-      "name": "Bouc Emissaire",
+      "name": "Bouc émissaire",
       "filename": "bouc-emissaire",
       "originalName": "Scapegoat"
     },
