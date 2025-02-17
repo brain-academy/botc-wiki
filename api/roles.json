@@ -269,7 +269,7 @@
     },
     "MENESTREL": {
       "name": "Ménestrel",
-      "filename": "Menestrel",
+      "filename": "menestrel",
       "originalName": "Minstrel",
       "clazz": "DETECTION"
     },
