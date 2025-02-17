@@ -263,12 +263,13 @@
     },
     "MATHEMATICIEN": {
       "name": "Mathématicien",
+      "filename": "mathematicien",
       "originalName": "Mathematician",
       "wakeUpSchedule": "EVERY_NIGHT"
     },
     "MENESTREL": {
       "name": "Ménestrel",
-      "filename": "Ménestrel",
+      "filename": "Menestrel",
       "originalName": "Minstrel",
       "clazz": "DETECTION"
     },
