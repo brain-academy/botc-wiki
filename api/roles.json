@@ -4,7 +4,7 @@
       "name": "Acrobate",
       "originalName": "Acrobat",
       "clazz": "DETECTION",
-      "wakeUpSchedule": "EVERY_NIGHT"
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
     "AERONAUTE": {
       "name": "Aéronaute",
