@@ -2,7 +2,9 @@
   "VILLAGEOIS": {
     "ACROBATE": {
       "name": "Acrobate",
-      "originalName": "Acrobat"
+      "originalName": "Acrobat",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "EVERY_NIGHT"
     },
     "AERONAUTE": {
       "name": "Aéronaute",
@@ -62,7 +64,7 @@
       "filename": "charmeur-de-serpent",
       "originalName": "Snake Charmer",
       "clazz": "DETECTION",
-      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+      "wakeUpSchedule": "EVERY_NIGHT"
     },
     "CHASSEUR": {
       "name": "Chasseur",
@@ -163,7 +165,7 @@
       "filename": "femme-de-chambre",
       "originalName": "Chambermaid",
       "clazz": "DETECTION",
-      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+      "wakeUpSchedule": "EVERY_NIGHT"
     },
     "FERMIER": {
       "name": "Fermier",
@@ -230,7 +232,7 @@
       "name": "Jongleur",
       "originalName": "Juggler",
       "clazz": "DETECTION",
-      "wakeUpSchedule": "Uniquement la seconde nuit"
+      "wakeUpSchedule": "Uniquement sa seconde nuit"
     },
     "LAVANDIERE": {
       "name": "Lavandière",
@@ -248,7 +250,10 @@
       "name": "Magicien",
       "originalName": "Magician"
     },
-    "MAIRE": { "name": "Maire", "originalName": "Mayor" },
+    "MAIRE": {
+       "name": "Maire", 
+       "originalName": "Mayor" 
+    },
     "MAMIE": {
       "name": "Mamie",
       "originalName": "Grandmother",
@@ -318,7 +323,7 @@
     "PREDICATEUR": {
       "name": "Predicateur",
       "originalName": "Preacher",
-      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+      "wakeUpSchedule": "EVERY_NIGHT"
     },
     "PROFESSEUR": {
       "name": "Professeur",
@@ -338,13 +343,13 @@
     "ROI": {
       "name": "Roi",
       "originalName": "King",
-      "wakeUpSchedule": "Si le nombre de mort est strictement supérieur au nombre de vivants"
+      "wakeUpSchedule": "Si le nombre de mort est supérieur ou égal au nombre de vivants"
     },
     "SAGE": {
       "name": "Sage",
       "originalName": "Sage",
       "clazz": "DETECTION",
-      "wakeUpSchedule": "Lorsqu\"il est assassiné par le Démon"
+      "wakeUpSchedule": "Lorsqu\"il est tué par le Démon"
     },
     "SAVANT": {
       "name": "Savant",
@@ -409,7 +414,10 @@
       "name": "Gitane",
       "originalName": "Moonchild"
     },
-    "GOLEM": { "name": "Golem", "originalName": "Golem" },
+    "GOLEM": {
+       "name": "Golem",
+      "originalName": "Golem"
+    },
     "HERETIQUE": {
       "name": "Hérétique",
       "filename": "heretique",
@@ -445,7 +453,8 @@
     },
     "OGRE": {
       "name": "Ogre",
-      "originalName": "Ogre"
+      "originalName": "Ogre",
+      "wakeUpSchedule": "FIRST_NIGHT"
     },
     "POLITICIEN": {
       "name": "Politicien",
@@ -484,7 +493,10 @@
       "clazz": "PROTECTION",
       "wakeUpSchedule": "EVERY_NIGHT"
     },
-    "BARON": { "name": "Baron", "originalName": "Baron" },
+    "BARON": { 
+      "name": "Baron", 
+      "originalName": "Baron" 
+    },
     "BOOMDANDY": {
       "name": "Boomdandy",
       "originalName": "Boomdandy"
@@ -546,7 +558,8 @@
     "ORGUE_DE_BARBARIE": {
       "name": "Orgue de barbarie",
       "filename": "orgue-de-barbarie",
-      "originalName": "Organ Grinder"
+      "originalName": "Organ Grinder",
+      "wakeUpSchedule": "EVERY_NIGHT"
     },
     "PARRAIN": {
       "name": "Parrain",
@@ -592,7 +605,10 @@
       "originalName": "Pit-Hag",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
-    "VIZIR": { "name": "Vizir", "originalName": "Vizier" },
+    "VIZIR": { 
+      "name": "Vizir", 
+      "originalName": "Vizier"
+    },
     "XAAN": {
       "name": "Xaan",
       "originalName": "Xaan"
@@ -666,7 +682,7 @@
     "SHABALOTH": {
       "name": "Shabaloth",
       "originalName": "Shabaloth",
-      "wakeUpSchedule": "EVERY_NIGHT"
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
     "P_TIT_MONSTRE": {
       "name": "P'tit Monstre",
