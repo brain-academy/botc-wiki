@@ -11,13 +11,31 @@ import Role from '/src/components/role.component'
 
 Chaque nuit*, choisissez un joueur. S'il est ou devient ivre ou empoisonné, vous mourez.
 
-L’Acrobate meurt si le joueur qu'il choisit est ivre ou empoisonné.
+L’Acrobate meurt s'il trouve un joueur ivre ou empoisonné.
+
+-   Chaque nuit, sauf la première, l'Acrobate choisit un joueur. Si le joueur choisi est sobre et sain, rien ne se passe. Si le joueur choisi est ivre ou empoisonné, l'Acrobate meurt.
+
+-    Si l'Acrobate est ivre ou empoisonné, il ne peut pas mourir de sa capacité.
+
+-    L'Acrobate peut choisir n'importe quel joueur, mort ou vivant, y compris lui même.
+
+-    Si le joueur choisi est sobre et sain au moment du choix de l'Acrobate mais devient ivre ou empoisonné plus tard cette nuit, l'Acrobate meurt.
+
+-   L'Acrobate n'apprend pas si le joueur qu'il a choisi est ivre, empoisonné ou les deux.
+
+### Exemples
+
+> Le <Role MARIN /> choisit l'Assassin et le Conteur rend le <Role MARIN /> ivre. L'Acrobate choisit le <Role MARIN /> et meurt car le <Role MARIN /> est ivre.
+
+> L'Acrobate choisit l'<Role INVENTEUR /> qui est sobre et sain. Rien ne se passe.
+
+> L'Acrobate choisit le <Role PREDICATEUR />. Plus tard cette nuit, le <Role PUKKA /> choisit le <Role PREDICATEUR />. L'Acrobate meurt car le <Role PREDICATEUR /> n'est plus sain.
 
 ### Comment conter?
 
-Chaque nuit, sauf la première, réveillez l'Acrobate. L'Acrobate désigne un joueur. Rendormez l'Acrobate. Marquez le joueur "Choisi" avec le jeton de rappel.
+Chaque nuit, sauf la première, réveillez l'Acrobate. Il désigne un joueur. Rendormez l'Acrobate.
 
-Si le joueur choisi est ivre ou empoisonné à n'importe quel moment durant la nuit, l'Acrobate meurt. Marquez l'Acrobate avec le jeton de rappel "mort"et ajoutez le linceul.
+Si le joueur désigné est ivre ou empoisonné à n'importe quel moment durant la nuit, l'Acrobate meurt. Marquez l'Acrobate avec le jeton de rappel "mort" et ajoutez le linceul.
 
 _Du point de vue de l'Acrobate, le <Role SOULARD /> est considéré comme ivre._
 
