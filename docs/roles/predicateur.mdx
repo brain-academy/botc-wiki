@@ -11,13 +11,25 @@ import Role from '/src/components/role.component'
 
 Chaque nuit, choisissez un joueur : si c’est un Sbire, il l'apprend. Tous les Sbires choisis n'ont plus de capacité.
 
-Le Prédicateur choisit un joueur. Si un Sbire est choisi, il l’apprend. Tous les Sbires choisis n’ont plus de capacités. 
+Le prédicateur neutralise les capacités des Sbires.
+
+-	Si le Prédicateur choisit un Sbire, ce Sbire est réveillé pour apprendre qu’il a été prédiqué et ne peuvent donc plus agir tant que le Prédicateur est vie, sobre et sain.
+
+-	Si le Prédicateur choisit un joueur qui n’est pas Sbire, rien ne se passe.
+
+-	Le Prédicateur peut choisir des joueurs morts.
+
+-	Si le Prédicateur est ivre ou empoisonné au moment où il choisit un joueur, ce joueur n’est pas affecté par la capacité du Prédicateur.
+
+-	Si le Prédicateur devient ivre ou empoisonné, les Sbires prédiqués regagnent leurs capacités jusqu’à ce que le Prédicateur redevienne sobre et sain. 
 
 ### Exemples
 
-> La première nuit, le Prédicateur choisit le <Role PROPHETE_DE_L_EFFROI />. Celui-ci perd sa capacité et apprend avoir été choisi par le Prédicateur. La seconde nuit, le Prédicateur choisit le <Role MERCENAIRE />. Rien ne se passe car le <Role MERCENAIRE /> n’est pas un Sbire. La troisième nuit, le Prédicateur choisit le <Role PO />. Rien ne se passe car le <Role PO /> n’est pas un Sbire. La quatrième nuit, le Prédicateur choisit l’<Role EMPOISONNEUR />. L’<Role EMPOISONNEUR /> perd sa capacité et apprend avoir été choisi par le Prédicateur. 
+> Le Prédicateur désigne Alex qui est l’<Role INGENIEUR />. Rien ne se passe.
 
-> Le Prédicateur a précédemment choisi l’<Role ESPION />, le <Role VERTUEUX />, le <Role SOULARD /> et le <Role GOBELIN />. L’<Role ESPION /> et le <Role GOBELIN /> n’ont pas de capacité donc l’<Role ESPION /> ne voit pas le Grimoire chaque nuit et le <Role GOBELIN /> ne gagne pas à être exécuté. Le Prédicateur devient ivre. L’<Role ESPION /> et le <Role GOBELIN /> retrouvent leurs capacités. L’<Role ESPION /> voit le Grimoire cette nuit-là et le <Role GOBELIN /> gagnera s’il est exécuté. Le Prédicateur redevient sobre donc l’<Role ESPION /> et le <Role GOBELIN /> perdent à nouveau leurs capacités. L’<Role ESPION /> meurt. Le Prédicateur meurt. Le <Role GOBELIN /> retrouve sa capacité mais pas l’<Role ESPION /> car il est mort. 
+> Le Prédicateur désigne Pras qui est le <Role MANIPULATEUR />. Pras se réveille est apprend qu’il a été prédiqué et n’est pas réveillé pour utiliser sa capacité.
+
+> Arnaud est le Prédicateur. Il désigne Tifaine qui est la <Role VIEILLE_CHOUETTE />. Tifaine se réveille et apprend qu’elle a été prédiquée et n’est pas réveillée pour utiliser sa capacité. La nuit suivant, l’Empoisonneur désigne Arnaud. Arnaud est maintenant empoisonné donc Tifaine se réveille pour utiliser sa capacité.
 
 ### Mécaniques et conseils
 
@@ -55,17 +67,17 @@ Le Prédicateur choisit un joueur. Si un Sbire est choisi, il l’apprend. Tous 
 
 ### Comment conter ?
 
-Chaque nuit, réveillez le Prédicateur et faites-lui choisir un joueur. S’il choisit un Sbire, mettre un jeton de rappel « prédiqué » devon le jeton de rôle du Sbire. Rendormez le Prédicateur. Si cela s’applique, réveillez le Sbire choisi et montrez-lui le jeton d’informations « ce rôle t’a choisi » puis le jeton de rôle du Prédicateur. Rendormez le Sbire.
+Chaque nuit, réveillez le Prédicateur. Il désigne un joueur. Rendormez le Prédicateur. S’il choisit un Sbire, mettre un jeton de rappel « Capacité perdue » devant le jeton de rôle du Sbire. Réveillez le Sbire choisi et montrez-lui le jeton d’informations « ce rôle t’a choisi » puis le jeton de rôle du Prédicateur. Rendormez le Sbire.
 
-A partir de maintenant, ce Sbire n’a pas de capacité. S’il doit normalement se réveiller pour faire un choix, une action ou apprendre une information grâce à sa capacité, elle ne se réveillera plus. Si sa capacité devait avoir un effet sur la partie, cet effet ne sera pas appliqué.
+Tous les Sbires marqués « Capacité perdue » n’ont plus de capacités tant que le Prédicateur est vivant sobre et sain.
 
-Si le Prédicateur meurt, retirez tous les jetons de rappel « prédiqué » des Sbires affectés. Les Sbires regagnent leur capacité. Les Sbires avec des capacités du type « une fois par partie » ne peuvent pas s’en resservir. Les Sbires réaffectés ne sont pas informés que le Prédicateur est mort mais pourraient être capables de le deviner au moment où ils se réveillent à nouveau pour utiliser leur capacité.
+**Compléments conteur**
 
-Si un Prédicateur est rendu ivre ou empoisonné, les Sbires qui avaient perdus leur capacité à cause du Prédicateur la regagne mais la reperd à nouveau quand le prédicteur devient sobre et sain.
+Lorsque les Sbires regagnent leurs capacités, celles avec des capacités du type « une fois par partie » ne peuvent pas s’en resservir. Les Sbires ne sont pas informés que le Prédicateur est mort mais pourraient être capables de le deviner au moment où ils se réveillent à nouveau pour utiliser leur capacité.
 
-Si un Sbire qui a été choisi par le Prédicateur devient ensuite un rôle d’un autre type (pas un Sbire) il n’est plus affecté par la capacité du Prédicateur. Retirez le jeton de rappel « Prédiqué ». Les maléfiques ne sont pas affectés par le Prédicateur car ils sont maléfiques mais pace qu’ils sont spécifiquement Sbires.
+Si un Sbire qui a été choisi par le Prédicateur devient ensuite un rôle d’un autre type (pas un Sbire) il n’est plus affecté par la capacité du Prédicateur. Retirez le jeton de rappel « Capacité perdue ». Les maléfiques ne sont pas affectés par le Prédicateur car ils sont maléfiques mais pace qu’ils sont spécifiquement Sbires.
 
-Dans la même veine, un non-Sbire qui devient un Sbire ensuite n’est pas affecté par le Prédicateur si celui-ci l’a choisi avant qu’il soit un Sbire. Si le Prédicateur le choisit à nouveau, après que ce joueur soit devenu un Sbire, la capacité du Prédicateur fonctionne normalement.
+Dans la même veine, un non-Sbire qui devient un Sbire ensuite n’est pas affecté par le Prédi-cateur si celui-ci l’a choisi avant qu’il soit un Sbire. Si le Prédicateur le choisit à nouveau, après que ce joueur soit devenu un Sbire, la capacité du Prédicateur fonctionne normale-ment.
 
 Si un Sbire prédiqué meurt puis est ressuscité, il ne regagne pas sa capacité, il est toujours prédiqué tant que le Prédicateur est en vie.
 
