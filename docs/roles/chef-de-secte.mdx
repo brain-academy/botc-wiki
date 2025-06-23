@@ -11,13 +11,25 @@ import Role from '/src/components/role.component'
 
 Chaque nuit, vous prenez l'alignement d'un de vos voisins vivant. Si tous les gentils votent pour rejoindre votre secte, votre équipe gagne.
 
-Le Chef de secte convainc les autres de rejoindre sa secte pour finir la partie. Mais quelle équipe va gagner?
+Le Chef de secte gagne si tout le monde rejoint sa secte.
+
+–	A la fin de chaque nuit, le Chef de secte prend l'alignement d'un de ses voisins vivants.
+
+–	Une fois par jour, le Chef de secte peut publiquement choisir de former une secte. Si tous les joueurs gentils votent pour rejoindre la secte, la partie se termine immédiatement et l’équipe du Chef de secte gagne.
+
+–	Le Chef de secte peut appeler à former la secte à n’importe quel moment de la journée.
+
+–	Voter pour rejoindre la secte ne nécessite pas d’avoir un jeton de vote.
+
+–	Les joueurs peuvent bluffer être le Chef de secte et donc pouvoir prétendre vouloir former la secte.
 
 ### Exemples
 
-> Le Chef de secte est voisin du <Role FERMIER /> et du <Role MAGICIEN />. La première nuit, le Chef de secte reste gentil. Le <Role MAGICIEN /> est exécuté et meurt et les nouveaux voisins du Chef de secte sont le <Role FERMIER /> et la <Role MARIONNETTE />. Le Conteur décide de passer le Chef de secte maléfiques. La nuit suivante, même si les voisins du Chef de secte sont toujours le <Role FERMIER /> et la <Role MARIONNETTE />, le Conteur décide de repasser le Chef de secte gentil.
+> Le troisième jour, le gentil Chef de secte a pour voisins vivants, le gentil Crieur et le Gobelin maléfique. Le Chef de secte demande à former sa secte et tous les joueurs gentils lèvent la main pour le rejoindre. La partie se termine et le Village gagne !
 
-> Le Chef de secte est maléfique. Le Chef de secte demande à tous les joueurs de rejoindre sa secte. Tous les maléfiques lèvent leur main pour la rejoindre mais seulement la moitié des joueurs gentils le font. Rien ne se passe. La nuit, le Chef de secte repasse gentil. Le jour suivant, le Chef de secte demande à tous les joueurs de rejoindre sa secte. Aucun des joueurs maléfiques ne lèvent la main mais tous les joueurs gentils le font. La partie se termine et le village gagne car le Chef de secte est gentil.
+> Le Chef de secte est voisin du No Dashii. Le deuxième jour, le Chef de secte essaye de former sa secte. Tous les joueurs lèvent la main mais la secte n’est pas formée car le Chef de secte est empoisonné.
+
+> Les voisins vivants du Chef de secte sont l’Empoisonneur maléfique et la gentille Voyante. L’empoisonneur choisit le Chef de secte et le Kazali tue la Voyante. Les voisins vivants du Chef de secte sont maintenant l’Empoisonneur maléfique et le Sorcier maléfique. Bien que les deux voisins du Chef de secte soient maléfique, il ne devient pas maléfique car il ne peut pas changer d’alignement tant qu’il est empoisonné.
 
 ### Mécaniques et conseils
 
@@ -65,7 +77,13 @@ Le Chef de secte convainc les autres de rejoindre sa secte pour finir la partie.
 
 ### Comment conter
 
-Les appels à la secte ne sont pas censés être gérées comme des votes. Tout le monde lève sa main simultanément ou non et le Conteur doit faire un décompte de 3 à 0. A la fin du décompte, le Conteur demande un gel pour évaluer si la secte est formée ou non. Si certains joueurs lèvent la main après les 3 secondes ce n’est pas pris en compte.
+Chaque nuit, mettez le jeton de rôle du chef de secte à l’endroit (si ses deux voisins vivants sont gentils) ou tourner le vers le bas (si ses deux voisins vivants sont maléfiques) ou au choix (si l’un des voisins vivants est gentil et l’autre maléfique). Si le Chef de secte change d’alignement, réveillez-le et faites-lui un pouce vers le haut ou vers le bas selon son alignement puis rendormez-le. Si l’alignement du Chef de secte n’a pas changé, ne le réveillez pas.
+
+Durant la journée, le Chef de secte peut déclarer vouloir utiliser sa capacité. Si tel est le cas, entrez dans le cercle et procédez à un vote de la même façon que pour un exil. Si tous les joueurs gentils lèvent la main, déclarer quelle équipe a gagné. Si tous les joueurs gentils n’ont pas levé la main. Rien ne se passe.
+
+**Compléments conteur**
+
+Il est indiqué qu’on peut procéder comme pour les exils et le livret de règle indique qu’on doit procéder aux exils comme on procède au vote. Cela étant, les exils, et donc les appels à la secte peuvent également se faire de la manière suivante : Le Conteur entre dans le cercle et demande aux joueurs souhaitant rejoindre la secte de lever la main. Le Conteur peut faire un décompte à la suite duquel les changements ne sont plus possibles. 
 
 - <Role SCIENTIFIQUE />  : Jinx - "Si le Démon a la capacité du Chef de Secte, il ne peut pas devenir gentil à cause de cette capacité.3
 
