@@ -1,0 +1,88 @@
+---
+title: Professeur
+---
+
+import Module from '/src/components/module.component'
+import Role from '/src/components/role.component'
+
+<Role PROFESSEUR header />
+
+### Description
+
+Lors de votre 1er jour, si vous nominez et exécutez un joueur, le Démon ne tue pas cette nuit.
+
+La Princesse décidé quel joueur meurt en premier.
+
+–	Pour que la capacité de la Princesse fonctionne, le joueur que la Princesse nomine doit être celui qui est exécuté. Les joueurs exécutés mais nominés par un autre ne compte pas.
+
+–	Le joueur exécuté n'a pas à mourir pour que la capacité de la Princesse fonctionne. Les exils ne comptent pas pour la capacité de la Princesse.
+
+–	Si la Princesse est ivre ou empoisonnée la journée mais sobre et saine la nuit, elle empêche le Démon de tuer. Si la Princesse est sobre et saine durant la journée mais ivre ou empoisonnée la nuit, elle n’empêche rien.
+
+–	La nuit, les morts autres que celles du Démon se passent normalement.
+
+–	La nuit, le Démon choisit toujours qui il veut tuer mais sa cible ne meurt pas. Les autres parties de la capacité du Démon comme l'empoisonnement ou la production de fausses informations, etc… se passent normalement.
+
+–	La Princesse n'a pas à nominer lors de son premier jour.
+
+–	Si une Princesse est créée en milieu de partie et qu'elle nomine ou exécute un joueur lors de son 1er jour, le Démon ne tuera pas la nuit suivante.
+
+### Exemples
+
+> La Princesse nomine le <Role PREDICATEUR />. Le <Role PREDICATEUR /> est exécuté et meurt. Cette nuit, le <Role VORTOX /> choisit la <Role PIXIE /> qui ne meurt pas. Le <Role CRIEUR /> apprend qu'un Sbire a nominé aujourd'hui ce qui est une fausse information à cause du <Role VORTOX />.
+
+> La quatrième nuit, la <Role VIEILLE_CHOUETTE /> change le <Role REVEUR /> en Princesse. Ce jour-là, la Princesse nomine le <Role ZELOTE /> qui est exécuté. Cette nuit, le <Role KAZALI /> choisit la Princesse qui ne meurt pas.
+
+### Comment conter?
+
+Si la Princesse nomine et exécute un joueur, marquez le Démon avec le rappel « Pas de mort » de la Princesse.
+
+Cette nuit, si le Démon se réveillait pour choisir un joueur, réveillez-le comme d'habitude. Le Démon ne provoquera pas de mort.
+
+**Interaction notables**
+
+- <Role ALCHIMISTE /> : Si l'Alchimiste a une capacité qui peut tuer, l'Alchimiste peut tuer la nuit où la capacité de la Princesse est déclenchée.
+
+- <Role AUBERGISTE /> / <Role MARIN /> / <Role MENESTREL /> / <Role DULCINEE /> / <Role EMPOISONNEUR /> / <Role XAAN /> : Si la Princesse est ivre ou empoisonnée durant la journée mais sobre et saine la nuit, sa capacité fonctionne toujours. Si la Princesse est sobre durant la journée mais ivre ou empoisonnée la nuit, sa capacité ne se déclenchera pas et le Démon pourra tuer.
+
+- <Role BANSHEE /> /<Role ENFANT_DE_CHOEUR /> / <Role SAGE /> : Ne peut pas utiliser sa capacité lors d'une nuit où la capacité de la Princesse est active car ils ne peuvent pas être tués pas le Démon.
+
+- <Role CANNIBALE /> : Jinx "Si le Cannibale nomine et exécute la Princesse, le Démon ne tue pas cette nuit."
+
+- <Role CHARMEUR_DE_SERPENT /> / <Role INGENIEUR /> / <Role BARBIER /> / <Role CHAPELIER /> : Si le Démon change de rôle, la capacité de la Princesse reste active et empêche le Démon de tuer. Si la Princesse change de rôle, c'est considéré comme une nouvelle itération de la capacité de la Princesse et le prochain jour est considéré comme le 1er jour de la Princesse.
+
+- <Role CHASSEUR /> : Si le Chasseur transforme la Demoiselle en Princesse et que la Demoiselle, devenue Princesse, nomine et exécute un joueur, le Démon ne tuera pas cette nuit.
+
+- <Role FAUSSAIRE /> : Si le Faussaire gagne la capacité de la Princesse et qu'il nomine et exécute un joueur le jour où il a pris la capacité de la Princesse, le Démon ne tuera pas cette nuit.
+
+- <Role FEMME_DE_CHAMBRE /> : La Princesse ne se réveille jamais à cause de sa capacité.
+
+- <Role HERBORISTE /> / <Role PACIFISTE /> / <Role AVOCAT_DU_DIABLE /> : Si le joueur nominé et exécuté par la Princesse survit à l'exécution, le Démon ne tue pas cette nuit.
+
+- <Role MAMIE /> : La Mamie ne peut pas mourir de sa capacité si la capacité de la Princesse s'est déclenchée.
+
+- <Role MATHEMATICIEN /> : Si la capacité de la Princesse empêche le Démon de tuer, cela compte pour le Mathématicien.
+
+- <Role PIXIE />: Si la Pixie gagne la capacité de la Princesse et qu'elle nomine et exécute un joueur le jour où elle a gagné cette capacité, le Démon ne tuera pas cette nuit. La Pixie n'apprend pas si elle a gagné la capacité de la Princesse.
+
+- <Role PROFESSEUR /> / <Role SHABALOTH /> : Si la Princesse est réssuscité, cela est considéré comme une nouvelle itération de la capacité de la Princesse. Donc si la Princesse nomine et exécuté un joueur ce jour, le Démon ne tuera pas ce jour.
+
+- <Role PUCELLE /> / <Role BETE_DE_FOIRE /> / <Role CERENOVUS /> : Si la Princesse nomine un joueur qui est ensuite exécuté pour n'importe quelle raison, le Conteur peut considérer que cela satisfait la condition de la Princesse de nominer et d'exécuter ce joueur.
+
+- <Role BRUTE /> : Si la Princesse nomine et exécute la brute lors de son 1er jour, la capacité de la Princesse se déclenche cette nuit. Si le Démon est le 1er joueur à choisir la Brute lors d'une nuit où la capacité de la Brute est active, la Brute prend l'alignement du Démon.
+
+- <Role GITANE /> : Si la capacité de la Gitane se déclenche après les morts du Démon. Donc si la Gitane est exécutée et choisit la gentille Princesse, la Princesse empêche toujours le Démon de tuer avant qu'elle ne meurt de la capacité de la Gitane.
+
+- <Role PARRAIN /> : Obtient toujours la possibilité de tuer pendant une nuit où la capacité de la Princesse est active.
+
+- <Role VIEILLE_CHOUETTE />: Si la Vieille chouette créer un nouveau Démon, les morts de la nuit sont arbitraires et la capacité de la Princesse n'a pas d'effets.
+
+- <Role VIZIR /> : Si le Vizir force l'exécution du joueur nominé par la Princesse, cela déclenche bien sa capacité.
+
+- <Role AL_HADIKHIA /> : Jinx - "Si la Princesse nomine et exécute un joueur lors de son 1er jour, personne ne meurt de la capacité de l'Al-Hadikhia cette nuit." (Même si les trois joueurs son en vie après les choix.)
+
+- <Role FANG_GU /> : Le Fang Gu ne peut pas se transférer lors d'une nut où la capacité de la Princesse est active car il ne peut pas tuer d'Etranger pour cela.
+
+- <Role PUKKA />: Si la Princesse nomine et exécute un joueur lors de son 1er jour, le Pukka choisit un joueur qui sera empoisonné cette nuit. Le joueur précédemment empoisonné ne peut pas mourir mais il redevient sain. Si le Pukka empoisonne la Princesse lors de cette nuit, la capacité de la Princesse est désactivée à temps pour que le joueur précédemment choisi meurt.
+
+- <Role YAGGABLABLA /> : Peut toujours tuer en prononçant sa phrase durant la journée après une nuit où la capacité de la Princesse était active mais ne peut pas tuer cette nuit.

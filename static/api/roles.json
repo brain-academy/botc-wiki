@@ -315,6 +315,10 @@
       "filename": "pecheur",
       "originalName": "Fisherman"
     },
+    "PRINCESSE": {
+      "name": "Princesse",
+      "originalName": "Princess"
+    },
     "PIXIE": {
       "name": "Pixie",
       "originalName": "Pixie",
@@ -412,7 +416,8 @@
     },
     "ERMITE": {
       "name": "Ermite",
-      "originalName": "Hermit"
+      "originalName": "Hermit",
+      "wakeUpSchedule": "Identique auaux rôles copiés"
     },
     "GITANE": {
       "name": "Gitane",
