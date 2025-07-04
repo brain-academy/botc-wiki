@@ -596,6 +596,12 @@
       "filename": "sorcier",
       "originalName": "Wizard"
     },
+    "SPECTRE": {
+      "name": "Spectre",
+      "filename": "spectre",
+      "originalName": "Wraith",
+      "wakeUpSchedule": "En même temps que les autres maléfiques"
+    },
     "SORCIERE": {
       "name": "Sorcière",
       "filename": "sorciere",
