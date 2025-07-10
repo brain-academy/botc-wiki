@@ -75,11 +75,54 @@ Si le Spectre perd sa capacité alors qu’il est vivant, indiquez-lui en privé
 
 _Règle optionnelle_ : Une fois par partie, un joueur qui est fou que vous soyez le Spectre meurt._
 
+**Compléments conteur**
+
+**Accessibilité**
+
+En développant le Spectre, TPI a voulu s’assurer que le rôle reste accessible aux joueurs avec des déficiences visuelles. Beaucoup de tests ont étés faits en Australie pour cela.
+
+Si un joueur avec une déficiance visuelle est le Spectre :
+
+-   Le Spectre devrait utiliser un lecteur d'écran pour communiquer avec le Conteur.
+
+-   Durant la nuit, après avoir réveillé un joueur, le Conteur devrait lui envoyer un SMS expliquant ce qu'il a fait (par exemple, Alex a pointé Ben du doigt, Aurélie a appris un 1, etc.).
+
+-   Si le joueur est très expérimenté, les messages peuvent être très courts (par exemple, « Aurélie 1 » au lieu de « Aurélie a appris un 1 »). L'utilisation de raccourcis permet d'accélérer la phase nocturne et d'éviter que les autres joueurs ne remarquent que le Spectre a besoin d'aménagements spécifiques.
+
+-   Lorsqu'un autre joueur maléfique se réveille, le Conteur devrait lui remettre son téléphone afin que le Spectre puisse communiquer avec son coéquipier par SMS. Lorsque le Conteur endort le joueur, il ne doit pas oublier de récupérer son téléphone !
+
+Si un joueur malvoyant est maléfique avec un Spectre dans son équipe :
+
+-   Le Spectre devrait utiliser un lecteur d'écran pour communiquer avec ses coéquipiers maléfiques.
+
+-   Le Conteur devrait tendre son téléphone au Spectre lorsque le joueur malvoyant se réveille, afin que le Spectre puisse communiquer directement avec son coéquipier.
+
+Quand un autre joueur envoie un message à un joueur malvoyant, il devrait préciser qu'il s'agit d'une nouvelle personne. Par exemple : le Conteur donne son téléphone à l'Empoisonneur. Ce dernier dit : « Salut, c'est Sam. Tu as vu si Alex s'est réveillé la nuit dernière ?» Le Conteur reprend le téléphone et dit : « C'est encore le Conteur !» avant de poursuivre la phase nocturne.
 
 **Interaction notables**
 
-- <Role ALCHIMISTE />  : Jinx "Si l’Alchimiste a la capacité du Spectre, il ne l’a pas et il y a un Spectre en jeu. Chaque jour, après la phase d’exécution, l’Alchimiste vivant peut deviner publiquement quel joueur vivant est le Spectre. Si c’est correct, le Démon doit choisir le Spectre cette nuit."
+- <Role ALCHIMISTE /> : Jinx "Si l’Alchimiste a la capacité du Spectre, il ne l’a pas et il y a un Spectre en jeu. Chaque jour, après la phase d’exécution, l’Alchimiste vivant peut deviner publiquement quel joueur vivant est le Spectre. Si c’est correct, le Démon doit choisir le Spectre cette nuit."
+
+- <Role CHARMEUR_DE_SERPENT /> : Si le Charmeur de serpent devient le Démon, le Spectre se réveille avec le nouveau Démon maléfique.
+
+- <Role CHASSEUR_DE_PRIMES /> : Le Spectre se réveille quand le Villageois maléfique se réveille.
+
+- <Role CHEF_DE_SECTE /> : Si le Chef de secte devient maléfique, le Spectre se réveille avec lui quand il l’apprend. Si le Chef de secte devient gentil, le Spectre ne se réveille pas avec le Chef de secte.
+
+- <Role CULTIVATEUR_DE_PAVOT /> : Pas de jinx ! Comme le Spectre se réveille seulement quand les autres maléfiques le font et qu’il n’y a pas de phase d’informations des Sbires et d’information du Démon dans une partie avec un Cultivateur de pavot, le Spectre aura des difficultés à identifier ses équipiers maléfiques en premier lieu, plus particulièrement si les autres maléfiques ne se réveillent pas la nuit. Et si tous les autres maléfiques se réveillent la nuit tôt dans la partie, le Cultivateur de pavot peut identifier que les maléfiques ont l’air particulièrement synchronisés et en déduire des choses sur les rôles maléfiques en jeu. 
+
+- <Role FEMME_DE_CHAMBRE /> : Le Spectre se réveille quand les autres maléfiques se réveillent. Donc, si le Spectre a des équipiers vivants qui se réveillent, cela comptera pour 1 pour la Femme de chambre. Si le Spectre n’a pas d’équipiers vivants qui se réveillent et que le conteur ne croit pas que le Spectre a ouvert ses yeux d’une autre manière, il peut choisir de donner 0 à la Femme de chambre.
+
+- <Role LYCANTHROPE /> : Le Spectre ne se réveille pas avec la fausse patte.
 
 - <Role MAGICIEN /> : Jinx "Chaque jour, après la phase d’exécution, le Magicien vivant peut deviner publiquement quel joueur vivant est le Spectre. Si c’est correct, le Démon doit choisir le Spectre cette nuit."
 
 - <Role MARIONNETTE /> : Jinx "Le Spectre ne se réveille pas avec la Marionnette."
+
+- <Role MATHEMATICIEN /> : Si le Spectre est incapable de se réveiller la nuit car il est ivre ou empoisonné ou incapacité par un autre rôle, cela comptera pour 1 pour le Mathématicien.
+
+- <Role MEDECIN_DE_PESTE /> : Jinx "Si le Médecin de peste meurt, un Sbire vivant gagne la capacité du Spectre en plus de sa propre capacité et il l’apprend."
+
+- <Role MENESTREL /> : Si un Sbire est exécuté alors qu’il y a un Ménestrel vivant, sobre et sain, réveillez le Spectre immédiatement pour l’informer qu’il n’a pas de capacité. Quand le Spectre redevient sobre et sain, réveillez-le pour l’informer qu’il a à nouveau sa capacité.
+
+- <Role ORGUE_DE_BARBARIE /> : Malheureusement, le Spectre ne peut pas officiellement ouvrir ses yeux pendant un vote altéré par l’Orgue de Barbarie. (Cela dit, vous pouvez faire une règle maison pour cela. Nos yeux sont fermés cette nuit…)
