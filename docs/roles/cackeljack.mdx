@@ -1,0 +1,40 @@
+---
+title: Cacklejack
+---
+
+import Module from '/src/components/module.component'
+import Role from '/src/components/role.component'
+
+<Role CACKLEJACK header />
+
+### Description
+
+Chaque jour, choisissez un joueur. Un autre joueur change de rôle cette nuit.
+
+Le Cacklejack provoque des changements de rôles chaotique.
+
+-	Le Conteur choisit un joueur qui va changer de rôle chaque nuit. Ce joueur peut être gentil ou maléfique, vivant ou mort.
+
+-	Le Conteur choisit aussi quel rôle ce joueur devient. Cela peut être un rôle qui n’est pas encore en jeu ou déjà en jeu.
+
+-	Chaque jour, le Cacklejack choisit un joueur qui est immunisé. Le Conteur doit choisir pour cette nuit de changer le rôle d’un joueur différent de celui choisi par le Cacklejack.
+
+-	Le Cacklejack peut choisir publiquement ou en privé mais il doit choisir pendant la journée.
+
+-	A chaque fois qu’un joueur change de rôle, cela est considéré comme une nouvelle instance du rôle. Par exemple, si un joueur devient le Cuistot pendant la nuit 3, il apprend immédiatement combien de paires de joueurs maléfiques sont assis côte à côte. 
+
+### Exemples
+
+> Durant la journée, le Cacklejack choisit Jonathan. Pendant la nuit qui suit, Déborah change de rôle. Elle passe d’<Role ACROBATE /> à <Role HORLOGER />. Déborah apprend « 2 ».
+
+> Durant la journée, le Cacklejack choisit Alex. Pendant la nuit qui suit, Côme change de rôle. Il passe de <Role SOULARD /> à <Role FLEURISTE />. Côme n’apprend pas qu’il est maintenant sobre.
+
+> Durant la journée, le Cacklejack choisit Mohamed. Pendant la nuit qui suit, Simon change de rôle. Il passe du <Role LEVIATHAN /> au <Role SHABALOTH />. Simon s’en amuse.
+
+### Comment conter
+
+Chaque jour, le Cacklejack choisit un joueur. Marquez-le avec le rappel « Pas moi ».
+
+Chaque nuit, sauf la première, remplacez n’importe quel jeton de rôle d’un joueur par un jeton de rôle différent. Réveillez ce joueur. Montrez-lui le jeton d’information « Tu es » et le jeton de son nouveau rôle. Rendormez ce joueur.
+
+_Rappelez vous que l’ordre de nuit est juste un guide. Le changement dû au Cacklejack peut intervenir à tout moment de la nuit si nécessaire._

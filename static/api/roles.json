@@ -803,6 +803,10 @@
       "originalName": "Harlot",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
+    "CACKLEJACK": {
+      "name": "Cacklejack",
+      "originalName": "Cacklejack"
+    },      
     "GANGSTER": {
       "name": "Gangster",
       "originalName": "Gangster"
@@ -810,6 +814,6 @@
     "GNOME": {
       "name": "Gnome",
       "originalName": "Gnome"
-    } 
+    }   
   }
 }
