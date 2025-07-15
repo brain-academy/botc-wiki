@@ -5,7 +5,7 @@ module.exports = {
     baseUrl: '/botc-wiki/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/brain-academy-logo.jpg',
+    favicon: 'img/brain-academy-logo.png',
     organizationName: 'brain-academy', // Usually your GitHub org/user name.
     projectName: 'botc-wiki', // Usually your repo name.
     trailingSlash: true,
@@ -23,7 +23,7 @@ module.exports = {
             title: 'Brain Academy',
             logo: {
                 alt: 'Brain Academy logo',
-                src: 'img/brain-academy-logo.jpg',
+                src: 'img/brain-academy-logo.png',
             },
             hideOnScroll: true,
             items: [
