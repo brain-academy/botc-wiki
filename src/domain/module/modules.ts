@@ -58,6 +58,8 @@ export const Modules: {
             
             Module débutant. Recommandé pour les nouveaux joueurs et les nouveaux Conteurs de Blood on the Clocktower ou qui ne sont pas familier des jeux à identité cachée.
             
+            En jouant à Trouble Brewing…
+
             Les gentils devront trouver qui est gentil et qui est maléfique en utilisant leur logique et leur intuition. Certains personnages voudront révéler leur rôle et leurs informations immédiatement (comme le Cuistot et l'Enquêteur) pendant que d'autres voudront mentir sur leur identité pour que le Démon évite de les attaquer (comme le Croque-mort ou la Voyante). Certains mentiront sur leur rôle pour que le Démon les attaques (comme le Gardien ou le Soldat) !
             
             D'autres rôles de Villageois obtienne de l'information en faisant quelque chose et en observant son effet. Sacrifier la vie d'un joueur en le faisant nominer une Pucelle, tenter de tuer un Imp en tant que Mercenaire et en observant ce qu'il se passe où tuer délibérément des gentils pour que le Croque-mort puisse confirmer leur identité. Ce sont toutes des façons de sacrifier la vie et sa capacité pour obtenir de l'information et arriver à la victoire.
