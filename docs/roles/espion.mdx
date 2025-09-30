@@ -11,72 +11,80 @@ import Role from '/src/components/role.component'
 
 Chaque nuit, regardez le Grimoire. Vous pouvez être considéré comme Gentil et comme Villageois ou Etranger, même si vous êtes mort.
 
-L’Espion sait le rôle de tout le monde. Il passe pour gentil alors qu’il est en réalité maléfique. Il voit aussi le Grimoire donc le rôle et le statut de chaque joueur.
+L’Espion peut apparaître comme Gentil mais est en réalité Maléfique. Il voit aussi le Grimoire et donc il connaît le rôle (et le statut) de tout le monde.
 
--	Si un rôle a une capacité qui détecterait ou affecterait un joueur gentil, alors l’Espion pourrait être considéré comme un rôle gentil. Si un rôle a une capacité qui détecte les Villageois et les Etrangers, alors l’Espion pourrait être considéré comme un Villageois spécifique ou un Etranger spécifique. Ceci est à la discrétion du Conteur de voir comment l’Espion est considéré. Il est peut-être considéré de plusieurs rôles ou alignements différents au cours de la même nuit.
+-	Si un rôle a une capacité qui détecte ou affecte un joueur Gentil, alors l’Espion pourrait être considéré auprès de lui comme un rôle Gentil. Si un rôle a une capacité qui détecte les Villageois et les Etrangers, alors l’Espion pourrait être considéré comme un Villageois spécifique ou un Etranger spécifique. Ceci est à la discrétion du Conteur, de voir comment l’Espion est considéré. Il peut être considéré comme plusieurs rôles ou alignements différents au cours de la même nuit.
 
--	Un Espion qui est considéré comme un Villageois ou Etranger n’a pas la capacité de ce Villageois ou de cet Etranger. Par exemple, un Espion qui est considéré comme un Mercenaire ne peut pas tuer le Démon en tirant dessus.
+-	Un Espion qui est considéré comme un Villageois ou Etranger n’a pas la capacité de ce Villageois ou de cet Etranger. Par exemple, un Espion qui est considéré comme un Mercenaire ne peut pas tuer le Démon en tirant sur lui.
 
 ### Exemples 
 
-> La <Role LAVANDIERE /> apprend qu’il y a un <Role GARDIEN /> parmi David et Priscilla. David est le <Role MOINE /> et Priscilla est l'Espion vu en tant que <Role GARDIEN />.
+> La <Role LAVANDIERE /> apprend qu’il y a un <Role GARDIEN /> parmi David et Priscilla. David est le <Role MOINE /> et Priscilla est l'Espion, vu en tant que <Role GARDIEN />.
 
 > L'Espion est situé à côté de l’<Role IMP /> et de l’<Role EMPATHIQUE />. Le <Role CUISTOT /> obtient “1” parce que l'Espion est considéré comme Maléfique. Plus tard dans la nuit, l’<Role EMPATHIQUE /> obtient “0” car cette fois, l'Espion est considéré comme Gentil.
 
-> L'Espion nomine la <Role PUCELLE /> et est exécuté par la capacité de la <Role PUCELLE /> : le Conteur a décidé que l'Espion était considéré comme Villageois. La nuit qui suit, le <Role CROQUE_MORT /> apprend que le <Role LAVANDIERE /> est morte aujourd’hui parce que l'Espion est maintenant considéré comme la <Role LAVANDIERE />.
+> L'Espion nomine la <Role PUCELLE /> et est exécuté par la capacité de la <Role PUCELLE /> : le Conteur a décidé que l'Espion était considéré comme Villageois. La nuit qui suit, le <Role CROQUE_MORT /> apprend que la <Role LAVANDIERE /> est morte aujourd’hui, parce que l'Espion est maintenant considéré comme la <Role LAVANDIERE />.
 
 ### Mécaniques et conseils
 
-- Vous commencez la partie en connaissant tout ! Vous verrez tous les joueurs et leurs rôles. Utilisez ces informations pour que les Maléfiques prennent les bons bluff et qu’ils éliminent des cibles prioritaires.
+-Si vous lisez ceci car vous êtes maintenant l’Espion, ce conseil ne vous aidera pas mais si vous êtes sur le point de joue votre première partie, demandez à votre Conteur de vous montrer à quoi ressemble le contenu d’un Grimoire pour être préparé quand il vous réveillera.
 
-- Dans le Grimoire, vous ne verrez pas seulement la composition du Village mais aussi les jetons de rappel utilisés par le Conteur. Cela vous permettra de savoir qui est le <Role SOULARD />, qui a été empoisonné, qui est le faux positif de la <Role VOYANTE />, qui le Démon a tué et sur qui la <Role LAVANDIERE /> / l’<Role ARCHIVISTE /> / l’<Role ENQUETEUR /> ont eu des informations. En résumé, toutes les interactions de nuit. 
+- A condition que votre mémoire soit bonne, vous commencez la partie en connaissant tout ! Vous voyez tous les joueurs et leurs rôles. Utilisez ces informations pour que les Maléfiques prennent les bons bluffs et qu’ils éliminent des cibles prioritaires.
+
+-Il n’est pas nécessaire de tout mémoriser. Quelques éléments importants à retenir peuvent être les suivants :
+	- Un rôle qui n’est pas en jeu, que vous pourrez bluffer (peut-être plus d’un au cas où vous parleriez à un de vos comparse Sbire) et toutes les informations nécessaires pour consolider votre bluff.
+	- Quelques joueurs que votre <Role IMP />  devrait tuer ou votre <Role EMPOISONNEUR />  empoisonner comme le <Role MERCENAIRE />  ou le <Role CROQUE_MORT />.
+	-Tous les jetons de rôles qui vous paraissent important.
+	-Prenez votre temps ! Le Conteur vous montrera le Grimoire aussi longtemps que nécessaire.
+
+- Dans le Grimoire, vous ne verrez pas seulement la composition du Village, mais aussi les jetons de rappel utilisés par le Conteur. Cela vous permettra de savoir qui est le <Role SOULARD />, qui a été empoisonné, qui est le faux positif de la <Role VOYANTE />, qui le Démon a tué, sur qui la <Role LAVANDIERE /> / l’<Role ARCHIVISTE /> / l’<Role ENQUETEUR /> ont eu des informations et l’alignement des Voyageurs. Rappelez-vous que pouvez être considéré comme Gentil pour une <Role LAVANDIERE /> ou un <Role ARCHIVISTE /> ; Si vous voyez cela dans le Grimoire, vous pouvez suivre ce bluff dès le début.
 
 - En connaissant la composition du Village, il vous sera facile de choisir un bon bluff.
 
-- Vous avez aussi accès de suite à des informations qui seraient difficiles à obtenir rapidement en temps normal, notamment les rôles des différents joueurs. Cela vous permettra de bluffer efficacement des rôles tels que la <Role LAVANDIERE />, le <Role CROQUE_MORT /> ou le <Role GARDIEN /> puisque ce sont des rôles qui obtiennent des informations. Gagnez ainsi la confiance des autres joueurs d’autant plus s’ils n’ont pas révélé leur rôle publiquement ou s’ils sont en train de bluffer un autre rôle.
+- Vous avez aussi accès immédiatement à des informations qui seraient difficiles à obtenir rapidement en temps normal, notamment les rôles des différents joueurs. Cela vous permettra de bluffer efficacement des rôles tels que la <Role LAVANDIERE />, le <Role CROQUE_MORT /> ou le <Role GARDIEN /> puisque ce sont des rôles qui obtiennent des informations sur les rôles. Gagnez ainsi la confiance des autres joueurs, d’autant plus s’ils n’ont pas révélé leur rôle publiquement ou s’ils sont en train de bluffer un autre rôle.
 
 - En bluffant l’<Role ARCHIVISTE /> ou l'<Role ENQUETEUR /> et en choisissant de faire passer pour <Role SOULARD /> ou Sbire des rôles importants (<Role EMPATHIQUE />, <Role GARDIEN /> ou <Role MAIRE />), vous pourrez semer le doute sur les informations récoltées par le Village.  
 
-- Bluffez un <Role ARCHIVISTE /> ou un <Role ENQUETEUR /> et choisir de faire passer des rôles importants (<Role EMPATHIQUE />, <Role GARDIEN /> ou <Role MAIRE />) comme <Role SOULARD /> ou Sbire. Cela vous permettra de minimiser les infos de ces rôles, et en tant qu'Espion, vous avez la possibilité de faire ceci avant que ces joueurs ne se révèlent ou fassent passer leurs informations, ce qui augmente votre crédibilité comparé à si un autre Sbire cherchait à faire un bluff du même type.
-
 - Vous pouvez fournir des informations de première importance à votre Démon et aux autres Sbires (tel que l’<Role EMPOISONNEUR />). Cela vous permet de cibler des rôles puissants en début de partie et de les neutraliser avant qu’ils ne posent trop de problèmes à votre équipe. En général, vous allez avoir besoin de nombreuses conversations privées avec vos acolytes pour transmettre vos informations, préparez vous un alibi solide pour expliquer toutes ces messes basses !
 
-- Vous apparaitrez la plupart du temps comme joueur Gentil face aux rôles comme l’<Role EMPATHIQUE />, le <Role CUISTOT /> ou le <Role CROQUE_MORT />. Grâce à cela, vous pourrez facilement gagner leur confiance. Cela fait aussi de vous un bon candidat pour devenir le <Role IMP />. Demandez-lui de starpass (le <Role IMP /> se suicide pour redonner son rôle à un de ses Sbires) lorsque vous serez complètement innoncenté aux yeux du Village.
+- Vous apparaitrez la plupart du temps comme joueur Gentil face aux rôles comme l’<Role EMPATHIQUE />, le <Role CUISTOT /> ou le <Role CROQUE_MORT />. Grâce à cela, vous pourrez facilement gagner leur confiance. Cela fait aussi de vous un bon candidat pour devenir le <Role IMP />. Demandez-lui de starpass (le <Role IMP /> se suicide pour redonner son rôle à un de ses Sbires) lorsque vous serez complètement innocenté aux yeux du Village.
 
-- Vous êtes le seul Maléfique capable d’activer la capacité de la <Role PUCELLE />. Les personnes qui meurent de cette manière sont habituellement celles qui obtiennent le plus de crédit aux yeux du village. En donnant de mauvaises informations et en vous sacrifiant sur la <Role PUCELLE />, clea vous permettra d’être au cœur de l’enquête et d’orienter l’enquête dans le mauvais sens. De la même manière, si vous savez qu’il y a un <Role CROQUE_MORT /> en jeu, laissez-vous exécutez, vous devriez être reconnu comme Gentil et cela les incitera à croire vos informations. La contrepartie étant qu’il ne vous restera qu’un dernier vote. 
+- Vous êtes le seul Maléfique capable d’activer la capacité de la <Role PUCELLE />. Les personnes qui meurent de cette manière sont habituellement celles qui obtiennent le plus de crédit aux yeux du village. En donnant de mauvaises informations et en vous sacrifiant sur la <Role PUCELLE />, cela vous permettra d’être au cœur de l’enquête et d’orienter l’enquête dans le mauvais sens. De la même manière, si vous savez qu’il y a un <Role CROQUE_MORT /> en jeu, laissez-vous exécuter, vous devriez être reconnu comme Gentil et cela les incitera à croire vos informations. La contrepartie étant qu’il ne vous restera qu’un dernier vote. 
 
-- L'Espion est très intéressant pour mettre en place des bluffs à plusieurs. Par exemple, vous vous dévoilez en tant que <Role LAVANDIERE />, <Role ARCHIVISTE /> ou <Role GARDIEN /> et vous confirmez le bluff de votre Démon.
+- L'Espion est très efficace pour mettre en place des bluffs à plusieurs. Par exemple, vous vous dévoilez en tant que <Role LAVANDIERE />, <Role ARCHIVISTE /> ou <Role GARDIEN /> et vous confirmez le bluff de votre Démon (pensez tout de même à l’en informer).
 
-- Vous serez souvent déctecté comme gentil ce qui est génial si vous êtes assis à coté d'un <Role EMPATHIQUE /> ou si un <Role CUISTOT /> est en jeu. Cela servira votre objectif de vous infiltrer parmi les gentils et gagner leur confiance. 
+- Vous serez souvent détecté comme Gentil, ce qui est génial si vous êtes assis à côté d'un <Role EMPATHIQUE /> ou si un <Role CUISTOT /> est en jeu. Cela servira votre objectif de vous infiltrer parmi les Gentils et gagner leur confiance. 
 
-- Vous pouvez aussi passer des informations à vos acolytes de manière publique si vous arrivez à le faire subtilement. Par exemple : “J’ai entendu dire qu’il y avait un <Role MERCENAIRE /> dans la partie mais je ne dirai évidemment pas de qui il s’agit pour le protéger”. Ainsi, John devrait comprendre ce que vous faites et commencera à bluffer le <Role MERCENAIRE />.
+- Vous pouvez aussi passer des informations à vos acolytes de manière publique, si vous arrivez à le faire subtilement. Par exemple : “J’ai entendu dire qu’il y avait un <Role MERCENAIRE /> dans la partie mais je ne dirai évidemment pas de qui il s’agit pour le protéger”. Ainsi, John devrait comprendre ce que vous faites, et commencera à bluffer le <Role MERCENAIRE />.
 
 - Assurez-vous en tant que Maléfique que le Conteur sache quel rôle vous bluffez, cela lui permettra de confirmer votre bluff aux autres joueurs. Par exemple, si vous êtes en train de bluffer <Role MAJORDOME /> et que vous êtes exécuté, le Conteur montrera au <Role CROQUE_MORT /> le jeton du <Role MAJORDOME />.
 
-- Vous n’êtes pas obligés de mémoriser tout le Grimoire la première nuit. Puisque vous le voyez toutes les nuits, mémorisez quelques rôles à chaque fois.
+- Vous n’êtes pas obligé de mémoriser tout le Grimoire la première nuit. Puisque vous le voyez toutes les nuits, mémorisez quelques rôles à chaque fois.
  
 ### Combattre l'Espion
 
 - Il faut commencer par le détecter pour mieux le combattre. Si le Démon tue des rôles importants rapidement, si la <Role VOYANTE /> et le <Role CROQUE_MORT /> meurent dans les premiers et que le <Role GARDIEN /> et le <Role SOLDAT /> ne sont jamais attaqués, il se pourrait bien qu’un Espion soit en jeu.
 
-- Si vous pensez qu’il y a un Espion en jeu, partez du principe que les Maléfiques ont accès à tous les rôles et interactions et qu’il est dans l’intérêt des Gentils de partager publiquement toutes les informations. Cela vous permettra de vous coordonner plus facilement mais aussi de débusquer des Maléfiques par l’intermédiaire de bluffs qui ne tiendraient pas la route.
+- Si vous pensez qu’il y a un Espion en jeu, partez du principe que les Maléfiques ont accès à tous les rôles et interactions et qu’il est dans l’intérêt des Gentils de partager publiquement toutes les informations. Cela vous permettra de vous coordonner plus facilement, mais aussi de débusquer des Maléfiques qui n’étaient pas encore complètement installés dans leur bluffs.
 
 - Faites attention aux interactions entre joueurs, particulièrement celles qui vous paraissent longues (surtout le premier jour) ou répétitives. Un Espion et un Démon ont plus à échanger que des joueurs lambda.
 
-- Si vous êtes la <Role PUCELLE />, le <Role CROQUE_MORT /> ou le <Role GARDIEN />, restez à l’affût des joueurs qui veulent mourir pour qu’on confirme leur identité. Puisque l'Espion peut être vu comme étant bon, il peut avoir envie de s’innocenter de cette manière afin de crédibiliser ses informations qu’il transmettra par la suite.
+- Si vous êtes la <Role PUCELLE />, le <Role CROQUE_MORT /> ou le <Role GARDIEN />, restez à l’affût des joueurs qui veulent mourir pour qu’on confirme leur identité. Puisque l'Espion peut être vu comme étant bon, il peut avoir envie de s’innocenter de cette manière afin de crédibiliser les informations qu’il transmettra par la suite.
 
-- En tant qu'Espion, il est très facile de bluffer des rôles comme la <Role LAVANDIERE /> ou le <Role GARDIEN />. Ces rôles ont besoin de connaître l’identité d’autres joueurs et sont donc plus compliqués à bluffer pour les Maléfiques mais pas pour l'Espion. 
+- En tant qu'Espion, il est très facile de bluffer des rôles comme la <Role LAVANDIERE /> ou le <Role GARDIEN />. Ces rôles ont besoin de connaître l’identité d’autres joueurs et sont donc habituellements plus compliqués à bluffer pour les Maléfiques. Si vous suspectez la présence d’un Espion, gardez un œil sur les joueurs qui prétendent être ces rôles.
 
-- Les rôles de détection comme l’<Role EMPATHIQUE /> ou le <Role CUISTOT /> peuvent avoir des informations qui ne semblent pas être cohérentes ou changeantes. Si c’est le cas, c’est peut être dû à la capacité de l'Espion qui est identifié des fois en tant que Gentil et des fois en tant que Maléfique.
+- Les rôles de détection comme l’<Role EMPATHIQUE /> ou le <Role CUISTOT /> peuvent avoir des informations qui ne semblent pas être cohérentes ou changeantes. Si c’est le cas, c’est peut-être dû à la capacité de l'Espion, qui est identifié parfois en tant que Gentil et parfois en tant que Maléfique.
+
+- L’Espion saura s’il est vu par la <Role LAVANDIERE />  ou l’<Role ARCHIVISTE/>  comme joueur Gentil mais il ne saura pas quel rôle. Si un de ces deux prétend avoir vu un rôle qu’aucune des deux personnes ne prétend être, peut être qu’un Espion a été considéré comme Gentil pour eux. Cela peut être particulièrement impactant si l’<Role ARCHIVISTE /> a vu un Etranger et qu’un des joueurs qu’il a vu prétend être un autre Etranger. Peut-être que l’Espion a saisi une chance sur les quatre et s’est trompé.
 
 - Si le rôle d'Espion est révélé à un <Role CROQUE_MORT /> ou à un <Role GARDIEN />, il est assez probable que ce soit une fausse information donnée par le Conteur : les joueurs doivent essayer de comprendre quelle mécanique est à l’origine de cette information suspecte.
 
-- L’<Role IMP /> aura tendance à se tuer lui-même pour que l'Espion devienne le nouveau Démon (=starpass), surtout si celui-ci s’est complètement innocenté aux yeux du village. Faites attention aux morts de nuit qui, à priori n’ont pas de sens, cela vous permettra de détecter ce genre de manœuvre.
+- L’<Role IMP /> aura tendance à se tuer lui-même pour que l'Espion devienne le nouveau Démon (=starpass), surtout si celui-ci s’est complètement innocenté aux yeux du village. Faites attention aux morts de nuit qui, à priori, n’ont pas de sens ; cela vous permettra de détecter ce genre de manœuvre.
 
 ### Comment conter ?
 
 Chaque nuit, réveillez l’Espion et montrez-lui le Grimoire tant qu’il en a besoin. Rendormez l’Espion.
 
-A chaque fois que l’Espion est visé par une capacité qui détecte ou affecte les gentils, choisissez pour quel rôle et quel alignement est considéré l’Espion. (_Faites ce qui est approprié, tel que montrer un jeton de rôle gentil, faire oui de la tête, donner des chiffres avec vos doigts ou faire fonctionner une capacité qui n’affecte normalement que les gentils, Villageois ou Etranger._)
+A chaque fois que l’Espion est visé par une capacité qui détecte ou affecte les Gentils, choisissez pour quel rôle et quel alignement est considéré l’Espion. (Faites ce qui est approprié, tel que montrer un jeton de rôle gentil, faire oui de la tête, donner des chiffres avec vos doigts ou faire fonctionner une capacité qui n’affecte normalement que les Gentils, Villageois ou Etranger.)
 
-_Rappelez-vous de garder votre Grimoire rangé et à jour et de le montrer à l’Espion avec la bonne orientation pour que l’Espion reconnaisse facilement qui est qui._ 
+Rappelez-vous de garder votre Grimoire rangé et à jour et de le montrer à l’Espion avec la bonne orientation pour que l’Espion reconnaisse facilement qui est qui.
