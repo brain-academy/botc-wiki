@@ -10,7 +10,7 @@ module.exports = {
 		{ type: 'doc', id: 'roles', label: 'Roles' },
 		// { type: 'category', label: 'Roles', items: [ fs.readdirSync('docs/roles/').map(role_file => `roles/${role_file.split('.')[ 0 ]}`) ] },
 		{ type: 'doc', id: 'legendaires', label: 'Légendaires' },
-		{ type: 'doc', id: 'mystiques', label: 'Mystiques' },
+		{ type: 'doc', id: 'mythiques', label: 'Mythiques' },
 		{
 			type: 'category', label: 'Documents', items: [
 				[
