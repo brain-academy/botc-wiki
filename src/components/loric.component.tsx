@@ -4,7 +4,7 @@ import L, {LORIC} from '../domain/loric/loric'
 import {Iconised, MarkdownDocument, Theme} from '../domain/markdown-types'
 import {Tile} from './core/tile.component'
 
-const _base_url = '/docs/mystiques'
+const _base_url = '/docs/mythiques'
 const _base_image_path = '/img/blood-on-the-clocktower/loric/icons'
 
 interface RoleProps {
