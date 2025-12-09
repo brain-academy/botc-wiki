@@ -42,7 +42,7 @@ Villageois
 
 -   <Role ALCHIMISTE /> et <Role CONSPIRATEUR /> : Un Alchimiste-Conspirateur n’a pas la capacité du Conspirateur et le Conspirateur n’est pas en jeu.
 
--   <Role ALCHIMISTE /> et <Role ESPION /> : Si l’Alchimiste a la capacité de l’Espion, il ne l’a pas et il y a un Espion en jeu. Chaque jour, après la phase d’exécution, l’Alchimiste vivant peut deviner publiquement quel joueur vivant est l’Espion. Si c’est correct, le Démon doit choisir l’Espion cette nuit.
+-   <Role ALCHIMISTE /> et <Role ESPION /> : Si l’Alchimiste a la capacité de l’Espion, il ne l’a pas et il y a un Espion en jeu. Après chaque exécution, l’Alchimiste vivant peut deviner publiquement quel joueur vivant est l’Espion. Si c’est correct, le Démon doit choisir l’Espion cette nuit.
 
 -   <Role ALCHIMISTE /> et <Role INVOCATEUR /> : L’Alchimiste Invocateur ne reçoit pas de bluffs et choisis le type de Démon mais pas le joueur. S’il meurt avant que cela n’arrive, les maléfiques gagnent. [Pas de Démon]
 
@@ -52,17 +52,15 @@ Villageois
 
 -   <Role ALCHIMISTE /> et <Role SCIENTIFIQUE /> :  Si l’Alchimiste a la capacité du Scientifique, l’Alchimiste n’apprend pas quel capacité le Démon a obtenue.
 
--   <Role ALCHIMISTE /> et <Role SPECTRE /> : Si l’Alchimiste a la capacité du Spectre, il ne l’a pas et il y a un Spectre en jeu. Chaque jour, après la phase d’exécution, l’Alchimiste vivant peut deviner publiquement quel joueur vivant est le Spectre. Si c’est correct, le Démon doit choisir le Spectre cette nuit.
+-   <Role ALCHIMISTE /> et <Role SPECTRE /> : Si l’Alchimiste a la capacité du Spectre, il ne l’a pas et il y a un Spectre en jeu. Après chaque exécution, l’Alchimiste vivant peut deviner publiquement quel joueur vivant est le Spectre. Si c’est correct, le Démon doit choisir le Spectre cette nuit.
 
--   <Role ALCHIMISTE /> et <Role VEUVE_NOIRE /> : Si l’Alchimiste a la capacité de la Veuve noire, il ne l’a pas et il y a une Veuve noire en jeu. Chaque jour, après la phase d’exécution, l’Alchimiste vivant peut deviner publiquement quel joueur vivant est la Veuve noire. Si c’est correct, le Démon doit choisir la Veuve noire cette nuit.
+-   <Role ALCHIMISTE /> et <Role VEUVE_NOIRE /> : Si l’Alchimiste a la capacité de la Veuve noire, il ne l’a pas et il y a une Veuve noire en jeu. Après chaque exécution, l’Alchimiste vivant peut deviner publiquement quel joueur vivant est la Veuve noire. Si c’est correct, le Démon doit choisir la Veuve noire cette nuit.
 
 -   <Role CHASSEUR_DE_PRIMES /> et <Role FAUSSAIRE /> : Si le Faussaire prend la capacité du Chasseur de primes, un Villageois pourrait passer maléfique.
 
--   <Role CHASSEUR_DE_PRIMES /> et <Role KAZALI /> : Un Villageois maléfique n'est créé que si le Chasseur de primes est encore en jeu après l'action du Kazali.
+-   <Role CHASSEUR_DE_PRIMES /> et <Role KAZALI /> :  Si le Kazali transforme le Chasseur de primes en Sbir, un Villageois maléfique n'est pas créé.
 
--   <Role CANNIBALE /> et <Role CULTIVATEUR_DE_PAVOT /> : Si le Cannibale mange le Cultivateur de pavot, puis meurt ou perd la capacité du Cultivateur de pavot, le Démon et les Sbires se reconnaissent cette nuit.
-
--   <Role CANNIBALE /> et <Role JONGLEUR /> :  Si le Jongleur jongle son premier jour et meurt par exécution, le Cannibale apprend combien de combinaison étaient correctes.
+-   <Role CANNIBALE /> et <Role JONGLEUR /> :  Si le Jongleur jongle son premier jour et meurt par exécution, le Cannibale vivant apprend combien de combinaison du Jongleur étaient correctes.
 
 -   <Role CANNIBALE /> et <Role MAJORDOME /> : Si le Cannibale gagne la capacité du Majordome, il l’apprend.
 
@@ -72,93 +70,95 @@ Villageois
 
 -   <Role MAGICIEN /> et <Role ESPION /> : Quand l’Espion voit le Grimoire, les jetons de rôles du Magicien et du Démon sont retirés.
 
--   <Role MAGICIEN /> et <Role SPECTRE /> : Chaque jour, après la phase d’exécution, le Magicien vivant peut deviner publiquement quel joueur vivant est le Spectre. Si c’est correct, le Démon doit choisir le Spectre cette nuit.
+-   <Role MAGICIEN /> et <Role MARIONNETTE /> : Si le Magicien est vivant, le Démon ne sait pas lequel de ses voisins est la Marionnette.
+
+-   <Role MAGICIEN /> et <Role SPECTRE /> : Après chaque exécution, le Magicien vivant peut deviner publiquement quel joueur vivant est le Spectre. Si c’est correct, le Démon doit choisir le Spectre cette nuit.
 
 -   <Role MAGICIEN /> et <Role VEUVE_NOIRE /> : Quand la Veuve noire voit le Grimoire, les jetons de rôles du Magicien et du Démon sont retirés.
 
--   <Role MAGICIEN /> et <Role VIZIR /> : Si le Vizir et le Magicien sont tous les deux en jeu, le Démon n’apprend pas qui sont ses Sbires. 
+-   <Role MAGICIEN /> et <Role VIZIR /> : Si le Vizir est en jeu, le Magicien n'a pas de capacité mais est immunisé contre la capacité du Vizir.
 
--   <Role MAGICIEN /> et <Role P_TIT_MONSTRE /> : Chaque nuit, le Magicien choisit un Sbire : Si ce Sbire et le P’tit monstre sont en jeu, ce Sbire garde le P’tit monstre.
+-   <Role MAGICIEN /> et <Role LEGION /> : Le Magicien se réveille avec la Légion et peut être considéré comme Maléfique. La Légion sait qu'un Magicien est en jeu mais ne sait pas de quel joueur il s'agit.
 
--   <Role MATHEMATICIEN /> et <Role FEMME_DE_CHAMBRE /> : La Femme de chambre apprend si le Mathématicien se réveille ce soir ou non, même si la Femme de chambre se réveille avant.
+-   <Role MATHEMATICIEN /> et <Role FEMME_DE_CHAMBRE /> : La Femme de chambre peut détecter si le Mathématicien se réveillera ce soir.
 
 -   <Role MATHEMATICIEN /> et <Role LUNATIQUE /> : Le Mathématicien apprend si le Lunatique attaque un joueur différent que celui qui est attaqué par le véritable Démon.
 
+-   <Role MATHEMATICIEN /> et <Role SOULARD /> : Le Mathématicien pourrait apprendre que la capacité que le Soûard croit avoir a généré de fausses informations ou n'a pas correctement fonctionné.
+
+-   <Role MATHEMATICIEN /> et <Role MARIONNETTE /> : Le Mathématicien pourrait apprendre que la capacité que la Marionnette croit avoir a généré de fausses informations ou n'a pas correctement fonctionné.
+
 Etrangers
 
--   <Role HERETIQUE /> et <Role BARON /> : Le Baron ne pourrait ajouter qu’un seul Etranger au lieu de deux.
+-   <Role HERETIQUE /> et <Role BARON /> : Seul un des rôles jinxés peut être en jeu.
 
 -   <Role HERETIQUE /> et <Role ESPION /> : Seul un des rôles jinxés peut être en jeu.
 
 -   <Role HERETIQUE /> et <Role PARRAIN /> : Seul un des rôles jinxés peut être en jeu.
 
--   <Role HERETIQUE /> et <Role SCIENTIFIQUE /> : Le Démon ne peut pas avoir la capacité de l’Hérétique.
+-   <Role HERETIQUE /> et <Role VEUVE_NOIRE /> : Seul un des rôles jinxés peut être en jeu.
 
--   <Role HERETIQUE /> et <Role VEUVE_NOIRE /> : Une Vieille chouette ne peut pas créer un Hérétique.
-
--   <Role HERETIQUE /> et <Role SANGSUE /> : Si la Sangsue a empoisonné l’Hérétique et que la Sangsue meurt. L’Héretique reste empoisonné.
+-   <Role HERETIQUE /> et <Role SANGSUE /> : Seul un des rôles jinxés peut être en jeu.
 
 -   <Role HERETIQUE /> et <Role VIEILLE_CHOUETTE /> : Une Vieille chouette ne peut pas créer un Héretique.
 
--   <Role OGRE /> et <Role RECLUS /> : Si le Reclus est considéré comme maléfique pour l’Ogre, l’Ogre apprend qu’il est maléfique.
+-   <Role RECLUS /> et <Role SAGE /> : Le Reclus peut être considéré comme Démon pour le Sage.
+
+-   <Role RECLUS /> et <Role OGRE /> : Si le Reclus est considéré comme maléfique pour l’Ogre, l’Ogre apprend qu’il est maléfique.
 
 -   <Role MAJORDOME /> et <Role ORGUE_DE_BARBARIE /> : Si l’Orgue de barbarie provoque un vote les yeux fermés, le Majordome peut lever la main pour voter, mais son vote n'est compté que si son maître a également voté.
 
--   <Role MEDECIN_DE_PESTE  /> et <Role BARON /> : Si le Conteur gagne la capacité du Baron, jusqu'à deux joueurs deviennent des Etrangers qui n'étaient pas en jeu.
+-   <Role MEDECIN_DE_PESTE  /> et <Role BARON /> : Si le Conteur gagne la capacité du Baron, jusqu'à deux joueurs deviennent des Etrangers.
 
--   <Role MEDECIN_DE_PESTE /> et <Role BOOMDANDY /> : Si le Médecin de peste est exécuté et que le Conteur gagnerait la capacité du Boomdandy, la capacité du Boomdandy se déclenche immédiatement.
+-   <Role MEDECIN_DE_PESTE /> et <Role BOOMDANDY /> : Si le Conteur gagnerait la capacité du Boomdandy, un joueur devient le Boomdandy.
 
--   <Role MEDECIN_DE_PESTE /> et <Role CROQUEUSE_D_HOMMES /> : Si le Médecin de peste meurt, un Sbire vivant gagne la capacité de la Croqueuse d'hommes en plus de sa propre capacité et il l'apprend.
+-   <Role MEDECIN_DE_PESTE /> et <Role CROQUEUSE_D_HOMMES /> : Si le Conteur gagnerait la capacité de la Croqueuse d'hommes, un Sbire l'obtient et l'apprend.
 
--   <Role MEDECIN_DE_PESTE /> et <Role ESPION /> : Si le Médecin de peste meurt, un Sbire vivant gagne la capacité de l'Espion en plus de sa propre capacité et il l'apprend.
+-   <Role MEDECIN_DE_PESTE /> et <Role ESPION /> : Si le Conteur gagnerait la capacité de l'Espion', un Sbire l'obtient et l'apprend.
 
--   <Role MEDECIN_DE_PESTE /> et <Role GOBELIN /> : Si le Médecin de meurt, un Sbire vivant gagne la capacité du Gobelin en plus de sa propre capacité et il l'apprend.
+-   <Role MEDECIN_DE_PESTE /> et <Role GOBELIN /> : Si le Conteur gagnerait la capacité du Gobelin, un Sbire l'obtient et l'apprend.
 
--   <Role MEDECIN_DE_PESTE /> et <Role JUMEAU_MALEFIQUE /> : Le Conteur ne peut pas gagner la capacité du Jumeau Maléfique si le Médecin de peste meurt.
+-   <Role MEDECIN_DE_PESTE /> et <Role JUMEAU_MALEFIQUE /> : Si le Conteur gagnerait la capacité du Jumeau maléfique, un joueur devient le Jumeau maléfique.
 
--   <Role MEDECIN_DE_PESTE /> et <Role MARIONNETTE /> : Si le Démon a un voisin vivant qui est Villageois ou Etranger quand le Médecin de peste meurt, ce joueur devient une Marionnette maléfique. S'il y a déjà un joueur devenu maléfique, ceci ne se produit pas.
+-   <Role MEDECIN_DE_PESTE /> et <Role MARIONNETTE /> : Si le Conteur gagnerait la capacité de la Marionnette, un des voisins gentils du Démon devient la Marionnette.
 
--   <Role MEDECIN_DE_PESTE /> et <Role PROPHETE_DE_L_EFFROI /> : Si le Médecin de peste meurt, un Sbire vivant gagne la capacité du Prophète de l'effroi en plus de sa propre capacité et il l'apprend.
+-   <Role MEDECIN_DE_PESTE /> et <Role PROPHETE_DE_L_EFFROI /> : Si le Conteur gagnerait la capacité du Prophète de l'effroi, un Sbire l'obtient et l'apprend.
 
--   <Role MEDECIN_DE_PESTE /> et <Role SPECTRE /> : Si le Médecin de peste meurt, un Sbire vivant gagne la capacité du Spectre en plus de sa propre capacité et il l’apprend.
+-   <Role MEDECIN_DE_PESTE /> et <Role SPECTRE /> : Si le Conteur gagnerait la capacité du Spectre, un Sbire l'obtient et l'apprend.
 
 Sbires
 
--   <Role CONSPIRATEUR /> et <Role AL_HADIKHIA /> : Si l’Al-Hadikhia meurt par exécution et que le Conspirateur est en vie, l’Al-Hadikhia choisit trois joueurs gentils cette nuit : Si les trois choisissent la vie, les maléfiques gagnent. Sinon, le village gagne.
+-   <Role CONSPIRATEUR /> et <Role VIGORMORTIS /> : Un Conspirateur qui a sa capacité la garde si le Vigormortis meurt.
 
 -   <Role CROQUEUSE_D_HOMMES /> et <Role AL_HADIKHIA /> : S'il y a deux Al-Hadikhia vivants, la Croqueuse d'hommes d'origine redevient la Croqueuse d'hommes.
 
 -   <Role CROQUEUSE_D_HOMMES /> et <Role FANG_GU /> : Si le Fang Gu choisi un Etranger et meurt, la Croqueuse d'hommes ne devient pas le Fang Gu.
 
--   <Role ESPION /> et <Role CULTIVATEUR_DE_PAVOT /> : Si le Cultivateur de pavot est en jeu, l’Espion ne voit pas le Grimoire jusqu’à ce que le Cultivateur de pavot meurt.
+-   <Role ESPION /> et <Role CULTIVATEUR_DE_PAVOT /> : Si le Cultivateur de pavot a sa capacité, l’Espion ne voit pas le Grimoire.
 
 -   <Role ESPION /> et <Role DEMOISELLE /> : Si l’Espion est (ou a été en jeu) alors la Demoiselle est empoisonnée.
 
 -   <Role ESPION /> et <Role OGRE /> : L'Espion est considéré comme maléfique pour l'Ogre.
 
--   <Role INVOCATEUR /> et <Role COURTISANE /> : Si l’Invocateur est ivre la troisième nuit, l’Invocateur choisit le Démon mais le Conteur choisit le joueur.
+-   <Role INVOCATEUR /> et <Role COURTISANE /> : Si l’Invocateur vivant n'a pas sa capacité, le Conteur a la capacité de l'Invocateur.
 
--   <Role INVOCATEUR /> et <Role CHAPELIER /> : L’Invocateur ne peut pas créer un Démon déjà en jeu. Si l’Invocateur créé un Démon qui n’est pas en jeu, les morts de cette nuit sont arbitraires.
+-   <Role INVOCATEUR /> et <Role CULTIVATEUR_DE_PAVOT /> : Si le Cultivateur de pavot est vivant la 3ème nuit, l'Invocateur choisit le type de Démon mais le Conteur choisit le joueur.
 
--   <Role INVOCATEUR /> et <Role CULTIVATEUR_DE_PAVOT /> : Si le Cultivateur de pavot est vivant lorsque l’Invocateur agit, celui-ci choisit le type de Démon mais le Conteur choisit le joueur.
+-   <Role INVOCATEUR /> et <Role HORLOGER /> : L’Invocateur est est considéré comme Démon pour l'Horloger.
 
--   <Role INVOCATEUR /> et <Role HORLOGER /> : Si l’Invocateur est en jeu, l’Horloger ne reçoit pas sont information tant qu’un Démon n’est pas créé.
+-   <Role INVOCATEUR /> et <Role INGENIEUR /> : Si l'Invocateur vivant est retiré du jeu, alors le Conteur a la capacité d'Invocateur.
 
--   <Role INVOCATEUR /> et <Role INGENIEUR /> : Si l’Ingénieur retire un Invocateur avant que celui-ci ait utilisé sa capacité, alors l’Invocateur utilise sa capacité immédiatement.
+-   <Role INVOCATEUR /> et <Role PREDICATEUR /> : Si l’Invocateur vivant n'a pas sa capacité, le Conteur a la capacité de l'Invocateur.
 
--   <Role INVOCATEUR /> et <Role PREDICATEUR /> : Si le Prédicateur choisit l’Invocateur la troisième nuit ou avant, l’Invocateur choisit le Démon mais le Conteur choisit le joueur.
+-   <Role INVOCATEUR /> et <Role CHAPELIER /> : Si L'Invocateur créé un deuxième Démon vivant, les morts de cette nuit sont arbitraires.
 
--   <Role INVOCATEUR /> et <Role KAZALI /> : L’Invocateur ne peut pas créer un Démon déjà en jeu. Si l’Invocateur créé un Démon qui n’est pas en jeu, les morts de cette nuit sont arbitraires.
+-   <Role INVOCATEUR /> et <Role VIEILLE_CHOUETTE /> : Si L'Invocateur créé un deuxième Démon vivant, les morts de cette nuit sont arbitraires.
 
--   <Role INVOCATEUR /> et <Role LEGION /> : Si l’Invocateur choisit de créer une Légion, la plupart des joueurs (y compris tous les maléfiques) deviennent Légion.
+-   <Role INVOCATEUR /> et <Role KAZALI /> : Si L'Invocateur créé un deuxième Démon vivant, les morts de cette nuit sont arbitraires.
 
--   <Role INVOCATEUR /> et <Role MARIONNETTE /> : La Marionnette est voisine de l’Invocateur. L’Invocateur sait qui est la Marionnette.
+-   <Role INVOCATEUR /> et <Role PUKKA /> : L’Invocateur peut invoquer un Pukka dès la 2ème nuit au lieu de la 3ème.
 
--   <Role INVOCATEUR /> et <Role PUKKA /> : L’Invocateur peut choisir un joueur pour qu’il devienne Pukka dès la deuxième nuit.
-
--   <Role INVOCATEUR /> et <Role SEIGNEUR_DE_TYPHON /> : Si l’Invocateur créé un Seigneur de Typhon, le Seigneur de Typhon doit être voisin d’un Sbire. L’autre voisin devient alors un Sbire maléfique qui n’était pas en jeu.
-
--   <Role INVOCATEUR /> et <Role VIEILLE_CHOUETTE /> : L’Invocateur ne peut pas créer un Démon déjà en jeu. Si l’Invocateur créé un Démon qui n’est pas en jeu, les morts de cette nuit sont arbitraires.
+-   <Role INVOCATEUR /> et <Role SEIGNEUR_DE_TYPHON /> : Si l’Invocateur créé un Seigneur de Typhon, le Seigneur de Typhon doit être voisin d’un Sbire. L’autre voisin devient alors un Sbire maléfique.
 
 -   <Role INVOCATEUR /> et <Role ZOMBUUL /> : Si l’Invocateur choisit un joueur mort pour être le Zombuul, le Conteur traite ce joueur comme un Zombuul qui est a déjà utilisé sa première vie.
 
@@ -166,137 +166,137 @@ Sbires
 
 -   <Role MARIONNETTE /> et <Role AERONAUTE /> : Si la Marionnette pense être l’Aéronaute, 1 Etranger a pu être ajouté.
 
--   <Role MARIONNETTE /> et <Role BALANCE /> : La Marionnette n’apprend pas les 3 bluffs. A la place le Démon apprend 3 bluffs supplémentaire.
-
 -   <Role MARIONNETTE /> et <Role CHASSEUR /> : Si la Marionnette pense être le Chasseur, la Demoiselle a été ajoutée.
 
--   <Role MARIONNETTE /> et <Role CULTIVATEUR_DE_PAVOT /> : Quand le Cultivateur de pivot meurt, le Démon apprend qui est la Marionnette mais la Marionnette n’apprend rien.
+-   <Role MARIONNETTE /> et <Role INVOCATEUR /> : Si une Marionnette devait être en jeu, elle entre en jeu après le Démon et doit commencer en étant son voisin.
 
--   <Role MARIONNETTE /> et <Role DEMOISELLE /> :  La Marionnette ne sait pas qu’il y a une Demoiselle en jeu.
+-   <Role MARIONNETTE /> et <Role KAZALI /> : Si une Marionnette devait être en jeu, elle entre en jeu après le Démon et doit commencer en étant son voisin.
 
--   <Role MARIONNETTE /> et <Role SPECTRE /> : Le Spectre ne se réveille pas avec la Marionnette.
+-   <Role MARIONNETTE /> et <Role P_TIT_MONSTRE /> : Si une Marionnette devait être en jeu, elle entre en jeu après le Démon et doit commencer en étant son voisin.
 
--   <Role MARIONNETTE /> et <Role P_TIT_MONSTRE /> : La Marionnette est voisine d’un Sbire et non du Démon. La Marionnette n’est pas réveillée pour choisir qui garde le P'tit Monstre et n’apprend pas qu’elle est <Role MARIONNETTE /> si elle garde le P'tit Monstre.
+-   <Role SCIENTIFIQUE /> et <Role CHEF_DE_SECTE /> : Si le Démon a la capacité du Chef de sectre, il ne peut pas passer gentil grâce à sa capacité.
+
+-   <Role SCIENTIFIQUE /> et <Role IDIOT_DU_VILLAGE /> : S’il y a un jeton de libre, le Scientifique peut donner au Démon la capacité d’Idiot du village.
 
 -   <Role SCIENTIFIQUE /> et <Role BRUTE /> : Si le Démon a la capacité de la Brute, il ne peut pas passer gentil grâce à sa capacité.
 
--   <Role SCIENTIFIQUE /> et <Role DULCINEE /> : S’il y a un jeton de libre, le Scientifique peut donner au Démon la capacité d’Idiot du village.: Quand le Démon meurt, quelqu’un (idéalement un joueur gentil) est ivre tant que le Scientifique a sa capacité.
-
--   <Role SCIENTIFIQUE /> et <Role IDIOT_DU_VILLAGE /> : S’il y a un jeton de libre, le Scientifique peut donner au Démon la capacité d’Idiot du village.
+-   <Role SCIENTIFIQUE /> et <Role HERETIQUE /> : Le Démon ne peut pas avoir la capacité de l’Hérétique.
 
 -   <Role SCIENTIFIQUE /> et <Role OGRE /> : Le Démon ne peut pas avoir la capacité de l’Ogre.
 
 -   <Role SCIENTIFIQUE /> et <Role POLITICIEN /> : Le Démon ne peut pas avoir la capacité de Politicien.
 
--   <Role SCIENTIFIQUE /> et <Role SOULARD /> : Si le Démon a la capacité du Soûlard, le Scientifique choisit un Villageois pour avoir cette capacité à la place.
+-   <Role SCIENTIFIQUE /> et <Role SOULARD /> : Le Démon ne peut pas avoir la capacité du Soûlard.
 
--   <Role VEUVE_NOIRE /> et <Role CULTIVATEUR_DE_PAVOT /> : Si le Cultivateur de pavot est en jeu, la Veuve noire ne voit pas le Grimoire jusqu’à ce que le Cultivateur de pavot meurt.
+-   <Role VEUVE_NOIRE /> et <Role CULTIVATEUR_DE_PAVOT /> : Si le Cultivateur de pavot a sa capacité, la Veuve noire ne voit pas le Grimoire.
 
 -   <Role VEUVE_NOIRE /> et <Role DEMOISELLE /> : Si la Veuve noire est (ou a été en jeu) alors la Demoiselle est empoisonnée.
 
--   <Role VIEILLE_CHOUETTE /> et <Role BRUTE /> : Si la Vieille chouette transforme un maléfique en Brute, elle ne peut pas redevenir gentille grâce à sa capacité.
-
 -   <Role VIEILLE_CHOUETTE /> et <Role CHEF_DE_SECTE /> : Si la Vieille chouette transforme un maléfique en Chef de Secte, il ne peut pas redevenir gentil grâce à sa capacité.
 
--   <Role VIEILLE_CHOUETTE /> et <Role DEMOISELLE /> : Si la Vieille chouette créé une Demoiselle, le Conteur choisi de quel joueur il s’agit.
-
 -   <Role VIEILLE_CHOUETTE /> et <Role IDIOT_DU_VILLAGE /> : S'il y a un jeton de rôle de disponible, la Vieille chouette peut créer un Idiot du village supplémentaire. Si c'est le cas, l'Idiot du village ivre pourrait changer.
+
+-   <Role VIEILLE_CHOUETTE /> et <Role BRUTE /> : Si la Vieille chouette transforme un maléfique en Brute, elle ne peut pas redevenir gentille grâce à sa capacité.
+
+-   <Role VIEILLE_CHOUETTE /> et <Role DEMOISELLE /> : Si la Vieille chouette créé une Demoiselle, le Conteur choisi de quel joueur il s’agit.
 
 -   <Role VIEILLE_CHOUETTE /> et <Role OGRE /> : Si la Vieille Chouette transforme un maléfique en Ogre, il ne peut pas devenir gentil grâce à sa capacité.
 
 -   <Role VIEILLE_CHOUETTE /> et <Role POLITICIEN /> : Si la Vieille chouette transforme un maléfique en Politicien, il ne peut pas redevenir gentil grâce à sa capacité.
 
--   <Role VIZIR /> et <Role ALSAAHIR /> : Si le Vizir est en jeu, l’Alsaahir doit aussi deviner le(s) rôle(s) de Démon en jeu.
+-   <Role VIZIR /> et <Role ALSAAHIR /> : Le Conteur ne déclare pas que le Vizir est en jeu.
 
--   <Role VIZIR /> et <Role COURTISANE /> : Si le Vizir perd sa capacité, il l’apprend et s’il est exécuté alors qu’il a sa capacité, son équipe gagne.
+-   <Role VIZIR /> et <Role COURTISANE /> : Si le Vizir perd sa capacité, il l’apprend et ne peut pas mourir durant la journée.
 
--   <Role VIZIR /> et <Role ENQUETEUR /> : Si l’Enqueteur apprend que le Vizir est en jeu, l’existence du Vizir n’est pas annoncée par le Conteur.
+-   <Role VIZIR /> et <Role ENQUETEUR /> : Le Conteur ne déclare pas que le Vizir est en jeu.
+
+-   <Role VIZIR /> et <Role PREDICATEUR /> : Si le Vizir perd sa capacité, il l’apprend et ne peut pas mourir durant la journée.
 
 -   <Role VIZIR /> et <Role POLITICIEN /> : Le Politicien peut être considéré comme maléfique pour le Vizir.
 
--   <Role VIZIR /> et <Role PREDICATEUR /> : Si un Vizir perd sa capacité, il l’apprend et si le Vizir est exécuté pendant qu’il a sa capacité, son équipe gagne.
+-   <Role VIZIR /> et <Role ZELOTE /> : Le Zélote peut être considéré comme maléfique pour le Vizir.
 
 -   <Role VIZIR /> et <Role PROPHETE_DE_L_EFFROI /> : Le Vizir se réveille avec le Prophète de l'Effroi. Il apprend qui le Prophète de l'Effroi choisit et ne peut pas choisir d’exécuter ce joueur.
-
--   <Role VIZIR /> et <Role ZELOTE /> : Le Zélote peut être considéré comme maléfique pour le Vizir.
 
 Démons
 
 -   <Role AL_HADIKHIA /> et <Role PRINCESSE /> : Si la Princesse nomine et exécute un joueur lors de son 1er jour, personne ne meurt de la capacité de l'Al-Hadikhia cette nuit.
 
--   <Role EMEUTIER /> et <Role AUBERGISTE /> : Si un Emeutier est en jeu, le joueur protégé par l'Aubergiste, est protégé de toutes les capacités de maléfique.
+-   <Role AL_HADIKHIA /> et <Role CONSPIRATEUR /> : Si l’Al-Hadikhia meurt par exécution et que le Conspirateur est en vie, l’Al-Hadikhia choisit trois joueurs gentils cette nuit : Si les trois choisissent la vie, les maléfiques gagnent. Sinon, le village gagne.
 
--   <Role EMEUTIER /> et <Role BANSHEE /> : Chaque nuit, l'Emeutier choisit un joueur vivant (différent des nuits précédentes) : Une Banshee choisie meurt et obtient sa capacité.
+-   <Role EMEUTIER /> et <Role ATHEE /> : Lors d'une partie d'Emeutier, si le Conteur est nominé, les joueurs votent. S'il est exécutable, la partie se termine. Sinon, il nomine à son tour.
 
--   <Role EMEUTIER /> et <Role EXORCISTE /> : Si l'Exorciste choisi l'Emeutier la trosième nuit, les Sbires ne deviennent pas Emeutier.
+-   <Role EMEUTIER /> et <Role AUBERGISTE /> : Si un Emeutier nomine et exécute un joueur protégé par l'Aubergiste, le Village gagne.
 
--   <Role EMEUTIER /> et <Role FERMIER /> : Chaque nuit, l'Emeutier choisit un joueur vivant (différent des nuits précédentes) : Un Fermier choisi utilise sa capacité mais ne meurt pas.
+-   <Role EMEUTIER /> et <Role BANSHEE /> : Chaque nuit*, l'Emeutier choisit un joueur vivant (différent des nuits précédentes) : Une Banshee choisie meurt et obtient sa capacité.
 
--   <Role EMEUTIER /> et <Role GARDIEN /> : Chaque nuit, l'Emeutier choisit un joueur vivant (différent des nuits précédentes) : Un Gardien choisi utilise sa capacité mais ne meurt pas.
+-   <Role EMEUTIER /> et <Role EXORCISTE /> : Si un Emeutier nomine et exécute un joueur choisi par l'Exorciste, le Village gagne.
 
--   <Role EMEUTIER /> et <Role MAMIE /> : Si un Emeutier est en jeu et que la descendance meurt de jour, la Mamie meurt également.
+-   <Role EMEUTIER /> et <Role FERMIER /> : Chaque nuit*, l'Emeutier choisit un joueur vivant (différent des nuits précédentes) : Un Fermier choisi utilise sa capacité mais ne meurt pas.
+
+-   <Role EMEUTIER /> et <Role GARDIEN /> : Chaque nuit*, l'Emeutier choisit un joueur vivant (différent des nuits précédentes) : Un Gardien choisi utilise sa capacité mais ne meurt pas.
+
+-   <Role EMEUTIER /> et <Role MAMIE /> : Si un Emeutier est en jeu et que la descendance meurt par exécution, les Maléfiques gagnent.
 
 -   <Role EMEUTIER /> et <Role MAIRE /> : Le Maire peut choisir de stopper les nominations. S'il le fait lorsqu'il n'y a plus qu'un seul Emeutier, le village gagne. Sinon, les maléfiques gagnent.
 
--   <Role EMEUTIER /> et <Role MOINE /> : Si un Emeutier est en jeu, le joueur protégé par le Moine, est protégé de toutes les capacités de maléfique.
+-   <Role EMEUTIER /> et <Role MOINE /> : Si un Emeutier nomine et exécute un joueur protégé par le Moine, le Village gagne.
 
--   <Role EMEUTIER /> et <Role ROI /> : Si un Emeutier est en jeu et qu'au moins un joueur est mort, le Roi apprend un rôel vivant chaque nuit.
+-   <Role EMEUTIER /> et <Role ROI /> : Si un Emeutier est en jeu et qu'au moins un joueur est mort, le Roi apprend un rôle vivant chaque nuit.
 
--   <Role EMEUTIER /> et <Role SAGE /> : Chaque nuit, l'Emeutier choisit un joueur vivant (différent des nuits précédentes) : Un Sage choisi utilise sa capacité mais ne meurt pas.
+-   <Role EMEUTIER /> et <Role SAGE /> : Chaque nuit*, l'Emeutier choisit un joueur vivant (différent des nuits précédentes) : Un Sage choisi utilise sa capacité mais ne meurt pas.
 
--   <Role EMEUTIER /> et <Role SOLDAT /> : Si un Emeutier est en jeu, le Soldat est protégé de toutes les capacités de maléfique.
+-   <Role EMEUTIER /> et <Role SOLDAT /> : Si un Emeutier nomine et exécute un Soldat, le Village gagne.
 
--   <Role KAZALI /> et <Role CHASSEUR /> : “Si le Kazali choisit la Demoiselle pour devenir Sbire et qu’un Chasseur est en jeu, un joueur gentil devient la Demoiselle.”
-
--   <Role KAZALI /> et <Role ENFANT_DE_CHOEUR /> : “Le Kazali ne peut pas choisir le Roi pour qu’il devienne Sbire si un Enfant de chœur est en jeu.”
-
--   <Role KAZALI /> et <Role SOLDAT /> : "Le Kazali peut choisir que le Soldat soit un des ses Sbires maléfiques."
-
--   <Role KAZALI /> et <Role BRUTE /> : “Le Kazali peut choisir que la Brute soit un des ses Sbires maléfiques.”
-
--   <Role KAZALI /> et <Role MARIONNETTE /> : “Si le Kazali choisit de créer une Marionnette, il doit choisir un de ses voisins.”
-
--   <Role LEGION /> et <Role CHAPELIER /> : Si le Chapelier et la Légion sont en jeu, rien ne se passe. Si le Chapelier meurt et qu’un maléfique choisit Légion, tous les maléfiques actuels deviennent Légion.
-
--   <Role LEGION /> et <Role INGENIEUR /> : Légion et Ingénieur ne peuvent pas être en jeu au début de la partie. Si l’Ingénieur créé une Légion, la plupart des joueurs (incluant tous les maléfiques) deviennent des Légions maléfiques.
+-   <Role LEGION /> et <Role INGENIEUR /> : Si une Legion est créée, tous les maléfiques deviennent Legion. Si Legion est en jeu, l'Ingénieur comment en l'apprenant mais n'a pas de capacité.
 
 -   <Role LEGION /> et <Role PREDICATEUR /> : Si le Prédicateur choisit une Legion, le joueur Legion garde sa capacité mais le Prédicateur pourrait apprendre qu’il est Legion.
 
 -   <Role LEGION /> et <Role MENESTREL /> : Si une Legion est morte par exécution ce jour, la Legion garde sa capacité mais le Ménestrel pourrait apprendre qu’elle est Legion.
 
+-   <Role LEGION /> et <Role CHAPELIER /> : Si une Legion est créée, tous les maléfiques deviennent Legion. Si Legion est en jeu, le Chapelier n'a pas de capacité.
+
+-   <Role LEGION /> et <Role POLITICIEN /> : Le Politicien peut être considéré maléfique pour la capacité de Legion.
+
 -   <Role LEGION /> et <Role ZELOTE /> : Le Zélote peut être considéré comme maléfique pour la capacité de la Légion.
 
--   <Role LEVIATHAN /> et <Role AUBERGISTE /> : Si le Léviathan est en jeu, les joueurs protégés par l’Aubergiste sont protégés de toutes les capacités de maléfiques.
+-   <Role LEGION /> et <Role INVOCATEUR /> : Si Legion est invoqué, tous les maléfiques deviennent Legion.
 
--   <Role LEVIATHAN /> et <Role BANSHEE /> : Chaque nuit, le Leviathan choisit un joueur vivant (différent des nuits précédentes) : Une Banshee choisie meurt et obtient sa capacité.
+-   <Role LEVIATHAN /> et <Role AUBERGISTE /> : Si le Léviathan nomine et exécute un joueur protégé par l'Aubergiste, le Village gagne.
 
--   <Role LEVIATHAN /> et <Role CHAPELIER /> : Si le Chapelier meurt le cinquième jour ou après, le Démon ne peut pas choisir Léviathan.
+-   <Role LEVIATHAN /> et <Role BANSHEE /> : Chaque nuit*, le Leviathan choisit un joueur vivant (différent des nuits précédentes) : Une Banshee choisie meurt et obtient sa capacité.
 
--   <Role LEVIATHAN /> et <Role EXORCISTE /> : Les maléfiques ne gagnent pas quand plus d’un joueur gentil a été exécuté tant que l’Exorciste est en vie et a déjà choisi le Léviathan avec succès.
+-   <Role LEVIATHAN /> et <Role CHAPELIER /> : Le Leviathan ne peut pas rentrer en jeu après le 5ème jour.
 
--   <Role LEVIATHAN /> et <Role FERMIER /> : Chaque nuit, le Léviathan choisit un joueur vivant (différent des nuits précédentes) : Un Fermier choisi meurt et obtient sa capacité.
+-   <Role LEVIATHAN /> et <Role EXORCISTE /> : Si le Léviathan nomine et exécute un joueur choisi par l'Exorciste, le Village gagne.
 
--   <Role LEVIATHAN /> et <Role GARDIEN /> : Chaque nuit, le Léviathan choisit un joueur vivant (différent des nuits précédentes) : Un Gardien choisi utilise sa capacité mais ne meurt pas.  
+-   <Role LEVIATHAN /> et <Role FERMIER /> : Chaque nuit*, le Léviathan choisit un joueur vivant (différent des nuits précédentes) : Un Fermier choisi meurt et obtient sa capacité.
+
+-   <Role LEVIATHAN /> et <Role GARDIEN /> : Chaque nuit*, le Léviathan choisit un joueur vivant (différent des nuits précédentes) : Un Gardien choisi utilise sa capacité mais ne meurt pas.  
 
 -   <Role LEVIATHAN /> et <Role MAIRE /> : Si un Léviathan est en jeu est qu’aucune exécution ne se passe le jour 5, le village gagne.
 
--   <Role LEVIATHAN /> et <Role MAMIE /> : Si la descendance meurt par exécution, les maléfiques gagnent.
+-   <Role LEVIATHAN /> et <Role MAMIE /> : Si le Leviathan est en jeu et que la descendance meurt par exécution, les maléfiques gagnent.
 
--   <Role LEVIATHAN /> et <Role MOINE /> : Si le Léviathan est en jeu, le joueur protégé par le Moine est protégé de toutes les capacités de maléfiques.
+-   <Role LEVIATHAN /> et <Role MOINE /> : Si le Léviathan nomine et exécute un joueur protégé par le Moine, le Village gagne.
 
 -   <Role LEVIATHAN /> et <Role ROI /> : Si le Léviathan est en jeu et qu’au moins un joueur est mort, le Roi apprend un rôle vivant chaque nuit.
 
 -   <Role LEVIATHAN /> et <Role SAGE /> : Chaque nuit, le Léviathan choisit un joueur vivant (différent des nuits précédentes) : Un Sage choisi utilise sa capacité mais ne meurt pas.
 
--   <Role LEVIATHAN /> et <Role SOLDAT /> : Si le Léviathan est en jeu, le Soldat est protégé de toutes les capacités des maléfiques.
+-   <Role LEVIATHAN /> et <Role SOLDAT /> : Si le Léviathan nomine et exécute un Soldat, le Village gagne.
 
--   <Role LEVIATHAN /> et <Role VIEILLE_CHOUETTE /> : Après le cinquième joueur la Vieille chouette ne peut pas choisir de mettre un Léviathan est en jeu.
+-   <Role LEVIATHAN /> et <Role VIEILLE_CHOUETTE /> : Après le cinquième joueur la Vieille chouette ne peut pas choisir de mettre un Léviathan en jeu.
 
--   <Role P_TIT_MONSTRE /> et <Role CHAPELIER /> : Si un Démon choisit le P'tit Monstre, il choisit aussi un rôle de Sbire qu’il devient et il garde le P'tit Monstre.
+-   <Role P_TIT_MONSTRE /> et <Role CULTIVATEUR_DE_PAVOT /> : Si le P'tit monstre et le Cultivateur de pavot sont vivants, les Sbires se réveillent un à un jusqu’à ce que l’un d’eux accepte de garder le P'tit Monstre.
 
--   <Role P_TIT_MONSTRE /> et <Role CULTIVATEUR_DE_PAVOT /> : Si un Cultivateur de pavot est en jeu, les Sbires ne se réveillent pas ensemble. Ils se réveillent un à un jusqu’à ce que l’un d’eux accepte de garder le P'tit Monstre.
+-   <Role P_TIT_MONSTRE /> et <Role MAGICIEN /> : Si le Magicien est vivant, le Conteur choisit qui garde le P'tit Monstre.
 
--   <Role P_TIT_MONSTRE /> et <Role CROQUEUSE_D_HOMMES /> : S’il y a 5 joueurs ou plus en vie et que le joueur qui a le P'tit Monstre meurt, la Croqueuse d'hommes reçoit le jeton du P'tit Monstre.
+-   <Role P_TIT_MONSTRE /> et <Role CHAPELIER /> : Si le Chapelier meurt et que le Démon choisit le P'tit Monstre, il choisit aussi un rôle de Sbire qu’il devient.
+
+-   <Role P_TIT_MONSTRE /> et <Role CROQUEUSE_D_HOMMES /> : Si le P'tit mosntre meurt et qu’il y a 5 joueurs ou plus en vie, la Croqueuse d'hommes garde le P'tit Monstre pour le reste de la partie.
+
+-   <Role P_TIT_MONSTRE /> et <Role PSYCHOPATHE /> : Le Psychopathe peut mourir par exécution s’il garde le P'tit Monstre.
 
 -   <Role P_TIT_MONSTRE /> et <Role VIZIR /> : Le Vizir peut mourir par exécution s’il garde le P'tit Monstre.
 
