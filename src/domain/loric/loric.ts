@@ -16,6 +16,7 @@ export const LORIC = {
     CHASSEUR_D_ORAGES: Loric.new({name: `Chasseur d'orages`, filename: 'chasseur-d-orages', originalName: 'Storm Catcher'}),
 	CONTREBANDIER: Loric.new({name: `Contrebandier`, originalName: 'Bootleger'}),
     GROS_BONNET: Loric.new({name: `Gros Bonnet`, filename: 'gros-bonnet', originalName: 'Big Wig'}),
+    HINDU: Loric.new({name: `Hindu`, originalName: 'Hindu'}),
     JARDINIER: Loric.new({name: `Jardinier`, originalName: 'Gardener'}),
     TOR: Loric.new({name: `Tor`, originalName: 'Tor'}),
     ZENOMANCIEN: Loric.new({name: `Zénomancien`, filename: 'zenomancien', originalName: 'Zenomancer'})

@@ -46,10 +46,10 @@ export const Modules: {
             Roles.VOYAGEUR.VOLEUR
         ],
         summary: `De l'art de l'ivresse à celui d'empoisonnement...
-            Trouble Brewing sera votre première expérience dans le monde fantastique de Blood On The Clocktower ! C'est par ce module qu'on commence.`,
+            Trouble Brewing sera votre première expérience dans le monde fantastique de Blood On The Clocktower ! C'est par ce script qu'on commence.`,
         description: `De l'art de l'ivresse à celui d'empoisonnement...
             Un Démon, quatre Sbires : les Villageois devront les démasquer pour prétendre à la Victoire.
-            Trouble Brewing sera votre première expérience dans le monde fantastique de Blood On The Clocktower ! C'est par ce module que l'on commence.`,
+            Trouble Brewing sera votre première expérience dans le monde fantastique de Blood On The Clocktower ! C'est par ce script que l'on commence.`,
         fabled: `Des nuages se forment au-dessus de Ravenswood Bluff, enveloppant ce Village tranquille et ses habitants superstitieux de leurs ombres macabres. Des vêtements fraîchement lavés dansent sinistrement sur les étendages entre les cottages. Les cheminées recrachent des volutes de fumée dans l'air. Des senteurs exotiques flottent entre les fissures des fenêtres et sous les portes, tandis que des chaudrons cachés bouillonnent. Une inhabituelle et chaude brise d'automne lèche les murs recouverts de vignes et susurre une inquiétante mélopée aux téméraires qui osent s'aventurer dans les rues pavées. Des mères anxieuses pressent leurs enfants de rentrer au moment où l’orage commence à gronder à l’horizon. Cependant, si vous tendez l’oreille, des bruits étranges se font entendre en provenance de la forêt voisine. Sous l’œil vigilant d’un monastère, des silhouettes sautent de porte en porte. Ceux qui peuvent lire l’écriteau savent qu’il y a....
 
     
@@ -57,7 +57,7 @@ export const Modules: {
         gameplay: `
             Trouble Brewing est un subtil mélange de tout. Certains rôles reçoivent leurs informations passivement, d'autres ont besoin d'agir pour découvrir l'identité de chacun. Certains voudront attirer l'attention du Démon sur eux, d’autres préféreront passer inaperçu. Les Gentils comme les Maléfiques peuvent prendre l'avantage en réalisant des sacrifices au bon moment. Trouble Brewing est une chasse au Démon assez directe, mais les Maléfiques ont un certain nombre de viles astuces de désinformation dans leurs manches. Les Gentils devront donc se poser des questions sur ce qu'ils pensent savoir, s'ils veulent survivre.
             
-            Module débutant. Recommandé pour les nouveaux joueurs et les nouveaux Conteurs de Blood on the Clocktower ou qui ne sont pas familiers des jeux à identité cachée.
+            Script débutant. Recommandé pour les nouveaux joueurs et les nouveaux Conteurs de Blood on the Clocktower ou qui ne sont pas familiers des jeux à identité cachée.
             
             En jouant à Trouble Brewing…
 
