@@ -18,6 +18,7 @@ export const LORIC = {
     GROS_BONNET: Loric.new({name: `Gros Bonnet`, filename: 'gros-bonnet', originalName: 'Big Wig'}),
     HINDU: Loric.new({name: `Hindu`, originalName: 'Hindu'}),
     JARDINIER: Loric.new({name: `Jardinier`, originalName: 'Gardener'}),
+    PAPE: Loric.new({name: `Pape`, originalName: 'Pope'}),
     TOR: Loric.new({name: `Tor`, originalName: 'Tor'}),
     ZENOMANCIEN: Loric.new({name: `Zénomancien`, filename: 'zenomancien', originalName: 'Zenomancer'})
 }

@@ -16,7 +16,7 @@ interface RoleProps {
 const Loric = ({tile, header, loric, ...other}: RoleProps) => {
     if (!loric) loric = {...LORIC}[Object.keys(other)[0]] as L
 
-    let {name, originalName, path, iconPath}: F & MarkdownDocument & Iconised = Iconised(MarkdownDocument({_base_url, _base_image_path, ...loric}))
+    let {name, originalName, path, iconPath}: L & MarkdownDocument & Iconised = Iconised(MarkdownDocument({_base_url, _base_image_path, ...loric}))
     const {color, darkBackgroundColor, lightBackgroundColor}: Theme = {color: 'rgba(67, 156, 49, 1)', darkBackgroundColor: 'rgba(67, 156, 49, 1)', lightBackgroundColor: ''}
 
     path = useBaseUrl(path)
