@@ -20,5 +20,6 @@ export const LORIC = {
     JARDINIER: Loric.new({name: `Jardinier`, originalName: 'Gardener'}),
     PAPE: Loric.new({name: `Pape`, originalName: 'Pope'}),
     TOR: Loric.new({name: `Tor`, originalName: 'Tor'}),
+    VENTRILOQUE: Loric.new({name: `Ventriloque`, originalName: 'Ventriloquist'}),
     ZENOMANCIEN: Loric.new({name: `Zénomancien`, filename: 'zenomancien', originalName: 'Zenomancer'})
 }
