@@ -15,6 +15,8 @@ export default class Loric implements BotcEntity {
 export const LORIC = {
     CHASSEUR_D_ORAGES: Loric.new({name: `Chasseur d'orages`, filename: 'chasseur-d-orages', originalName: 'Storm Catcher'}),
 	CONTREBANDIER: Loric.new({name: `Contrebandier`, originalName: 'Bootleger'}),
+    DIEU_OUG: Loric.new({name: `Dieu Oug`, filename: 'dieu-oug', originalName: 'God of Ug'}),
+    FRIPONS: Loric.new({name: `Fripons`, originalName: 'Knaves'}),
     GROS_BONNET: Loric.new({name: `Gros Bonnet`, filename: 'gros-bonnet', originalName: 'Big Wig'}),
     HINDU: Loric.new({name: `Hindu`, originalName: 'Hindu'}),
     JARDINIER: Loric.new({name: `Jardinier`, originalName: 'Gardener'}),
