@@ -44,6 +44,11 @@ module.exports = {
                     label: 'GitHub',
                     position: 'right',
                 },
+                {
+                    href: 'https://www.brain-academy.fr/',
+                    label: 'Site internet',
+                    position: 'right',
+                },
             ],
         },
         footer: {
@@ -76,6 +81,10 @@ module.exports = {
                         {
                             label: 'Nous contacter',
                             href: 'mailto:staff@brain-academy.fr',
+                        },
+                         {
+                            label: 'Site internet',
+                            href: 'https://www.brain-academy.fr/',
                         },
                     ],
                 },
