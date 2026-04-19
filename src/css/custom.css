@@ -17,9 +17,52 @@
   --ifm-code-font-size: 95%;
 }
 
+/* Forcer la couleur de la police à être plus sombre (texte et titres) */
+:root, [data-theme='dark'] {
+  --ifm-font-color-base: #111111 !important; /* Couleur sombre pour le texte principal */
+  --ifm-heading-color: #000000 !important;   /* Couleur très sombre (noir) pour les titres */
+  --ifm-toc-link-color: #000000 !important; /* Couleur noire pour la table des matières (raccourcis à droite) */
+  --ifm-navbar-link-color: #ffffff !important; /* Couleur pour le texte du Header (barre du haut) */
+  --ifm-menu-color: #ffffff !important;        /* Couleur pour le texte de la Sidebar (menu de gauche) */
+}
+
+/* Image de fond pour le Header (Navbar) */
+.navbar {
+  background-image: url('/img/side_bar.jpg') !important;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Image de fond pour la Sidebar */
+.theme-doc-sidebar-container {
+  background-image: url('/img/side_bar.jpg') !important;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Image de fond pour le reste du site (Contenu principal) */
+html, body {
+  background-image: url('/img/background.webp') !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  min-height: 100vh !important;
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+/* Forcer le texte en noir dans les encarts (exemples, infos, alertes) et les citations */
+.alert, .alert *:not(a), blockquote, blockquote *:not(a) {
+  color: #111111 !important;
+}
+
+/* Forcer le texte en noir pour la navigation (Précédent / Suivant) en bas des pages */
+.pagination-nav__sublabel {
+  color: #000000 !important;
 }
