@@ -12,7 +12,8 @@ module.exports = {
     themeConfig: {
         colorMode: {
             defaultMode: 'dark',
-            respectPrefersColorScheme: true
+            disableSwitch: true,
+            respectPrefersColorScheme: false
         },
         docs: {
             sidebar: {
@@ -25,7 +26,7 @@ module.exports = {
                 alt: 'Brain Academy logo',
                 src: 'img/brain-academy-logo.png',
             },
-            hideOnScroll: true,
+            hideOnScroll: false,
             items: [
                 {
                     to: 'docs/',
@@ -33,7 +34,6 @@ module.exports = {
                     label: 'Docs',
                     position: 'left',
                 },
-                { to: 'blog', label: 'Blog', position: 'left' },
                 {
                     href: 'https://www.helloasso.com/associations/the-brain-academy/formulaires/1/widget',
                     label: 'Faire un don',
