@@ -102,7 +102,7 @@
       "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
     },
     "COUTURIERE": {
-      "name": "Couturiere",
+      "name": "Couturière",
       "originalName": "Seamstress",
       "clazz": "DETECTION",
       "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
@@ -392,7 +392,7 @@
       "originalName": "Barber"
     },
     "BETE_DE_FOIRE": {
-      "name": "Bete de foire",
+      "name": "Bête de foire",
       "filename": "bete-de-foire",
       "originalName": "Mutant"
     },
