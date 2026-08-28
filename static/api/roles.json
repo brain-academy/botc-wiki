@@ -89,6 +89,11 @@
       "originalName": "Knight",
       "wakeUpSchedule": "FIRST_NIGHT"
     },
+    "CHORISTE": {
+      "name": "Choriste",
+      "originalName": "Choirboy",
+      "wakeUpSchedule": "Si le Roi est tué par le Démon"
+    },
     "COMMERE": {
       "name": "Commère",
       "filename": "commere",
@@ -126,12 +131,6 @@
       "originalName": "Empath",
       "clazz": "DETECTION",
       "wakeUpSchedule": "EVERY_NIGHT"
-    },
-    "ENFANT_DE_CHOEUR": {
-      "name": "Enfant de chœur",
-      "filename": "enfant-de-choeur",
-      "originalName": "Choirboy",
-      "wakeUpSchedule": "Si le Roi est tué par le Démon"
     },
     "ENQUETEUR": {
       "name": "Enquêteur",
@@ -522,8 +521,8 @@
       "originalName": "Poisoner",
       "wakeUpSchedule": "EVERY_NIGHT"
     },
-    "ESPION": {
-      "name": "Espion",
+    "ESPIONNENE": {
+      "name": "Espionne",
       "originalName": "Spy",
       "wakeUpSchedule": "EVERY_NIGHT"
     },
@@ -640,7 +639,8 @@
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
     "EMEUTIER": {
-      "name": "Emeutier",
+      "name": "Émeutier (Émeute)",
+      "filename": "emeutier",
       "originalName": "Riot"
     },
     "FANG_GU": {

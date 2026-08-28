@@ -35,7 +35,7 @@ export const Modules: {
             Roles.MARGINAUX.RECLUS,
             Roles.MARGINAUX.VERTUEUX,
             Roles.SBIRES.EMPOISONNEUR,
-            Roles.SBIRES.ESPION,
+            Roles.SBIRES.ESPIONNE,
             Roles.SBIRES.SUCCUBE,
             Roles.SBIRES.BARON,
             Roles.DEMONS.IMP,
@@ -65,7 +65,7 @@ export const Modules: {
             
             Quelques Villageois obtiennent de l'information en accomplissant une action et en observant son effet : sacrifier la vie d'un joueur en lui demandant de nominer la Pucelle, tenter de tuer l’Imp en tant que Mercenaire ou tuer délibérément des Gentils pour que le Fossoyeur puisse confirmer leur identité. Ce sont toutes des façons de sacrifier sa vie ou sa capacité pour obtenir de l'information et atteindre la victoire.
             
-            Les Maléfiques auront besoin de prétendre avoir un rôle Gentil et si nécessaire, de donner de fausses informations pour être crédibles. Avec seulement de bonnes informations, le Village les trouverait en peu de temps, mais une simple et plausible fausse information peut les sauver. S’ils sont vigilants, l'Empoisonneur et l'Espion peuvent provoquer une grande confusion dans les rangs du Village avec leurs capacités. Ils devront aussi décider quand faire des sacrifices. Est-ce que la Succube fera tuer l’Imp pour sauver son équipe ? Est-ce que les Maléfiques voteront pour exécuter un Sbire suspect afin de passer pour des membres honorables du Village ? 
+            Les Maléfiques auront besoin de prétendre avoir un rôle Gentil et si nécessaire, de donner de fausses informations pour être crédibles. Avec seulement de bonnes informations, le Village les trouverait en peu de temps, mais une simple et plausible fausse information peut les sauver. S’ils sont vigilants, l'Empoisonneur et l'Espionne peuvent provoquer une grande confusion dans les rangs du Village avec leurs capacités. Ils devront aussi décider quand faire des sacrifices. Est-ce que la Succube fera tuer l’Imp pour sauver son équipe ? Est-ce que les Maléfiques voteront pour exécuter un Sbire suspect afin de passer pour des membres honorables du Village ? 
             
             `,
         detail:`
@@ -75,7 +75,7 @@ export const Modules: {
             
             2) Mercenaire, Gardien, Maire, Voyante, Empathe, Vertueux, Empoisonneur et Imp. Ce sera un jeu beaucoup plus calme, car les joueurs découvriront lentement si le Vertueux, le Mercenaire et le Maire disent la vérité. L’Empoisonneur, qui a de nombreuses cibles juteuses, peut certainement provoquer un certain chaos. Cependant, le jeu peut être rapide si le Mercenaire est averti, si le Vertueux ne l'est pas assez, ou si l'Empoisonneur ne peut pas trouver l'Empathe et la Voyante à temps. Si le Maire est attaqué la nuit, pensez à tuer un autre joueur à sa place – peut-être le Gardien?
             
-            3) Lavandière, Mercenaire, Pucelle, Fossoyeur, Voyante, Reclus, Espion et Imp. Il s'agit d'une configuration plus avancée, nécessitant une logique plus approfondie de la part des joueurs, mais elle peut être très gratifiante s'ils la comprennent. N'oubliez pas que le Reclus peut s'enregistrer en tant que Démon auprès de la Voyante, du Fossoyeur et du Mercenaire ! Et rappelez-vous que l’Espion peut s’enregistrer en tant que Villageois auprès de la Pucelle, du Croque- mort et de la Lavandière !
+            3) Lavandière, Mercenaire, Pucelle, Fossoyeur, Voyante, Reclus, Espionne et Imp. Il s'agit d'une configuration plus avancée, nécessitant une logique plus approfondie de la part des joueurs, mais elle peut être très gratifiante s'ils la comprennent. N'oubliez pas que le Reclus peut s'enregistrer en tant que Démon auprès de la Voyante, du Fossoyeur et du Mercenaire ! Et rappelez-vous que l’Espionne peut s’enregistrer en tant que Villageois auprès de la Pucelle, du Croque- mort et de la Lavandière !
 `
     },
     BAD_MOON_RISING: {
@@ -257,7 +257,7 @@ export const Modules: {
             Roles.SBIRES.ASSASSIN,
             Roles.SBIRES.BARON,
             Roles.SBIRES.SORCIERE,
-            Roles.SBIRES.ESPION,
+            Roles.SBIRES.ESPIONNE,
             Roles.DEMONS.P_TIT_MONSTRE
         ]
     },
