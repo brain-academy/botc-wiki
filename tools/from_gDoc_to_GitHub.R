@@ -46,7 +46,7 @@ list_roles <- list_files %>%
   stringr::str_replace("^Traitre$", "Traître") %>%
   # Fix new names.
   stringr::str_replace("^Bonne$", "Femme de Chambre") %>%
-  stringr::str_replace("^Bricoleur$", "Inventeur")
+  stringr::str_replace("^Bricoleur$", "Bricoleur")
 
 # Build the regex for catching a role.
 catch_role <- list_roles %>%

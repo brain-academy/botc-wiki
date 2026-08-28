@@ -25,7 +25,7 @@ export const Modules: {
             Roles.VILLAGEOIS.VOYANTE,
             Roles.VILLAGEOIS.FOSSOYEUR,
             Roles.VILLAGEOIS.MOINE,
-            Roles.VILLAGEOIS.GARDIEN,
+            Roles.VILLAGEOIS.CORNEILLE,
             Roles.VILLAGEOIS.PUCELLE,
             Roles.VILLAGEOIS.MERCENAIRE,
             Roles.VILLAGEOIS.SOLDAT,
@@ -61,7 +61,7 @@ export const Modules: {
             
             En jouant à Trouble Brewing…
 
-            Les Gentils devront trouver qui est Gentil et qui est Maléfique en utilisant leur logique et leur intuition. Des joueurs comme le Cuistot ou l’Enquêteur révéleront peut-être immédiatement leur rôle et leurs informations. A l’opposé, d’autres joueurs mentiront sur leur identité, pour que le Démon évite de les attaquer, comme la Voyante ou le Fossoyeur, ou au contraire afin qu’il les attaque, comme le Gardien ou le Soldat. 
+            Les Gentils devront trouver qui est Gentil et qui est Maléfique en utilisant leur logique et leur intuition. Des joueurs comme le Cuistot ou l’Enquêteur révéleront peut-être immédiatement leur rôle et leurs informations. A l’opposé, d’autres joueurs mentiront sur leur identité, pour que le Démon évite de les attaquer, comme la Voyante ou le Fossoyeur, ou au contraire afin qu’il les attaque, comme la Corneille ou le Soldat. 
             
             Quelques Villageois obtiennent de l'information en accomplissant une action et en observant son effet : sacrifier la vie d'un joueur en lui demandant de nominer la Pucelle, tenter de tuer l’Imp en tant que Mercenaire ou tuer délibérément des Gentils pour que le Fossoyeur puisse confirmer leur identité. Ce sont toutes des façons de sacrifier sa vie ou sa capacité pour obtenir de l'information et atteindre la victoire.
             
@@ -73,7 +73,7 @@ export const Modules: {
             
             1) Cuistot, Empathe, Voyante, Fossoyeur, Pucelle, Soûlard (Enquêteur), Croqueuse d’hommes et Imp. Cette configuration contient beaucoup d'informations pour l’équipe des gentils, de bonnes possibilités d'impliquer les joueurs et de parler immédiatement, mais elle est également relativement sûre pour les joueurs maléfiques qui ne savent pas comment bien bluffer. Ce sera un jeu chaotique qui ravira les nouveaux joueurs. N'oubliez pas de donner de fausses informations à l'Enquêteur ivre et rappelez-vous qu'il ne peut pas mourir en désignant la Pucelle !
             
-            2) Mercenaire, Gardien, Maire, Voyante, Empathe, Vertueux, Empoisonneur et Imp. Ce sera un jeu beaucoup plus calme, car les joueurs découvriront lentement si le Vertueux, le Mercenaire et le Maire disent la vérité. L’Empoisonneur, qui a de nombreuses cibles juteuses, peut certainement provoquer un certain chaos. Cependant, le jeu peut être rapide si le Mercenaire est averti, si le Vertueux ne l'est pas assez, ou si l'Empoisonneur ne peut pas trouver l'Empathe et la Voyante à temps. Si le Maire est attaqué la nuit, pensez à tuer un autre joueur à sa place – peut-être le Gardien?
+            2) Mercenaire, Corneille, Maire, Voyante, Empathe, Vertueux, Empoisonneur et Imp. Ce sera un jeu beaucoup plus calme, car les joueurs découvriront lentement si le Vertueux, le Mercenaire et le Maire disent la vérité. L’Empoisonneur, qui a de nombreuses cibles juteuses, peut certainement provoquer un certain chaos. Cependant, le jeu peut être rapide si le Mercenaire est averti, si le Vertueux ne l'est pas assez, ou si l'Empoisonneur ne peut pas trouver l'Empathe et la Voyante à temps. Si le Maire est attaqué la nuit, pensez à tuer un autre joueur à sa place – peut-être la Corneille?
             
             3) Lavandière, Mercenaire, Pucelle, Fossoyeur, Voyante, Reclus, Espionne et Imp. Il s'agit d'une configuration plus avancée, nécessitant une logique plus approfondie de la part des joueurs, mais elle peut être très gratifiante s'ils la comprennent. N'oubliez pas que le Reclus peut s'enregistrer en tant que Démon auprès de la Voyante, du Fossoyeur et du Mercenaire ! Et rappelez-vous que l’Espionne peut s’enregistrer en tant que Villageois auprès de la Pucelle, du Croque- mort et de la Lavandière !
 `
@@ -92,11 +92,11 @@ export const Modules: {
             Roles.VILLAGEOIS.COURTISAN,
             Roles.VILLAGEOIS.PROFESSEUR,
             Roles.VILLAGEOIS.MENESTREL,
-            Roles.VILLAGEOIS.HERBORISTE,
+            Roles.VILLAGEOIS.TISANIERE,
             Roles.VILLAGEOIS.PACIFISTE,
             Roles.VILLAGEOIS.FOU,
-            Roles.MARGINAUX.INVENTEUR,
-            Roles.MARGINAUX.GITANE,
+            Roles.MARGINAUX.BRICOLEUR,
+            Roles.MARGINAUX.SELENITE,
             Roles.MARGINAUX.BRUTE,
             Roles.MARGINAUX.LUNATIQUE,
             Roles.SBIRES.PARRAIN,
@@ -128,11 +128,11 @@ export const Modules: {
             
             En jouant à Bad Moon Rising…
             
-            Les gentils ne recevront que peu d’informations en restant passif. Quelques capacités de Villageois nécessitent que le village exécute des joueurs pour obtenir des informations (comme l’Herboriste ou le Pacifiste) pendant que d’autres les encourage à prendre des risques qui peuvent les tuer afin de savoir qui est qui (comme le Parieur ou la Commère). Quand les gentils font quelque chose, ils obtiennent quelque chose.
+            Les gentils ne recevront que peu d’informations en restant passif. Quelques capacités de Villageois nécessitent que le village exécute des joueurs pour obtenir des informations (comme la Tisanière ou le Pacifiste) pendant que d’autres les encourage à prendre des risques qui peuvent les tuer afin de savoir qui est qui (comme le Parieur ou la Commère). Quand les gentils font quelque chose, ils obtiennent quelque chose.
             
-            Le village devra aussi prêter une attention particulière à qui meurt la nuit et comment. S’ils l’ignorent, ils risquent de perdre de façon inattendue à la fin d’un jour avec 4 ou 5 ou même 6 joueurs encore en vie. Toutefois, s’ils peuvent trouver comment les joueurs sont morts la nuit, ils peuvent deviner quels rôles maléfiques sont en jeu. Cela leur permettra d’éviter de perdre à cause d’un redoutable Conspirateur ou un Po intimidant et d’avoir des indices utiles sur quel rôle gentil à tuer un joueur par accident (comme la Gitane ou l’Inventeur)
+            Le village devra aussi prêter une attention particulière à qui meurt la nuit et comment. S’ils l’ignorent, ils risquent de perdre de façon inattendue à la fin d’un jour avec 4 ou 5 ou même 6 joueurs encore en vie. Toutefois, s’ils peuvent trouver comment les joueurs sont morts la nuit, ils peuvent deviner quels rôles maléfiques sont en jeu. Cela leur permettra d’éviter de perdre à cause d’un redoutable Conspirateur ou un Po intimidant et d’avoir des indices utiles sur quel rôle gentil à tuer un joueur par accident (comme la Sélénite ou le Bricoleur)
             
-            Les maléfiques pourraient se sentir invincible au début, mais ils auront besoin d’utiliser leurs capacités avec précision et prudence afin de l’emporter. Le Démon pourrait avoir besoin de convaincre le village qu’un autre type de Démon est en jeu afin d’éviter l’effet dévastateur de rôles gentils (comme l’Exorciste ou le Courtisan) et pourraient avoir besoin de ne délibérément pas tuer pour cela. Mais si le Démon peut trouver qui attaquer et qui ne peut attaquer (comme les voisins de l’Herboriste ou le fou) alors le village va avoir de gros problèmes.
+            Les maléfiques pourraient se sentir invincible au début, mais ils auront besoin d’utiliser leurs capacités avec précision et prudence afin de l’emporter. Le Démon pourrait avoir besoin de convaincre le village qu’un autre type de Démon est en jeu afin d’éviter l’effet dévastateur de rôles gentils (comme l’Exorciste ou le Courtisan) et pourraient avoir besoin de ne délibérément pas tuer pour cela. Mais si le Démon peut trouver qui attaquer et qui ne peut attaquer (comme les voisins de la Tisanière ou le fou) alors le village va avoir de gros problèmes.
             
             Les Sbires auront également besoin d’un bon timing pour leurs capacités. Un Assassin qui frappe au bon moment, un Avocat du diable ou un Conspirateur qui peuvent lire le village peuvent transformer une défaire en victoire.
             
@@ -140,18 +140,18 @@ export const Modules: {
         
         detail:`
             Si c’est la première fois que vous contez BMR et que vous voulez apprendre en utilisant les rôles les plus simples et les plus directs, considérez mettre ces rôles en jeu :
-            Parieur, Professeur, Ménestrel, Pacifiste, Fou, Inventeur, Assassin, Shabaloth.
-            Vous aurez besoin de choisir quand utiliser la capacité du Pacifiste, de l’Inventeur et la capacité de résurrection du Shabaloth.  Les capacités du Ménestrel et du Fou fonctionneront automatiquement. Les joueurs feront le reste.
+            Parieur, Professeur, Ménestrel, Pacifiste, Fou, Bricoleur, Assassin, Shabaloth.
+            Vous aurez besoin de choisir quand utiliser la capacité du Pacifiste, de le Bricoleur et la capacité de résurrection du Shabaloth.  Les capacités du Ménestrel et du Fou fonctionneront automatiquement. Les joueurs feront le reste.
 
             Si vous vous sentez un peu plus aventureux, et que vous aimeriez un style de jeu plus singulier qui se frotte avec des rôles et des interactions plus compliquées, considérez mettre ces rôles en jeu (pour une partie à 8 joueurs) ou changez-en un pour adapter à votre style :
            
-            Parieur, Commère, Femme de Chambre, Mamie, Inventeur, Gitane, Parrain, Zombuul.
-            Ce sera une partie avec pas mal d’informations si le village veut accepter le niveau de risque qui va avec. Parieur, Commère, Femme de Chambre et Mamie apprendront des informations utiles rapidement, mais auront besoin de bien coordonner leur savoir pour traquer l’insaisissable Zombuul. L’Inventeur et la Gitane apporteront une couverture très utile pour le Démon car avec le Parrain en jeu, il peut y avoir des morts supplémentaires la nuit ce qui pourra faire croire qu’un autre Démon est en jeu.
+            Parieur, Commère, Femme de Chambre, Mamie, Bricoleur, Sélénite, Parrain, Zombuul.
+            Ce sera une partie avec pas mal d’informations si le village veut accepter le niveau de risque qui va avec. Parieur, Commère, Femme de Chambre et Mamie apprendront des informations utiles rapidement, mais auront besoin de bien coordonner leur savoir pour traquer l’insaisissable Zombuul. Le Bricoleur et la Sélénite apporteront une couverture très utile pour le Démon car avec le Parrain en jeu, il peut y avoir des morts supplémentaires la nuit ce qui pourra faire croire qu’un autre Démon est en jeu.
 
             Femme de Chambre, Aubergiste, Ménestrel, Exorciste, Fou, Lunatique, Assassin, Pukka. 
             Cette composition est amusante pour les maléfiques. L’Assassin et le Pukka peuvent tous les deux tuer qui pourraient ne pas mourir autrement et le Pukka peut apporter beaucoup de confusion en empoisonnant la Femme de Chambre, l’Aubergiste, le Ménestrel ou l’Exorciste. Le Village pourrait déduire qu’un Pukka est en jeu si le Fou meurt et il pourrait aussi utiliser la capacité de l’Aubergiste pour repousser les morts à posteriori du Pukka. Le Lunatique peut être difficile à conter si vous n’êtes pas familier avec BMR alors prenez votre temps.
 
-            Aubergiste, Herboriste, Pacifiste, Professeur, Fou, Inventeur, Avocat du Diable, Shabaloth.
+            Aubergiste, Tisanière, Pacifiste, Professeur, Fou, Bricoleur, Avocat du Diable, Shabaloth.
             Dans cette partie, le village et les maléfiques doivent travailler dur pour tuer des joueurs du camp opposé. Il y a beaucoup de protection face à la mort pour les deux équipes. Durant la journée, les exécutions pourraient ne pas entrainer la mort et le village devra déterminer si cela vient du Pacifiste ou de l’Avocat du Diable ou autre. La nuit, le Shabaloth aura besoin de choisir ses victimes avec sagesse ou alors il pourrait ne pas être capable de tuer. Les joueurs peuvent être ramenés à la vie et le village devra aussi fournir un effort pour déterminer pourquoi.
 
             Marin, Femme de Chambre, Ménestrel, Courtisan, Parieur, Brute, Conspirateur, Po.
@@ -171,7 +171,7 @@ export const Modules: {
             Roles.VILLAGEOIS.ORACLE,
             Roles.VILLAGEOIS.SAVANT,
             Roles.VILLAGEOIS.COUTURIERE,
-            Roles.VILLAGEOIS.FAUSSAIRE,
+            Roles.VILLAGEOIS.PHILOSOPHE,
             Roles.VILLAGEOIS.ARTISTE,
             Roles.VILLAGEOIS.JONGLEUR,
             Roles.VILLAGEOIS.SAGE,
@@ -191,7 +191,7 @@ export const Modules: {
             Roles.VOYAGEURS.BOUCHER,
             Roles.VOYAGEURS.COLLECTEUR_D_OS,
             Roles.VOYAGEURS.DEVIANT,
-            Roles.VOYAGEURS.FILLE_DE_JOIE
+            Roles.VOYAGEURS.GALANTE
         ],
         summary: `La Folie arrive et l'Empoisonnement est plus présent que jamais !
     Sects & Violets sera votre 3ème expérience sur BotC, pour joueurs intermédiaires.`,
@@ -224,12 +224,12 @@ export const Modules: {
             Charmeur de Serpent, Rêveur, Fleuriste, Savant, Barbier, Maladroit, Vieille Chouette, Fang Gu.
             Cette composition se focalise sur le changement de rôle. Le Charmeur de Serpent et le Fang Gu peuvent provoquer un changement dans l’identité du Démon. La Vieille Chouette créé de nouveaux rôles. Le Barbier peut aussi complique de qui est qui en échangeant des rôles. Malheur au Maladroit qui devra choisir rapidement dans tout ce chaos !
 
-            Crieur, Couturière, Faussaire, Artiste, Jongleur, Sage, Jumeau Maléfique, Vigormortis. 
+            Crieur, Couturière, Philosophe, Artiste, Jongleur, Sage, Jumeau Maléfique, Vigormortis. 
             Cette composition va se focaliser sur le Jumeau Maléfique et le Jumeau gentil. Le village a d’incroyables ressources pur déterminer l’alignement des jumeaux mais le Vigormortis peut tuer un des jumeaux si les choses se gâtent ce qui causera beaucoup de confusion et de chaos dans le processus. Toutefois, si le village met toutes ses ressources pour trouver le Jumeau maléfique, il pourrait ne pas trouver le Démon a temps. Equilibre et prévoyance seront seront la clé. 
 
             Horologer, Mathématicien, Crieur, Savant, Artist, Dulcinée, Sorcière, No Dashii.
             Cette composition est similaire au premier exemple avec l’ajout du Mathématicien du Crieur, du Savant et de la Dulcinée. Le No Dashii peut empoisonner plein de Villageois intéressant mais le Savant et le Mathématicien peuvent trouver le No Dashii assez rapidement s’ils sont assez malin. La Sorcière est effrayante, en particulier avec la Dulcinée mais l’Horloger et l’Artiste peuvent se coordonner our trouver le deuxième maléfique une fois qu’ils ont une idée du premier. Cette compo estp lus adaptée à des joueurs prudents et réfléchis.
-            Horloger, Faussaire, Fleuriste, Mathématicien, Sage, Bête de foire, Manipulateur, Vortox. Préparez-vous à une partie déchainée ! Le Vortox va créer une fausse information pour des rôles cruciaux tandis que la Bête de Foire et le Manipulateur vont semer le chaos et la méfiance. Vous aurez besoin d’être familier avec la folie et de la subtile différence entre les deux rôles mais si les joueurs sont aussi familiers avec la folie, ça peut être très amusant. Ce composition amène à des bluffs inhabituels, des accusations confuses et une expérience exubérante. 
+            Horloger, Philosophe, Fleuriste, Mathématicien, Sage, Bête de foire, Manipulateur, Vortox. Préparez-vous à une partie déchainée ! Le Vortox va créer une fausse information pour des rôles cruciaux tandis que la Bête de Foire et le Manipulateur vont semer le chaos et la méfiance. Vous aurez besoin d’être familier avec la folie et de la subtile différence entre les deux rôles mais si les joueurs sont aussi familiers avec la folie, ça peut être très amusant. Ce composition amène à des bluffs inhabituels, des accusations confuses et une expérience exubérante. 
 `
     },
     DEADLY_PENANCE_DAY: {
@@ -245,7 +245,7 @@ export const Modules: {
             Roles.VILLAGEOIS.CRIEUR,
             Roles.VILLAGEOIS.PARIEUR,
             Roles.VILLAGEOIS.EXORCISTE,
-            Roles.VILLAGEOIS.FAUSSAIRE,
+            Roles.VILLAGEOIS.PHILOSOPHE,
             Roles.VILLAGEOIS.SOLDAT,
             Roles.VILLAGEOIS.FOU,
             Roles.VILLAGEOIS.MAIRE,
@@ -273,7 +273,7 @@ export const Modules: {
             Roles.VILLAGEOIS.SAVANT,
             Roles.VILLAGEOIS.AMNESIQUE,
             Roles.VILLAGEOIS.CANNIBALE,
-            Roles.VILLAGEOIS.FAUSSAIRE,
+            Roles.VILLAGEOIS.PHILOSOPHE,
             Roles.VILLAGEOIS.COUTURIERE,
             Roles.VILLAGEOIS.ARTISTE,
             Roles.VILLAGEOIS.PECHEUR,

@@ -100,6 +100,12 @@
       "originalName": "Gossip",
       "clazz": "DETECTION"
     },
+    "CORNEILLE": {
+      "name": "Corneille",
+      "originalName": "Ravenkeeper",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "S\"il est tué pendant la nuit"
+    },
     "COURTISAN": {
       "name": "Courtisan",
       "originalName": "Courtier",
@@ -144,11 +150,6 @@
       "originalName": "Exorcist",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
-    "FAUSSAIRE": {
-      "name": "Faussaire",
-      "originalName": "Philosopher",
-      "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
-    },
     "FEMME_DE_CHAMBRE": {
       "name": "Femme de Chambre",
       "filename": "femme-de-chambre",
@@ -156,8 +157,9 @@
       "clazz": "DETECTION",
       "wakeUpSchedule": "EVERY_NIGHT"
     },
-    "FERMIER": {
-      "name": "Fermier",
+    "FERMIERE": {
+      "name": "Fermière",
+      "filename": "fermiere",
       "originalName": "Farmer"
     },
     "FLEURISTE": {
@@ -177,12 +179,6 @@
       "originalName": "Fool",
       "clazz": "TANK"
     },
-    "GARDIEN": {
-      "name": "Gardien",
-      "originalName": "Ravenkeeper",
-      "clazz": "DETECTION",
-      "wakeUpSchedule": "S\"il est tué pendant la nuit"
-    },
     "GENERAL": {
       "name": "Général",
       "filename": "general",
@@ -194,11 +190,6 @@
       "filename": "grande-pretresse",
       "originalName": "High Priestess",
       "wakeUpSchedule": "EVERY_NIGHT"
-    },
-    "HERBORISTE": {
-      "name": "Herboriste",
-      "originalName": "Tea Lady",
-      "clazz": "PROTECTION"
     },
     "HORLOGER": {
       "name": "Horloger",
@@ -218,8 +209,8 @@
       "originalName": "Engineer",
       "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
     },
-    "INTENDANT": {
-      "name": "Intendant",
+    "INTENDANTE": {
+      "name": "Intendante",
       "originalName": "Steward",
       "wakeUpSchedule": "FIRST_NIGHT"
     },
@@ -310,6 +301,11 @@
       "filename": "pecheur",
       "originalName": "Fisherman"
     },
+    "PHILOSOPHE": {
+      "name": "Philosophe",
+      "originalName": "Philosopher",
+      "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
+    },
     "PLANTEUR_DE_PAVOT": {
       "name": "Planteur de pavot",
       "filename": "planteur-de-pavot",
@@ -369,6 +365,12 @@
       "originalName": "Soldier",
       "clazz": "TANK"
     },
+    "TISANIERE": {
+      "name": "Tisanière",
+      "filename": "tisaniere",
+      "originalName": "Tea Lady",
+      "clazz": "PROTECTION"
+    },
     "VEILLEUR_DE_NUIT": {
       "name": "Veilleur de nuit",
       "filename": "veilleur-de-nuit",
@@ -396,6 +398,10 @@
       "filename": "bete-de-foire",
       "originalName": "Mutant"
     },
+    "BRICOLEUR": {
+      "name": "Bricoleur",
+      "originalName": "Tinker"
+    },
     "BRUTE": {
       "name": "Brute (Gros bras)",
       "filename": "brute",
@@ -421,10 +427,6 @@
       "originalName": "Hermit",
       "wakeUpSchedule": "Identique auaux rôles copiés"
     },
-    "GITANE": {
-      "name": "Gitane",
-      "originalName": "Moonchild"
-    },
     "GOLEM": {
        "name": "Golem",
       "originalName": "Golem"
@@ -433,10 +435,6 @@
       "name": "Hérétique",
       "filename": "heretique",
       "originalName": "Heretic"
-    },
-    "INVENTEUR": {
-      "name": "Inventeur",
-      "originalName": "Tinker"
     },
     "LUNATIQUE": {
       "name": "Lunatique",
@@ -474,6 +472,11 @@
     "RECLUS": {
       "name": "Reclus",
       "originalName": "Recluse"
+    },
+    "SELENITE": {
+      "name": "Sélénite",
+      "filename": "selenite",
+      "originalName": "Moonchild"
     },
     "SOULARD": {
       "name": "Soûlard",
@@ -521,7 +524,7 @@
       "originalName": "Poisoner",
       "wakeUpSchedule": "EVERY_NIGHT"
     },
-    "ESPIONNENE": {
+    "ESPIONNE": {
       "name": "Espionne",
       "originalName": "Spy",
       "wakeUpSchedule": "EVERY_NIGHT"
@@ -535,8 +538,8 @@
       "originalName": "Harpy",
       "wakeUpSchedule": "EVERY_NIGHT"
     },
-    "INVOCATEUR": {
-      "name": "Invocateur",
+    "INVOCATRICE": {
+      "name": "Invocatrice",
       "originalName": "Summoner",
       "wakeUpSchedule": "Première nuit pour les bluffs et troisième nuit pour choisir un Démon"
     },
@@ -650,7 +653,8 @@
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
     "IMP": {
-      "name": "Imp",
+      "name": "Imp (Diablotin)",
+      "filename": "imp",
       "originalName": "Imp",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
@@ -800,17 +804,17 @@
       "filename": "deviant",
       "originalName": "Deviant"
     },
-    "FILLE_DE_JOIE": {
-      "name": "Fille de joie",
-      "filename": "fille-de-joie",
-      "originalName": "Harlot",
-      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
-    },
     "DEPHASE": {
       "name": "Déphasé",
       "filename": "dephase",
       "originalName": "Cacklejack"
-    },      
+    },  
+    "GALANTE": {
+      "name": "Galante",
+      "filename": "galante",
+      "originalName": "Harlot",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },    
     "GANGSTER": {
       "name": "Gangster",
       "originalName": "Gangster"
