@@ -103,6 +103,7 @@
     },
     "COUTURIERE": {
       "name": "Couturière",
+      "filename": "couturiere",
       "originalName": "Seamstress",
       "clazz": "DETECTION",
       "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
@@ -761,9 +762,9 @@
       "originalName": "Apprentice",
       "wakeUpSchedule": "Lors de sa première nuit puis identique au rôle attribué"
     },
-    "ARCHEVEQUE": {
-      "name": "Archevêque",
-      "filename": "archeveque",
+    "EVEQUE": {
+      "name": "Evêque",
+      "filename": "eveque",
       "originalName": "Bishop"
     },
     "MAGISTRAT": {

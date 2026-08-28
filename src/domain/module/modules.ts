@@ -108,7 +108,7 @@ export const Modules: {
             Roles.DEMONS.SHABALOTH,
             Roles.DEMONS.ZOMBUUL,
             Roles.VOYAGEURS.APPRENTI,
-            Roles.VOYAGEURS.ARCHEVEQUE,
+            Roles.VOYAGEURS.EVEQUE,
             Roles.VOYAGEURS.MAGISTRAT,
             Roles.VOYAGEURS.MATRONE,
             Roles.VOYAGEURS.NECROMANT
