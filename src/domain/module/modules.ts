@@ -31,7 +31,7 @@ export const Modules: {
             Roles.VILLAGEOIS.SOLDAT,
             Roles.VILLAGEOIS.MAIRE,
             Roles.MARGINAUX.MAJORDOME,
-            Roles.MARGINAUX.SOULARD,
+            Roles.MARGINAUX.IVROGNE,
             Roles.MARGINAUX.RECLUSE,
             Roles.MARGINAUX.SAINT,
             Roles.SBIRES.EMPOISONNEUR,
@@ -71,7 +71,7 @@ export const Modules: {
         detail:`
             Choisir les rôles. Les rôles que vous choisissez affecteront grandement la façon dont le jeu se déroulera. Choisissez ce que vous pensez être amusant, ce qui interagira bien ensemble ou simplement ce que vous vous sentez capable de gérer. S'il s'agit de votre première partie et que vous ne savez pas quels rôles inclure, tenez compte des éléments suivants (pour une partie à 8 joueurs) ou modifiez-les en fonction de votre style:
             
-            1) Cuistot, Empathe, Voyante, Fossoyeur, Pucelle, Soûlard (Enquêteur), Croqueuse d’hommes et Imp. Cette configuration contient beaucoup d'informations pour l’équipe des gentils, de bonnes possibilités d'impliquer les joueurs et de parler immédiatement, mais elle est également relativement sûre pour les joueurs maléfiques qui ne savent pas comment bien bluffer. Ce sera un jeu chaotique qui ravira les nouveaux joueurs. N'oubliez pas de donner de fausses informations à l'Enquêteur ivre et rappelez-vous qu'il ne peut pas mourir en désignant l'Immaculée !
+            1) Cuistot, Empathe, Voyante, Fossoyeur, Pucelle, Ivrogne (Enquêteur), Croqueuse d’hommes et Imp. Cette configuration contient beaucoup d'informations pour l’équipe des gentils, de bonnes possibilités d'impliquer les joueurs et de parler immédiatement, mais elle est également relativement sûre pour les joueurs maléfiques qui ne savent pas comment bien bluffer. Ce sera un jeu chaotique qui ravira les nouveaux joueurs. N'oubliez pas de donner de fausses informations à l'Enquêteur ivre et rappelez-vous qu'il ne peut pas mourir en désignant l'Immaculée !
             
             2) Mercenaire, Corneille, Maire, Voyante, Empathe, Saint, Empoisonneur et Imp. Ce sera un jeu beaucoup plus calme, car les joueurs découvriront lentement si le Saint, le Mercenaire et le Maire disent la vérité. L’Empoisonneur, qui a de nombreuses cibles juteuses, peut certainement provoquer un certain chaos. Cependant, le jeu peut être rapide si le Mercenaire est averti, si le Saint ne l'est pas assez, ou si l'Empoisonneur ne peut pas trouver l'Empathe et la Voyante à temps. Si le Maire est attaqué la nuit, pensez à tuer un autre joueur à sa place – peut-être la Corneille?
             
@@ -251,7 +251,7 @@ export const Modules: {
             Roles.VILLAGEOIS.MAIRE,
             Roles.MARGINAUX.BARBIER,
             Roles.MARGINAUX.POLITICIEN,
-            Roles.MARGINAUX.SOULARD,
+            Roles.MARGINAUX.IVROGNE,
             Roles.MARGINAUX.SAINT,
             Roles.SBIRES.PARRAIN,
             Roles.SBIRES.ASSASSIN,
@@ -279,7 +279,7 @@ export const Modules: {
             Roles.VILLAGEOIS.PECHEUR,
             Roles.VILLAGEOIS.MERCENAIRE,
             Roles.MARGINAUX.BETE_DE_FOIRE,
-            Roles.MARGINAUX.SOULARD,
+            Roles.MARGINAUX.IVROGNE,
             Roles.MARGINAUX.SAINT,
             Roles.MARGINAUX.LUNATIQUE,
             Roles.SBIRES.GOBELIN,
