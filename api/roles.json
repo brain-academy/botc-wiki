@@ -805,17 +805,12 @@
       "filename": "deviant",
       "originalName": "Deviant"
     },
-    "DEPHASE": {
-      "name": "Déphasé",
-      "filename": "dephase",
-      "originalName": "Cacklejack"
-    },  
-    "GALANTE": {
+        "GALANTE": {
       "name": "Galante",
       "filename": "galante",
       "originalName": "Harlot",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
-    },    
+    },     
     "GANGSTER": {
       "name": "Gangster",
       "originalName": "Gangster"
@@ -823,6 +818,11 @@
     "GNOME": {
       "name": "Gnome",
       "originalName": "Gnome"
+    },
+    "DEPHASE": {
+      "name": "Déphasé",
+      "filename": "dephase",
+      "originalName": "Cacklejack"
     }   
   }
 }
