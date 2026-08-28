@@ -1,5 +1,5 @@
 import JsonRoles from '../../../static/api/roles.json'
-import Role, { Demon, Etranger, Sbire, Villageois, Voyageur } from './role'
+import Role, { Demons, Marginaux, Sbires, Villageois, Voyageurs } from './role'
 
 export const Roles = Object.fromEntries(
 	Object.entries(JsonRoles)
@@ -12,10 +12,10 @@ type JsonRole = typeof JsonRoles[keyof typeof JsonRoles]
 function ctor(jsonRole: JsonRole) {
 	switch (jsonRole) {
 		case JsonRoles.VILLAGEOIS: return Villageois
-		case JsonRoles.ETRANGER: return Etranger
-		case JsonRoles.SBIRE: return Sbire
-		case JsonRoles.DEMON: return Demon
-		default: return Voyageur
+		case JsonRoles.MARGINAUX: return Marginaux
+		case JsonRoles.SBIRES: return Sbires
+		case JsonRoles.DEMONS: return Demons
+		default: return Voyageurs
 	}
 }
 

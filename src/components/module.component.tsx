@@ -50,7 +50,7 @@ const Module = ({page, tile, module, ...other}: ModuleProps) => {
 					.filter(isNaN as any)
 					.map((type, i) => (
 						<React.Fragment key={i}>
-							<h1 style={{padding: '20px 0 0 0'}}>{type}</h1>
+							<h1 style={{padding: '20px 0 0 0'}}>{roleTypeLabel(type)}</h1>
 							<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
 								{roles
 									.filter(role => RoleType[role.type] === type)
@@ -83,6 +83,8 @@ const Module = ({page, tile, module, ...other}: ModuleProps) => {
 		</div>
 	else return <a href={path} style={{color}}>{name}</a>
 }
+
+const roleTypeLabel = (type: string) => type === RoleType[RoleType.Demons] ? 'Démons' : type
 
 Modules.TROUBLE_BREWING.theme = {color: 'red'}
 Modules.BAD_MOON_RISING.theme = {color: 'orange'}

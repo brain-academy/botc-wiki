@@ -21,7 +21,7 @@ export abstract class Role implements BotcEntity {
     }
 }
 
-export enum RoleType { Villageois, Etranger, Sbire, Demon, Voyageur }
+export enum RoleType { Villageois, Marginaux, Sbires, Demons, Voyageurs }
 
 export interface CreateRole {
     name: string
@@ -36,24 +36,24 @@ export class Villageois extends Role implements Good {
     static new = (role: CreateRole): Villageois => super.new({ type: this.type, ...role })
 }
 
-export class Etranger extends Role implements Good {
-    static readonly type = RoleType.Etranger
-    static new = (role: CreateRole): Etranger => super.new({ type: this.type, ...role })
+export class Marginaux extends Role implements Good {
+    static readonly type = RoleType.Marginaux
+    static new = (role: CreateRole): Marginaux => super.new({ type: this.type, ...role })
 }
 
-export class Sbire extends Role implements Evil {
-    static readonly type = RoleType.Sbire
-    static new = (role: CreateRole): Sbire => super.new({ type: this.type, ...role })
+export class Sbires extends Role implements Evil {
+    static readonly type = RoleType.Sbires
+    static new = (role: CreateRole): Sbires => super.new({ type: this.type, ...role })
 }
 
-export class Demon extends Role implements Evil {
-    static readonly type = RoleType.Demon
-    static new = (role: CreateRole): Demon => super.new({ type: this.type, ...role })
+export class Demons extends Role implements Evil {
+    static readonly type = RoleType.Demons
+    static new = (role: CreateRole): Demons => super.new({ type: this.type, ...role })
 }
 
-export class Voyageur extends Role {
-    static readonly type = RoleType.Voyageur
-    static new = (role: CreateRole): Voyageur => super.new({ type: this.type, ...role })
+export class Voyageurs extends Role {
+    static readonly type = RoleType.Voyageurs
+    static new = (role: CreateRole): Voyageurs => super.new({ type: this.type, ...role })
 }
 
 /** Alignment type */

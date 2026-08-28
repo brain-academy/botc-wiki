@@ -382,7 +382,7 @@
       "wakeUpSchedule": "EVERY_NIGHT"
     }
   },
-  "ETRANGER": {
+  "MARGINAUX": {
     "BALANCE": {
       "name": "Balance",
       "originalName": "Snitch"
@@ -398,6 +398,7 @@
     },
     "BRUTE": {
       "name": "Brute (Gros bras)",
+      "filename": "brute",
       "originalName": "Goon",
       "wakeUpSchedule": "Lorsque ciblé la première fois de nuit par l\"alignement opposé à l\"alignement actuel"
     },
@@ -489,7 +490,7 @@
       "originalName": "Zealot"
     }
   },
-  "SBIRE": {
+  "SBIRES": {
     "ASSASSIN": {
       "name": "Assassin",
       "originalName": "Assassin",
@@ -573,7 +574,7 @@
     "PARRAIN": {
       "name": "Parrain",
       "originalName": "Godfather",
-      "wakeUpSchedule": "La première nuit, puis quand un Etranger meurt de jour"
+      "wakeUpSchedule": "La première nuit, puis quand un Marginal meurt de jour"
     },
     "PROPHETE_DE_L_EFFROI": {
       "name": "Prophète de l'effroi",
@@ -629,7 +630,7 @@
       "originalName": "Xaan"
     }
   },
-  "DEMON": {
+  "DEMONS": {
     "AL_HADIKHIA": {
       "name": "Al-Hadikhia",
       "filename": "al-hadikhia",
@@ -731,7 +732,7 @@
       "wakeUpSchedule": "Si aucune exécution la veille"
     }
   },
-  "VOYAGEUR": {
+  "VOYAGEURS": {
     "BOUC_EMISSAIRE": {
       "name": "Bouc émissaire",
       "filename": "bouc-emissaire",

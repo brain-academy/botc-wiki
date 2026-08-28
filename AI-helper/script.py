@@ -143,9 +143,9 @@ def get_description_type(role_name):
         if element["name"] == role_name:
             return "-Villageois gentil-"
 
-    for element in roles_json.get("ETRANGER").values():
+    for element in roles_json.get("MARGINAL").values():
         if element["name"] == role_name:
-            return "-Etranger gentil-"
+            return "-Marginal gentil-"
 
     for element in roles_json.get("SBIRE").values():
         if element["name"] == role_name:

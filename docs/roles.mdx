@@ -12,26 +12,26 @@ import Role from '/src/components/role.component'
 	{ Object.values(Roles.VILLAGEOIS).map(role => <Role key={role.name} role={role} tile="true" />) }
 </div>
 
-## Étrangers
+## Marginaux
 
 <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
-	{ Object.values(Roles.ETRANGER).map(role => <Role key={role.name} role={role} tile="true" />) }
+	{ Object.values(Roles.MARGINAUX).map(role => <Role key={role.name} role={role} tile="true" />) }
 </div>
 
 ## Sbires
 
 <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
-	{ Object.values(Roles.SBIRE).map(role => <Role key={role.name} role={role} tile="true" />) }
+	{ Object.values(Roles.SBIRES).map(role => <Role key={role.name} role={role} tile="true" />) }
 </div>
 
 ## Démons
 
 <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
-	{ Object.values(Roles.DEMON).map(role => <Role key={role.name} role={role} tile="true" />) }
+	{ Object.values(Roles.DEMONS).map(role => <Role key={role.name} role={role} tile="true" />) }
 </div>
 
 ## Voyageurs
 
 <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 180px)'}}>
-	{ Object.values(Roles.VOYAGEUR).map(role => <Role key={role.name} role={role} tile="true" />) }
+	{ Object.values(Roles.VOYAGEURS).map(role => <Role key={role.name} role={role} tile="true" />) }
 </div>
