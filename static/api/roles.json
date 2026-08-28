@@ -174,8 +174,9 @@
       "clazz": "DETECTION",
       "wakeUpSchedule": "Si exécution la veille"
     },
-    "FOU": {
-      "name": "Fou",
+    "FOU_DU_ROI": {
+      "name": "Fou du roi",
+      "filename": "fou-du-roi",
       "originalName": "Fool",
       "clazz": "TANK"
     },
@@ -202,6 +203,11 @@
       "filename": "idiot-du-village",
       "originalName": "Village Idiot",
       "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "IMMACULEE": {
+      "name": "Immaculée",
+      "filename": "immaculee",
+      "originalName": "Virgin"
     },
     "INGENIEUR": {
       "name": "Ingénieur",
@@ -241,7 +247,8 @@
        "originalName": "Mayor" 
     },
     "MAMIE": {
-      "name": "Mamie",
+      "name": "Mamie (Grand-mère)",
+      "filename":"mamie",
       "originalName": "Grandmother",
       "clazz": "FIRST_NIGHT",
       "wakeUpSchedule": "FIRST_NIGHT"
@@ -329,10 +336,6 @@
       "name": "Professeur",
       "originalName": "Professor",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
-    },
-    "PUCELLE": {
-      "name": "Pucelle",
-      "originalName": "Virgin"
     },
     "REVEUR": {
       "name": "Reveur",
@@ -452,7 +455,7 @@
       "originalName": "Puzzlemaster"
     },
     "MEDECIN_DE_PESTE": {
-      "name": "Médecin de peste",
+      "name": "Médecin de peste (Docteur de peste)",
       "filename": "medecin-de-peste",
       "originalName": "Plague doctor"
     },
@@ -469,8 +472,8 @@
       "name": "Politicien",
       "originalName": "Politician"
     },
-    "RECLUS": {
-      "name": "Reclus",
+    "RECLUSE": {
+      "name": "Recluse",
       "originalName": "Recluse"
     },
     "SELENITE": {
@@ -484,8 +487,8 @@
       "originalName": "Drunk",
       "wakeUpSchedule": "Identique au faux rôle attribué"
     },
-    "VERTUEUX": {
-      "name": "Vertueux",
+    "SAINT": {
+      "name": "Saint",
       "originalName": "Saint"
     },
     "ZELOTE": {
@@ -533,6 +536,11 @@
       "name": "Gobelin",
       "originalName": "Gobelin"
     },
+    "GUENAUDE": {
+      "name": "Guenaude",
+      "originalName": "Pit-Hag",
+      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
     "HARPIE": {
       "name": "Harpie",
       "originalName": "Harpy",
@@ -543,14 +551,15 @@
       "originalName": "Summoner",
       "wakeUpSchedule": "Première nuit pour les bluffs et troisième nuit pour choisir un Démon"
     },
-    "JUMEAU_MALEFIQUE": {
-      "name": "Jumeau Maléfique",
-      "filename": "jumeau-malefique",
+    "JUMELLE_MALEFIQUE": {
+      "name": "Jumelle Maléfique",
+      "filename": "jumelle-malefique",
       "originalName": "Evil Twin",
       "wakeUpSchedule": "FIRST_NIGHT"
     },
     "MANIPULATEUR": {
-      "name": "Manipulateur",
+      "name": "Manipulateur (Cerenovus)",
+      "filename": "manipulateur",
       "originalName": "Cerenovus",
       "wakeUpSchedule": "EVERY_NIGHT"
     },
@@ -565,7 +574,7 @@
       "wakeUpSchedule": "FIRST_NIGHT"
     },
     "ORGUE_DE_BARBARIE": {
-      "name": "Orgue de barbarie",
+      "name": "Orgue de barbarie (Organiste de rue)",
       "filename": "orgue-de-barbarie",
       "originalName": "Organ Grinder",
       "wakeUpSchedule": "EVERY_NIGHT"
@@ -574,12 +583,6 @@
       "name": "Parrain",
       "originalName": "Godfather",
       "wakeUpSchedule": "La première nuit, puis quand un Marginal meurt de jour"
-    },
-    "PROPHETE_DE_L_EFFROI": {
-      "name": "Prophète de l'effroi",
-      "filename": "prophete-de-l-effroi",
-      "originalName": "Fearmonger",
-      "wakeUpSchedule": "EVERY_NIGHT"
     },
     "PSYCHOPATHE": {
       "name": "Psychopathe",
@@ -613,17 +616,17 @@
       "filename": "succube",
       "originalName": "Scarlet Woman"
     },
+    "TOURMENTEUR": {
+      "name": "Tourmenteur",
+      "filename": "tourmenteur",
+      "originalName": "Fearmonger",
+      "wakeUpSchedule": "EVERY_NIGHT"
+    },
     "VEUVE_NOIRE": {
       "name": "Veuve Noire",
       "filename": "veuve-noire",
       "originalName": "Widow",
       "wakeUpSchedule": "FIRST_NIGHT"
-    },
-    "VIEILLE_CHOUETTE": {
-      "name": "Vieille Chouette",
-      "filename": "vieille-chouette",
-      "originalName": "Pit-Hag",
-      "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
     "VIZIR": { 
       "name": "Vizir", 
@@ -696,8 +699,8 @@
       "originalName": "Ojo",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
-    "SANGSUE": {
-      "name": "Sangsue",
+    "SSANGSUE": {
+      "name": "Ssangsue",
       "originalName": "Lleech",
       "wakeUpSchedule": "EVERY_NIGHT"
     },
@@ -706,9 +709,8 @@
       "originalName": "Shabaloth",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
-    "P_TIT_MONSTRE": {
-      "name": "P'tit Monstre",
-      "filename": "p-tit-monstre",
+    "TIMONSTRE": {
+      "name": "Timonstre",
       "originalName": "Lil' Monsta"
     },
     "SEIGNEUR_DE_TYPHON": {
@@ -757,8 +759,8 @@
       "name": "Vengeur",
       "originalName": "Gunslinger"
     },
-    "VOLEUR": {
-      "name": "Voleur",
+    "VOLEUSE": {
+      "name": "Voleuse",
       "originalName": "Thief",
       "wakeUpSchedule": "EVERY_NIGHT"
     },
@@ -772,8 +774,8 @@
       "filename": "eveque",
       "originalName": "Bishop"
     },
-    "MAGISTRAT": {
-      "name": "Magistrat",
+    "JUGE": {
+      "name": "Juge",
       "originalName": "Judge"
     },
     "MATRONE": {
@@ -781,8 +783,8 @@
       "originalName": "Matron",
       "wakeUpSchedule": "EVERY_NIGHT"
     },
-    "NECROMANT": {
-      "name": "Necromant",
+    "VOUDON": {
+      "name": "Voudon",
       "originalName": "Voudon"
     },
     "BARISTA": {

@@ -26,14 +26,14 @@ export const Modules: {
             Roles.VILLAGEOIS.FOSSOYEUR,
             Roles.VILLAGEOIS.MOINE,
             Roles.VILLAGEOIS.CORNEILLE,
-            Roles.VILLAGEOIS.PUCELLE,
+            Roles.VILLAGEOIS.IMMACULEE,
             Roles.VILLAGEOIS.MERCENAIRE,
             Roles.VILLAGEOIS.SOLDAT,
             Roles.VILLAGEOIS.MAIRE,
             Roles.MARGINAUX.MAJORDOME,
             Roles.MARGINAUX.SOULARD,
-            Roles.MARGINAUX.RECLUS,
-            Roles.MARGINAUX.VERTUEUX,
+            Roles.MARGINAUX.RECLUSE,
+            Roles.MARGINAUX.SAINT,
             Roles.SBIRES.EMPOISONNEUR,
             Roles.SBIRES.ESPIONNE,
             Roles.SBIRES.SUCCUBE,
@@ -43,7 +43,7 @@ export const Modules: {
             Roles.VOYAGEURS.BUREAUCRATE,
             Roles.VOYAGEURS.MENDIANT,
             Roles.VOYAGEURS.VENGEUR,
-            Roles.VOYAGEURS.VOLEUR
+            Roles.VOYAGEURS.VOLEUSE
         ],
         summary: `De l'art de l'ivresse à celui d'empoisonnement...
             Trouble Brewing sera votre première expérience dans le monde fantastique de Blood On The Clocktower ! C'est par ce script qu'on commence.`,
@@ -73,9 +73,9 @@ export const Modules: {
             
             1) Cuistot, Empathe, Voyante, Fossoyeur, Pucelle, Soûlard (Enquêteur), Croqueuse d’hommes et Imp. Cette configuration contient beaucoup d'informations pour l’équipe des gentils, de bonnes possibilités d'impliquer les joueurs et de parler immédiatement, mais elle est également relativement sûre pour les joueurs maléfiques qui ne savent pas comment bien bluffer. Ce sera un jeu chaotique qui ravira les nouveaux joueurs. N'oubliez pas de donner de fausses informations à l'Enquêteur ivre et rappelez-vous qu'il ne peut pas mourir en désignant la Pucelle !
             
-            2) Mercenaire, Corneille, Maire, Voyante, Empathe, Vertueux, Empoisonneur et Imp. Ce sera un jeu beaucoup plus calme, car les joueurs découvriront lentement si le Vertueux, le Mercenaire et le Maire disent la vérité. L’Empoisonneur, qui a de nombreuses cibles juteuses, peut certainement provoquer un certain chaos. Cependant, le jeu peut être rapide si le Mercenaire est averti, si le Vertueux ne l'est pas assez, ou si l'Empoisonneur ne peut pas trouver l'Empathe et la Voyante à temps. Si le Maire est attaqué la nuit, pensez à tuer un autre joueur à sa place – peut-être la Corneille?
+            2) Mercenaire, Corneille, Maire, Voyante, Empathe, Saint, Empoisonneur et Imp. Ce sera un jeu beaucoup plus calme, car les joueurs découvriront lentement si le Saint, le Mercenaire et le Maire disent la vérité. L’Empoisonneur, qui a de nombreuses cibles juteuses, peut certainement provoquer un certain chaos. Cependant, le jeu peut être rapide si le Mercenaire est averti, si le Saint ne l'est pas assez, ou si l'Empoisonneur ne peut pas trouver l'Empathe et la Voyante à temps. Si le Maire est attaqué la nuit, pensez à tuer un autre joueur à sa place – peut-être la Corneille?
             
-            3) Lavandière, Mercenaire, Pucelle, Fossoyeur, Voyante, Reclus, Espionne et Imp. Il s'agit d'une configuration plus avancée, nécessitant une logique plus approfondie de la part des joueurs, mais elle peut être très gratifiante s'ils la comprennent. N'oubliez pas que le Reclus peut s'enregistrer en tant que Démon auprès de la Voyante, du Fossoyeur et du Mercenaire ! Et rappelez-vous que l’Espionne peut s’enregistrer en tant que Villageois auprès de la Pucelle, du Croque- mort et de la Lavandière !
+            3) Lavandière, Mercenaire, Pucelle, Fossoyeur, Voyante, Reclus, Espionne et Imp. Il s'agit d'une configuration plus avancée, nécessitant une logique plus approfondie de la part des joueurs, mais elle peut être très gratifiante s'ils la comprennent. N'oubliez pas que la Recluse peut s'enregistrer en tant que Démon auprès de la Voyante, du Fossoyeur et du Mercenaire ! Et rappelez-vous que l’Espionne peut s’enregistrer en tant que Villageois auprès de la Pucelle, du Croque- mort et de la Lavandière !
 `
     },
     BAD_MOON_RISING: {
@@ -94,7 +94,7 @@ export const Modules: {
             Roles.VILLAGEOIS.MENESTREL,
             Roles.VILLAGEOIS.TISANIERE,
             Roles.VILLAGEOIS.PACIFISTE,
-            Roles.VILLAGEOIS.FOU,
+            Roles.VILLAGEOIS.FOU_DU_ROI,
             Roles.MARGINAUX.BRICOLEUR,
             Roles.MARGINAUX.SELENITE,
             Roles.MARGINAUX.BRUTE,
@@ -109,9 +109,9 @@ export const Modules: {
             Roles.DEMONS.ZOMBUUL,
             Roles.VOYAGEURS.APPRENTI,
             Roles.VOYAGEURS.EVEQUE,
-            Roles.VOYAGEURS.MAGISTRAT,
+            Roles.VOYAGEURS.JUGE,
             Roles.VOYAGEURS.MATRONE,
-            Roles.VOYAGEURS.NECROMANT
+            Roles.VOYAGEURS.VOUDON
         ],
         summary: `Une razzia de morts, un concert de décès !
     Une place prépondérante pour l'ivresse et la protection, Bad Moon Rising sera votre 2ème expérience de jeu sur BotC, pour les joueurs intermédiaires.`,
@@ -141,7 +141,7 @@ export const Modules: {
         detail:`
             Si c’est la première fois que vous contez BMR et que vous voulez apprendre en utilisant les rôles les plus simples et les plus directs, considérez mettre ces rôles en jeu :
             Parieur, Professeur, Ménestrel, Pacifiste, Fou, Bricoleur, Assassin, Shabaloth.
-            Vous aurez besoin de choisir quand utiliser la capacité du Pacifiste, de le Bricoleur et la capacité de résurrection du Shabaloth.  Les capacités du Ménestrel et du Fou fonctionneront automatiquement. Les joueurs feront le reste.
+            Vous aurez besoin de choisir quand utiliser la capacité du Pacifiste, de le Bricoleur et la capacité de résurrection du Shabaloth.  Les capacités du Ménestrel et du Fou du roi fonctionneront automatiquement. Les joueurs feront le reste.
 
             Si vous vous sentez un peu plus aventureux, et que vous aimeriez un style de jeu plus singulier qui se frotte avec des rôles et des interactions plus compliquées, considérez mettre ces rôles en jeu (pour une partie à 8 joueurs) ou changez-en un pour adapter à votre style :
            
@@ -149,7 +149,7 @@ export const Modules: {
             Ce sera une partie avec pas mal d’informations si le village veut accepter le niveau de risque qui va avec. Parieur, Commère, Femme de Chambre et Mamie apprendront des informations utiles rapidement, mais auront besoin de bien coordonner leur savoir pour traquer l’insaisissable Zombuul. Le Bricoleur et la Sélénite apporteront une couverture très utile pour le Démon car avec le Parrain en jeu, il peut y avoir des morts supplémentaires la nuit ce qui pourra faire croire qu’un autre Démon est en jeu.
 
             Femme de Chambre, Aubergiste, Ménestrel, Exorciste, Fou, Lunatique, Assassin, Pukka. 
-            Cette composition est amusante pour les maléfiques. L’Assassin et le Pukka peuvent tous les deux tuer qui pourraient ne pas mourir autrement et le Pukka peut apporter beaucoup de confusion en empoisonnant la Femme de Chambre, l’Aubergiste, le Ménestrel ou l’Exorciste. Le Village pourrait déduire qu’un Pukka est en jeu si le Fou meurt et il pourrait aussi utiliser la capacité de l’Aubergiste pour repousser les morts à posteriori du Pukka. Le Lunatique peut être difficile à conter si vous n’êtes pas familier avec BMR alors prenez votre temps.
+            Cette composition est amusante pour les maléfiques. L’Assassin et le Pukka peuvent tous les deux tuer qui pourraient ne pas mourir autrement et le Pukka peut apporter beaucoup de confusion en empoisonnant la Femme de Chambre, l’Aubergiste, le Ménestrel ou l’Exorciste. Le Village pourrait déduire qu’un Pukka est en jeu si le Fou du roi meurt et il pourrait aussi utiliser la capacité de l’Aubergiste pour repousser les morts à posteriori du Pukka. Le Lunatique peut être difficile à conter si vous n’êtes pas familier avec BMR alors prenez votre temps.
 
             Aubergiste, Tisanière, Pacifiste, Professeur, Fou, Bricoleur, Avocat du Diable, Shabaloth.
             Dans cette partie, le village et les maléfiques doivent travailler dur pour tuer des joueurs du camp opposé. Il y a beaucoup de protection face à la mort pour les deux équipes. Durant la journée, les exécutions pourraient ne pas entrainer la mort et le village devra déterminer si cela vient du Pacifiste ou de l’Avocat du Diable ou autre. La nuit, le Shabaloth aura besoin de choisir ses victimes avec sagesse ou alors il pourrait ne pas être capable de tuer. Les joueurs peuvent être ramenés à la vie et le village devra aussi fournir un effort pour déterminer pourquoi.
@@ -179,10 +179,10 @@ export const Modules: {
             Roles.MARGINAUX.BARBIER,
             Roles.MARGINAUX.DULCINEE,
             Roles.MARGINAUX.MALADROIT,
-            Roles.SBIRES.JUMEAU_MALEFIQUE,
+            Roles.SBIRES.JUMELLE_MALEFIQUE,
             Roles.SBIRES.MANIPULATEUR,
             Roles.SBIRES.SORCIERE,
-            Roles.SBIRES.VIEILLE_CHOUETTE,
+            Roles.SBIRES.GUENAUDE,
             Roles.DEMONS.FANG_GU,
             Roles.DEMONS.NO_DASHII,
             Roles.DEMONS.VIGORMORTIS,
@@ -221,11 +221,11 @@ export const Modules: {
             Les informations que vous devez donner à l’Horloger, à l’Oracle et au Jongleur sont faciles à calculer à comprendre. Les joueurs choisiront comment utiliser leur capacité de Couturière, d’Artiste, de Jongleur et de Maladroit. Rappelez-vous du joueur maudit par la Sorcière et les joueurs empoisonnées par le No Dashii et tout se passera bien. 
 
             Si vous vous sentez un peu plus aventureux, et que vous aimeriez un style de jeu plus singulier qui se frotte avec des rôles et des interactions plus compliquées, considérez mettre ces rôles en jeu (pour une partie à 8 joueurs) ou changez-en un pour adapter à votre style :
-            Charmeur de Serpent, Rêveur, Fleuriste, Savant, Barbier, Maladroit, Vieille Chouette, Fang Gu.
-            Cette composition se focalise sur le changement de rôle. Le Charmeur de Serpent et le Fang Gu peuvent provoquer un changement dans l’identité du Démon. La Vieille Chouette créé de nouveaux rôles. Le Barbier peut aussi complique de qui est qui en échangeant des rôles. Malheur au Maladroit qui devra choisir rapidement dans tout ce chaos !
+            Charmeur de Serpent, Rêveur, Fleuriste, Savant, Barbier, Maladroit, Guenaude, Fang Gu.
+            Cette composition se focalise sur le changement de rôle. Le Charmeur de Serpent et le Fang Gu peuvent provoquer un changement dans l’identité du Démon. La Guenaude créé de nouveaux rôles. Le Barbier peut aussi complique de qui est qui en échangeant des rôles. Malheur au Maladroit qui devra choisir rapidement dans tout ce chaos !
 
-            Crieur, Couturière, Philosophe, Artiste, Jongleur, Sage, Jumeau Maléfique, Vigormortis. 
-            Cette composition va se focaliser sur le Jumeau Maléfique et le Jumeau gentil. Le village a d’incroyables ressources pur déterminer l’alignement des jumeaux mais le Vigormortis peut tuer un des jumeaux si les choses se gâtent ce qui causera beaucoup de confusion et de chaos dans le processus. Toutefois, si le village met toutes ses ressources pour trouver le Jumeau maléfique, il pourrait ne pas trouver le Démon a temps. Equilibre et prévoyance seront seront la clé. 
+            Crieur, Couturière, Philosophe, Artiste, Jongleur, Sage, Jumelle Maléfique, Vigormortis. 
+            Cette composition va se focaliser sur la Jumelle Maléfique et la Jumelle gentil. Le village a d’incroyables ressources pur déterminer l’alignement des jumelles mais le Vigormortis peut tuer une des jumelles si les choses se gâtent ce qui causera beaucoup de confusion et de chaos dans le processus. Toutefois, si le village met toutes ses ressources pour trouver la Jumelle maléfique, il pourrait ne pas trouver le Démon a temps. Equilibre et prévoyance seront seront la clé. 
 
             Horologer, Mathématicien, Crieur, Savant, Artist, Dulcinée, Sorcière, No Dashii.
             Cette composition est similaire au premier exemple avec l’ajout du Mathématicien du Crieur, du Savant et de la Dulcinée. Le No Dashii peut empoisonner plein de Villageois intéressant mais le Savant et le Mathématicien peuvent trouver le No Dashii assez rapidement s’ils sont assez malin. La Sorcière est effrayante, en particulier avec la Dulcinée mais l’Horloger et l’Artiste peuvent se coordonner our trouver le deuxième maléfique une fois qu’ils ont une idée du premier. Cette compo estp lus adaptée à des joueurs prudents et réfléchis.
@@ -247,18 +247,18 @@ export const Modules: {
             Roles.VILLAGEOIS.EXORCISTE,
             Roles.VILLAGEOIS.PHILOSOPHE,
             Roles.VILLAGEOIS.SOLDAT,
-            Roles.VILLAGEOIS.FOU,
+            Roles.VILLAGEOIS.FOU_DU_ROI,
             Roles.VILLAGEOIS.MAIRE,
             Roles.MARGINAUX.BARBIER,
             Roles.MARGINAUX.POLITICIEN,
             Roles.MARGINAUX.SOULARD,
-            Roles.MARGINAUX.VERTUEUX,
+            Roles.MARGINAUX.SAINT,
             Roles.SBIRES.PARRAIN,
             Roles.SBIRES.ASSASSIN,
             Roles.SBIRES.BARON,
             Roles.SBIRES.SORCIERE,
             Roles.SBIRES.ESPIONNE,
-            Roles.DEMONS.P_TIT_MONSTRE
+            Roles.DEMONS.TIMONSTRE
         ]
     },
     LARGELY_UN_FAIRE: {
@@ -280,7 +280,7 @@ export const Modules: {
             Roles.VILLAGEOIS.MERCENAIRE,
             Roles.MARGINAUX.BETE_DE_FOIRE,
             Roles.MARGINAUX.SOULARD,
-            Roles.MARGINAUX.VERTUEUX,
+            Roles.MARGINAUX.SAINT,
             Roles.MARGINAUX.LUNATIQUE,
             Roles.SBIRES.GOBELIN,
             Roles.SBIRES.BARON,
