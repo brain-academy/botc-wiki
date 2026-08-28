@@ -439,6 +439,11 @@
       "filename": "heretique",
       "originalName": "Heretic"
     },
+    "IVROGNE": {
+      "name": "Ivrogne",
+      "originalName": "Drunk",
+      "wakeUpSchedule": "Identique au faux rôle attribué"
+    },
     "LUNATIQUE": {
       "name": "Lunatique",
       "originalName": "Lunatic",
@@ -480,12 +485,6 @@
       "name": "Sélénite",
       "filename": "selenite",
       "originalName": "Moonchild"
-    },
-    "SOULARD": {
-      "name": "Soûlard",
-      "filename": "soulard",
-      "originalName": "Drunk",
-      "wakeUpSchedule": "Identique au faux rôle attribué"
     },
     "SAINT": {
       "name": "Saint",
