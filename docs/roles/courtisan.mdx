@@ -1,0 +1,70 @@
+---
+title: Courtisan
+---
+
+import Module from '/src/components/module.component'
+import Role from '/src/components/role.component'
+
+<Role COURTISAN header />
+
+### Description
+
+Une fois par partie, la nuit, choisissez un rôle : il sera ivre pour trois nuits et trois jours.
+
+le Courtisan rend un rôle ivre sans savoir de quel joueur il s’agit.
+
+-   Une fois par partie, le Courtisan choisi un rôle pour le rendre ivre pour trois nuits et trois jours qui commencent immédiatement.
+
+-   le Courtisan n’apprend pas si elle a choisi avec succès ou pas donc elle peut choisir un rôle qui n’est pas en jeu.
+
+-   le Courtisan choisit un rôle et non un joueur. Il peut être utile de le rappeler à le Courtisan ainsi qu’aux maléfiques bluffant ce rôle.
+
+-   Si le Courtisan est ivre ou empoisonnée lors de son choix, ce rôle n’est pas ivre même si le Courtisan redevient sobre et saine plus tard. Si le Courtisan a rendu un joueur ivre puis est elle-même ivre ou empoisonnée, le joueur rendu ivre redevient sobre et sain avant la fin des trois nuits et trois jours. Mais si le Courtisan redevient sobre et saine entre temps, le joueur redevient ivre.
+
+### Exemples
+
+> Lors des quatre premières nuits, le Courtisan se réveille mais n’utilise pas sa capacité. Durant la cinquième nuit, le Courtisan active sa capacité et choisit le <Role SHABALOTH />. Comme le <Role SHABALOTH /> est en jeu, il est ivre pour les trois prochaines nuits, se réveille mais ne peut tuer personne.
+
+> le Courtisan choisit le <Role ZOMBUUL />. Comme ce rôle n’est pas en jeu, rien ne se passe.
+
+> le Courtisan utilise sa capacité étant saoule. Rien ne se passe. De plus, elle ne pourra plus utiliser sa capacité et ne se réveillera plus jusqu’à la fin de la partie.
+
+> le Courtisan choisit le <Role CONSPIRATEUR /> et le rend ivre. Deux jours plus tard, le Démon se fait exécuter alors que le <Role CONSPIRATEUR /> est en jeu. Comme ce dernier est ivre, la partie s’achève et les Gentils gagnent.
+
+### Mécaniques et conseils
+
+- Votre capacité de Courtisan est puissante et unique. Vous choisissez un rôle à neutraliser parmi la fiche de rôle et non un joueur. Si celui-ci est en jeu, il sera ivre pour un certain temps. Cette mécanique est complètement différente de l’<Role EMPOISONNEUR />, qui va empoisonner un joueur, peu importe son rôle. Pensez-y et adaptez votre jeu en conséquence.
+
+- Soyez vigilant sur votre timing. Votre capacité ne s’active qu’une seule et unique fois dans la partie. Similairement à un <Role MERCENAIRE />, plus la partie progresse et plus votre pouvoir devient puissant. En effet, vous accumulez de plus en plus d'informations et votre enquête progresse. Par exemple, choisir le bon type de Démon est souvent une manœuvre décisive pour la victoire des Gentils. D’un autre côté, vous risquez à tout moment de mourir sans avoir pu utiliser votre capacité. Parfois, il est préférable de faire un choix tôt dans la partie même s’il n’est pas optimal. Par exemple, si vous choisissez de neutraliser le <Role PUKKA /> et que les morts de nuit indiquent que vous vous êtes trompé, cela va tout de même aider le Village dans son enquête. Mieux vaut un peu d’information que pas du tout.
+
+- Essayez de viser le Démon. Si vous réussissez, le Village obtiendra trois nuits de répit, ce qui est un gros handicap pour les Maléfiques. Enquêtez sur les morts de nuit, leur cause et leurs liens d’une nuit à l’autre. Bloquer un <Role SHABALOTH /> ou un <Role PO /> dans son festin peut faire basculer la partie.
+
+- Vous pouvez également tenter de neutraliser un Sbire. Bloquer un <Role ASSASSIN /> ou un <Role PARRAIN /> pourra empêcher une mort, voire deux, même si cela reste toujours moins bénéfique que de bloquer directement le Démon. Enfin, cibler l’Avocat du Diable ou le <Role CONSPIRATEUR /> est plus insidieux. Ceci représente un grand risque, mais peut également faire basculer la partie si vous visez juste car les Maléfiques se reposent souvent sur leur capacité pour assurer leurs arrières (si le Démon est protégé par l’Avocat du Diable ou si le <Role CONSPIRATEUR /> fait gagner la partie). Par exemple, les Maléfiques peuvent laisser le Démon se faire exécuter en comptant sur le <Role CONSPIRATEUR /> le jour d’après, avant de découvrir que ce dernier est ivre et qu’ils ont en fait perdu la partie.
+
+- Dans la plupart des cas, ne visez pas des rôles de Gentils. Les quelques situations où vous auriez intérêt à neutraliser vos propres acolytes restent extrêmement rares. Elles concernent la plupart des cas des rôles vulnérables comme l'<Role INVENTEUR /> (qui peut décéder à tout moment), la <Role MAMIE /> (qui décède avec son petit-fils) ou la <Role GITANE /> (qui peut provoquer la mort d’un joueur Gentil).
+
+- Une stratégie alternative : si vous suspectez qu’un joueur n’est pas celui qu’il prétend être, vous pouvez choisir son rôle et observez si son histoire change. Par exemple, vous pouvez viser une prétendue <Role FEMME_DE_CHAMBRE /> ou un soi-disant <Role EXORCISTE /> et surveiller si ses informations restent cohérentes. Cependant, ce choix est très risqué car, d’une part vous auriez pu essayer de neutraliser le Démon, et d’autre part vous aurez des comptes à rendre dans le cas où vous enivreriez le vrai rôle.
+
+- Incertain sur votre choix ? Rabattez-vous simplement sur le rôle Maléfique le plus puissant de la liste. Qu’il soit en jeu ou non, vous êtes désormais sûr qu’il n’interviendra plus dans la partie, permettant à l’enquête de l’écarter de l’équation.
+
+### Bluffer le Courtisan
+
+- Ne vous dévoilez pas dès le début. Attendez quelques jours avant de vous révéler Courtisan ou, tout au moins, de déclarer avoir utilisé votre capacité. Une vraie Courtisan en ferait autant. De plus, rappelez-vous que le Courtisan choisit un rôle à enivrer et non un joueur.
+
+- Mentionnez discrètement que votre capacité n’a rien changé. Le moyen le plus simple de bluffer le Courtisan est de déclarer avoir utilisé sa capacité sur un Démon et constater que rien ne change. Par exemple, vous pouvez annoncer avoir neutralisé le <Role PUKKA />, mais comme une personne continue de mourir chaque nuit, vous en concluez que vous avez visé le mauvais Démon. un courtisan devine rarement juste, donc votre erreur n'attire pas plus que ça l’attention du Village, à condition que les rôles Maléfiques en jeu ne soient pas exactement certains.
+
+- Affirmer avoir trouvé le bon rôle est une stratégie plus risquée, mais payante. Si vous avez convaincu le Village que vous êtes bien le Courtisan et que vous avez en plus neutralisé un rôle de Maléfique, votre place dans le Groupe n’en sera que plus solide.
+
+- Coordonnez les morts. Pour confirmer votre bluff, le Démon peut choisir de ne pas tuer de nuit pour faire comme si le Courtisan l’avait rendu ivre. Par exemple, si le Village pense que le Démon est ivre, il pourrait arrêter ses exécutions quelques jours afin de laisser du temps aux rôles de détection. S’il ne reste que quelques joueurs (3 ou 4 voire 5 ou 6), ceci pourrait créer une occasion décisive pour le <Role SHABALOTH /> ou le <Role PO /> de finir la partie en tuant plusieurs joueurs d’un coup.
+
+- Prétendez avoir choisi votre propre rôle. Si vous êtes <Role CONSPIRATEUR />, proclamez-vous Courtisan et déclarez avoir choisi le <Role CONSPIRATEUR />, ainsi le Village tombera des nues si vous gagnez grâce à votre capacité. Si vous êtes <Role PUKKA />, vous pouvez affirmer être le Courtisan et avoir choisi le <Role PUKKA />. Le cas échéant, si des morts continuent à arriver la nuit, le Village pensera qu’un autre Démon est en jeu et ignorera complètement le potentiel poison du <Role PUKKA />.
+
+### Comment conter?
+
+Chaque nuit, réveillez le Courtisan. Elle fait non de la tête ou désigne un rôle sur sa fiche. Rendormez ensuite le Courtisan.
+
+Si le Courtisan a choisi un rôle qui est en jeu, le joueur incarnant ce rôle devient ivre pour trois nuits et trois jours. Cette nuit, marquez-le avec le jeton de rappel "Ivre J1" de le Courtisan. La nuit suivante, remplacez-le par le jeton de rappel "Ivre J2". La nuit suivante, remplacez-le par le jeton de rappel "Ivre J3". Au crépuscule suivant retirez le jeton de rappel "Ivre J3" et le Courtisan perd sa capacité. Marquez-la également avec le jeton de rappel "Utilisé" et retirez son jeton de nuit de la fiche d’ordre de nuit.
+
+Après que le Courtisan ait choisi un rôle à rendre ivre, ne réveillez plus le Courtisan du reste de la partie.
+
+_Dans d’autres éditions, il peut y avoir plusieurs copies du même rôle en jeu. le Courtisan en rend l’un d’entre eux ivre._

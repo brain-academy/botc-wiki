@@ -95,8 +95,8 @@
       "originalName": "Gossip",
       "clazz": "DETECTION"
     },
-    "COURTISANE": {
-      "name": "Courtisane",
+    "COURTISAN": {
+      "name": "Courtisan",
       "originalName": "Courtier",
       "clazz": "DETECTION",
       "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
@@ -114,26 +114,15 @@
       "clazz": "DETECTION",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
     },
-    "CROQUE_MORT": {
-      "name": "Croque-Mort",
-      "filename": "croque-mort",
-      "originalName": "Undertaker",
-      "clazz": "DETECTION",
-      "wakeUpSchedule": "Si exécution la veille"
-    },
     "CUISTOT": {
-      "name": "Cuistot",
+      "name": "Cuistot (Cuisinier)",
+      "filename": "cuistot",
       "originalName": "Chef",
       "clazz": "FIRST_NIGHT",
       "wakeUpSchedule": "FIRST_NIGHT"
     },
-    "CULTIVATEUR_DE_PAVOT": {
-      "name": "Cultivateur de pavot",
-      "filename": "cultivateur-de-pavot",
-      "originalName": "Poppy Grower"
-    },
-    "EMPATHIQUE": {
-      "name": "Empathique",
+    "EMPATHE": {
+      "name": "Empathe",
       "originalName": "Empath",
       "clazz": "DETECTION",
       "wakeUpSchedule": "EVERY_NIGHT"
@@ -177,6 +166,12 @@
       "originalName": "Flowergirl",
       "clazz": "DETECTION",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
+    },
+    "FOSSOYEUR": {
+      "name": "Fossoyeur",
+      "originalName": "Undertaker",
+      "clazz": "DETECTION",
+      "wakeUpSchedule": "Si exécution la veille"
     },
     "FOU": {
       "name": "Fou",
@@ -316,6 +311,11 @@
       "filename": "pecheur",
       "originalName": "Fisherman"
     },
+    "PLANTEUR_DE_PAVOT": {
+      "name": "Planteur de pavot",
+      "filename": "planteur-de-pavot",
+      "originalName": "Poppy Grower"
+    },
     "PRINCESSE": {
       "name": "Princesse",
       "originalName": "Princess"
@@ -407,8 +407,9 @@
       "name": "Chapelier",
       "originalName": "Hatter"
     },
-    "DEMOISELLE": {
-      "name": "Demoiselle",
+    "DAMOISELLE": {
+      "name": "Damoiselle (Demoiselle)",
+      "filename": "damoiselle",
       "originalName": "Damsel"
     },
     "DULCINEE": {
@@ -516,11 +517,6 @@
       "name": "Conspirateur",
       "originalName": "Mastermind"
     },
-    "CROQUEUSE_D_HOMMES": {
-      "name": "Croqueuse d'hommes",
-      "filename": "croqueuse-d-hommes",
-      "originalName": "Scarlet Woman"
-    },
     "EMPOISONNEUR": {
       "name": "Empoisonneur",
       "originalName": "Poisoner",
@@ -609,6 +605,11 @@
       "filename": "sorciere",
       "originalName": "Witch",
       "wakeUpSchedule": "EVERY_NIGHT"
+    },
+    "SUCCUBE": {
+      "name": "Succube (Femme écarlate",
+      "filename": "succube",
+      "originalName": "Scarlet Woman"
     },
     "VEUVE_NOIRE": {
       "name": "Veuve Noire",

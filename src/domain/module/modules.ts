@@ -21,9 +21,9 @@ export const Modules: {
             Roles.VILLAGEOIS.ARCHIVISTE,
             Roles.VILLAGEOIS.ENQUETEUR,
             Roles.VILLAGEOIS.CUISTOT,
-            Roles.VILLAGEOIS.EMPATHIQUE,
+            Roles.VILLAGEOIS.EMPATHE,
             Roles.VILLAGEOIS.VOYANTE,
-            Roles.VILLAGEOIS.CROQUE_MORT,
+            Roles.VILLAGEOIS.FOSSOYEUR,
             Roles.VILLAGEOIS.MOINE,
             Roles.VILLAGEOIS.GARDIEN,
             Roles.VILLAGEOIS.PUCELLE,
@@ -36,7 +36,7 @@ export const Modules: {
             Roles.MARGINAUX.VERTUEUX,
             Roles.SBIRES.EMPOISONNEUR,
             Roles.SBIRES.ESPION,
-            Roles.SBIRES.CROQUEUSE_D_HOMMES,
+            Roles.SBIRES.SUCCUBE,
             Roles.SBIRES.BARON,
             Roles.DEMONS.IMP,
             Roles.VOYAGEURS.BOUC_EMISSAIRE,
@@ -61,21 +61,21 @@ export const Modules: {
             
             En jouant à Trouble Brewing…
 
-            Les Gentils devront trouver qui est Gentil et qui est Maléfique en utilisant leur logique et leur intuition. Des joueurs comme le Cuistot ou l’Enquêteur révéleront peut-être immédiatement leur rôle et leurs informations. A l’opposé, d’autres joueurs mentiront sur leur identité, pour que le Démon évite de les attaquer, comme la Voyante ou le Croque-mort, ou au contraire afin qu’il les attaque, comme le Gardien ou le Soldat. 
+            Les Gentils devront trouver qui est Gentil et qui est Maléfique en utilisant leur logique et leur intuition. Des joueurs comme le Cuistot ou l’Enquêteur révéleront peut-être immédiatement leur rôle et leurs informations. A l’opposé, d’autres joueurs mentiront sur leur identité, pour que le Démon évite de les attaquer, comme la Voyante ou le Fossoyeur, ou au contraire afin qu’il les attaque, comme le Gardien ou le Soldat. 
             
-            Quelques Villageois obtiennent de l'information en accomplissant une action et en observant son effet : sacrifier la vie d'un joueur en lui demandant de nominer la Pucelle, tenter de tuer l’Imp en tant que Mercenaire ou tuer délibérément des Gentils pour que le Croque-mort puisse confirmer leur identité. Ce sont toutes des façons de sacrifier sa vie ou sa capacité pour obtenir de l'information et atteindre la victoire.
+            Quelques Villageois obtiennent de l'information en accomplissant une action et en observant son effet : sacrifier la vie d'un joueur en lui demandant de nominer la Pucelle, tenter de tuer l’Imp en tant que Mercenaire ou tuer délibérément des Gentils pour que le Fossoyeur puisse confirmer leur identité. Ce sont toutes des façons de sacrifier sa vie ou sa capacité pour obtenir de l'information et atteindre la victoire.
             
-            Les Maléfiques auront besoin de prétendre avoir un rôle Gentil et si nécessaire, de donner de fausses informations pour être crédibles. Avec seulement de bonnes informations, le Village les trouverait en peu de temps, mais une simple et plausible fausse information peut les sauver. S’ils sont vigilants, l'Empoisonneur et l'Espion peuvent provoquer une grande confusion dans les rangs du Village avec leurs capacités. Ils devront aussi décider quand faire des sacrifices. Est-ce que la Croqueuse d'hommes fera tuer l’Imp pour sauver son équipe ? Est-ce que les Maléfiques voteront pour exécuter un Sbire suspect afin de passer pour des membres honorables du Village ? 
+            Les Maléfiques auront besoin de prétendre avoir un rôle Gentil et si nécessaire, de donner de fausses informations pour être crédibles. Avec seulement de bonnes informations, le Village les trouverait en peu de temps, mais une simple et plausible fausse information peut les sauver. S’ils sont vigilants, l'Empoisonneur et l'Espion peuvent provoquer une grande confusion dans les rangs du Village avec leurs capacités. Ils devront aussi décider quand faire des sacrifices. Est-ce que la Succube fera tuer l’Imp pour sauver son équipe ? Est-ce que les Maléfiques voteront pour exécuter un Sbire suspect afin de passer pour des membres honorables du Village ? 
             
             `,
         detail:`
             Choisir les rôles. Les rôles que vous choisissez affecteront grandement la façon dont le jeu se déroulera. Choisissez ce que vous pensez être amusant, ce qui interagira bien ensemble ou simplement ce que vous vous sentez capable de gérer. S'il s'agit de votre première partie et que vous ne savez pas quels rôles inclure, tenez compte des éléments suivants (pour une partie à 8 joueurs) ou modifiez-les en fonction de votre style:
             
-            1) Cuistot, Empathique, Voyante, Croque-mort, Pucelle, Soûlard (Enquêteur), Croqueuse d’hommes et Imp. Cette configuration contient beaucoup d'informations pour l’équipe des gentils, de bonnes possibilités d'impliquer les joueurs et de parler immédiatement, mais elle est également relativement sûre pour les joueurs maléfiques qui ne savent pas comment bien bluffer. Ce sera un jeu chaotique qui ravira les nouveaux joueurs. N'oubliez pas de donner de fausses informations à l'Enquêteur ivre et rappelez-vous qu'il ne peut pas mourir en désignant la Pucelle !
+            1) Cuistot, Empathe, Voyante, Fossoyeur, Pucelle, Soûlard (Enquêteur), Croqueuse d’hommes et Imp. Cette configuration contient beaucoup d'informations pour l’équipe des gentils, de bonnes possibilités d'impliquer les joueurs et de parler immédiatement, mais elle est également relativement sûre pour les joueurs maléfiques qui ne savent pas comment bien bluffer. Ce sera un jeu chaotique qui ravira les nouveaux joueurs. N'oubliez pas de donner de fausses informations à l'Enquêteur ivre et rappelez-vous qu'il ne peut pas mourir en désignant la Pucelle !
             
-            2) Mercenaire, Gardien, Maire, Voyante, Empathique, Vertueux, Empoisonneur et Imp. Ce sera un jeu beaucoup plus calme, car les joueurs découvriront lentement si le Vertueux, le Mercenaire et le Maire disent la vérité. L’Empoisonneur, qui a de nombreuses cibles juteuses, peut certainement provoquer un certain chaos. Cependant, le jeu peut être rapide si le Mercenaire est averti, si le Vertueux ne l'est pas assez, ou si l'Empoisonneur ne peut pas trouver l'Empathique et la Voyante à temps. Si le Maire est attaqué la nuit, pensez à tuer un autre joueur à sa place – peut-être le Gardien?
+            2) Mercenaire, Gardien, Maire, Voyante, Empathe, Vertueux, Empoisonneur et Imp. Ce sera un jeu beaucoup plus calme, car les joueurs découvriront lentement si le Vertueux, le Mercenaire et le Maire disent la vérité. L’Empoisonneur, qui a de nombreuses cibles juteuses, peut certainement provoquer un certain chaos. Cependant, le jeu peut être rapide si le Mercenaire est averti, si le Vertueux ne l'est pas assez, ou si l'Empoisonneur ne peut pas trouver l'Empathe et la Voyante à temps. Si le Maire est attaqué la nuit, pensez à tuer un autre joueur à sa place – peut-être le Gardien?
             
-            3) Lavandière, Mercenaire, Pucelle, Croque-mort, Voyante, Reclus, Espion et Imp. Il s'agit d'une configuration plus avancée, nécessitant une logique plus approfondie de la part des joueurs, mais elle peut être très gratifiante s'ils la comprennent. N'oubliez pas que le Reclus peut s'enregistrer en tant que Démon auprès de la Voyante, du Croque-mort et du Mercenaire ! Et rappelez-vous que l’Espion peut s’enregistrer en tant que Villageois auprès de la Pucelle, du Croque- mort et de la Lavandière !
+            3) Lavandière, Mercenaire, Pucelle, Fossoyeur, Voyante, Reclus, Espion et Imp. Il s'agit d'une configuration plus avancée, nécessitant une logique plus approfondie de la part des joueurs, mais elle peut être très gratifiante s'ils la comprennent. N'oubliez pas que le Reclus peut s'enregistrer en tant que Démon auprès de la Voyante, du Fossoyeur et du Mercenaire ! Et rappelez-vous que l’Espion peut s’enregistrer en tant que Villageois auprès de la Pucelle, du Croque- mort et de la Lavandière !
 `
     },
     BAD_MOON_RISING: {
@@ -89,7 +89,7 @@ export const Modules: {
             Roles.VILLAGEOIS.AUBERGISTE,
             Roles.VILLAGEOIS.PARIEUR,
             Roles.VILLAGEOIS.COMMERE,
-            Roles.VILLAGEOIS.COURTISANE,
+            Roles.VILLAGEOIS.COURTISAN,
             Roles.VILLAGEOIS.PROFESSEUR,
             Roles.VILLAGEOIS.MENESTREL,
             Roles.VILLAGEOIS.HERBORISTE,
@@ -132,7 +132,7 @@ export const Modules: {
             
             Le village devra aussi prêter une attention particulière à qui meurt la nuit et comment. S’ils l’ignorent, ils risquent de perdre de façon inattendue à la fin d’un jour avec 4 ou 5 ou même 6 joueurs encore en vie. Toutefois, s’ils peuvent trouver comment les joueurs sont morts la nuit, ils peuvent deviner quels rôles maléfiques sont en jeu. Cela leur permettra d’éviter de perdre à cause d’un redoutable Conspirateur ou un Po intimidant et d’avoir des indices utiles sur quel rôle gentil à tuer un joueur par accident (comme la Gitane ou l’Inventeur)
             
-            Les maléfiques pourraient se sentir invincible au début, mais ils auront besoin d’utiliser leurs capacités avec précision et prudence afin de l’emporter. Le Démon pourrait avoir besoin de convaincre le village qu’un autre type de Démon est en jeu afin d’éviter l’effet dévastateur de rôles gentils (comme l’Exorciste ou la Courtisane) et pourraient avoir besoin de ne délibérément pas tuer pour cela. Mais si le Démon peut trouver qui attaquer et qui ne peut attaquer (comme les voisins de l’Herboriste ou le fou) alors le village va avoir de gros problèmes.
+            Les maléfiques pourraient se sentir invincible au début, mais ils auront besoin d’utiliser leurs capacités avec précision et prudence afin de l’emporter. Le Démon pourrait avoir besoin de convaincre le village qu’un autre type de Démon est en jeu afin d’éviter l’effet dévastateur de rôles gentils (comme l’Exorciste ou le Courtisan) et pourraient avoir besoin de ne délibérément pas tuer pour cela. Mais si le Démon peut trouver qui attaquer et qui ne peut attaquer (comme les voisins de l’Herboriste ou le fou) alors le village va avoir de gros problèmes.
             
             Les Sbires auront également besoin d’un bon timing pour leurs capacités. Un Assassin qui frappe au bon moment, un Avocat du diable ou un Conspirateur qui peuvent lire le village peuvent transformer une défaire en victoire.
             
@@ -154,8 +154,8 @@ export const Modules: {
             Aubergiste, Herboriste, Pacifiste, Professeur, Fou, Inventeur, Avocat du Diable, Shabaloth.
             Dans cette partie, le village et les maléfiques doivent travailler dur pour tuer des joueurs du camp opposé. Il y a beaucoup de protection face à la mort pour les deux équipes. Durant la journée, les exécutions pourraient ne pas entrainer la mort et le village devra déterminer si cela vient du Pacifiste ou de l’Avocat du Diable ou autre. La nuit, le Shabaloth aura besoin de choisir ses victimes avec sagesse ou alors il pourrait ne pas être capable de tuer. Les joueurs peuvent être ramenés à la vie et le village devra aussi fournir un effort pour déterminer pourquoi.
 
-            Marin, Femme de Chambre, Ménestrel, Courtisane, Parieur, Brute, Conspirateur, Po.
-            Cela constituera un puzzle difficile à résoudre pour le village.  La variation du nombre de morts la nuit dû au Po combiné avec le terrifiant pouvoir du Conspirateur devrait inciter le village à garder tous ses esprits pour déterminer quel Démon est en jeu et même, si le Démon est mort ou vivant. Cela sera la clé de leur victoire. Le village peut s’appuyer sur le grand pouvoir de la Courtisane mais il aura besoin d’utiliser les capacités du Ménestrel, de la Femme de Chambre et du Parieur pour juger quel joueur ou quel rôle il est préférable de choisir la nuit.  Même le Marin et la Brute, s’ils jouent bien, pourraient causer suffisamment de confusion chez les maléfiques pour laisser le temps au village de déterminer ce qu’il se passe.  
+            Marin, Femme de Chambre, Ménestrel, Courtisan, Parieur, Brute, Conspirateur, Po.
+            Cela constituera un puzzle difficile à résoudre pour le village.  La variation du nombre de morts la nuit dû au Po combiné avec le terrifiant pouvoir du Conspirateur devrait inciter le village à garder tous ses esprits pour déterminer quel Démon est en jeu et même, si le Démon est mort ou vivant. Cela sera la clé de leur victoire. Le village peut s’appuyer sur le grand pouvoir de le Courtisan mais il aura besoin d’utiliser les capacités du Ménestrel, de la Femme de Chambre et du Parieur pour juger quel joueur ou quel rôle il est préférable de choisir la nuit.  Même le Marin et la Brute, s’ils jouent bien, pourraient causer suffisamment de confusion chez les maléfiques pour laisser le temps au village de déterminer ce qu’il se passe.  
             `
         },
     SECTS_AND_VIOLETS: {
@@ -266,10 +266,10 @@ export const Modules: {
         filename: 'largely-un-faire',
         roles: [
             Roles.VILLAGEOIS.AERONAUTE,
-            Roles.VILLAGEOIS.EMPATHIQUE,
+            Roles.VILLAGEOIS.EMPATHE,
             Roles.VILLAGEOIS.GENERAL,
             Roles.VILLAGEOIS.CHARMEUR_DE_SERPENT,
-            Roles.VILLAGEOIS.CROQUE_MORT,
+            Roles.VILLAGEOIS.FOSSOYEUR,
             Roles.VILLAGEOIS.SAVANT,
             Roles.VILLAGEOIS.AMNESIQUE,
             Roles.VILLAGEOIS.CANNIBALE,
@@ -284,7 +284,7 @@ export const Modules: {
             Roles.MARGINAUX.LUNATIQUE,
             Roles.SBIRES.GOBELIN,
             Roles.SBIRES.BARON,
-            Roles.SBIRES.CROQUEUSE_D_HOMMES,
+            Roles.SBIRES.SUCCUBE,
             Roles.SBIRES.VEUVE_NOIRE,
             Roles.DEMONS.LEVIATHAN
         ]

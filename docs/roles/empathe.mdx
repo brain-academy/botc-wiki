@@ -1,31 +1,31 @@
 ---
-title: Empathique
+title: Empathe
 ---
 
 import Module from '/src/components/module.component'
 import Role from '/src/components/role.component'
 
-<Role EMPATHIQUE header />
+<Role EMPATHE header />
 
 ### Description
 
 Chaque nuit, vous apprenez combien de vos deux voisins vivants sont Maléfiques.
 
-L’Empathique apprend continuellement si ses voisins sont Maléfiques.
+L’Empathe apprend continuellement si ses voisins sont Maléfiques.
 
--	L’Empathique apprend seulement combien de ses voisins sont Maléfiques mais pas qui l’est.
+-	L’Empathe apprend seulement combien de ses voisins sont Maléfiques mais pas qui l’est.
 
--	L’Empathique ne détecte pas les joueurs morts. Donc si l’Empathique est assis à côté d’un joueur mort, il ne reçoit pas d’informations sur ce joueur mort. Il reçoit plutôt des informations sur le joueur vivant le plus proche dans cette direction.
+-	L’Empathe ne détecte pas les joueurs morts. Donc si l’Empathe est assis à côté d’un joueur mort, il ne reçoit pas d’informations sur ce joueur mort. Il reçoit plutôt des informations sur le joueur vivant le plus proche dans cette direction.
 
--	L’Empathique agit après le Démon, donc, si le Démon tue un des voisins de l’Empathique, celui-ci n’aura pas d’informations sur ce joueur maintenant décédé. L’information de l’Empathique est pertinente à l’aube et non au crépuscule.  
+-	L’Empathe agit après le Démon, donc, si le Démon tue un des voisins de l’Empathe, celui-ci n’aura pas d’informations sur ce joueur maintenant décédé. L’information de l’Empathe est pertinente à l’aube et non au crépuscule.  
 
 ### Exemples
 
-> Les deux voisins de l'Empathique sont des joueurs Gentils - un <Role SOLDAT /> et un <Role MOINE />. L'Empathique obtient alors "0" du Conteur.
+> Les deux voisins de l'Empathe sont des joueurs Gentils - un <Role SOLDAT /> et un <Role MOINE />. L'Empathe obtient alors "0" du Conteur.
 
-> Le jour suivant, le <Role SOLDAT /> est exécuté. Durant la nuit, le <Role MOINE /> est tué par l’<Role IMP />. L'Empathique détecte maintenant les joueurs qui étaient assis à côté du <Role SOLDAT /> et du <Role MOINE /> : un <Role ARCHIVISTE /> et un <Role VENGEUR /> Maléfique. L’Empathique obtient alors cette fois "1".
+> Le jour suivant, le <Role SOLDAT /> est exécuté. Durant la nuit, le <Role MOINE /> est tué par l’<Role IMP />. L'Empathe détecte maintenant les joueurs qui étaient assis à côté du <Role SOLDAT /> et du <Role MOINE /> : un <Role ARCHIVISTE /> et un <Role VENGEUR /> Maléfique. L’Empathe obtient alors cette fois "1".
 
-> Il y a seulement trois joueurs en vie : l'Empathique, l’<Role IMP /> et le <Role BARON />. Peu importe les places, l'Empathique obtient alors "2".
+> Il y a seulement trois joueurs en vie : l'Empathe, l’<Role IMP /> et le <Role BARON />. Peu importe les places, l'Empathe obtient alors "2".
  
 ### Mécaniques et conseils
 
@@ -41,7 +41,7 @@ L’Empathique apprend continuellement si ses voisins sont Maléfiques.
 
 - Si vous croyez vos voisins, les garder en vie vous aidera grandement à réduire la liste des suspects.
 
-- Si vos voisins meurent, vous recevrez une nouvelle information sur le joueur vivant le plus proche. Faire tuer vos voisins signifie que vous en apprenez plus. Si vous arrivez à vous coordonner avec un <Role CROQUE_MORT />, vous pouvez exécuter vos voisins pour avoir des informations sur les personnes suivantes. De son côté le <Role CROQUE_MORT /> pourra confirmer les rôles des personnes exécutées. C’est un combo très puissant. Même si vos voisins sont Gentils, cela peut valoir le coup d'exécuter un <Role MERCENAIRE /> qui a utilisé sa capacité pour également savoir si vous pouvez accorder du crédit à la <Role VOYANTE /> de l'autre côté du village.
+- Si vos voisins meurent, vous recevrez une nouvelle information sur le joueur vivant le plus proche. Faire tuer vos voisins signifie que vous en apprenez plus. Si vous arrivez à vous coordonner avec un <Role FOSSOYEUR />, vous pouvez exécuter vos voisins pour avoir des informations sur les personnes suivantes. De son côté le <Role FOSSOYEUR /> pourra confirmer les rôles des personnes exécutées. C’est un combo très puissant. Même si vos voisins sont Gentils, cela peut valoir le coup d'exécuter un <Role MERCENAIRE /> qui a utilisé sa capacité pour également savoir si vous pouvez accorder du crédit à la <Role VOYANTE /> de l'autre côté du village.
 
 - Partager vos informations tôt dans la partie (en particulier si vous êtes assis à côté de 2 joueurs Maléfiques) peut aider à faire avancer l’enquête du Village rapidement.
 
@@ -53,7 +53,7 @@ L’Empathique apprend continuellement si ses voisins sont Maléfiques.
 
 - Faites attention à l'<Role ESPION /> ! Il peut être vu comme Gentil et du coup biaiser l’information que vous avez reçue. De même, le <Role RECLUS /> peut être vu Maléfique, vous penserez alors être assis à côté d’un Maléfique, à vous de chercher les alignements.
  
-### Bluffer l'Empathique
+### Bluffer l'Empathe
 
 - Chaque nuit, y compris la première, on vous aurait montré un nombre ("0", "1" ou "2").
 
@@ -61,14 +61,14 @@ L’Empathique apprend continuellement si ses voisins sont Maléfiques.
 
 - Annoncer faussement un "1" vous permettra de monter vos voisins Gentils l'un contre l'autre et de les discréditer aux yeux du village. Vous pouvez toujours vous en servir pour construire une relation de confiance avec un joueur (en leur disant que vous pensez qu'il est le voisin Gentil) tout en encourageant l'exécution de l'autre.
 
-- Annoncer que vous avez reçu un "1" alors que l'un de vos voisins est Maléfique est risqué mais peut rapporter gros. Si vous êtes une <Role CROQUEUSE_D_HOMMES /> et prétendez avoir un "1" alors que vous êtes assis à coté du <Role IMP /> ou vice versa peut faire croire au village que l'un d'entre vous est Gentil et l'autre Maléfique. Soyez prudents car le village pourrait décider de vous exécuter tous les deux.
+- Annoncer que vous avez reçu un "1" alors que l'un de vos voisins est Maléfique est risqué mais peut rapporter gros. Si vous êtes une <Role SUCCUBE /> et prétendez avoir un "1" alors que vous êtes assis à coté du <Role IMP /> ou vice versa peut faire croire au village que l'un d'entre vous est Gentil et l'autre Maléfique. Soyez prudents car le village pourrait décider de vous exécuter tous les deux.
 
 - Annoncer que vous avez obtenu un "2" est un bluff plus difficile mais qui peut s’avérer payant ! Vos deux voisins sauront que vous êtes en train de mentir et que vous êtes probablement Maléfique. Par contre si le Village vous croit, vous pourrez faire perdre du temps au Village et même peut-être réussir à faire exécuter 1 ou 2 joueurs Gentils.
 
 - Quand vos voisins meurent, vous pouvez changer le chiffre annoncé. Cela peut vous permettre d’enfoncer le clou sur un joueur récemment exécuté ou de porter la suspicion sur vos nouveaux voisins. Si vous tentez un bluff risqué, comme avoir une deuxième fois un "2" après avoir fait exécuter l’un de vos voisins, vous risquez fort de perdre en crédibilité et donc d'apparaître comme Maléfiques aux yeux du Village.
 
-- Du fait que l’Empathique soit un puissant rôle de détection, cela paraîtra très suspect si vous êtes encore en vie à la fin de la partie. Jouez-la "discret" et ne partagez vos informations qu’avec quelques personnes. Vous pouvez éventuellement prétendre que vous pensez être <Role SOULARD /> ou empoisonné.
+- Du fait que l’Empathe soit un puissant rôle de détection, cela paraîtra très suspect si vous êtes encore en vie à la fin de la partie. Jouez-la "discret" et ne partagez vos informations qu’avec quelques personnes. Vous pouvez éventuellement prétendre que vous pensez être <Role SOULARD /> ou empoisonné.
 
 ### Comment conter ?
 
-Chaque nuit, réveillez l’Empathique. Montrez-lui un nombre de doigts ("0", "1" ou "2") qui est égal au nombre de joueurs Maléfiques vivants voisins de l’Empathique. Rendormez l’Empathique.
+Chaque nuit, réveillez l’Empathe. Montrez-lui un nombre de doigts ("0", "1" ou "2") qui est égal au nombre de joueurs Maléfiques vivants voisins de l’Empathe. Rendormez l’Empathe.
