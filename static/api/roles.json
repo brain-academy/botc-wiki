@@ -119,8 +119,9 @@
       "clazz": "DETECTION",
       "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
     },
-    "CRIEUR": {
-      "name": "Crieur",
+    "CRIEUR_PUBLIC": {
+      "name": "Crieur public",
+      "filename": "crieur-public",
       "originalName": "Town Crier",
       "clazz": "DETECTION",
       "wakeUpSchedule": "EVERY_NIGHT_BUT_FIRST"
@@ -556,6 +557,10 @@
       "originalName": "Evil Twin",
       "wakeUpSchedule": "FIRST_NIGHT"
     },
+    "MAGE": {
+      "name": "Mage",
+      "originalName": "Wizard"
+    },
     "MANIPULATEUR": {
       "name": "Manipulateur (Cerenovus)",
       "filename": "manipulateur",
@@ -592,11 +597,6 @@
       "filename": "scientifique",
       "originalName": "Boffin",
       "wakeUpSchedule": "FIRST_NIGHT"
-    },
-    "SORCIER": {
-      "name": "Sorcier",
-      "filename": "sorcier",
-      "originalName": "Wizard"
     },
     "SPECTRE": {
       "name": "Spectre",
