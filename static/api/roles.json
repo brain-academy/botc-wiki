@@ -119,7 +119,7 @@
       "clazz": "DETECTION",
       "wakeUpSchedule": "UNTIL_ABILITY_CONSUMED"
     },
-    "CRIEUR_PUBLIC_PUBLIC": {
+    "CRIEUR_PUBLIC": {
       "name": "Crieur public",
       "filename": "crieur-public",
       "originalName": "Town Crier",
