@@ -514,9 +514,9 @@
       "name": "Baron", 
       "originalName": "Baron" 
     },
-    "BOOMDANDY": {
-      "name": "Boomdandy",
-      "originalName": "Boomdandy"
+    "BOUMDANDY": {
+      "name": "Boumdandy",
+      "originalName": "Boumdandy"
     },
     "CONSPIRATEUR": {
       "name": "Conspirateur",
@@ -592,8 +592,8 @@
       "name": "Psychopathe",
       "originalName": "Psychopath"
     },
-    "SCIENTIFIQUE": {
-      "name": "Scientifique",
+    "LABORANTIN": {
+      "name": "Laborantin",
       "filename": "scientifique",
       "originalName": "Boffin",
       "wakeUpSchedule": "FIRST_NIGHT"
