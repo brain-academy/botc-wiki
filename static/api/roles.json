@@ -594,7 +594,6 @@
     },
     "LABORANTIN": {
       "name": "Laborantin",
-      "filename": "scientifique",
       "originalName": "Boffin",
       "wakeUpSchedule": "FIRST_NIGHT"
     },
